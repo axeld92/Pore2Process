@@ -1,0 +1,770 @@
+{
+  "schema_version": 1,
+  "reviewed_date": "2026-11-08",
+  "parent_doi": "10.1016/j.watres.2022.118658",
+  "source": {
+    "path": "literature/inbox/Mo2022Dissecting/SupportingInformation.docx",
+    "sha256": "29c57d6bafb42bb5f8af4b140dab214d9dbfc8e1b99fd61ab4e3f2e16fb45180",
+    "format": "docx",
+    "unmodified": true,
+    "tracked_insertions": 0,
+    "tracked_deletions": 0,
+    "rendered_page_count": 8,
+    "all_rendered_pages_visually_inspected": true,
+    "page_map": {
+      "S1_table": 3,
+      "S1_flowchart": 4,
+      "S2_table": 5,
+      "S3_table": 6,
+      "references": [
+        7,
+        8
+      ]
+    },
+    "notes": [
+      "Page 2 is blank apart from page number S2.",
+      "Page numbers refer to the inspected bundled-renderer output; original DOCX layout can vary by renderer."
+    ],
+    "audit_files_sha256": {
+      "literature/inbox/Mo2022Dissecting/supplement_audit/render/SupportingInformation.pdf": "3ed934888b527b2e79678430e6aa0e755be016d55b3e1ffedb76ab9b68f10eea",
+      "literature/inbox/Mo2022Dissecting/supplement_audit/render/page-1.png": "6912cd2a880a03c8dc240947b940b79c6e5258985ba03a18c0137de385540d5a",
+      "literature/inbox/Mo2022Dissecting/supplement_audit/render/page-2.png": "a4b45592e4398e3dc0d7d53ce9a124bef26f660e9003cc58dd5e6f0459267b9a",
+      "literature/inbox/Mo2022Dissecting/supplement_audit/render/page-3.png": "6eea6f52fe1c24a9aa4e412fabc1d87a361dfde10c0d07a8f638bd079d6852ee",
+      "literature/inbox/Mo2022Dissecting/supplement_audit/render/page-4.png": "cf6ad33eddf3e3de85813a74e212fe731ccb737e5b3e0c77f249365781ed7102",
+      "literature/inbox/Mo2022Dissecting/supplement_audit/render/page-5.png": "08ad2b950801fcc2901db0d6a385768fcf53774e8e5a1ce452d1c253c4c85f2b",
+      "literature/inbox/Mo2022Dissecting/supplement_audit/render/page-6.png": "16526df26a8b186043e7251cf8bb668d8ff4ec35d2e5a8df42f25e2814532b18",
+      "literature/inbox/Mo2022Dissecting/supplement_audit/render/page-7.png": "8542381605dbbe6f0d64e01e17fb15fd1768ef72f1f8d2e686bcf20634a30db9",
+      "literature/inbox/Mo2022Dissecting/supplement_audit/render/page-8.png": "3ffa0d987d9a664e24af7cbc39d2775baa14029bd0fc708a3b499a22dd5319a5"
+    }
+  },
+  "classification": "Secondary literature compilation with ten S2 and nine S3 rows, plus author-model parameters and flowchart. Original experimental papers not replaced by this table.",
+  "accepted_for_experimental_calibration": false,
+  "author_model_settings": {
+    "source_location": "Table S1, rendered page 3",
+    "particle_density_reported": {
+      "value": 3.7,
+      "unit": "kg/m3",
+      "usable_without_clarification": false,
+      "note": "Printed unit confirmed visually. Suspicious for an alumina particle density; not silently changed to g/cm3 or 3700 kg/m3."
+    },
+    "particle_diameter_range_m": [
+      3e-07,
+      3e-06
+    ],
+    "operating_pressure_drop_Pa": 100000.0,
+    "water_viscosity_Pa_s": 0.001,
+    "layer_thickness_range_m": [
+      1e-06,
+      0.009
+    ],
+    "temperature_K": 298.15,
+    "experimental_conditions_for_S2_S3_confirmed": false
+  },
+  "flowchart": {
+    "source_location": "Figure S1, rendered page 4",
+    "embedded_image_sha256": "f651a2bd7faafdef7d25322b5c96e02763a0694e297bf7ad2d6ee527a0778e6a",
+    "steps": [
+      "Input pressure, viscosity, temperature, particle diameter, layer thickness and cycle count N.",
+      "Calculate flux, three layer resistances, porosity and adjacent-particle gap using main-article Eqs. 1-9.",
+      "Calculate mean pore size with Eq. 10; rejection/permeance/separation factor with Eqs. 10-19.",
+      "Repeat for cycle index, then output results."
+    ],
+    "matlab_code_supplied": false,
+    "numerical_solver_settings_supplied": false,
+    "matching_line_tolerance_supplied": false,
+    "remaining_reproduction_gaps": [
+      "No numerical values for cycle count N or numerical solver tolerances.",
+      "No numerical matching-line/saturation criterion.",
+      "Empirical coefficient and interparticle-force constants are not fully specified in Table S1.",
+      "Ambiguous converted main-article equations remain to be checked against original PDF."
+    ]
+  },
+  "table_S2": {
+    "source_location": "Table S2, rendered page 5",
+    "missing_symbol": "~ denotes no tabulated value; never interpreted as zero.",
+    "permeance_count": 6,
+    "pore_size_count": 4,
+    "rows_with_both_permeance_and_pore_size": 0,
+    "declared_material_for_all_rows": "alpha-Al2O3 (as tabulated; original specimen compositions require verification)",
+    "rows": [
+      {
+        "table_row": 1,
+        "reference_id": "qin_2020",
+        "reference_as_cited": "Qin et al., 2020",
+        "thickness_reported_mm": 6,
+        "thickness_m": 0.006,
+        "water_permeance_reported_LMH_bar": 3243,
+        "water_permeance_m_Pa_s": 9.008333333333333e-09,
+        "average_pore_size_reported_um": null,
+        "average_pore_size_m": null,
+        "pore_size_radius_or_diameter_confirmed": false,
+        "specimen_id": null,
+        "temperature_K": null,
+        "viscosity_Pa_s": null,
+        "measurement_pressure_Pa": null,
+        "uncertainty_permeance_LMH_bar": null,
+        "porosity_fraction": null,
+        "particle_diameter_m": null,
+        "standalone_layer_scope_confirmed": false,
+        "calibration_accepted": false
+      },
+      {
+        "table_row": 2,
+        "reference_id": "qin_2017",
+        "reference_as_cited": "Qin et al., 2017",
+        "thickness_reported_mm": 4.7,
+        "thickness_m": 0.0047,
+        "water_permeance_reported_LMH_bar": 7600,
+        "water_permeance_m_Pa_s": 2.1111111111111114e-08,
+        "average_pore_size_reported_um": null,
+        "average_pore_size_m": null,
+        "pore_size_radius_or_diameter_confirmed": false,
+        "specimen_id": null,
+        "temperature_K": null,
+        "viscosity_Pa_s": null,
+        "measurement_pressure_Pa": null,
+        "uncertainty_permeance_LMH_bar": null,
+        "porosity_fraction": null,
+        "particle_diameter_m": null,
+        "standalone_layer_scope_confirmed": false,
+        "calibration_accepted": false
+      },
+      {
+        "table_row": 3,
+        "reference_id": "guan_2017",
+        "reference_as_cited": "Guan et al., 2017",
+        "thickness_reported_mm": 2,
+        "thickness_m": 0.002,
+        "water_permeance_reported_LMH_bar": 15000,
+        "water_permeance_m_Pa_s": 4.166666666666667e-08,
+        "average_pore_size_reported_um": null,
+        "average_pore_size_m": null,
+        "pore_size_radius_or_diameter_confirmed": false,
+        "specimen_id": null,
+        "temperature_K": null,
+        "viscosity_Pa_s": null,
+        "measurement_pressure_Pa": null,
+        "uncertainty_permeance_LMH_bar": null,
+        "porosity_fraction": null,
+        "particle_diameter_m": null,
+        "standalone_layer_scope_confirmed": false,
+        "calibration_accepted": false
+      },
+      {
+        "table_row": 4,
+        "reference_id": "zhu_2021",
+        "reference_as_cited": "Zhu et al., 2021",
+        "thickness_reported_mm": 3,
+        "thickness_m": 0.003,
+        "water_permeance_reported_LMH_bar": 13140,
+        "water_permeance_m_Pa_s": 3.65e-08,
+        "average_pore_size_reported_um": null,
+        "average_pore_size_m": null,
+        "pore_size_radius_or_diameter_confirmed": false,
+        "specimen_id": null,
+        "temperature_K": null,
+        "viscosity_Pa_s": null,
+        "measurement_pressure_Pa": null,
+        "uncertainty_permeance_LMH_bar": null,
+        "porosity_fraction": null,
+        "particle_diameter_m": null,
+        "standalone_layer_scope_confirmed": false,
+        "calibration_accepted": false
+      },
+      {
+        "table_row": 5,
+        "reference_id": "liu_2018b",
+        "reference_as_cited": "Liu et al., 2018b",
+        "thickness_reported_mm": 1.5,
+        "thickness_m": 0.0015,
+        "water_permeance_reported_LMH_bar": 15800,
+        "water_permeance_m_Pa_s": 4.388888888888889e-08,
+        "average_pore_size_reported_um": null,
+        "average_pore_size_m": null,
+        "pore_size_radius_or_diameter_confirmed": false,
+        "specimen_id": null,
+        "temperature_K": null,
+        "viscosity_Pa_s": null,
+        "measurement_pressure_Pa": null,
+        "uncertainty_permeance_LMH_bar": null,
+        "porosity_fraction": null,
+        "particle_diameter_m": null,
+        "standalone_layer_scope_confirmed": false,
+        "calibration_accepted": false
+      },
+      {
+        "table_row": 6,
+        "reference_id": "silva_2021",
+        "reference_as_cited": "Silva et al., 2021",
+        "thickness_reported_mm": 1,
+        "thickness_m": 0.001,
+        "water_permeance_reported_LMH_bar": 30000,
+        "water_permeance_m_Pa_s": 8.333333333333334e-08,
+        "average_pore_size_reported_um": null,
+        "average_pore_size_m": null,
+        "pore_size_radius_or_diameter_confirmed": false,
+        "specimen_id": null,
+        "temperature_K": null,
+        "viscosity_Pa_s": null,
+        "measurement_pressure_Pa": null,
+        "uncertainty_permeance_LMH_bar": null,
+        "porosity_fraction": null,
+        "particle_diameter_m": null,
+        "standalone_layer_scope_confirmed": false,
+        "calibration_accepted": false
+      },
+      {
+        "table_row": 7,
+        "reference_id": "ha_2017",
+        "reference_as_cited": "Ha et al., 2017",
+        "thickness_reported_mm": 4,
+        "thickness_m": 0.004,
+        "water_permeance_reported_LMH_bar": null,
+        "water_permeance_m_Pa_s": null,
+        "average_pore_size_reported_um": 1.1,
+        "average_pore_size_m": 1.1e-06,
+        "pore_size_radius_or_diameter_confirmed": false,
+        "specimen_id": null,
+        "temperature_K": null,
+        "viscosity_Pa_s": null,
+        "measurement_pressure_Pa": null,
+        "uncertainty_permeance_LMH_bar": null,
+        "porosity_fraction": null,
+        "particle_diameter_m": null,
+        "standalone_layer_scope_confirmed": false,
+        "calibration_accepted": false
+      },
+      {
+        "table_row": 8,
+        "reference_id": "gu_2021",
+        "reference_as_cited": "Gu et al., 2021",
+        "thickness_reported_mm": 5.9,
+        "thickness_m": 0.005900000000000001,
+        "water_permeance_reported_LMH_bar": null,
+        "water_permeance_m_Pa_s": null,
+        "average_pore_size_reported_um": 1.27,
+        "average_pore_size_m": 1.27e-06,
+        "pore_size_radius_or_diameter_confirmed": false,
+        "specimen_id": null,
+        "temperature_K": null,
+        "viscosity_Pa_s": null,
+        "measurement_pressure_Pa": null,
+        "uncertainty_permeance_LMH_bar": null,
+        "porosity_fraction": null,
+        "particle_diameter_m": null,
+        "standalone_layer_scope_confirmed": false,
+        "calibration_accepted": false
+      },
+      {
+        "table_row": 9,
+        "reference_id": "guesmi_2020",
+        "reference_as_cited": "Guesmi et al., 2020",
+        "thickness_reported_mm": 2,
+        "thickness_m": 0.002,
+        "water_permeance_reported_LMH_bar": null,
+        "water_permeance_m_Pa_s": null,
+        "average_pore_size_reported_um": 1.35,
+        "average_pore_size_m": 1.35e-06,
+        "pore_size_radius_or_diameter_confirmed": false,
+        "specimen_id": null,
+        "temperature_K": null,
+        "viscosity_Pa_s": null,
+        "measurement_pressure_Pa": null,
+        "uncertainty_permeance_LMH_bar": null,
+        "porosity_fraction": null,
+        "particle_diameter_m": null,
+        "standalone_layer_scope_confirmed": false,
+        "calibration_accepted": false
+      },
+      {
+        "table_row": 10,
+        "reference_id": "qin_2015",
+        "reference_as_cited": "Qin et al., 2015",
+        "thickness_reported_mm": 3,
+        "thickness_m": 0.003,
+        "water_permeance_reported_LMH_bar": null,
+        "water_permeance_m_Pa_s": null,
+        "average_pore_size_reported_um": 1.22,
+        "average_pore_size_m": 1.22e-06,
+        "pore_size_radius_or_diameter_confirmed": false,
+        "specimen_id": null,
+        "temperature_K": null,
+        "viscosity_Pa_s": null,
+        "measurement_pressure_Pa": null,
+        "uncertainty_permeance_LMH_bar": null,
+        "porosity_fraction": null,
+        "particle_diameter_m": null,
+        "standalone_layer_scope_confirmed": false,
+        "calibration_accepted": false
+      }
+    ]
+  },
+  "table_S3": {
+    "source_location": "Table S3, rendered page 6",
+    "classification": "Wastewater/emulsion comparison; tabulated water permeance must not be assumed clean-water permeance under common conditions.",
+    "rows": [
+      {
+        "table_row": 1,
+        "contaminant": "engine oil",
+        "reference_as_cited": "Chang et al., 2010",
+        "plot_symbol": "red square",
+        "thickness_m": 0.001,
+        "average_pore_size_m": 1.4e-07,
+        "water_permeance_reported_LMH_bar": 315,
+        "water_permeance_m_Pa_s": 8.75e-10,
+        "rejection_reported_percent": 98.5,
+        "rejection_fraction": 0.985,
+        "temperature_K": null,
+        "test_pressure_Pa": null,
+        "feed_concentration": null,
+        "droplet_size_distribution": null,
+        "crossflow_velocity_m_s": null,
+        "uncertainty": null,
+        "clean_water_permeance_confirmed": false,
+        "calibration_accepted": false
+      },
+      {
+        "table_row": 2,
+        "contaminant": "emulsified oil",
+        "reference_as_cited": "Abadi et al., 2011",
+        "plot_symbol": "red diamond",
+        "thickness_m": 0.0015,
+        "average_pore_size_m": 2e-07,
+        "water_permeance_reported_LMH_bar": 400,
+        "water_permeance_m_Pa_s": 1.1111111111111113e-09,
+        "rejection_reported_percent": 84.6,
+        "rejection_fraction": 0.846,
+        "temperature_K": null,
+        "test_pressure_Pa": null,
+        "feed_concentration": null,
+        "droplet_size_distribution": null,
+        "crossflow_velocity_m_s": null,
+        "uncertainty": null,
+        "clean_water_permeance_confirmed": false,
+        "calibration_accepted": false
+      },
+      {
+        "table_row": 3,
+        "contaminant": "emulsified oil",
+        "reference_as_cited": "Ebrahimi et al., 2009",
+        "plot_symbol": "red pentagon",
+        "thickness_m": 0.001,
+        "average_pore_size_m": 1e-07,
+        "water_permeance_reported_LMH_bar": 500,
+        "water_permeance_m_Pa_s": 1.388888888888889e-09,
+        "rejection_reported_percent": 59.0,
+        "rejection_fraction": 0.59,
+        "temperature_K": null,
+        "test_pressure_Pa": null,
+        "feed_concentration": null,
+        "droplet_size_distribution": null,
+        "crossflow_velocity_m_s": null,
+        "uncertainty": null,
+        "clean_water_permeance_confirmed": false,
+        "calibration_accepted": false
+      },
+      {
+        "table_row": 4,
+        "contaminant": "cyclohexane",
+        "reference_as_cited": "Liu et al., 2018a",
+        "plot_symbol": "red downward triangle",
+        "thickness_m": 0.003,
+        "average_pore_size_m": 2e-07,
+        "water_permeance_reported_LMH_bar": 350,
+        "water_permeance_m_Pa_s": 9.722222222222223e-10,
+        "rejection_reported_percent": 93.0,
+        "rejection_fraction": 0.93,
+        "temperature_K": null,
+        "test_pressure_Pa": null,
+        "feed_concentration": null,
+        "droplet_size_distribution": null,
+        "crossflow_velocity_m_s": null,
+        "uncertainty": null,
+        "clean_water_permeance_confirmed": false,
+        "calibration_accepted": false
+      },
+      {
+        "table_row": 5,
+        "contaminant": "engine oil",
+        "reference_as_cited": "Zhou et al., 2010",
+        "plot_symbol": "red upward triangle",
+        "thickness_m": 0.001,
+        "average_pore_size_m": 2e-07,
+        "water_permeance_reported_LMH_bar": 441,
+        "water_permeance_m_Pa_s": 1.225e-09,
+        "rejection_reported_percent": 97.8,
+        "rejection_fraction": 0.978,
+        "temperature_K": null,
+        "test_pressure_Pa": null,
+        "feed_concentration": null,
+        "droplet_size_distribution": null,
+        "crossflow_velocity_m_s": null,
+        "uncertainty": null,
+        "clean_water_permeance_confirmed": false,
+        "calibration_accepted": false
+      },
+      {
+        "table_row": 6,
+        "contaminant": "hydraulic oil",
+        "reference_as_cited": "Zhu et al., 2016",
+        "plot_symbol": "red right-pointing triangle",
+        "thickness_m": 0.001,
+        "average_pore_size_m": 2e-07,
+        "water_permeance_reported_LMH_bar": 600,
+        "water_permeance_m_Pa_s": 1.6666666666666667e-09,
+        "rejection_reported_percent": 97.0,
+        "rejection_fraction": 0.97,
+        "temperature_K": null,
+        "test_pressure_Pa": null,
+        "feed_concentration": null,
+        "droplet_size_distribution": null,
+        "crossflow_velocity_m_s": null,
+        "uncertainty": null,
+        "clean_water_permeance_confirmed": false,
+        "calibration_accepted": false
+      },
+      {
+        "table_row": 7,
+        "contaminant": "toluene",
+        "reference_as_cited": "Zhang et al., 2018",
+        "plot_symbol": "red hexagon",
+        "thickness_m": 0.002,
+        "average_pore_size_m": 1e-07,
+        "water_permeance_reported_LMH_bar": 287,
+        "water_permeance_m_Pa_s": 7.972222222222223e-10,
+        "rejection_reported_percent": 93.0,
+        "rejection_fraction": 0.93,
+        "temperature_K": null,
+        "test_pressure_Pa": null,
+        "feed_concentration": null,
+        "droplet_size_distribution": null,
+        "crossflow_velocity_m_s": null,
+        "uncertainty": null,
+        "clean_water_permeance_confirmed": false,
+        "calibration_accepted": false
+      },
+      {
+        "table_row": 8,
+        "contaminant": "peanut oil",
+        "reference_as_cited": "Yang et al., 2015",
+        "plot_symbol": "red star",
+        "thickness_m": 0.002,
+        "average_pore_size_m": 1e-07,
+        "water_permeance_reported_LMH_bar": 414,
+        "water_permeance_m_Pa_s": 1.1500000000000002e-09,
+        "rejection_reported_percent": 96.3,
+        "rejection_fraction": 0.963,
+        "temperature_K": null,
+        "test_pressure_Pa": null,
+        "feed_concentration": null,
+        "droplet_size_distribution": null,
+        "crossflow_velocity_m_s": null,
+        "uncertainty": null,
+        "clean_water_permeance_confirmed": false,
+        "calibration_accepted": false
+      },
+      {
+        "table_row": 9,
+        "contaminant": "crude oil",
+        "reference_as_cited": "Nandi et al., 2009",
+        "plot_symbol": "red circle",
+        "thickness_m": 0.0045000000000000005,
+        "average_pore_size_m": 2e-07,
+        "water_permeance_reported_LMH_bar": 690,
+        "water_permeance_m_Pa_s": 1.916666666666667e-09,
+        "rejection_reported_percent": 94.9,
+        "rejection_fraction": 0.9490000000000001,
+        "temperature_K": null,
+        "test_pressure_Pa": null,
+        "feed_concentration": null,
+        "droplet_size_distribution": null,
+        "crossflow_velocity_m_s": null,
+        "uncertainty": null,
+        "clean_water_permeance_confirmed": false,
+        "calibration_accepted": false
+      }
+    ]
+  },
+  "supplement_reference_list": [
+    "Abadi, S.R.H., Sebzari, M.R., Hemati, M., Rekabdar, F. and Mohammadi, T. 2011. Ceramic membrane performance in microfiltration of oily wastewater. Desalination. 265(1-3), 222-228.",
+    "Chang, Q., Zhou, J.-e., Wang, Y., Wang, J. and Meng, G. 2010. Hydrophilic modification of Al2O3 microfiltration membrane with nano-sized γ-Al2O3 coating. Desalination. 262(1-3), 110-114.",
+    "Ebrahimi, M., Ashaghi, K.S., Engel, L., Willershausen, D., Mund, P., Bolduan, P. and Czermak, P. 2009. Characterization and application of different ceramic membranes for the oil-field produced water treatment. Desalination. 245(1-3), 533-540.",
+    "Gu, Q., Kotobuki, M., Kirk, C.H., He, M., Lim, G.J.H., Ng, T.C.A., Zhang, L., Ng, H.Y. and Wang, J. 2021. Overcoming the Trade-off between Water Permeation and Mechanical Strength of Ceramic Membrane Supports by Interfacial Engineering. ACS Appl. Mater. Interfaces. 13(24), 29199-29211.",
+    "Guan, K., Liu, Y., Zhu, W., Chu, Y., Peng, C., Lv, M., Sun, Q., Rao, P. and Wu, J. 2017. Influence of microstructure properties and layer thickness on strength and permeance of ceramic membranes. Int. J. Appl. Ceram. Technol. 14(4), 562-573.",
+    "Guesmi, Y., Lafi, R., Agougui, H., Jabli, M., Oun, A., Majumdar, S. and Hafiane, A. 2020. Synthesis and characterization of alpha alumina-natural apatite based porous ceramic support for filtration application. Mater. Chem. Phys. 239.",
+    "Ha, J.-H., Abbas Bukhari, S.Z., Lee, J. and Song, I.-H. 2017. The membrane properties of alumina-coated alumina support layers and alumina-coated diatomite–kaolin composite support layers. Adv. Appl. Ceram. 117(1), 1-8.",
+    "Liu, R., Raman, A.K.Y., Shaik, I., Aichele, C. and Kim, S.-J. 2018a. Inorganic microfiltration membranes incorporated with hydrophilic silica nanoparticles for oil-in-water emulsion separation. J. Water Process. Eng. 26, 124-130.",
+    "Liu, Y., Zhu, W., Guan, K., Peng, C. and Wu, J. 2018b. Preparation of high permeable alumina ceramic membrane with good separation performance via UV curing technique. RSC Adv. 8(24), 13567-13577.",
+    "Nandi, B.K., Uppaluri, R. and Purkait, M.K. 2009. Treatment of Oily Waste Water Using Low-Cost Ceramic Membrane: Flux Decline Mechanism and Economic Feasibility. Sep. Sci. Technol. 44(12), 2840-2869.",
+    "Qin, H., Guo, W., Gao, P. and Xiao, H. 2020. Spheroidization of low-cost alumina powders for the preparation of high-flux flat-sheet ceramic membranes. Ceram. Int. 46(9), 13189-13197.",
+    "Qin, W., Lei, B., Peng, C. and Wu, J. 2015. Corrosion resistance of ultra-high purity porous alumina ceramic support. Mater. Lett. 144, 74-77.",
+    "Qin, W., Peng, C. and Wu, J. 2017. A sacrificial-interlayer technique for single-step coating preparation of highly permeable alumina membrane. Ceram. Int. 43(1), 901-904.",
+    "Silva, A.O., Hotza, D., Machado, R., Rezwan, K. and Wilhelm, M. 2021. Porous asymmetric microfiltration membranes shaped by combined alumina freeze and tape casting. J. Eur. Ceram. Soc. 41(1), 871-879.",
+    "Yang, B., Geng, P. and Chen, G. 2015. One-dimensional structured IrO2 nanorods modified membrane for electrochemical anti-fouling in filtration of oily wastewater. Sep. Purif. Technol. 156, 931-941.",
+    "Zhang, D., Wang, G., Zhi, S., Xu, K., Zhu, L., Li, W., Zeng, Z. and Xue, Q. 2018. Superhydrophilicity and underwater superoleophobicity TiO2/Al2O3 composite membrane with ultra low oil adhesion for highly efficient oil-in-water emulsions separation. Appl. Surf. Sci. 458, 157-165.",
+    "Zhou, J.-e., Chang, Q., Wang, Y., Wang, J. and Meng, G. 2010. Separation of stable oil–water emulsion by the hydrophilic nano-sized ZrO2 modified Al2O3 microfiltration membrane. Sep. Purif. Technol. 75(3), 243-248.",
+    "Zhu, L., Chen, M., Dong, Y., Tang, C.Y., Huang, A. and Li, L. 2016. A low-cost mullite-titania composite ceramic hollow fiber microfiltration membrane for highly efficient separation of oil-in-water emulsion. Water Res. 90, 277-285.",
+    "Zhu, W., Liu, Y., Guan, K., Peng, C. and Wu, J. 2021. Design and optimization of ceramic membrane structure: From the perspective of flux matching between support and membrane. Ceram. Int. 47(9), 12357-12365."
+  ],
+  "raw_docx_table_cells": [
+    [
+      [
+        "Specification",
+        "Value"
+      ],
+      [
+        "particle density (ρ)",
+        "3.7 kg/m3"
+      ],
+      [
+        "Particle diameter (dp)",
+        "0.3~3 μm"
+      ],
+      [
+        "Operating pressure (ΔP)",
+        "1 bar"
+      ],
+      [
+        "Water viscosity (μ)",
+        "1.0  10-3 Pa·s"
+      ],
+      [
+        "Membrane layer thickness (L)",
+        "10-6~910-3 m"
+      ],
+      [
+        "Temperature (T)",
+        "298.15 K"
+      ]
+    ],
+    [
+      [
+        "Membrane material",
+        "Thickness (mm)",
+        "Water permeance (L m-2 h-1 bar-1)",
+        "Average pore size (μm)",
+        "Reference"
+      ],
+      [
+        "α-Al2O3",
+        "6",
+        "3243",
+        "~",
+        "(Qin et al., 2020)"
+      ],
+      [
+        "α-Al2O3",
+        "4.7",
+        "7600",
+        "~",
+        "(Qin et al., 2017)"
+      ],
+      [
+        "α-Al2O3",
+        "2",
+        "15000",
+        "~",
+        "(Guan et al., 2017)"
+      ],
+      [
+        "α-Al2O3",
+        "3",
+        "13140",
+        "~",
+        "(Zhu et al., 2021)"
+      ],
+      [
+        "α-Al2O3",
+        "1.5",
+        "15800",
+        "~",
+        "(Liu et al., 2018b)"
+      ],
+      [
+        "α-Al2O3",
+        "1",
+        "30000",
+        "~",
+        "(Silva et al., 2021)"
+      ],
+      [
+        "α-Al2O3",
+        "4",
+        "~",
+        "1.1",
+        "(Ha et al., 2017)"
+      ],
+      [
+        "α-Al2O3",
+        "5.9",
+        "~",
+        "1.27",
+        "(Gu et al., 2021)"
+      ],
+      [
+        "α-Al2O3",
+        "2",
+        "~",
+        "1.35",
+        "(Guesmi et al., 2020)"
+      ],
+      [
+        "α-Al2O3",
+        "3",
+        "~",
+        "1.22",
+        "(Qin et al., 2015)"
+      ]
+    ],
+    [
+      [
+        "Legend",
+        "Contaminants",
+        "Thickness (mm)",
+        "Average pore size (μm)",
+        "Water permeance (L m-2 h-1 bar-1)",
+        "Rejection (%)",
+        "Reference"
+      ],
+      [
+        "",
+        "Engine oil",
+        "1",
+        "0.14",
+        "315",
+        "98.5",
+        "(Chang et al., 2010)"
+      ],
+      [
+        "",
+        "Emulsified oil",
+        "1.5",
+        "0.2",
+        "400",
+        "84.6",
+        "(Abadi et al., 2011)"
+      ],
+      [
+        "",
+        "Emulsified oil",
+        "1",
+        "0.1",
+        "500",
+        "59",
+        "(Ebrahimi et al., 2009)"
+      ],
+      [
+        "",
+        "Cyclohexane",
+        "3",
+        "0.2",
+        "350",
+        "93",
+        "(Liu et al., 2018a)"
+      ],
+      [
+        "",
+        "Engine oil",
+        "1",
+        "0.2",
+        "441",
+        "97.8",
+        "(Zhou et al., 2010)"
+      ],
+      [
+        "",
+        "Hydraulic oil",
+        "1",
+        "0.2",
+        "600",
+        "97.0",
+        "(Zhu et al., 2016)"
+      ],
+      [
+        "",
+        "Toluene",
+        "2",
+        "0.1",
+        "287",
+        "93.0",
+        "(Zhang et al., 2018)"
+      ],
+      [
+        "",
+        "Peanut oil",
+        "2",
+        "0.1",
+        "414",
+        "96.3",
+        "(Yang et al., 2015)"
+      ],
+      [
+        "",
+        "Crude oil",
+        "4.5",
+        "0.2",
+        "690",
+        "94.9",
+        "(Nandi et al., 2009)"
+      ]
+    ]
+  ],
+  "production_parameters_changed": false,
+  "original_source_checks": [
+    {
+      "reference_id": "zhu_2021",
+      "doi": "10.1016/j.ceramint.2021.01.088",
+      "primary_url": "https://www.sciencedirect.com/science/article/abs/pii/S0272884221001103",
+      "access": "Publisher-indexed abstract and section snippets read; direct page fetch returned HTTP 403. Full article/PDF not obtained.",
+      "priority": 1,
+      "reason": "Transfer-coated membrane layers with similar properties on supports with different fluxes; directly targets support/top-layer matching and penetration resistance.",
+      "needs": [
+        "Full article, figures and tables, and supplement if one exists.",
+        "Support IDs, support and coated-specimen permeance under the same pressure/temperature/area convention.",
+        "Layer thickness/pore-size distributions and evidence that top layer/interface stay comparable.",
+        "Replicates/error bars and matched series for fitting versus holdout."
+      ],
+      "not_yet_established": "Abstract-level similarity is not proof of unchanged selective resistance or a validated geometry.",
+      "subsequent_local_review": "Supplied main-article Markdown and figures now reviewed; see docs/zhu_matched_validation.md and literature/zhu2021_extraction.json. A bounded M1 nominal holdout screen passes but reading-corner screen fails. No supplement required for this check."
+    },
+    {
+      "reference_id": "guan_2017",
+      "doi": "10.1111/ijac.12666",
+      "primary_url": "https://ceramics.onlinelibrary.wiley.com/doi/10.1111/ijac.12666",
+      "access": "Publisher-indexed bibliographic identity confirmed; full original not reviewed.",
+      "priority": 2,
+      "reason": "Independent support microstructure/thickness/strength reference; suitability awaits specimen-level data."
+    },
+    {
+      "reference_id": "qin_2017",
+      "doi": "10.1016/j.ceramint.2016.09.206",
+      "primary_url": "https://www.sciencedirect.com/science/article/pii/S0272884216317370",
+      "access": "Publisher-indexed abstract and experimental snippet read; direct page fetch returned HTTP 403.",
+      "priority": 3,
+      "audit_note": "Original snippet reports bare tubular support permeance 7562 LMH/bar (rounded 7600 in S2), OD 13.4 mm and ID 8.7 mm. Radial wall thickness is 2.35 mm; S2 lists 4.7 mm, equal to OD minus ID. Preserve S2; do not treat it as a verified radial transport thickness. Coated membrane 1410 LMH/bar is a different hydraulic quantity from the bare support.",
+      "inferred_layer_resistance_accepted": false
+    },
+    {
+      "reference_id": "liu_2018b",
+      "doi": "10.1039/C7RA13195J",
+      "primary_url": "https://pubs.rsc.org/en/content/articlehtml/2018/ra/c7ra13195j",
+      "access": "Publisher-indexed HTML methods/Table 1 reviewed; direct page fetch returned HTTP 403. Original PDF not visually audited.",
+      "audit_note": "S2 value 15800 LMH/bar is the bare-support Table 1 value; original paper also discusses a much lower coated-membrane permeance. Methods describe 25 mm diameter/1.5 mm thick disks, although Table 1 caption says tubular. Do not mix bare support and coated specimens or assign gas-porometry temperature to the water test.",
+      "inferred_layer_resistance_accepted": false
+    },
+    {
+      "reference_id": "gu_2021",
+      "doi": "10.1021/acsami.1c08157",
+      "primary_url": "https://pubs.acs.org/doi/10.1021/acsami.1c08157",
+      "access": "Publisher-indexed abstract reviewed; direct page fetch returned HTTP 403.",
+      "audit_note": "Original abstract describes kaolin-nanoflake/alumina composite multichannel supports. S2 generic alpha-Al2O3 label is insufficient to establish pure-alumina composition or simple flat through-thickness geometry."
+    },
+    {
+      "reference_id": "ha_2017",
+      "doi": "10.1080/17436753.2017.1369658",
+      "primary_url": "https://www.tandfonline.com/doi/full/10.1080/17436753.2017.1369658",
+      "access": "Publisher-indexed abstract and bibliographic record reviewed; no original full-text audit.",
+      "audit_note": "2017 online publication, 2018 volume 117(1), pp. 1-8. Study compares alumina and diatomite-kaolin supports with alumina coatings; S2 row needs specimen/material identification."
+    }
+  ]
+}

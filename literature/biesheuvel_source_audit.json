@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "audited_date": "2026-11-08",
+  "dataset_id": "biesheuvel_1999_table2",
+  "source_url": "https://ris.utwente.nl/ws/portalfiles/portal/6077974/t0000015.pdf",
+  "source_title": "Porous Ceramic Membranes: Suspension Processing, Mechanical and Transport Properties, and Application in the Osmotic Tensiometer",
+  "author": "Pieter Maarten Biesheuvel",
+  "defense_date": "2000-02-04",
+  "chapter": 7,
+  "scope": "Author thesis reproducing the same support study and Table 2, not an independent dataset. Original journal publisher PDF not inspected.",
+  "files_sha256": {
+    "literature/inbox/Biesheuvel1999Design/source_audit/biesheuvel_thesis.pdf": "04ef9a16e86dcc38c7531e1a1005c435e575eb6c1e6f3b5e122d46375afa6641",
+    "literature/inbox/Biesheuvel1999Design/source_audit/table2_audit.png": "89577ad39c15a4f081976b7aabffdb6ff6b7f2284531b86bb955d009dac615bf",
+    "literature/inbox/Biesheuvel1999Design/source_audit/closure_audit.png": "8893714affc7b9647bfdeb2a9d9d85e9ac28ce6528f3debcd957d43eab8cc085",
+    "literature/inbox/Biesheuvel1999Design/source_audit/particles_audit.png": "a33ea7cccf70653c9aaf3137260f54005a6ccc377c863436220ac5e6fa3eb3e9",
+    "literature/inbox/Biesheuvel1999Design/source_audit/methods_audit.png": "5f279ca7d3a9b06d4982bacafd9b42f9b29279cf9d689a907963e0335f528a33"
+  },
+  "visual_checks": [
+    {
+      "pdf_zero_based_page": 118,
+      "printed_page": 105,
+      "content": "All nine Table 2 rows and seven columns match supplied Markdown; permeability multiplier is 1e-16 m2."
+    },
+    {
+      "pdf_zero_based_page": 110,
+      "printed_page": 97,
+      "content": "Eq. 2: k=d_p^2*epsilon^3/[180*(1-epsilon)^2], packed single-sized spherical-particle approximation."
+    },
+    {
+      "pdf_zero_based_page": 116,
+      "printed_page": 103,
+      "content": "Primary powder means about 175/400/600 nm for AKP-50/30/15; AKP-50 agglomeration explicitly reported."
+    },
+    {
+      "pdf_zero_based_page": 117,
+      "printed_page": 104,
+      "content": "CR-6 about 700 nm and dry pressed; flat supports, distilled water, nitrogen pressurization up to 2 MPa, at least three pressure differences; nominal disks 39 mm by about 2 mm."
+    }
+  ],
+  "columns": [
+    "powder",
+    "temperature_C",
+    "hold_h",
+    "k_times_1e_minus16_m2",
+    "porosity_fraction",
+    "strength_MPa",
+    "weibull_modulus"
+  ],
+  "visually_transcribed_table2_rows": [
+    [
+      "CR-6",
+      1260,
+      3,
+      6.99,
+      0.4,
+      97,
+      10.7
+    ],
+    [
+      "AKP-30",
+      1050,
+      1,
+      1.9,
+      0.349,
+      109,
+      9.8
+    ],
+    [
+      "AKP-30",
+      1100,
+      1,
+      1.35,
+      0.286,
+      199,
+      12.5
+    ],
+    [
+      "AKP-30",
+      1150,
+      1,
+      0.766,
+      0.237,
+      146,
+      5.8
+    ],
+    [
+      "AKP-30",
+      1100,
+      0,
+      1.35,
+      0.315,
+      134,
+      5.0
+    ],
+    [
+      "AKP-30",
+      1100,
+      5,
+      1.37,
+      0.284,
+      201,
+      6.3
+    ],
+    [
+      "AKP-30",
+      1100,
+      10,
+      1.26,
+      0.273,
+      140,
+      5.3
+    ],
+    [
+      "AKP-15",
+      1100,
+      1,
+      3.89,
+      0.297,
+      144,
+      12.1
+    ],
+    [
+      "AKP-50",
+      1100,
+      1,
+      1.14,
+      0.299,
+      92,
+      9.7
+    ]
+  ],
+  "nominal_primary_particle_diameter_m": {
+    "CR-6": 7e-07,
+    "AKP-30": 4e-07,
+    "AKP-15": 6e-07,
+    "AKP-50": 1.75e-07
+  },
+  "uncertainty": "No quantified permeability/particle-size uncertainty, replicate count or raw per-pressure series available here; strength Weibull statistics are not permeability uncertainty.",
+  "not_audited_for_this_fit": [
+    "Radial-flow Eq. 12",
+    "Mechanical pressure-limit model",
+    "Mo supplementary data",
+    "Jan layer resistance"
+  ]
+}

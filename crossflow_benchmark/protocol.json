@@ -1,0 +1,38 @@
+{
+  "protocol_id": "crossflow-critical-flux-v1",
+  "specified_date": "2026-11-09",
+  "extraction": "literature/crossflow_extraction.json",
+  "target_flux_LMH": 100.0,
+  "process_area_m2": 1.0,
+  "flow_conventions": [
+    {
+      "id": "table_literal",
+      "factor": 1.0
+    },
+    {
+      "id": "per_channel_scenario",
+      "factor": 7.0
+    }
+  ],
+  "capacity_fractions": [
+    1.0,
+    0.8
+  ],
+  "nominal_capacity_fraction": 1.0,
+  "nominal_recovery": 0.5,
+  "module_inlet_concentration_kg_m3": 0.01,
+  "assumed_rejection": 1.0,
+  "maximum_recycle_iterations": 5000,
+  "assumptions": [
+    "Garc\u00eda table rows are source-specific empirical operating points, not fitted channel physics.",
+    "A factor of seven is an explicit per-channel-flow scenario, not an accepted correction. Axial loss stays fixed while module flow scales.",
+    "Scale source and process membrane areas by parallel replication at unchanged per-element axial loss; fractional equivalent module count is a normalization.",
+    "Chiu figure constraint assumes nondecreasing critical flux and uses reading intervals to bracket, without interpolation through the transition or extrapolation.",
+    "Capacity fractions 1.0 and 0.8 are operating-policy scenarios; 0.8 is not a measured safety factor.",
+    "Source temperature and viscosity are unavailable. DWSIM uses the preserved 298.15 K pure-water property anchor, a conditional dilute-carrier approximation.",
+    "Passive-solute bookkeeping assumes rejection 1 and fixes module-inlet concentration by adjusting fresh concentration; no particle species or fouling law is implemented in DWSIM.",
+    "The original OpenLB-derived support resistance and fixed non-support impedance supply TMP. Crossflow criteria are common to the three support designs; no geometry-dependent fouling benefit is inferred.",
+    "Separate fresh-feed and circulation pumps retain the previous lumped upstream pressure-loss topology, with no resolved axial TMP field.",
+    "Lowest energy means lowest among solved admissible discrete points under a named policy, never a continuous or validated plant optimum."
+  ]
+}

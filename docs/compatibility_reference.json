@@ -1,0 +1,221 @@
+{
+  "verified_date": "2026-11-08",
+  "platform": "macOS 26.6.2 arm64",
+  "python": "3.12.9",
+  "gcc": "15.2.0",
+  "tinyxml2": "11.0.0",
+  "zlib": "1.2.12",
+  "sources": {
+    "openlb": {
+      "version": "1.9r0",
+      "url": "https://zenodo.org/records/17899765/files/olb-1.9r0.tgz?download=1",
+      "sha256": "e4d2421b50643482036917c4416145f7d6b495492f3afac64e048212361c8b3e"
+    },
+    "dwsim": {
+      "version": "10.2.15",
+      "url": "https://github.com/DanWBR/dwsim10/releases/download/v10.2.15/dwsim-10.2.15-osx-arm64.tar.gz",
+      "sha256": "614a214178dc2c1c46156f355b2b8aeca30d66758ca62be11b7cc67f9a95fde6"
+    }
+  },
+  "dotnet": {
+    "sdk_version": "10.0.403",
+    "url": "https://builds.dotnet.microsoft.com/dotnet/Sdk/10.0.403/dotnet-sdk-10.0.403-osx-arm64.tar.gz",
+    "sha512": "5893c66b48ea3674c7da18501059d606e96f3672fabe4d5e41762e692c7c83df3ee0b2b9dc5a0786191da2dc413d7335158101c14c935ab217f31ac2529770f3"
+  },
+  "openlb": {
+    "case": "official poiseuille2d",
+    "timestamp_utc": "2026-11-08T15:44:07.338332+00:00",
+    "cases": [
+      {
+        "resolution": 32,
+        "arguments": {
+          "RESOLUTION": 32,
+          "REYNOLDS": 10,
+          "DOMAIN_EXTENT": "[2 1]",
+          "PHYS_CHAR_VELOCITY": 1,
+          "PHYS_CHAR_DENSITY": 1,
+          "PHYS_STAT_ITER_T": 1.5,
+          "OVERLAP": 3,
+          "TUNER_PARAM": 0.5,
+          "LATTICE_RELAXATION_TIME": 0.8,
+          "MAX_PHYS_T": 30,
+          "CONVERGENCE_PRECISION": 1e-09,
+          "CONV_ITER": 0.25,
+          "VTK_ENABLED": 0,
+          "GNUPLOT_ENABLED": 1,
+          "COMPUTE_ERROR": 1,
+          "FLOW_TYPE": 1,
+          "BOUNDARY_TYPE": 2
+        },
+        "material_counts": {
+          "1": 1953,
+          "2": 130,
+          "3": 31,
+          "4": 31
+        },
+        "converged_iterations": 19373,
+        "errors": {
+          "velocity_L1_abs": 0.0032002,
+          "velocity_L1_rel": 0.00244063,
+          "velocity_L2_abs": 0.00286185,
+          "velocity_L2_rel": 0.00279288,
+          "velocity_Linf_abs": 0.00514368,
+          "velocity_Linf_rel": 0.00514368,
+          "strainRate_L1_abs": 0.0150799,
+          "strainRate_L1_rel": 0.00408515,
+          "strainRate_L2_abs": 0.00787314,
+          "strainRate_L2_rel": 0.00360559,
+          "strainRate_Linf_abs": 0.00934218,
+          "strainRate_Linf_rel": 0.00498249,
+          "pressure_L1_abs": 0.0111644,
+          "pressure_L1_rel": 0.00731716,
+          "pressure_L2_abs": 0.00936653,
+          "pressure_L2_rel": 0.00737092,
+          "pressure_Linf_abs": 0.0152426,
+          "pressure_Linf_rel": 0.00967787
+        },
+        "wall_s": 1.2155700419971254
+      },
+      {
+        "resolution": 64,
+        "arguments": {
+          "RESOLUTION": 64,
+          "REYNOLDS": 10,
+          "DOMAIN_EXTENT": "[2 1]",
+          "PHYS_CHAR_VELOCITY": 1,
+          "PHYS_CHAR_DENSITY": 1,
+          "PHYS_STAT_ITER_T": 1.5,
+          "OVERLAP": 3,
+          "TUNER_PARAM": 0.5,
+          "LATTICE_RELAXATION_TIME": 0.8,
+          "MAX_PHYS_T": 30,
+          "CONVERGENCE_PRECISION": 1e-09,
+          "CONV_ITER": 0.25,
+          "VTK_ENABLED": 0,
+          "GNUPLOT_ENABLED": 1,
+          "COMPUTE_ERROR": 1,
+          "FLOW_TYPE": 1,
+          "BOUNDARY_TYPE": 2
+        },
+        "material_counts": {
+          "1": 8001,
+          "2": 258,
+          "3": 63,
+          "4": 63
+        },
+        "converged_iterations": 75582,
+        "errors": {
+          "velocity_L1_abs": 0.000812542,
+          "velocity_L1_rel": 0.000614355,
+          "velocity_L2_abs": 0.000719801,
+          "velocity_L2_rel": 0.000699683,
+          "velocity_Linf_abs": 0.00128709,
+          "velocity_Linf_rel": 0.00128709,
+          "strainRate_L1_abs": 0.00398617,
+          "strainRate_L1_rel": 0.00103679,
+          "strainRate_L2_abs": 0.0020529,
+          "strainRate_L2_rel": 0.000913874,
+          "strainRate_Linf_abs": 0.00404479,
+          "strainRate_Linf_rel": 0.00208763,
+          "pressure_L1_abs": 0.00285268,
+          "pressure_L1_rel": 0.00182549,
+          "pressure_L2_abs": 0.00237101,
+          "pressure_L2_rel": 0.00184006,
+          "pressure_Linf_abs": 0.00455542,
+          "pressure_Linf_rel": 0.00286955
+        },
+        "wall_s": 10.775620290994993
+      }
+    ],
+    "velocity_L2_refinement_ratio": 3.991636212399044,
+    "pressure_L2_refinement_ratio": 4.005804158560047,
+    "rejected_exploratory_case": {
+      "resolution": 40,
+      "outlet_material_4_nodes": 0,
+      "velocity_L2_rel": 0.000181226,
+      "pressure_L2_rel": 4.96933,
+      "accepted": false
+    }
+  },
+  "dwsim": {
+    "cases": [
+      {
+        "tool": "DWSIM",
+        "version": "10.2.15.0",
+        "timestamp_utc": "2026-11-08T15:46:28.778146+00:00",
+        "inputs": {
+          "Temperature_K": 298.15,
+          "Inlet_pressure_Pa": 100000,
+          "Outlet_pressure_Pa": 1000000,
+          "Mass_flow_kg_s": 10,
+          "Pump_efficiency_fraction": 0.75
+        },
+        "property_package": "Steam Tables (IAPWS-IF97)",
+        "compounds": [
+          "Water"
+        ],
+        "inlet_pressure_Pa": 100000,
+        "outlet_pressure_Pa": 1000000,
+        "inlet_temperature_K": 298.15,
+        "outlet_temperature_K": 298.2386130462149,
+        "inlet_mass_flow_kg_s": 10,
+        "outlet_mass_flow_kg_s": 10,
+        "inlet_density_kg_m3": 997.0474354080965,
+        "inlet_enthalpy_J_kg": 104928.06751189622,
+        "outlet_enthalpy_J_kg": 106131.6211599399,
+        "inlet_vapor_fraction": 0,
+        "outlet_vapor_fraction": 0,
+        "shaft_power_W": 12035.535696542202,
+        "energy_stream_power_W": 12035.535696542202,
+        "analytical_shaft_power_W": 12035.535696542202,
+        "mass_balance_error_kg_s": 0,
+        "energy_balance_error_W": 0.0007838943656679476,
+        "pump_power_relative_error": 0,
+        "save_reload_solve_checked": true,
+        "initialization_s": 1.0298608,
+        "solve_s": 0.0617966,
+        "scope": "Independent water-pump compatibility probe; no OpenLB-derived input yet."
+      },
+      {
+        "tool": "DWSIM",
+        "version": "10.2.15.0",
+        "timestamp_utc": "2026-11-08T15:46:30.235831+00:00",
+        "inputs": {
+          "Temperature_K": 298.15,
+          "Inlet_pressure_Pa": 100000,
+          "Outlet_pressure_Pa": 1900000,
+          "Mass_flow_kg_s": 10,
+          "Pump_efficiency_fraction": 0.75
+        },
+        "property_package": "Steam Tables (IAPWS-IF97)",
+        "compounds": [
+          "Water"
+        ],
+        "inlet_pressure_Pa": 100000,
+        "outlet_pressure_Pa": 1900000,
+        "inlet_temperature_K": 298.15,
+        "outlet_temperature_K": 298.32748364487435,
+        "inlet_mass_flow_kg_s": 10,
+        "outlet_mass_flow_kg_s": 10,
+        "inlet_density_kg_m3": 997.0474354080965,
+        "inlet_enthalpy_J_kg": 104928.06751189622,
+        "outlet_enthalpy_J_kg": 107335.17472653143,
+        "inlet_vapor_fraction": 0,
+        "outlet_vapor_fraction": 0,
+        "shaft_power_W": 24071.071393084403,
+        "energy_stream_power_W": 24071.071393084403,
+        "analytical_shaft_power_W": 24071.071393084403,
+        "mass_balance_error_kg_s": 0,
+        "energy_balance_error_W": 0.0007532677445851732,
+        "pump_power_relative_error": 0,
+        "save_reload_solve_checked": true,
+        "initialization_s": 0.9998463,
+        "solve_s": 0.060647,
+        "scope": "Independent water-pump compatibility probe; no OpenLB-derived input yet."
+      }
+    ],
+    "power_ratio": 2.0
+  },
+  "existing_implementation_preserved": true,
+  "scope": "Independent engine compatibility and analytical checks; no OpenLB-derived input passed to Julia/DWSIM yet."
+}

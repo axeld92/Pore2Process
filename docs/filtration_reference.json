@@ -1,0 +1,193 @@
+{
+  "verified_date": "2026-11-08",
+  "status": "passed",
+  "run_id": "20261108T192257Z-2d24de62",
+  "full_snapshot": "results/filtration/runs/20261108T192257Z-2d24de62/summary.json",
+  "summary_sha256": "a6b3b130edb5d61bef137b006a4abe4dce5b449a443dccd9cf383e3d08d28917",
+  "original_fresh_pore_run": "/Users/dula/Documents/ChatGPT/Pore2Process/results/filtration/runs/20261108T191117Z-142f753e/summary.json",
+  "experimental_calibration": false,
+  "settings": {
+    "temperature_K": 298.15,
+    "inlet_absolute_pressure_Pa": 100000.0,
+    "support_thickness_m": 0.001,
+    "membrane_area_m2": 1.0,
+    "flux_LMH": 100.0,
+    "flux_m_s": 2.777777777777778e-05,
+    "pump_efficiency_fraction": 0.75,
+    "other_fixed_resistance_m_inv": 0.0
+  },
+  "versions": {
+    "python": "3.12.9",
+    "julia": "1.11.6",
+    "openlb": "1.9r0",
+    "dwsim": "10.2.15.0",
+    "build_command": [
+      "/Users/dula/Documents/ChatGPT/Pore2Process/.local/compatibility/dotnet/dotnet",
+      "build",
+      "/Users/dula/Documents/ChatGPT/Pore2Process/compatibility/dwsim_runner/DwsimProbe.csproj",
+      "--artifacts-path",
+      "/Users/dula/Documents/ChatGPT/Pore2Process/.local/compatibility/runner",
+      "--ignore-failed-sources",
+      "--disable-build-servers",
+      "-p:UseSharedCompilation=false"
+    ],
+    "dotnet_sdk": "10.0.403"
+  },
+  "binary_sha256": "db70395accf5e54003bcf815bcb77d8a0a29054a5a9aaddaa9e96ff1026807dd",
+  "fluid": {
+    "inlet_density_kg_m3": 997.0474354080965,
+    "inlet_viscosity_Pa_s": 0.000890082517572212
+  },
+  "support_resistance_reduction_fraction": 0.5903982582099792,
+  "supports": [
+    {
+      "name": "baseline_4um",
+      "radius_m": 4e-06,
+      "permeability_m2": 2.5112151189257045e-13,
+      "porosity": 0.1256637061435917,
+      "grid_relative_change": 0.003729396797192308,
+      "estimated_process_max_pore_Re": 0.003961805655580611
+    },
+    {
+      "name": "open_5um",
+      "radius_m": 5e-06,
+      "permeability_m2": 6.130870215422716e-13,
+      "porosity": 0.19634954084936204,
+      "grid_relative_change": 0.003737053164619253,
+      "estimated_process_max_pore_Re": 0.003169444524464489
+    }
+  ],
+  "validation": [
+    {
+      "name": "low_pressure",
+      "Q_ratio": 0.10000188801067003,
+      "relative_k_change": 1.8880048101577174e-05
+    },
+    {
+      "name": "double_pressure",
+      "Q_ratio": 1.9999580359399167,
+      "relative_k_change": 2.0982045169870567e-05
+    },
+    {
+      "name": "double_domain",
+      "Q_ratio": 0.5000833142306198,
+      "relative_k_change": 8.971912768274137e-09
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "support_dominated",
+      "alpha": 0.25,
+      "selective_resistance_m_inv": 995533987.1756976,
+      "shaft_energy_saving_fraction": 0.4723186065679338,
+      "cases": [
+        {
+          "support": "baseline_4um",
+          "pressure_drop_Pa": 123.07047189361765,
+          "actual_DWSIM_shaft_power_W": 0.004558165625689542,
+          "actual_specific_shaft_energy_kWh_m3": 4.5581656256895414e-05,
+          "selective_resistance_fraction": 0.2
+        },
+        {
+          "support": "open_5um",
+          "pressure_drop_Pa": 64.94199809916,
+          "actual_DWSIM_shaft_power_W": 0.0024052591888580038,
+          "actual_specific_shaft_energy_kWh_m3": 2.4052591888580035e-05,
+          "selective_resistance_fraction": 0.37901658555593326
+        }
+      ]
+    },
+    {
+      "name": "balanced_baseline",
+      "alpha": 1.0,
+      "selective_resistance_m_inv": 3982135948.7027903,
+      "shaft_energy_saving_fraction": 0.29519912910496304,
+      "cases": [
+        {
+          "support": "baseline_4um",
+          "pressure_drop_Pa": 196.91275502978826,
+          "actual_DWSIM_shaft_power_W": 0.007293065001103161,
+          "actual_specific_shaft_energy_kWh_m3": 7.293065001103161e-05,
+          "selective_resistance_fraction": 0.5
+        },
+        {
+          "support": "open_5um",
+          "pressure_drop_Pa": 138.7842812353306,
+          "actual_DWSIM_shaft_power_W": 0.005140158564271621,
+          "actual_specific_shaft_energy_kWh_m3": 5.140158564271621e-05,
+          "selective_resistance_fraction": 0.7094202357682412
+        }
+      ]
+    },
+    {
+      "name": "selective_dominated",
+      "alpha": 10.0,
+      "selective_resistance_m_inv": 39821359487.0279,
+      "shaft_energy_saving_fraction": 0.05367256892818739,
+      "cases": [
+        {
+          "support": "baseline_4um",
+          "pressure_drop_Pa": 1083.0201526638352,
+          "actual_DWSIM_shaft_power_W": 0.04011185750606819,
+          "actual_specific_shaft_energy_kWh_m3": 0.00040111857506068186,
+          "selective_resistance_fraction": 0.9090909090909091
+        },
+        {
+          "support": "open_5um",
+          "pressure_drop_Pa": 1024.8916788693775,
+          "actual_DWSIM_shaft_power_W": 0.037958951069236115,
+          "actual_specific_shaft_energy_kWh_m3": 0.0003795895106923611,
+          "selective_resistance_fraction": 0.9606515453760688
+        }
+      ]
+    },
+    {
+      "name": "strongly_selective_dominated",
+      "alpha": 100.0,
+      "selective_resistance_m_inv": 398213594870.27905,
+      "shaft_energy_saving_fraction": 0.005845527309010556,
+      "cases": [
+        {
+          "support": "baseline_4um",
+          "pressure_drop_Pa": 9944.094129004308,
+          "actual_DWSIM_shaft_power_W": 0.3682997825557153,
+          "actual_specific_shaft_energy_kWh_m3": 0.003682997825557153,
+          "selective_resistance_fraction": 0.99009900990099
+        },
+        {
+          "support": "open_5um",
+          "pressure_drop_Pa": 9885.96565520985,
+          "actual_DWSIM_shaft_power_W": 0.36614687611888325,
+          "actual_specific_shaft_energy_kWh_m3": 0.003661468761188832,
+          "selective_resistance_fraction": 0.9959206915007657
+        }
+      ]
+    }
+  ],
+  "maximum_relative_energy_residual": 0.0009150758060597259,
+  "verification": {
+    "status": "passed",
+    "summary": "/Users/dula/Documents/ChatGPT/Pore2Process/results/filtration/runs/20261108T192257Z-2d24de62/summary.json",
+    "verified_artifacts": 71,
+    "recomputed_Julia_loads": 8,
+    "actual_new_DWSIM_solves": 0
+  },
+  "tamper_check": {
+    "status": "passed",
+    "modified_copy_rejected": "Recorded artifact changed: supports/baseline_4um/n40/planes.csv",
+    "original_run_unchanged": true
+  },
+  "figure_provenance": {
+    "input_summary_sha256": "a6b3b130edb5d61bef137b006a4abe4dce5b449a443dccd9cf383e3d08d28917",
+    "renderer_sha256": "a4873742cdd52d8fa95da7397e5824420ae2ebebac95b7c9e15c824f6fa9be0f",
+    "image_sha256": "68bb2cc1bb31156163acc575759e267a9a31f5ddc6f773af33df6182e48948ff",
+    "note": "Figure regenerated after visual review; numerical input snapshot unchanged."
+  },
+  "tests": {
+    "direct_Julia_assertions": 280,
+    "new_filtration_Julia_assertions": 65,
+    "Python_tests": 13,
+    "native_invalid_or_unconverged_cases": 7
+  },
+  "scope": "Synthetic straight-pore support screening, clean water, fixed flux and selective resistance within each pair. No grading, fouling, rejection, compaction or mechanical-strength validation. Total here covers modelled transmembrane hydraulic duty only; shaft energy, without motor, crossflow, backwash or plant auxiliaries. No native DWSIM membrane unit."
+}

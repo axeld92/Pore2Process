@@ -1,0 +1,537 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "run_id": "20261108T222740Z-26e9f37b",
+  "timestamp_utc": "2026-11-08T22:28:05.522011+00:00",
+  "protocol": {
+    "protocol_id": "graded-support-fixed-opening-v1",
+    "specified_date": "2026-11-08",
+    "status": "Specified before native simulations; retain failed cases and do not relax screens after observing results.",
+    "geometry": {
+      "body_length_m": 4e-05,
+      "neck_radius_m": 4e-06,
+      "representative_cell_width_m": 2e-05,
+      "body_knots_fraction": [
+        0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1
+      ],
+      "radius_factors": [
+        1,
+        1,
+        "bulk",
+        "bulk",
+        1,
+        1
+      ],
+      "bulk_radii_m": [
+        4e-06,
+        5e-06,
+        6e-06
+      ],
+      "lead_length_each_m": 1.6e-05,
+      "domain_check_lead_length_each_m": 2.4e-05,
+      "scope": "Synthetic axisymmetric connected pore, same necks/interface region, body thickness and representative area; only interior radius changes. Both leads are numerical development sections and excluded from inferred body resistance. No reconstructed experimental specimen."
+    },
+    "numerics": {
+      "resolutions_across_neck_diameter": [
+        24,
+        32,
+        40
+      ],
+      "pressure_drop_Pa": 10,
+      "pressure_checks_Pa": [
+        5,
+        20,
+        -10
+      ],
+      "tau": 0.8,
+      "tau_check": 0.65,
+      "steady_tolerance": 1e-08,
+      "max_steps": 60000
+    },
+    "acceptance": {
+      "baseline_analytical_k_relative_error": 0.01,
+      "baseline_velocity_profile_relative_L2": 0.01,
+      "fine_grid_body_resistance_relative_change": 0.01,
+      "all_plane_mass_relative_spread": 0.01,
+      "inlet_outlet_mass_relative_difference": 0.0001,
+      "pressure_range_resistance_relative_change": 0.005,
+      "lead_extension_resistance_relative_change": 0.005,
+      "tau_resistance_relative_change": 0.005,
+      "native_max_Re": 0.05,
+      "native_max_Mach": 0.001,
+      "dwsim_power_relative_error": 1e-09
+    },
+    "process": {
+      "temperature_K": 298.15,
+      "inlet_absolute_pressure_Pa": 100000,
+      "filtration_flux_LMH": 100,
+      "membrane_area_m2": 1,
+      "pump_efficiency_fraction": 0.75,
+      "baseline_support_flux_at_1bar_m_h": 3.12,
+      "translation": "Apply each measured body resistance / measured baseline body resistance to the published 3.12 m/h support impedance. One common baseline calibration; no design-specific fit. Use Zhu PDF-v2 effective non-support impedance and its reading range unchanged across designs. This is a literature-anchored scenario, not an absolute pore reconstruction or a viscosity-corrected experimental prediction.",
+      "literature_reference": "docs/zhu_pdf_reference.json",
+      "scope": "Transmembrane hydraulic-load shaft energy only. Constant inlet properties, linear flow, unchanged effective non-support impedance. Excludes circulation, fouling, osmotic pressure, backwash, motor losses, selectivity and strength certification. Actual DWSIM pump flowsheets; no native membrane separation unit."
+    }
+  },
+  "versions": {
+    "python": "3.12.9",
+    "julia": "1.11.6",
+    "numpy": "2.5.4",
+    "panel": "1.10.0",
+    "pyvista": "0.49.2",
+    "vtk": "9.7.2",
+    "matplotlib": "3.11.2",
+    "juliacall": "0.9.37",
+    "PythonCall": "0.9.37"
+  },
+  "units": {
+    "length": "m",
+    "pressure": "Pa gauge for OpenLB; absolute for DWSIM",
+    "flow": "m3/s, positive +x",
+    "native_body_resistance": "Pa s/m3",
+    "impedance": "Pa s/m",
+    "permeability": "m2",
+    "shaft_power": "W",
+    "specific_shaft_energy": "kWh/m3"
+  },
+  "implementation_sha256": {
+    "graded_support/__init__.py": "ee5280934c90c390b5b7cb7bca78ae6a20d8cf6a760c1616d801928686f74396",
+    "graded_support/build.py": "d99cae920591fc035939839eb5f92797d932bc9ed4e87ac2d277c484de12e33a",
+    "graded_support/check.py": "b0369fd512c828212fa6e264c68510733359e1ee64afaca67fa7e05814d2992b",
+    "graded_support/geometry.py": "c13948aea278e7056b3880a08d9912fbeef2e0ccdae08517f9b88972dda6d3ca",
+    "graded_support/model.py": "26a9ab883d1e1f27c2c074a7cf9a335d725d13354bdff849b1674a1e7bd8692f",
+    "graded_support/openlb/Makefile": "d03483a1bcdb87f0509f0657ac384520c5761296f8d4b51ff22924e0725a051f",
+    "graded_support/openlb/capillary3d.cpp": "aff5a2a1d79f787e66b9a3829e9190ca39b24020770b8bbd2071c1f286072377",
+    "graded_support/openlb/case.h": "7dabda6ed8ceef23549f4a53447b4b8998af8ff59d6607f6e3d98b5088b2a0f0",
+    "graded_support/openlb/config.mk": "af29acd3f7093b0691a9010aced1a7b3111a3afe23781cd8f7a689ec22f533d6",
+    "graded_support/plot.py": "97c0b214753bccf0522cff821dc270d7dda5c06a1a1d83ececd4982343e5bc0a",
+    "graded_support/protocol.json": "ec9901f6e71b868606f0a6f8bb82f217517e5404f2a6b702bc42e698396ea19f",
+    "graded_support/run.py": "c35fe67319d36c2eb7971bc4a7f8aa4dbc5aa129ca13d5da2ee6b2cc3fe62e31",
+    "graded_support/validate_inputs.py": "620afae958dd9b4e82f6e4402cbe825a56215df1649f76cdd675ef3309c0c666",
+    "julia/src/GradedSupport.jl": "5c22f08248b78704df874db65a06130e81c404792ca314fe293bbdfb47ee8125",
+    "julia/src/Pore2ProcessDemo.jl": "942e20a5552c4e37f848e6441a58ef44c7138bbf971e9178e64bbc8b9a34a315",
+    "julia/src/SeriesCalibration.jl": "87262c160dabca28dedc9e1952e7c63c380ad57d78cd2ec5f8f8d0cf74b88f0b",
+    "julia/src/Hydraulics.jl": "656f034e1396d23f590b718fe3c46460230dd792f4b9bddaca4f604c9451f699",
+    "hydraulic/build.py": "3c52efbd248448a541b3ae60640d377e71e372c3b85136debb6b64b8a330ecb3",
+    "hydraulic/run.py": "cbb4c5b73d0b118397a5499184f0bfaf9fc5c710363e9098012d71b1a3e2f2f4",
+    "coupling/run.py": "f9ac9824a3030bf33e9fe5dbe9afae975a823dbe9b77ebfd3af33269beca3e44",
+    "compatibility/run_dwsim.py": "fa7952f0d0bb3ab93f38dcb849a2bf30483f4245a43fdab0f7bbb7b96bd31b8e",
+    "compatibility/dwsim_runner/Program.cs": "7bacbf10be9f59c616a35f1bbe41b3b1218b0a7894a21193d38a71d144aead21",
+    "src/pore2process_demo/bridge.py": "1daf257b23659f514e1c9640c9a8c7bb3120526ad917a72941d43a62915e3d22",
+    "uv.lock": "597eb4f6ed765f5144b2cb88c822242d9da9107cf9bcd0710e973e5a74969b67",
+    "julia/Project.toml": "7ca5c4f8d603b196334e900593b48ba6b38852fb24c2f20efff62bae80187989",
+    "julia/Manifest.toml": "c9685af7a0a71855ef210a7699134be2f2df9e3173f8494ff18f2db157d01a36"
+  },
+  "runtime_sha256": {
+    ".local/compatibility/runner/bin/DwsimProbe/debug/DwsimProbe.dll": "047ea20ebf62a8b7720c6bb35055d17a33fe823fca58d520de3184f9a49ec79e",
+    ".local/compatibility/dwsim/DWSIM.UnitOperations.dll": "65f5219591b27beb4385dee7156817bff27022382b37d7120c5c40215c535474",
+    ".local/compatibility/dwsim/DWSIM.Thermodynamics.dll": "b1742a9f59b106f555a1e68a636ac91525e53c4ddd71ba0f5353f35530a64b6b"
+  },
+  "binary_sha256": "d83cef92b340378a9c0eb4f221642c68c4184f59b26eb31b509c08e237d4bfa5",
+  "vendor_integrity": {
+    "archive_sha256": "e4d2421b50643482036917c4416145f7d6b495492f3afac64e048212361c8b3e",
+    "original_files_checked": 2070,
+    "preexisting_vendor_config_ignored": true
+  },
+  "scope": "Transmembrane hydraulic-load shaft energy only. Constant inlet properties, linear flow, unchanged effective non-support impedance. Excludes circulation, fouling, osmotic pressure, backwash, motor losses, selectivity and strength certification. Actual DWSIM pump flowsheets; no native membrane separation unit.",
+  "translation_assumption": "Apply each measured body resistance / measured baseline body resistance to the published 3.12 m/h support impedance. One common baseline calibration; no design-specific fit. Use Zhu PDF-v2 effective non-support impedance and its reading range unchanged across designs. This is a literature-anchored scenario, not an absolute pore reconstruction or a viscosity-corrected experimental prediction.",
+  "literature_reference_sha256": "6af2ca4e06aeed4d4efeb33132b2a0f23b0af5e539a737a68eafecdfb507062b",
+  "julia_initialization_s": 2.1836559170042165,
+  "source_run": "results/graded_support/runs/20261108T222740Z-26e9f37b",
+  "summary_sha256": "b016e39d884a9940ffc7bf519c1685cd8509c26633595928e54517dfa4b13daf",
+  "verification": {
+    "status": "passed",
+    "native_cases_reanalyzed": 24,
+    "connectivity_audits": 3,
+    "actual_saved_DWSIM_cases_checked": 9,
+    "Julia_loads_replayed": 9,
+    "artifacts_checked": 270,
+    "new_OpenLB_or_DWSIM_solves_performed_by_checker": false
+  },
+  "openlb_version": "1.9r0",
+  "dwsim_version": "10.2.15.0",
+  "compiler": "g++-15 (Homebrew GCC 15.2.0) 15.2.0",
+  "common_baseline_impedance_multiplier": 813.8447425531299,
+  "native_measurements_reused_in_final_run": 24,
+  "direct_Julia_test_assertions": 372,
+  "Python_tests_passed": 25,
+  "native_input_rejection_checks": 18,
+  "supports": [
+    {
+      "name": "straight",
+      "bulk_radius_m": 4e-06,
+      "body_resistance_Pa_s_m3": 354442958685952.1,
+      "fine_grid_relative_change": 3.6388364910155957e-06,
+      "validation": [
+        {
+          "case_id": "validation/straight/pressure_5",
+          "relative_resistance_change": 1.0487922712187903e-05,
+          "criterion": 0.005
+        },
+        {
+          "case_id": "validation/straight/pressure_20",
+          "relative_resistance_change": 2.0977079793649267e-05,
+          "criterion": 0.005
+        },
+        {
+          "case_id": "validation/straight/pressure_-10",
+          "relative_resistance_change": 4.194931317569317e-05,
+          "criterion": 0.005
+        },
+        {
+          "case_id": "validation/straight/extended_leads",
+          "relative_resistance_change": 4.567131117738654e-10,
+          "criterion": 0.005
+        },
+        {
+          "case_id": "validation/straight/tau_check",
+          "relative_resistance_change": 0.0012163374622073952,
+          "criterion": 0.005
+        }
+      ],
+      "geometry_connectivity": {
+        "declared_profile_matches_material_labels": true,
+        "profile_planes_checked": 361,
+        "six_neighbor_connected_components": 1,
+        "connected_fluid_nodes": 456304,
+        "minimum_cross_section_nodes": 1264,
+        "inlet_nodes": 1264,
+        "outlet_nodes": 1264,
+        "coordinate_contract": "zero-based i,j,k; x=i*dx, y=(j+.5)*dx, z=(k+.5)*dx; metres"
+      },
+      "uncalibrated_geometry_nominal_flux_Re": 0.003958542250616285
+    },
+    {
+      "name": "widened_5um",
+      "bulk_radius_m": 5e-06,
+      "body_resistance_Pa_s_m3": 264817996462927.44,
+      "fine_grid_relative_change": 0.00025580682539150246,
+      "validation": [
+        {
+          "case_id": "validation/widened_5um/pressure_5",
+          "relative_resistance_change": 1.0488655562412852e-05,
+          "criterion": 0.005
+        },
+        {
+          "case_id": "validation/widened_5um/pressure_20",
+          "relative_resistance_change": 2.0979151246436345e-05,
+          "criterion": 0.005
+        },
+        {
+          "case_id": "validation/widened_5um/pressure_-10",
+          "relative_resistance_change": 4.194933340095908e-05,
+          "criterion": 0.005
+        },
+        {
+          "case_id": "validation/widened_5um/tau_check",
+          "relative_resistance_change": 0.0013098481722668698,
+          "criterion": 0.005
+        },
+        {
+          "case_id": "validation/widened_5um/extended_leads",
+          "relative_resistance_change": 1.0662677407680121e-09,
+          "criterion": 0.005
+        }
+      ],
+      "geometry_connectivity": {
+        "declared_profile_matches_material_labels": true,
+        "profile_planes_checked": 361,
+        "six_neighbor_connected_components": 1,
+        "connected_fluid_nodes": 511256,
+        "minimum_cross_section_nodes": 1264,
+        "inlet_nodes": 1264,
+        "outlet_nodes": 1264,
+        "coordinate_contract": "zero-based i,j,k; x=i*dx, y=(j+.5)*dx, z=(k+.5)*dx; metres"
+      },
+      "uncalibrated_geometry_nominal_flux_Re": 0.003957157067654706
+    },
+    {
+      "name": "widened_6um",
+      "bulk_radius_m": 6e-06,
+      "body_resistance_Pa_s_m3": 227277540566651.84,
+      "fine_grid_relative_change": 7.948961152637324e-05,
+      "validation": [
+        {
+          "case_id": "validation/widened_6um/pressure_5",
+          "relative_resistance_change": 1.0489066491148336e-05,
+          "criterion": 0.005
+        },
+        {
+          "case_id": "validation/widened_6um/pressure_-10",
+          "relative_resistance_change": 4.1949382012740344e-05,
+          "criterion": 0.005
+        },
+        {
+          "case_id": "validation/widened_6um/pressure_20",
+          "relative_resistance_change": 2.0981421787080734e-05,
+          "criterion": 0.005
+        },
+        {
+          "case_id": "validation/widened_6um/extended_leads",
+          "relative_resistance_change": 6.975312549784007e-10,
+          "criterion": 0.005
+        },
+        {
+          "case_id": "validation/widened_6um/tau_check",
+          "relative_resistance_change": 0.0016384864833343116,
+          "criterion": 0.005
+        }
+      ],
+      "geometry_connectivity": {
+        "declared_profile_matches_material_labels": true,
+        "profile_planes_checked": 361,
+        "six_neighbor_connected_components": 1,
+        "connected_fluid_nodes": 576748,
+        "minimum_cross_section_nodes": 1264,
+        "inlet_nodes": 1264,
+        "outlet_nodes": 1264,
+        "coordinate_contract": "zero-based i,j,k; x=i*dx, y=(j+.5)*dx, z=(k+.5)*dx; metres"
+      },
+      "uncalibrated_geometry_nominal_flux_Re": 0.003956344651867811
+    }
+  ],
+  "fine_grid_metrics": {
+    "straight": {
+      "permeability_cell_m2": 2.511215121530609e-13,
+      "body_resistance_Pa_s_m3": 354442958685952.1,
+      "body_impedance_Pa_s_m": 141777.18347438087,
+      "body_pressure_drop_Pa": 5.555514844798283,
+      "measured_flow_m3_s": 1.56739320351985e-14,
+      "all_plane_mass_relative_spread": 0.00032574183194777407,
+      "inlet_outlet_mass_relative_difference": 7.059228211480828e-08,
+      "maximum_speed_m_s": 0.0006231322327774518,
+      "max_Re": 0.005584132997515921,
+      "max_Mach": 2.4180005169798673e-05,
+      "max_density_departure": 1.510207159505228e-05,
+      "lubrication_reference_resistance_Pa_s_m3": 354152581078241.0,
+      "lubrication_relative_difference": 0.0008199223250811016,
+      "continuous_body_volume_porosity": 0.1256637061435917,
+      "baseline_profile_relative_L2": 0.0007796440207695033,
+      "convergence_flow_relative_std": 3.4544541826683786e-09,
+      "convergence_pressure_relative_std": 3.1897031546114843e-10
+    },
+    "widened_5um": {
+      "permeability_cell_m2": 3.361110383209235e-13,
+      "body_resistance_Pa_s_m3": 264817996462927.44,
+      "body_impedance_Pa_s_m": 105927.19858517099,
+      "body_pressure_drop_Pa": 4.82999724200229,
+      "measured_flow_m3_s": 1.8238931290602274e-14,
+      "all_plane_mass_relative_spread": 0.0005319249087461453,
+      "inlet_outlet_mass_relative_difference": 7.988563881490357e-08,
+      "maximum_speed_m_s": 0.0007248525124966541,
+      "max_Re": 0.0064956884276767815,
+      "max_Mach": 2.8127155967183454e-05,
+      "max_density_departure": 1.510207159505228e-05,
+      "lubrication_reference_resistance_Pa_s_m3": 262847323641856.1,
+      "lubrication_relative_difference": 0.007497404933658247,
+      "continuous_body_volume_porosity": 0.15341444125030154,
+      "convergence_flow_relative_std": 4.062157341680622e-09,
+      "convergence_pressure_relative_std": 1.8561252687166346e-09
+    },
+    "widened_6um": {
+      "permeability_cell_m2": 3.9162801364052276e-13,
+      "body_resistance_Pa_s_m3": 227277540566651.84,
+      "body_impedance_Pa_s_m": 90911.01622666075,
+      "body_pressure_drop_Pa": 4.450496790632741,
+      "measured_flow_m3_s": 1.9581771166375236e-14,
+      "all_plane_mass_relative_spread": 0.0007481998391543569,
+      "inlet_outlet_mass_relative_difference": 9.151721485626831e-08,
+      "maximum_speed_m_s": 0.0007780599507220884,
+      "max_Re": 0.006972501206536916,
+      "max_Mach": 3.01918158638931e-05,
+      "max_density_departure": 1.510207159505228e-05,
+      "lubrication_reference_resistance_Pa_s_m3": 222110507639193.1,
+      "lubrication_relative_difference": 0.023263343019558125,
+      "continuous_body_volume_porosity": 0.18640116411299437,
+      "convergence_flow_relative_std": 4.45452477857739e-09,
+      "convergence_pressure_relative_std": 7.079745799155922e-09
+    }
+  },
+  "process_scenarios": [
+    {
+      "name": "nominal",
+      "fixed_non_support_impedance_Pa_s_m": 250946524.48872787,
+      "cases": [
+        {
+          "support": "straight",
+          "julia": {
+            "measured_body_resistance_ratio": 1.0,
+            "support_permeance_m_Pa_s": 8.666666666666668e-09,
+            "support_impedance_Pa_s_m": 115384615.38461536,
+            "non_support_impedance_Pa_s_m": 250946524.48872787,
+            "pressure_drop_Pa": 10175.864996481756,
+            "flow_m3_s": 2.777777777777778e-05,
+            "shaft_power_W": 0.37688388875858353,
+            "specific_shaft_energy_kWh_m3": 0.0037688388875858356,
+            "non_support_fraction": 0.685026461511001,
+            "support_fraction": 0.314973538488999
+          },
+          "actual_DWSIM_power_W": 0.3768838887585837,
+          "actual_specific_shaft_energy_kWh_m3": 0.0037688388875858365,
+          "energy_saving_vs_straight_fraction": 0.0
+        },
+        {
+          "support": "widened_5um",
+          "julia": {
+            "measured_body_resistance_ratio": 0.7471385450699973,
+            "support_permeance_m_Pa_s": 1.1599812007898365e-08,
+            "support_impedance_Pa_s_m": 86208293.66192275,
+            "non_support_impedance_Pa_s_m": 250946524.48872787,
+            "pressure_drop_Pa": 9365.41161529585,
+            "flow_m3_s": 2.777777777777778e-05,
+            "shaft_power_W": 0.3468670968628093,
+            "specific_shaft_energy_kWh_m3": 0.0034686709686280928,
+            "non_support_fraction": 0.7443065054363175,
+            "support_fraction": 0.2556934945636825
+          },
+          "actual_DWSIM_power_W": 0.3468670968628091,
+          "actual_specific_shaft_energy_kWh_m3": 0.0034686709686280906,
+          "energy_saving_vs_straight_fraction": 0.07964466720678032
+        },
+        {
+          "support": "widened_6um",
+          "julia": {
+            "measured_body_resistance_ratio": 0.6412245891673279,
+            "support_permeance_m_Pa_s": 1.3515805246833877e-08,
+            "support_impedance_Pa_s_m": 73987452.59623013,
+            "non_support_impedance_Pa_s_m": 250946524.48872787,
+            "pressure_drop_Pa": 9025.9438079155,
+            "flow_m3_s": 2.777777777777778e-05,
+            "shaft_power_W": 0.3342942151079815,
+            "specific_shaft_energy_kWh_m3": 0.003342942151079815,
+            "non_support_fraction": 0.7723000430426357,
+            "support_fraction": 0.22769995695736428
+          },
+          "actual_DWSIM_power_W": 0.33429421510798124,
+          "actual_specific_shaft_energy_kWh_m3": 0.003342942151079812,
+          "energy_saving_vs_straight_fraction": 0.11300476067281207
+        }
+      ]
+    },
+    {
+      "name": "reading_low",
+      "fixed_non_support_impedance_Pa_s_m": 244557990.40760395,
+      "cases": [
+        {
+          "support": "straight",
+          "julia": {
+            "measured_body_resistance_ratio": 1.0,
+            "support_permeance_m_Pa_s": 8.666666666666668e-09,
+            "support_impedance_Pa_s_m": 115384615.38461536,
+            "non_support_impedance_Pa_s_m": 244557990.40760395,
+            "pressure_drop_Pa": 9998.405716450536,
+            "flow_m3_s": 2.777777777777778e-05,
+            "shaft_power_W": 0.37031132283150137,
+            "specific_shaft_energy_kWh_m3": 0.0037031132283150132,
+            "non_support_fraction": 0.6794360725075643,
+            "support_fraction": 0.32056392749243573
+          },
+          "actual_DWSIM_power_W": 0.3703113228315014,
+          "actual_specific_shaft_energy_kWh_m3": 0.003703113228315014,
+          "energy_saving_vs_straight_fraction": 0.0
+        },
+        {
+          "support": "widened_5um",
+          "julia": {
+            "measured_body_resistance_ratio": 0.7471385450699973,
+            "support_permeance_m_Pa_s": 1.1599812007898365e-08,
+            "support_impedance_Pa_s_m": 86208293.66192275,
+            "non_support_impedance_Pa_s_m": 244557990.40760395,
+            "pressure_drop_Pa": 9187.95233526463,
+            "flow_m3_s": 2.777777777777778e-05,
+            "shaft_power_W": 0.34029453093572704,
+            "specific_shaft_energy_kWh_m3": 0.0034029453093572704,
+            "non_support_fraction": 0.7393679531018892,
+            "support_fraction": 0.2606320468981109
+          },
+          "actual_DWSIM_power_W": 0.3402945309357273,
+          "actual_specific_shaft_energy_kWh_m3": 0.003402945309357273,
+          "energy_saving_vs_straight_fraction": 0.08105826110381265
+        },
+        {
+          "support": "widened_6um",
+          "julia": {
+            "measured_body_resistance_ratio": 0.6412245891673279,
+            "support_permeance_m_Pa_s": 1.3515805246833877e-08,
+            "support_impedance_Pa_s_m": 73987452.59623013,
+            "non_support_impedance_Pa_s_m": 244557990.40760395,
+            "pressure_drop_Pa": 8848.48452788428,
+            "flow_m3_s": 2.777777777777778e-05,
+            "shaft_power_W": 0.3277216491808993,
+            "specific_shaft_energy_kWh_m3": 0.0032772164918089927,
+            "non_support_fraction": 0.7677334451921838,
+            "support_fraction": 0.23226655480781624
+          },
+          "actual_DWSIM_power_W": 0.3277216491808994,
+          "actual_specific_shaft_energy_kWh_m3": 0.0032772164918089936,
+          "energy_saving_vs_straight_fraction": 0.11501045478423333
+        }
+      ]
+    },
+    {
+      "name": "reading_high",
+      "fixed_non_support_impedance_Pa_s_m": 256624179.81918314,
+      "cases": [
+        {
+          "support": "straight",
+          "julia": {
+            "measured_body_resistance_ratio": 1.0,
+            "support_permeance_m_Pa_s": 8.666666666666668e-09,
+            "support_impedance_Pa_s_m": 115384615.38461536,
+            "non_support_impedance_Pa_s_m": 256624179.81918314,
+            "pressure_drop_Pa": 10333.57764454996,
+            "flow_m3_s": 2.777777777777778e-05,
+            "shaft_power_W": 0.38272509794629483,
+            "specific_shaft_energy_kWh_m3": 0.003827250979462948,
+            "non_support_fraction": 0.6898336359993749,
+            "support_fraction": 0.3101663640006251
+          },
+          "actual_DWSIM_power_W": 0.382725097946295,
+          "actual_specific_shaft_energy_kWh_m3": 0.00382725097946295,
+          "energy_saving_vs_straight_fraction": 0.0
+        },
+        {
+          "support": "widened_5um",
+          "julia": {
+            "measured_body_resistance_ratio": 0.7471385450699973,
+            "support_permeance_m_Pa_s": 1.1599812007898365e-08,
+            "support_impedance_Pa_s_m": 86208293.66192275,
+            "non_support_impedance_Pa_s_m": 256624179.81918314,
+            "pressure_drop_Pa": 9523.124263364054,
+            "flow_m3_s": 2.777777777777778e-05,
+            "shaft_power_W": 0.3527083060505205,
+            "specific_shaft_energy_kWh_m3": 0.0035270830605052053,
+            "non_support_fraction": 0.7485410504245191,
+            "support_fraction": 0.25145894957548076
+          },
+          "actual_DWSIM_power_W": 0.3527083060505204,
+          "actual_specific_shaft_energy_kWh_m3": 0.0035270830605052036,
+          "energy_saving_vs_straight_fraction": 0.07842911807154762
+        },
+        {
+          "support": "widened_6um",
+          "julia": {
+            "measured_body_resistance_ratio": 0.6412245891673279,
+            "support_permeance_m_Pa_s": 1.3515805246833877e-08,
+            "support_impedance_Pa_s_m": 73987452.59623013,
+            "non_support_impedance_Pa_s_m": 256624179.81918314,
+            "pressure_drop_Pa": 9183.656455983702,
+            "flow_m3_s": 2.777777777777778e-05,
+            "shaft_power_W": 0.3401354242956927,
+            "specific_shaft_energy_kWh_m3": 0.003401354242956927,
+            "non_support_fraction": 0.7762103769438308,
+            "support_fraction": 0.22378962305616928
+          },
+          "actual_DWSIM_power_W": 0.3401354242956926,
+          "actual_specific_shaft_energy_kWh_m3": 0.003401354242956926,
+          "energy_saving_vs_straight_fraction": 0.1112800646708011
+        }
+      ]
+    }
+  ]
+}

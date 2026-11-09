@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "protocol_id": "zhu-2021-M1-series-impedance-v1",
+  "specified_date": "2026-11-08",
+  "status": "Retrospective same-study split, specified before fitting digitized values. Article figures and reported fits have already been read; not blind validation.",
+  "dataset": "Figure 6 M1 black diamonds only; M2 and M3 are not pooled or fitted",
+  "selection_reason": "Authors identify M1 as the more stable series in Sections 3.3/4.1. Its entire visible series is digitized, with no residual-based exclusions.",
+  "calibration_selection": "Odd one-based ranks after ordering by increasing support flux",
+  "holdout_selection": "Even one-based ranks after ordering by increasing support flux",
+  "model": "1/P_total = 1/P_support + Z_fixed, with permeance P in m/(Pa s) and impedance Z in Pa s/m",
+  "objective": "Equal-weight least squares of measured Z_fixed = 1/P_total - 1/P_support. Only the positive intercept is fitted; the support coefficient is fixed at 1.",
+  "author_fits_used_for_training": false,
+  "primary_screen": {"max_absolute_relative_flux_error": 0.10, "basis": "Project engineering screen set before fitting, not a measurement uncertainty or statistical acceptance test."},
+  "digitization": {"marker_center_bound_px": 2.0, "axis_anchor_bound_px": 1.0, "interpretation": "Deterministic reading/axis sensitivity bounds, not experimental error bars or confidence intervals.", "method": "Threshold dark components in a recorded Figure 6 region; inspect numbered overlay against all black-diamond data markers. Preserve raw pixel centres and image hash."},
+  "unknown_experimental_temperature_K": null,
+  "unknown_experimental_viscosity_Pa_s": null,
+  "use_impedance_instead_of_intrinsic_permeability": "Avoid assigning an unreported water viscosity or specimen-specific support thickness. Z_fixed is effective non-support impedance, including any interface/access contribution; not a separately measured intrinsic selective-layer property.",
+  "conditional_process": {"filtration_flux_m_s": 2.777777777777778e-5, "membrane_area_m2": 1.0, "pump_efficiency_fraction": 0.75, "support_flux_range_m_h": [3.120, 97.53], "scope": "Measured 1-bar conductances translated to fixed 100 LMH under linear Darcy flow, same water conditions and unchanged fixed layer. No circulation, fouling, osmotic, backwash or strength-certified energy prediction."},
+  "scientific_scope": "Test the measured support/whole-membrane series law, not a reconstructed OpenLB geometry. Digitized points share one experiment and unknown replicate/error structure. Preserve the earlier Biesheuvel failed screen."
+}

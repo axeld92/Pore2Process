@@ -1,0 +1,74 @@
+{
+  "project": "/Users/dula/Documents/ChatGPT/Pore2Process",
+  "os": "macOS-26.6.2-arm64-arm-64bit",
+  "architecture": "arm64",
+  "python": {
+    "executable": "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "version": "3.9.6"
+  },
+  "tools": {
+    "julia": {
+      "path": "/Users/dula/.juliaup/bin/julia",
+      "returncode": 0,
+      "output": "julia version 1.11.6"
+    },
+    "juliaup": {
+      "path": "/Users/dula/.juliaup/bin/juliaup",
+      "returncode": 0,
+      "output": "Juliaup 1.24.0"
+    },
+    "uv": {
+      "path": null
+    },
+    "git": {
+      "path": "/opt/homebrew/bin/git",
+      "returncode": 0,
+      "output": "git version 2.49.0"
+    },
+    "codex": {
+      "path": "/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS/codex",
+      "returncode": 0,
+      "output": "codex-cli 0.160.1\nWARNING: proceeding, even though we could not create PATH aliases: Operation not permitted (os error 1)"
+    }
+  },
+  "packages": {
+    "numpy": {
+      "version": "2.0.2",
+      "status": "import passed",
+      "returncode": 0,
+      "output": "import passed"
+    },
+    "panel": {
+      "status": "absent"
+    },
+    "pyvista": {
+      "status": "absent"
+    },
+    "vtk": {
+      "status": "absent"
+    },
+    "matplotlib": {
+      "version": "3.9.4",
+      "status": "import passed",
+      "returncode": 0,
+      "output": "import passed\n/Users/dula/.matplotlib is not a writable directory\nMatplotlib created a temporary cache directory at /var/folders/zw/gglg_gyj5lbfmthmks9frpwm0000gs/T/matplotlib-xt8zt1ci because there was an issue with the default path (/Users/dula/.matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing."
+    },
+    "juliacall": {
+      "status": "absent"
+    },
+    "pytest": {
+      "status": "absent"
+    }
+  },
+  "files": {
+    ".venv": false,
+    "uv.lock": false,
+    "julia/Project.toml": false,
+    "julia/Manifest.toml": false,
+    ".local/julia_runtime.json": false
+  },
+  "git": {
+    "returncode": 0,
+    "output": "## No commits yet on main\n?? .gitignore\n?? .python-version\n?? PORE2PROCESS_FIRST_SIMULATION_CODEX_HANDOFF.md\n?? pyproject.toml\n?? results/\n?? scripts/\n?? src/"
+  }
+}

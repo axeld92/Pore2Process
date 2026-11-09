@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/branding/pore2process-logo.png" alt="Pore2Process — packed porous column and wordmark" width="820">
+</p>
+
 # Pore2Process
 
 **From porous-material structure to process-scale performance.**
@@ -11,11 +15,11 @@ The aim is a reproducible chain of calculations in which a change in pore
 geometry produces an explainable change in a process result, with the
 assumptions and intermediate evidence available for inspection.
 
-> **Repository status — 9 November 2026:** this initial publication contains the
-> project overview and roadmap. The implementation is being prepared for a
-> separate code publication. The demonstrations described below have been
-> developed and checked in the local development workspace; they cannot yet be
-> reproduced from this repository alone.
+> **Research prototype — 9 November 2026.** Source, tests, dependency locks and
+> curated numerical references are included. The connected hydraulic workflow
+> has been checked on an Apple Silicon Mac; the native OpenLB/DWSIM setup is
+> platform-specific. Reacting systems and physical fouling predictions remain
+> future work.
 
 ## The connected workflow
 
@@ -64,6 +68,15 @@ resistance**, which can include intermediate-layer and interface contributions.
 It does not uniquely identify the intrinsic selective-layer resistance or
 reconstruct a particular experimental specimen.
 
+At **12 LMH** and inlet **Re = 20**, widening the support interior from **4 to
+6 µm** reduced total pump shaft energy by **11.20%**, with the openings and
+effective non-support resistance held fixed. The fixed contribution rose from
+68.5% to 77.2% of membrane resistance. This is a conditional clean-hydraulic
+scenario, with biological retention treated as a separate transferred
+sensitivity. See the [scientific report](docs/star_channel_showcase.md).
+
+![Synthetic channel, hydraulic refinement, pump energy and axial flux](docs/star_channel_study.png)
+
 ## What has been demonstrated locally
 
 | Stage | Documented development status |
@@ -97,7 +110,7 @@ sustainable flux, fouling time or a validated bioprocess model.
 
 Published articles and their available supplements provide experimental
 evidence. Full article files remain in the local literature workspace; the
-code publication will include curated source metadata and extraction records.
+repository includes curated source metadata and extraction records.
 New laboratory measurements and unavailable raw datasets are not prerequisites
 for this computational-tool project.
 
@@ -111,9 +124,56 @@ research question and published kinetic and thermal data.
 
 See the [project roadmap](ROADMAP.md) for milestones and acceptance criteria.
 
-## Code and reproducibility
+## Start with the capillary-network example
 
-Source code, setup instructions, tested platform details and exact launch/test
-commands will be published together after the active implementation handoff.
-No installation from this documentation-only snapshot is required. Platform
-portability will be reported according to checks actually performed.
+Install **uv** and **Julia** using their official installation instructions,
+then run from a terminal. The initial Python–Julia example does not require
+OpenLB or DWSIM.
+
+```sh
+git clone https://github.com/axeld92/Pore2Process.git
+cd Pore2Process
+source scripts/env.sh
+uv sync --locked
+uv run python scripts/bootstrap_julia.py
+uv run python -m pore2process_demo.cli --output results/default
+uv run panel serve app.py --address 127.0.0.1 --port 5006 --show
+```
+
+Open `http://127.0.0.1:5006/app` and press **Run simulation** in **Capillary
+network**. Bootstrap accepts `--julia /absolute/path/to/julia` if Julia is not on
+PATH. Python 3.12 and Julia 1.11.6 were tested with matching
+JuliaCall/PythonCall 0.9.37; the exact dependencies are saved in `uv.lock` and
+`julia/Manifest.toml`.
+
+```sh
+uv run python scripts/preflight.py
+julia --startup-file=no --project=julia -e 'using Pkg; Pkg.instantiate(); Pkg.test()'
+uv run pytest -q
+```
+
+Use the same Julia executable selected by bootstrap for direct Julia tests.
+The VTK tests need normal host graphics access. The recorded full numerical
+and interface checks are in the [acceptance report](docs/implementation_status.md)
+and [browser record](docs/browser_checks.md).
+
+## Reproduce the connected showcase
+
+The native setup has been checked on **macOS ARM64**, with **OpenLB 1.9r0**,
+**DWSIM 10.2.15**, a private **.NET 10** runtime and **Homebrew GCC 15**. Its
+builders currently use that platform's compiler and library paths.
+
+Follow the [clean-checkout reproduction guide](docs/reproduction.md) to download
+the pinned tools, run the prerequisite studies and generate the filtration
+showcase. The interface uses completed native evidence and launches actual
+Julia/DWSIM process calculations; it does not rerun OpenLB whenever a control
+changes. Native study generation can take substantial time.
+
+| Documentation | Contents |
+| --- | --- |
+| [Setup and examples](docs/setup_and_examples.md) | Detailed Python–Julia setup, model derivation, contracts and original example commands |
+| [Clean-checkout reproduction](docs/reproduction.md) | Native prerequisites and ordered connected-study commands |
+| [Filtration showcase](docs/star_channel_showcase.md) | Geometry, model, quantitative results and evidence limits |
+| [Literature workspace](literature/README.md) | Curated references, extractions and provenance |
+| [Integration roadmap](docs/integration_roadmap.md) | Detailed milestone and research status |
+| [Publication record](docs/code_publication.md) | Published snapshot and verification scope |

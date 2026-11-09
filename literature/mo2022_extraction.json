@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "reviewed_date": "2026-11-08",
+  "doi": "10.1016/j.watres.2022.118658",
+  "source_folder": "literature/inbox/Mo2022Dissecting",
+  "source_markdown": "literature/inbox/Mo2022Dissecting/Mo2022Dissecting.md",
+  "source_files_sha256": {
+    "Mo2022Dissecting.md": "81a2272388ecbd5ca832daa667f5026ce433810f09ce8d2cac8f75abbfaa8f91",
+    "Mo2022Dissecting_meta.json": "1e59b0193dc85a1baf44b74b48c20b83e0e22b230ce948c6f07322b2baab5b94",
+    "_page_0_Picture_1.jpeg": "12274754c14b95a842974a366cf52630a6f566d1da1956bbcdf6753e5309adbb",
+    "_page_0_Picture_5.jpeg": "9ddd49ee9f69e5bd373286122f58e4e10cbf0a501e0f5bc59b6c9d9f480c3030",
+    "_page_0_Picture_6.jpeg": "be69f15e4c2bc77c646820f2599808beba3eae52e8dfc8121fb4ec20def28a00",
+    "_page_1_Picture_7.jpeg": "1785f8043a32723da359dd133b9743c8d6a0d14aeaa915901a39fdc5df8b8ce4",
+    "_page_3_Figure_1.jpeg": "a217e393ef08bc6149e6b7650b18dad11b1613838c05b4aacd1c25f24e2dafe4",
+    "_page_4_Figure_1.jpeg": "e64e37328132bcd9ab0b7cd239da142cdf6ea2a7fb80753766bff4e05ca4c730",
+    "_page_5_Figure_1.jpeg": "86e83ae600d80196bc259563b79e1b3ff93314a9baecec8d4e5b323d46c310ae",
+    "_page_6_Figure_1.jpeg": "48421f2ea4fabce66e2edaebb844d7bbea08470067b12708ad721fbbbf08c4e4",
+    "_page_6_Figure_3.jpeg": "2ce0afcb64a3227215dfc4f9372ebb8b85a798115337f92152837df1b5fa62fd",
+    "_page_7_Figure_1.jpeg": "7cc6f8b2fdc6cb3ba3891c1e94613c9fc395b4f17de1af7c03e84e8eb43494f6"
+  },
+  "metadata_page_count": 9,
+  "metadata_extraction_methods": {
+    "source_page_indices_0_to_3": "surya",
+    "source_page_indices_4_to_8": "pdftext"
+  },
+  "figures_visually_reviewed": {
+    "1": "_page_1_Picture_7.jpeg",
+    "2": "_page_3_Figure_1.jpeg",
+    "3": "_page_4_Figure_1.jpeg",
+    "4": "_page_5_Figure_1.jpeg",
+    "5": "_page_6_Figure_1.jpeg",
+    "6": "_page_6_Figure_3.jpeg",
+    "7": "_page_7_Figure_1.jpeg"
+  },
+  "supplement_received": true,
+  "original_pdf_received": false,
+  "accepted_experimental_calibration": false,
+  "classification": "Author-model settings/reported resistances in main article; supplement now provides secondary compilations (ten S2, nine S3 rows). No Mo geometry or matched-layer calibration accepted.",
+  "author_model_settings": {
+    "water_viscosity_Pa_s": {
+      "value": 0.001,
+      "location": "Section 2.1, text following Eq. 1",
+      "temperature_K": null
+    },
+    "fig4_default_top": {
+      "particle_diameter_m": 1.7e-06,
+      "thickness_m": 1e-05,
+      "location": "Fig. 4 caption; panels e/f vary the stated top-layer settings"
+    },
+    "fig5_fig6_baseline_layers": {
+      "bottom": {
+        "particle_diameter_m": 3e-06,
+        "thickness_m": 0.001
+      },
+      "intermediate": {
+        "particle_diameter_m": 1.7e-06,
+        "thickness_m": 1e-05
+      },
+      "top": {
+        "particle_diameter_m": 3e-07,
+        "thickness_m": 1e-06
+      },
+      "location": "Figs. 5\u20136 captions; swept quantities vary by panel"
+    }
+  },
+  "reported_resistances": {
+    "classification": "model_reported_not_experimental",
+    "bottom_resistance_m_inv": 10100000000.0,
+    "intermediate_resistance_m_inv": 388000000000.0,
+    "location": "Section 3.3, prose paragraph following Fig. 4 in converted layout",
+    "markdown_line": 194,
+    "uncertainty": null,
+    "original_equation_reproduction_complete": false
+  },
+  "independent_derived_values": {
+    "method": "Dimensional L/R conversion and series-resistance upper bound; not a production solver or experimental calibration.",
+    "bottom_permeability_m2": 9.900990099009901e-14,
+    "intermediate_permeability_m2": 2.5773195876288663e-17,
+    "intermediate_to_bottom_resistance_ratio": 38.415841584158414,
+    "maximum_bottom_removal_energy_saving_fraction": 0.025370509922130118,
+    "bound_assumptions": [
+      "Nonnegative top/other fixed resistances",
+      "Fixed filtration flux, membrane area and pump efficiency",
+      "Only bottom resistance changes; theoretical complete removal",
+      "Reported model resistance values are applicable to the same reference configuration"
+    ]
+  },
+  "required_supplement": [
+    {
+      "item": "Section S1",
+      "purpose": "Implementation, constants, parameter units and matching-line criterion",
+      "main_article_markdown_line": 156,
+      "received": true,
+      "source": "SupportingInformation.docx"
+    },
+    {
+      "item": "Table S2 and supplementary references",
+      "purpose": "Fig. 2b experimental rows, specimens, conditions and original sources",
+      "main_article_markdown_line": 162,
+      "received": true,
+      "source": "SupportingInformation.docx"
+    },
+    {
+      "item": "Table S3 and supplementary references",
+      "purpose": "Fig. 7 experimental tradeoff comparisons",
+      "main_article_markdown_line": 198,
+      "received": true,
+      "source": "SupportingInformation.docx"
+    }
+  ],
+  "equation_checks_pending_original_pdf": [
+    "Eq. 1 total-resistance symbol",
+    "Eq. 2 particle-size symbol, porosity exponent and coefficient",
+    "Eq. 9 denominator, derivative and force sign",
+    "Eq. 18 pressure-drop symbol"
+  ],
+  "production_parameters_changed": false,
+  "external_access_check": {
+    "publisher_full_article_http_status": 403,
+    "supplement_retrieved": false,
+    "supplement_received_from_user": true,
+    "supplement_retrieval_scope": "User supplied DOCX, fully read and visually inspected; earlier publisher retrieval remained unsuccessful."
+  },
+  "supplement_source": "literature/inbox/Mo2022Dissecting/SupportingInformation.docx",
+  "supplement_sha256": "29c57d6bafb42bb5f8af4b140dab214d9dbfc8e1b99fd61ab4e3f2e16fb45180",
+  "supplement_extraction": "literature/mo2022_supplement_extraction.json",
+  "supplement_review": "literature/mo2022_supplement_review.md",
+  "next_source_priority": {
+    "reference": "Zhu et al. (2021), DOI 10.1016/j.ceramint.2021.01.088",
+    "status": "Full supplied Markdown/figures now reviewed; M1 fit and held-out check executed. No further article required for bounded reference.",
+    "local_report": "docs/zhu_matched_validation.md",
+    "remaining": "Digitization/experimental uncertainty and specimen-linked morphology before stronger geometry validation."
+  }
+}

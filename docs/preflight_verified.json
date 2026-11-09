@@ -1,0 +1,91 @@
+{
+  "project": "/Users/dula/Documents/ChatGPT/Pore2Process",
+  "os": "macOS-26.6.2-arm64-arm-64bit",
+  "architecture": "arm64",
+  "python": {
+    "executable": "/Users/dula/Documents/ChatGPT/Pore2Process/.venv/bin/python",
+    "version": "3.12.9"
+  },
+  "tools": {
+    "julia": {
+      "path": "/Users/dula/.juliaup/bin/julia",
+      "returncode": 0,
+      "output": "julia version 1.11.6"
+    },
+    "juliaup": {
+      "path": "/Users/dula/.juliaup/bin/juliaup",
+      "returncode": 0,
+      "output": "Juliaup 1.24.0"
+    },
+    "uv": {
+      "path": "/Users/dula/Documents/ChatGPT/Pore2Process/.tools/bin/uv",
+      "returncode": 0,
+      "output": "uv 0.13.7 (316c827e0 2026-11-03 aarch64-apple-darwin)"
+    },
+    "git": {
+      "path": "/opt/homebrew/bin/git",
+      "returncode": 0,
+      "output": "git version 2.49.0"
+    },
+    "codex": {
+      "path": "/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS/codex",
+      "returncode": 0,
+      "output": "codex-cli 0.160.1\nWARNING: proceeding, even though we could not create PATH aliases: Operation not permitted (os error 1)"
+    }
+  },
+  "packages": {
+    "numpy": {
+      "version": "2.5.4",
+      "status": "import passed",
+      "returncode": 0,
+      "output": "import passed"
+    },
+    "panel": {
+      "version": "1.10.0",
+      "status": "import passed",
+      "returncode": 0,
+      "output": "import passed"
+    },
+    "pyvista": {
+      "version": "0.49.2",
+      "status": "import passed",
+      "returncode": 0,
+      "output": "import passed"
+    },
+    "vtk": {
+      "version": "9.7.2",
+      "status": "import passed",
+      "returncode": 0,
+      "output": "import passed"
+    },
+    "matplotlib": {
+      "version": "3.11.2",
+      "status": "import passed",
+      "returncode": 0,
+      "output": "import passed"
+    },
+    "juliacall": {
+      "version": "0.9.37",
+      "status": "import passed",
+      "returncode": 0,
+      "output": "import passed"
+    },
+    "pytest": {
+      "version": "9.2.0",
+      "status": "import passed",
+      "returncode": 0,
+      "output": "import passed"
+    }
+  },
+  "files": {
+    ".venv": true,
+    "uv.lock": true,
+    "julia/Project.toml": true,
+    "julia/Manifest.toml": true,
+    ".local/julia_runtime.json": true
+  },
+  "git": {
+    "returncode": 0,
+    "output": "## No commits yet on main\n?? .gitignore\n?? .python-version\n?? PORE2PROCESS_FIRST_SIMULATION_CODEX_HANDOFF.md\n?? README.md\n?? app.py\n?? docs/\n?? julia/\n?? pyproject.toml\n?? results/\n?? scripts/\n?? src/\n?? tests/\n?? uv.lock"
+  }
+}

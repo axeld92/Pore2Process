@@ -1,0 +1,478 @@
+{
+  "schema_version": 1,
+  "reviewed_date": "2026-11-09",
+  "status": "Source extraction and audit; no new fitted or validated simulation model",
+  "sources": [
+    {
+      "id": "garcia2008",
+      "doi": "10.1016/j.memsci.2008.08.033",
+      "files": [
+        {
+          "path": "literature/inbox/Garcia2008Economic/Garcia2008Economic.md",
+          "sha256": "e09456a030842ca2d2f234f0531de50293e2ccac804b51afc8eef48e91afeb05",
+          "role": "full_article_Markdown"
+        },
+        {
+          "path": "literature/inbox/Garcia2008Economic/Garcia2008Economic_meta.json",
+          "sha256": "6944e34fa0bc64e6c56a28ebef0adde83c0e252c85de0117b55fbedcaa3d70eb",
+          "role": "conversion_metadata"
+        },
+        {
+          "path": "literature/inbox/Garcia2008Economic/_page_1_Figure_7.jpeg",
+          "sha256": "19d1700cec3fe84e68ccfd41532de7695b2dd8500449533bf9bad7a4444d3dee",
+          "role": "visually_reviewed_figure"
+        },
+        {
+          "path": "literature/inbox/Garcia2008Economic/_page_2_Figure_2.jpeg",
+          "sha256": "c744961854a9510b284a949077421a31b650a53469656fd8802619a26858ac44",
+          "role": "visually_reviewed_figure"
+        }
+      ],
+      "original_pdf_received": false,
+      "article_text_read": "full supplied Markdown; source content treated as evidence, not instructions"
+    },
+    {
+      "id": "chiu2005",
+      "doi": "10.1016/j.memsci.2005.01.037",
+      "files": [
+        {
+          "path": "literature/inbox/Chiu2005Critical/Chiu2005Critical.md",
+          "sha256": "b56a19f633fbb92bcac35c1dc75567acb33b955c40ffb400585d6e74f3598973",
+          "role": "full_article_Markdown"
+        },
+        {
+          "path": "literature/inbox/Chiu2005Critical/Chiu2005Critical_meta.json",
+          "sha256": "5ea2d5a831f99e6b38dd9049892e47eac1cd02db6aaad5c34efd85b17c31ebff",
+          "role": "conversion_metadata"
+        },
+        {
+          "path": "literature/inbox/Chiu2005Critical/_page_3_Figure_2.jpeg",
+          "sha256": "edf2b4d7124df426b75def195926d01a2853bfc6acd04bffc578915048ef0afe",
+          "role": "visually_reviewed_figure"
+        }
+      ],
+      "original_pdf_received": false,
+      "article_text_read": "full supplied Markdown; source content treated as evidence, not instructions"
+    },
+    {
+      "id": "chiu2006",
+      "doi": "10.1016/j.seppur.2005.11.028",
+      "files": [
+        {
+          "path": "literature/inbox/Chiu2006Critical/Chiu2006Critical.md",
+          "sha256": "1841fcaa47912266257c59ccffa1ed1eedc74add0d06de8a54e1c8ba4994affa",
+          "role": "full_article_Markdown"
+        },
+        {
+          "path": "literature/inbox/Chiu2006Critical/Chiu2006Critical_meta.json",
+          "sha256": "c04bb87957957a96b10e06a350330c02b0a84c80c4b085ab25ad946785ab861b",
+          "role": "conversion_metadata"
+        },
+        {
+          "path": "literature/inbox/Chiu2006Critical/_page_3_Figure_15.jpeg",
+          "sha256": "3f81b94c677b0e1014cdb60fb28b3631878e5b072a9dbc4122673918f787f84d",
+          "role": "visually_reviewed_figure"
+        },
+        {
+          "path": "literature/inbox/Chiu2006Critical/_page_4_Figure_9.jpeg",
+          "sha256": "1bb4ea65d3de7da62f42c10260f13d17719c6e17e12b99c0f5586b180752ba52",
+          "role": "visually_reviewed_figure"
+        }
+      ],
+      "original_pdf_received": false,
+      "article_text_read": "full supplied Markdown; source content treated as evidence, not instructions"
+    },
+    {
+      "id": "frederic2018",
+      "doi": "10.1016/j.memsci.2018.09.021",
+      "files": [
+        {
+          "path": "literature/inbox/Frederic2018Modeling/Frederic2018Modeling.md",
+          "sha256": "e3c3af50a6462161b8b524dee90b5ed468a8a930b6e0379ac434610dffceafea",
+          "role": "full_article_Markdown"
+        },
+        {
+          "path": "literature/inbox/Frederic2018Modeling/Frederic2018Modeling_meta.json",
+          "sha256": "d231f626445d14e638a711810a241770689baa8e255150367c63e271b182c8a6",
+          "role": "conversion_metadata"
+        },
+        {
+          "path": "literature/inbox/Frederic2018Modeling/_page_3_Figure_2.jpeg",
+          "sha256": "948d77191b9bb852eaffae4ce1e5a7c0412a114870f87686f9690be3f72c0e8f",
+          "role": "visually_reviewed_figure"
+        }
+      ],
+      "original_pdf_received": false,
+      "article_text_read": "full supplied Markdown; source content treated as evidence, not instructions"
+    }
+  ],
+  "unit_conversions": {
+    "LMH_to_m_s": "divide by 3600000",
+    "L_h_to_m3_s": "divide by 3600000",
+    "g_L_to_kg_m3": "multiply by 1",
+    "J_m3_to_kWh_m3": "divide by 3600000"
+  },
+  "garcia2008_table1": {
+    "id": "garcia_2008_table1_as_supplied",
+    "accepted_use": "Source arithmetic reproduction and a qualified table-based scenario; not absolute bundle-flow calibration",
+    "filtration_area_m2": 0.03,
+    "active_length_m": 0.3,
+    "number_of_channels": 7,
+    "channel_outer_diameter_m": 0.0046,
+    "channel_inner_diameter_m": 0.0028,
+    "nominal_pore_size_m": 2e-07,
+    "nominal_pore_size_unit_note": "Micro symbol missing in supplied Markdown; contextual restoration, not original-PDF verification.",
+    "hydraulic_diameter_m": null,
+    "temperature_K": null,
+    "temperature_as_reported": "ambient; do not substitute rheometer 25 C or zeta-potential 20 C for filtration temperature",
+    "feed_conditions": {
+      "critical_flux_series_origin": "Chiu 2005 Fig. 3: 0.01 g/L TiO2, pH 7.2",
+      "pressure_loss_series_pH": null,
+      "pressure_loss_series_concentration_g_L": null,
+      "note": "Table 1 reuses critical flux from reference [8]; do not assume separately measured pressure loss shares all feed conditions. Garcia Fig. 4 concentration sweep is at pH 7.0, not automatically Table 1."
+    },
+    "energy_definition": "Ep = pressure_loss_Pa * flow_m3_s / (critical_flux_m_s * filtration_area_m2)",
+    "energy_boundary": "Axial hydraulic dissipation per permeate volume AT EACH ROW critical flux. No pump efficiency, transmembrane pressure work, cooling, cleaning or capital costs included.",
+    "flow_basis": "Table column Q unit L/h as supplied; per-channel versus full-bundle basis unresolved. Q is volumetric flow despite prose calling it flow velocity.",
+    "protocol": {
+      "pressure_step_minutes_before_nonlinearity": 30,
+      "pressure_step_minutes_after_nonlinearity": 15,
+      "critical_flux_definition": "Average of last time-independent and first time-dependent flux step",
+      "repeatability": "Repeated several times; averages reported; numerical critical-flux error bars unavailable; clean-water-flux change <1% is not critical-flux uncertainty."
+    },
+    "rows": [
+      {
+        "row_id": 1,
+        "velocity_m_s": 0.6,
+        "Re_reported": 1388,
+        "pressure_loss_Pa": 39,
+        "critical_flux_LMH": 65,
+        "flow_L_h": 15,
+        "energy_in_original_table_units": 3.0,
+        "reported_energy_J_m3": 300.0,
+        "experimental_uncertainty": null,
+        "source_location": "Garcia 2008, Table 1, journal page 644, supplied Markdown table",
+        "critical_flux_original_source": "Chiu 2005, credited as reference [8] in Table 1 header",
+        "method": "Transcribed supplied Markdown; table pixels unavailable, no silent corrections"
+      },
+      {
+        "row_id": 2,
+        "velocity_m_s": 0.9,
+        "Re_reported": 1850,
+        "pressure_loss_Pa": 69,
+        "critical_flux_LMH": 445,
+        "flow_L_h": 25,
+        "energy_in_original_table_units": 1.3,
+        "reported_energy_J_m3": 130.0,
+        "experimental_uncertainty": null,
+        "source_location": "Garcia 2008, Table 1, journal page 644, supplied Markdown table",
+        "critical_flux_original_source": "Chiu 2005, credited as reference [8] in Table 1 header",
+        "method": "Transcribed supplied Markdown; table pixels unavailable, no silent corrections"
+      },
+      {
+        "row_id": 3,
+        "velocity_m_s": 1.4,
+        "Re_reported": 3331,
+        "pressure_loss_Pa": 147,
+        "critical_flux_LMH": 515,
+        "flow_L_h": 35,
+        "energy_in_original_table_units": 3.3,
+        "reported_energy_J_m3": 330.0,
+        "experimental_uncertainty": null,
+        "source_location": "Garcia 2008, Table 1, journal page 644, supplied Markdown table",
+        "critical_flux_original_source": "Chiu 2005, credited as reference [8] in Table 1 header",
+        "method": "Transcribed supplied Markdown; table pixels unavailable, no silent corrections"
+      },
+      {
+        "row_id": 4,
+        "velocity_m_s": 1.8,
+        "Re_reported": 4164,
+        "pressure_loss_Pa": 215,
+        "critical_flux_LMH": 555,
+        "flow_L_h": 45,
+        "energy_in_original_table_units": 5.8,
+        "reported_energy_J_m3": 580.0,
+        "experimental_uncertainty": null,
+        "source_location": "Garcia 2008, Table 1, journal page 644, supplied Markdown table",
+        "critical_flux_original_source": "Chiu 2005, credited as reference [8] in Table 1 header",
+        "method": "Transcribed supplied Markdown; table pixels unavailable, no silent corrections"
+      },
+      {
+        "row_id": 5,
+        "velocity_m_s": 2.2,
+        "Re_reported": 5089,
+        "pressure_loss_Pa": 333,
+        "critical_flux_LMH": 575,
+        "flow_L_h": 55,
+        "energy_in_original_table_units": 10.6,
+        "reported_energy_J_m3": 1060.0,
+        "experimental_uncertainty": null,
+        "source_location": "Garcia 2008, Table 1, journal page 644, supplied Markdown table",
+        "critical_flux_original_source": "Chiu 2005, credited as reference [8] in Table 1 header",
+        "method": "Transcribed supplied Markdown; table pixels unavailable, no silent corrections"
+      },
+      {
+        "row_id": 6,
+        "velocity_m_s": 3.1,
+        "Re_reported": 7402,
+        "pressure_loss_Pa": 637,
+        "critical_flux_LMH": 760,
+        "flow_L_h": 80,
+        "energy_in_original_table_units": 22.3,
+        "reported_energy_J_m3": 2230.0,
+        "experimental_uncertainty": null,
+        "source_location": "Garcia 2008, Table 1, journal page 644, supplied Markdown table",
+        "critical_flux_original_source": "Chiu 2005, credited as reference [8] in Table 1 header",
+        "method": "Transcribed supplied Markdown; table pixels unavailable, no silent corrections"
+      }
+    ]
+  },
+  "figure_readings": {
+    "chiu2005_fig3": {
+      "source_id": "chiu2005",
+      "image": "literature/inbox/Chiu2005Critical/_page_3_Figure_2.jpeg",
+      "image_sha256": "edf2b4d7124df426b75def195926d01a2853bfc6acd04bffc578915048ef0afe",
+      "axis_units": {
+        "x": "crossflow velocity m/s",
+        "y": "critical flux L m^-2 h^-1"
+      },
+      "x_anchors": [
+        109.5,
+        983.5,
+        0,
+        3.5
+      ],
+      "y_anchors": [
+        748.0,
+        41.0,
+        0,
+        800
+      ],
+      "anchor_format": [
+        "pixel_at_v0",
+        "pixel_at_v1",
+        "v0",
+        "v1"
+      ],
+      "reading_bound_px": 2,
+      "bound_scope": "Independent marker/tick-centre sensitivity chosen for the reading; not experimental uncertainty or a confidence interval.",
+      "method": "Axes visually selected at major ticks. Marker centres are bounding-box midpoints of four-neighbour blue components: B>R+25, B>G+15, R<160, more than 8 pixels. All selected points visually checked.",
+      "markers": [
+        {
+          "point_id": 1,
+          "pixel_xy": [
+            256.5,
+            691.0
+          ]
+        },
+        {
+          "point_id": 2,
+          "pixel_xy": [
+            355.5,
+            346.0
+          ]
+        },
+        {
+          "point_id": 3,
+          "pixel_xy": [
+            455.5,
+            292.5
+          ]
+        },
+        {
+          "point_id": 4,
+          "pixel_xy": [
+            554.5,
+            257.5
+          ]
+        },
+        {
+          "point_id": 5,
+          "pixel_xy": [
+            653.5,
+            240.0
+          ]
+        },
+        {
+          "point_id": 6,
+          "pixel_xy": [
+            951.5,
+            76.0
+          ]
+        }
+      ],
+      "conditions": {
+        "TiO2_g_L": 0.01,
+        "pH": 7.2,
+        "temperature_K": null,
+        "temperature_as_reported": "ambient",
+        "nominal_pore_size_m": 2e-07,
+        "unit_note": "Missing micro symbol in Markdown restored from microfiltration context and same-family Chiu 2006 Fig. 7 micrometre axis; original PDF not checked."
+      },
+      "experimental_uncertainty": null
+    },
+    "chiu2006_fig6": {
+      "source_id": "chiu2006",
+      "image": "literature/inbox/Chiu2006Critical/_page_3_Figure_15.jpeg",
+      "image_sha256": "3f81b94c677b0e1014cdb60fb28b3631878e5b072a9dbc4122673918f787f84d",
+      "axis_units": {
+        "x": "Reynolds number dimensionless",
+        "y": "critical flux L m^-2 h^-1"
+      },
+      "x_anchors": [
+        109.0,
+        644.5,
+        1000,
+        5000
+      ],
+      "y_anchors": [
+        309.5,
+        32.5,
+        0,
+        100
+      ],
+      "anchor_format": [
+        "pixel_at_v0",
+        "pixel_at_v1",
+        "v0",
+        "v1"
+      ],
+      "reading_bound_px": 2,
+      "bound_scope": "Independent marker/tick-centre sensitivity chosen for the reading; not experimental uncertainty or a confidence interval.",
+      "method": "Axes visually selected at major ticks. Marker centres are bounding-box midpoints of four-neighbour blue components: B>R+25, B>G+15, R<160, more than 8 pixels. All selected points visually checked.",
+      "markers": [
+        {
+          "point_id": 1,
+          "pixel_xy": [
+            160.5,
+            249.5
+          ]
+        },
+        {
+          "point_id": 2,
+          "pixel_xy": [
+            345.5,
+            149.5
+          ]
+        },
+        {
+          "point_id": 3,
+          "pixel_xy": [
+            470.5,
+            108.0
+          ]
+        },
+        {
+          "point_id": 4,
+          "pixel_xy": [
+            594.5,
+            80.5
+          ]
+        }
+      ],
+      "conditions": {
+        "pH": 7.5,
+        "nominal_pore_size_m": 2e-07,
+        "temperature_range_degC": [
+          20,
+          25
+        ],
+        "feed": "Effluent of synthetic activated-sludge production system; not raw porous-pot feed recipe."
+      },
+      "reported_reproducibility": {
+        "maximum_relative_error_as_reported": 0.05,
+        "source_location": "Section 2.3",
+        "interpretation": "Authors state errors never exceed 5% for critical flux/rejection; not identified as standard deviation, confidence interval or point-specific uncertainty."
+      },
+      "text_anchors": [
+        {
+          "Re": 1388,
+          "critical_flux_LMH": 21.4,
+          "location": "Section 3.2"
+        },
+        {
+          "Re": 3701,
+          "critical_flux_LMH": 72.5,
+          "location": "Section 3.2"
+        }
+      ]
+    }
+  },
+  "chiu2006_module": {
+    "active_length_m": 0.3,
+    "filtration_area_m2": 0.03,
+    "hydraulic_diameter_m": 0.0023,
+    "number_of_channels": 7,
+    "source_location": "Sections 2.1 and 2.2",
+    "transfer_limit": "Same nominal star-channel family as Garcia 2008, not an asserted identical specimen; Dh used only in a conditional geometry consistency audit.",
+    "nominal_pore_sizes_m": [
+      2e-07,
+      3.5e-07,
+      5e-07
+    ]
+  },
+  "chiu2006_feed": {
+    "source_location": "Table 2; effluent used for membrane filtration",
+    "pH": {
+      "min": 7.0,
+      "max": 8.4,
+      "average": 7.7
+    },
+    "total_COD_mg_L": {
+      "min": 65.3,
+      "max": 72.1,
+      "average": 68.7
+    },
+    "SS_mg_L": {
+      "min": 312.5,
+      "max": 314.1,
+      "average": 313.3
+    },
+    "TDS_mg_L": {
+      "min": 574.7,
+      "max": 590.7,
+      "average": 582.7
+    },
+    "TS_mg_L": {
+      "min": 892.0,
+      "max": 900.0,
+      "average": 896.0
+    },
+    "range_interpretation": "Reported operating-period ranges, not standard deviations or uncertainties on individual figure points.",
+    "do_not_use_as_filtration_feed": "Table 1 is the upstream porous-pot feed recipe, not the treated effluent composition."
+  },
+  "frederic2018_model": {
+    "source_locations": [
+      "Sections 2.2.1-2.2.4, 2.3, 3; Tables 1-5"
+    ],
+    "kind": "Theoretical numerical comparison, not experimental fouling calibration",
+    "spatial_domain": "2D porous-membrane cross-section; channel wall pressure versus external permeate pressure; symmetry boundaries",
+    "axial_validity": "Whole-module interpretation requires axial pressure loss negligible relative to TMP; otherwise represents a local axial slice.",
+    "support_permeability_m2": 1e-14,
+    "applied_TMP_Pa": 100000,
+    "selective_resistance_m_inv": "e_m/K_m; preserve impedance when numerically thickening the selective region",
+    "Km_over_Kp_cases": [
+      1,
+      0.1,
+      0.01,
+      0.001
+    ],
+    "fouling_law_as_supplied": "dRc/dt = -A*(u dot n); A chosen arbitrarily; no local crossflow-velocity dependence",
+    "physical_fouling_time_available": false,
+    "initial_cake_resistance_m_inv": 0,
+    "geometry_changes_with_cake": false,
+    "backwash_or_cleaning_model": false,
+    "experimental_validation_accepted": false,
+    "equation_audit": "Supplied Markdown Eqs. 4 and 8 imply A=B1*B2, while following Eq. 9 prose states B2/B1. Preserve this discrepancy; check source typography before implementing. Do not silently transplant the coefficient.",
+    "reported_figures_role": "Geometry, pressure/flux distribution and normalized fouling trends; not a measured Jcrit(u) relation."
+  },
+  "illustrative_target_flux_LMH": 100,
+  "scenario_scope": "Nominal table comparison at the existing project target. No operating margin, new steady-state process, suspension properties or slurry DWSIM validation inferred.",
+  "unresolved_issues": [
+    "Garcia Table 1 Q/u corresponds to roughly single-channel scale rather than the stated full seven-channel module; no factor correction accepted.",
+    "Chiu 2005 Fig. 3 borrowed critical-flux series differs in some velocity locations and one flux from Garcia Table 1; retain separate readings.",
+    "Garcia filtration viscosity/temperature and point-specific uncertainty unavailable; rheometer values are not substituted.",
+    "Original PDFs for these four sources absent; Markdown tables/equation typography can be audited later without requiring raw data or new experiments."
+  ],
+  "accepted_crossflow_calibration_datasets": []
+}

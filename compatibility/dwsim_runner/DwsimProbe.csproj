@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <DwsimDir>$(MSBuildThisFileDirectory)../../.local/compatibility/dwsim</DwsimDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="$(DwsimDir)/DWSIM*.dll">
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

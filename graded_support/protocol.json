@@ -1,0 +1,49 @@
+{
+  "protocol_id": "graded-support-fixed-opening-v1",
+  "specified_date": "2026-11-08",
+  "status": "Specified before native simulations; retain failed cases and do not relax screens after observing results.",
+  "geometry": {
+    "body_length_m": 0.00004,
+    "neck_radius_m": 0.000004,
+    "representative_cell_width_m": 0.00002,
+    "body_knots_fraction": [0, 0.2, 0.4, 0.6, 0.8, 1],
+    "radius_factors": [1, 1, "bulk", "bulk", 1, 1],
+    "bulk_radii_m": [0.000004, 0.000005, 0.000006],
+    "lead_length_each_m": 0.000016,
+    "domain_check_lead_length_each_m": 0.000024,
+    "scope": "Synthetic axisymmetric connected pore, same necks/interface region, body thickness and representative area; only interior radius changes. Both leads are numerical development sections and excluded from inferred body resistance. No reconstructed experimental specimen."
+  },
+  "numerics": {
+    "resolutions_across_neck_diameter": [24, 32, 40],
+    "pressure_drop_Pa": 10,
+    "pressure_checks_Pa": [5, 20, -10],
+    "tau": 0.8,
+    "tau_check": 0.65,
+    "steady_tolerance": 1e-8,
+    "max_steps": 60000
+  },
+  "acceptance": {
+    "baseline_analytical_k_relative_error": 0.01,
+    "baseline_velocity_profile_relative_L2": 0.01,
+    "fine_grid_body_resistance_relative_change": 0.01,
+    "all_plane_mass_relative_spread": 0.01,
+    "inlet_outlet_mass_relative_difference": 0.0001,
+    "pressure_range_resistance_relative_change": 0.005,
+    "lead_extension_resistance_relative_change": 0.005,
+    "tau_resistance_relative_change": 0.005,
+    "native_max_Re": 0.05,
+    "native_max_Mach": 0.001,
+    "dwsim_power_relative_error": 1e-9
+  },
+  "process": {
+    "temperature_K": 298.15,
+    "inlet_absolute_pressure_Pa": 100000,
+    "filtration_flux_LMH": 100,
+    "membrane_area_m2": 1,
+    "pump_efficiency_fraction": 0.75,
+    "baseline_support_flux_at_1bar_m_h": 3.12,
+    "translation": "Apply each measured body resistance / measured baseline body resistance to the published 3.12 m/h support impedance. One common baseline calibration; no design-specific fit. Use Zhu PDF-v2 effective non-support impedance and its reading range unchanged across designs. This is a literature-anchored scenario, not an absolute pore reconstruction or a viscosity-corrected experimental prediction.",
+    "literature_reference": "docs/zhu_pdf_reference.json",
+    "scope": "Transmembrane hydraulic-load shaft energy only. Constant inlet properties, linear flow, unchanged effective non-support impedance. Excludes circulation, fouling, osmotic pressure, backwash, motor losses, selectivity and strength certification. Actual DWSIM pump flowsheets; no native membrane separation unit."
+  }
+}

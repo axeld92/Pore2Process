@@ -1,0 +1,436 @@
+{
+  "config": {
+    "image": "literature/inbox/Zhu2021Design/pdf_audit/page5_image0.jpg",
+    "image_sha256": "a52d8722ab437500f899489f180d5a1ee4222cbf65d1bd5a72b4fd44562a5d20",
+    "series": "M1 black diamonds",
+    "image_size_px": [
+      890,
+      906
+    ],
+    "dark_threshold": 35,
+    "pixel_region_xyxy": [
+      165,
+      550,
+      875,
+      770
+    ],
+    "minimum_component_pixels": 30,
+    "maximum_single_component_pixels": 200,
+    "expected_point_count": 21,
+    "axis_anchors": {
+      "x0_px": 156.5,
+      "x100_px": 849.5,
+      "y600_px": 786.5,
+      "y3600_px": 54.5
+    },
+    "axis_anchor_units": {
+      "x": "support flux m3 m^-2 h^-1 (m/h)",
+      "y": "whole membrane flux L m^-2 h^-1"
+    },
+    "axis_anchor_selection": "Native image major tick centres, read before fitting; not forced to reported endpoint fluxes.",
+    "touching_pairs": [
+      {
+        "bbox_xyxy": [
+          176,
+          650,
+          200,
+          674
+        ],
+        "visually_read_centres_xy": [
+          [
+            184.0,
+            666.0
+          ],
+          [
+            192.0,
+            658.0
+          ]
+        ]
+      },
+      {
+        "bbox_xyxy": [
+          211,
+          612,
+          240,
+          629
+        ],
+        "visually_read_centres_xy": [
+          [
+            219.0,
+            621.0
+          ],
+          [
+            232.0,
+            620.0
+          ]
+        ]
+      },
+      {
+        "bbox_xyxy": [
+          290,
+          590,
+          323,
+          606
+        ],
+        "visually_read_centres_xy": [
+          [
+            298.0,
+            598.0
+          ],
+          [
+            315.0,
+            598.0
+          ]
+        ]
+      },
+      {
+        "bbox_xyxy": [
+          376,
+          582,
+          404,
+          601
+        ],
+        "visually_read_centres_xy": [
+          [
+            384.0,
+            593.0
+          ],
+          [
+            396.0,
+            590.0
+          ]
+        ]
+      }
+    ],
+    "method": "Same dark-component and four visually separated touching-pair method on native PDF image.",
+    "measurement_uncertainty_available": false,
+    "overlay_visually_reviewed": true,
+    "overlay_path": "literature/inbox/Zhu2021Design/pdf_audit/m1_overlay.png",
+    "overlay_sha256": "dd6897db2aa9a3a408d2c330d2c08fbd29c45e0d8336f0325643a697ea1aa67c"
+  },
+  "components": [
+    {
+      "bbox_xyxy": [
+        168,
+        719,
+        185,
+        735
+      ],
+      "dark_pixels": 162
+    },
+    {
+      "bbox_xyxy": [
+        170,
+        682,
+        186,
+        698
+      ],
+      "dark_pixels": 162
+    },
+    {
+      "bbox_xyxy": [
+        176,
+        650,
+        200,
+        674
+      ],
+      "dark_pixels": 304
+    },
+    {
+      "bbox_xyxy": [
+        197,
+        636,
+        213,
+        652
+      ],
+      "dark_pixels": 160
+    },
+    {
+      "bbox_xyxy": [
+        211,
+        612,
+        240,
+        629
+      ],
+      "dark_pixels": 310
+    },
+    {
+      "bbox_xyxy": [
+        246,
+        596,
+        263,
+        612
+      ],
+      "dark_pixels": 160
+    },
+    {
+      "bbox_xyxy": [
+        263,
+        602,
+        278,
+        618
+      ],
+      "dark_pixels": 156
+    },
+    {
+      "bbox_xyxy": [
+        290,
+        590,
+        323,
+        606
+      ],
+      "dark_pixels": 323
+    },
+    {
+      "bbox_xyxy": [
+        347,
+        580,
+        363,
+        596
+      ],
+      "dark_pixels": 157
+    },
+    {
+      "bbox_xyxy": [
+        376,
+        582,
+        404,
+        601
+      ],
+      "dark_pixels": 311
+    },
+    {
+      "bbox_xyxy": [
+        408,
+        580,
+        424,
+        596
+      ],
+      "dark_pixels": 161
+    },
+    {
+      "bbox_xyxy": [
+        478,
+        575,
+        494,
+        591
+      ],
+      "dark_pixels": 158
+    },
+    {
+      "bbox_xyxy": [
+        545,
+        582,
+        560,
+        597
+      ],
+      "dark_pixels": 159
+    },
+    {
+      "bbox_xyxy": [
+        602,
+        566,
+        618,
+        582
+      ],
+      "dark_pixels": 160
+    },
+    {
+      "bbox_xyxy": [
+        647,
+        567,
+        662,
+        583
+      ],
+      "dark_pixels": 159
+    },
+    {
+      "bbox_xyxy": [
+        725,
+        571,
+        741,
+        586
+      ],
+      "dark_pixels": 159
+    },
+    {
+      "bbox_xyxy": [
+        822,
+        566,
+        838,
+        581
+      ],
+      "dark_pixels": 160
+    }
+  ],
+  "points": [
+    {
+      "point_id": 1,
+      "pixel_x": 176.5,
+      "pixel_y": 727.0,
+      "support_flux_m_h": 2.886002886002886,
+      "total_flux_LMH": 843.8524590163935,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 2,
+      "pixel_x": 178.0,
+      "pixel_y": 690.0,
+      "support_flux_m_h": 3.1024531024531026,
+      "total_flux_LMH": 995.4918032786885,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 3,
+      "pixel_x": 184.0,
+      "pixel_y": 666.0,
+      "support_flux_m_h": 3.9682539682539684,
+      "total_flux_LMH": 1093.8524590163934,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 4,
+      "pixel_x": 192.0,
+      "pixel_y": 658.0,
+      "support_flux_m_h": 5.1226551226551225,
+      "total_flux_LMH": 1126.639344262295,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 5,
+      "pixel_x": 205.0,
+      "pixel_y": 644.0,
+      "support_flux_m_h": 6.998556998556999,
+      "total_flux_LMH": 1184.016393442623,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 6,
+      "pixel_x": 219.0,
+      "pixel_y": 621.0,
+      "support_flux_m_h": 9.018759018759019,
+      "total_flux_LMH": 1278.27868852459,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 7,
+      "pixel_x": 232.0,
+      "pixel_y": 620.0,
+      "support_flux_m_h": 10.894660894660895,
+      "total_flux_LMH": 1282.377049180328,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 8,
+      "pixel_x": 254.5,
+      "pixel_y": 604.0,
+      "support_flux_m_h": 14.141414141414142,
+      "total_flux_LMH": 1347.9508196721313,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 9,
+      "pixel_x": 270.5,
+      "pixel_y": 610.0,
+      "support_flux_m_h": 16.450216450216452,
+      "total_flux_LMH": 1323.360655737705,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 10,
+      "pixel_x": 298.0,
+      "pixel_y": 598.0,
+      "support_flux_m_h": 20.41847041847042,
+      "total_flux_LMH": 1372.5409836065573,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 11,
+      "pixel_x": 315.0,
+      "pixel_y": 598.0,
+      "support_flux_m_h": 22.871572871572873,
+      "total_flux_LMH": 1372.5409836065573,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 12,
+      "pixel_x": 355.0,
+      "pixel_y": 588.0,
+      "support_flux_m_h": 28.643578643578643,
+      "total_flux_LMH": 1413.5245901639346,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 13,
+      "pixel_x": 384.0,
+      "pixel_y": 593.0,
+      "support_flux_m_h": 32.82828282828283,
+      "total_flux_LMH": 1393.032786885246,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 14,
+      "pixel_x": 396.0,
+      "pixel_y": 590.0,
+      "support_flux_m_h": 34.55988455988456,
+      "total_flux_LMH": 1405.327868852459,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 15,
+      "pixel_x": 416.0,
+      "pixel_y": 588.0,
+      "support_flux_m_h": 37.44588744588744,
+      "total_flux_LMH": 1413.5245901639346,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 16,
+      "pixel_x": 486.0,
+      "pixel_y": 583.0,
+      "support_flux_m_h": 47.54689754689755,
+      "total_flux_LMH": 1434.016393442623,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 17,
+      "pixel_x": 552.5,
+      "pixel_y": 589.5,
+      "support_flux_m_h": 57.142857142857146,
+      "total_flux_LMH": 1407.377049180328,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 18,
+      "pixel_x": 610.0,
+      "pixel_y": 574.0,
+      "support_flux_m_h": 65.44011544011543,
+      "total_flux_LMH": 1470.9016393442623,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 19,
+      "pixel_x": 654.5,
+      "pixel_y": 575.0,
+      "support_flux_m_h": 71.86147186147186,
+      "total_flux_LMH": 1466.8032786885246,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 20,
+      "pixel_x": 733.0,
+      "pixel_y": 578.5,
+      "support_flux_m_h": 83.18903318903318,
+      "total_flux_LMH": 1452.4590163934427,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 21,
+      "pixel_x": 830.0,
+      "pixel_y": 573.5,
+      "support_flux_m_h": 97.18614718614718,
+      "total_flux_LMH": 1472.9508196721313,
+      "experimental_uncertainty": null
+    }
+  ]
+}

@@ -1,0 +1,435 @@
+{
+  "config": {
+    "image": "literature/inbox/Zhu2021Design/_page_4_Figure_2.jpeg",
+    "image_sha256": "58c2f90335b97269027bf256da694ee7032fec02cba1eb29835a00229a90d6e6",
+    "series": "M1 black diamonds",
+    "image_size_px": [
+      623,
+      624
+    ],
+    "dark_threshold": 35,
+    "pixel_region_xyxy": [
+      130,
+      370,
+      586,
+      510
+    ],
+    "minimum_component_pixels": 15,
+    "expected_point_count": 21,
+    "axis_anchors": {
+      "x0_px": 124.5,
+      "x100_px": 569.5,
+      "y600_px": 524.5,
+      "y3600_px": 55.0
+    },
+    "axis_anchor_units": {
+      "x": "support flux m3 m^-2 h^-1 (m/h)",
+      "y": "whole membrane flux L m^-2 h^-1"
+    },
+    "axis_anchor_selection": "Visually read major tick centres; not fitted to reported endpoint fluxes.",
+    "touching_pairs": [
+      {
+        "bbox_xyxy": [
+          138,
+          438,
+          152,
+          453
+        ],
+        "visually_read_centres_xy": [
+          [
+            142.5,
+            448.5
+          ],
+          [
+            147.5,
+            442.5
+          ]
+        ]
+      },
+      {
+        "bbox_xyxy": [
+          160,
+          414,
+          177,
+          424
+        ],
+        "visually_read_centres_xy": [
+          [
+            164.5,
+            419.5
+          ],
+          [
+            172.5,
+            418.5
+          ]
+        ]
+      },
+      {
+        "bbox_xyxy": [
+          210,
+          399,
+          231,
+          409
+        ],
+        "visually_read_centres_xy": [
+          [
+            214.5,
+            404.0
+          ],
+          [
+            226.0,
+            404.0
+          ]
+        ]
+      },
+      {
+        "bbox_xyxy": [
+          265,
+          394,
+          283,
+          406
+        ],
+        "visually_read_centres_xy": [
+          [
+            269.5,
+            401.5
+          ],
+          [
+            278.5,
+            398.5
+          ]
+        ]
+      }
+    ],
+    "method": "Dark connected-component bounding-box midpoints; four touching pairs are manually deblended from inspected enlarged source. Numbered source overlay must be reviewed.",
+    "measurement_uncertainty_available": false,
+    "overlay_visually_reviewed": true,
+    "overlay_path": "literature/inbox/Zhu2021Design/audit/m1_digitization_overlay.png",
+    "overlay_sha256": "873a08799ca8fd08769d0f90f2c0724e7a32c7d1007cedce3e80d16a4465bb71"
+  },
+  "components": [
+    {
+      "bbox_xyxy": [
+        132,
+        482,
+        141,
+        491
+      ],
+      "dark_pixels": 61
+    },
+    {
+      "bbox_xyxy": [
+        134,
+        459,
+        143,
+        468
+      ],
+      "dark_pixels": 62
+    },
+    {
+      "bbox_xyxy": [
+        138,
+        438,
+        152,
+        453
+      ],
+      "dark_pixels": 121
+    },
+    {
+      "bbox_xyxy": [
+        151,
+        429,
+        160,
+        438
+      ],
+      "dark_pixels": 60
+    },
+    {
+      "bbox_xyxy": [
+        160,
+        414,
+        177,
+        424
+      ],
+      "dark_pixels": 120
+    },
+    {
+      "bbox_xyxy": [
+        182,
+        403,
+        192,
+        413
+      ],
+      "dark_pixels": 63
+    },
+    {
+      "bbox_xyxy": [
+        193,
+        408,
+        202,
+        417
+      ],
+      "dark_pixels": 61
+    },
+    {
+      "bbox_xyxy": [
+        210,
+        399,
+        231,
+        409
+      ],
+      "dark_pixels": 122
+    },
+    {
+      "bbox_xyxy": [
+        247,
+        393,
+        256,
+        402
+      ],
+      "dark_pixels": 64
+    },
+    {
+      "bbox_xyxy": [
+        265,
+        394,
+        283,
+        406
+      ],
+      "dark_pixels": 120
+    },
+    {
+      "bbox_xyxy": [
+        286,
+        393,
+        295,
+        402
+      ],
+      "dark_pixels": 66
+    },
+    {
+      "bbox_xyxy": [
+        331,
+        390,
+        340,
+        399
+      ],
+      "dark_pixels": 63
+    },
+    {
+      "bbox_xyxy": [
+        373,
+        394,
+        383,
+        403
+      ],
+      "dark_pixels": 64
+    },
+    {
+      "bbox_xyxy": [
+        410,
+        384,
+        420,
+        393
+      ],
+      "dark_pixels": 63
+    },
+    {
+      "bbox_xyxy": [
+        439,
+        385,
+        448,
+        394
+      ],
+      "dark_pixels": 59
+    },
+    {
+      "bbox_xyxy": [
+        489,
+        387,
+        499,
+        396
+      ],
+      "dark_pixels": 60
+    },
+    {
+      "bbox_xyxy": [
+        551,
+        384,
+        561,
+        393
+      ],
+      "dark_pixels": 62
+    }
+  ],
+  "points": [
+    {
+      "point_id": 1,
+      "pixel_x": 136.5,
+      "pixel_y": 486.5,
+      "support_flux_m_h": 2.696629213483146,
+      "total_flux_LMH": 842.811501597444,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 2,
+      "pixel_x": 138.5,
+      "pixel_y": 463.5,
+      "support_flux_m_h": 3.146067415730337,
+      "total_flux_LMH": 989.776357827476,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 3,
+      "pixel_x": 142.5,
+      "pixel_y": 448.5,
+      "support_flux_m_h": 4.044943820224719,
+      "total_flux_LMH": 1085.623003194888,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 4,
+      "pixel_x": 147.5,
+      "pixel_y": 442.5,
+      "support_flux_m_h": 5.168539325842697,
+      "total_flux_LMH": 1123.961661341853,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 5,
+      "pixel_x": 155.5,
+      "pixel_y": 433.5,
+      "support_flux_m_h": 6.966292134831461,
+      "total_flux_LMH": 1181.4696485623003,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 6,
+      "pixel_x": 164.5,
+      "pixel_y": 419.5,
+      "support_flux_m_h": 8.98876404494382,
+      "total_flux_LMH": 1270.9265175718851,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 7,
+      "pixel_x": 172.5,
+      "pixel_y": 418.5,
+      "support_flux_m_h": 10.786516853932584,
+      "total_flux_LMH": 1277.3162939297126,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 8,
+      "pixel_x": 187.0,
+      "pixel_y": 408.0,
+      "support_flux_m_h": 14.044943820224718,
+      "total_flux_LMH": 1344.408945686901,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 9,
+      "pixel_x": 197.5,
+      "pixel_y": 412.5,
+      "support_flux_m_h": 16.40449438202247,
+      "total_flux_LMH": 1315.6549520766773,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 10,
+      "pixel_x": 214.5,
+      "pixel_y": 404.0,
+      "support_flux_m_h": 20.224719101123597,
+      "total_flux_LMH": 1369.968051118211,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 11,
+      "pixel_x": 226.0,
+      "pixel_y": 404.0,
+      "support_flux_m_h": 22.808988764044944,
+      "total_flux_LMH": 1369.968051118211,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 12,
+      "pixel_x": 251.5,
+      "pixel_y": 397.5,
+      "support_flux_m_h": 28.53932584269663,
+      "total_flux_LMH": 1411.5015974440894,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 13,
+      "pixel_x": 269.5,
+      "pixel_y": 401.5,
+      "support_flux_m_h": 32.58426966292135,
+      "total_flux_LMH": 1385.9424920127794,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 14,
+      "pixel_x": 278.5,
+      "pixel_y": 398.5,
+      "support_flux_m_h": 34.60674157303371,
+      "total_flux_LMH": 1405.111821086262,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 15,
+      "pixel_x": 290.5,
+      "pixel_y": 397.5,
+      "support_flux_m_h": 37.30337078651685,
+      "total_flux_LMH": 1411.5015974440894,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 16,
+      "pixel_x": 335.5,
+      "pixel_y": 394.5,
+      "support_flux_m_h": 47.41573033707865,
+      "total_flux_LMH": 1430.6709265175718,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 17,
+      "pixel_x": 378.0,
+      "pixel_y": 398.5,
+      "support_flux_m_h": 56.96629213483146,
+      "total_flux_LMH": 1405.111821086262,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 18,
+      "pixel_x": 415.0,
+      "pixel_y": 388.5,
+      "support_flux_m_h": 65.28089887640449,
+      "total_flux_LMH": 1469.0095846645368,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 19,
+      "pixel_x": 443.5,
+      "pixel_y": 389.5,
+      "support_flux_m_h": 71.68539325842697,
+      "total_flux_LMH": 1462.6198083067093,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 20,
+      "pixel_x": 494.0,
+      "pixel_y": 391.5,
+      "support_flux_m_h": 83.03370786516854,
+      "total_flux_LMH": 1449.8402555910543,
+      "experimental_uncertainty": null
+    },
+    {
+      "point_id": 21,
+      "pixel_x": 556.0,
+      "pixel_y": 388.5,
+      "support_flux_m_h": 96.96629213483146,
+      "total_flux_LMH": 1469.0095846645368,
+      "experimental_uncertainty": null
+    }
+  ]
+}

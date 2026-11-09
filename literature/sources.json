@@ -1,0 +1,316 @@
+{
+  "schema_version": 1,
+  "checked_date": "2026-11-09",
+  "crossflow_evidence_search": {
+    "checked_date": "2026-11-09",
+    "review": "literature/crossflow_evidence_review.md",
+    "screening_ledger": "literature/crossflow_screening.json",
+    "status": "Four requested articles received and reviewed; six Garcia table rows and ten Chiu figure readings retained. Source energy arithmetic reproduced; no new model fit or absolute bundle-flow calibration.",
+    "received_review": "literature/crossflow_papers_review.md",
+    "extraction": "literature/crossflow_extraction.json",
+    "implementation": {
+      "status": "bounded_reference_and_conditional_process_benchmark_verified",
+      "report": "docs/crossflow_benchmark.md",
+      "commands": "crossflow_benchmark/README.md",
+      "reference": "docs/crossflow_benchmark_reference.json",
+      "run_id": "20261109T005324Z-230bef0c",
+      "Julia_assertions": 846,
+      "Python_tests": 50,
+      "actual_DWSIM_cases": 32,
+      "absolute_module_calibration_accepted": false,
+      "physical_fouling_time_calibrated": false
+    }
+  },
+  "project_scope": "Computational tool using papers and available supporting information. No new experiments, unavailable raw datasets, author contact or exact specimen 3D reconstruction are prerequisites. Unreported fields limit claims and remain explicit; see docs/verification_scope.md.",
+  "accepted_calibration_datasets": [
+    {
+      "id": "biesheuvel_1999_table2",
+      "scope": "Limited empirical support closure only; no geometry-resolved or complete-membrane validation.",
+      "protocol": "calibration/protocol.json",
+      "audit": "literature/biesheuvel_source_audit.json",
+      "primary_holdout_screen_passed": false
+    },
+    {
+      "id": "zhu_2021_fig6_M1_digitized",
+      "scope": "Retrospective M1 effective-impedance fit only; nominal held-out 10% screen passes, conservative pixel/axis screen fails, lowest training residual exceeds 10%. No OpenLB geometry validation.",
+      "protocol": "calibration/zhu_protocol.json",
+      "source": "literature/zhu2021_extraction.json",
+      "primary_nominal_holdout_passed": true,
+      "reading_corner_screen_passed": false
+    },
+    {
+      "id": "zhu_2021_fig6_M1_pdf_v2",
+      "scope": "Same-study M1 effective-impedance fit from native original-PDF image; same split/model/10% criterion as JPEG-v1. Both nominal and reading-corner screens pass. Reading bounds are not experimental uncertainty; not a unique pore structure.",
+      "protocol": "calibration/zhu_protocol_pdf.json",
+      "source": "literature/zhu2021_extraction.json",
+      "primary_nominal_holdout_passed": true,
+      "reading_corner_screen_passed": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "mo_2022_multilayer",
+      "doi": "10.1016/j.watres.2022.118658",
+      "title": "Dissecting the structure-property relationship of ceramic membrane with asymmetric multilayer structures for maximizing permselectivity",
+      "authors": [
+        "Jiahao Mo",
+        "Xianhui Li",
+        "Zhifeng Yang"
+      ],
+      "year": 2022,
+      "primary_record": "https://pubmed.ncbi.nlm.nih.gov/35640511/",
+      "access_checked": "Supplied main Markdown/metadata/seven figures reviewed previously. Supplied Word supplement read structurally and all eight rendered pages visually inspected; S1, Tables S1-S3, Figure S1 and 19 references extracted. Original main PDF not received.",
+      "use": "Fixed-top-layer support plateau and explicit intermediate-layer resistance. Author-model values retained separately from experiment; no production parameter replacement.",
+      "needed": [],
+      "evidence_limits": [
+        "Converted equation typography and printed Table S1 particle-density unit remain cautions if that Mo model is implemented",
+        "Missing numerical reproduction settings prevent an exact Mo-model reproduction; this is outside the current synthetic hydraulic milestone"
+      ],
+      "calibration_accepted": false,
+      "local_review": "literature/mo2022_review.md",
+      "local_extraction": "literature/mo2022_extraction.json",
+      "supplement_received": true,
+      "supplement_extraction": "literature/mo2022_supplement_extraction.json",
+      "supplement_review": "literature/mo2022_supplement_review.md"
+    },
+    {
+      "id": "jan_2025_sic_alumina",
+      "doi": "10.1016/j.desal.2025.119085",
+      "title": "Silicon carbide coated alumina tight-ultrafiltration membrane prepared by low-pressure chemical vapor deposition for sulphate ion retention",
+      "year": 2025,
+      "primary_full_text": "https://ris.utwente.nl/ws/portalfiles/portal/501138486/1-s2.0-S0011916425005612-main.pdf",
+      "access_checked": "User-supplied main Markdown, metadata and available images for Figs. 1\u20135 reviewed. Fig. 4 error bars visible but not digitised; no separate Fig. 6 image found.",
+      "observations": [
+        {
+          "location": "Section 2.1, printed page 2",
+          "quantity": "Nominal tubular alumina selective/support pore sizes",
+          "values": [
+            20,
+            600
+          ],
+          "unit": "nm",
+          "scope": "Supplier descriptions; not independent layer permeances."
+        },
+        {
+          "location": "Section 3.2.1 and Fig. 4a, printed page 5",
+          "quantity": "Approximate whole-membrane pure-water permeance",
+          "uncoated_value": 277,
+          "coated_40min_value": 26,
+          "unit": "L m^-2 h^-1 bar^-1",
+          "scope": "Values stated in prose. Uncoated membrane already has a selective layer; coating changes it."
+        }
+      ],
+      "missing_for_this_question": [
+        "Bare-support resistance",
+        "Independent selective/intermediate/interface resistance",
+        "Confirmed temperature and correction for these measurements",
+        "Matched fixed-selective-layer support comparison",
+        "Raw data and uncertainty"
+      ],
+      "use": "Whole-membrane experimental permeance and coating/interface context; not a separated-resistance calibration or fixed-selective-layer support comparison.",
+      "calibration_accepted": false,
+      "local_review": "literature/filtration_evidence_review.md",
+      "local_extraction": "literature/support_membrane_extraction.json",
+      "needed": [],
+      "evidence_limits": "Missing fields listed above explain why this source is context rather than a matched fixed-layer reference. They are not requests for additional measurements or inaccessible data."
+    },
+    {
+      "id": "biesheuvel_verweij_1999",
+      "doi": "10.1016/S0376-7388(98)00335-4",
+      "title": "Design of ceramic membrane supports: permeability, tensile strength and stress",
+      "year": 1999,
+      "access_checked": "Supplied article and figures reviewed; all Table 2 values, multiplier, CK relation and powder means visually corroborated against publicly hosted author thesis Chapter 7, printed pp. 97,103-105.",
+      "use": "Support water-permeability/porosity/processing and bend-strength reference; distinguishes experimental Table 2 from model Table 3 and maximum-flow design curves.",
+      "needed": [],
+      "evidence_limits": [
+        "Unreported water-test temperature/viscosity and uncertainty limit interpretation of the fitted closure",
+        "No specimen-linked 3D morphology; synthetic geometry studies remain within current computational scope"
+      ],
+      "calibration_accepted": true,
+      "local_review": "literature/filtration_evidence_review.md",
+      "local_extraction": "literature/support_membrane_extraction.json",
+      "primary_full_text": "https://ris.utwente.nl/ws/portalfiles/portal/6077974/t0000015.pdf",
+      "source_scope": "Author thesis reproduces the study; it is not another independent dataset. Publisher journal PDF not inspected.",
+      "calibration_scope": "AKP-30 reduced support closure only. Fit rows 2-4; holdout rows 5-7; 25% project screen fails. Other powders are transfer/out-of-domain diagnostics.",
+      "local_calibration_report": "docs/experimental_calibration.md"
+    },
+    {
+      "id": "zhu_2021_flux_matching",
+      "doi": "10.1016/j.ceramint.2021.01.088",
+      "title": "Design and optimization of ceramic membrane structure: From the perspective of flux matching between support and membrane",
+      "authors": [
+        "Weiya Zhu",
+        "Yang Liu",
+        "Kang Guan",
+        "Cheng Peng",
+        "Jianqing Wu"
+      ],
+      "year": 2021,
+      "primary_record": "https://www.sciencedirect.com/science/article/abs/pii/S0272884221001103",
+      "identified_from": "Mo supplementary Table S2 and reference list",
+      "access_checked": "User-supplied main Markdown/metadata/all ten scientific figures reviewed, then original nine-page PDF. Figure 6 native 890x906 image, complete page and 21-marker overlay inspected. No supplement identified or required for the bounded M1 check.",
+      "use": "Matched support/transfer-coated whole-membrane M1 effective-impedance reference for bounded scale translation; no claim of exact specimen reconstruction.",
+      "calibration_accepted": true,
+      "needed": [],
+      "evidence_limits": [
+        "Raw hydraulic uncertainty and measurement temperature/viscosity are unreported and remain unavailable",
+        "No point-linked support thickness/porosity or connected 3D morphology; these are outside the present acceptance scope",
+        "Same-study retrospective split, low-flux residual and bias limit the model even though PDF reading screens pass"
+      ],
+      "local_review": "docs/zhu_pdf_refinement.md",
+      "earlier_reading_review": "docs/zhu_matched_validation.md",
+      "calibration_scope": "Retrospective M1 effective-impedance fit. Original PDF reading passes both unchanged 10% screens; JPEG-v1 corner failure retained. No experimental confidence interval or intrinsic selective-layer resistance inferred.",
+      "local_extraction": "literature/zhu2021_extraction.json"
+    },
+    {
+      "id": "garcia_2008_crossflow",
+      "doi": "10.1016/j.memsci.2008.08.033",
+      "title": "Economic aspects of critical flux operability in star shaped microfiltration membranes: Influence of some operating conditions",
+      "authors": [
+        "F. J. Garcia Garcia",
+        "T. Y. Chiu"
+      ],
+      "year": 2008,
+      "primary_record": "https://doi.org/10.1016/j.memsci.2008.08.033",
+      "access_checked": "Six Table 1 rows transcribed; particle-size and seven-channel schematic figures visually reviewed. Critical-flux values credited to Chiu 2005.",
+      "use": "Matched critical-flux/circulation-energy benchmark lead",
+      "needed": [],
+      "evidence_limits": [
+        "Table flow basis: per-channel versus full seven-channel bundle",
+        "Table-versus-Chiu-figure velocity/flux differences",
+        "Original PDF table typography",
+        "Filtration temperature/viscosity and point-specific uncertainty",
+        "Pressure-loss conditions versus borrowed critical-flux series",
+        "Source arithmetic reproduced within 0.912%; absolute bundle-flow basis unresolved; no model fitted."
+      ],
+      "calibration_accepted": false,
+      "local_review": "literature/crossflow_papers_review.md",
+      "local_extraction": "literature/crossflow_extraction.json",
+      "original_pdf_received": false
+    },
+    {
+      "id": "chiu_2005_critical",
+      "doi": "10.1016/j.memsci.2005.01.037",
+      "title": "Critical flux determination of non-circular multi-channel ceramic membranes using TiO2 suspensions",
+      "authors": [
+        "T. Y. Chiu",
+        "A. E. James"
+      ],
+      "year": 2005,
+      "primary_record": "https://doi.org/10.1016/j.memsci.2005.01.037",
+      "access_checked": "Full supplied Markdown reviewed; Fig. 3 six markers visually checked and digitized.",
+      "use": "Experimental protocol and related ceramic/TiO2 series lead",
+      "needed": [],
+      "evidence_limits": [
+        "Original PDF typography",
+        "Filtration temperature/viscosity and numerical experimental uncertainty",
+        "Reason for differences from Garcia Table 1",
+        "Source data reused by Garcia, with some table/figure differences; not independent validation."
+      ],
+      "calibration_accepted": false,
+      "local_review": "literature/crossflow_papers_review.md",
+      "local_extraction": "literature/crossflow_extraction.json",
+      "original_pdf_received": false
+    },
+    {
+      "id": "chiu_2006_biological_critical",
+      "doi": "10.1016/j.seppur.2005.11.028",
+      "title": "Critical flux and rejection behaviour of non-circular-channelled membranes: Influence of some operating conditions",
+      "authors": [
+        "T. Y. Chiu",
+        "M. V. Lara Dominguez",
+        "A. E. James"
+      ],
+      "year": 2006,
+      "primary_record": "https://doi.org/10.1016/j.seppur.2005.11.028",
+      "access_checked": "Full supplied Markdown reviewed; Fig. 6 four markers digitized and Fig. 7 pore-size units visually checked.",
+      "use": "Concrete biological-water-treatment alternative with ceramic channels",
+      "needed": [],
+      "evidence_limits": [
+        "Point-specific statistical uncertainty interpretation",
+        "Exact star-channel coordinates and specimen equivalence across papers",
+        "Original PDF typography",
+        "Separate biological-feed case; measured critical-flux range does not reach the illustrative 100 LMH target."
+      ],
+      "calibration_accepted": false,
+      "local_review": "literature/crossflow_papers_review.md",
+      "local_extraction": "literature/crossflow_extraction.json",
+      "original_pdf_received": false,
+      "biological_showcase_extraction": "literature/chiu2006_bio_extraction.json",
+      "biological_showcase_report": "docs/star_channel_showcase.md",
+      "biological_showcase_scope": "Clean initial low-Re hydraulics with transferred COD-retention sensitivity; critical/sustainable flux at the new geometry and speed unavailable."
+    },
+    {
+      "id": "frederic_2018_multichannel",
+      "doi": "10.1016/j.memsci.2018.09.021",
+      "title": "Modelling of fluid flow distribution in multichannel ceramic membrane: Application to the filtration of produced water",
+      "authors": [
+        "Elsa Frederic",
+        "Christelle Guigui",
+        "Matthieu Jacob",
+        "Claire Machinal",
+        "Abir Krifi",
+        "Alain Line",
+        "Philippe Schmitz"
+      ],
+      "year": 2018,
+      "primary_record": "https://doi.org/10.1016/j.memsci.2018.09.021",
+      "access_checked": "Full supplied Markdown reviewed; Fig. 1 geometry visually checked.",
+      "use": "Support/selective-layer permeability contrast, spatial flux and fouling model",
+      "needed": [],
+      "evidence_limits": [
+        "Physical fouling coefficient intentionally arbitrary",
+        "Supplied equation coefficient product/quotient discrepancy; original typography unverified",
+        "Quantitative velocity-dependent fouling law not supplied",
+        "2D numerical comparison with arbitrary fouling coefficient; no physical fouling-time calibration."
+      ],
+      "calibration_accepted": false,
+      "local_review": "literature/crossflow_papers_review.md",
+      "local_extraction": "literature/crossflow_extraction.json",
+      "original_pdf_received": false
+    }
+  ],
+  "candidate_datasets": [
+    {
+      "id": "biesheuvel_1999_table2",
+      "kind": "experimental_support_property_transcription",
+      "rows": 9,
+      "accepted_for_calibration": true,
+      "accepted_scope": "Limited reduced support closure, per calibration/protocol.json; primary held-out screen failed."
+    },
+    {
+      "id": "jan_2025_fig4",
+      "kind": "experimental_whole_membrane_permeance_context",
+      "rows": 2,
+      "accepted_for_calibration": false
+    },
+    {
+      "id": "mo_2022_S2_compilation",
+      "kind": "secondary_experimental_literature_compilation",
+      "rows": 10,
+      "accepted_for_calibration": false,
+      "reason": "Six permeance and four pore-size entries; no row contains both; specimen scope and conditions require original sources."
+    },
+    {
+      "id": "mo_2022_S3_compilation",
+      "kind": "secondary_wastewater_performance_context",
+      "rows": 9,
+      "accepted_for_calibration": false,
+      "reason": "Different feeds/conditions, no uncertainty; not a common clean-water hydraulic validation."
+    },
+    {
+      "id": "zhu_2021_fig6_M1_digitized",
+      "kind": "digitized_matched_support_whole_membrane_series",
+      "rows": 21,
+      "accepted_for_calibration": true,
+      "accepted_scope": "Retrospective M1 effective-impedance fit only; nominal held-out 10% screen passes, conservative pixel/axis screen fails, lowest training residual exceeds 10%. No OpenLB geometry validation."
+    },
+    {
+      "id": "zhu_2021_fig6_M1_pdf_v2",
+      "kind": "native_pdf_reading_of_same_matched_series",
+      "rows": 21,
+      "accepted_for_calibration": true,
+      "accepted_scope": "Refined reading of the same M1 series, not a second experiment. Same 11/10 split and effective-impedance model; nominal and reading-corner 10% screens pass. No raw-data acquisition prerequisite."
+    }
+  ]
+}

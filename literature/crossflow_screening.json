@@ -1,0 +1,558 @@
+{
+  "schema_version": 1,
+  "checked_date": "2026-11-09",
+  "task": "Select published evidence for crossflow filtration benefit versus circulation energy",
+  "status": "bounded_benchmark_verified_no_absolute_module_calibration",
+  "accepted_crossflow_calibration_datasets": [],
+  "existing_sources": [
+    {
+      "id": "mo2022",
+      "doi": "10.1016/j.watres.2022.118658",
+      "local_path": "literature/inbox/Mo2022Dissecting/Mo2022Dissecting.md",
+      "sha256": "81a2272388ecbd5ca832daa667f5026ce433810f09ce8d2cac8f75abbfaa8f91",
+      "reviewed_access": "supplied full Markdown and existing project evidence review",
+      "source_locations": [
+        "Introduction; bibliography, Frederic et al. (2018)"
+      ],
+      "finding": "Fixed-layer model and geometry/fouling reference trail; no usable velocity-performance series identified.",
+      "supplement": {
+        "local_path": "literature/inbox/Mo2022Dissecting/supplement_audit/SupportingInformation.extracted.md",
+        "sha256": "4fe90895b30a9b3f226820c68c00d143c18ac67f12a14ba63de9e03b21bed718",
+        "finding": "Existing supplement extraction screened; no suitable velocity-performance series identified."
+      }
+    },
+    {
+      "id": "biesheuvel1999",
+      "doi": "10.1016/S0376-7388(98)00335-4",
+      "local_path": "literature/inbox/Biesheuvel1999Design/Biesheuvel1999Design.md",
+      "sha256": "dff13d84a53aa81cba23143146c6179542df2ed3a8181b8fbbb34a4e99cee6fd",
+      "reviewed_access": "supplied full Markdown and existing project evidence review",
+      "source_locations": [
+        "Table 2; existing support extraction"
+      ],
+      "finding": "Support properties; no crossflow-performance calibration identified."
+    },
+    {
+      "id": "zhu2021",
+      "doi": "10.1016/j.ceramint.2021.01.088",
+      "local_path": "literature/inbox/Zhu2021Design/Zhu2021Design.md",
+      "sha256": "bab54e708ced579e008e0e76b771a1bb40d9f68342e627967b05ef5880581d6c",
+      "reviewed_access": "supplied full Markdown and existing project evidence review",
+      "source_locations": [
+        "Section 2.3; Fig. 6 M1"
+      ],
+      "finding": "DI-water crossflow permeance is not a velocity-benefit curve; keep existing accepted impedance dataset."
+    },
+    {
+      "id": "jan2025",
+      "doi": "10.1016/j.desal.2025.119085",
+      "local_path": "literature/inbox/Jan2025Silicon/Jan2025Silicon.md",
+      "sha256": "792410b373d27736b8eefe849faf1bab811d3948ac5a1d0b5bc8c8f7accd39d9",
+      "reviewed_access": "supplied full Markdown and existing project evidence review",
+      "source_locations": [
+        "Sections 2.1, 2.3; references [28], [30]"
+      ],
+      "finding": "Channel geometry and reference trail; coating changes selective layer; no suitable velocity sweep identified."
+    }
+  ],
+  "candidates": [
+    {
+      "id": "garcia2008",
+      "title": "Economic aspects of critical flux operability in star shaped microfiltration membranes: Influence of some operating conditions",
+      "doi": "10.1016/j.memsci.2008.08.033",
+      "citation": "F. J. Garcia Garcia and T. Y. Chiu (2008), Journal of Membrane Science 325(2), 641-646",
+      "priority": "1_main_request",
+      "role": "Matched critical-flux/circulation-energy benchmark lead",
+      "reviewed_access": "Six Table 1 rows transcribed; particle-size and seven-channel schematic figures visually reviewed. Critical-flux values credited to Chiu 2005.",
+      "primary_urls": [
+        "https://doi.org/10.1016/j.memsci.2008.08.033",
+        "https://www.sciencedirect.com/science/article/abs/pii/S0376738808007825"
+      ],
+      "source_locations": [
+        "Abstract",
+        "Materials; particle-size Fig. 1 identified in indexed text",
+        "Impact of crossflow velocity; Table 1 identified, cells not inspected"
+      ],
+      "unknowns": [
+        "Table flow basis: per-channel versus full seven-channel bundle",
+        "Table-versus-Chiu-figure velocity/flux differences",
+        "Original PDF table typography",
+        "Filtration temperature/viscosity and point-specific uncertainty",
+        "Pressure-loss conditions versus borrowed critical-flux series"
+      ],
+      "accepted_for_crossflow_calibration": false,
+      "accepted_curve_points": 0,
+      "screening_observations": {
+        "feed": "TiO2 in deionized water",
+        "source_reported_energy_minimum_velocity_m_s": 0.9,
+        "minimum_scope": "Source-specific observation in abstract, not a Pore2Process optimum; energy boundary unverified."
+      },
+      "initial_screening_access": "Publisher abstract and indexed Materials / Impact of crossflow velocity sections; initial Crossref metadata read succeeded, later archive request returned 429; full article not inspected",
+      "received_review": {
+        "date": "2026-11-09",
+        "review": "literature/crossflow_papers_review.md",
+        "extraction": "literature/crossflow_extraction.json",
+        "local_files": [
+          {
+            "path": "literature/inbox/Garcia2008Economic/Garcia2008Economic.md",
+            "sha256": "e09456a030842ca2d2f234f0531de50293e2ccac804b51afc8eef48e91afeb05",
+            "role": "full_article_Markdown"
+          },
+          {
+            "path": "literature/inbox/Garcia2008Economic/Garcia2008Economic_meta.json",
+            "sha256": "6944e34fa0bc64e6c56a28ebef0adde83c0e252c85de0117b55fbedcaa3d70eb",
+            "role": "conversion_metadata"
+          },
+          {
+            "path": "literature/inbox/Garcia2008Economic/_page_1_Figure_7.jpeg",
+            "sha256": "19d1700cec3fe84e68ccfd41532de7695b2dd8500449533bf9bad7a4444d3dee",
+            "role": "visually_reviewed_figure"
+          },
+          {
+            "path": "literature/inbox/Garcia2008Economic/_page_2_Figure_2.jpeg",
+            "sha256": "c744961854a9510b284a949077421a31b650a53469656fd8802619a26858ac44",
+            "role": "visually_reviewed_figure"
+          }
+        ],
+        "numerical_scope": "Source arithmetic reproduced within 0.912%; absolute bundle-flow basis unresolved; no model fitted."
+      },
+      "initial_request": [
+        "Full PDF and Markdown",
+        "Original figures and Table 1",
+        "Equations and available supporting information"
+      ],
+      "requested_material": [],
+      "original_pdf_received": false,
+      "accepted_for_source_reference_reproduction": true,
+      "retained_table_reference_rows": 6
+    },
+    {
+      "id": "chiu2005",
+      "title": "Critical flux determination of non-circular multi-channel ceramic membranes using TiO2 suspensions",
+      "doi": "10.1016/j.memsci.2005.01.037",
+      "citation": "T. Y. Chiu and A. E. James (2005), Journal of Membrane Science 254, 295-301",
+      "priority": "2_companion_request",
+      "role": "Experimental protocol and related ceramic/TiO2 series lead",
+      "reviewed_access": "Full supplied Markdown reviewed; Fig. 3 six markers visually checked and digitized.",
+      "primary_urls": [
+        "https://doi.org/10.1016/j.memsci.2005.01.037",
+        "https://www.sciencedirect.com/science/article/abs/pii/S0376738805000724"
+      ],
+      "source_locations": [
+        "Bibliographic lead; figure/table numbers unavailable"
+      ],
+      "unknowns": [
+        "Original PDF typography",
+        "Filtration temperature/viscosity and numerical experimental uncertainty",
+        "Reason for differences from Garcia Table 1"
+      ],
+      "accepted_for_crossflow_calibration": false,
+      "accepted_curve_points": 0,
+      "metadata_audit": {
+        "local_path": "literature/inbox/crossflow_search_2026-11-09/chiu2005_crossref.json",
+        "sha256": "c09ed639fb35dc19a5001a715c98eb171e2dde138508081693b4672cb6d93243",
+        "registered_doi": "10.1016/j.memsci.2005.01.037",
+        "registered_title": "Critical flux determination of non-circular multi-channel ceramic membranes using TiO suspensions"
+      },
+      "initial_screening_access": "Crossref DOI metadata and bibliographic reference trail; full article not inspected",
+      "received_review": {
+        "date": "2026-11-09",
+        "review": "literature/crossflow_papers_review.md",
+        "extraction": "literature/crossflow_extraction.json",
+        "local_files": [
+          {
+            "path": "literature/inbox/Chiu2005Critical/Chiu2005Critical.md",
+            "sha256": "b56a19f633fbb92bcac35c1dc75567acb33b955c40ffb400585d6e74f3598973",
+            "role": "full_article_Markdown"
+          },
+          {
+            "path": "literature/inbox/Chiu2005Critical/Chiu2005Critical_meta.json",
+            "sha256": "5ea2d5a831f99e6b38dd9049892e47eac1cd02db6aaad5c34efd85b17c31ebff",
+            "role": "conversion_metadata"
+          },
+          {
+            "path": "literature/inbox/Chiu2005Critical/_page_3_Figure_2.jpeg",
+            "sha256": "edf2b4d7124df426b75def195926d01a2853bfc6acd04bffc578915048ef0afe",
+            "role": "visually_reviewed_figure"
+          }
+        ],
+        "numerical_scope": "Source data reused by Garcia, with some table/figure differences; not independent validation."
+      },
+      "initial_request": [
+        "Full article with figures, equations, tables and available supplement"
+      ],
+      "requested_material": [],
+      "original_pdf_received": false,
+      "accepted_for_source_reference_reproduction": false,
+      "digitized_reference_points": 6
+    },
+    {
+      "id": "frederic2018",
+      "title": "Modelling of fluid flow distribution in multichannel ceramic membrane: Application to the filtration of produced water",
+      "doi": "10.1016/j.memsci.2018.09.021",
+      "citation": "E. Frederic et al. (2018), Journal of Membrane Science 567, 290-302",
+      "priority": "3_geometry_model_request",
+      "role": "Support/selective-layer permeability contrast, spatial flux and fouling model",
+      "reviewed_access": "Full supplied Markdown reviewed; Fig. 1 geometry visually checked.",
+      "primary_urls": [
+        "https://doi.org/10.1016/j.memsci.2018.09.021",
+        "https://www.sciencedirect.com/science/article/abs/pii/S0376738818303399"
+      ],
+      "source_locations": [
+        "Mo bibliography entry Frederic et al. (2018)",
+        "Publisher abstract: 2D cross-sections, Darcy/resistance formulation"
+      ],
+      "unknowns": [
+        "Physical fouling coefficient intentionally arbitrary",
+        "Supplied equation coefficient product/quotient discrepancy; original typography unverified",
+        "Quantitative velocity-dependent fouling law not supplied"
+      ],
+      "accepted_for_crossflow_calibration": false,
+      "accepted_curve_points": 0,
+      "metadata_audit": {
+        "local_path": "literature/inbox/crossflow_search_2026-11-09/frederic2018_crossref.json",
+        "sha256": "529196f868bb79707eb4d2034ee5d330730d21b427fc4afc7534620381f7537a",
+        "registered_doi": "10.1016/j.memsci.2018.09.021",
+        "registered_title": "Modelling of fluid flow distribution in multichannel ceramic membrane: Application to the filtration of produced water"
+      },
+      "initial_screening_access": "Mo bibliography, publisher abstract/highlights, Crossref metadata; full article not inspected",
+      "received_review": {
+        "date": "2026-11-09",
+        "review": "literature/crossflow_papers_review.md",
+        "extraction": "literature/crossflow_extraction.json",
+        "local_files": [
+          {
+            "path": "literature/inbox/Frederic2018Modeling/Frederic2018Modeling.md",
+            "sha256": "e3c3af50a6462161b8b524dee90b5ed468a8a930b6e0379ac434610dffceafea",
+            "role": "full_article_Markdown"
+          },
+          {
+            "path": "literature/inbox/Frederic2018Modeling/Frederic2018Modeling_meta.json",
+            "sha256": "d231f626445d14e638a711810a241770689baa8e255150367c63e271b182c8a6",
+            "role": "conversion_metadata"
+          },
+          {
+            "path": "literature/inbox/Frederic2018Modeling/_page_3_Figure_2.jpeg",
+            "sha256": "948d77191b9bb852eaffae4ce1e5a7c0412a114870f87686f9690be3f72c0e8f",
+            "role": "visually_reviewed_figure"
+          }
+        ],
+        "numerical_scope": "2D numerical comparison with arbitrary fouling coefficient; no physical fouling-time calibration."
+      },
+      "initial_request": [
+        "Full article, geometry/boundary figures, equations and available supporting information"
+      ],
+      "requested_material": [],
+      "original_pdf_received": false,
+      "accepted_for_source_reference_reproduction": false
+    },
+    {
+      "id": "tanudjaja2017",
+      "title": "Effect of cross-flow velocity, oil concentration and salinity on the critical flux of an oil-in-water emulsion in microfiltration",
+      "doi": "10.1016/j.memsci.2017.02.011",
+      "citation": "H. J. Tanudjaja, V. V. Tarabara, A. G. Fane and J. W. Chew (2017), Journal of Membrane Science 530, 11-19",
+      "priority": "alternative_oily_water",
+      "role": "Separate velocity-critical-flux experiment and model-comparison benchmark",
+      "reviewed_access": "Publisher abstract and indexed results; full article not inspected; Crossref archive request returned 429",
+      "primary_urls": [
+        "https://doi.org/10.1016/j.memsci.2017.02.011",
+        "https://www.sciencedirect.com/science/article/abs/pii/S0376738816325728"
+      ],
+      "source_locations": [
+        "Fig. 4 identified by indexed publisher text: critical flux versus crossflow velocity",
+        "Conclusions: tested velocity, feed and salt domains"
+      ],
+      "unknowns": [
+        "Membrane material and channel geometry for selected series",
+        "Full curve values, protocol, concentration basis, viscosity and temperature",
+        "Reported uncertainty; model equations and applicability"
+      ],
+      "requested_material": [
+        "Full article if selecting oily-water alternative or primary series is insufficient"
+      ],
+      "accepted_for_crossflow_calibration": false,
+      "accepted_curve_points": 0,
+      "screening_observations": {
+        "method": "Direct observation through the membrane (DOTM)",
+        "crossflow_velocity_domain_m_s": [
+          0.1,
+          0.4
+        ],
+        "reported_oil_concentration_domain": {
+          "values": [
+            50,
+            500
+          ],
+          "unit": "ppm",
+          "SI_conversion": null,
+          "reason": "Check mass/volume basis in full methods before conversion."
+        },
+        "compatibility": "Do not pool oil-emulsion or DOTM coefficients with ceramic/TiO2 data as matched validation."
+      }
+    },
+    {
+      "id": "chen2022",
+      "title": "Oil-in-water emulsion separation: Fouling of alumina membranes with and without a silicon carbide deposition in constant flux filtration mode",
+      "doi": "10.1016/j.watres.2022.118267",
+      "citation": "M. Chen, S. G. J. Heijman, M. W. J. Luiten-Olieman and L. C. Rietveld (2022), Water Research 216, 118267",
+      "priority": "later_constant_flux_fouling",
+      "role": "Ceramic cyclic-fouling/cleaning benchmark; cannot identify velocity dependence",
+      "reviewed_access": "University abstract and public PDF text/captions inspected through web tool; no curve-pixel verification or digitization. Direct local PDF requests returned HTTP 403.",
+      "primary_urls": [
+        "https://doi.org/10.1016/j.watres.2022.118267",
+        "https://research.tudelft.nl/en/publications/oil-in-water-emulsion-separation-fouling-of-alumina-membranes-wit/",
+        "https://ris.utwente.nl/ws/portalfiles/portal/297029948/1_s2.0_S0043135422002305_main.pdf"
+      ],
+      "source_locations": [
+        "Jan 2025 reference [28]",
+        "Section 2.5.1, PDF page 3: apparatus and fixed crossflow velocity",
+        "Section 2.5.2, PDF page 3: temperature and cleaning protocol",
+        "Fig. 4, PDF page 6: normalized permeance, D0/D90, 90/100/110 LMH"
+      ],
+      "unknowns": [
+        "Digitized permeance/time curves",
+        "Full per-cycle conditions and supporting figures if fitting dynamics",
+        "Reported hydraulic experimental uncertainty; do not invent it"
+      ],
+      "requested_material": [
+        "No need for next velocity benchmark; PDF/Markdown and SI useful if choosing time-dependent ceramic fouling later"
+      ],
+      "accepted_for_crossflow_calibration": false,
+      "accepted_curve_points": 0,
+      "metadata_audit": {
+        "local_path": "literature/inbox/crossflow_search_2026-11-09/chen2022_crossref.json",
+        "sha256": "763661c0f7f4a7912b578dc77bff6e9a2aa10e2e992f9d42170724d895fe3dc9",
+        "registered_doi": "10.1016/j.watres.2022.118267",
+        "registered_title": "Oil-in-water emulsion separation: Fouling of alumina membranes with and without a silicon carbide deposition in constant flux filtration mode"
+      },
+      "screening_conditions_not_calibration_data": {
+        "crossflow_velocity_m_s": 0.44,
+        "filtration_area_m2": 0.003,
+        "temperature": {
+          "reported_value": 22,
+          "reported_range_plus_minus": 3,
+          "unit": "degC",
+          "interpretation": "Reported operating-temperature range, not a flux uncertainty estimate."
+        },
+        "Fig4": {
+          "membranes": [
+            "D0",
+            "D90"
+          ],
+          "flux_L_m2_h": [
+            90,
+            100,
+            110
+          ],
+          "oil_mg_L": 400,
+          "SDS_mg_L": 100,
+          "pH": 5.6,
+          "measured_ordinate": "normalized permeance",
+          "cycles_include_backwash_and_flush": true
+        },
+        "velocity_dependence_identifiable": false
+      }
+    },
+    {
+      "id": "chiu2006",
+      "title": "Critical flux and rejection behaviour of non-circular-channelled membranes: Influence of some operating conditions",
+      "doi": "10.1016/j.seppur.2005.11.028",
+      "citation": "T. Y. Chiu, M. V. Lara Dominguez and A. E. James (2006), Separation and Purification Technology 50(2), 212-219",
+      "priority": "optional_biological_feed",
+      "role": "Concrete biological-water-treatment alternative with ceramic channels",
+      "reviewed_access": "Full supplied Markdown reviewed; Fig. 6 four markers digitized and Fig. 7 pore-size units visually checked.",
+      "primary_urls": [
+        "https://doi.org/10.1016/j.seppur.2005.11.028",
+        "https://www.sciencedirect.com/science/article/abs/pii/S1383586605003849"
+      ],
+      "source_locations": [
+        "Abstract: synthetic activated-sludge-process effluent, critical flux, hydrodynamics and solids retention",
+        "Membrane filtration unit; Fig. 1 rig and Fig. 2 geometry identified in indexed text"
+      ],
+      "unknowns": [
+        "Point-specific statistical uncertainty interpretation",
+        "Exact star-channel coordinates and specimen equivalence across papers",
+        "Original PDF typography"
+      ],
+      "accepted_for_crossflow_calibration": false,
+      "accepted_curve_points": 0,
+      "metadata_audit": {
+        "local_path": "literature/inbox/crossflow_search_2026-11-09/chiu2006_crossref.json",
+        "sha256": "acc664743a9b0cf942e8c38f02c278b95f12d3e6c12deb82e124d91bab0a376a",
+        "registered_doi": "10.1016/j.seppur.2005.11.028",
+        "registered_title": "Critical flux and rejection behaviour of non-circular-channelled membranesInfluence of some operating conditions"
+      },
+      "compatibility": "Select a fixed nominal pore size within a design comparison; changing selective-layer pore size is a different comparison.",
+      "initial_screening_access": "Publisher abstract and indexed Membrane filtration unit section, Crossref metadata; full article not inspected",
+      "received_review": {
+        "date": "2026-11-09",
+        "review": "literature/crossflow_papers_review.md",
+        "extraction": "literature/crossflow_extraction.json",
+        "local_files": [
+          {
+            "path": "literature/inbox/Chiu2006Critical/Chiu2006Critical.md",
+            "sha256": "1841fcaa47912266257c59ccffa1ed1eedc74add0d06de8a54e1c8ba4994affa",
+            "role": "full_article_Markdown"
+          },
+          {
+            "path": "literature/inbox/Chiu2006Critical/Chiu2006Critical_meta.json",
+            "sha256": "c04bb87957957a96b10e06a350330c02b0a84c80c4b085ab25ad946785ab861b",
+            "role": "conversion_metadata"
+          },
+          {
+            "path": "literature/inbox/Chiu2006Critical/_page_3_Figure_15.jpeg",
+            "sha256": "3f81b94c677b0e1014cdb60fb28b3631878e5b072a9dbc4122673918f787f84d",
+            "role": "visually_reviewed_figure"
+          },
+          {
+            "path": "literature/inbox/Chiu2006Critical/_page_4_Figure_9.jpeg",
+            "sha256": "1bb4ea65d3de7da62f42c10260f13d17719c6e17e12b99c0f5586b180752ba52",
+            "role": "visually_reviewed_figure"
+          }
+        ],
+        "numerical_scope": "Separate biological-feed case; measured critical-flux range does not reach the illustrative 100 LMH target."
+      },
+      "initial_request": [
+        "Full article with figures and available supplement if exploring biological-feed alternative"
+      ],
+      "requested_material": [],
+      "original_pdf_received": false,
+      "accepted_for_source_reference_reproduction": false,
+      "digitized_reference_points": 4
+    },
+    {
+      "id": "field1995",
+      "title": "Critical flux concept for microfiltration fouling",
+      "doi": "10.1016/0376-7388(94)00265-Z",
+      "citation": "R. W. Field, D. Wu, J. A. Howell and B. B. Gupta (1995), Journal of Membrane Science 100(3), 259-272",
+      "priority": "optional_yeast_foundation",
+      "role": "Foundational constant-flux method and yeast-processing reference trail",
+      "reviewed_access": "Publisher abstract and Crossref metadata; full article not inspected",
+      "primary_urls": [
+        "https://doi.org/10.1016/0376-7388(94)00265-Z",
+        "https://www.sciencedirect.com/science/article/abs/pii/037673889400265Z"
+      ],
+      "source_locations": [
+        "Abstract: yeast, yeast debris and dodecane emulsions; flat-sheet and tubular systems"
+      ],
+      "unknowns": [
+        "Which data are newly measured versus cited from earlier studies",
+        "Source-specific hydrodynamics, geometry, protocol and uncertainties"
+      ],
+      "requested_material": [
+        "Full article if selecting yeast benchmark; follow original experimental sources as needed"
+      ],
+      "accepted_for_crossflow_calibration": false,
+      "accepted_curve_points": 0,
+      "metadata_audit": {
+        "local_path": "literature/inbox/crossflow_search_2026-11-09/field1995_crossref.json",
+        "sha256": "ee62d21c7e010ff4fbb00e40584b9e887a17a86b5257f9357fb3868d2889f01e",
+        "registered_doi": "10.1016/0376-7388(94)00265-z",
+        "registered_title": "Critical flux concept for microfiltration fouling"
+      }
+    },
+    {
+      "id": "bacchin2006",
+      "title": "Critical and sustainable fluxes: Theory, experiments and applications",
+      "doi": "10.1016/j.memsci.2006.04.014",
+      "citation": "P. Bacchin, P. Aimar and R. W. Field (2006), Journal of Membrane Science 281, 42-69",
+      "priority": "methods_available",
+      "role": "Terminology and limitations; review, not an independent experimental dataset",
+      "reviewed_access": "Author-hosted PDF abstract/text screened; downloaded PDF page 1 visually inspected, not a full 28-page review",
+      "primary_urls": [
+        "https://doi.org/10.1016/j.memsci.2006.04.014",
+        "https://www.patricebacchin.fr/images/doc/paper/bacchin_jms_2006.pdf",
+        "https://ora.ox.ac.uk/objects/uuid%3Ae0726a97-05ea-465d-b70c-f2169444a479"
+      ],
+      "source_locations": [
+        "Journal page 42, PDF page 1: abstract and methods contents"
+      ],
+      "unknowns": [
+        "Protocol-specific limits must be checked in selected experimental source"
+      ],
+      "requested_material": [
+        "Already downloaded locally; no user acquisition needed for the abstract/definitions role"
+      ],
+      "accepted_for_crossflow_calibration": false,
+      "accepted_curve_points": 0,
+      "metadata_audit": {
+        "local_path": "literature/inbox/crossflow_search_2026-11-09/bacchin2006_crossref.json",
+        "sha256": "8a3e8f91924195fc35d6089683810873bb81a769b0aeb14bcc4d0f84b472e266",
+        "registered_doi": "10.1016/j.memsci.2006.04.014",
+        "registered_title": "Critical and sustainable fluxes: Theory, experiments and applications"
+      },
+      "local_pdf": {
+        "path": "literature/inbox/crossflow_search_2026-11-09/Bacchin2006Critical.pdf",
+        "sha256": "b4b97f548d70f88caacde1de80c4c40b03cb3218a18932089d92521d01949802",
+        "visual_review_pages_one_based": [
+          1
+        ]
+      }
+    }
+  ],
+  "search_method": {
+    "order": "Supplied main papers, Mo supplement and existing extractions; cited primary papers; targeted wider searches; DOI registry checks.",
+    "representative_queries": [
+      "\"Economic aspects of critical flux operability\"",
+      "\"Modelling of fluid flow distribution in multichannel ceramic membrane\"",
+      "\"Effect of cross-flow velocity, oil concentration and salinity\"",
+      "\"Critical flux concept for microfiltration fouling\"",
+      "\"Critical flux and rejection behaviour\""
+    ],
+    "evidence_policy": "Technical screening relies on primary publisher records, university-hosted articles and author-hosted review; secondary search hits are discovery leads only.",
+    "access_limits": "Publisher full-page requests often returned 403. Indexed publisher text supports screening, not inspected table cells or extracted curve values. No paywall or institutional authentication was bypassed.",
+    "metadata_limits": "Some registry titles omit subscripts or punctuation. Later Crossref 429 responses were not retried; initial Garcia metadata was inspected but not saved as a response file."
+  },
+  "decision": {
+    "primary_request": [],
+    "geometry_followup": [],
+    "optional_biological_request": [],
+    "first_model": "Bounded source-specific critical-flux constraint at fixed target flux, coupled to module hydraulics and DWSIM duty.",
+    "inference": "Full supplied text and selected figures now reviewed; a bounded reference benchmark is feasible. Physical absolute-flow calibration is not established.",
+    "do_not_infer": [
+      "A universal optimum crossflow velocity",
+      "A sustainable long-term flux from short-step critical flux alone",
+      "Matched specimens across different papers",
+      "A fitted velocity law from a single fixed-velocity experiment",
+      "An effect of support geometry on fouling from hydraulic resistance alone"
+    ],
+    "acquisition_status": "All four requested papers received as Markdown, metadata and figures; no additional article required now. Original PDFs optional for source typography audit.",
+    "next_executable_step": "Define an explicit synthetic star-channel geometry/flow convention and verify its OpenLB hydraulics using stock facilities. Biological feed remains a separate lower-flux case.",
+    "selected_source_ids": [
+      "garcia2008",
+      "chiu2005",
+      "frederic2018"
+    ],
+    "biological_alternative_id": "chiu2006"
+  },
+  "data_contract": {
+    "per_datum_required": [
+      "paper_DOI",
+      "specimen_or_series",
+      "section_figure_table",
+      "value_and_original_unit",
+      "SI_conversion_or_explicit_unavailable",
+      "feed_and_operating_conditions",
+      "extraction_method",
+      "reported_uncertainty_or_null",
+      "calibration_or_holdout_role"
+    ],
+    "unavailable_inputs": "Null or explicit scenario with sensitivity; no new laboratory measurements, inaccessible raw data, extra repositories or author contact required.",
+    "velocity": "Distinguish inlet versus mean channel velocity; Q/A_open; filtration area differs from open cross-section.",
+    "energy": "Distinguish published energy boundary from two-pump shaft energy per permeate volume and any electrical/cooling duties.",
+    "feed": "New suspension properties and concentration/rejection balances needed before claiming validated recycle behavior."
+  },
+  "received_review": "literature/crossflow_papers_review.md",
+  "implementation": {
+    "status": "bounded_reference_and_conditional_process_benchmark_verified",
+    "report": "docs/crossflow_benchmark.md",
+    "commands": "crossflow_benchmark/README.md",
+    "reference": "docs/crossflow_benchmark_reference.json",
+    "run_id": "20261109T005324Z-230bef0c",
+    "Julia_assertions": 846,
+    "Python_tests": 50,
+    "actual_DWSIM_cases": 32,
+    "absolute_module_calibration_accepted": false,
+    "physical_fouling_time_calibrated": false
+  }
+}

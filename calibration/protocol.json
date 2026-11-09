@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "protocol_id": "biesheuvel-akp30-log-ck-v1",
+  "specified_date": "2026-11-08",
+  "status": "Retrospective same-study split, specified before this implementation's fit; table values were already reviewed. Not a blind or independent-laboratory validation.",
+  "dataset_id": "biesheuvel_1999_table2",
+  "extraction_path": "literature/support_membrane_extraction.json",
+  "audit_path": "literature/biesheuvel_source_audit.json",
+  "model": "k = b * d_primary_m^2 * porosity^3 / (180 * (1-porosity)^2)",
+  "objective": "Unweighted sum of squared natural-log permeability residuals; b is the only fitted parameter. No uncertainty weights are available.",
+  "calibration_rows": [2, 3, 4],
+  "primary_holdout_rows": [5, 6, 7],
+  "transfer_rows": [8],
+  "out_of_domain_rows": [1, 9],
+  "split_rationale": {
+    "calibration": "AKP-30, one-hour holds, temperature series (1050/1100/1150 C)",
+    "primary_holdout": "AKP-30, 1100 C, hold-time series (0/5/10 h). Same nominal powder and preparation family; never fitted.",
+    "transfer": "AKP-15; different powder, reported processing aid; a diagnostic, not primary validation.",
+    "out_of_domain": "CR-6 is dry pressed; AKP-50 is agglomerated. Show errors without using these rows to fit."
+  },
+  "nominal_primary_particle_diameter_m": {
+    "CR-6": 7e-7,
+    "AKP-30": 4e-7,
+    "AKP-15": 6e-7,
+    "AKP-50": 1.75e-7
+  },
+  "particle_size_scope": "Approximate mean primary powder sizes from source methods. Not measured pore diameters, hydraulic radii or fitted effective sizes; uncertainties not given.",
+  "primary_screen": {
+    "max_absolute_relative_error": 0.25,
+    "rule": "Every primary held-out case must have |k_pred/k_measured - 1| <= 0.25.",
+    "basis": "Project engineering screening choice specified before fitting, not a literature uncertainty bound, statistical test or user-prescribed tolerance. Report failure without tuning."
+  },
+  "sensitivity": "Leave one calibration row out and refit on the other two. Parameter range is a sensitivity diagnostic, not a confidence interval.",
+  "conditional_process_demo": {
+    "baseline_row": 3,
+    "alternative_row": 2,
+    "support_thickness_m": 0.002,
+    "viscosity_Pa_s": 0.001,
+    "flux_m_s": 2.777777777777778e-5,
+    "membrane_area_m2": 1.0,
+    "pump_efficiency_fraction": 0.75,
+    "other_fixed_resistance_m_inv": 0.0,
+    "selective_to_baseline_support_resistance_ratios": [0.25, 1.0, 10.0, 100.0],
+    "scope": "Illustrative flat, clean-water layers-in-series calculation with the existing Julia model. Operating conditions and selective resistances are assumptions. Within each measured/predicted comparison, the selective resistance is fixed using the MEASURED baseline k. Nominal 2 mm support thickness is used for both. Not measured full-membrane energy, a strength-feasible design recommendation, or a new OpenLB/DWSIM result."
+  },
+  "unavailable": [
+    "Permeability repeatability, replicate count and uncertainty",
+    "Actual individual pressure/flow series and water-test temperature/viscosity",
+    "Three-dimensional connected morphology tied to these specimens",
+    "Specimen-matched support/intermediate/selective-layer resistances"
+  ]
+}

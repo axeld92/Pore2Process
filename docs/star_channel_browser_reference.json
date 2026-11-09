@@ -1,0 +1,67 @@
+{
+  "timestamp_utc": "2026-11-09T16:49:44.450014+00:00",
+  "url": "http://127.0.0.1:5006/app",
+  "checked_browsers": [
+    "Codex in-app browser: rendering, actual runs, controls, 3D rotation, tab lifecycle",
+    "Firefox: actual run, native Save dialog, ZIP validation, invalid input recovery"
+  ],
+  "download": {
+    "status": "passed",
+    "archive": "/Users/dula/Documents/ChatGPT/Pore2Process/results/pore2process-filtration-20261109T164208Z-9e81f7d0.zip",
+    "bytes": 363257,
+    "sha256": "a201d0d43a122afce0c842b79e735a7837343db1b9db83e8a9240784699cec71",
+    "run_id": "20261109T164208Z-9e81f7d0",
+    "files": [
+      "axial_profile.csv",
+      "flowsheet.png",
+      "manifest.json",
+      "native_periodic_channel_m.stl",
+      "native_section.csv",
+      "native_section.vtp",
+      "native_summary.json",
+      "pressure_profile.png",
+      "process.dwxmz",
+      "summary.json",
+      "support_summary.json"
+    ],
+    "VTP_points": 1860,
+    "profile_rows": 101,
+    "manifest_verified": true
+  },
+  "final_UI_sha256": {
+    "app.py": "b398ff7d4dec911c14b84926e40e62836b03adf983cb51d97a8b4ff1d6b3aa48",
+    "src/pore2process_demo/filtration_ui.py": "9af5159db4eabf17871b7943ac326a16b07e086dec9d95671e0c662b3eddd938",
+    "src/pore2process_demo/ui.py": "768bf12f3bbcc4c26d96e5095a70632bbc44a57420da238647aec1ba0c21a4c8",
+    "src/pore2process_demo/visualization.py": "3524c3c24fdf010497f79836266292dc8695fe554ef9b049045d500a2b8c5bf8",
+    "star_channel/export.py": "f1325893dfceb4ded997c774d6405c9ae61ebfd3b263cdafb7ca3bcf32bbda44"
+  },
+  "screenshots": {
+    "browser_filtration_verified.jpg": "1f7569b906b5415c128b11f1e63d3a24fb945bf3952bf3f64c50ff34d9280a53",
+    "browser_filtration_3d.jpg": "3ab38b5aeb7e364a26349b391241567d8c53986137d0e80a3bdb776ee3b66076",
+    "browser_capillary_rotated.jpg": "38293b6078c56327e18b3f4f5c42361dc0729454d862da394b442fc87c9d49a9",
+    "browser_capillary_tabs.jpg": "8b80751989ee1637bb8477ed259dbbc337f2822e2a5b21eec7d98f53a29c189f"
+  },
+  "HTTP_check": {
+    "status": 200,
+    "html_prefix": "<!DOCTYPE html>\n<html lang=\"en\"  data-theme-managed=\"false\">\n  <head>\n    <meta "
+  },
+  "HTTP_is_not_visual_evidence": true,
+  "numerical_matrix": "20261109T162032Z-4f70cac1",
+  "revision_note": "Axis, VTK lifecycle and completed-download presentation fixes were browser-tested after the immutable accepted numerical matrix; its recorded UI source hashes describe that earlier snapshot.",
+  "remaining_scope_limits": [
+    "No mobile, multi-user load, other OS, offline JavaScript asset or production deployment checks",
+    "No validated sustainable flux, fouling time or retention law at the new geometry/Re"
+  ],
+  "status": "passed",
+  "accepted_numerical_core_hashes_match_current": true,
+  "final_python_tests": {
+    "passed": 61,
+    "log": "results/star_channel/pytest-final-ui.log"
+  },
+  "final_browser_JS_errors": 0,
+  "final_runs": {
+    "Firefox_download": "20261109T164208Z-9e81f7d0",
+    "in_app_filtration": "20261109T164425Z-544d5e24",
+    "in_app_capillary_200Pa": "6464d61a"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "source_id": "chiu_2006_biological_critical",
+  "title": "Critical flux and rejection behaviour of non-circular-channelled membranes: Influence of some operating conditions",
+  "doi": "10.1016/j.seppur.2005.11.028",
+  "markdown": "literature/inbox/Chiu2006Critical/Chiu2006Critical.md",
+  "markdown_sha256": "1841fcaa47912266257c59ccffa1ed1eedc74add0d06de8a54e1c8ba4994affa",
+  "specimen": "Reported non-circular seven-channel ceramic microfiltration family; 0.2 micrometre nominal pore size, not a reconstruction of the project synthetic star",
+  "feed": "Effluent of synthetic activated-sludge production system; not the upstream porous-pot recipe in Table 1",
+  "measurements": [
+    {"quantity": "module feed total COD", "value": 68.7, "unit": "mg/L", "reported_operating_range": [65.3,72.1], "location": "Table 2", "uncertainty": null, "note": "Operating-period average and range, not paired point-specific feed measurements or experimental confidence limits"},
+    {"quantity": "critical flux", "value": 21.4, "unit": "L/m2/h", "Re": 1388, "pH": 7.5, "temperature_range_degC": [20,25], "location": "Section 3.2; Fig. 6", "uncertainty": null, "reported_reproducibility": "Section 2.3 states errors never exceed 5%; not identified as a standard deviation, confidence interval or point-specific error bar"},
+    {"quantity": "below-critical COD rejection", "value": 0.65, "unit": "fraction", "permeate_COD_mg_L": 24.1, "crossflow_velocity_m_s": 1.6, "TMP_bar": 0.1, "pH": 7.5, "location": "Table 3, 0.2 micrometre column, transient filtration", "uncertainty": null}
+  ],
+  "transfers_not_measurements": [
+    "The reported Re 1388 critical flux remains source context. It is not transferred to the project's verified low-Re synthetic star; sustainable flux there remains unavailable.",
+    "Reported module-scale rejection is used as a constant local rejection in the distributed tracer calculation; its transfer from 1.6 m/s and 0.1 bar is an assumption. 0.5-0.8 is a chosen scenario sensitivity, not experimental uncertainty.",
+    "The module inlet is fixed at the reported average COD. Fresh-feed concentration is derived from the recycle balance, rather than silently held at that same concentration.",
+    "A water-carrier property model and a 1.2-times-viscosity scenario are used; neither constitutes measured effluent rheology.",
+    "Exploratory high-Re runs and an exploratory 0.8 times 0.95 critical-flux transfer were not accepted for the final low-Re showcase. The final case makes no fouling-free or sustainable-flux admission claim."
+  ],
+  "original_pdf_available_locally": false,
+  "unit_audit": "The Markdown omits the micro symbol in some pore-size labels; 0.2 micrometre is established by the microfiltration context and figure axis retained in the supplied source audit. No original PDF typography check is claimed."
+}

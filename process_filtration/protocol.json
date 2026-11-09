@@ -1,0 +1,30 @@
+{
+  "protocol_id": "once-through-filtration-v1",
+  "specified_date": "2026-11-08",
+  "source_protocol_id": "graded-support-fixed-opening-v1",
+  "temperature_K": 298.15,
+  "external_absolute_pressure_Pa": 100000.0,
+  "permeate_recoveries": [0.25, 0.5, 0.75],
+  "channel_pressure_drops_Pa": [0.0, 20000.0],
+  "nominal_recovery": 0.5,
+  "pump_efficiency_fraction": 0.75,
+  "assumptions": [
+    "Pure clean water; fixed 100 LMH reference flux and 1 m2 area inherited from the verified graded-support study.",
+    "Recovery is permeate/feed mass fraction, equivalently volumetric recovery at the common feed reference density. Actual flashed volumetric flows are reported separately.",
+    "All feed is pressurized. Two nonempty product streams discharge at the fresh-feed pressure, without energy recovery or recycle.",
+    "The membrane uses a stock splitter and an isenthalpic pressure-loss valve on the permeate branch; no solute rejection or intrinsic membrane unit is claimed.",
+    "A separate upstream stock valve represents a lumped channel loss. Zero and 20 kPa are sensitivity assumptions, not measured channel hydraulics or axial pressure profiles.",
+    "Julia supplies TMP from the unchanged fixed-impedance scenario and native OpenLB resistance ratios. DWSIM supplies water properties, flashes, stream balances and pump work.",
+    "No fouling, osmosis, electrical motor loss, backwash, pressure recovery, crossflow recycle or total-plant energy prediction."
+  ],
+  "acceptance": {
+    "mass_balance_relative": 1e-10,
+    "energy_balance_relative_to_shaft": 0.001,
+    "pump_power_relative": 1e-9,
+    "pressure_absolute_Pa": 1e-6,
+    "relative_viscosity_change": 0.001,
+    "relative_density_change": 0.001,
+    "reload_temperature_absolute_K": 1e-7,
+    "reload_enthalpy_absolute_J_kg": 0.001
+  }
+}

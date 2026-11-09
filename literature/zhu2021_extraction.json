@@ -1,0 +1,375 @@
+{
+  "schema_version": 1,
+  "reviewed_date": "2026-11-08",
+  "doi": "10.1016/j.ceramint.2021.01.088",
+  "source": {
+    "folder": "literature/inbox/Zhu2021Design",
+    "markdown": "literature/inbox/Zhu2021Design/Zhu2021Design.md",
+    "files_sha256": {
+      "Zhu2021Design.md": "bab54e708ced579e008e0e76b771a1bb40d9f68342e627967b05ef5880581d6c",
+      "Zhu2021Design_meta.json": "2deaf4184390474a8ad6910c9ff94d224131e089c409ba9ca927226583cc3cfd",
+      "_page_0_Picture_5.jpeg": "445e69dc0320560c1560acf4c9fa6a7549441424de0ad2679a1a467969498cf8",
+      "_page_0_Picture_6.jpeg": "e664b2089c16f4c0daec343ae80dc45b08385e2b1a286555201bfa33fc12d543",
+      "_page_1_Figure_2.jpeg": "138924ad9dd097cb0752043df20fe88545441a31eba460b7cdca3f665d4e71e2",
+      "_page_2_Figure_10.jpeg": "f5aec1cb2dfffbfd7308157671d73644a869d1e5e0b560fc0fee0983e82ba777",
+      "_page_2_Figure_2.jpeg": "fb4febd7fdedc800035f5088ed2468737f4cd1b9e1e6b5303f6ca608745fd94b",
+      "_page_2_Figure_3.jpeg": "f8c4ab194f8b593da8978fcc7bf01e079a813d51b1b5d2d87a7a2bc8e9f9f930",
+      "_page_3_Figure_11.jpeg": "5600e301eb173c009d3e8872a3f72529149d5378d6b46b65b7e22d79ed42a40d",
+      "_page_3_Figure_13.jpeg": "e5f80bee750c61d85fd10c05ce2f7093196aece6f378d04d5a623cf2895a84ab",
+      "_page_4_Figure_2.jpeg": "58c2f90335b97269027bf256da694ee7032fec02cba1eb29835a00229a90d6e6",
+      "_page_5_Figure_2.jpeg": "b27cc9e1bf0f578b1be68eba59fdcaa34c409ed9358ea9e599cdf55a0620f280",
+      "_page_5_Figure_4.jpeg": "9ff9c0d88469e13725ad663e702c912ab9ede9f51083768bd6af4e97893ae3d3",
+      "_page_6_Figure_16.jpeg": "666850139719a1ca26ba02903cf617f5a1febcabb2d7fcd771b02ec12b3f8ba2",
+      "_page_7_Figure_2.jpeg": "ca633b224caaf95481042abf39528492b3ab54f7603976f6fb5bd7e6dd9887a7",
+      "_page_7_Figure_3.jpeg": "781a40953957619b3e1e1e84e32da277a735ce344ed34910ceebaf9b6199af64",
+      "Zhu2021Design.pdf": "b3ec370f966131169ac3fc90d25ab68a09304cf017c73773a276b90c4d8ea583"
+    },
+    "metadata_page_count": 9,
+    "extraction_methods": {
+      "0": "pdftext",
+      "1": "pdftext",
+      "2": "pdftext",
+      "3": "surya",
+      "4": "surya",
+      "5": "surya",
+      "6": "surya",
+      "7": "surya",
+      "8": "pdftext"
+    },
+    "original_pdf_received": true,
+    "scientific_figures_1_through_10_visually_reviewed": true
+  },
+  "supplement_check": {
+    "user_report": "No supporting information found on publisher website.",
+    "supplied_article_mentions_supplement_or_appendix": false,
+    "direct_publisher_fetch_http_status": 403,
+    "targeted_search_supplement_identified": false,
+    "conclusion": "No supplement identified; absence not proved because direct publisher page inaccessible. The main article and supplied figures suffice for a bounded digitized series-law test."
+  },
+  "measurement_conditions": {
+    "fluid": "deionized water, pre-saturated specimens",
+    "test_pressure_drop_Pa": 100000.0,
+    "effective_area_m2": 0.000264,
+    "mode": "crossflow; feed/return pressure gauges and atmospheric permeate; stable flux collected",
+    "water_temperature_K": null,
+    "water_viscosity_Pa_s": null,
+    "note": "25 C belongs to alcohol gas-bubble porometry, not a confirmed water-flux temperature.",
+    "location": "Section 2.3, Markdown line 80; test pressure and viscosity said unchanged within series in Section 4.1."
+  },
+  "support_preparation": {
+    "nominal_disk_diameter_m": 0.027,
+    "nominal_thickness_range_m": [
+      0.002,
+      0.005
+    ],
+    "alumina_primary_D50_m": 1.17e-05,
+    "TiO2_sintering_aid_mass_fraction": 0.01,
+    "pore_former_mass_fraction_range": [
+      0.0,
+      0.25
+    ],
+    "sintering_temperature_C_range": [
+      1400,
+      1600
+    ],
+    "point_specific_thickness_and_structure_available": false
+  },
+  "paired_layer_evidence": {
+    "location": "Section 3.2, Figure 4",
+    "M2_support_fluxes_m_h": [
+      4.05,
+      20.43,
+      60.08
+    ],
+    "M2_thickness_approx_m": 2.45e-05,
+    "M2_pore_diameter_approx_m": 1.53e-07,
+    "porosity_similarity": "Authors infer similar porosity from formulation/firing; not independently measured on each coated sample.",
+    "scope": "SEM shows clear interfaces and no detected penetration for illustrated specimens. Similarity supports a reduced effective fixed-layer assumption, not proof of identical intrinsic selective properties or rejection."
+  },
+  "reported_author_fits_not_independent_validation": [
+    {
+      "series": "M1",
+      "average_pore_diameter_m": 1.28e-07,
+      "reported_plus_minus_pore_diameter_m": 9e-09,
+      "layer_thickness_m": 4.03e-05,
+      "reported_plus_minus_thickness_m": 2.5e-06,
+      "unsupported_fired_layer_open_porosity": 0.366,
+      "fitted_layer_resistance_m_inv": 276000000000.0,
+      "limiting_flux_LMH": 1458
+    },
+    {
+      "series": "M2",
+      "average_pore_diameter_m": 1.53e-07,
+      "reported_plus_minus_pore_diameter_m": 7e-09,
+      "layer_thickness_m": 2.45e-05,
+      "reported_plus_minus_thickness_m": 2.1e-06,
+      "unsupported_fired_layer_open_porosity": 0.395,
+      "fitted_layer_resistance_m_inv": 169000000000.0,
+      "limiting_flux_LMH": 2381
+    },
+    {
+      "series": "M3",
+      "average_pore_diameter_m": 1.82e-07,
+      "reported_plus_minus_pore_diameter_m": 1.1e-08,
+      "layer_thickness_m": 1.61e-05,
+      "reported_plus_minus_thickness_m": 2.6e-06,
+      "unsupported_fired_layer_open_porosity": 0.422,
+      "fitted_layer_resistance_m_inv": 125000000000.0,
+      "limiting_flux_LMH": 3215
+    }
+  ],
+  "reported_endpoint_flux_increase_fractions": {
+    "M1": 0.75,
+    "M2": 1.86,
+    "M3": 2.28
+  },
+  "uncertainty_scope": "Plus/minus values in Table 2 retained as reported; meaning/replicate count not confirmed. No hydraulic repeatability/error bars/raw point file available. Six replicates in Section 2.3 refer to bend strength, not flux.",
+  "audit_cautions": [
+    "Eq. 3-2 symbols in converted Markdown are inconsistent; use independently derived 1/Ptotal=1/Psupport+Zfixed, not literal OCR.",
+    "Table 2 M3 Jlim=3215 LMH conflicts with Figure 8 label 3.125 m/h and the 28.13 m/h 90%-threshold text. Preserve both; primary fit uses M1 data only.",
+    "Section 4.4 support flux 15.17 +/- 0.91 printed in LMH appears inconsistent with plotted/paired total flux and likely needs a factor of 1000 audit. Do not quantify penetration resistance from that converted value.",
+    "High-support-flux cases over 40 m/h have reported bend strength below 15 MPa; authors discuss a 30 MPa practical screening assumption near 30 m/h. Neither is a certified device pressure rating.",
+    "No controlled pore geometry or paired porosity/thickness is assigned to every Figure 6 point."
+  ],
+  "digitization": {
+    "image": "literature/inbox/Zhu2021Design/_page_4_Figure_2.jpeg",
+    "image_sha256": "58c2f90335b97269027bf256da694ee7032fec02cba1eb29835a00229a90d6e6",
+    "series": "M1 black diamonds",
+    "image_size_px": [
+      623,
+      624
+    ],
+    "dark_threshold": 35,
+    "pixel_region_xyxy": [
+      130,
+      370,
+      586,
+      510
+    ],
+    "minimum_component_pixels": 15,
+    "expected_point_count": 21,
+    "axis_anchors": {
+      "x0_px": 124.5,
+      "x100_px": 569.5,
+      "y600_px": 524.5,
+      "y3600_px": 55.0
+    },
+    "axis_anchor_units": {
+      "x": "support flux m3 m^-2 h^-1 (m/h)",
+      "y": "whole membrane flux L m^-2 h^-1"
+    },
+    "axis_anchor_selection": "Visually read major tick centres; not fitted to reported endpoint fluxes.",
+    "touching_pairs": [
+      {
+        "bbox_xyxy": [
+          138,
+          438,
+          152,
+          453
+        ],
+        "visually_read_centres_xy": [
+          [
+            142.5,
+            448.5
+          ],
+          [
+            147.5,
+            442.5
+          ]
+        ]
+      },
+      {
+        "bbox_xyxy": [
+          160,
+          414,
+          177,
+          424
+        ],
+        "visually_read_centres_xy": [
+          [
+            164.5,
+            419.5
+          ],
+          [
+            172.5,
+            418.5
+          ]
+        ]
+      },
+      {
+        "bbox_xyxy": [
+          210,
+          399,
+          231,
+          409
+        ],
+        "visually_read_centres_xy": [
+          [
+            214.5,
+            404.0
+          ],
+          [
+            226.0,
+            404.0
+          ]
+        ]
+      },
+      {
+        "bbox_xyxy": [
+          265,
+          394,
+          283,
+          406
+        ],
+        "visually_read_centres_xy": [
+          [
+            269.5,
+            401.5
+          ],
+          [
+            278.5,
+            398.5
+          ]
+        ]
+      }
+    ],
+    "method": "Dark connected-component bounding-box midpoints; four touching pairs are manually deblended from inspected enlarged source. Numbered source overlay must be reviewed.",
+    "measurement_uncertainty_available": false,
+    "overlay_visually_reviewed": true,
+    "overlay_path": "literature/inbox/Zhu2021Design/audit/m1_digitization_overlay.png",
+    "overlay_sha256": "873a08799ca8fd08769d0f90f2c0724e7a32c7d1007cedce3e80d16a4465bb71"
+  },
+  "accepted_scope": "Limited retrospective calibration of effective M1 series impedance. PDF-v2 nominal and reading-corner 10% screens pass; JPEG-v1 reading-corner failure remains preserved. Not a unique specimen geometry or total-plant energy validation. No new experiments or unavailable raw datasets required.",
+  "production_native_parameters_changed": false,
+  "pdf_audit": {
+    "pdf_path": "literature/inbox/Zhu2021Design/Zhu2021Design.pdf",
+    "pdf_sha256": "b3ec370f966131169ac3fc90d25ab68a09304cf017c73773a276b90c4d8ea583",
+    "page_count": 9,
+    "figure6_pdf_page_zero_based": 4,
+    "figure6_printed_page": 12361,
+    "native_image_xobject": "X2.jpg",
+    "native_image_size_px": [
+      890,
+      906
+    ],
+    "previous_image_size_px": [
+      623,
+      624
+    ],
+    "native_image_path": "literature/inbox/Zhu2021Design/pdf_audit/page5_image0.jpg",
+    "native_image_sha256": "a52d8722ab437500f899489f180d5a1ee4222cbf65d1bd5a72b4fd44562a5d20",
+    "method": "Extract page 5 image 0 using bundled pypdf; review native image and full rendered page. No image resampling before digitization.",
+    "full_relevant_page_visually_inspected": true,
+    "scope": "PDF-only reading refinement. Same 21 M1 points, same alternating split, same model and 10% engineering diagnostic. No new independent experiment."
+  },
+  "digitization_pdf": {
+    "image": "literature/inbox/Zhu2021Design/pdf_audit/page5_image0.jpg",
+    "image_sha256": "a52d8722ab437500f899489f180d5a1ee4222cbf65d1bd5a72b4fd44562a5d20",
+    "series": "M1 black diamonds",
+    "image_size_px": [
+      890,
+      906
+    ],
+    "dark_threshold": 35,
+    "pixel_region_xyxy": [
+      165,
+      550,
+      875,
+      770
+    ],
+    "minimum_component_pixels": 30,
+    "maximum_single_component_pixels": 200,
+    "expected_point_count": 21,
+    "axis_anchors": {
+      "x0_px": 156.5,
+      "x100_px": 849.5,
+      "y600_px": 786.5,
+      "y3600_px": 54.5
+    },
+    "axis_anchor_units": {
+      "x": "support flux m3 m^-2 h^-1 (m/h)",
+      "y": "whole membrane flux L m^-2 h^-1"
+    },
+    "axis_anchor_selection": "Native image major tick centres, read before fitting; not forced to reported endpoint fluxes.",
+    "touching_pairs": [
+      {
+        "bbox_xyxy": [
+          176,
+          650,
+          200,
+          674
+        ],
+        "visually_read_centres_xy": [
+          [
+            184.0,
+            666.0
+          ],
+          [
+            192.0,
+            658.0
+          ]
+        ]
+      },
+      {
+        "bbox_xyxy": [
+          211,
+          612,
+          240,
+          629
+        ],
+        "visually_read_centres_xy": [
+          [
+            219.0,
+            621.0
+          ],
+          [
+            232.0,
+            620.0
+          ]
+        ]
+      },
+      {
+        "bbox_xyxy": [
+          290,
+          590,
+          323,
+          606
+        ],
+        "visually_read_centres_xy": [
+          [
+            298.0,
+            598.0
+          ],
+          [
+            315.0,
+            598.0
+          ]
+        ]
+      },
+      {
+        "bbox_xyxy": [
+          376,
+          582,
+          404,
+          601
+        ],
+        "visually_read_centres_xy": [
+          [
+            384.0,
+            593.0
+          ],
+          [
+            396.0,
+            590.0
+          ]
+        ]
+      }
+    ],
+    "method": "Same dark-component and four visually separated touching-pair method on native PDF image.",
+    "measurement_uncertainty_available": false,
+    "overlay_visually_reviewed": true,
+    "overlay_path": "literature/inbox/Zhu2021Design/pdf_audit/m1_overlay.png",
+    "overlay_sha256": "dd6897db2aa9a3a408d2c330d2c08fbd29c45e0d8336f0325643a697ea1aa67c"
+  },
+  "computational_scope": "Published article/supporting-information evidence only. Unreported raw data, experimental conditions/uncertainty and specimen-linked 3D reconstruction are not implementation prerequisites; keep limits explicit."
+}

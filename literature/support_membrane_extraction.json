@@ -1,0 +1,369 @@
+{
+  "schema_version": 1,
+  "reviewed_date": "2026-11-08",
+  "experimental_calibration_accepted": true,
+  "production_parameters_changed": false,
+  "biesheuvel_1999": {
+    "doi": "10.1016/S0376-7388(98)00335-4",
+    "source": {
+      "folder": "literature/inbox/Biesheuvel1999Design",
+      "markdown": "literature/inbox/Biesheuvel1999Design/Biesheuvel1999Design.md",
+      "files_sha256": {
+        "Biesheuvel1999Design.md": "dff13d84a53aa81cba23143146c6179542df2ed3a8181b8fbbb34a4e99cee6fd",
+        "Biesheuvel1999Design_meta.json": "51b31f9c47d0d7069476e73ea0465a6f144236ea1c256b69c56a5ed20e02c488",
+        "_page_0_Picture_0.jpeg": "fbe8cec883c01ef9abdde154c277edd70b3ee7e543f28b82eb7bd936325c5e45",
+        "_page_0_Picture_1.jpeg": "ca48e4a6f76cfdf65d0c692eae6ac98b0c5e8a6e7926e08e29cb86509c1ab38d",
+        "_page_4_Picture_2.jpeg": "70aa44883b4531c13688f8e262f3dd08342fe95f1ff325bc85d2f3557ec7a8d1",
+        "_page_6_Figure_2.jpeg": "fec585f51a0a0106d3516b9930c86dda7776bc5476c5c4a9f679210bcb33ac3f",
+        "_page_8_Figure_10.jpeg": "36e24624df1a6550baf1a267471fba47c915f0f5a3fd379f00da45c3ab93053e",
+        "_page_8_Figure_12.jpeg": "7338626bf603f5dbfd7cf6a7f7663c53e3c7fbd6fe78a27a2ad34c430218ef75",
+        "_page_8_Figure_8.jpeg": "f49e7257161618ddb0a1e07999b74ac41aab9fccdac63a4e5fabf239209b4d10",
+        "_page_9_Figure_2.jpeg": "9b076a926b6e0c54bef2454d3b5f82cb7eb60c26a263668779ae11f20c9a6ae4",
+        "_page_9_Figure_4.jpeg": "062f4e1b1615335c8f1062c320c71d95b7d430244630066d7186e5a23bd4d4d7",
+        "_page_9_Figure_6.jpeg": "8584e0110189e29eae4d4eced510a8e1cb1b2da18101956b58e7d85cf2b82ab8",
+        "_page_9_Figure_9.jpeg": "0b40dbcd24afc1c114bf1fc92277316f14ecc96e1659e8a997b915eed6c77348"
+      },
+      "metadata_page_count": 12,
+      "extraction_methods_by_page": {
+        "0": "pdftext",
+        "1": "surya",
+        "2": "surya",
+        "3": "surya",
+        "4": "surya",
+        "5": "surya",
+        "6": "pdftext",
+        "7": "pdftext",
+        "8": "surya",
+        "9": "pdftext",
+        "10": "surya",
+        "11": "pdftext"
+      }
+    },
+    "classification": "Experimental support properties, visually corroborated against author thesis Chapter 7 Table 2 (same study). Limited reduced-model use accepted; uncertainty remains unavailable.",
+    "figures_visually_reviewed": {
+      "1": "_page_4_Picture_2.jpeg",
+      "2": "_page_6_Figure_2.jpeg",
+      "3": "_page_8_Figure_8.jpeg",
+      "4": "_page_8_Figure_10.jpeg",
+      "5": "_page_8_Figure_12.jpeg",
+      "6": "_page_9_Figure_2.jpeg",
+      "7": "_page_9_Figure_4.jpeg",
+      "8": "_page_9_Figure_6.jpeg",
+      "9": "_page_9_Figure_9.jpeg"
+    },
+    "measurement_conditions": {
+      "permeating_fluid": "distilled water",
+      "pressurizing_gas": "nitrogen; not the permeating test fluid",
+      "water_temperature_K": null,
+      "water_viscosity_used_for_reported_measurement_Pa_s": null,
+      "reported_cell_pressurization_up_to_Pa": 2000000.0,
+      "individual_pressure_differences_Pa": null,
+      "pressure_values_per_material_at_least": 3,
+      "raw_mass_time_series_supplied": false,
+      "nominal_colloidal_disk_diameter_m": 0.039,
+      "nominal_colloidal_disk_thickness_m": 0.002,
+      "exposed_flow_area_m2": null,
+      "strength_method": "four-point bending with Weibull evaluation; not direct device pressure certification"
+    },
+    "table2_rows": [
+      {
+        "table_row": 1,
+        "powder": "CR-6",
+        "processing": "dry_pressed",
+        "reported_sinter_temperature_C": 1260.0,
+        "sinter_temperature_K": 1533.15,
+        "reported_sinter_hold_time_h": 3.0,
+        "sinter_hold_time_s": 10800.0,
+        "reported_k_mantissa_times_1e_minus16_m2": 6.99,
+        "permeability_m2": 6.99e-16,
+        "porosity_fraction": 0.4,
+        "reported_mean_strength_MPa": 97.0,
+        "mean_strength_Pa": 97000000.0,
+        "weibull_modulus": 10.7,
+        "strength_specimens_per_material_type": 15,
+        "uncertainty_permeability_m2": null,
+        "uncertainty_mean_strength_Pa": null,
+        "source_location": "Table 2; methods Sections 3.1\u20133.3",
+        "source_markdown_line": 199
+      },
+      {
+        "table_row": 2,
+        "powder": "AKP-30",
+        "processing": "colloidal_filtration",
+        "reported_sinter_temperature_C": 1050.0,
+        "sinter_temperature_K": 1323.15,
+        "reported_sinter_hold_time_h": 1.0,
+        "sinter_hold_time_s": 3600.0,
+        "reported_k_mantissa_times_1e_minus16_m2": 1.9,
+        "permeability_m2": 1.8999999999999998e-16,
+        "porosity_fraction": 0.349,
+        "reported_mean_strength_MPa": 109.0,
+        "mean_strength_Pa": 109000000.0,
+        "weibull_modulus": 9.8,
+        "strength_specimens_per_material_type": 15,
+        "uncertainty_permeability_m2": null,
+        "uncertainty_mean_strength_Pa": null,
+        "source_location": "Table 2; methods Sections 3.1\u20133.3",
+        "source_markdown_line": 200
+      },
+      {
+        "table_row": 3,
+        "powder": "AKP-30",
+        "processing": "colloidal_filtration",
+        "reported_sinter_temperature_C": 1100.0,
+        "sinter_temperature_K": 1373.15,
+        "reported_sinter_hold_time_h": 1.0,
+        "sinter_hold_time_s": 3600.0,
+        "reported_k_mantissa_times_1e_minus16_m2": 1.35,
+        "permeability_m2": 1.35e-16,
+        "porosity_fraction": 0.286,
+        "reported_mean_strength_MPa": 199.0,
+        "mean_strength_Pa": 199000000.0,
+        "weibull_modulus": 12.5,
+        "strength_specimens_per_material_type": 15,
+        "uncertainty_permeability_m2": null,
+        "uncertainty_mean_strength_Pa": null,
+        "source_location": "Table 2; methods Sections 3.1\u20133.3",
+        "source_markdown_line": 201
+      },
+      {
+        "table_row": 4,
+        "powder": "AKP-30",
+        "processing": "colloidal_filtration",
+        "reported_sinter_temperature_C": 1150.0,
+        "sinter_temperature_K": 1423.15,
+        "reported_sinter_hold_time_h": 1.0,
+        "sinter_hold_time_s": 3600.0,
+        "reported_k_mantissa_times_1e_minus16_m2": 0.766,
+        "permeability_m2": 7.66e-17,
+        "porosity_fraction": 0.237,
+        "reported_mean_strength_MPa": 146.0,
+        "mean_strength_Pa": 146000000.0,
+        "weibull_modulus": 5.8,
+        "strength_specimens_per_material_type": 15,
+        "uncertainty_permeability_m2": null,
+        "uncertainty_mean_strength_Pa": null,
+        "source_location": "Table 2; methods Sections 3.1\u20133.3",
+        "source_markdown_line": 202
+      },
+      {
+        "table_row": 5,
+        "powder": "AKP-30",
+        "processing": "colloidal_filtration",
+        "reported_sinter_temperature_C": 1100.0,
+        "sinter_temperature_K": 1373.15,
+        "reported_sinter_hold_time_h": 0.0,
+        "sinter_hold_time_s": 0.0,
+        "reported_k_mantissa_times_1e_minus16_m2": 1.35,
+        "permeability_m2": 1.35e-16,
+        "porosity_fraction": 0.315,
+        "reported_mean_strength_MPa": 134.0,
+        "mean_strength_Pa": 134000000.0,
+        "weibull_modulus": 5.0,
+        "strength_specimens_per_material_type": 15,
+        "uncertainty_permeability_m2": null,
+        "uncertainty_mean_strength_Pa": null,
+        "source_location": "Table 2; methods Sections 3.1\u20133.3",
+        "source_markdown_line": 203
+      },
+      {
+        "table_row": 6,
+        "powder": "AKP-30",
+        "processing": "colloidal_filtration",
+        "reported_sinter_temperature_C": 1100.0,
+        "sinter_temperature_K": 1373.15,
+        "reported_sinter_hold_time_h": 5.0,
+        "sinter_hold_time_s": 18000.0,
+        "reported_k_mantissa_times_1e_minus16_m2": 1.37,
+        "permeability_m2": 1.37e-16,
+        "porosity_fraction": 0.284,
+        "reported_mean_strength_MPa": 201.0,
+        "mean_strength_Pa": 201000000.0,
+        "weibull_modulus": 6.3,
+        "strength_specimens_per_material_type": 15,
+        "uncertainty_permeability_m2": null,
+        "uncertainty_mean_strength_Pa": null,
+        "source_location": "Table 2; methods Sections 3.1\u20133.3",
+        "source_markdown_line": 204
+      },
+      {
+        "table_row": 7,
+        "powder": "AKP-30",
+        "processing": "colloidal_filtration",
+        "reported_sinter_temperature_C": 1100.0,
+        "sinter_temperature_K": 1373.15,
+        "reported_sinter_hold_time_h": 10.0,
+        "sinter_hold_time_s": 36000.0,
+        "reported_k_mantissa_times_1e_minus16_m2": 1.26,
+        "permeability_m2": 1.26e-16,
+        "porosity_fraction": 0.273,
+        "reported_mean_strength_MPa": 140.0,
+        "mean_strength_Pa": 140000000.0,
+        "weibull_modulus": 5.3,
+        "strength_specimens_per_material_type": 15,
+        "uncertainty_permeability_m2": null,
+        "uncertainty_mean_strength_Pa": null,
+        "source_location": "Table 2; methods Sections 3.1\u20133.3",
+        "source_markdown_line": 205
+      },
+      {
+        "table_row": 8,
+        "powder": "AKP-15",
+        "processing": "colloidal_filtration",
+        "reported_sinter_temperature_C": 1100.0,
+        "sinter_temperature_K": 1373.15,
+        "reported_sinter_hold_time_h": 1.0,
+        "sinter_hold_time_s": 3600.0,
+        "reported_k_mantissa_times_1e_minus16_m2": 3.89,
+        "permeability_m2": 3.89e-16,
+        "porosity_fraction": 0.297,
+        "reported_mean_strength_MPa": 144.0,
+        "mean_strength_Pa": 144000000.0,
+        "weibull_modulus": 12.1,
+        "strength_specimens_per_material_type": 15,
+        "uncertainty_permeability_m2": null,
+        "uncertainty_mean_strength_Pa": null,
+        "source_location": "Table 2; methods Sections 3.1\u20133.3",
+        "source_markdown_line": 206
+      },
+      {
+        "table_row": 9,
+        "powder": "AKP-50",
+        "processing": "colloidal_filtration",
+        "reported_sinter_temperature_C": 1100.0,
+        "sinter_temperature_K": 1373.15,
+        "reported_sinter_hold_time_h": 1.0,
+        "sinter_hold_time_s": 3600.0,
+        "reported_k_mantissa_times_1e_minus16_m2": 1.14,
+        "permeability_m2": 1.1399999999999998e-16,
+        "porosity_fraction": 0.299,
+        "reported_mean_strength_MPa": 92.0,
+        "mean_strength_Pa": 92000000.0,
+        "weibull_modulus": 9.7,
+        "strength_specimens_per_material_type": 15,
+        "uncertainty_permeability_m2": null,
+        "uncertainty_mean_strength_Pa": null,
+        "source_location": "Table 2; methods Sections 3.1\u20133.3",
+        "source_markdown_line": 207
+      }
+    ],
+    "model_table3_is_experimental_data": false,
+    "model_objective": "Maximise allowable filtrate flow subject to pressure/strength constraint; differs from our fixed-flux energy objective.",
+    "audit_pending": [
+      "Verify the radial logarithm in converted Eq. 12 against original PDF; compare Eq. 13 and independent derivation",
+      "Keep the Table 3 empirical-model base case separate from measured Table 2 values",
+      "Do not transfer bend-strength statistics directly to differently sized membrane devices"
+    ],
+    "table2_visual_audit": "literature/biesheuvel_source_audit.json"
+  },
+  "jan_2025": {
+    "doi": "10.1016/j.desal.2025.119085",
+    "source": {
+      "folder": "literature/inbox/Jan2025Silicon",
+      "markdown": "literature/inbox/Jan2025Silicon/Jan2025Silicon.md",
+      "files_sha256": {
+        "Jan2025Silicon.md": "792410b373d27736b8eefe849faf1bab811d3948ac5a1d0b5bc8c8f7accd39d9",
+        "Jan2025Silicon_meta.json": "92e8dd531b0334e0e3ff2e53f911c99b569ed4e9d08522258756a0d2e10290ce",
+        "_page_0_Picture_18.jpeg": "49d25eee3171aec2b1f4022fd1645938115121752fed6b46d88af00f918c0735",
+        "_page_0_Picture_5.jpeg": "c4029d47979edf4c1daab045c80fa0dda75a050ec1d254dc9e76ee3e958a2d84",
+        "_page_0_Picture_6.jpeg": "954c95676e72c4b233da90cebebc19c8c73a3a1330a0a814aeb73afe2f59605d",
+        "_page_3_Figure_1.jpeg": "549726336ca6898fc462de6545a906283fae513a7656fc68f8df79582b777dbb",
+        "_page_3_Figure_3.jpeg": "87ee0947ab9e4060bac38a7d8ee34c6b28669cee459ec91a010bc74f581e0fc0",
+        "_page_4_Figure_1.jpeg": "f1eaf54b316c2f48145b3eda8fd7d35ee613850142b37474292da9fdc0b8be51",
+        "_page_4_Figure_15.jpeg": "fd6ffccc0717a5fd98e0eeaf89bb9eea35cfee96fc840a386795e533bcde17c5",
+        "_page_4_Figure_2.jpeg": "ca9454c19db2c3af21096dd43b5b9669fba13e30b2c30981c28020cf71519296",
+        "_page_5_Figure_4.jpeg": "c88442aebf011a3728ee38e3b11f8fdd97852b401b6a5345d033f705ae365f2c"
+      },
+      "metadata_page_count": 9,
+      "extraction_methods_by_page": {
+        "0": "surya",
+        "1": "pdftext",
+        "2": "surya",
+        "3": "pdftext",
+        "4": "surya",
+        "5": "surya",
+        "6": "pdftext",
+        "7": "pdftext",
+        "8": "pdftext"
+      }
+    },
+    "classification": "Published experimental whole-membrane permeance comparison; unsuitable for identifying support-only improvement at unchanged selective layer.",
+    "figures_visually_reviewed": {
+      "1": [
+        "_page_3_Figure_1.jpeg"
+      ],
+      "2": [
+        "_page_3_Figure_3.jpeg"
+      ],
+      "3": [
+        "_page_4_Figure_1.jpeg",
+        "_page_4_Figure_2.jpeg"
+      ],
+      "4": [
+        "_page_4_Figure_15.jpeg"
+      ],
+      "5": [
+        "_page_5_Figure_4.jpeg"
+      ]
+    },
+    "figure6_separate_image_found": false,
+    "tubular_specimen": {
+      "inner_diameter_m": 0.007,
+      "outer_diameter_m": 0.01,
+      "length_m": 0.1,
+      "active_area_m2": null,
+      "nominal_selective_pore_size_m": 2e-08,
+      "nominal_support_pore_size_m": 6e-07
+    },
+    "flat_characterization_specimen": {
+      "nominal_pore_size_m": 1e-07,
+      "thickness_m": 0.001,
+      "plan_dimensions_m": [
+        0.01,
+        0.02
+      ],
+      "use": "zeta potential and TEM; separate from tubular hydraulic specimens"
+    },
+    "permeance_rows": [
+      {
+        "specimen": "uncoated commercial alumina UF membrane; selective layer already present",
+        "reported_LMH_bar": 277.0,
+        "permeance_m_Pa_s": 7.694444444444445e-10,
+        "approximate": true,
+        "location": "Section 3.2.1 and Fig. 4a",
+        "quantified_uncertainty": null
+      },
+      {
+        "specimen": "SiC-coated alumina tubular membrane; 40 minute deposition",
+        "reported_LMH_bar": 26.0,
+        "permeance_m_Pa_s": 7.222222222222223e-11,
+        "approximate": true,
+        "location": "Section 3.2.1 and Fig. 4a",
+        "quantified_uncertainty": null
+      }
+    ],
+    "performance_conditions": {
+      "test_mode": "constant-flux crossflow",
+      "permeating_fluid_for_PWP": "pure water",
+      "temperature_K": null,
+      "flux_values_m_s": null,
+      "transmembrane_pressures_Pa": null,
+      "setup_reference_doi": "10.3390/membranes14010022",
+      "figure4_error_bars_visible": true,
+      "error_bar_definition_confirmed": false,
+      "note": "20 C is mentioned for the dielectric constant; it is not a confirmed PWP measurement temperature."
+    },
+    "standalone_support_resistance_m_inv": null,
+    "standalone_selective_resistance_m_inv": null,
+    "supplement_received": false,
+    "original_pdf_received": false,
+    "raw_data_statement": "Article states the authors do not have permission to share data.",
+    "limitations": [
+      "Coating changes selective properties; not a fixed-selective-layer support comparison",
+      "Do not subtract a Biesheuvel support resistance from this membrane",
+      "Do not assign flat-sheet TEM coating dimensions to tubular pore-radius reduction without specimen-specific evidence",
+      "A pore-size distribution or SEM image is not a three-dimensional connected geometry"
+    ]
+  },
+  "experimental_calibration_scope": "Biesheuvel Table 2 accepted only for a limited reduced support-permeability closure and same-study held-out check; no full-membrane or OpenLB geometry validation."
+}

@@ -6,7 +6,7 @@ published or investigated. Status reflects the development workspace on
 
 ## 1. Establish the numerical and software reference
 
-**Locally demonstrated; code publication pending.**
+**Implemented and locally verified; source and checks are included.**
 
 - Solve a synthetic capillary network in Julia from Python inputs.
 - Check pressures, flows, conservation and scaling against independent
@@ -20,7 +20,7 @@ bridge, data contracts, numerical checks and interface conventions.
 
 ## 2. Connect pore-scale hydraulics to actual process equipment
 
-**Locally demonstrated; code publication pending.**
+**Implemented and locally verified; source and checks are included.**
 
 - Run native OpenLB hydraulic cases using stock components and separate project
   folders, with at least TRT for porous-media simulations.
@@ -53,18 +53,18 @@ unavailable.
 
 ## 4. Publish the reproducible implementation
 
-**Next delivery step, after the active code handoff.**
+**Initial source snapshot published.**
 
-- Publish the source, tests, dependency manifests and curated evidence records.
-- Provide exact setup, launch, test and export commands with tested versions.
-- Keep full article files, local environments, binaries and routine generated
-  outputs outside version control.
-- Record completed numerical, integration and browser checks separately.
-- Reconcile the code history with this initial documentation publication without
-  discarding either.
+The repository now contains source, tests, dependency manifests, curated
+evidence records and setup/launch/check commands. Full article files, local
+environments, binaries and routine generated outputs remain outside version
+control. Numerical, integration and browser verification are recorded separately.
 
-Publication is complete when a reader can follow the documented setup and run
-the supplied checks on a supported, explicitly tested configuration.
+See the [reproduction guide](docs/reproduction.md) and
+[publication record](docs/code_publication.md). The initial source publication
+preserves the original GitHub overview history; earlier development commits
+remain in the local repository. Other operating systems and unattended full
+native reproduction on a new machine remain to be checked.
 
 ## 5. Strengthen the crossflow research model
 

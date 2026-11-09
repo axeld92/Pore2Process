@@ -1,0 +1,590 @@
+{
+  "schema_version": 1,
+  "source_run": "results/calibration/runs/20261108T195932Z-4bad6c49",
+  "summary_sha256": "653cb779a3f4fbd4555d6bcbeeb88f819bd472b5ac82954cb973936274427e75",
+  "protocol_id": "biesheuvel-akp30-log-ck-v1",
+  "timestamp_utc": "2026-11-08T19:59:33.496623+00:00",
+  "scope": "Experimental support reduced-model calibration and retrospective same-study holdout check. No OpenLB geometry or complete-membrane validation.",
+  "execution_status": "completed",
+  "source_files_all_verified": true,
+  "fit": {
+    "multiplier": 2.984378630441409,
+    "log_multiplier": 1.0933915611692033,
+    "calibration_count": 3,
+    "calibration_log_rmse": 0.24397054090295528
+  },
+  "cases": [
+    {
+      "table_row": 1,
+      "powder": "CR-6",
+      "role": "out_of_domain",
+      "porosity_fraction": 0.4,
+      "nominal_primary_particle_diameter_m": 7e-07,
+      "measured_permeability_m2": 6.99e-16,
+      "baseline_CK_permeability_m2": 4.839506172839512e-16,
+      "predicted_permeability_m2": 1.4442918804111562e-15,
+      "relative_error": 1.066225866110381,
+      "baseline_relative_error": -0.3076529080344046,
+      "permeability_uncertainty_m2": null
+    },
+    {
+      "table_row": 2,
+      "powder": "AKP-30",
+      "role": "calibration",
+      "porosity_fraction": 0.349,
+      "nominal_primary_particle_diameter_m": 4e-07,
+      "measured_permeability_m2": 1.8999999999999998e-16,
+      "baseline_CK_permeability_m2": 8.915830044971314e-17,
+      "predicted_permeability_m2": 2.660821265885992e-16,
+      "relative_error": 0.4004322452031539,
+      "baseline_relative_error": -0.5307457871067729,
+      "permeability_uncertainty_m2": null
+    },
+    {
+      "table_row": 3,
+      "powder": "AKP-30",
+      "role": "calibration",
+      "porosity_fraction": 0.286,
+      "nominal_primary_particle_diameter_m": 4e-07,
+      "measured_permeability_m2": 1.35e-16,
+      "baseline_CK_permeability_m2": 4.07895724738694e-17,
+      "predicted_permeability_m2": 1.2173152843585725e-16,
+      "relative_error": -0.0982849745492056,
+      "baseline_relative_error": -0.6978550187120786,
+      "permeability_uncertainty_m2": null
+    },
+    {
+      "table_row": 4,
+      "powder": "AKP-30",
+      "role": "calibration",
+      "porosity_fraction": 0.237,
+      "nominal_primary_particle_diameter_m": 4e-07,
+      "measured_permeability_m2": 7.66e-17,
+      "baseline_CK_permeability_m2": 2.032560304653797e-17,
+      "predicted_permeability_m2": 6.065929538292244e-17,
+      "relative_error": -0.20810319343443295,
+      "baseline_relative_error": -0.7346527017423241,
+      "permeability_uncertainty_m2": null
+    },
+    {
+      "table_row": 5,
+      "powder": "AKP-30",
+      "role": "primary_holdout",
+      "porosity_fraction": 0.315,
+      "nominal_primary_particle_diameter_m": 4e-07,
+      "measured_permeability_m2": 1.35e-16,
+      "baseline_CK_permeability_m2": 5.921040012787045e-17,
+      "predicted_permeability_m2": 1.767062528415023e-16,
+      "relative_error": 0.30893520623335036,
+      "baseline_relative_error": -0.5614044434972559,
+      "permeability_uncertainty_m2": null
+    },
+    {
+      "table_row": 6,
+      "powder": "AKP-30",
+      "role": "primary_holdout",
+      "porosity_fraction": 0.284,
+      "nominal_primary_particle_diameter_m": 4e-07,
+      "measured_permeability_m2": 1.37e-16,
+      "baseline_CK_permeability_m2": 3.971700148074164e-17,
+      "predicted_permeability_m2": 1.185305704843346e-16,
+      "relative_error": -0.13481335412894446,
+      "baseline_relative_error": -0.7100948797026158,
+      "permeability_uncertainty_m2": null
+    },
+    {
+      "table_row": 7,
+      "powder": "AKP-30",
+      "role": "primary_holdout",
+      "porosity_fraction": 0.273,
+      "nominal_primary_particle_diameter_m": 4e-07,
+      "measured_permeability_m2": 1.26e-16,
+      "baseline_CK_permeability_m2": 3.4218943520601354e-17,
+      "predicted_permeability_m2": 1.0212228379916444e-16,
+      "relative_error": -0.18950568413361557,
+      "baseline_relative_error": -0.7284210831698306,
+      "permeability_uncertainty_m2": null
+    },
+    {
+      "table_row": 8,
+      "powder": "AKP-15",
+      "role": "transfer",
+      "porosity_fraction": 0.297,
+      "nominal_primary_particle_diameter_m": 6e-07,
+      "measured_permeability_m2": 3.89e-16,
+      "baseline_CK_permeability_m2": 1.0602021816680834e-16,
+      "predicted_permeability_m2": 3.164044734917574e-16,
+      "relative_error": -0.18662089076669042,
+      "baseline_relative_error": -0.7274544520133461,
+      "permeability_uncertainty_m2": null
+    },
+    {
+      "table_row": 9,
+      "powder": "AKP-50",
+      "role": "out_of_domain",
+      "porosity_fraction": 0.299,
+      "nominal_primary_particle_diameter_m": 1.75e-07,
+      "measured_permeability_m2": 1.1399999999999998e-16,
+      "baseline_CK_permeability_m2": 9.255100121613729e-18,
+      "predicted_permeability_m2": 2.7620723025539568e-17,
+      "relative_error": -0.7577129559163196,
+      "baseline_relative_error": -0.9188149112139147,
+      "permeability_uncertainty_m2": null
+    }
+  ],
+  "metrics": {
+    "calibration": {
+      "baseline_CK": {
+        "count": 3,
+        "mean_absolute_relative_error": 0.6544178358537251,
+        "max_absolute_relative_error": 0.7346527017423241,
+        "mean_relative_error": -0.6544178358537251,
+        "log_rmse": 1.1202797556255797
+      },
+      "calibrated": {
+        "count": 3,
+        "mean_absolute_relative_error": 0.23560680439559747,
+        "max_absolute_relative_error": 0.4004322452031539,
+        "mean_relative_error": 0.03134802573983845,
+        "log_rmse": 0.24397054090295756
+      }
+    },
+    "primary_holdout": {
+      "baseline_CK": {
+        "count": 3,
+        "mean_absolute_relative_error": 0.6666401354565674,
+        "max_absolute_relative_error": 0.7284210831698306,
+        "mean_relative_error": -0.6666401354565674,
+        "log_rmse": 1.141859686041531
+      },
+      "calibrated": {
+        "count": 3,
+        "mean_absolute_relative_error": 0.21108474816530345,
+        "max_absolute_relative_error": 0.30893520623335036,
+        "mean_relative_error": -0.0051279440097365585,
+        "log_rmse": 0.2141593832804648
+      }
+    },
+    "transfer": {
+      "baseline_CK": {
+        "count": 1,
+        "mean_absolute_relative_error": 0.7274544520133461,
+        "max_absolute_relative_error": 0.7274544520133461,
+        "mean_relative_error": -0.7274544520133461,
+        "log_rmse": 1.299949530271725
+      },
+      "calibrated": {
+        "count": 1,
+        "mean_absolute_relative_error": 0.18662089076669042,
+        "max_absolute_relative_error": 0.18662089076669042,
+        "mean_relative_error": -0.18662089076669042,
+        "log_rmse": 0.20655796910252633
+      }
+    },
+    "out_of_domain": {
+      "baseline_CK": {
+        "count": 2,
+        "mean_absolute_relative_error": 0.6132339096241597,
+        "max_absolute_relative_error": 0.9188149112139147,
+        "mean_relative_error": -0.6132339096241597,
+        "log_rmse": 1.7944943029528102
+      },
+      "calibrated": {
+        "count": 2,
+        "mean_absolute_relative_error": 0.9119694110133503,
+        "max_absolute_relative_error": 1.066225866110381,
+        "mean_relative_error": 0.15425645509703068,
+        "log_rmse": 1.1261340308479801
+      }
+    }
+  },
+  "primary_screen": {
+    "threshold": 0.25,
+    "passed": false,
+    "failed_rows": [
+      5
+    ]
+  },
+  "leave_one_calibration_out": [
+    {
+      "omitted_calibration_row": 2,
+      "multiplier": 3.5317094915217835
+    },
+    {
+      "omitted_calibration_row": 3,
+      "multiplier": 2.8339264510822404
+    },
+    {
+      "omitted_calibration_row": 4,
+      "multiplier": 2.6557562816332316
+    }
+  ],
+  "conditional_process": [
+    {
+      "selective_to_measured_baseline_support_ratio": 0.25,
+      "fixed_selective_resistance_m_inv": 3703703703703.7036,
+      "reported_experimental_cell_pressurization_max_Pa": 2000000.0,
+      "pressure_limit_scope": "Reported apparatus pressurization only, not specimen-specific Darcy validity or allowable device pressure.",
+      "measured_support_k": {
+        "baseline": {
+          "support_resistance_m_inv": 14814814814814.814,
+          "selective_resistance_m_inv": 3703703703703.7036,
+          "fixed_resistance_m_inv": 0.0,
+          "total_resistance_m_inv": 18518518518518.52,
+          "support_pressure_drop_Pa": 411522.633744856,
+          "selective_pressure_drop_Pa": 102880.658436214,
+          "fixed_pressure_drop_Pa": 0.0,
+          "total_pressure_drop_Pa": 514403.29218107,
+          "flow_m3_s": 2.777777777777778e-05,
+          "shaft_power_W": 19.051973784484076,
+          "specific_shaft_energy_kWh_m3": 0.19051973784484075,
+          "selective_resistance_fraction": 0.19999999999999998,
+          "support_resistance_fraction": 0.7999999999999999,
+          "selective_dominates": false,
+          "selective_at_least_90_percent": false
+        },
+        "alternative": {
+          "support_resistance_m_inv": 10526315789473.686,
+          "selective_resistance_m_inv": 3703703703703.7036,
+          "fixed_resistance_m_inv": 0.0,
+          "total_resistance_m_inv": 14230019493177.389,
+          "support_pressure_drop_Pa": 292397.66081871354,
+          "selective_pressure_drop_Pa": 102880.658436214,
+          "fixed_pressure_drop_Pa": 0.0,
+          "total_pressure_drop_Pa": 395278.3192549275,
+          "flow_m3_s": 2.777777777777778e-05,
+          "shaft_power_W": 14.639937750182503,
+          "specific_shaft_energy_kWh_m3": 0.146399377501825,
+          "selective_resistance_fraction": 0.2602739726027397,
+          "support_resistance_fraction": 0.7397260273972603,
+          "selective_dominates": false,
+          "selective_at_least_90_percent": false
+        },
+        "any_total_pressure_exceeds_reported_cell_pressurization": false,
+        "fractional_shaft_energy_saving": 0.2315789473684211
+      },
+      "calibrated_support_k": {
+        "baseline": {
+          "support_resistance_m_inv": 16429597374634.457,
+          "selective_resistance_m_inv": 3703703703703.7036,
+          "fixed_resistance_m_inv": 0.0,
+          "total_resistance_m_inv": 20133301078338.16,
+          "support_pressure_drop_Pa": 456377.7048509572,
+          "selective_pressure_drop_Pa": 102880.658436214,
+          "fixed_pressure_drop_Pa": 0.0,
+          "total_pressure_drop_Pa": 559258.3632871711,
+          "flow_m3_s": 2.777777777777778e-05,
+          "shaft_power_W": 20.71327271433967,
+          "specific_shaft_energy_kWh_m3": 0.2071327271433967,
+          "selective_resistance_fraction": 0.18395908794552304,
+          "support_resistance_fraction": 0.8160409120544769,
+          "selective_dominates": false,
+          "selective_at_least_90_percent": false
+        },
+        "alternative": {
+          "support_resistance_m_inv": 7516476306175.516,
+          "selective_resistance_m_inv": 3703703703703.7036,
+          "fixed_resistance_m_inv": 0.0,
+          "total_resistance_m_inv": 11220180009879.219,
+          "support_pressure_drop_Pa": 208791.00850487544,
+          "selective_pressure_drop_Pa": 102880.658436214,
+          "fixed_pressure_drop_Pa": 0.0,
+          "total_pressure_drop_Pa": 311671.66694108944,
+          "flow_m3_s": 2.777777777777778e-05,
+          "shaft_power_W": 11.543395071892201,
+          "specific_shaft_energy_kWh_m3": 0.11543395071892201,
+          "selective_resistance_fraction": 0.33009307341260496,
+          "support_resistance_fraction": 0.669906926587395,
+          "selective_dominates": false,
+          "selective_at_least_90_percent": false
+        },
+        "any_total_pressure_exceeds_reported_cell_pressurization": false,
+        "fractional_shaft_energy_saving": 0.4427053980754678
+      }
+    },
+    {
+      "selective_to_measured_baseline_support_ratio": 1.0,
+      "fixed_selective_resistance_m_inv": 14814814814814.814,
+      "reported_experimental_cell_pressurization_max_Pa": 2000000.0,
+      "pressure_limit_scope": "Reported apparatus pressurization only, not specimen-specific Darcy validity or allowable device pressure.",
+      "measured_support_k": {
+        "baseline": {
+          "support_resistance_m_inv": 14814814814814.814,
+          "selective_resistance_m_inv": 14814814814814.814,
+          "fixed_resistance_m_inv": 0.0,
+          "total_resistance_m_inv": 29629629629629.63,
+          "support_pressure_drop_Pa": 411522.633744856,
+          "selective_pressure_drop_Pa": 411522.633744856,
+          "fixed_pressure_drop_Pa": 0.0,
+          "total_pressure_drop_Pa": 823045.267489712,
+          "flow_m3_s": 2.777777777777778e-05,
+          "shaft_power_W": 30.483158055174517,
+          "specific_shaft_energy_kWh_m3": 0.3048315805517452,
+          "selective_resistance_fraction": 0.5,
+          "support_resistance_fraction": 0.5,
+          "selective_dominates": false,
+          "selective_at_least_90_percent": false
+        },
+        "alternative": {
+          "support_resistance_m_inv": 10526315789473.686,
+          "selective_resistance_m_inv": 14814814814814.814,
+          "fixed_resistance_m_inv": 0.0,
+          "total_resistance_m_inv": 25341130604288.5,
+          "support_pressure_drop_Pa": 292397.66081871354,
+          "selective_pressure_drop_Pa": 411522.633744856,
+          "fixed_pressure_drop_Pa": 0.0,
+          "total_pressure_drop_Pa": 703920.2945635695,
+          "flow_m3_s": 2.777777777777778e-05,
+          "shaft_power_W": 26.071122020872945,
+          "specific_shaft_energy_kWh_m3": 0.26071122020872944,
+          "selective_resistance_fraction": 0.5846153846153845,
+          "support_resistance_fraction": 0.4153846153846154,
+          "selective_dominates": true,
+          "selective_at_least_90_percent": false
+        },
+        "any_total_pressure_exceeds_reported_cell_pressurization": false,
+        "fractional_shaft_energy_saving": 0.14473684210526316
+      },
+      "calibrated_support_k": {
+        "baseline": {
+          "support_resistance_m_inv": 16429597374634.457,
+          "selective_resistance_m_inv": 14814814814814.814,
+          "fixed_resistance_m_inv": 0.0,
+          "total_resistance_m_inv": 31244412189449.273,
+          "support_pressure_drop_Pa": 456377.7048509572,
+          "selective_pressure_drop_Pa": 411522.633744856,
+          "fixed_pressure_drop_Pa": 0.0,
+          "total_pressure_drop_Pa": 867900.3385958133,
+          "flow_m3_s": 2.777777777777778e-05,
+          "shaft_power_W": 32.144456985030125,
+          "specific_shaft_energy_kWh_m3": 0.32144456985030123,
+          "selective_resistance_fraction": 0.4741588583899663,
+          "support_resistance_fraction": 0.5258411416100337,
+          "selective_dominates": false,
+          "selective_at_least_90_percent": false
+        },
+        "alternative": {
+          "support_resistance_m_inv": 7516476306175.516,
+          "selective_resistance_m_inv": 14814814814814.814,
+          "fixed_resistance_m_inv": 0.0,
+          "total_resistance_m_inv": 22331291120990.33,
+          "support_pressure_drop_Pa": 208791.00850487544,
+          "selective_pressure_drop_Pa": 411522.633744856,
+          "fixed_pressure_drop_Pa": 0.0,
+          "total_pressure_drop_Pa": 620313.6422497313,
+          "flow_m3_s": 2.777777777777778e-05,
+          "shaft_power_W": 22.974579342582643,
+          "specific_shaft_energy_kWh_m3": 0.22974579342582643,
+          "selective_resistance_fraction": 0.6634105808996242,
+          "support_resistance_fraction": 0.3365894191003759,
+          "selective_dominates": true,
+          "selective_at_least_90_percent": false
+        },
+        "any_total_pressure_exceeds_reported_cell_pressurization": false,
+        "fractional_shaft_energy_saving": 0.28527088345956353
+      }
+    },
+    {
+      "selective_to_measured_baseline_support_ratio": 10.0,
+      "fixed_selective_resistance_m_inv": 148148148148148.16,
+      "reported_experimental_cell_pressurization_max_Pa": 2000000.0,
+      "pressure_limit_scope": "Reported apparatus pressurization only, not specimen-specific Darcy validity or allowable device pressure.",
+      "measured_support_k": {
+        "baseline": {
+          "support_resistance_m_inv": 14814814814814.814,
+          "selective_resistance_m_inv": 148148148148148.16,
+          "fixed_resistance_m_inv": 0.0,
+          "total_resistance_m_inv": 162962962962962.97,
+          "support_pressure_drop_Pa": 411522.633744856,
+          "selective_pressure_drop_Pa": 4115226.33744856,
+          "fixed_pressure_drop_Pa": 0.0,
+          "total_pressure_drop_Pa": 4526748.971193416,
+          "flow_m3_s": 2.777777777777778e-05,
+          "shaft_power_W": 167.65736930345986,
+          "specific_shaft_energy_kWh_m3": 1.6765736930345985,
+          "selective_resistance_fraction": 0.9090909090909091,
+          "support_resistance_fraction": 0.0909090909090909,
+          "selective_dominates": true,
+          "selective_at_least_90_percent": true
+        },
+        "alternative": {
+          "support_resistance_m_inv": 10526315789473.686,
+          "selective_resistance_m_inv": 148148148148148.16,
+          "fixed_resistance_m_inv": 0.0,
+          "total_resistance_m_inv": 158674463937621.84,
+          "support_pressure_drop_Pa": 292397.66081871354,
+          "selective_pressure_drop_Pa": 4115226.33744856,
+          "fixed_pressure_drop_Pa": 0.0,
+          "total_pressure_drop_Pa": 4407623.998267273,
+          "flow_m3_s": 2.777777777777778e-05,
+          "shaft_power_W": 163.2453332691583,
+          "specific_shaft_energy_kWh_m3": 1.6324533326915827,
+          "selective_resistance_fraction": 0.9336609336609336,
+          "support_resistance_fraction": 0.06633906633906635,
+          "selective_dominates": true,
+          "selective_at_least_90_percent": true
+        },
+        "any_total_pressure_exceeds_reported_cell_pressurization": true,
+        "fractional_shaft_energy_saving": 0.026315789473684292
+      },
+      "calibrated_support_k": {
+        "baseline": {
+          "support_resistance_m_inv": 16429597374634.457,
+          "selective_resistance_m_inv": 148148148148148.16,
+          "fixed_resistance_m_inv": 0.0,
+          "total_resistance_m_inv": 164577745522782.62,
+          "support_pressure_drop_Pa": 456377.7048509572,
+          "selective_pressure_drop_Pa": 4115226.33744856,
+          "fixed_pressure_drop_Pa": 0.0,
+          "total_pressure_drop_Pa": 4571604.042299517,
+          "flow_m3_s": 2.777777777777778e-05,
+          "shaft_power_W": 169.31866823331546,
+          "specific_shaft_energy_kWh_m3": 1.6931866823331545,
+          "selective_resistance_fraction": 0.9001712089174286,
+          "support_resistance_fraction": 0.09982879108257134,
+          "selective_dominates": true,
+          "selective_at_least_90_percent": true
+        },
+        "alternative": {
+          "support_resistance_m_inv": 7516476306175.516,
+          "selective_resistance_m_inv": 148148148148148.16,
+          "fixed_resistance_m_inv": 0.0,
+          "total_resistance_m_inv": 155664624454323.7,
+          "support_pressure_drop_Pa": 208791.00850487544,
+          "selective_pressure_drop_Pa": 4115226.33744856,
+          "fixed_pressure_drop_Pa": 0.0,
+          "total_pressure_drop_Pa": 4324017.345953437,
+          "flow_m3_s": 2.777777777777778e-05,
+          "shaft_power_W": 160.14879059086803,
+          "specific_shaft_energy_kWh_m3": 1.6014879059086802,
+          "selective_resistance_fraction": 0.9517136514958087,
+          "support_resistance_fraction": 0.04828634850419119,
+          "selective_dominates": true,
+          "selective_at_least_90_percent": true
+        },
+        "any_total_pressure_exceeds_reported_cell_pressurization": true,
+        "fractional_shaft_energy_saving": 0.054157511030098915
+      }
+    },
+    {
+      "selective_to_measured_baseline_support_ratio": 100.0,
+      "fixed_selective_resistance_m_inv": 1481481481481481.5,
+      "reported_experimental_cell_pressurization_max_Pa": 2000000.0,
+      "pressure_limit_scope": "Reported apparatus pressurization only, not specimen-specific Darcy validity or allowable device pressure.",
+      "measured_support_k": {
+        "baseline": {
+          "support_resistance_m_inv": 14814814814814.814,
+          "selective_resistance_m_inv": 1481481481481481.5,
+          "fixed_resistance_m_inv": 0.0,
+          "total_resistance_m_inv": 1496296296296296.2,
+          "support_pressure_drop_Pa": 411522.633744856,
+          "selective_pressure_drop_Pa": 41152263.374485604,
+          "fixed_pressure_drop_Pa": 0.0,
+          "total_pressure_drop_Pa": 41563786.008230455,
+          "flow_m3_s": 2.777777777777778e-05,
+          "shaft_power_W": 1539.3994817863131,
+          "specific_shaft_energy_kWh_m3": 15.393994817863131,
+          "selective_resistance_fraction": 0.9900990099009901,
+          "support_resistance_fraction": 0.009900990099009901,
+          "selective_dominates": true,
+          "selective_at_least_90_percent": true
+        },
+        "alternative": {
+          "support_resistance_m_inv": 10526315789473.686,
+          "selective_resistance_m_inv": 1481481481481481.5,
+          "fixed_resistance_m_inv": 0.0,
+          "total_resistance_m_inv": 1492007797270955.2,
+          "support_pressure_drop_Pa": 292397.66081871354,
+          "selective_pressure_drop_Pa": 41152263.374485604,
+          "fixed_pressure_drop_Pa": 0.0,
+          "total_pressure_drop_Pa": 41444661.035304315,
+          "flow_m3_s": 2.777777777777778e-05,
+          "shaft_power_W": 1534.9874457520118,
+          "specific_shaft_energy_kWh_m3": 15.349874457520118,
+          "selective_resistance_fraction": 0.9929448654298406,
+          "support_resistance_fraction": 0.007055134570159394,
+          "selective_dominates": true,
+          "selective_at_least_90_percent": true
+        },
+        "any_total_pressure_exceeds_reported_cell_pressurization": true,
+        "fractional_shaft_energy_saving": 0.0028660760812921904
+      },
+      "calibrated_support_k": {
+        "baseline": {
+          "support_resistance_m_inv": 16429597374634.457,
+          "selective_resistance_m_inv": 1481481481481481.5,
+          "fixed_resistance_m_inv": 0.0,
+          "total_resistance_m_inv": 1497911078856116.0,
+          "support_pressure_drop_Pa": 456377.7048509572,
+          "selective_pressure_drop_Pa": 41152263.374485604,
+          "fixed_pressure_drop_Pa": 0.0,
+          "total_pressure_drop_Pa": 41608641.07933656,
+          "flow_m3_s": 2.777777777777778e-05,
+          "shaft_power_W": 1541.060780716169,
+          "specific_shaft_energy_kWh_m3": 15.41060780716169,
+          "selective_resistance_fraction": 0.989031660419268,
+          "support_resistance_fraction": 0.010968339580731965,
+          "selective_dominates": true,
+          "selective_at_least_90_percent": true
+        },
+        "alternative": {
+          "support_resistance_m_inv": 7516476306175.516,
+          "selective_resistance_m_inv": 1481481481481481.5,
+          "fixed_resistance_m_inv": 0.0,
+          "total_resistance_m_inv": 1488997957787657.0,
+          "support_pressure_drop_Pa": 208791.00850487544,
+          "selective_pressure_drop_Pa": 41152263.374485604,
+          "fixed_pressure_drop_Pa": 0.0,
+          "total_pressure_drop_Pa": 41361054.38299048,
+          "flow_m3_s": 2.777777777777778e-05,
+          "shaft_power_W": 1531.8909030737216,
+          "specific_shaft_energy_kWh_m3": 15.318909030737215,
+          "selective_resistance_fraction": 0.9949519901844973,
+          "support_resistance_fraction": 0.005048009815502665,
+          "selective_dominates": true,
+          "selective_at_least_90_percent": true
+        },
+        "any_total_pressure_exceeds_reported_cell_pressurization": true,
+        "fractional_shaft_energy_saving": 0.005950367277652746
+      }
+    }
+  ],
+  "runtime_versions": {
+    "python": "3.12.9",
+    "julia": "1.11.6",
+    "numpy": "2.5.4",
+    "panel": "1.10.0",
+    "pyvista": "0.49.2",
+    "vtk": "9.7.2",
+    "matplotlib": "3.11.2",
+    "juliacall": "0.9.37",
+    "PythonCall": "0.9.37"
+  },
+  "timing_s": {
+    "runtime_access_or_initialization": 3.966543458023807,
+    "analysis_including_first_compilation": 0.5569281250063796
+  },
+  "artifact_sha256": {
+    "conditional_energy.png": "674ed787a2db8982bed85616bcb731da56e086306cbd312989fbe198f6d2380c",
+    "inputs.json": "906d5c606ebaf28ca9aca50dba43a755b425ea901eb38acf38b30be8a362faa4",
+    "permeability_validation.png": "83cc1ec2306a92c7f45b4ff0b6a0c0dfa578bd86da7f6f97b6a83332604ef53a",
+    "predictions.csv": "2296353a67d1620b8b9fc82c98d1a982a2bfbd9893f214ab8927f3bcc2bd38a3"
+  },
+  "implementation_sha256": {
+    "calibration/protocol.json": "1d3c84382529ac2d95240e882d626e02b7fc21688a91b2862f0a2c3cb620fe1d",
+    "literature/support_membrane_extraction.json": "6e5a50ff137dfa0d922aa9be14bf47b90afa7ebc28cfbddf6336120ba787c840",
+    "literature/biesheuvel_source_audit.json": "d2bc62f2e72e93060a2b15810f27e3d2ed1ebc9d5cface48172dd10313335bac",
+    "calibration/run.py": "83dc4fd4376297382bab0225669e0f8859eeaeeec4dc18b393ac43a0539c1a68",
+    "calibration/plot.py": "40a7fd2edb66d53b6d7c4121e0e8a056443ac450db954bda3a517f91121256d6",
+    "calibration/check.py": "a18f3fb44f09d07702af6ca78841a38a5318e91125ddcf7b12ac3dd0f2fd9dbb",
+    "filtration/model.py": "6afa6c93ec1c3d92a8a768a021ea577bec80866fdf4de024c5dac0c79e629d4f",
+    "julia/src/Calibration.jl": "6e0eaf9ff2d30385c658656c5edf0047d183fc6180c1801d43315d1e383212c4",
+    "julia/src/Filtration.jl": "a9b2d7ee480cf78c80cb5711f32ee48d5f9c2243648d3724f1b9982ae30702b4",
+    "julia/src/Pore2ProcessDemo.jl": "b9cbb755e26078568ea28a59d2d48393b788d8ec89ca6f7b12bb1dc84fa8385b",
+    "src/pore2process_demo/bridge.py": "1daf257b23659f514e1c9640c9a8c7bb3120526ad917a72941d43a62915e3d22",
+    "pyproject.toml": "3ced2966f99f4c12c734c57bbc69cf131814fdb1e9b76de7332d0116f9911de5",
+    "uv.lock": "597eb4f6ed765f5144b2cb88c822242d9da9107cf9bcd0710e973e5a74969b67",
+    "julia/Project.toml": "7ca5c4f8d603b196334e900593b48ba6b38852fb24c2f20efff62bae80187989",
+    "julia/Manifest.toml": "c9685af7a0a71855ef210a7699134be2f2df9e3173f8494ff18f2db157d01a36"
+  }
+}

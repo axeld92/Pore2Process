@@ -1,0 +1,20 @@
+[project]
+name = "pore2process-demo"
+version = "0.1.0"
+description = "A Julia pore-network solver with a local Python/Panel interface"
+requires-python = ">=3.12,<3.13"
+dependencies = ["numpy", "panel>=1.10,<2", "pyvista", "matplotlib", "juliacall"]
+
+[dependency-groups]
+dev = ["pytest"]
+
+[project.scripts]
+pore2process = "pore2process_demo.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

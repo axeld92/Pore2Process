@@ -1,0 +1,882 @@
+{
+  "schema_version": 1,
+  "run_id": "20261108T231207Z-316d61cb",
+  "summary_path": "/Users/dula/Documents/ChatGPT/Pore2Process/results/process_filtration/runs/20261108T231207Z-316d61cb/summary.json",
+  "summary_sha256": "f8243c9cba1e778001d7a36302f293e721ff741dea614a3d4e78a4b9c39b9b63",
+  "verified_date_local": "2026-11-09",
+  "source_run_id": "20261108T222740Z-26e9f37b",
+  "source_summary_sha256": "b016e39d884a9940ffc7bf519c1685cd8509c26633595928e54517dfa4b13daf",
+  "source_verification": {
+    "status": "passed",
+    "native_cases_reanalyzed": 24,
+    "connectivity_audits": 3,
+    "actual_saved_DWSIM_cases_checked": 9,
+    "Julia_loads_replayed": 9,
+    "artifacts_checked": 270,
+    "new_OpenLB_or_DWSIM_solves_performed_by_checker": false
+  },
+  "protocol": {
+    "protocol_id": "once-through-filtration-v1",
+    "specified_date": "2026-11-08",
+    "source_protocol_id": "graded-support-fixed-opening-v1",
+    "temperature_K": 298.15,
+    "external_absolute_pressure_Pa": 100000.0,
+    "permeate_recoveries": [
+      0.25,
+      0.5,
+      0.75
+    ],
+    "channel_pressure_drops_Pa": [
+      0.0,
+      20000.0
+    ],
+    "nominal_recovery": 0.5,
+    "pump_efficiency_fraction": 0.75,
+    "assumptions": [
+      "Pure clean water; fixed 100 LMH reference flux and 1 m2 area inherited from the verified graded-support study.",
+      "Recovery is permeate/feed mass fraction, equivalently volumetric recovery at the common feed reference density. Actual flashed volumetric flows are reported separately.",
+      "All feed is pressurized. Two nonempty product streams discharge at the fresh-feed pressure, without energy recovery or recycle.",
+      "The membrane uses a stock splitter and an isenthalpic pressure-loss valve on the permeate branch; no solute rejection or intrinsic membrane unit is claimed.",
+      "A separate upstream stock valve represents a lumped channel loss. Zero and 20 kPa are sensitivity assumptions, not measured channel hydraulics or axial pressure profiles.",
+      "Julia supplies TMP from the unchanged fixed-impedance scenario and native OpenLB resistance ratios. DWSIM supplies water properties, flashes, stream balances and pump work.",
+      "No fouling, osmosis, electrical motor loss, backwash, pressure recovery, crossflow recycle or total-plant energy prediction."
+    ],
+    "acceptance": {
+      "mass_balance_relative": 1e-10,
+      "energy_balance_relative_to_shaft": 0.001,
+      "pump_power_relative": 1e-09,
+      "pressure_absolute_Pa": 1e-06,
+      "relative_viscosity_change": 0.001,
+      "relative_density_change": 0.001,
+      "reload_temperature_absolute_K": 1e-07,
+      "reload_enthalpy_absolute_J_kg": 0.001
+    }
+  },
+  "versions": {
+    "python": "3.12.9",
+    "julia": "1.11.6",
+    "numpy": "2.5.4",
+    "panel": "1.10.0",
+    "pyvista": "0.49.2",
+    "vtk": "9.7.2",
+    "matplotlib": "3.11.2",
+    "juliacall": "0.9.37",
+    "PythonCall": "0.9.37"
+  },
+  "adapter": {
+    "build_command": [
+      "/Users/dula/Documents/ChatGPT/Pore2Process/.local/compatibility/dotnet/dotnet",
+      "build",
+      "/Users/dula/Documents/ChatGPT/Pore2Process/process_filtration/dwsim_runner/FiltrationRunner.csproj",
+      "--artifacts-path",
+      "/Users/dula/Documents/ChatGPT/Pore2Process/.local/process_filtration/runner",
+      "--ignore-failed-sources",
+      "--disable-build-servers",
+      "-p:UseSharedCompilation=false"
+    ],
+    "dotnet_sdk": "10.0.403",
+    "runner_sha256": "b1141f55c2a9fab3aab02b3a0579e462145d975b3d6904b84be894d089107ca1"
+  },
+  "implementation_sha256": {
+    "process_filtration/__init__.py": "45ff513c1a56c13a584a45dca3fd2f9a79794013c57b8a5fb6d94be56919faa3",
+    "process_filtration/check.py": "d3e450e9621a097503681dd872c6bc0b5cb25646232678f27c02b368afb27cb3",
+    "process_filtration/dwsim.py": "0eb76ae98e449e0b555d9d14e44ba0b8b54df69d3db79da384813716254c5165",
+    "process_filtration/dwsim_runner/FiltrationRunner.csproj": "fdbe5556a2d2b28d2b1a82756f4c110ef6c4e2df524f71a5dea2346b4e56f04b",
+    "process_filtration/dwsim_runner/Program.cs": "279b8aea03a970d2a104c011668dff1cf387c97b131b05ae2164be82f8dd6ef0",
+    "process_filtration/model.py": "cd84bd26183debdf5cff6a0db9e7f38b1c2163d6ebfa691e485d330d7b4056ca",
+    "process_filtration/plot.py": "188aa1e184710788ac036d045b8bd1d7c4c88123b910332416ba35e2750c46fd",
+    "process_filtration/protocol.json": "e5e936a9ff5e4c0c22296870659943197bd25f7fcfdd53755def130508870a41",
+    "process_filtration/run.py": "9263227f14706b716833baeed2c8289aefdf22300d039ee9c621595247d7448a",
+    "graded_support/check.py": "2a955f22d89e1e77e0e034403cd39a06579a4d0fb016123cd04cb94787d1c6cf",
+    "graded_support/model.py": "26a9ab883d1e1f27c2c074a7cf9a335d725d13354bdff849b1674a1e7bd8692f",
+    "julia/src/ProcessFiltration.jl": "1988524c90d0460229b67a599007749c6839ad163460364ce2826cbbe4f1574e",
+    "julia/src/GradedSupport.jl": "5c22f08248b78704df874db65a06130e81c404792ca314fe293bbdfb47ee8125",
+    "julia/src/SeriesCalibration.jl": "87262c160dabca28dedc9e1952e7c63c380ad57d78cd2ec5f8f8d0cf74b88f0b",
+    "julia/src/Pore2ProcessDemo.jl": "d86a68eb91176db98dc09917095e307c68de9af0b0397cf761c56517a67ebde1",
+    "compatibility/run_dwsim.py": "fa7952f0d0bb3ab93f38dcb849a2bf30483f4245a43fdab0f7bbb7b96bd31b8e",
+    "src/pore2process_demo/bridge.py": "1daf257b23659f514e1c9640c9a8c7bb3120526ad917a72941d43a62915e3d22",
+    "uv.lock": "597eb4f6ed765f5144b2cb88c822242d9da9107cf9bcd0710e973e5a74969b67",
+    "julia/Project.toml": "7ca5c4f8d603b196334e900593b48ba6b38852fb24c2f20efff62bae80187989",
+    "julia/Manifest.toml": "c9685af7a0a71855ef210a7699134be2f2df9e3173f8494ff18f2db157d01a36"
+  },
+  "runtime_sha256": {
+    ".local/compatibility/dwsim/DWSIM.Automation.FluentAPI.dll": "5c520815712c38b39ac869de2fc2bc3cbf644a2d4625dd39a20755c213b96984",
+    ".local/compatibility/dwsim/DWSIM.UnitOperations.dll": "65f5219591b27beb4385dee7156817bff27022382b37d7120c5c40215c535474",
+    ".local/compatibility/dwsim/DWSIM.Thermodynamics.dll": "b1742a9f59b106f555a1e68a636ac91525e53c4ddd71ba0f5353f35530a64b6b",
+    ".local/compatibility/dwsim/DWSIM.Interfaces.dll": "1dc28902e9f36a6e423ff4da69e8f0d700d95928d7becb30b3563390b640659a"
+  },
+  "source_for_Julia_replay": {
+    "protocol": {
+      "protocol_id": "graded-support-fixed-opening-v1",
+      "specified_date": "2026-11-08",
+      "status": "Specified before native simulations; retain failed cases and do not relax screens after observing results.",
+      "geometry": {
+        "body_length_m": 4e-05,
+        "neck_radius_m": 4e-06,
+        "representative_cell_width_m": 2e-05,
+        "body_knots_fraction": [
+          0,
+          0.2,
+          0.4,
+          0.6,
+          0.8,
+          1
+        ],
+        "radius_factors": [
+          1,
+          1,
+          "bulk",
+          "bulk",
+          1,
+          1
+        ],
+        "bulk_radii_m": [
+          4e-06,
+          5e-06,
+          6e-06
+        ],
+        "lead_length_each_m": 1.6e-05,
+        "domain_check_lead_length_each_m": 2.4e-05,
+        "scope": "Synthetic axisymmetric connected pore, same necks/interface region, body thickness and representative area; only interior radius changes. Both leads are numerical development sections and excluded from inferred body resistance. No reconstructed experimental specimen."
+      },
+      "numerics": {
+        "resolutions_across_neck_diameter": [
+          24,
+          32,
+          40
+        ],
+        "pressure_drop_Pa": 10,
+        "pressure_checks_Pa": [
+          5,
+          20,
+          -10
+        ],
+        "tau": 0.8,
+        "tau_check": 0.65,
+        "steady_tolerance": 1e-08,
+        "max_steps": 60000
+      },
+      "acceptance": {
+        "baseline_analytical_k_relative_error": 0.01,
+        "baseline_velocity_profile_relative_L2": 0.01,
+        "fine_grid_body_resistance_relative_change": 0.01,
+        "all_plane_mass_relative_spread": 0.01,
+        "inlet_outlet_mass_relative_difference": 0.0001,
+        "pressure_range_resistance_relative_change": 0.005,
+        "lead_extension_resistance_relative_change": 0.005,
+        "tau_resistance_relative_change": 0.005,
+        "native_max_Re": 0.05,
+        "native_max_Mach": 0.001,
+        "dwsim_power_relative_error": 1e-09
+      },
+      "process": {
+        "temperature_K": 298.15,
+        "inlet_absolute_pressure_Pa": 100000,
+        "filtration_flux_LMH": 100,
+        "membrane_area_m2": 1,
+        "pump_efficiency_fraction": 0.75,
+        "baseline_support_flux_at_1bar_m_h": 3.12,
+        "translation": "Apply each measured body resistance / measured baseline body resistance to the published 3.12 m/h support impedance. One common baseline calibration; no design-specific fit. Use Zhu PDF-v2 effective non-support impedance and its reading range unchanged across designs. This is a literature-anchored scenario, not an absolute pore reconstruction or a viscosity-corrected experimental prediction.",
+        "literature_reference": "docs/zhu_pdf_reference.json",
+        "scope": "Transmembrane hydraulic-load shaft energy only. Constant inlet properties, linear flow, unchanged effective non-support impedance. Excludes circulation, fouling, osmotic pressure, backwash, motor losses, selectivity and strength certification. Actual DWSIM pump flowsheets; no native membrane separation unit."
+      }
+    },
+    "supports": [
+      {
+        "name": "straight",
+        "bulk_radius_m": 4e-06,
+        "body_resistance_Pa_s_m3": 354442958685952.1
+      },
+      {
+        "name": "widened_5um",
+        "bulk_radius_m": 5e-06,
+        "body_resistance_Pa_s_m3": 264817996462927.44
+      },
+      {
+        "name": "widened_6um",
+        "bulk_radius_m": 6e-06,
+        "body_resistance_Pa_s_m3": 227277540566651.84
+      }
+    ],
+    "literature_reference": {
+      "fit": {
+        "fixed_impedance_Pa_s_m": 250946524.48872787
+      }
+    },
+    "fluid_anchor": {
+      "tool": "DWSIM",
+      "version": "10.2.15.0",
+      "timestamp_utc": "2026-11-08T22:27:42.478073+00:00",
+      "inputs": {
+        "Temperature_K": 298.15,
+        "Inlet_pressure_Pa": 100000,
+        "Outlet_pressure_Pa": 101000,
+        "Mass_flow_kg_s": 0.01,
+        "Pump_efficiency_fraction": 0.75,
+        "Scope": "DWSIM liquid-water property anchor for graded-support scenarios."
+      },
+      "property_package": "Steam Tables (IAPWS-IF97)",
+      "compounds": [
+        "Water"
+      ],
+      "inlet_pressure_Pa": 100000,
+      "outlet_pressure_Pa": 101000,
+      "inlet_temperature_K": 298.15,
+      "outlet_temperature_K": 298.1500983344929,
+      "inlet_mass_flow_kg_s": 0.01,
+      "outlet_mass_flow_kg_s": 0.01,
+      "inlet_density_kg_m3": 997.0474354080965,
+      "inlet_enthalpy_J_kg": 104928.06751189622,
+      "inlet_viscosity_Pa_s": 0.000890082517572212,
+      "outlet_viscosity_Pa_s": 0.000890080288927341,
+      "outlet_density_kg_m3": 997.0478604562907,
+      "outlet_enthalpy_J_kg": 104929.40487310984,
+      "inlet_vapor_fraction": 0,
+      "outlet_vapor_fraction": 0,
+      "shaft_power_W": 0.013372817440602447,
+      "energy_stream_power_W": 0.013372817440602447,
+      "analytical_shaft_power_W": 0.013372817440602447,
+      "mass_balance_error_kg_s": 0,
+      "energy_balance_error_W": 7.946954901135589e-07,
+      "pump_power_relative_error": 0,
+      "save_reload_solve_checked": true,
+      "initialization_s": 1.0629684,
+      "solve_s": 0.0609838,
+      "scope": "DWSIM liquid-water property anchor for graded-support scenarios."
+    }
+  },
+  "comparison": [
+    {
+      "case_id": "channel_0Pa/recovery_25/straight",
+      "support": "straight",
+      "recovery_fraction": 0.25,
+      "channel_pressure_drop_Pa": 0.0,
+      "transmembrane_pressure_Pa": 10175.864996481756,
+      "permeate_reference_flow_m3_s": 2.777777777777778e-05,
+      "feed_reference_flow_m3_s": 0.00011111111111111112,
+      "retentate_reference_flow_m3_s": 8.333333333333334e-05,
+      "actual_DWSIM_shaft_power_W": 1.5075355550343348,
+      "actual_specific_shaft_energy_kWh_m3_reference_volume": 0.015075355550343346,
+      "energy_saving_vs_straight_fraction": 0.0,
+      "max_mass_relative_residual": 0.0,
+      "max_energy_relative_residual": 2.339317958230033e-05
+    },
+    {
+      "case_id": "channel_0Pa/recovery_25/widened_5um",
+      "support": "widened_5um",
+      "recovery_fraction": 0.25,
+      "channel_pressure_drop_Pa": 0.0,
+      "transmembrane_pressure_Pa": 9365.41161529585,
+      "permeate_reference_flow_m3_s": 2.777777777777778e-05,
+      "feed_reference_flow_m3_s": 0.00011111111111111112,
+      "retentate_reference_flow_m3_s": 8.333333333333334e-05,
+      "actual_DWSIM_shaft_power_W": 1.3874683874512364,
+      "actual_specific_shaft_energy_kWh_m3_reference_volume": 0.013874683874512362,
+      "energy_saving_vs_straight_fraction": 0.07964466720678032,
+      "max_mass_relative_residual": 0.0,
+      "max_energy_relative_residual": 2.5414683393888138e-05
+    },
+    {
+      "case_id": "channel_0Pa/recovery_25/widened_6um",
+      "support": "widened_6um",
+      "recovery_fraction": 0.25,
+      "channel_pressure_drop_Pa": 0.0,
+      "transmembrane_pressure_Pa": 9025.9438079155,
+      "permeate_reference_flow_m3_s": 2.777777777777778e-05,
+      "feed_reference_flow_m3_s": 0.00011111111111111112,
+      "retentate_reference_flow_m3_s": 8.333333333333334e-05,
+      "actual_DWSIM_shaft_power_W": 1.337176860431925,
+      "actual_specific_shaft_energy_kWh_m3_reference_volume": 0.013371768604319248,
+      "energy_saving_vs_straight_fraction": 0.11300476067281207,
+      "max_mass_relative_residual": 0.0,
+      "max_energy_relative_residual": 2.636926649346702e-05
+    },
+    {
+      "case_id": "channel_0Pa/recovery_50/straight",
+      "support": "straight",
+      "recovery_fraction": 0.5,
+      "channel_pressure_drop_Pa": 0.0,
+      "transmembrane_pressure_Pa": 10175.864996481756,
+      "permeate_reference_flow_m3_s": 2.777777777777778e-05,
+      "feed_reference_flow_m3_s": 5.555555555555556e-05,
+      "retentate_reference_flow_m3_s": 2.777777777777778e-05,
+      "actual_DWSIM_shaft_power_W": 0.7537677775171674,
+      "actual_specific_shaft_energy_kWh_m3_reference_volume": 0.007537677775171673,
+      "energy_saving_vs_straight_fraction": 0.0,
+      "max_mass_relative_residual": 0.0,
+      "max_energy_relative_residual": 2.3393178375702316e-05
+    },
+    {
+      "case_id": "channel_0Pa/recovery_50/widened_5um",
+      "support": "widened_5um",
+      "recovery_fraction": 0.5,
+      "channel_pressure_drop_Pa": 0.0,
+      "transmembrane_pressure_Pa": 9365.41161529585,
+      "permeate_reference_flow_m3_s": 2.777777777777778e-05,
+      "feed_reference_flow_m3_s": 5.555555555555556e-05,
+      "retentate_reference_flow_m3_s": 2.777777777777778e-05,
+      "actual_DWSIM_shaft_power_W": 0.6937341937256182,
+      "actual_specific_shaft_energy_kWh_m3_reference_volume": 0.006937341937256181,
+      "energy_saving_vs_straight_fraction": 0.07964466720678032,
+      "max_mass_relative_residual": 0.0,
+      "max_energy_relative_residual": 2.5414683393888138e-05
+    },
+    {
+      "case_id": "channel_0Pa/recovery_50/widened_6um",
+      "support": "widened_6um",
+      "recovery_fraction": 0.5,
+      "channel_pressure_drop_Pa": 0.0,
+      "transmembrane_pressure_Pa": 9025.9438079155,
+      "permeate_reference_flow_m3_s": 2.777777777777778e-05,
+      "feed_reference_flow_m3_s": 5.555555555555556e-05,
+      "retentate_reference_flow_m3_s": 2.777777777777778e-05,
+      "actual_DWSIM_shaft_power_W": 0.6685884302159625,
+      "actual_specific_shaft_energy_kWh_m3_reference_volume": 0.006685884302159624,
+      "energy_saving_vs_straight_fraction": 0.11300476067281207,
+      "max_mass_relative_residual": 0.0,
+      "max_energy_relative_residual": 2.636926513314629e-05
+    },
+    {
+      "case_id": "channel_0Pa/recovery_75/straight",
+      "support": "straight",
+      "recovery_fraction": 0.75,
+      "channel_pressure_drop_Pa": 0.0,
+      "transmembrane_pressure_Pa": 10175.864996481756,
+      "permeate_reference_flow_m3_s": 2.777777777777778e-05,
+      "feed_reference_flow_m3_s": 3.7037037037037037e-05,
+      "retentate_reference_flow_m3_s": 9.259259259259257e-06,
+      "actual_DWSIM_shaft_power_W": 0.5025118516781117,
+      "actual_specific_shaft_energy_kWh_m3_reference_volume": 0.0050251185167811165,
+      "energy_saving_vs_straight_fraction": 0.0,
+      "max_mass_relative_residual": 0.0,
+      "max_energy_relative_residual": 2.3393178978706738e-05
+    },
+    {
+      "case_id": "channel_0Pa/recovery_75/widened_5um",
+      "support": "widened_5um",
+      "recovery_fraction": 0.75,
+      "channel_pressure_drop_Pa": 0.0,
+      "transmembrane_pressure_Pa": 9365.41161529585,
+      "permeate_reference_flow_m3_s": 2.777777777777778e-05,
+      "feed_reference_flow_m3_s": 3.7037037037037037e-05,
+      "retentate_reference_flow_m3_s": 9.259259259259257e-06,
+      "actual_DWSIM_shaft_power_W": 0.4624894624837455,
+      "actual_specific_shaft_energy_kWh_m3_reference_volume": 0.004624894624837455,
+      "energy_saving_vs_straight_fraction": 0.07964466720678043,
+      "max_mass_relative_residual": 0.0,
+      "max_energy_relative_residual": 2.541468339376811e-05
+    },
+    {
+      "case_id": "channel_0Pa/recovery_75/widened_6um",
+      "support": "widened_6um",
+      "recovery_fraction": 0.75,
+      "channel_pressure_drop_Pa": 0.0,
+      "transmembrane_pressure_Pa": 9025.9438079155,
+      "permeate_reference_flow_m3_s": 2.777777777777778e-05,
+      "feed_reference_flow_m3_s": 3.7037037037037037e-05,
+      "retentate_reference_flow_m3_s": 9.259259259259257e-06,
+      "actual_DWSIM_shaft_power_W": 0.44572562014397504,
+      "actual_specific_shaft_energy_kWh_m3_reference_volume": 0.00445725620143975,
+      "energy_saving_vs_straight_fraction": 0.11300476067281218,
+      "max_mass_relative_residual": 0.0,
+      "max_energy_relative_residual": 2.6369265813182112e-05
+    },
+    {
+      "case_id": "channel_20000Pa/recovery_25/straight",
+      "support": "straight",
+      "recovery_fraction": 0.25,
+      "channel_pressure_drop_Pa": 20000.0,
+      "transmembrane_pressure_Pa": 10175.864996481756,
+      "permeate_reference_flow_m3_s": 2.777777777777778e-05,
+      "feed_reference_flow_m3_s": 0.00011111111111111112,
+      "retentate_reference_flow_m3_s": 8.333333333333334e-05,
+      "actual_DWSIM_shaft_power_W": 4.470498517997298,
+      "actual_specific_shaft_energy_kWh_m3_reference_volume": 0.04470498517997298,
+      "energy_saving_vs_straight_fraction": 0.0,
+      "max_mass_relative_residual": 0.0,
+      "max_energy_relative_residual": 7.95548362742513e-06
+    },
+    {
+      "case_id": "channel_20000Pa/recovery_25/widened_5um",
+      "support": "widened_5um",
+      "recovery_fraction": 0.25,
+      "channel_pressure_drop_Pa": 20000.0,
+      "transmembrane_pressure_Pa": 9365.41161529585,
+      "permeate_reference_flow_m3_s": 2.777777777777778e-05,
+      "feed_reference_flow_m3_s": 0.00011111111111111112,
+      "retentate_reference_flow_m3_s": 8.333333333333334e-05,
+      "actual_DWSIM_shaft_power_W": 4.350431350414199,
+      "actual_specific_shaft_energy_kWh_m3_reference_volume": 0.04350431350414199,
+      "energy_saving_vs_straight_fraction": 0.02685766857985361,
+      "max_mass_relative_residual": 0.0,
+      "max_energy_relative_residual": 8.174158178257556e-06
+    },
+    {
+      "case_id": "channel_20000Pa/recovery_25/widened_6um",
+      "support": "widened_6um",
+      "recovery_fraction": 0.25,
+      "channel_pressure_drop_Pa": 20000.0,
+      "transmembrane_pressure_Pa": 9025.9438079155,
+      "permeate_reference_flow_m3_s": 2.777777777777778e-05,
+      "feed_reference_flow_m3_s": 0.00011111111111111112,
+      "retentate_reference_flow_m3_s": 8.333333333333334e-05,
+      "actual_DWSIM_shaft_power_W": 4.300139823394888,
+      "actual_specific_shaft_energy_kWh_m3_reference_volume": 0.043001398233948884,
+      "energy_saving_vs_straight_fraction": 0.038107314859088026,
+      "max_mass_relative_residual": 0.0,
+      "max_energy_relative_residual": 8.269367664019689e-06
+    },
+    {
+      "case_id": "channel_20000Pa/recovery_50/straight",
+      "support": "straight",
+      "recovery_fraction": 0.5,
+      "channel_pressure_drop_Pa": 20000.0,
+      "transmembrane_pressure_Pa": 10175.864996481756,
+      "permeate_reference_flow_m3_s": 2.777777777777778e-05,
+      "feed_reference_flow_m3_s": 5.555555555555556e-05,
+      "retentate_reference_flow_m3_s": 2.777777777777778e-05,
+      "actual_DWSIM_shaft_power_W": 2.235249258998649,
+      "actual_specific_shaft_energy_kWh_m3_reference_volume": 0.02235249258998649,
+      "energy_saving_vs_straight_fraction": 0.0,
+      "max_mass_relative_residual": 0.0,
+      "max_energy_relative_residual": 7.95548362742513e-06
+    },
+    {
+      "case_id": "channel_20000Pa/recovery_50/widened_5um",
+      "support": "widened_5um",
+      "recovery_fraction": 0.5,
+      "channel_pressure_drop_Pa": 20000.0,
+      "transmembrane_pressure_Pa": 9365.41161529585,
+      "permeate_reference_flow_m3_s": 2.777777777777778e-05,
+      "feed_reference_flow_m3_s": 5.555555555555556e-05,
+      "retentate_reference_flow_m3_s": 2.777777777777778e-05,
+      "actual_DWSIM_shaft_power_W": 2.1752156752070997,
+      "actual_specific_shaft_energy_kWh_m3_reference_volume": 0.021752156752070994,
+      "energy_saving_vs_straight_fraction": 0.02685766857985361,
+      "max_mass_relative_residual": 0.0,
+      "max_energy_relative_residual": 8.174158178257556e-06
+    },
+    {
+      "case_id": "channel_20000Pa/recovery_50/widened_6um",
+      "support": "widened_6um",
+      "recovery_fraction": 0.5,
+      "channel_pressure_drop_Pa": 20000.0,
+      "transmembrane_pressure_Pa": 9025.9438079155,
+      "permeate_reference_flow_m3_s": 2.777777777777778e-05,
+      "feed_reference_flow_m3_s": 5.555555555555556e-05,
+      "retentate_reference_flow_m3_s": 2.777777777777778e-05,
+      "actual_DWSIM_shaft_power_W": 2.150069911697444,
+      "actual_specific_shaft_energy_kWh_m3_reference_volume": 0.021500699116974442,
+      "energy_saving_vs_straight_fraction": 0.038107314859088026,
+      "max_mass_relative_residual": 0.0,
+      "max_energy_relative_residual": 8.269367241012653e-06
+    },
+    {
+      "case_id": "channel_20000Pa/recovery_75/straight",
+      "support": "straight",
+      "recovery_fraction": 0.75,
+      "channel_pressure_drop_Pa": 20000.0,
+      "transmembrane_pressure_Pa": 10175.864996481756,
+      "permeate_reference_flow_m3_s": 2.777777777777778e-05,
+      "feed_reference_flow_m3_s": 3.7037037037037037e-05,
+      "retentate_reference_flow_m3_s": 9.259259259259257e-06,
+      "actual_DWSIM_shaft_power_W": 1.490166172665766,
+      "actual_specific_shaft_energy_kWh_m3_reference_volume": 0.01490166172665766,
+      "energy_saving_vs_straight_fraction": 0.0,
+      "max_mass_relative_residual": 0.0,
+      "max_energy_relative_residual": 7.955483525603948e-06
+    },
+    {
+      "case_id": "channel_20000Pa/recovery_75/widened_5um",
+      "support": "widened_5um",
+      "recovery_fraction": 0.75,
+      "channel_pressure_drop_Pa": 20000.0,
+      "transmembrane_pressure_Pa": 9365.41161529585,
+      "permeate_reference_flow_m3_s": 2.777777777777778e-05,
+      "feed_reference_flow_m3_s": 3.7037037037037037e-05,
+      "retentate_reference_flow_m3_s": 9.259259259259257e-06,
+      "actual_DWSIM_shaft_power_W": 1.4501437834714,
+      "actual_specific_shaft_energy_kWh_m3_reference_volume": 0.014501437834714,
+      "energy_saving_vs_straight_fraction": 0.02685766857985361,
+      "max_mass_relative_residual": 0.0,
+      "max_energy_relative_residual": 8.174158178155475e-06
+    },
+    {
+      "case_id": "channel_20000Pa/recovery_75/widened_6um",
+      "support": "widened_6um",
+      "recovery_fraction": 0.75,
+      "channel_pressure_drop_Pa": 20000.0,
+      "transmembrane_pressure_Pa": 9025.9438079155,
+      "permeate_reference_flow_m3_s": 2.777777777777778e-05,
+      "feed_reference_flow_m3_s": 3.7037037037037037e-05,
+      "retentate_reference_flow_m3_s": 9.259259259259257e-06,
+      "actual_DWSIM_shaft_power_W": 1.4333799411316295,
+      "actual_specific_shaft_energy_kWh_m3_reference_volume": 0.014333799411316295,
+      "energy_saving_vs_straight_fraction": 0.038107314859088026,
+      "max_mass_relative_residual": 0.0,
+      "max_energy_relative_residual": 8.26936724090938e-06
+    }
+  ],
+  "nominal_actual_DWSIM_case": {
+    "case_id": "channel_20000Pa/recovery_50/straight",
+    "support": "straight",
+    "recovery_fraction": 0.5,
+    "channel_pressure_drop_Pa": 20000.0,
+    "julia_membrane": {
+      "measured_body_resistance_ratio": 1.0,
+      "support_permeance_m_Pa_s": 8.666666666666668e-09,
+      "support_impedance_Pa_s_m": 115384615.38461536,
+      "non_support_impedance_Pa_s_m": 250946524.48872787,
+      "pressure_drop_Pa": 10175.864996481756,
+      "flow_m3_s": 2.777777777777778e-05,
+      "shaft_power_W": 0.37688388875858353,
+      "specific_shaft_energy_kWh_m3": 0.0037688388875858356,
+      "non_support_fraction": 0.685026461511001,
+      "support_fraction": 0.314973538488999
+    },
+    "julia_process": {
+      "permeate_reference_flow_m3_s": 2.777777777777778e-05,
+      "feed_reference_flow_m3_s": 5.555555555555556e-05,
+      "retentate_reference_flow_m3_s": 2.777777777777778e-05,
+      "recovery_fraction": 0.5,
+      "transmembrane_pressure_Pa": 10175.864996481756,
+      "channel_pressure_drop_Pa": 20000.0,
+      "pump_pressure_rise_Pa": 30175.864996481756,
+      "hydraulic_power_W": 1.6764369442489866,
+      "shaft_power_W": 2.235249258998649,
+      "membrane_dissipation_W": 0.28266291656893766,
+      "retentate_throttle_dissipation_W": 0.28266291656893766,
+      "channel_dissipation_W": 1.1111111111111112,
+      "pump_loss_W": 0.5588123147496622,
+      "specific_shaft_energy_kWh_m3": 0.02235249258998649
+    },
+    "dwsim": {
+      "tool": "DWSIM",
+      "version": "10.2.15.0",
+      "timestamp_utc": "2026-11-08T23:12:31.904098+00:00",
+      "inputs": {
+        "Temperature_K": 298.15,
+        "External_pressure_Pa": 100000,
+        "TMP_Pa": 10175.864996481756,
+        "Channel_drop_Pa": 20000,
+        "Feed_mass_flow_kg_s": 0.055391524189338695,
+        "Recovery_fraction": 0.5,
+        "Pump_efficiency_fraction": 0.75,
+        "Scope": "Once-through pure-water hydraulic surrogate: stock pump/splitter/pressure-loss valves; Julia supplies TMP. No separation selectivity, recycle or pressure recovery."
+      },
+      "property_package": "Steam Tables (IAPWS-IF97)",
+      "compounds": [
+        "Water"
+      ],
+      "streams": {
+        "Feed": {
+          "pressure_Pa": 100000,
+          "temperature_K": 298.15,
+          "mass_flow_kg_s": 0.055391524189338695,
+          "actual_volume_flow_m3_s": 5.555555555555556e-05,
+          "density_kg_m3": 997.0474354080965,
+          "viscosity_Pa_s": 0.000890082517572212,
+          "enthalpy_J_kg": 104928.06751189622,
+          "vapor_fraction": 0,
+          "water_mass_fraction": 1
+        },
+        "Pump-discharge": {
+          "pressure_Pa": 130175.86499648176,
+          "temperature_K": 298.15296691464454,
+          "mass_flow_kg_s": 0.055391524189338695,
+          "actual_volume_flow_m3_s": 5.5554840912595616e-05,
+          "density_kg_m3": 997.0602611658295,
+          "viscosity_Pa_s": 0.0008900152829921477,
+          "enthalpy_J_kg": 104968.42122473381,
+          "vapor_fraction": 0,
+          "water_mass_fraction": 1
+        },
+        "Membrane-feed": {
+          "pressure_Pa": 110175.86499648176,
+          "temperature_K": 298.15739611632733,
+          "mass_flow_kg_s": 0.055391524189338695,
+          "actual_volume_flow_m3_s": 5.555540585681298e-05,
+          "density_kg_m3": 997.0501220367885,
+          "viscosity_Pa_s": 0.0008899302376591904,
+          "enthalpy_J_kg": 104968.421305102,
+          "vapor_fraction": 0,
+          "water_mass_fraction": 1
+        },
+        "Permeate-high": {
+          "pressure_Pa": 110175.86499648176,
+          "temperature_K": 298.15739613554564,
+          "mass_flow_kg_s": 0.027695762094669348,
+          "actual_volume_flow_m3_s": 2.7777702928543675e-05,
+          "density_kg_m3": 997.0501220318644,
+          "viscosity_Pa_s": 0.0008899302372697687,
+          "enthalpy_J_kg": 104968.4213854701,
+          "vapor_fraction": 0,
+          "water_mass_fraction": 1
+        },
+        "Retentate-high": {
+          "pressure_Pa": 110175.86499648176,
+          "temperature_K": 298.15739613554564,
+          "mass_flow_kg_s": 0.027695762094669348,
+          "actual_volume_flow_m3_s": 2.7777702928543675e-05,
+          "density_kg_m3": 997.0501220318644,
+          "viscosity_Pa_s": 0.0008899302372697687,
+          "enthalpy_J_kg": 104968.4213854701,
+          "vapor_fraction": 0,
+          "water_mass_fraction": 1
+        },
+        "Permeate": {
+          "pressure_Pa": 100000,
+          "temperature_K": 298.159649674931,
+          "mass_flow_kg_s": 0.027695762094669348,
+          "actual_volume_flow_m3_s": 2.7777846654017133e-05,
+          "density_kg_m3": 997.0449631906254,
+          "viscosity_Pa_s": 0.000889886971162424,
+          "enthalpy_J_kg": 104968.42146629991,
+          "vapor_fraction": 0,
+          "water_mass_fraction": 1
+        },
+        "Retentate": {
+          "pressure_Pa": 100000,
+          "temperature_K": 298.159649674931,
+          "mass_flow_kg_s": 0.027695762094669348,
+          "actual_volume_flow_m3_s": 2.7777846654017133e-05,
+          "density_kg_m3": 997.0449631906254,
+          "viscosity_Pa_s": 0.000889886971162424,
+          "enthalpy_J_kg": 104968.42146629991,
+          "vapor_fraction": 0,
+          "water_mass_fraction": 1
+        }
+      },
+      "objects": {
+        "Feed": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "Pump-discharge": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "Membrane-feed": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "Permeate-high": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "Retentate-high": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "Permeate": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "Retentate": "DWSIM.Thermodynamics.Streams.MaterialStream",
+        "Pump-power": "DWSIM.UnitOperations.Streams.EnergyStream",
+        "P-1": "DWSIM.UnitOperations.UnitOperations.Pump",
+        "V-channel": "DWSIM.UnitOperations.UnitOperations.Valve",
+        "S-1": "DWSIM.UnitOperations.UnitOperations.Splitter",
+        "V-membrane": "DWSIM.UnitOperations.UnitOperations.Valve",
+        "V-retentate": "DWSIM.UnitOperations.UnitOperations.Valve"
+      },
+      "shaft_power_W": 2.235249258998649,
+      "energy_stream_power_W": 2.235249258998649,
+      "mass_residuals_kg_s": {
+        "pump": 0,
+        "channel": 0,
+        "splitter": 0,
+        "membrane": 0,
+        "retentate_valve": 0,
+        "overall": 0
+      },
+      "energy_residuals_W": {
+        "pump": 4.40177454752444e-06,
+        "channel": 4.451716449693777e-06,
+        "splitter": 4.451710992725566e-06,
+        "membrane": 2.2386434466170613e-06,
+        "retentate_valve": 2.2386434466170613e-06,
+        "overall": 1.7782488883177905e-05
+      },
+      "reloaded_streams": {
+        "Feed": {
+          "pressure_Pa": 100000,
+          "temperature_K": 298.15,
+          "mass_flow_kg_s": 0.055391524189338695,
+          "actual_volume_flow_m3_s": 5.555555555555556e-05,
+          "density_kg_m3": 997.0474354080965,
+          "viscosity_Pa_s": 0.000890082517572212,
+          "enthalpy_J_kg": 104928.06751189622,
+          "vapor_fraction": 0,
+          "water_mass_fraction": 1
+        },
+        "Pump-discharge": {
+          "pressure_Pa": 130175.86499648176,
+          "temperature_K": 298.15296691464454,
+          "mass_flow_kg_s": 0.055391524189338695,
+          "actual_volume_flow_m3_s": 5.5554840912595616e-05,
+          "density_kg_m3": 997.0602611658295,
+          "viscosity_Pa_s": 0.0008900152829921477,
+          "enthalpy_J_kg": 104968.42122473381,
+          "vapor_fraction": 0,
+          "water_mass_fraction": 1
+        },
+        "Membrane-feed": {
+          "pressure_Pa": 110175.86499648176,
+          "temperature_K": 298.15739611632733,
+          "mass_flow_kg_s": 0.055391524189338695,
+          "actual_volume_flow_m3_s": 5.555540585681298e-05,
+          "density_kg_m3": 997.0501220367885,
+          "viscosity_Pa_s": 0.0008899302376591904,
+          "enthalpy_J_kg": 104968.421305102,
+          "vapor_fraction": 0,
+          "water_mass_fraction": 1
+        },
+        "Permeate-high": {
+          "pressure_Pa": 110175.86499648176,
+          "temperature_K": 298.15739613554564,
+          "mass_flow_kg_s": 0.027695762094669348,
+          "actual_volume_flow_m3_s": 2.7777702928543675e-05,
+          "density_kg_m3": 997.0501220318644,
+          "viscosity_Pa_s": 0.0008899302372697687,
+          "enthalpy_J_kg": 104968.4213854701,
+          "vapor_fraction": 0,
+          "water_mass_fraction": 1
+        },
+        "Retentate-high": {
+          "pressure_Pa": 110175.86499648176,
+          "temperature_K": 298.15739613554564,
+          "mass_flow_kg_s": 0.027695762094669348,
+          "actual_volume_flow_m3_s": 2.7777702928543675e-05,
+          "density_kg_m3": 997.0501220318644,
+          "viscosity_Pa_s": 0.0008899302372697687,
+          "enthalpy_J_kg": 104968.4213854701,
+          "vapor_fraction": 0,
+          "water_mass_fraction": 1
+        },
+        "Permeate": {
+          "pressure_Pa": 100000,
+          "temperature_K": 298.159649674931,
+          "mass_flow_kg_s": 0.027695762094669348,
+          "actual_volume_flow_m3_s": 2.7777846654017133e-05,
+          "density_kg_m3": 997.0449631906254,
+          "viscosity_Pa_s": 0.000889886971162424,
+          "enthalpy_J_kg": 104968.42146629991,
+          "vapor_fraction": 0,
+          "water_mass_fraction": 1
+        },
+        "Retentate": {
+          "pressure_Pa": 100000,
+          "temperature_K": 298.159649674931,
+          "mass_flow_kg_s": 0.027695762094669348,
+          "actual_volume_flow_m3_s": 2.7777846654017133e-05,
+          "density_kg_m3": 997.0449631906254,
+          "viscosity_Pa_s": 0.000889886971162424,
+          "enthalpy_J_kg": 104968.42146629991,
+          "vapor_fraction": 0,
+          "water_mass_fraction": 1
+        }
+      },
+      "reloaded_energy_stream_power_W": 2.235249258998649,
+      "save_reload_solve_checked": true,
+      "initialization_s": 1.1046371,
+      "solve_s": 0.0840842,
+      "units": "JSON suffixes are SI; DWSIM kW and kJ/kg converted once to W and J/kg. Actual volume flow is flashed; recovery uses mass/common reference density."
+    },
+    "validation": {
+      "checks": {
+        "all_unit_and_overall_mass_balances": true,
+        "all_unit_and_overall_energy_balances": true,
+        "pump_independent_oracle": true,
+        "energy_stream": true,
+        "reload_energy_stream": true,
+        "small_constant_viscosity_approximation": true,
+        "small_constant_density_approximation": true,
+        "saved_reloaded_solved": true
+      },
+      "max_mass_relative_residual": 0.0,
+      "max_energy_relative_residual": 7.95548362742513e-06,
+      "max_relative_viscosity_change": 0.00021969469788196694,
+      "max_relative_density_change": 1.2863738752644238e-05,
+      "actual_specific_shaft_energy_kWh_m3_reference_volume": 0.02235249258998649,
+      "actual_permeate_reference_flow_m3_s": 2.777777777777778e-05,
+      "actual_recovery_mass_fraction": 0.5
+    },
+    "saved_connections": [
+      [
+        "Feed",
+        0,
+        "P-1",
+        0
+      ],
+      [
+        "Membrane-feed",
+        0,
+        "S-1",
+        0
+      ],
+      [
+        "P-1",
+        0,
+        "Pump-discharge",
+        0
+      ],
+      [
+        "Permeate-high",
+        0,
+        "V-membrane",
+        0
+      ],
+      [
+        "Pump-discharge",
+        0,
+        "V-channel",
+        0
+      ],
+      [
+        "Pump-power",
+        0,
+        "P-1",
+        1
+      ],
+      [
+        "Retentate-high",
+        0,
+        "V-retentate",
+        0
+      ],
+      [
+        "S-1",
+        0,
+        "Permeate-high",
+        0
+      ],
+      [
+        "S-1",
+        1,
+        "Retentate-high",
+        0
+      ],
+      [
+        "V-channel",
+        0,
+        "Membrane-feed",
+        0
+      ],
+      [
+        "V-membrane",
+        0,
+        "Permeate",
+        0
+      ],
+      [
+        "V-retentate",
+        0,
+        "Retentate",
+        0
+      ]
+    ],
+    "energy_saving_vs_straight_fraction": 0.0
+  },
+  "max_validation_metrics": {
+    "max_mass_relative_residual": 0.0,
+    "max_energy_relative_residual": 2.636926649346702e-05,
+    "max_relative_viscosity_change": 0.00021969469788196694,
+    "max_relative_density_change": 1.2863738752644238e-05
+  },
+  "timing": {
+    "cold_process_Julia_initialization_s": 3.3790406659827568,
+    "initialization_s_range": [
+      0.9890516,
+      1.1578618
+    ],
+    "solve_s_range": [
+      0.0743168,
+      0.1075
+    ]
+  },
+  "scope": "Explicit once-through pure-water hydraulic filtration; declared recovery, no recycle or pressure recovery; not total plant energy.",
+  "artifact_count": 99
+}
