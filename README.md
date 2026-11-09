@@ -36,14 +36,12 @@ flowchart LR
 
 | Component | Defined role |
 | --- | --- |
-| **OpenLB** | Detailed pore-scale physics using existing OpenLB facilities and the structure of its official examples. Porous-media cases use at least TRT collision dynamics. |
+| **OpenLB** | Detailed pore-scale physics using existing OpenLB facilities and the structure of its official examples. |
 | **Julia** | Custom numerical models, analysis, effective-property extraction and translation between scales. |
 | **Python** | Workflow coordination, data handling, integration, visualization and a local Panel interface. |
 | **DWSIM** | Actual process calculations in saved flowsheets, including equipment duties, recycle and balances. |
 
-OpenLB and DWSIM are required parts of the final connected workflow. Models
-remain usable independently of the interface. Project-specific OpenLB cases,
-builds and outputs stay outside the original OpenLB source tree.
+Models remain usable independently of the interface.
 
 ## First research showcase: membrane support design
 
@@ -89,10 +87,7 @@ sensitivity. See the [scientific report](docs/star_channel_showcase.md).
 | **Literature comparisons** | Audited extractions, reduced-model calibration and held-out comparisons, with failed screens and evidence limits retained. |
 
 These are computational demonstrations of idealized or literature-informed
-systems. They do not establish predictive accuracy for a real manufactured
-membrane. The biological-feed extension is an initial hydraulic scenario with
-an illustrative published COD-retention sensitivity; it does not establish
-sustainable flux, fouling time or a validated bioprocess model.
+systems.
 
 ## How results stay traceable
 
@@ -109,10 +104,22 @@ sustainable flux, fouling time or a validated bioprocess model.
   environment, a shared explicit Julia project and saved dependency locks.
 
 Published articles and their available supplements provide experimental
-evidence. Full article files remain in the local literature workspace; the
-repository includes curated source metadata and extraction records.
-New laboratory measurements and unavailable raw datasets are not prerequisites
-for this computational-tool project.
+evidence.
+
+## Scientific references
+
+The membrane-structure, hydraulic and crossflow studies draw on the following
+articles. Source locations and extraction records are in the
+[literature workspace](literature/README.md) and [source ledger](literature/sources.json).
+
+1. **Biesheuvel, P. M., and Verweij, H. (1999).** [Design of ceramic membrane supports: permeability, tensile strength and stress](https://doi.org/10.1016/S0376-7388(98)00335-4). *Journal of Membrane Science*, 156, 141–152.
+2. **Zhu, W., et al. (2021).** [Design and optimization of ceramic membrane structure: From the perspective of flux matching between support and membrane](https://doi.org/10.1016/j.ceramint.2021.01.088). *Ceramics International*, 47, 12357–12365.
+3. **Mo, J., Li, X., and Yang, Z. (2022).** [Dissecting the structure-property relationship of ceramic membrane with asymmetric multilayer structures for maximizing permselectivity](https://doi.org/10.1016/j.watres.2022.118658). *Water Research*, 220, 118658.
+4. **Jan, A., et al. (2025).** [Silicon carbide coated alumina tight-ultrafiltration membrane prepared by low-pressure chemical vapor deposition for sulphate ion retention](https://doi.org/10.1016/j.desal.2025.119085). *Desalination*, 613, 119085.
+5. **Chiu, T. Y., and James, A. E. (2005).** [Critical flux determination of non-circular multi-channel ceramic membranes using TiO2 suspensions](https://doi.org/10.1016/j.memsci.2005.01.037). *Journal of Membrane Science*, 254, 295–301.
+6. **Chiu, T. Y., Lara Dominguez, M. V., and James, A. E. (2006).** [Critical flux and rejection behaviour of non-circular-channelled membranes: Influence of some operating conditions](https://doi.org/10.1016/j.seppur.2005.11.028). *Separation and Purification Technology*, 50, 212–219.
+7. **Garcia Garcia, F. J., and Chiu, T. Y. (2008).** [Economic aspects of critical flux operability in star shaped microfiltration membranes: Influence of some operating conditions](https://doi.org/10.1016/j.memsci.2008.08.033). *Journal of Membrane Science*, 325, 641–646.
+8. **Frederic, E., et al. (2018).** [Modelling of fluid flow distribution in multichannel ceramic membrane: Application to the filtration of produced water](https://doi.org/10.1016/j.memsci.2018.09.021). *Journal of Membrane Science*, 567, 290–302.
 
 ## Where this can go
 
