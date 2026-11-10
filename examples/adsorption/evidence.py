@@ -61,5 +61,5 @@ def evidence():
             'DWSIM_role':'Actual water-carrier pump; adsorption, solute inventory and transient capacity remain external Julia calculations.'}}
 
 if __name__=='__main__':
-    e=evidence();write_json(ROOT/'literature/adsorption_evidence.json',e)
+    e=evidence();write_json(ROOT/'examples/adsorption/evidence/literature_parameters.json',e)
     print(json.dumps({'sources':len(e['sources']),'retained_entries':len(e['measurements_and_fitted_parameters']),'consistency':e['source_consistency']},indent=2))

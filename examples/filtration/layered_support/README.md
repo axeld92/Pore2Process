@@ -2,7 +2,7 @@
 
 [Scientific report: purpose, theory, results and conclusions](REPORT.md).
 
-Read [the research scope and contracts](../../../docs/filtration_research_case.md).
+Read [the research scope and contracts](../../../docs/verification/filtration/layered_support.md).
 This workflow adds a fixed selective layer to fresh OpenLB support simulations,
 then calculates an actual DWSIM pumping duty. It is not experimentally calibrated.
 

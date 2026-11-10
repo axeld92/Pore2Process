@@ -184,7 +184,7 @@ def main():
     write(base/'evidence.json',e)
     initialization=time.perf_counter();module();initialization=time.perf_counter()-initialization
     files=[*Path(__file__).parent.glob('*.py'),PIXELS,
-        ROOT/'literature/alhamed2009_protocol.md',ROOT/'julia/adsorption/AdsorptionColumn.jl',
+        ROOT/'examples/adsorption/alhamed/protocol.md',ROOT/'julia/adsorption/AdsorptionColumn.jl',
         ROOT/'examples/adsorption/bridge.py',ROOT/'src/pore2process_demo/bridge.py',
         ROOT/'uv.lock',ROOT/'julia/Project.toml',ROOT/'julia/Manifest.toml']
     files = implementation_files(files)

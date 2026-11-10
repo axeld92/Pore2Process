@@ -1,0 +1,19 @@
+schema_version = 1
+id = "adsorption/film_particle"
+title = "Film-particle batch and column comparison"
+area = "adsorption"
+status = "in_progress"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["adsorption/alhamed"]
+run_module = "examples.adsorption.film_particle.run"
+check_module = "examples.adsorption.film_particle.check"
+reference_files = ["reference/film_particle_reference.json"]
+protocol_files = ["protocol.md"]
+
+[validation]
+numerical = "passed"
+literature = "mixed"
+scope = "Read REPORT.md for the accepted run, operating range, assumptions and separate physical conclusions."
+batch = "passed"
+column = "failed"

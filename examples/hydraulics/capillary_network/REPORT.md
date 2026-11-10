@@ -81,7 +81,7 @@ and pressure drop 1000 Pa.
 | Maximum pressure error | $6.39\times10^{-14}$ Pa |
 | Normalized conservation error | $1.97\times10^{-15}$ |
 
-The [numerical reference](../../../docs/verified_reference.json) preserves the
+The [numerical reference](reference/verified_reference.json) preserves the
 observations. Tests cover pressure/radius/viscosity scaling, pressure offsets
 and reversal, single-chain and asymmetric lattices, zero flow and invalid
 inputs. Nonzero flow and permeability must agree within $10^{-9}$ relative;
@@ -109,7 +109,7 @@ physics is the [native capillary benchmark](../capillary_benchmark/REPORT.md).
 
 ## Reproduction and evidence
 
-[Setup and commands](README.md) · [Model/data-contract details](../../../docs/setup_and_examples.md)
-· [Acceptance record](../../../docs/implementation_status.md).
+[Setup and commands](README.md) · [Model/data-contract details](../../../docs/guides/setup.md)
+· [Acceptance record](../../../docs/verification/first_simulation.md).
 The governing analytical reference is derived above; no experimental dataset
 is used. This report summarizes retained evidence and introduces no new solve.

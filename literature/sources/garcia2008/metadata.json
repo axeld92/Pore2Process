@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "garcia2008",
+  "title": "Economic aspects of critical flux operability in star shaped microfiltration membranes: Influence of some operating conditions",
+  "doi": "10.1016/j.memsci.2008.08.033",
+  "role": "Matched critical-flux/circulation-energy benchmark lead",
+  "legacy_ledger": "../index.json",
+  "legacy_id": "garcia_2008_crossflow",
+  "files": [
+    "../../reviews/crossflow/extraction.json",
+    "../../reviews/crossflow/papers_review.md"
+  ],
+  "scope": "Navigation metadata. Numerical extractions retain their original bytes and source conditions. Shared records remain combined, not duplicated."
+}

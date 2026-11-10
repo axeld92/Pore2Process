@@ -75,7 +75,7 @@ followed by the [actual property-to-pump connection](../darcy_pump/REPORT.md).
 
 ## Reproduction and evidence
 
-[Setup/launch commands](README.md) · [Compatibility record](../../../docs/compatibility_check.md)
-· [Compact reference](../../../docs/compatibility_reference.json).
+[Setup/launch commands](README.md) · [Compatibility record](../../../docs/verification/hydraulics/tool_checks.md)
+· [Compact reference](reference/compatibility_reference.json).
 The analytical channel and pump expressions above are the test oracles;
 no experimental dataset is used.

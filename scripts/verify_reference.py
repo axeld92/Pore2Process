@@ -29,6 +29,6 @@ record = {
     "largest_ui_counts": {"nodes": len(largest.pressures_Pa), "throats": len(largest.edges)},
     "note": "Single local observations after dependency precompilation, not a performance benchmark; excludes graphics/export time.",
 }
-destination = Path("docs/verified_reference.json")
+destination = Path('examples/hydraulics/capillary_network/reference/verified_reference.json')
 destination.write_text(json.dumps(record,indent=2,allow_nan=False)+"\n")
 print(destination.read_text())

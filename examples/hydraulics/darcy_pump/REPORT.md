@@ -83,6 +83,6 @@ purpose of the [layered filtration example](../../filtration/layered_support/REP
 
 ## Reproduction and evidence
 
-[Commands and contracts](README.md) · [Connected-study record](../../../docs/connected_hydraulics.md)
-· [Compact measured/simulator reference](../../../docs/coupling_reference.json).
+[Commands and contracts](README.md) · [Connected-study record](../../../docs/verification/hydraulics/darcy_pump.md)
+· [Compact measured/simulator reference](reference/coupling_reference.json).
 The numerical reference is analytical; no experimental material dataset is used.

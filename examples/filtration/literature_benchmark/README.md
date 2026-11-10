@@ -46,8 +46,8 @@ No article, package or runtime is downloaded during a benchmark run.
 ## Scope and data contract
 
 [protocol.json](protocol.json) freezes the scenario choices. The
-[source review](../../../literature/crossflow_papers_review.md) and
-[extraction](../../../literature/crossflow_extraction.json) distinguish transcribed
+[source review](../../../literature/reviews/crossflow/papers_review.md) and
+[extraction](../../../literature/reviews/crossflow/extraction.json) distinguish transcribed
 tables, pixel readings and missing experimental conditions.
 
 - Julia receives SI pressures, volumetric flows, areas, fluxes and concentrations.
@@ -106,5 +106,5 @@ discrete selections, runtime versions and cold-initialization timing. Strict
 JSON uses null for unavailable one-sided flux bounds. The checker replays
 Julia and inspects all saved evidence; it does not launch external solvers.
 
-See [the result and limitations](../../../docs/crossflow_benchmark.md). The original
+See [the result and limitations](../../../docs/verification/filtration/literature_benchmark.md). The original
 Panel capillary-network example remains separately launchable.

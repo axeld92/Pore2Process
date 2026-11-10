@@ -3,7 +3,7 @@
 [Scientific report: purpose, theory, results and conclusions](REPORT.md).
 
 This separate extension preserves the batch-qualified particle model and all
-earlier examples. [The report](../../../docs/column_contact_audit.md) explains the
+earlier examples. [The report](../../../docs/verification/adsorption/column_contact.md) explains the
 source-density audit, common contact model, held-out comparison and limits.
 
 From the existing macOS ARM64 project root:

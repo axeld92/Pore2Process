@@ -4,6 +4,7 @@ Four touching diamond pairs are split using visually recorded centres. Other
 centres are bounding-box midpoints of the dark connected components. Pixel
 uncertainty is retained separately from unreported experimental uncertainty.
 """
+from pore2process_demo.paths import project_path
 import argparse
 from pathlib import Path
 
@@ -14,7 +15,7 @@ from examples.filtration.calibration.run import ROOT, read_json, sha256, write_j
 
 
 def digitize(config):
-    source=ROOT/config["image"]
+    source=project_path(ROOT/config["image"])
     if sha256(source)!=config["image_sha256"]:
         raise ValueError("Figure 6 image changed; repeat the visual digitization audit.")
     a=np.asarray(Image.open(source).convert("RGB"))
@@ -72,7 +73,7 @@ def main():
     parser.add_argument("--output",type=Path,required=True)
     parser.add_argument("--source",choices=("jpeg","pdf"),default="jpeg")
     args=parser.parse_args()
-    config=read_json(ROOT/"literature/zhu2021_extraction.json")["digitization_pdf" if args.source=="pdf" else "digitization"]
+    config=read_json(ROOT/'literature/sources/zhu2021/extraction.json')["digitization_pdf" if args.source=="pdf" else "digitization"]
     write_json(args.output,digitize(config))
     print(f"Saved {config['expected_point_count']} M1 readings to {args.output}")
 

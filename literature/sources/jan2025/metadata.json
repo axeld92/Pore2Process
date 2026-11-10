@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "jan2025",
+  "title": "Silicon carbide coated alumina tight-ultrafiltration membrane prepared by low-pressure chemical vapor deposition for sulphate ion retention",
+  "doi": "10.1016/j.desal.2025.119085",
+  "role": "Whole-membrane experimental permeance and coating/interface context; not a separated-resistance calibration or fixed-selective-layer support comparison.",
+  "legacy_ledger": "../index.json",
+  "legacy_id": "jan_2025_sic_alumina",
+  "files": [
+    "../../reviews/filtration/support_membrane_extraction.json"
+  ],
+  "scope": "Navigation metadata. Numerical extractions retain their original bytes and source conditions. Shared records remain combined, not duplicated."
+}

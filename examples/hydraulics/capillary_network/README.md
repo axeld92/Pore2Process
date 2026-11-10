@@ -10,4 +10,4 @@ uv run python -m examples.hydraulics.capillary_network.run --output results/defa
 uv run panel serve app.py --address 127.0.0.1 --port 5006 --show
 ```
 
-See [setup and model derivation](../../../docs/setup_and_examples.md).
+See [setup and model derivation](../../../docs/guides/setup.md).

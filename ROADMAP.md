@@ -60,8 +60,8 @@ evidence records and setup/launch/check commands. Full article files, local
 environments, binaries and routine generated outputs remain outside version
 control. Numerical, integration and browser verification are recorded separately.
 
-See the [reproduction guide](docs/reproduction.md) and
-[publication record](docs/code_publication.md). The initial source publication
+See the [reproduction guide](docs/guides/reproduction.md) and
+[publication record](docs/verification/publication.md). The initial source publication
 preserves the original GitHub overview history; earlier development commits
 remain in the local repository. Other operating systems and unattended full
 native reproduction on a new machine remain to be checked.
@@ -81,7 +81,7 @@ circulation accounts for 98.72% of the baseline duty. Membrane resistance
 and process-energy dominance are therefore distinct.
 
 Published capacity data, interpolation/monotonic policies and transfer
-sensitivities remain explicit in [the final report](docs/operating_window.md).
+sensitivities remain explicit in [the final report](docs/verification/filtration/operating_map.md).
 Further filtration physics is an optional future extension, not the active
 next milestone.
 
@@ -96,7 +96,7 @@ OpenLB → Python/Julia → DWSIM workflow. Source selection, model qualificatio
 and process coupling belong to that case's own verification and publication.
 
 Runnable cases now live under `examples/hydraulics/`, `examples/filtration/`
-and `examples/adsorption/`. See the [layout guide](docs/project_layout.md) for
+and `examples/adsorption/`. See the [layout guide](docs/architecture/project_layout.md) for
 the updated commands and preservation of existing evidence.
 
 ## 7. Select a reacting or non-isothermal showcase

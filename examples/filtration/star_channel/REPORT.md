@@ -121,7 +121,7 @@ The stock forced-liquid IAPWS route is used within explicit phase guards;
 no solver output is repaired to close a balance. The existing Panel interface
 and exports have a separate browser verification record.
 
-![Low-Re support comparison and distributed profiles](../../../docs/star_channel_study.png)
+![Low-Re support comparison and distributed profiles](figures/star_channel_study.png)
 
 ## Discussion
 
@@ -145,8 +145,8 @@ the native range before applying literature-capacity policies.
 
 ## Reproduction and evidence
 
-[Commands](README.md) · [Full record](../../../docs/star_channel_showcase.md)
-· [Compact reference](../../../docs/star_channel_reference.json)
-· [Browser checks](../../../docs/browser_checks.md).
+[Commands](README.md) · [Full record](../../../docs/verification/filtration/star_channel.md)
+· [Compact reference](reference/star_channel_reference.json)
+· [Browser checks](../../../docs/verification/interface/browser_checks.md).
 Membrane anchor: [Zhu et al. (2021)](https://doi.org/10.1016/j.ceramint.2021.01.088),
-Figure 6. Biological extraction: [source/conditions ledger](../../../literature/chiu2006_bio_extraction.json).
+Figure 6. Biological extraction: [source/conditions ledger](../../../literature/sources/chiu2006/bio_extraction.json).

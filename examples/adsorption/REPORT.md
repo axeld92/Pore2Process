@@ -98,7 +98,7 @@ not identify this bed's dispersion or film coefficient. Doubling axial cells
 changes the largest-particle breakthrough time by 0.069936%, halving the step
 by 0.003826%; maximum nominal normalized solute imbalance is $5.17\times10^{-15}$.
 
-![Synthetic capacity and hydraulic trade-off](../../docs/adsorption.png)
+![Synthetic capacity and hydraulic trade-off](figures/adsorption.png)
 
 ## Discussion
 
@@ -127,8 +127,8 @@ failed column predictions do not become passes because this software loop works.
 
 ## Reproduction and evidence
 
-[Commands](README.md) · [Detailed study](../../docs/adsorption_example.md)
-· [Compact reference](../../docs/adsorption_reference.json)
-· [Frozen source/scenario ledger](../../literature/adsorption_evidence.json).
+[Commands](README.md) · [Detailed study](../../docs/verification/adsorption/synthetic_bed.md)
+· [Compact reference](reference/adsorption_reference.json)
+· [Frozen source/scenario ledger](evidence/literature_parameters.json).
 The source ledger's early access statuses are historical; subsequent Alhamed
 PDF review is recorded with the separate date-stone examples.

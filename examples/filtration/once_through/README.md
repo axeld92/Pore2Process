@@ -61,6 +61,6 @@ liquid states, recovery, pressure levels, specific energy, saved/reloaded stream
 states, original DWSIM connector IDs/ports, and cross-case scaling. It does
 **not** rerun external simulators. Fresh DWSIM solves require the run command.
 
-See [the scientific model, results and limits](../../../docs/process_filtration.md)
-and [the interface decision](../../../docs/dwsim_filtration_interfaces.md).
+See [the scientific model, results and limits](../../../docs/verification/filtration/once_through.md)
+and [the interface decision](../../../docs/architecture/dwsim_interfaces.md).
 The original Panel demonstration is independent of this command-line study.

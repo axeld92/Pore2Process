@@ -3,6 +3,7 @@
 Run from the repository root: uv run python -m examples.filtration.calibration.run
 No geometry-resolved or complete-membrane experimental validation is implied.
 """
+from pore2process_demo.paths import project_path
 from pore2process_demo.provenance import implementation_files, source_manifest
 import argparse
 import csv
@@ -26,15 +27,15 @@ METRICS = ("count", "mean_absolute_relative_error", "max_absolute_relative_error
 def read_json(path):
     def reject(value):
         raise ValueError(f"Nonstandard JSON value: {value}")
-    return json.loads(Path(path).read_text(), parse_constant=reject)
+    return json.loads(project_path(Path(path).absolute()).read_text(), parse_constant=reject)
 
 
 def write_json(path, value):
-    Path(path).write_text(json.dumps(value, indent=2, allow_nan=False)+"\n")
+    project_path(Path(path).absolute()).write_text(json.dumps(value, indent=2, allow_nan=False)+"\n")
 
 
 def sha256(path):
-    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+    return hashlib.sha256(project_path(Path(path).absolute()).read_bytes()).hexdigest()
 
 
 def roles_for(rows, protocol):
@@ -72,15 +73,15 @@ def validate_snapshot(snapshot):
 
 def load_snapshot(require_sources=False):
     protocol=read_json(ROOT/"examples/filtration/calibration/protocol.json")
-    extraction=read_json(ROOT/protocol["extraction_path"])
+    extraction=read_json(project_path(ROOT/protocol["extraction_path"]))
     source=extraction["biesheuvel_1999"]
-    audit=read_json(ROOT/protocol["audit_path"])
+    audit=read_json(project_path(ROOT/protocol["audit_path"]))
     statuses=[]
     hashes={str(Path(source["source"]["folder"])/name):digest
             for name,digest in source["source"]["files_sha256"].items()}
     hashes.update(audit["files_sha256"])
     for name,expected in hashes.items():
-        path=ROOT/name
+        path=project_path(ROOT/name)
         if not path.exists():
             if require_sources:
                 raise ValueError(f"Required local source is missing: {name}")

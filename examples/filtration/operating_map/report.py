@@ -61,9 +61,9 @@ def update(s,path):
         f"Maximum enthalpy residual normalized by total shaft power: {max(c['validation']['max_enthalpy_relative_residual'] for c in s['cases']+[s['seed_validation']]):.6e}.",
         f"Largest omitted-axial-momentum/friction upper screen: {100*max(c['translation']['axial']['neglected_axial_momentum_to_friction_upper_screen'] for c in s['cases']):.6f}% (limit 2%).",'',
         f"The checker replays {v['capacity_decisions']} source-capacity comparisons and {v['discrete_policy_selections']} discrete policy selections. Independent upstream replay recorded: `{v['upstream_rechecked']}`.",'',
-        '[Scientific figure](operating_map.png) · [Compact numerical reference](operating_map_reference.json) · [Reproduction commands](../operating_map/README.md)','',
+        '[Scientific figure](../../../examples/filtration/operating_map/figures/operating_map.png) · [Compact numerical reference](../../../examples/filtration/operating_map/reference/operating_map_reference.json) · [Reproduction commands](../../../examples/filtration/operating_map/README.md)','',
         'The standalone map adds no new Panel browser controls. The existing low-Re interface retains its previous browser verification; no new browser pass is claimed for this CLI/report extension. Reacting and non-isothermal additions remain deferred.','']
-    file=ROOT/'docs/operating_window.md';text=file.read_text().split('## Verified results')[0]
+    file=ROOT/'docs/verification/filtration/operating_map.md';text=file.read_text().split('## Verified results')[0]
     start='Implementation record, 9 November 2026. **Verification is in progress.**\nFinal accepted run identities and results will replace this status after the\nnative suite and actual DWSIM matrix complete.'
     text=text.replace(start,'Implementation and verification record, 9–10 November 2026. The bounded native\nand actual-process checks pass; scientific transfer limits remain explicit below.')
     text=text.replace('Acceptance results, figure and run identities will be added after verification.','Accepted results and run identities follow below.')

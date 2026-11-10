@@ -1,4 +1,5 @@
 """Hash-check saved actual DWSIM evidence and replay Julia; no external solves."""
+from pore2process_demo.paths import project_path
 import argparse
 import csv
 import json
@@ -29,7 +30,7 @@ def verify(path,*,verify_upstream=True):
     if any(c['dwsim']['version']!=inventory['version'] for c in s['cases']):
         raise RuntimeError('Installed API/solver versions differ')
     if verify_upstream:
-        source_path=ROOT/s['source_summary_path']
+        source_path=project_path(ROOT/s['source_summary_path'])
         if sha(source_path)!=s['source_summary_sha256']: raise RuntimeError('Upstream source summary changed')
         close_tree(verify_source(source_path,write_record=False),s['source_verification'],'upstream verification')
     close_tree(read(base/'source_verification.json'),s['source_verification'],'source evidence')

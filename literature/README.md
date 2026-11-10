@@ -1,246 +1,44 @@
-# Article workspace and experimental evidence
+# Literature and evidence
 
-## Column contact and inventory audit - 10 November 2026
+Use `sources/<paper-id>/` for a paper's metadata, single-paper extractions,
+digitized points and review. The paper folders link shared records instead of
+duplicating measurements. `reviews/` holds comparisons that involve several
+papers; example-specific protocols and transferred scenario ledgers live with
+their examples.
 
-[The preselection protocol](alhamed2009_column_contact_protocol.md) and
-[executed audit](../docs/column_contact_audit.md) retain Alhamed's printed
-bulk-density label. Derived bed inventory is not a per-run weighed mass;
-truncated Figure 7 integrals do not establish saturation capacity. Table 5's
-DL/Pe remain fitted breakthrough-shape descriptors, never independently
-measured fluid dispersion. One common contact topology is selected on
-0.8 mm only and transferred to 0.45 mm with frozen batch particles. Both
-column comparisons fail despite passing numerical checks. No raw-data or
-new-laboratory prerequisite is introduced.
+| Source | Role |
+| --- | --- |
+| [alhamed2009](sources/alhamed2009/README.md) | Audited date-stone carbon source; batch qualification and separate failed column comparisons. |
+| [biesheuvel1999](sources/biesheuvel1999/README.md) | Support water-permeability/porosity/processing and bend-strength reference; distinguishes experimental Table 2 from model Table 3 and maximum-flow design curves. |
+| [chiu2005](sources/chiu2005/README.md) | Experimental protocol and related ceramic/TiO2 series lead |
+| [chiu2006](sources/chiu2006/README.md) | Concrete biological-water-treatment alternative with ceramic channels |
+| [frederic2018](sources/frederic2018/README.md) | Support/selective-layer permeability contrast, spatial flux and fouling model |
+| [garcia2008](sources/garcia2008/README.md) | Matched critical-flux/circulation-energy benchmark lead |
+| [iheanacho2021](sources/iheanacho2021/README.md) | Alternative source candidate only; no extracted numerical dataset is used in the selected models. |
+| [jan2025](sources/jan2025/README.md) | Whole-membrane experimental permeance and coating/interface context; not a separated-resistance calibration or fixed-selective-layer support comparison. |
+| [meneghini2017](sources/meneghini2017/README.md) | Author dissertation; fitted coconut-shell parameters transferred to a synthetic scenario. |
+| [meneghini2021](sources/meneghini2021/README.md) | Related publication; not independent validation of the dissertation parameters. |
+| [mo2022](sources/mo2022/README.md) | Fixed-top-layer support plateau and explicit intermediate-layer resistance. Author-model values retained separately from experiment; no production parameter replacement. |
+| [zhu2021](sources/zhu2021/README.md) | Matched support/transfer-coated whole-membrane M1 effective-impedance reference for bounded scale translation; no claim of exact specimen reconstruction. |
+| [wakao_funazkri1978](sources/wakao_funazkri1978/README.md) | Existing packed-bed film-correlation reference |
 
-## Finite-bath and film/particle audit — 10 November 2026
+## Shared reviews and original source ledger
 
-The separate [protocol](alhamed2009_film_particle_protocol.md),
-[extraction](alhamed2009_film_particle_extraction.json) and
-[24 Figure 2 marker centres](alhamed2009_fig2_pixels.csv) support the
-[executed model comparison](../docs/film_particle_adsorption.md). Shared
-transport is fitted only to 0.8/1.5 mm batch curves; 0.45/0.225 mm are withheld.
-The batch error screens pass, but frozen-parameter column prediction and a
-single 0.8 mm column film-factor anchor both fail Figure 7. The original
-source equilibrium and density-derived bed mass are unchanged. Diagnostic
-equilibrium factors, active-inventory scenarios and image-reading sensitivities
-are separately labelled, not substituted for measurements. No new article or
-unavailable dataset was required for this check.
+- [Filtration evidence](reviews/filtration/evidence_review.md)
+- [Crossflow paper comparison](reviews/crossflow/papers_review.md)
+- [Original source ledger](sources/index.json)
 
-## Isothermal adsorption starting evidence — 10 November 2026
+The original JSON/CSV extractions and ledgers retain their exact bytes. Old
+project-relative paths inside them are intentional provenance and resolve
+through the [resource relocation registry](../docs/history/resource_organization.json).
+Per-paper metadata provides the current navigation. Earlier access/status
+statements remain dated evidence, not a replacement for a later audited record.
 
-[The adsorption ledger](adsorption_evidence.json) records a public author
-dissertation for phenol/coconut-shell activated carbon, visually checked
-Langmuir and column-parameter tables, SI conversions, source hash and explicit
-density/unit conflicts. The related Meneghini et al. (2021) article, DOI
-10.1590/S1413-415220180046, is not used as an independent holdout here.
-Visible figure error bars have not yet been numerically digitized/audited;
-their existence is distinguished from missing pointwise numbers.
+## Supplying articles
 
-[The synthetic starting example](../docs/adsorption_example.md) transfers those
-parameters as scenarios into a separate FCC bed, rather than claiming an
-experimental specimen reconstruction. Its numerical/software checks pass;
-experimental column validation is pending. Alhamed (2009), DOI
-10.1016/j.jhazmat.2009.05.002, has now been received as a PDF and reviewed;
-Markdown conversion is not needed to use it. The separate
-[extraction](alhamed2009_extraction.json), [comparison protocol](alhamed2009_protocol.md)
-and [executed comparison](../docs/alhamed2009_comparison.md) retain 48 digitized
-Figure 7 points. The current reduced model fails calibration and held-out
-diameter transfer. Its date-stone carbon and Iheanacho (2021)'s alternative
-corn-cob carbon are separate datasets and are not pooled with the coconut fit.
-
-## Qualified operating-map audit — 9–10 November 2026
-
-[The operating-window ledger](operating_window_evidence.json) now audits the
-four supplied crossflow papers for the higher-Re hydraulic map. Chiu (2006)
-is the biological-feed critical-flux source; Chiu (2005)/García (2008) retain
-their separate TiO2 scope and shared-data caveat, and Frederic (2018) supplies
-no calibrated physical fouling time. No additional article was required for
-this bounded milestone.
-
-[The computational report](../docs/operating_window.md) distinguishes the
-source's short-step protocol, figure-reading sensitivities, unavailable
-pointwise uncertainty and transferred retention from verified native/process
-hydraulics. Linear interpolation, monotonic bounds, equal-Re/equal-velocity
-mapping and transfer factors remain separate scenarios. An internal
-leave-one-point-out shape check is not independent experimental validation.
-The synthetic geometry, Zhu impedance and biological feed do not constitute
-a matched experimental specimen.
-
-## Crossflow performance search: 9 November 2026
-
-[The initial crossflow search](crossflow_evidence_review.md) identified eight
-further leads after screening the original four main articles and Mo's
-supplement. **García 2008, Chiu 2005, Chiu 2006 and Frederic 2018 have now all
-been received** as full Markdown, metadata and figures and reviewed.
-[The received-paper report](crossflow_papers_review.md) and
-[extraction](crossflow_extraction.json) retain six García table rows and ten
-Chiu figure readings. [The screening ledger](crossflow_screening.json) records
-the initial access state and subsequent receipt, source hashes and limits.
-
-The source audit reproduces the reported energy arithmetic within 0.912%.
-It also identifies reused measurements and an unresolved absolute bundle-flow
-convention. No new model has been fitted or accepted as physical calibration.
-The [bounded critical-flux-constrained benchmark](../docs/crossflow_benchmark.md)
-now passes 846 Julia assertions, 50 Python tests and 32 actual DWSIM scenarios;
-absolute module calibration remains unresolved. Another article is not required
-for that completed milestone. The biological-feed series is retained
-as a separate option and does not support the existing 100 LMH target within
-its measured critical-flux range. The four original PDFs are absent; a García
-PDF could help audit table typography, without making raw data or new
-measurements a prerequisite.
-
-## Biological-feed sensitivity in the explicit channel
-
-[The additional Chiu 2006 extraction](chiu2006_bio_extraction.json) retains
-the membrane-feed COD of 68.7 mg/L (Table 2; reported operating range
-65.3–72.1 mg/L), below-critical COD rejection of 0.65 (Table 3; 0.2 µm,
-1.6 m/s, 0.1 bar, pH 7.5), and the lowest critical-flux point of 21.4 LMH
-at Re=1388 (Section 3.2/Figure 6). It records conditions, source hash,
-unavailable point-specific uncertainty and the Markdown unit-typography limit.
-
-The [explicit-channel showcase](../docs/star_channel_showcase.md) uses a
-different, independently verified low-Re hydraulic range. Its 0.5–0.8 constant
-local COD-rejection range is a transferred sensitivity, not a fitted or
-validated law at the new speed. The source critical-flux point remains context;
-critical/sustainable flux and fouling time for the new channel remain
-unavailable. COD is balanced externally in Julia; DWSIM uses water-carrier
-properties. No new entry is added to the accepted physical-calibration set.
-
-## Supplied material and completed calibration
-
-Place article Markdown, original PDFs and supplementary data in `inbox/`.
-The folder contents are ignored by Git so institutionally supplied full text
-is kept locally. All three requested main articles, their available figures and
-conversion metadata have now been received in `inbox/Mo2022Dissecting/`,
-`inbox/Biesheuvel1999Design/` and `inbox/Jan2025Silicon/`. Use a subfolder per paper,
-for example `inbox/mo_2022_multilayer/`, with `article.md`, `article.pdf` and
-`supplement/`. Markdown should retain figure/table captions, equations, units,
-references and page or section markers. Keep original plots when numerical
-values only appear graphically. No credentials belong in this folder.
-
-The selected application is **clean-water filtration through an asymmetric
-ceramic membrane**. Alumina is the first literature candidate; SiC is retained
-as a comparison. A limited alumina support reduced model has now been fitted
-to Biesheuvel data and tested against held-out cases; **the 25% screen fails**.
-See [the calibration report](../docs/experimental_calibration.md) and
-[commands](../examples/filtration/calibration/README.md). The separate OpenLB study still uses
-synthetic geometry and assumed layer resistance. Exact reconstruction of a
-manufactured specimen is outside [the computational scope](../docs/verification_scope.md).
-
-The later [fixed-opening OpenLB comparison](../docs/graded_support_study.md)
-uses Zhu's effective non-support impedance and a common support baseline
-calibration. It now connects three measured geometric resistance ratios to
-nine actual DWSIM pump cases. This is a conditional literature-informed
-scenario; no additional experimental evidence was required to execute it.
-
-[The combined evidence review](filtration_evidence_review.md) assigns a distinct
-role to each paper. Biesheuvel Table 2 provides nine experimental
-support-property cases, now accepted for this limited calibration; Jan provides a whole-membrane comparison; Mo
-provides the fixed-top-layer model. These are not a matched three-paper
-resistance dataset. Structured values and source hashes are retained in the
-linked extraction records.
-
-## Mo et al. main article and Word supplement received
-
-**J. Mo, X. Li and Z. Yang (2022), “Dissecting the structure-property relationship
-of ceramic membrane with asymmetric multilayer structures for maximizing
-permselectivity,” Water Research 220, 118658.**
-[DOI](https://doi.org/10.1016/j.watres.2022.118658),
-[verified abstract and metadata](https://pubmed.ncbi.nlm.nih.gov/35640511/).
-
-The supplied main article, all seven scientific figures and the Word
-supplement have now been reviewed. [The review](mo2022_review.md) maps the paper to our model, identifies
-the intermediate-layer contribution and distinguishes model quantities from
-experimental evidence. [The extraction record](mo2022_extraction.json) retains
-source hashes, units and locations. No Mo experimental dataset has been accepted.
-
-The supplement is in `inbox/Mo2022Dissecting/SupportingInformation.docx`;
-there is no need to resubmit or convert it. [The supplement report](mo2022_supplement_review.md)
-and [extraction](mo2022_supplement_extraction.json) retain all ten S2 entries,
-nine S3 entries, model settings and identified references. S2 has no row
-containing both permeance and pore size; original specimens/conditions still
-are recorded as limits on using those rows. Equation typography can be revisited
-if that Mo model is implemented; this is not a prerequisite for the hydraulic case.
-
-The subsequent article **W. Zhu et al. (2021), Design and optimization of
-ceramic membrane structure: From the perspective of flux matching between
-support and membrane**, [DOI 10.1016/j.ceramint.2021.01.088](https://doi.org/10.1016/j.ceramint.2021.01.088).
-has now been received under `inbox/Zhu2021Design/` as full Markdown, metadata
-and figures, followed by the original PDF. [The PDF refinement](../docs/zhu_pdf_refinement.md)
-digitizes the same 21 M1 points from its larger native image and calls Julia
-with the original model, split and 10% screen: nominal held-out maximum error
-4.56%, conservative reading-corner maximum 7.88%. The earlier JPEG reading
-(4.53% nominal, 10.78% corner) is retained. No supplement was identified or
-needed. Unreported conditions/uncertainty stay unknown; no new dataset is
-required before the synthetic geometry extension.
-
-## Biesheuvel and Verweij: limited support calibration completed
-
-P. M. Biesheuvel and H. Verweij (1999), “Design of ceramic
-membrane supports: permeability, tensile strength and stress,” Journal of
-Membrane Science 156, 141–152.
-[DOI](https://doi.org/10.1016/S0376-7388(98)00335-4).
-The supplied main article, metadata and all nine scientific figures have been
-reviewed. Table 2 was transcribed with its original units and SI conversions
-into [support_membrane_extraction.json](support_membrane_extraction.json).
-It contains measured water permeability, porosity and bending-derived strength
-for nine processing conditions. The same study's Table 2, formula and powder
-sizes have now been visually checked in Chapter 7 of the public
-[author thesis](https://ris.utwente.nl/ws/portalfiles/portal/6077974/t0000015.pdf).
-[The audit](biesheuvel_source_audit.json) retains source/page/image hashes;
-this is the same dataset, not another independent experiment. The journal
-publisher PDF was not inspected. The one-parameter support closure now has a
-reproducible fit and held-out check; its primary screen fails. Existing native
-simulation parameters have not been replaced. Water-test temperature, raw
-series, uncertainty and specimen-linked connected morphology are unreported
-limits, not acquisition requirements.
-
-## Evidence already found
-
-The public full text of A. Jan et al. (2025), “Silicon carbide coated alumina
-tight-ultrafiltration membrane prepared by low-pressure chemical vapor
-deposition for sulphate ion retention,” Desalination 613, 119085 is available:
-[DOI](https://doi.org/10.1016/j.desal.2025.119085),
-[university-hosted PDF](https://ris.utwente.nl/ws/portalfiles/portal/501138486/1-s2.0-S0011916425005612-main.pdf).
-It is a potential whole-membrane reference, not a separated-resistance dataset.
-The supplied local Markdown and available figures have now been reviewed.
-The uncoated membrane already contains a selective layer, and SiC deposition
-changes that layer. Unreported coating/interface and hydraulic conditions limit
-what can be inferred; they do not block our selected Zhu-based comparison. Details and
-caveats are in [the combined review](filtration_evidence_review.md) and
-[the source ledger](sources.json).
-
-## Extract when reported
-
-Use the available papers and supporting information only. The fields below
-guide extraction; they are not a demand for a complete raw dataset or new
-experiments. Store unreported fields as unavailable, and label any scenario
-assumptions separately. For each relevant specimen, record what is supplied:
-
-- Material, specimen ID, support thickness, selective/intermediate-layer
-  thicknesses, pore-size distributions, porosity, dimensions and normal-flow direction.
-- Pure-water flux versus transmembrane pressure, water temperature and how
-  permeance was temperature-corrected, wetting/conditioning and test mode.
-- Bare-support permeance and coated-membrane permeance for the **same support
-  design and comparable conditions**, with uncertainties and replicates.
-- Evidence that selective-layer microstructure, defect rate and rejection
-  remain comparable when support geometry changes; interface infiltration matters.
-- Mechanical strength or pressure rating, if comparing feasible material designs.
-
-An extracted datum must retain DOI, page/section/figure/table, specimen scope,
-value/unit, SI conversion and whether it was tabulated, digitised or inferred.
-Keep reported conditions/uncertainty and explicit unknowns. Record extraction
-method and distinguish reading sensitivity from measurement uncertainty.
-Preserve published values before any temperature correction. A fitted
-datum cannot also count as independent validation.
-
-For the same fully wetted specimen under matched conditions, an apparent extra
-resistance may be obtained from coated minus bare-support resistance. That
-difference includes selective, intermediate and interface effects unless the
-experiment identifies them separately. Never subtract values from unrelated
-papers/specimens and call the result a measured selective-layer resistance.
-
-The ledger accepts Biesheuvel's support table and Zhu's matched M1 figure for
-their respective limited calibrations. Neither is a specimen-resolved 3D
-geometry dataset. Failed model screens remain recorded alongside successful
-software execution and other numerical checks.
+Place article Markdown, original PDFs, figures, conversion metadata and available
+supplements in `inbox/<paper-id>/`. The inbox remains private and ignored by Git.
+Keep source, specimen, figure/table, conditions, units and uncertainty with an
+extraction. Unreported values stay unavailable or become explicit scenario
+assumptions; measurements of unrelated specimens are not subtracted to infer
+layer resistances. New experiments or inaccessible raw datasets are not gates.

@@ -1,4 +1,5 @@
 """One contact topology chosen on 0.8 mm only, then frozen for 0.45 mm."""
+from pore2process_demo.paths import project_path
 from pore2process_demo.provenance import implementation_files, source_manifest
 from pore2process_demo.provenance import current_source_path
 import csv
@@ -132,12 +133,12 @@ def main():
     base=ROOT/'results/adsorption/column_contact/runs'/run_id;(base/'cases').mkdir(parents=True)
     sources=[*Path(__file__).parent.glob('*.py'),PROTOCOL,FROZEN_RUN,
         ROOT/'julia/adsorption/ColumnContact.jl',ROOT/'julia/adsorption/test_column_contact.jl',
-        ROOT/'tests/test_column_contact.py',
+        ROOT/'tests/adsorption/test_column_contact.py',
         *[current_source_path(name) for name in a['prior_batch_source_sha256']]]
     sources = implementation_files(sources)
     sources=source_manifest(sources)
     for name in sources:
-        dest=base/'source_snapshot'/name;dest.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(ROOT/name,dest)
+        dest=base/'source_snapshot'/name;dest.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(project_path(ROOT/name),dest)
     write(base/'audit.json',a);write(base/'source_sha256.json',sources)
     D=a['batch_diffusivity_m2_s'];fit=select_sections(D);write(base/'contact_selection.json',fit)
     n=fit['selected_sections'];records=[];refinement={};qualified_refinement={};qualified_t05={}

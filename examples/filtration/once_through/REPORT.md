@@ -84,7 +84,7 @@ $2.64\times10^{-5}$ of shaft power. Water-property departures remain below
 the declared 0.1% screen. Upstream native evidence is the preserved historical
 graded-support study; it is not silently relabelled as a new TRT execution.
 
-![Actual solved once-through flowsheet](../../../docs/process_filtration_flowsheet.png)
+![Actual solved once-through flowsheet](figures/process_filtration_flowsheet.png)
 
 ## Discussion
 
@@ -111,8 +111,8 @@ be stated before comparing energy savings.
 
 ## Reproduction and evidence
 
-[Commands and protocol](README.md) · [Scientific/verification record](../../../docs/process_filtration.md)
-· [Compact reference](../../../docs/process_filtration_reference.json)
+[Commands and protocol](README.md) · [Scientific/verification record](../../../docs/verification/filtration/once_through.md)
+· [Compact reference](reference/process_filtration_reference.json)
 · [Native support theory](../graded_support/REPORT.md).
 The baseline impedance comes from
 [Zhu et al. (2021)](https://doi.org/10.1016/j.ceramint.2021.01.088), Figure 6;

@@ -7,7 +7,7 @@ from examples.adsorption.alhamed.source import ROOT, evidence, sha, PDF
 from examples.adsorption.alhamed.study import observations
 
 FROZEN_RUN=ROOT/'results/adsorption/film_particle/runs/20261110T083144Z-e33389b9/summary.json'
-PROTOCOL=ROOT/'literature/alhamed2009_column_contact_protocol.md'
+PROTOCOL=ROOT/'examples/adsorption/column_contact/protocol.md'
 
 
 def frozen():

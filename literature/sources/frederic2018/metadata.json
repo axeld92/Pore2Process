@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "frederic2018",
+  "title": "Modelling of fluid flow distribution in multichannel ceramic membrane: Application to the filtration of produced water",
+  "doi": "10.1016/j.memsci.2018.09.021",
+  "role": "Support/selective-layer permeability contrast, spatial flux and fouling model",
+  "legacy_ledger": "../index.json",
+  "legacy_id": "frederic_2018_multichannel",
+  "files": [
+    "../../reviews/crossflow/extraction.json",
+    "../../reviews/crossflow/papers_review.md"
+  ],
+  "scope": "Navigation metadata. Numerical extractions retain their original bytes and source conditions. Shared records remain combined, not duplicated."
+}

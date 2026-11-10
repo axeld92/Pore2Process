@@ -1,4 +1,5 @@
 """Actual DWSIM operating matrix, with bounded published-capacity comparisons."""
+from pore2process_demo.paths import project_path
 from pore2process_demo.provenance import implementation_files, source_manifest
 import argparse
 from concurrent.futures import ThreadPoolExecutor
@@ -70,7 +71,7 @@ def execute(output,resume=None):
     h['recycle']['nominal_seed_temperature_offset_K']=2.
     base=Path(resume) if resume else Path(output)/'runs'/(datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'-'+uuid4().hex[:8])
     base=base.resolve();base.mkdir(parents=True,exist_ok=True)
-    implementation=list((ROOT/'examples/filtration/operating_map').glob('*.py'))+[ROOT/name for name in (
+    implementation=list((ROOT/'examples/filtration/operating_map').glob('*.py'))+[project_path(ROOT/name) for name in (
         'examples/filtration/operating_map/protocol.json','julia/src/OperatingMap.jl','julia/src/StarChannel.jl',
         'julia/src/GradedSupport.jl','julia/src/CrossflowRecycle.jl','julia/src/Pore2ProcessDemo.jl',
         'examples/filtration/crossflow_recycle/model.py','examples/filtration/crossflow_recycle/dwsim_runner/Program.cs','examples/filtration/crossflow_recycle/dwsim.py',

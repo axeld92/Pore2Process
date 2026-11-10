@@ -48,9 +48,9 @@ an immutable snapshot.
   (magic parameter 3/16), cylinder/cuboid
   indicators, Bouzidi wall and local pressure boundary implementations.
   The case follows the official example lifecycle, in separate project files;
-  see [the code boundary](../../../docs/openlb_code_policy.md).
+  see [the code boundary](../../../docs/architecture/openlb_policy.md).
   Previously accepted BGK comparison runs remain historical; the new
-  [showcase](../../../docs/star_channel_showcase.md) uses freshly verified TRT evidence.
+  [showcase](../../../docs/verification/filtration/star_channel.md) uses freshly verified TRT evidence.
 - The imposed OpenLB gauge pressure is 0.1→0 Pa. Initial velocity is zero;
   no analytical velocity or permeability is prescribed. Julia infers k from
   integrated midplane flow and interior pressure taps at L/4 and 3L/4.

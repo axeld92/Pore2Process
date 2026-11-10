@@ -77,5 +77,5 @@ The existing Panel showcase keeps its independently verified low-Re controls.
 The higher-Re map is inspected through its generated report, figure and CSVs;
 no changed process velocity is presented as a new native field.
 
-See [the scientific report](../../../docs/operating_window.md) for actual acceptance
+See [the scientific report](../../../docs/verification/filtration/operating_map.md) for actual acceptance
 results, assumptions and limits.

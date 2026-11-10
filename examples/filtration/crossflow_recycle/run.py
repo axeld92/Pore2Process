@@ -1,4 +1,5 @@
 """Actual DWSIM recycle scenarios from the preserved OpenLB/Julia data boundary."""
+from pore2process_demo.paths import project_path
 from pore2process_demo.provenance import implementation_files, source_manifest
 import argparse
 import csv
@@ -68,7 +69,7 @@ def comparison_rows(cases):
 
 def execute(output,parent_path):
     p=read(ROOT/'examples/filtration/crossflow_recycle/protocol.json');parent_path=Path(parent_path).resolve();parent=read(parent_path)
-    source_path=ROOT/parent['source_summary_path'];source=read(source_path);check_protocol(p,source)
+    source_path=project_path(ROOT/parent['source_summary_path']);source=read(source_path);check_protocol(p,source)
     t=perf_counter();jl=runtime();cold=perf_counter()-t
     print('Rechecking earlier filtration and immutable OpenLB evidence...',flush=True)
     verified_parent=verify_parent(parent_path)
@@ -79,8 +80,8 @@ def execute(output,parent_path):
         shutil.copy2(parent_path,base/'parent_summary.json');shutil.copy2(source_path,base/'source_summary.json')
         write_json(base/'parent_verification.json',verified_parent)
         adapter=dwsim.build(base/'adapter_build')
-        paths=sorted(f for f in (ROOT/'examples/filtration/crossflow_recycle').rglob('*') if f.suffix in ('.py','.cs','.csproj','.json'))
-        paths += [ROOT/f for f in ('julia/src/CrossflowRecycle.jl','julia/src/Pore2ProcessDemo.jl',
+        paths=sorted(f for f in (ROOT/'examples/filtration/crossflow_recycle').rglob('*') if 'reference' not in f.parts and f.suffix in ('.py','.cs','.csproj','.json'))
+        paths += [project_path(ROOT/f) for f in ('julia/src/CrossflowRecycle.jl','julia/src/Pore2ProcessDemo.jl',
             'julia/src/GradedSupport.jl','julia/src/SeriesCalibration.jl','examples/filtration/graded_support/model.py','examples/filtration/graded_support/check.py',
             'examples/filtration/once_through/check.py','examples/filtration/once_through/run.py','examples/filtration/once_through/model.py',
             'src/pore2process_demo/runtime/dwsim.py','src/pore2process_demo/bridge.py','uv.lock','julia/Project.toml','julia/Manifest.toml')]

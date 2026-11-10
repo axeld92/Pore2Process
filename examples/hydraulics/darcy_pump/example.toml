@@ -1,0 +1,17 @@
+schema_version = 1
+id = "hydraulics/darcy_pump"
+title = "Measured permeability to actual pump work"
+area = "hydraulics"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["hydraulics/capillary_benchmark"]
+run_module = "examples.hydraulics.darcy_pump.run"
+check_module = "examples.hydraulics.darcy_pump.check"
+reference_files = ["reference/coupling_reference.json"]
+protocol_files = []
+
+[validation]
+numerical = "passed"
+literature = "not_applicable"
+scope = "Read REPORT.md for the accepted run, operating range, assumptions and separate physical conclusions."

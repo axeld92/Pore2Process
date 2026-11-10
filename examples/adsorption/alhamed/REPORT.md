@@ -84,7 +84,7 @@ below 0.038%. The model's very early calibration t05 has a separate refined
 startup window; numerical convergence does not repair its physical mismatch.
 There are no new OpenLB or DWSIM solves in this comparison.
 
-![Calibration and withheld column comparison](../../../docs/alhamed2009_comparison.png)
+![Calibration and withheld column comparison](figures/alhamed2009_comparison.png)
 
 ## Discussion
 
@@ -114,9 +114,9 @@ explicit film/particle transport before attempting the column transfer again:
 
 ## Reproduction and evidence
 
-[Frozen comparison protocol](../../../literature/alhamed2009_protocol.md)
-· [Extraction](../../../literature/alhamed2009_extraction.json)
-· [Detailed record and commands](../../../docs/alhamed2009_comparison.md)
-· [Compact reference](../../../docs/alhamed2009_reference.json).
+[Frozen comparison protocol](protocol.md)
+· [Extraction](../../../literature/sources/alhamed2009/extraction.json)
+· [Detailed record and commands](../../../docs/verification/adsorption/alhamed.md)
+· [Compact reference](reference/alhamed2009_reference.json).
 The original PDF, figure locations, raw marker pixels and source hashes are
 retained with the extraction. No raw-data acquisition or new experiment is a gate.

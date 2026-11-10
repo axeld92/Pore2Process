@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "id": "meneghini2017",
+  "title": "Simulação numérica e ensaios experimentais da remoção de fenol em coluna de leito fixo utilizando carvão ativado como adsorvente",
+  "source_url": "https://rd.uffs.edu.br/handle/prefix/1681",
+  "role": "Author dissertation; fitted coconut-shell parameters transferred to a synthetic scenario.",
+  "files": [
+    "../../../examples/adsorption/evidence/literature_parameters.json"
+  ],
+  "scope": "Navigation metadata; the linked evidence retains its own date, source conditions and qualification status."
+}

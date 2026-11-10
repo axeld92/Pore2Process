@@ -1,0 +1,17 @@
+schema_version = 1
+id = "REPLACE_WITH_AREA/CASE"
+title = "Replace with the research question or purpose"
+area = "REPLACE_WITH_AREA"
+status = "planned"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = []
+run_module = "REPLACE_WITH_EXAMPLES_MODULE.run"
+check_module = "REPLACE_WITH_EXAMPLES_MODULE.check"
+reference_files = []
+protocol_files = ["protocol.json"]
+
+[validation]
+numerical = "not_assessed"
+literature = "not_assessed"
+scope = "Template only; no completed result."

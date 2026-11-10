@@ -119,9 +119,9 @@ particle transport, isotherm, film and $N$, changing liquid and solid volumes
 consistently. At 0.60 the mass is 4.9092 g and t50 is 50.45/79.52 min. Both
 curves still fail; no packing scenario is promoted to a specimen estimate.
 
-![Common-contact prediction and withheld curve](../../../docs/column_contact_comparison.png)
+![Common-contact prediction and withheld curve](figures/column_contact_comparison.png)
 
-![Printed-density and retained-inventory audit](../../../docs/column_inventory_audit.png)
+![Printed-density and retained-inventory audit](figures/column_inventory_audit.png)
 
 ## Discussion
 
@@ -153,9 +153,9 @@ or retroactively validate its adsorption/energy predictions.
 
 ## Reproduction and evidence
 
-[Commands](README.md) · [Frozen audit protocol](../../../literature/alhamed2009_column_contact_protocol.md)
-· [Detailed audit](../../../docs/column_contact_audit.md)
-· [Compact reference](../../../docs/column_contact_reference.json)
+[Commands](README.md) · [Frozen audit protocol](protocol.md)
+· [Detailed audit](../../../docs/verification/adsorption/column_contact.md)
+· [Compact reference](reference/column_contact_reference.json)
 · [Particle component](../film_particle/REPORT.md).
 Figure/table locations, source hashes and reading sensitivities remain with
 the source extraction. New experiments and unavailable raw data are not prerequisites.

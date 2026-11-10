@@ -56,7 +56,7 @@ def main():
     source_files=[*Path(__file__).parent.glob('*.py'),ROOT/'julia/adsorption/FilmParticle.jl',
         ROOT/'julia/adsorption/test_film_particle.jl',PIXELS,PROTOCOL,
         ROOT/'examples/adsorption/alhamed/source.py',ROOT/'examples/adsorption/alhamed/study.py',
-        ROOT/'literature/alhamed2009_fig7_pixels.csv',ROOT/'src/pore2process_demo/bridge.py',
+        ROOT/'literature/sources/alhamed2009/figure7_pixels.csv',ROOT/'src/pore2process_demo/bridge.py',
         ROOT/'uv.lock',ROOT/'julia/Project.toml',ROOT/'julia/Manifest.toml']
     source_files = implementation_files(source_files)
     sources=source_manifest(source_files)

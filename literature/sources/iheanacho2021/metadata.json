@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "id": "iheanacho2021",
+  "title": "Corn-cob activated-carbon particle-size candidate",
+  "doi": "10.1016/j.sajce.2021.02.003",
+  "role": "Alternative source candidate only; no extracted numerical dataset is used in the selected models.",
+  "files": [
+    "../../../examples/adsorption/evidence/literature_parameters.json"
+  ],
+  "scope": "Navigation metadata; the linked evidence retains its own date, source conditions and qualification status."
+}

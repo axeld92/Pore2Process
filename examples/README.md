@@ -35,5 +35,14 @@ The reports give their own experimental/scenario and operating-range limits.
 Shared numerical models remain in `julia/`; shared Python runtime and interface
 code remains in `src/pore2process_demo/`. Existing run folders, literature
 extractions and tool installations retain their locations. See the
-[layout guide](../docs/project_layout.md) and
-[ordered native/process reproduction](../docs/reproduction.md).
+[layout guide](../docs/architecture/project_layout.md) and
+[ordered native/process reproduction](../docs/guides/reproduction.md).
+
+## Metadata and future examples
+
+Every listed case has `example.toml` with its actual entry points, prerequisites,
+protocol/reference files and separate validation status. Use the
+[contribution guide](../docs/guides/adding_examples.md) and
+[template](../templates/example/README.md) for new cases. Shared documentation is
+indexed in [docs/](../docs/README.md). `scripts/check_repository.py` validates the
+catalogue without executing the listed simulations.

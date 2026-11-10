@@ -1,4 +1,5 @@
 """Real Julia fit/holdout test of the digitized Zhu Figure 6 M1 series."""
+from pore2process_demo.paths import project_path
 from pore2process_demo.provenance import implementation_files, source_manifest
 import argparse
 import csv
@@ -18,10 +19,10 @@ from pore2process_demo.bridge import runtime, runtime_versions
 def load_snapshot(require_sources=False,source_reading="jpeg"):
     if source_reading not in ("jpeg","pdf"):
         raise ValueError("Source reading must be jpeg or pdf.")
-    source=read_json(ROOT/"literature/zhu2021_extraction.json")
+    source=read_json(ROOT/'literature/sources/zhu2021/extraction.json')
     status=[]
     for name,digest in source["source"]["files_sha256"].items():
-        p=ROOT/source["source"]["folder"]/name
+        p=project_path(ROOT/source["source"]["folder"]/name)
         if p.exists():
             if sha256(p)!=digest:
                 raise ValueError(f"Source changed; review first: {p}")
@@ -32,14 +33,14 @@ def load_snapshot(require_sources=False,source_reading="jpeg"):
             state="missing; retained audited extraction used"
         status.append({"path":str(p.relative_to(ROOT)),"sha256":digest,"status":state})
     protocol_path="examples/filtration/calibration/zhu_protocol_pdf.json" if source_reading=="pdf" else "examples/filtration/calibration/zhu_protocol.json"
-    data_path="literature/zhu2021_fig6_pdf_points.json" if source_reading=="pdf" else "literature/zhu2021_fig6_points.json"
+    data_path='literature/sources/zhu2021/figure6_pdf_points.json' if source_reading=="pdf" else 'literature/sources/zhu2021/figure6_jpeg_points.json'
     names=["examples/filtration/calibration/zhu.py",protocol_path,"examples/filtration/calibration/digitize_zhu.py",
-           "literature/zhu2021_extraction.json",data_path,
+           'literature/sources/zhu2021/extraction.json',data_path,
            "julia/src/SeriesCalibration.jl","julia/src/Pore2ProcessDemo.jl",
            "src/pore2process_demo/bridge.py","uv.lock","julia/Project.toml","julia/Manifest.toml"]
     names = implementation_files(names)
-    return {"protocol":read_json(ROOT/protocol_path),"source":source,"reading_source":source_reading,
-            "digitized":read_json(ROOT/data_path),"source_files":status,
+    return {"protocol":read_json(project_path(ROOT/protocol_path)),"source":source,"reading_source":source_reading,
+            "digitized":read_json(project_path(ROOT/data_path)),"source_files":status,
             "implementation_sha256":source_manifest(names)}
 
 

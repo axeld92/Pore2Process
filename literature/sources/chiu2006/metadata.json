@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "chiu2006",
+  "title": "Critical flux and rejection behaviour of non-circular-channelled membranes: Influence of some operating conditions",
+  "doi": "10.1016/j.seppur.2005.11.028",
+  "role": "Concrete biological-water-treatment alternative with ceramic channels",
+  "legacy_ledger": "../index.json",
+  "legacy_id": "chiu_2006_biological_critical",
+  "files": [
+    "bio_extraction.json",
+    "../../reviews/crossflow/extraction.json"
+  ],
+  "scope": "Navigation metadata. Numerical extractions retain their original bytes and source conditions. Shared records remain combined, not duplicated."
+}

@@ -84,7 +84,7 @@ one-iteration recycle is rejected. Maximum relative mass and enthalpy residuals
 are $2.12\times10^{-11}$ of feed and $2.45\times10^{-5}$ of shaft work.
 The unchanged upstream support measurements are historical BGK evidence.
 
-![Actual recycle flowsheet](../../../docs/crossflow_recycle_flowsheet.png)
+![Actual recycle flowsheet](figures/crossflow_recycle_flowsheet.png)
 
 ## Discussion
 
@@ -108,8 +108,8 @@ actual saved DWSIM flowsheets and explains why material savings can become small
 
 ## Reproduction and evidence
 
-[Commands and protocol](README.md) · [Detailed record](../../../docs/crossflow_recycle.md)
-· [Compact reference](../../../docs/crossflow_recycle_reference.json).
+[Commands and protocol](README.md) · [Detailed record](../../../docs/verification/filtration/crossflow_recycle.md)
+· [Compact reference](reference/crossflow_recycle_reference.json).
 The membrane anchor derives from
 [Zhu et al. (2021)](https://doi.org/10.1016/j.ceramint.2021.01.088), Figure 6;
 the channel law and operating matrix are explicit scenarios.

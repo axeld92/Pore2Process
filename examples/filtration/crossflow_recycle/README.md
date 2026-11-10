@@ -55,5 +55,5 @@ metrics explicitly identify their common fresh-feed reference density; actual
 flashed stream volumes are retained separately. Cooling heat is exported
 separately from shaft work.
 
-See [the model, results and limitations](../../../docs/crossflow_recycle.md).
+See [the model, results and limitations](../../../docs/verification/filtration/crossflow_recycle.md).
 The original Panel app remains independent of this CLI workflow.

@@ -137,7 +137,7 @@ Maximum relative mass residual is $2.23\times10^{-13}$, normalized enthalpy
 residual $1.62\times10^{-6}$, and omitted-momentum upper screen 1.3175%.
 Saved replay checks 1620 capacity comparisons and 1458 discrete selections.
 
-![Hydraulics, conditional capacity and total energy](../../../docs/operating_map.png)
+![Hydraulics, conditional capacity and total energy](figures/operating_map.png)
 
 ## Discussion
 
@@ -166,9 +166,9 @@ research questions, not conclusions of this map.
 
 ## Reproduction and evidence
 
-[Commands/protocol](README.md) · [Full record](../../../docs/operating_window.md)
-· [Compact reference](../../../docs/operating_map_reference.json)
-· [Source/condition ledger](../../../literature/operating_window_evidence.json).
+[Commands/protocol](README.md) · [Full record](../../../docs/verification/filtration/operating_map.md)
+· [Compact reference](reference/operating_map_reference.json)
+· [Source/condition ledger](evidence/literature_capacity.json).
 Native/process run IDs are `20261109T205248Z-d6fa71dd` and
 `20261109T233235Z-1baf9ec0`. The CLI map adds no new Panel browser claim.
 The support calibration is from

@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "id": "REPLACE_WITH_STABLE_PROTOCOL_ID",
+  "scope": "Define before execution; template contains no scientific defaults.",
+  "inputs_SI": {},
+  "assumptions": [],
+  "verification_cases": [],
+  "acceptance_screens": {},
+  "calibration_cases": [],
+  "holdout_cases": [],
+  "unreported_inputs": []
+}

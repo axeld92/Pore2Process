@@ -1,4 +1,5 @@
 """Three actual OpenLB geometries → measured ratios in Julia → DWSIM pump cases."""
+from pore2process_demo.paths import project_path
 from pore2process_demo.provenance import implementation_files, source_manifest
 import argparse
 from concurrent.futures import ThreadPoolExecutor,as_completed
@@ -74,7 +75,7 @@ def requests(protocol,mu,rho):
 
 def execute(output,reuse=None,workers=2,protocol_path=None):
     p=read_protocol(protocol_path); g,n,limits=p["geometry"],p["numerics"],p["acceptance"]
-    reference_path=ROOT/p["process"]["literature_reference"]
+    reference_path=project_path(ROOT/p["process"]["literature_reference"])
     reference=json.loads(reference_path.read_text())
     if reference["protocol_id"]!="zhu-2021-M1-series-impedance-pdf-v2":
         raise RuntimeError("Review a changed literature reference before running.")
@@ -91,8 +92,8 @@ def execute(output,reuse=None,workers=2,protocol_path=None):
         raise RuntimeError("Shared property anchor must be liquid water with positive viscosity/density.")
     from pore2process_demo.bridge import runtime,runtime_versions
     started=perf_counter(); jl=runtime(); cold=perf_counter()-started
-    code_paths=sorted([f for f in (ROOT/"examples/filtration/graded_support").rglob("*") if f.is_file() and f.suffix in (".py",".h",".cpp",".mk",".json")]+[ROOT/"examples/filtration/graded_support/openlb/Makefile"])
-    code_paths += [ROOT/f for f in ("julia/src/GradedSupport.jl","julia/src/Pore2ProcessDemo.jl",
+    code_paths=sorted([f for f in (ROOT/"examples/filtration/graded_support").rglob("*") if f.is_file() and 'reference' not in f.parts and f.suffix in (".py",".h",".cpp",".mk",".json")]+[ROOT/"examples/filtration/graded_support/openlb/Makefile"])
+    code_paths += [project_path(ROOT/f) for f in ("julia/src/GradedSupport.jl","julia/src/Pore2ProcessDemo.jl",
         "julia/src/SeriesCalibration.jl","julia/src/Hydraulics.jl","examples/hydraulics/capillary_benchmark/build.py","examples/hydraulics/capillary_benchmark/run.py",
         "examples/hydraulics/darcy_pump/run.py","src/pore2process_demo/runtime/dwsim.py","src/pore2process_demo/runtime/dwsim_runner/Program.cs",
         "src/pore2process_demo/bridge.py","uv.lock","julia/Project.toml","julia/Manifest.toml")]

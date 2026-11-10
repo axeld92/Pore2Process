@@ -4,6 +4,7 @@ This checks source integrity and arithmetic. Physical inconsistencies are
 reported as unresolved evidence limits, rather than corrected or hidden.
 Only the Python standard library is required.
 """
+from pore2process_demo.paths import project_path
 
 import argparse
 import hashlib
@@ -14,7 +15,7 @@ from pathlib import Path
 
 
 from pore2process_demo.paths import ROOT
-EXTRACTION = ROOT / "literature/crossflow_extraction.json"
+EXTRACTION = ROOT / 'literature/reviews/crossflow/extraction.json'
 
 
 def sha256(path):
@@ -42,7 +43,7 @@ def audit(data, require_sources=False):
     source_checks = []
     for source in data["sources"]:
         for item in source["files"]:
-            path = ROOT / item["path"]
+            path = project_path(ROOT / item["path"])
             if path.exists():
                 if sha256(path) != item["sha256"]:
                     raise ValueError(f"Source changed: {item['path']}")

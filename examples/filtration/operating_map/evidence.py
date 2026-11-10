@@ -6,9 +6,9 @@ from pore2process_demo.io import write_json
 from pore2process_demo.paths import ROOT; from pore2process_demo.io import read_json as read
 
 def extract(require_sources=False):
-    path=ROOT/'literature/crossflow_extraction.json'
+    path=ROOT/'literature/reviews/crossflow/extraction.json'
     original=read(path); reviewed=audit(original,require_sources)
-    bio_path=ROOT/'literature/chiu2006_bio_extraction.json';bio=read(bio_path)
+    bio_path=ROOT/'literature/sources/chiu2006/bio_extraction.json';bio=read(bio_path)
     readings=reviewed['figure_readings']['chiu2006_fig6']
     points=[]
     for index,(re,point) in enumerate(zip((1388.,2776.,3701.,4626.),readings,strict=True)):
@@ -56,5 +56,5 @@ def extract(require_sources=False):
         'no_new_article_required_for_this_bounded_milestone':True}
 
 if __name__=='__main__':
-    result=extract();write_json(ROOT/'literature/operating_window_evidence.json',result)
+    result=extract();write_json(ROOT/'examples/filtration/operating_map/evidence/literature_capacity.json',result)
     print('Audited four papers; retained four biological-feed critical-flux points and explicit transfer limits.')

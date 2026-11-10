@@ -82,7 +82,7 @@ for the 6 µm design and supplies the
 [explicit-channel process study](../star_channel/REPORT.md). This later evidence
 is separate from the original table's BGK snapshot.
 
-![Controlled support geometries](../../../docs/graded_support_geometries.png)
+![Controlled support geometries](figures/graded_support_geometries.png)
 
 ## Discussion
 
@@ -110,8 +110,8 @@ paying other hydraulic costs; the
 
 ## Reproduction and evidence
 
-[Commands and protocol](README.md) · [Original full record](../../../docs/graded_support_study.md)
-· [Compact original reference](../../../docs/graded_support_reference.json)
-· [TRT continuation](../../../docs/star_channel_reference.json).
+[Commands and protocol](README.md) · [Original full record](../../../docs/verification/filtration/graded_support.md)
+· [Compact original reference](reference/graded_support_reference.json)
+· [TRT continuation](../star_channel/reference/star_channel_reference.json).
 Source: [Zhu et al. (2021)](https://doi.org/10.1016/j.ceramint.2021.01.088),
 Figure 6 M1 paired series; its fitted impedance is transferred as described above.

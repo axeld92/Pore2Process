@@ -36,7 +36,7 @@ The main follows the stock `poiseuille3d` example's mesh → geometry → lattic
 initial values → simulation → results lifecycle. Dynamics, velocity set, units,
 geometry, boundary conditions, plane integration, and convergence monitors are
 existing OpenLB components. There are no project numerical templates, custom
-cylinder indicators or boundary algorithms. See [the policy and API map](../../../docs/openlb_code_policy.md).
+cylinder indicators or boundary algorithms. See [the policy and API map](../../../docs/architecture/openlb_policy.md).
 
 The original OpenLB source is never written. Original files are checked against
 the pinned official archive before/after the external build. Objects, executable,
@@ -65,7 +65,7 @@ The earlier BGK references are preserved as historical results. The TRT
 regression is saved separately under `results/hydraulic_trt/`; all eight solver
 cases, three geometry audits and the independent SI/export replay pass.
 Reproduce that suite with `uv run python -m examples.hydraulics.capillary_benchmark.run --output results/hydraulic_trt`.
-See [the TRT update](../../../docs/star_channel_showcase.md) for its numerical context.
+See [the TRT update](../../../docs/verification/filtration/star_channel.md) for its numerical context.
 
 For steady axial Newtonian flow, integrating
 `μ(1/r)d/dr(r du/dr)=−Δp/L` with finite center velocity and u(R)=0 gives

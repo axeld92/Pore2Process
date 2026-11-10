@@ -1,0 +1,19 @@
+schema_version = 1
+id = "filtration/calibration"
+title = "Published support and membrane calibration"
+area = "filtration"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["hydraulics/capillary_network"]
+run_module = "examples.filtration.calibration.run"
+check_module = "examples.filtration.calibration.check"
+reference_files = ["reference/experimental_calibration_reference.json", "reference/zhu_pdf_reference.json", "reference/zhu_validation_reference.json"]
+protocol_files = ["protocol.json", "zhu_protocol.json", "zhu_protocol_pdf.json"]
+
+[validation]
+numerical = "passed"
+literature = "mixed"
+scope = "Read REPORT.md for the accepted run, operating range, assumptions and separate physical conclusions."
+support_closure = "failed"
+matched_layer_reference = "conditional"

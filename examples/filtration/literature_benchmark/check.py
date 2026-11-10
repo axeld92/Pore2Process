@@ -1,4 +1,5 @@
 """Replay Julia, inspect saved DWSIM states and verify the benchmark decisions."""
+from pore2process_demo.paths import project_path
 import argparse
 import csv
 import json
@@ -33,7 +34,7 @@ def verify(path, verify_upstream=True):
     if sha(base / 'parent_summary.json') != s['parent_summary_sha256'] or sha(base / 'source_summary.json') != s['source_summary_sha256']:
         raise ValueError('Ancestor snapshot changed.')
     if verify_upstream:
-        parent = ROOT / s['parent_summary_path']
+        parent = project_path(ROOT / s['parent_summary_path'])
         if sha(parent) != s['parent_summary_sha256']:
             raise ValueError('Original ancestor changed.')
         close_tree(verify_parent(parent), s['parent_verification'], 'upstream verification')

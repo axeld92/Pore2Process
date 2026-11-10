@@ -103,7 +103,7 @@ Current TRT evidence is run `20261109T145749Z-e4c8d041` under
 Pressure reversal/doubling, smaller time step and tighter steady stopping also
 pass the unchanged acceptance screens. Export replay checks SI coordinates,
 zero-based IDs, artifact hashes and real Julia reanalysis. The retained
-[benchmark record](../../../docs/hydraulic_benchmark.md) distinguishes these
+[benchmark record](../../../docs/verification/hydraulics/capillary_benchmark.md) distinguishes these
 TRT results from the older BGK tables and their separate run identities.
 
 ## Discussion
@@ -130,6 +130,6 @@ with its settings and provenance, as illustrated by the
 
 ## Reproduction and evidence
 
-[Commands and export contracts](README.md) · [Current TRT and historical results](../../../docs/hydraulic_benchmark.md)
-· [Earlier compact BGK reference](../../../docs/hydraulic_reference.json).
+[Commands and export contracts](README.md) · [Current TRT and historical results](../../../docs/verification/hydraulics/capillary_benchmark.md)
+· [Earlier compact BGK reference](reference/hydraulic_reference.json).
 No experimental article is needed for the cylindrical analytical solution.

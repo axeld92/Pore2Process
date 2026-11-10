@@ -1,4 +1,5 @@
 """Replay the actual Julia model and reconstruct inventories and selection."""
+from pore2process_demo.paths import project_path
 import json
 import shutil
 import numpy as np
@@ -11,7 +12,7 @@ from .study import inputs,refinement_metrics,write
 
 
 def check(path, *, write_record=True):
-    path=ROOT/path;base=path.parent;s=json.loads(path.read_text())
+    path=project_path(ROOT/path);base=path.parent;s=json.loads(path.read_text())
     assert s['audit']==audit()
     verify_hashes(ROOT,s['source_sha256'])
     verify_hashes(base/'source_snapshot',s['source_sha256'])
@@ -92,9 +93,9 @@ def check(path, *, write_record=True):
          'last_loading_kg_kg':r['result']['mean_loading_kg_kg'][-1]}
          for r in records.values() if r['kind'] in ('selected','packing_scenario')]
     if write_record:
-        write(ROOT/'docs/column_contact_reference.json',compact)
+        write(ROOT/'examples/adsorption/column_contact/reference/column_contact_reference.json',compact)
         for name in ('contact_comparison','inventory_audit'):
-            shutil.copy2(base/f'{name}.png',ROOT/'docs'/f'column_{name}.png')
+            shutil.copy2(base/f'{name}.png',ROOT/'examples/adsorption/column_contact/figures'/f'column_{name}.png')
     message=dict(verified=True,forward_case_replays=len(records),
         calibration_evaluation_replays=len(scores),artifacts=len(s['artifacts_sha256']),
         source_files=len(s['source_sha256']),numerical_refinement_passed=numerical,

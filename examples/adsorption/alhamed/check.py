@@ -78,7 +78,7 @@ def main():
     reference['cases']=[json.loads((path.parent/name).read_text()) for name in ['calibration-1.json','holdout-1.json','holdout-2.json']]
     for case in reference['cases']:
         case['result']={k:v for k,v in case['result'].items() if not isinstance(v,list) and k!='total_s'}
-    write(ROOT/'docs/alhamed2009_reference.json',reference)
+    write(ROOT/'examples/adsorption/alhamed/reference/alhamed2009_reference.json',reference)
     print(json.dumps(result,indent=2))
 
 

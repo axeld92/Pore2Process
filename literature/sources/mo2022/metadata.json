@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "id": "mo2022",
+  "title": "Dissecting the structure-property relationship of ceramic membrane with asymmetric multilayer structures for maximizing permselectivity",
+  "doi": "10.1016/j.watres.2022.118658",
+  "role": "Fixed-top-layer support plateau and explicit intermediate-layer resistance. Author-model values retained separately from experiment; no production parameter replacement.",
+  "legacy_ledger": "../index.json",
+  "legacy_id": "mo_2022_multilayer",
+  "files": [
+    "extraction.json",
+    "supplement_extraction.json",
+    "review.md",
+    "supplement_review.md"
+  ],
+  "scope": "Navigation metadata. Numerical extractions retain their original bytes and source conditions. Shared records remain combined, not duplicated."
+}

@@ -40,4 +40,4 @@ Results are saved in unique `results/adsorption/film_particle/runs/` folders,
 with a separate `latest.json`. Input snapshots, SI trajectories, separate
 physical/active masses, sample losses, conservation diagnostics, fit history,
 numerical refinements, source hashes and comparison figures are retained.
-See [the equations, data contract and verified findings](../../../docs/film_particle_adsorption.md).
+See [the equations, data contract and verified findings](../../../docs/verification/adsorption/film_particle.md).

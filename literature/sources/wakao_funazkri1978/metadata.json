@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "id": "wakao_funazkri1978",
+  "title": "Wakao–Funazkri packed-bed film correlation (1978)",
+  "doi": "10.1016/0009-2509(78)85120-3",
+  "role": "Primary correlation cited by the film-particle model; no new source extraction in this organization.",
+  "files": [
+    "../../../examples/adsorption/film_particle/REPORT.md"
+  ],
+  "scope": "Navigation for the existing correlation citation and declared Reynolds convention. The model record references Alhamed Eq. 19 and the original correlation; no original-paper re-audit is claimed here."
+}

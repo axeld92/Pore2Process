@@ -1,4 +1,5 @@
 """Replay Julia and inspect saved real DWSIM recycle evidence; no new solves."""
+from pore2process_demo.paths import project_path
 import argparse
 import csv
 import json
@@ -28,7 +29,7 @@ def verify(path,*,verify_upstream=True):
     if parent['run_id']!=s['parent_run_id'] or source['run_id']!=s['source_run_id']:raise RuntimeError('Source run ID differs')
     close_tree(read(base/'parent_verification.json'),s['parent_verification'],'parent verification')
     if verify_upstream:
-        original=ROOT/s['parent_summary_path']
+        original=project_path(ROOT/s['parent_summary_path'])
         if sha(original)!=s['parent_summary_sha256']:raise RuntimeError('Original parent changed')
         close_tree(verify_parent(original),s['parent_verification'],'upstream replay')
     inventory=read(base/'adapter_build/installed_api.json');jl=runtime();expected=list(jobs(p,source))

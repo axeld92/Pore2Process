@@ -1,0 +1,18 @@
+schema_version = 1
+id = "hydraulics/tool_checks"
+title = "Native engine compatibility"
+area = "hydraulics"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = []
+run_module = "examples.hydraulics.tool_checks.run_openlb"
+check_module = ""
+reference_files = ["reference/compatibility_reference.json"]
+protocol_files = []
+
+[validation]
+numerical = "passed"
+literature = "not_applicable"
+scope = "Read REPORT.md for the accepted run, operating range, assumptions and separate physical conclusions."
+note = "Stock channel/pump compatibility; no coupled material validation. See README for both probe commands."

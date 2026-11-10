@@ -4,8 +4,8 @@
 
 ## Crossflow source audit
 
-The four new crossflow papers have been reviewed. [The received-paper report](../../../literature/crossflow_papers_review.md)
-and [extraction](../../../literature/crossflow_extraction.json) retain six García
+The four new crossflow papers have been reviewed. [The received-paper report](../../../literature/reviews/crossflow/papers_review.md)
+and [extraction](../../../literature/reviews/crossflow/extraction.json) retain six García
 table rows, six Chiu (2005) and four Chiu (2006) figure readings. To reproduce
 the source arithmetic and reading audit:
 
@@ -24,7 +24,7 @@ are separate. Existing calibration datasets and simulation results are preserved
 ## Matched support and whole-membrane calibration
 
 The matched Zhu support/whole-membrane study is also implemented. Its
-[PDF-refined result and reading limits](../../../docs/zhu_pdf_refinement.md) are separate
+[PDF-refined result and reading limits](../../../docs/verification/filtration/zhu_pdf.md) are separate
 from the earlier Biesheuvel fit below. To reproduce it:
 
 ```sh
@@ -65,7 +65,7 @@ The checker reports numerical integrity separately from those scientific
 outcomes. No viscosity, intrinsic support k or real connected geometry is
 invented. No new native OpenLB/DWSIM result or UI is claimed by this CLI.
 Unavailable experimental data are not prerequisites for this computational
-project; see [verification scope](../../../docs/verification_scope.md).
+project; see [verification scope](../../../docs/architecture/verification_scope.md).
 
 ## Earlier Biesheuvel support closure
 
@@ -75,7 +75,7 @@ the existing Julia package. Python selects the recorded rows, coordinates
 the bridge and exports plots/data. No dependency or bridge environment was
 added. The original OpenLB cases, DWSIM cases and Panel app are preserved.
 
-The [result report](../../../docs/experimental_calibration.md) distinguishes execution
+The [result report](../../../docs/verification/filtration/calibration.md) distinguishes execution
 success from the **failed primary prediction screen**. This is a retrospective
 same-study test of a reduced closure, not experimental validation of an OpenLB
 pore geometry or of the complete membrane/process.
@@ -98,7 +98,7 @@ the tracked, visually audited extraction if the local article files are
 absent. That absence is explicitly recorded in `inputs.json`. Present source
 files must always match their recorded hashes. No source is downloaded during
 a simulation. The public author-thesis PDF URL and SHA-256 are retained in
-[the source audit](../../../literature/biesheuvel_source_audit.json).
+[the source audit](../../../literature/sources/biesheuvel1999/source_audit.json).
 
 `calibration.check` verifies artifact hashes, replays the saved input through
 Julia, compares all fitted/predicted/error/process values and checks the CSV.
@@ -116,7 +116,7 @@ uv run pytest -q
 
 The full Python suite includes the original macOS VTK graphics checks and
 requires normal host graphics access on this machine. For a calibration-only
-check: `uv run pytest -q tests/test_calibration.py`.
+check: `uv run pytest -q tests/filtration/test_calibration.py`.
 
 ## Fixed protocol and data boundary
 

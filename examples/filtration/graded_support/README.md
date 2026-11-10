@@ -2,7 +2,7 @@
 
 [Scientific report: purpose, theory, results and conclusions](REPORT.md).
 
-[Verified results and figures](../../../docs/graded_support_study.md): the widest
+[Verified results and figures](../../../docs/verification/filtration/graded_support.md): the widest
 interior reduces native resistance by 35.88% and conditional transmembrane
 shaft energy by 11.30%. The final saved reference is
 `results/graded_support/runs/20261108T222740Z-26e9f37b/summary.json`.
@@ -90,7 +90,7 @@ Unreported experimental temperature/viscosity are not invented. The DWSIM
 temperature is a declared 298.15-K computational scenario. Keeping the fitted
 experimental impedance in that scenario is an explicit approximation; this
 does not perform a temperature correction. Reading sensitivity is not
-experimental uncertainty. The [project verification scope](../../../docs/verification_scope.md)
+experimental uncertainty. The [project verification scope](../../../docs/architecture/verification_scope.md)
 requires no new experiments or inaccessible raw datasets.
 
 The native geometry's nominal-flux Reynolds number is reported separately.

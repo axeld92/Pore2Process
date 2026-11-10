@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "biesheuvel1999",
+  "title": "Design of ceramic membrane supports: permeability, tensile strength and stress",
+  "doi": "10.1016/S0376-7388(98)00335-4",
+  "role": "Support water-permeability/porosity/processing and bend-strength reference; distinguishes experimental Table 2 from model Table 3 and maximum-flow design curves.",
+  "legacy_ledger": "../index.json",
+  "legacy_id": "biesheuvel_verweij_1999",
+  "files": [
+    "source_audit.json",
+    "../../reviews/filtration/support_membrane_extraction.json"
+  ],
+  "scope": "Navigation metadata. Numerical extractions retain their original bytes and source conditions. Shared records remain combined, not duplicated."
+}

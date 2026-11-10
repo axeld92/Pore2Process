@@ -60,6 +60,10 @@ reports and run guides. Reports distinguish numerical verification,
 literature comparisons and conditional scenarios; unfinished and failed
 comparisons remain explicit.
 
+For shared guides, architecture and dated verification records, see the
+[documentation index](docs/README.md). New examples follow the
+[contribution guide](docs/guides/adding_examples.md).
+
 ## How results stay traceable
 
 - **Explicit contracts:** SI units, coordinate systems, node indexing, array
@@ -81,7 +85,7 @@ evidence.
 
 The membrane-structure, hydraulic and crossflow studies draw on the following
 articles. Source locations and extraction records are in the
-[literature workspace](literature/README.md) and [source ledger](literature/sources.json).
+[literature workspace](literature/README.md) and [source ledger](literature/sources/index.json).
 
 1. **Biesheuvel, P. M., and Verweij, H. (1999).** [Design of ceramic membrane supports: permeability, tensile strength and stress](https://doi.org/10.1016/S0376-7388(98)00335-4). *Journal of Membrane Science*, 156, 141–152.
 2. **Zhu, W., et al. (2021).** [Design and optimization of ceramic membrane structure: From the perspective of flux matching between support and membrane](https://doi.org/10.1016/j.ceramint.2021.01.088). *Ceramics International*, 47, 12357–12365.
@@ -117,7 +121,7 @@ Runnable studies are grouped in [examples/](examples/README.md):
 Shared Python code stays in `src/pore2process_demo/`; Julia models and their
 explicit environment stay in `julia/`. The article workspace, existing runs and
 local tool installations remain in `literature/`, `results/` and `.local/`.
-See [the layout and migration guide](docs/project_layout.md).
+See [the layout and migration guide](docs/architecture/project_layout.md).
 
 ## Start with the capillary-network example
 
@@ -149,8 +153,8 @@ uv run pytest -q
 
 Use the same Julia executable selected by bootstrap for direct Julia tests.
 The VTK tests need normal host graphics access. The recorded full numerical
-and interface checks are in the [acceptance report](docs/implementation_status.md)
-and [browser record](docs/browser_checks.md).
+and interface checks are in the [acceptance report](docs/verification/first_simulation.md)
+and [browser record](docs/verification/interface/browser_checks.md).
 
 ## Reproduce the connected showcase
 
@@ -158,7 +162,7 @@ The native setup has been checked on **macOS ARM64**, with **OpenLB 1.9r0**,
 **DWSIM 10.2.15**, a private **.NET 10** runtime and **Homebrew GCC 15**. Its
 builders currently use that platform's compiler and library paths.
 
-Follow the [clean-checkout reproduction guide](docs/reproduction.md) to download
+Follow the [clean-checkout reproduction guide](docs/guides/reproduction.md) to download
 the pinned tools, run the prerequisite studies and generate the filtration
 showcase. The interface uses completed native evidence and launches actual
 Julia/DWSIM process calculations; it does not rerun OpenLB whenever a control
@@ -166,10 +170,10 @@ changes. Native study generation can take substantial time.
 
 | Documentation | Contents |
 | --- | --- |
-| [Setup and examples](docs/setup_and_examples.md) | Detailed Python–Julia setup, model derivation, contracts and original example commands |
-| [Clean-checkout reproduction](docs/reproduction.md) | Native prerequisites and ordered connected-study commands |
+| [Setup and examples](docs/guides/setup.md) | Detailed Python–Julia setup, model derivation, contracts and original example commands |
+| [Clean-checkout reproduction](docs/guides/reproduction.md) | Native prerequisites and ordered connected-study commands |
 | [Filtration showcase](examples/filtration/star_channel/REPORT.md) | Geometry, equations, results and biological-feed assumptions |
 | [Closed filtration operating map](examples/filtration/operating_map/REPORT.md) | Final hydraulic range, material/operation comparison and circulation-energy result |
 | [Literature workspace](literature/README.md) | Curated references, extractions and provenance |
-| [Integration roadmap](docs/integration_roadmap.md) | Detailed milestone and research status |
-| [Publication record](docs/code_publication.md) | Published snapshot and verification scope |
+| [Integration roadmap](docs/history/planning/integration_roadmap.md) | Detailed milestone and research status |
+| [Publication record](docs/verification/publication.md) | Published snapshot and verification scope |

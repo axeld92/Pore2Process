@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "chiu2005",
+  "title": "Critical flux determination of non-circular multi-channel ceramic membranes using TiO2 suspensions",
+  "doi": "10.1016/j.memsci.2005.01.037",
+  "role": "Experimental protocol and related ceramic/TiO2 series lead",
+  "legacy_ledger": "../index.json",
+  "legacy_id": "chiu_2005_critical",
+  "files": [
+    "../../reviews/crossflow/extraction.json",
+    "../../reviews/crossflow/papers_review.md"
+  ],
+  "scope": "Navigation metadata. Numerical extractions retain their original bytes and source conditions. Shared records remain combined, not duplicated."
+}

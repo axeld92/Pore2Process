@@ -17,7 +17,7 @@ and total-pumping-energy question at the closing process conditions.
 | Explicit low-Re channel | [Distributed hydraulics and COD scenario](star_channel/REPORT.md) | [Commands](star_channel/README.md) |
 | Final higher-Re map | [Process comparison and conclusions](operating_map/REPORT.md) | [Commands](operating_map/README.md) |
 
-Follow [ordered reproduction](../../docs/reproduction.md) through the ancestor
+Follow [ordered reproduction](../../docs/guides/reproduction.md) through the ancestor
 studies before launching a later stage. Existing immutable runs remain under
 their original `results/` directories. Historical BGK evidence and subsequent
 TRT verification are labelled separately in the reports. Source measurements,

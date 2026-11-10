@@ -1,0 +1,17 @@
+schema_version = 1
+id = "hydraulics/capillary_benchmark"
+title = "Native capillary verification"
+area = "hydraulics"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["hydraulics/tool_checks"]
+run_module = "examples.hydraulics.capillary_benchmark.run"
+check_module = "examples.hydraulics.capillary_benchmark.check_exports"
+reference_files = ["reference/hydraulic_reference.json", "reference/hydraulic_reference_legacy.json"]
+protocol_files = []
+
+[validation]
+numerical = "passed"
+literature = "not_applicable"
+scope = "Read REPORT.md for the accepted run, operating range, assumptions and separate physical conclusions."

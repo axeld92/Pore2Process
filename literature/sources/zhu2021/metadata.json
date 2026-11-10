@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "zhu2021",
+  "title": "Design and optimization of ceramic membrane structure: From the perspective of flux matching between support and membrane",
+  "doi": "10.1016/j.ceramint.2021.01.088",
+  "role": "Matched support/transfer-coated whole-membrane M1 effective-impedance reference for bounded scale translation; no claim of exact specimen reconstruction.",
+  "legacy_ledger": "../index.json",
+  "legacy_id": "zhu_2021_flux_matching",
+  "files": [
+    "extraction.json",
+    "figure6_jpeg_points.json",
+    "figure6_pdf_points.json"
+  ],
+  "scope": "Navigation metadata. Numerical extractions retain their original bytes and source conditions. Shared records remain combined, not duplicated."
+}

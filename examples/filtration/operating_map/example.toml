@@ -1,0 +1,17 @@
+schema_version = 1
+id = "filtration/operating_map"
+title = "Higher-Re conditional operating map"
+area = "filtration"
+status = "closed"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["filtration/star_channel"]
+run_module = "examples.filtration.operating_map.run"
+check_module = "examples.filtration.operating_map.check"
+reference_files = ["reference/operating_map_reference.json"]
+protocol_files = ["protocol.json"]
+
+[validation]
+numerical = "passed"
+literature = "conditional"
+scope = "Read REPORT.md for the accepted run, operating range, assumptions and separate physical conclusions."

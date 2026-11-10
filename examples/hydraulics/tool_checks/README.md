@@ -9,8 +9,8 @@ water-pump flowsheet. The original Julia/Panel example is unchanged.
 
 These scripts remain independent compatibility probes. The separate
 [connected workflow](../darcy_pump/README.md) passes OpenLB-derived properties
-through Julia to DWSIM. See [the probe results and limitations](../../../docs/compatibility_check.md)
-and [the integration milestones](../../../docs/integration_roadmap.md).
+through Julia to DWSIM. See [the probe results and limitations](../../../docs/verification/hydraulics/tool_checks.md)
+and [the integration milestones](../../../docs/history/planning/integration_roadmap.md).
 
 From `/Users/dula/Documents/ChatGPT/Pore2Process`:
 
@@ -30,7 +30,7 @@ distributions. Initial downloads need internet access. Archives, extracted tools
 SDK, .NET package/build caches, and compiler outputs live in ignored `.local/`.
 Logs, input snapshots, JSON results, and saved flowsheets live in ignored
 `results/compatibility/`. The small measured reference is committed in
-`docs/compatibility_reference.json`.
+`examples/hydraulics/tool_checks/reference/compatibility_reference.json`.
 
 This configuration targets macOS ARM64. It reuses existing Homebrew GCC 15.2.0
 and tinyxml2 11.0.0, plus the macOS zlib. If these are absent, inspect the machine
@@ -42,7 +42,7 @@ precision, C++20. It does not use the discovered MPI installation. The current b
 archive from `.local/hydraulic/build/core/`. Configuration and build outputs
 stay outside the original OpenLB distribution. The vendor `config.mk` configured
 by the earlier probe is ignored and never rewritten. Original files are checked
-against the pinned archive. See [the code policy](../../../docs/openlb_code_policy.md).
+against the pinned archive. See [the code policy](../../../docs/architecture/openlb_policy.md).
 
 The .NET SDK is pinned to 10.0.403 / runtime 10.0.14. The adapter has no NuGet
 package dependencies: it references DWSIM assemblies in the verified portable

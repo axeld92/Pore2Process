@@ -1,4 +1,5 @@
 """Run the real Julia benchmark and conditional stock-DWSIM process cases."""
+from pore2process_demo.paths import project_path
 from pore2process_demo.provenance import implementation_files, source_manifest
 import argparse
 import copy
@@ -48,7 +49,7 @@ def comparison_rows(cases):
 
 def execute(output, parent_path, require_sources=False):
     p = read(ROOT / 'examples/filtration/literature_benchmark/protocol.json')
-    extraction = read(ROOT / p['extraction'])
+    extraction = read(project_path(ROOT / p['extraction']))
     source_audit = audit(extraction, require_sources)
     parent_path = Path(parent_path).resolve()
     parent = read(parent_path)
@@ -74,7 +75,7 @@ def execute(output, parent_path, require_sources=False):
         write_json(base / 'parent_verification.json', parent_verification)
         adapter = dwsim.build(base / 'adapter_build')
         paths = list((ROOT / 'examples/filtration/literature_benchmark').glob('*.py')) + [ROOT / 'examples/filtration/literature_benchmark/protocol.json']
-        paths += [ROOT / name for name in ('julia/src/CrossflowBenchmark.jl', 'julia/src/Pore2ProcessDemo.jl',
+        paths += [project_path(ROOT / name) for name in ('julia/src/CrossflowBenchmark.jl', 'julia/src/Pore2ProcessDemo.jl',
             'julia/src/CrossflowRecycle.jl', 'julia/src/GradedSupport.jl',
             'examples/filtration/calibration/audit_crossflow_sources.py', 'examples/filtration/crossflow_recycle/model.py',
             'examples/filtration/crossflow_recycle/dwsim.py', 'examples/filtration/crossflow_recycle/dwsim_runner/Program.cs',
@@ -84,7 +85,7 @@ def execute(output, parent_path, require_sources=False):
         snapshot = {'protocol': p, 'hydraulics': hydraulics, 'extraction': extraction,
             'parent_summary_path': str(parent_path.relative_to(ROOT)),
             'parent_summary_sha256': sha(parent_path), 'source_summary_sha256': sha(source_path),
-            'extraction_sha256': sha(ROOT / p['extraction']),
+            'extraction_sha256': sha(project_path(ROOT / p['extraction'])),
             'implementation_sha256': source_manifest(sorted(paths)),
             'runtime_sha256': {name: sha(dwsim.DISTRIBUTION / name) for name in
                 ('DWSIM.UnitOperations.dll', 'DWSIM.Thermodynamics.dll', 'DWSIM.FlowsheetSolver.dll',

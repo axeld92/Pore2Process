@@ -7,15 +7,15 @@ from pathlib import Path
 
 import numpy as np
 
-from pore2process_demo.paths import ROOT
+from pore2process_demo.paths import ROOT, project_path
 PDF = ROOT / 'literature/inbox/Alhamed2009Adsorption/Alhamed2009Adsorption.pdf'
 PDF_SHA = 'c0d9eb61560f643b5b890b1926f1b0f2bc279386dc6bd882cb640ae3f0061b22'
-PIXELS = ROOT / 'literature/alhamed2009_fig7_pixels.csv'
+PIXELS = ROOT / 'literature/sources/alhamed2009/figure7_pixels.csv'
 RASTER_SHA = '09f8685d2898e06efbb530f2d19e1a5632a75931911d9988f5a460cbe10ef2c8'
 
 
 def sha(path):
-    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+    return hashlib.sha256(project_path(Path(path).absolute()).read_bytes()).hexdigest()
 
 
 def points():
@@ -135,7 +135,7 @@ def evidence():
 
 
 def main():
-    path=ROOT/'literature/alhamed2009_extraction.json'
+    path=ROOT/'literature/sources/alhamed2009/extraction.json'
     path.write_text(json.dumps(evidence(),indent=2,ensure_ascii=False,allow_nan=False)+'\n')
     print(path)
 

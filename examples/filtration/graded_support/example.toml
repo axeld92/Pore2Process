@@ -1,0 +1,17 @@
+schema_version = 1
+id = "filtration/graded_support"
+title = "Fixed-opening support geometry"
+area = "filtration"
+status = "closed"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["filtration/calibration", "hydraulics/capillary_benchmark"]
+run_module = "examples.filtration.graded_support.run"
+check_module = "examples.filtration.graded_support.check"
+reference_files = ["reference/graded_support_reference.json"]
+protocol_files = ["protocol.json"]
+
+[validation]
+numerical = "passed"
+literature = "conditional"
+scope = "Read REPORT.md for the accepted run, operating range, assumptions and separate physical conclusions."

@@ -1,4 +1,5 @@
 """Verified stored OpenLB designs → Julia loads → explicit DWSIM filtration."""
+from pore2process_demo.paths import project_path
 from pore2process_demo.provenance import implementation_files, source_manifest
 from pore2process_demo.io import read_json as read
 import argparse
@@ -67,8 +68,8 @@ def execute(output,source_path):
         shutil.copy2(source_path,base/'source_summary.json')
         write_json(base/'source_verification.json',verification)
         adapter=dwsim.build(base/'adapter_build')
-        implementation=sorted([f for f in (ROOT/'examples/filtration/once_through').rglob('*') if f.suffix in ('.py','.cs','.csproj','.json')])
-        implementation += [ROOT/f for f in ('examples/filtration/graded_support/check.py','examples/filtration/graded_support/model.py','julia/src/ProcessFiltration.jl',
+        implementation=sorted([f for f in (ROOT/'examples/filtration/once_through').rglob('*') if 'reference' not in f.parts and f.suffix in ('.py','.cs','.csproj','.json')])
+        implementation += [project_path(ROOT/f) for f in ('examples/filtration/graded_support/check.py','examples/filtration/graded_support/model.py','julia/src/ProcessFiltration.jl',
             'julia/src/GradedSupport.jl','julia/src/SeriesCalibration.jl','julia/src/Pore2ProcessDemo.jl',
             'src/pore2process_demo/runtime/dwsim.py','src/pore2process_demo/bridge.py','uv.lock','julia/Project.toml','julia/Manifest.toml')]
         implementation = implementation_files(implementation)

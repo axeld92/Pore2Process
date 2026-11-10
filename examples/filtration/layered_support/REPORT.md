@@ -108,7 +108,7 @@ geometry and an explicitly supported effective fixed resistance.
 
 ## Reproduction and evidence
 
-[Commands](README.md) · [Original scientific record](../../../docs/filtration_research_case.md)
-· [Compact reference](../../../docs/filtration_reference.json).
+[Commands](README.md) · [Original scientific record](../../../docs/verification/filtration/layered_support.md)
+· [Compact reference](reference/filtration_reference.json).
 This synthetic sweep uses analytical verification, not experimental calibration;
 the [literature-calibration example](../calibration/REPORT.md) treats that separately.

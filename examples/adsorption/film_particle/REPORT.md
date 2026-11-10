@@ -120,9 +120,9 @@ Both routes fail RMSE ≤0.10 and t50 error ≤20%. The withheld t05 is about
 11.90 min after separate early-time refinement. The latter supersedes its
 coarse 7.88 min crossing and also fails the 25% screen.
 
-![Finite-bath calibration and withheld loading data](../../../docs/film_particle_batch_comparison.png)
+![Finite-bath calibration and withheld loading data](figures/film_particle_batch_comparison.png)
 
-![Column transfer remains unsuccessful](../../../docs/film_particle_column_comparison.png)
+![Column transfer remains unsuccessful](figures/film_particle_column_comparison.png)
 
 ## Discussion
 
@@ -155,8 +155,8 @@ family while preserving the qualified particle component and source isotherm.
 
 ## Reproduction and evidence
 
-[Commands](README.md) · [Frozen protocol](../../../literature/alhamed2009_film_particle_protocol.md)
-· [Source extraction](../../../literature/alhamed2009_film_particle_extraction.json)
-· [Full record](../../../docs/film_particle_adsorption.md)
-· [Compact reference](../../../docs/film_particle_reference.json).
+[Commands](README.md) · [Frozen protocol](protocol.md)
+· [Source extraction](../../../literature/sources/alhamed2009/film_particle_extraction.json)
+· [Full record](../../../docs/verification/adsorption/film_particle.md)
+· [Compact reference](reference/film_particle_reference.json).
 Source conditions, pixels and hashes are retained; no new laboratory data is required.

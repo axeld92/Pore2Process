@@ -6,8 +6,8 @@ import numpy as np
 
 from examples.adsorption.alhamed.source import ROOT, PDF, PDF_SHA, evidence as paper_evidence, sha
 
-PIXELS=ROOT/'literature/alhamed2009_fig2_pixels.csv'
-PROTOCOL=ROOT/'literature/alhamed2009_film_particle_protocol.md'
+PIXELS=ROOT/'literature/sources/alhamed2009/figure2_pixels.csv'
+PROTOCOL=ROOT/'examples/adsorption/film_particle/protocol.md'
 
 
 def observations():
@@ -59,7 +59,7 @@ def evidence():
 
 
 def main():
-    p=ROOT/'literature/alhamed2009_film_particle_extraction.json'
+    p=ROOT/'literature/sources/alhamed2009/film_particle_extraction.json'
     p.write_text(json.dumps(evidence(),indent=2,allow_nan=False)+'\n')
     print(p)
 

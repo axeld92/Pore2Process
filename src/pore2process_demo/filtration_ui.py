@@ -57,7 +57,7 @@ class FiltrationApp:
                 self.network.objects=[pn.pane.Alert('3D view unavailable: '+html.escape(str(e)),alert_type='warning')]
         except Exception as e:
             self.ready=False;self.run_button.disabled=True
-            self.status.object='Study evidence unavailable: '+html.escape(str(e))+'. Run the setup commands in docs/star_channel_showcase.md.'
+            self.status.object='Study evidence unavailable: '+html.escape(str(e))+'. Run the setup commands in examples/filtration/star_channel/README.md.'
             self.status.alert_type='warning'
         self.run_button.on_click(self._on_run)
         for widget in self.controls.values():widget.param.watch(self._stale,'value')
@@ -92,7 +92,7 @@ class FiltrationApp:
             'COD is balanced in Julia as an external lumped tracer. DWSIM uses pure-water properties. Fresh concentration is calculated to retain the stated module-inlet concentration.\n\n'
             '**Limits:** no validated fouling time, particle transport, turbulence, osmosis, reactions or cleaning model. The common non-support impedance is effective and cannot be identified uniquely as selective-layer resistance.')
         self.source_view.objects=[pn.pane.Markdown(notes)]
-        support_view=ROOT/'docs/graded_support_geometries.png'
+        support_view=ROOT/'examples/filtration/graded_support/figures/graded_support_geometries.png'
         if support_view.exists():
             self.source_view.append(pn.Accordion(('Support geometries · unchanged 4 µm openings',
                 pn.pane.PNG(support_view,sizing_mode='stretch_width')),active=[],sizing_mode='stretch_width'))
@@ -100,7 +100,7 @@ class FiltrationApp:
         if latest.exists():
             path=Path(read(latest)['summary'])
             self.source_view.append(pn.pane.PNG(path.parent/'study.png',sizing_mode='stretch_width'))
-        old=ROOT/'docs/crossflow_benchmark.png'
+        old=ROOT/'examples/filtration/literature_benchmark/figures/crossflow_benchmark.png'
         if old.exists():
             self.source_view.append(pn.Accordion(('Earlier TiO₂ comparison · unresolved source flow convention',pn.Column(
                 'Historical literature-flow comparison with earlier BGK support measurements. It uses a different feed and operating basis. New process runs use the separately revalidated TRT supports.',

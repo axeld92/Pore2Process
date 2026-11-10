@@ -1,0 +1,17 @@
+schema_version = 1
+id = "filtration/star_channel"
+title = "Explicit low-Re star channel"
+area = "filtration"
+status = "closed"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["filtration/graded_support", "filtration/literature_benchmark"]
+run_module = "examples.filtration.star_channel.run"
+check_module = "examples.filtration.star_channel.check"
+reference_files = ["reference/star_channel_browser_reference.json", "reference/star_channel_reference.json"]
+protocol_files = ["protocol.json", "support_protocol.json"]
+
+[validation]
+numerical = "passed"
+literature = "conditional"
+scope = "Read REPORT.md for the accepted run, operating range, assumptions and separate physical conclusions."

@@ -1,0 +1,17 @@
+schema_version = 1
+id = "adsorption"
+title = "Synthetic isothermal adsorption bed"
+area = "adsorption"
+status = "in_progress"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["hydraulics/tool_checks", "hydraulics/capillary_network"]
+run_module = "examples.adsorption.run"
+check_module = "examples.adsorption.check"
+reference_files = ["reference/adsorption_reference.json"]
+protocol_files = []
+
+[validation]
+numerical = "passed"
+literature = "scenario_only"
+scope = "Read REPORT.md for the accepted run, operating range, assumptions and separate physical conclusions."

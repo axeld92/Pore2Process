@@ -23,7 +23,7 @@ synthetic loop or promote it to experimental validation.
 The following [contact and inventory audit](column_contact/README.md) keeps
 those particle parameters frozen and tests a common mixed-section column.
 Its analytical/conservation checks pass; both diameter comparisons still fail.
-The [report](../../docs/column_contact_audit.md) distinguishes density-derived bed
+The [report](../../docs/verification/adsorption/column_contact.md) distinguishes density-derived bed
 mass, unavailable run masses and published fitted breakthrough descriptors.
 
 From the project root on the existing macOS ARM64 setup:
@@ -100,10 +100,10 @@ experimental confidence intervals. Film resistance and actual bed-scale
 transport closures remain future work. Published fitted intraparticle
 diffusivity is transferred unchanged as a scenario, not re-fitted to the column.
 
-Read [the source audit and scientific status](../../docs/adsorption_example.md)
+Read [the source audit and scientific status](../../docs/verification/adsorption/synthetic_bed.md)
 before interpreting this synthetic loop as a material prediction. The supplied
 Alhamed (2009) PDF has now been reviewed in a [separate date-stone-carbon
-study](../../docs/alhamed2009_comparison.md). Its evidence and numerical checks
+study](../../docs/verification/adsorption/alhamed.md). Its evidence and numerical checks
 pass, while the reduced model fails calibration and particle-size transfer.
 The original synthetic example remains unchanged. Reproduce the new comparison
 with `uv run python -m examples.adsorption.alhamed.source`,

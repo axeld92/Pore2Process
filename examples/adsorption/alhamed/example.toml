@@ -1,0 +1,18 @@
+schema_version = 1
+id = "adsorption/alhamed"
+title = "Date-stone carbon LDF comparison"
+area = "adsorption"
+status = "in_progress"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["adsorption"]
+run_module = "examples.adsorption.alhamed.study"
+check_module = "examples.adsorption.alhamed.check"
+reference_files = ["reference/alhamed2009_reference.json"]
+protocol_files = ["protocol.md"]
+
+[validation]
+numerical = "passed"
+literature = "failed"
+scope = "Read REPORT.md for the accepted run, operating range, assumptions and separate physical conclusions."
+column = "failed"

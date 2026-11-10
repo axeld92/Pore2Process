@@ -90,7 +90,7 @@ relative mass residual is $1.80\times10^{-11}$; maximum normalized enthalpy
 residual is $8.12\times10^{-4}$, below the unchanged $10^{-3}$ screen.
 No new native OpenLB solve is claimed; original support evidence is preserved.
 
-![Source constraints and conditional actual pump energy](../../../docs/crossflow_benchmark.png)
+![Source constraints and conditional actual pump energy](figures/crossflow_benchmark.png)
 
 ## Discussion
 
@@ -114,8 +114,8 @@ defines its own geometry and velocity convention and measures native resistance.
 
 ## Reproduction and evidence
 
-[Commands/protocol](README.md) · [Full report](../../../docs/crossflow_benchmark.md)
-· [Compact reference](../../../docs/crossflow_benchmark_reference.json)
-· [Source review](../../../literature/crossflow_papers_review.md).
+[Commands/protocol](README.md) · [Full report](../../../docs/verification/filtration/literature_benchmark.md)
+· [Compact reference](reference/crossflow_benchmark_reference.json)
+· [Source review](../../../literature/reviews/crossflow/papers_review.md).
 The impedance anchor is from
 [Zhu et al. (2021)](https://doi.org/10.1016/j.ceramint.2021.01.088), Figure 6.

@@ -25,7 +25,7 @@ From the project root:
 source scripts/env.sh
 uv sync --locked
 uv run python scripts/bootstrap_julia.py
-uv run python -m examples.filtration.graded_support.run --protocol star_channel/support_protocol.json --output results/graded_support_trt --workers 2
+uv run python -m examples.filtration.graded_support.run --protocol examples/filtration/star_channel/support_protocol.json --output results/graded_support_trt --workers 2
 uv run python -m examples.filtration.star_channel.native_run
 uv run python -m examples.filtration.star_channel.run
 uv run python -m examples.filtration.star_channel.check
@@ -57,5 +57,5 @@ critical/sustainable flux for this new geometry and speed remains unavailable.
 No laboratory data collection, inaccessible raw data or specimen reconstruction
 is required to reproduce this computational example.
 
-See [the scientific report](../../../docs/star_channel_showcase.md) for the verified
+See [the scientific report](../../../docs/verification/filtration/star_channel.md) for the verified
 range, results, assumptions, failed configurations and exact checks.

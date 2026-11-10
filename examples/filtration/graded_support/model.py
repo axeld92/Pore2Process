@@ -5,9 +5,9 @@ from pathlib import Path
 import numpy as np
 from pore2process_demo.io import write_json
 
-from pore2process_demo.paths import ROOT
+from pore2process_demo.paths import ROOT, project_path
 def read_protocol(path=None):
-    return json.loads((Path(path) if path else ROOT/"examples/filtration/graded_support/protocol.json").read_text())
+    return json.loads((project_path(Path(path).absolute()) if path else ROOT/"examples/filtration/graded_support/protocol.json").read_text())
 
 def profile(protocol,bulk):
     g=protocol["geometry"]

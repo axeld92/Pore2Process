@@ -1,4 +1,5 @@
 """Run and retain the explicit-geometry biological-feed process matrix."""
+from pore2process_demo.paths import project_path
 from pore2process_demo.provenance import implementation_files, source_manifest
 import argparse
 import csv
@@ -68,14 +69,14 @@ def execute(output,require_sources=False):
     support_verification=verify_support(spth,write_record=False)
     from examples.filtration.literature_benchmark.check import verify as verify_parent
     print('Rechecking upstream evidence...',flush=True); parent_verification=verify_parent(ppth)
-    source_audit=audit(read(ROOT/'literature/crossflow_extraction.json'),require_sources)
-    bio=read(ROOT/'literature/chiu2006_bio_extraction.json')
+    source_audit=audit(read(ROOT/'literature/reviews/crossflow/extraction.json'),require_sources)
+    bio=read(ROOT/'literature/sources/chiu2006/bio_extraction.json')
     if (p['feed']['COD_mg_L']!=bio['measurements'][0]['value'] or
         p['feed']['reference_rejection']!=bio['measurements'][2]['value']):
         raise ValueError('Protocol differs from the retained biological source extraction.')
     base=Path(output)/'runs'/(datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'-'+uuid4().hex[:8])
     base.mkdir(parents=True)
-    implementation=list((ROOT/'examples/filtration/star_channel').glob('*.py'))+[ROOT/name for name in (
+    implementation=list((ROOT/'examples/filtration/star_channel').glob('*.py'))+[project_path(ROOT/name) for name in (
         'examples/filtration/star_channel/protocol.json','examples/filtration/star_channel/support_protocol.json','julia/src/StarChannel.jl',
         'julia/src/GradedSupport.jl','julia/src/Pore2ProcessDemo.jl','julia/Project.toml','julia/Manifest.toml',
         'uv.lock','src/pore2process_demo/bridge.py','src/pore2process_demo/filtration_ui.py',

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "id": "meneghini2021",
+  "title": "Related coconut-shell phenol adsorption journal article",
+  "doi": "10.1590/S1413-415220180046",
+  "role": "Related publication; not independent validation of the dissertation parameters.",
+  "files": [
+    "../../../examples/adsorption/evidence/literature_parameters.json"
+  ],
+  "scope": "Navigation metadata; the linked evidence retains its own date, source conditions and qualification status."
+}

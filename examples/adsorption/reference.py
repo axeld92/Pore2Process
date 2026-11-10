@@ -13,6 +13,6 @@ def main():
         'evidence':s['evidence'],'refinement':{k:s['refinement'][k] for k in ('space_breakthrough_relative','time_breakthrough_relative')},
         'cases':[{**{k:c[k] for k in ('particle_diameter_m','native_case','permeability_m2','inputs','dwsim')},
             'column_metrics':{k:v for k,v in c['column'].items() if not isinstance(v,list) and k!='total_s'}} for c in s['cases']]}
-    write_json(ROOT/'docs/adsorption_reference.json',fixture);shutil.copy2(p.parent/'adsorption.png',ROOT/'docs/adsorption.png')
+    write_json(ROOT/'examples/adsorption/reference/adsorption_reference.json',fixture);shutil.copy2(p.parent/'adsorption.png',ROOT/'examples/adsorption/figures/adsorption.png')
     print('Published actual adsorption-loop reference and figure.')
 if __name__=='__main__':main()

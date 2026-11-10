@@ -15,6 +15,6 @@ uv run python -m examples.adsorption.alhamed.check
 
 `source` audits the supplied original PDF and marker readings; `study` performs
 new Julia calibration/forward calculations; `check` replays the saved comparison.
-See the [detailed execution record](../../../docs/alhamed2009_comparison.md)
-and [frozen protocol](../../../literature/alhamed2009_protocol.md) for source
+See the [detailed execution record](../../../docs/verification/adsorption/alhamed.md)
+and [frozen protocol](protocol.md) for source
 prerequisites, numerical settings and the separate failed physical criteria.

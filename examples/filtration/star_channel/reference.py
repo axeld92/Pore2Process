@@ -26,12 +26,12 @@ def retain(path):
         'TRT_support_for_replay':support,'actual_case':actual,'comparison':s['comparison'],
         'native_summary_sha256':s['native_sha256'],'support_summary_sha256':s['source_sha256'],
         'scope':'Compact actual numerical reference; full native fields and saved DWSIM cases stay in the uniquely named generated run.'}
-    write_json(ROOT/'docs/star_channel_reference.json',result)
-    shutil.copy2(path.parent/'study.png',ROOT/'docs/star_channel_study.png')
-    shutil.copy2(path.parent/'process'/actual['id']/'flowsheet.png',ROOT/'docs/star_channel_flowsheet.png')
+    write_json(ROOT/'examples/filtration/star_channel/reference/star_channel_reference.json',result)
+    shutil.copy2(path.parent/'study.png',ROOT/'examples/filtration/star_channel/figures/star_channel_study.png')
+    shutil.copy2(path.parent/'process'/actual['id']/'flowsheet.png',ROOT/'examples/filtration/star_channel/figures/star_channel_flowsheet.png')
     return result
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser();parser.add_argument('summary',nargs='?',type=Path)
     args=parser.parse_args();path=args.summary or Path(read(ROOT/'results/star_channel/process/latest.json')['summary'])
-    retain(path);print('Retained verified reference and scientific figures in docs/.')
+    retain(path);print('Retained verified reference and figures beside the star-channel example.')

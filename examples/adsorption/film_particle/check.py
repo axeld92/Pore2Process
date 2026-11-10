@@ -177,10 +177,10 @@ def main():
         case['last_loading_kg_kg']=r['mean_loading_kg_kg'][-1]
         case['last_outlet_kg_m3']=r['outlet_concentration_kg_m3'][-1]
         del case['result'];reference['cases'].append(case)
-    write(ROOT/'docs/film_particle_reference.json',reference)
+    write(ROOT/'examples/adsorption/film_particle/reference/film_particle_reference.json',reference)
     for name in ['batch_comparison.png','column_comparison.png']:
         import shutil
-        shutil.copy2(path.parent/name,ROOT/'docs'/f'film_particle_{name}')
+        shutil.copy2(path.parent/name,ROOT/'examples/adsorption/film_particle/figures'/f'film_particle_{name}')
     print(json.dumps(result,indent=2))
 
 

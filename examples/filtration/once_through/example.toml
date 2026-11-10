@@ -1,0 +1,17 @@
+schema_version = 1
+id = "filtration/once_through"
+title = "Once-through filtration circuit"
+area = "filtration"
+status = "closed"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["filtration/graded_support"]
+run_module = "examples.filtration.once_through.run"
+check_module = "examples.filtration.once_through.check"
+reference_files = ["reference/process_filtration_reference.json"]
+protocol_files = ["protocol.json"]
+
+[validation]
+numerical = "passed"
+literature = "conditional"
+scope = "Read REPORT.md for the accepted run, operating range, assumptions and separate physical conclusions."

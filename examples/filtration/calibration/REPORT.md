@@ -105,7 +105,7 @@ support scenarios give 30.49% transmembrane energy saving. These are model
 translations, not measured pump energies. The paper's M1 endpoint gain would
 translate to 42.86% under the same linearity assumption; the mismatch remains.
 
-![PDF M1 fit and held-out comparison](../../../docs/zhu_pdf_heldout.png)
+![PDF M1 fit and held-out comparison](figures/zhu_pdf_heldout.png)
 
 ## Discussion
 
@@ -136,11 +136,11 @@ ratios through one common literature anchor; it does not fit every design.
 
 ## Reproduction and evidence
 
-[Commands and frozen protocols](README.md) · [Support reference](../../../docs/experimental_calibration_reference.json)
-· [PDF reference](../../../docs/zhu_pdf_reference.json) ·
-[Source ledger](../../../literature/sources.json).
-The detailed [support](../../../docs/experimental_calibration.md),
-[JPEG](../../../docs/zhu_matched_validation.md) and
-[PDF](../../../docs/zhu_pdf_refinement.md) records retain source locations,
+[Commands and frozen protocols](README.md) · [Support reference](reference/experimental_calibration_reference.json)
+· [PDF reference](reference/zhu_pdf_reference.json) ·
+[Source ledger](../../../literature/sources/index.json).
+The detailed [support](../../../docs/verification/filtration/calibration.md),
+[JPEG](../../../docs/verification/filtration/zhu_jpeg.md) and
+[PDF](../../../docs/verification/filtration/zhu_pdf.md) records retain source locations,
 figure readings, split definitions and separate run IDs. This step uses Julia
 fits and saved data; it does not itself run new OpenLB or DWSIM simulations.

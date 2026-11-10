@@ -20,8 +20,8 @@ def main():
         'selection_scope':'Compact subset: fixed factor 1, equal Re, capacity fraction 0.95, transfer factor 1; complete selections remain in the accepted CSV/summary.',
         'verification':read(summary.parent/'verification.json')}
     value['native_for_replay']['cases']={native['accepted_case']:native['cases'][native['accepted_case']]}
-    write_json(ROOT/'docs/operating_map_reference.json',value)
-    shutil.copy2(summary.parent/'design_map.png',ROOT/'docs/operating_map.png')
+    write_json(ROOT/'examples/filtration/operating_map/reference/operating_map_reference.json',value)
+    shutil.copy2(summary.parent/'design_map.png',ROOT/'examples/filtration/operating_map/figures/operating_map.png')
     from .report import update
     update(s,summary)
     print('Saved verified operating-map reference, figure and numerical report.')

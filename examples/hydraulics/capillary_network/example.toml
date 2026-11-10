@@ -1,0 +1,18 @@
+schema_version = 1
+id = "hydraulics/capillary_network"
+title = "Capillary-network reference"
+area = "hydraulics"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = []
+run_module = "examples.hydraulics.capillary_network.run"
+check_module = ""
+reference_files = ["reference/verified_reference.json"]
+protocol_files = []
+
+[validation]
+numerical = "passed"
+literature = "not_applicable"
+scope = "Read REPORT.md for the accepted run, operating range, assumptions and separate physical conclusions."
+note = "Check with tests/hydraulics/test_capillary_network.py; no separate saved-run checker module."
