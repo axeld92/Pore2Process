@@ -1,5 +1,7 @@
 # Finite-bath and film/particle adsorption check
 
+[Scientific report: purpose, theory, results and conclusions](REPORT.md).
+
 Separate date-stone-carbon model and source audit. It preserves the original
 synthetic OpenLB–Julia–DWSIM example and the earlier failed Langmuir/LDF study.
 The shared fit uses only the 0.8 and 1.5 mm Figure 2 curves; smaller batch

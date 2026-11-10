@@ -1,5 +1,7 @@
 # 3D circular-capillary hydraulic benchmark
 
+[Scientific report: purpose, theory, results and conclusions](REPORT.md).
+
 Python runs the native OpenLB 1.9 lattice-Boltzmann case, validates its SI exports
 and sends measured flow and pressure drop to Julia. Julia infers axial Darcy
 permeability. The separate [connected comparison](../darcy_pump/README.md) uses

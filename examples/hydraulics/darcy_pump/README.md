@@ -1,5 +1,7 @@
 # Connected hydraulic design comparison
 
+[Scientific report: purpose, theory, results and conclusions](REPORT.md).
+
 This small technical demonstration runs OpenLB, Python, Julia and DWSIM on the
 same Mac. It compares two synthetic straight-pore designs, derives permeability
 from the actual OpenLB results, calculates a fixed-flow porous pressure load in

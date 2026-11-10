@@ -1,5 +1,7 @@
 # OpenLB / DWSIM compatibility check
 
+[Scientific report: purpose, theory, results and conclusions](REPORT.md).
+
 Verified on 8 November 2026 on this Apple Silicon Mac. OpenLB 1.9r0 builds
 and runs its analytical channel benchmark. Python invokes a private .NET
 adapter that creates, solves, saves, reloads, and solves a real DWSIM 10.2.15

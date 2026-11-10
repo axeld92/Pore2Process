@@ -1,5 +1,7 @@
 # Explicit hydraulic filtration in DWSIM
 
+[Scientific report: purpose, theory, results and conclusions](REPORT.md).
+
 This milestone extends the saved fixed-opening OpenLB study into a once-through
 pure-water flowsheet. Julia retains the pressure–flux law; actual DWSIM pump,
 splitter, material/energy streams and pressure-loss valves solve the process.

@@ -1,5 +1,7 @@
 # Critical-flux-constrained crossflow benchmark
 
+[Scientific report: purpose, theory, results and conclusions](REPORT.md).
+
 Julia reproduces the published García table, classifies a fixed target flux,
 and adds a separate monotonic constraint from Chiu's figure-reading intervals.
 Python coordinates actual DWSIM recycle cases using the existing stock-unit

@@ -1,5 +1,7 @@
 # Explicit star-channel and biological-feed showcase
 
+[Scientific report: purpose, theory, results and conclusions](REPORT.md).
+
 This extends the existing examples without replacing their saved results.
 The channel has six explicit points (2.3 mm outer and 1.4 mm inner radii), a
 0.3 m active length and an unambiguous area/perimeter/flow convention. It is a

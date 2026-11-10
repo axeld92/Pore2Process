@@ -1,5 +1,7 @@
 # Crossflow recycle and circulation energy
 
+[Scientific report: purpose, theory, results and conclusions](REPORT.md).
+
 The verified OpenLB resistance ratios and Julia membrane closure now supply a
 stock DWSIM recycle flowsheet. Separate fresh-feed and circulation pumps,
 channel loss, water recovery, purge and temperature control are explicit.

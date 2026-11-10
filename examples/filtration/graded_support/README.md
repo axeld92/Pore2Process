@@ -1,5 +1,7 @@
 # Controlled graded-support study
 
+[Scientific report: purpose, theory, results and conclusions](REPORT.md).
+
 [Verified results and figures](../../../docs/graded_support_study.md): the widest
 interior reduces native resistance by 35.88% and conditional transmembrane
 shaft energy by 11.30%. The final saved reference is

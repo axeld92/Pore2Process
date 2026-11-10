@@ -43,61 +43,22 @@ flowchart LR
 
 Models remain usable independently of the interface.
 
-## First research showcase: membrane support design
+## Examples and scientific reports
 
-**At a fixed filtration flux and unchanged selective layer, how much can support
-geometry reduce total pumping energy, and when does the selective layer become
-the dominant resistance?**
+Each example has a `REPORT.md` describing its purpose, assumptions, theory and
+equations, recorded results, discussion and conclusions. Setup and launch
+commands remain in the corresponding `README.md`.
 
-The current hydraulic study compares synthetic ceramic-membrane support
-geometries with a fixed selective-side opening and different interior widths.
-OpenLB resolves the support hydraulics; Julia translates the measured resistance
-into a membrane pressure requirement; DWSIM calculates the resulting pump duties.
-
-A crossflow extension includes separate feed and circulation pumps, recycle,
-purge and temperature control. Its main process metric is **pump shaft energy
-per cubic metre of filtrate**. Cooling heat is reported separately from shaft
-work. This makes the trade-off visible: improving the support can reduce its
-own pressure loss while other membrane resistances and circulation consume a
-larger share of the total energy.
-
-The current literature comparison identifies an **effective non-support
-resistance**, which can include intermediate-layer and interface contributions.
-It does not uniquely identify the intrinsic selective-layer resistance or
-reconstruct a particular experimental specimen.
-
-The final operating-map study makes the process trade-off clear. At **12 LMH**
-and inlet **Re = 1388**, widening the support interior from **4 to 6 µm** lowers
-mean transmembrane pressure from **1.2211 to 1.0831 kPa**, while total pump
-shaft energy falls by **0.18166%**. Circulation supplies **98.72%** of baseline
-shaft duty. The effective fixed resistance accounts for 68.50–77.23% of membrane
-resistance across that geometry pair.
-
-The study verifies **16 native hydraulic cases** and **91 actual DWSIM
-solve/save/reload cases**, with **902 Julia assertions** and **74 Python tests**.
-Its operating selections are conditional on the declared literature-transfer
-policies and evaluated grid. See the [final report](docs/operating_window.md)
-and [reproduction commands](examples/filtration/operating_map/README.md).
-
-![Hydraulic refinement, conditional capacity screen and filtration energy map](docs/operating_map.png)
-
-The earlier [low-Re interface showcase](docs/star_channel_showcase.md) remains
-available with its own verified numerical range and completed browser checks.
-
-## What has been demonstrated locally
-
-| Stage | Documented development status |
+| Area | Starting points |
 | --- | --- |
-| **Python–Julia reference** | Synthetic capillary network, Julia sparse pressure solve, analytical checks, permeability and a Darcy column calculation. |
-| **Native hydraulic benchmark** | Actual 3D OpenLB calculations with conservation, analytical-reference and discretization checks; stock TRT revalidation of the current porous-support cases. |
-| **Property-to-process connection** | OpenLB-derived hydraulic properties drive Julia pressure-load calculations and actual DWSIM pump flowsheets. |
-| **Filtration and crossflow** | Controlled support comparisons, distributed hydraulic calculations, circulation energy, recycle balances and saved/reloaded DWSIM cases. |
-| **Final operating map** | Higher-Re laminar-branch verification, literature-capacity policies and discrete material/operation comparisons; filtration hydraulics closed for now. |
-| **Local interface and exports** | Panel/PyVista network and geometry inspection, pressure profiles, completed-run snapshots and downloadable results; browser checks performed on the development Mac. |
-| **Literature comparisons** | Audited extractions, reduced-model calibration and held-out comparisons, with failed screens and evidence limits retained. |
+| **Hydraulics** | [Capillary network](examples/hydraulics/capillary_network/REPORT.md), [3D capillary verification](examples/hydraulics/capillary_benchmark/REPORT.md), [measured permeability to pump duty](examples/hydraulics/darcy_pump/REPORT.md) |
+| **Filtration** | [Study stages](examples/filtration/README.md), [fixed-opening support design](examples/filtration/graded_support/REPORT.md), [final operating map and conclusions](examples/filtration/operating_map/REPORT.md) |
+| **Adsorption** | [Synthetic bed](examples/adsorption/REPORT.md), [literature LDF comparison](examples/adsorption/alhamed/REPORT.md), [film/particle transport](examples/adsorption/film_particle/REPORT.md), [column contact and inventory](examples/adsorption/column_contact/REPORT.md) |
 
-These are computational demonstrations of idealized or literature-informed
-systems.
+The [complete example catalogue](examples/README.md) links all scientific
+reports and run guides. Reports distinguish numerical verification,
+literature comparisons and conditional scenarios; unfinished and failed
+comparisons remain explicit.
 
 ## How results stay traceable
 
@@ -207,8 +168,8 @@ changes. Native study generation can take substantial time.
 | --- | --- |
 | [Setup and examples](docs/setup_and_examples.md) | Detailed Python–Julia setup, model derivation, contracts and original example commands |
 | [Clean-checkout reproduction](docs/reproduction.md) | Native prerequisites and ordered connected-study commands |
-| [Filtration showcase](docs/star_channel_showcase.md) | Geometry, model, quantitative results and evidence limits |
-| [Closed filtration operating map](docs/operating_window.md) | Final hydraulic range, material/operation comparison and circulation-energy result |
+| [Filtration showcase](examples/filtration/star_channel/REPORT.md) | Geometry, equations, results and biological-feed assumptions |
+| [Closed filtration operating map](examples/filtration/operating_map/REPORT.md) | Final hydraulic range, material/operation comparison and circulation-energy result |
 | [Literature workspace](literature/README.md) | Curated references, extractions and provenance |
 | [Integration roadmap](docs/integration_roadmap.md) | Detailed milestone and research status |
 | [Publication record](docs/code_publication.md) | Published snapshot and verification scope |

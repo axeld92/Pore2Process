@@ -1,5 +1,7 @@
 # Isothermal adsorption: first synthetic connected example
 
+[Scientific report: purpose, theory, results and conclusions](REPORT.md).
+
 Question: at fixed dry adsorbent inventory, feed flow and outlet-quality limit,
 how does particle size change treated volume before breakthrough and pumping
 energy? Phenol on activated carbon is the starting literature family. The

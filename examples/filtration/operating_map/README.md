@@ -1,5 +1,7 @@
 # Higher-Re hydraulics and a qualified operating map
 
+[Scientific report: purpose, theory, results and conclusions](REPORT.md).
+
 This extension preserves the completed capillary, support, crossflow and
 low-Re star-channel examples. It uses stock OpenLB D3Q27/TRT in a separate
 application folder. The numerical model remains usable without Panel.

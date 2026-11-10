@@ -1,5 +1,7 @@
 # Python–Julia capillary-network reference
 
+[Scientific report: purpose, theory, results and conclusions](REPORT.md).
+
 This launcher uses the existing sparse Julia solver and Python export pipeline.
 No second implementation is introduced.
 
