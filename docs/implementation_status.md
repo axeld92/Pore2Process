@@ -1,9 +1,85 @@
-# Implementation and acceptance
+# Implementation and acceptance — 7 November 2026
 
-The filtration hydraulic example is closed for now and retained as a regression
-benchmark. Adsorption is the next case in development.
+Latest model/evidence step, 10 November: the [common column contact and
+inventory audit](column_contact_audit.md) preserves the batch-qualified
+particle component unchanged. The printed bulk density implies a derived
+7.032455 g bed mass; no fraction-specific weighed mass is reported. The
+observed breakthrough window does not establish saturation or prove that
+density wrong. Table 5 DL/Pe remain fitted breakthrough-shape descriptors,
+not independently measured fluid dispersion. A common equal-section model
+is selected on 0.8 mm only, then transferred to 0.45 mm with fixed particles,
+film correlation, isotherm and full active inventory. **Both comparisons fail**:
+t50 is 87.49/118.32 min versus 30.75/55.36 min in Figure 7. Conservative
+implementation and selected time/radial refinements pass. No simulator or
+dependency changes were made; no new OpenLB/DWSIM solve or browser check is
+claimed. Next is a synthetic stock-TRT packed-bed inert-tracer RTD benchmark,
+without claiming specimen reconstruction or experimental adsorption validation.
+Fifty new Julia assertions, 51 preserved particle assertions and 128 Python
+tests pass. Independent replay checks 24 cases, 66 calibration evaluations,
+83 artifacts and 30 source files. The existing PyVista UI regression required
+host graphics access after an AppKit abort in the restricted runner; no code
+change or new adsorption browser acceptance is implied.
 
-Latest completed filtration milestone, 9–10 November: the [higher-Re operating map](operating_window.md)
+Previous model/evidence step, 10 November: the [separate finite-bath and
+film/particle model](film_particle_adsorption.md) is implemented. Source
+equilibrium matches all seven published batch endpoints within 2.03%; shared
+transport fitted only to the 0.8/1.5 mm curves predicts the withheld 0.45/0.225
+mm loading curves with RMSE 1.33/0.42 mg/g. **Both the fully transferred and
+one-anchor column routes still fail Figure 7.** No equilibrium or physical
+inventory refit is hidden in that comparison.
+
+The new Julia suite passes 51 assertions and the full Python suite passes
+112 tests. Independent replay verifies 57 saved Julia cases, seven analytical
+endpoints, 141 artifacts and 20 source files. Conservation and selected
+radial/axial/time refinements pass. The original synthetic example and the
+earlier failed LDF study both reverify, including original OpenLB source and
+saved DWSIM evidence. No dependency, lockfile or simulator-source change was
+made. Next is a common column contact/flow-distribution audit; reactive and
+thermal additions remain deferred.
+
+Previous evidence step, 10 November: the [supplied Alhamed PDF
+comparison](alhamed2009_comparison.md) retains 48 digitized Figure 7 markers,
+seven published batch fits and all 18 column-fit rows for separate date-stone
+carbon. Ten actual Julia column calculations pass source/artifact replay,
+conservation and the declared refinement checks. **The reduced model fails
+calibration and held-out particle-size prediction.** This is retained as a
+failed physical comparison; it does not invalidate the completed synthetic
+example or establish experimental hydraulic validation. No new OpenLB or
+DWSIM solves, simulator modifications, dependency changes or reactive/thermal
+additions were made. Next is a finite-bath equilibrium/uptake audit followed
+by a tested film-plus-intraparticle alternative using the same paper. The
+full Python suite passes 94 tests; the preserved synthetic-example checker
+still passes all source, artifact and saved-flow checks.
+
+Previous completed milestone, 10 November: the [first synthetic isothermal adsorption
+release](adsorption_example.md) passes **8 native FCC bed cases, 7 native
+scalar-TRT reference cases, 46 new Julia assertions and 86 full-suite Python
+tests**. The existing Julia package also passes all 902 assertions. Three
+particle-size cases and a property anchor complete actual DWSIM solve/save/
+reload checks. Independent replay covers 1,178 artifacts, 11 Julia column
+calculations and all four saved pump topologies. All 2,070 checked original
+OpenLB files remain unchanged; Python/Julia locks and the completed examples
+are preserved.
+
+At fixed 4 kg adsorbent inventory and 155.015 mL/min flow, reducing particle
+diameter from 2.3 to 0.575 mm increases conditional treatment volume before
+the chosen 5% breakthrough limit by 1.8878%, while bed-attributable pump power
+rises 15.9938 times. This is a low-flow, clean synthetic bed with long contact
+time; the absolute bed duty is small and excludes the rest of the plant.
+The chemical inputs are literature-informed transfer scenarios. Experimental
+column validation, resolved native bed mass-transfer closures and a full
+adsorption-service/regeneration flowsheet are not completed or claimed.
+
+The evidence audit retains an ambiguous printed density, conflicting affinity
+units/fits and undigitized error bars. No unsupported density is silently
+substituted. A rejected native acoustic scaling, a low-head flash diagnostic
+and an initial stiff-uptake solver failure are retained. Revised scaling,
+stock forced-liquid DWSIM and a conservative residual line search pass the
+unchanged acceptance screens. The figure was visually inspected; no new
+adsorption Panel UI/browser verification is claimed. See
+[commands](../adsorption/README.md) and [the compact reference](adsorption_reference.json).
+
+Earlier completed milestone, 9–10 November: the [higher-Re operating map](operating_window.md)
 completes the three requested hydraulic/evidence/design-map steps. **16 native
 D3Q27/TRT cases pass 144 numerical screens; 91 actual DWSIM cases solve, save
 and reload; 902 Julia assertions and 74 Python tests pass.** A deliberately

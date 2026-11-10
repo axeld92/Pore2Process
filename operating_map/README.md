@@ -10,10 +10,6 @@ replay covers 682 local artifacts and rechecks upstream evidence. Native
 verification is for a fully developed laminar branch, approximately Re=1000–2000;
 physical transition and sustainable filtration remain outside that claim.
 
-On a clean checkout, first follow [the reproduction guide](../docs/reproduction.md)
-through the completed native support/channel and crossflow process chain. Those
-saved ancestors are required by this extension.
-
 From the project root:
 
 ```sh
@@ -24,6 +20,7 @@ uv run python -m operating_map.evidence
 uv run python -m operating_map.native
 uv run python -m operating_map.run
 uv run python -m operating_map.check
+uv run python -m operating_map.reference
 julia --project=julia -e 'using Pkg; Pkg.test()'
 uv run pytest -q
 ```
@@ -80,8 +77,3 @@ no changed process velocity is presented as a new native field.
 
 See [the scientific report](../docs/operating_window.md) for actual acceptance
 results, assumptions and limits.
-
-The `operating_map.reference` command is for maintainers updating the tracked
-compact reference and report. It is not needed to run or check a new study.
-The filtration hydraulic case is closed for now and retained as a regression
-benchmark; the next active example is being developed separately.

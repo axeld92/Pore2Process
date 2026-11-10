@@ -17,10 +17,6 @@ permeating channel and conservative dilute COD balance. DWSIM actually solves,
 saves and reloads the stock equipment/recycle flowsheet. COD is an external
 oxygen-demand tracer; DWSIM retains the water-carrier property model.
 
-For a clean checkout, first follow the [ordered reproduction guide](../docs/reproduction.md)
-to install the native tools and generate the graded-support, filtration, recycle
-and crossflow-benchmark ancestors. The commands below assume those prerequisites.
-
 From the project root:
 
 ```sh

@@ -1,0 +1,540 @@
+{
+  "summary_path": "/Users/dula/Documents/ChatGPT/Pore2Process/results/adsorption/process/runs/20261110T003326Z-8ff89948/summary.json",
+  "summary_sha256": "7a5a67428a1aa23d9546b91a905faa04268d250f90bf09f02de7229fc8acfd0f",
+  "verification": {
+    "status": "passed",
+    "native_bed_cases": 8,
+    "native_transport_cases": 7,
+    "actual_DWSIM_cases": 4,
+    "artifacts_checked": 1178,
+    "Julia_columns_replayed": 11,
+    "saved_pump_topologies": 4,
+    "experimental_column_validation_passed": false,
+    "external_solves_by_checker": false,
+    "original_vendor": {
+      "archive_sha256": "e4d2421b50643482036917c4416145f7d6b495492f3afac64e048212361c8b3e",
+      "original_files_checked": 2070,
+      "preexisting_vendor_config_ignored": true
+    }
+  },
+  "comparison": [
+    {
+      "particle_diameter_m": 0.000575,
+      "permeability_m2": 1.8094906167730011e-09,
+      "ldf_s_inv": 0.0011972415879017012,
+      "adsorbent_mass_kg": 4.0,
+      "breakthrough_time_s": 1063895.8262259765,
+      "treated_volume_m3": 2.7486608727972732,
+      "bed_pressure_drop_Pa": 127.08549673816015,
+      "solid_utilization_at_breakthrough": 0.997259494816651,
+      "adsorbed_solute_at_breakthrough_kg": 0.1371270296090239,
+      "actual_pump_power_W": 0.00043778087261711553,
+      "specific_pump_energy_kWh_m3": 4.7068702495614865e-05
+    },
+    {
+      "particle_diameter_m": 0.00115,
+      "permeability_m2": 7.237398265764682e-09,
+      "ldf_s_inv": 0.0002993103969754253,
+      "adsorbent_mass_kg": 4.0,
+      "breakthrough_time_s": 1059954.6404684775,
+      "treated_volume_m3": 2.738478500785822,
+      "bed_pressure_drop_Pa": 31.77385096567741,
+      "solid_utilization_at_breakthrough": 0.9935321066965216,
+      "adsorbed_solute_at_breakthrough_kg": 0.13661449935609582,
+      "actual_pump_power_W": 0.00010945375010666864,
+      "specific_pump_energy_kWh_m3": 1.1768092950250891e-05
+    },
+    {
+      "particle_diameter_m": 0.0023,
+      "permeability_m2": 2.8940604946338634e-08,
+      "ldf_s_inv": 7.482759924385633e-05,
+      "adsorbent_mass_kg": 4.0,
+      "breakthrough_time_s": 1044184.177647456,
+      "treated_volume_m3": 2.6977342351975118,
+      "bed_pressure_drop_Pa": 7.945929751716903,
+      "solid_utilization_at_breakthrough": 0.9786306588856198,
+      "adsorbed_solute_at_breakthrough_kg": 0.13456549276773686,
+      "actual_pump_power_W": 2.737193582071753e-05,
+      "specific_pump_energy_kWh_m3": 2.942936945080335e-06
+    }
+  ],
+  "evidence": {
+    "status": "literature-informed starting parameters; experimental column validation not passed or claimed",
+    "sources": [
+      {
+        "id": "Meneghini2017",
+        "type": "author undergraduate dissertation",
+        "title": "Simula\u00e7\u00e3o num\u00e9rica e ensaios experimentais da remo\u00e7\u00e3o de fenol em coluna de leito fixo utilizando carv\u00e3o ativado como adsorvente",
+        "material": "Carbomafra coconut-shell activated carbon",
+        "source_url": "https://rd.uffs.edu.br/handle/prefix/1681",
+        "pdf_url": "https://rd.uffs.edu.br/bitstream/prefix/1681/1/MENEGHINI.pdf",
+        "sha256": "84a6d3c1f196ab0a89e2e83012051fa31164ee744de20f577056227c92296993",
+        "local_path": "literature/inbox/Meneghini2017Phenol/MENEGHINI.pdf",
+        "available_locally": true,
+        "visual_audit_pages": [
+          23,
+          25,
+          26
+        ]
+      },
+      {
+        "id": "Meneghini2021",
+        "doi": "10.1590/S1413-415220180046",
+        "relationship": "Related journal article; not used as independent validation of the author-source parameters.",
+        "access": "publisher HTML reviewed; PDF not retrieved",
+        "source_url": "https://www.scielo.br/j/esa/a/k97n87Dwkz5RLKMKCW3Rd3M/?lang=pt"
+      },
+      {
+        "id": "Alhamed2009",
+        "doi": "10.1016/j.jhazmat.2009.05.002",
+        "material": "date-stone activated carbon",
+        "access": "publisher abstract only",
+        "role": "Candidate particle-size validation series; no numbers borrowed into coconut-shell model."
+      },
+      {
+        "id": "Iheanacho2021",
+        "doi": "10.1016/j.sajce.2021.02.003",
+        "material": "corn-cob activated carbon",
+        "access": "publisher abstract only",
+        "role": "Alternative particle-size series; separate specimen, not pooled."
+      }
+    ],
+    "measurements_and_fitted_parameters": [
+      {
+        "name": "temperature",
+        "value": 25,
+        "unit": "degC",
+        "SI_value": 298.15,
+        "SI_unit": "K",
+        "source": "Meneghini2017",
+        "location": "Table 2, p23; Table 4, p26",
+        "role": "reported",
+        "pointwise_uncertainty": null
+      },
+      {
+        "name": "Langmuir_capacity",
+        "value": 41.69,
+        "unit": "mg/g",
+        "SI_value": 0.04169,
+        "SI_unit": "kg/kg dry solid",
+        "source": "Meneghini2017",
+        "location": "Table 2, p23",
+        "role": "reported fitted batch parameter",
+        "pointwise_uncertainty": null
+      },
+      {
+        "name": "Langmuir_affinity",
+        "value": 0.094,
+        "unit": "L/mg",
+        "SI_value": 94.0,
+        "SI_unit": "m3/kg solute",
+        "source": "Meneghini2017",
+        "location": "Table 2, p23",
+        "role": "reported fitted batch parameter",
+        "pointwise_uncertainty": null
+      },
+      {
+        "name": "effective_intraparticle_diffusivity_at_50mg_L",
+        "value": 6.5973e-08,
+        "unit": "cm2/s",
+        "SI_value": 6.5973e-12,
+        "SI_unit": "m2/s",
+        "source": "Meneghini2017",
+        "location": "Table 4, p25",
+        "role": "reported fitted parameter; not independent prediction",
+        "pointwise_uncertainty": null
+      },
+      {
+        "name": "molecular_diffusivity",
+        "value": 9.1e-06,
+        "unit": "cm2/s",
+        "SI_value": 9.1e-10,
+        "SI_unit": "m2/s",
+        "source": "Meneghini2017",
+        "location": "Table 4, p25",
+        "role": "reported model input",
+        "pointwise_uncertainty": null
+      },
+      {
+        "name": "particle_diameter",
+        "value": 0.23,
+        "unit": "cm",
+        "SI_value": 0.0023,
+        "SI_unit": "m",
+        "source": "Meneghini2017",
+        "location": "Table 4 continuation, p26",
+        "role": "reported",
+        "pointwise_uncertainty": null
+      },
+      {
+        "name": "bed_length",
+        "value": 10.0,
+        "unit": "cm",
+        "SI_value": 0.1,
+        "SI_unit": "m",
+        "source": "Meneghini2017",
+        "location": "Table 4 continuation, p26",
+        "role": "reported",
+        "pointwise_uncertainty": null
+      },
+      {
+        "name": "column_diameter",
+        "value": 2.04,
+        "unit": "cm",
+        "SI_value": 0.0204,
+        "SI_unit": "m",
+        "source": "Meneghini2017",
+        "location": "Table 4 continuation, p26",
+        "role": "reported",
+        "pointwise_uncertainty": null
+      },
+      {
+        "name": "bed_porosity",
+        "value": 0.44,
+        "unit": "1",
+        "SI_value": 0.44,
+        "SI_unit": "1",
+        "source": "Meneghini2017",
+        "location": "Table 4 continuation, p26",
+        "role": "reported",
+        "pointwise_uncertainty": null
+      },
+      {
+        "name": "dry_adsorbent_mass",
+        "value": 20.0,
+        "unit": "g",
+        "SI_value": 0.02,
+        "SI_unit": "kg",
+        "source": "Meneghini2017",
+        "location": "Table 4, p25",
+        "role": "reported",
+        "pointwise_uncertainty": null
+      },
+      {
+        "name": "density_as_printed",
+        "value": 574.33,
+        "unit": "g/L",
+        "SI_value": 574.33,
+        "SI_unit": "kg/m3",
+        "source": "Meneghini2017",
+        "location": "Table 4, p25",
+        "role": "density interpretation unresolved",
+        "pointwise_uncertainty": null
+      },
+      {
+        "name": "column_flow",
+        "value": 20.0,
+        "unit": "mL/min",
+        "SI_value": 3.3333333333333335e-07,
+        "SI_unit": "m3/s",
+        "source": "Meneghini2017",
+        "location": "Table 4, p25",
+        "role": "reported",
+        "pointwise_uncertainty": null
+      }
+    ],
+    "source_consistency": {
+      "bed_volume_m3": 3.268512996794821e-05,
+      "bulk_density_from_mass_and_dimensions_kg_m3": 611.8990507185518,
+      "particle_density_if_mass_dimensions_porosity_are_used_kg_m3": 1092.676876283128,
+      "mass_if_printed_density_is_particle_density_kg": 0.01051234838891535,
+      "printed_density_not_used_as_an_unambiguous_particle_density": true
+    },
+    "conflicts": [
+      "Table 2 affinity is L/mg; Table 4 prints L/g for a similar number. Use only the unambiguous Table 2 units.",
+      "Journal Table 2 has 44.15 mg/g and 0.07 L/mg, differing from author Table 2 and journal Table 5; do not merge fits.",
+      "Printed density, mass, porosity and dimensions cannot all satisfy one particle-envelope inventory definition.",
+      "Figure 7 early effluent and error bars require digitization and an initial/dead-volume audit before a clean-bed holdout comparison.",
+      "Source radial-diffusion model is more detailed than the initial intraparticle LDF approximation."
+    ],
+    "uncertainty_status": "Figure 7 has visible error bars; numerical intervals and their definition have not yet been digitized/audited. The related journal methodology reports duplicate tests and 95% confidence; no pointwise standard deviation is inferred.",
+    "unavailable": {
+      "experimental_pressure_drop": null,
+      "pointwise_measurement_uncertainty": null,
+      "matched_particle_size_effect_for_this_carbon": null,
+      "validated_bed_dispersion_m2_s": null
+    },
+    "scenario_assumptions": {
+      "synthetic_geometry": "periodic FCC sphere bed, porosity 0.6; not reconstruction of carbon granules",
+      "particle_envelope_dry_density_kg_m3": 1000.0,
+      "bed_length_m": 1.0,
+      "bed_area_m2": 0.01,
+      "breakthrough_Cout_Cin": 0.05,
+      "particle_diameters_m": [
+        0.000575,
+        0.00115,
+        0.0023
+      ],
+      "axial_dispersion_m2_s": 0.0,
+      "film_resistance": "not separately resolved in this initial LDF model",
+      "dispersion_sensitivity_factors": [
+        0.1,
+        1.0
+      ],
+      "dispersion_sensitivity_definition": "Dax = chosen factor * interstitial velocity * particle diameter; scenario only, not fitted uncertainty.",
+      "kinetic_transfer": "60 Deff/dp^2 assumes spherical intraparticle control and unchanged material Deff.",
+      "DWSIM_role": "Actual water-carrier pump; adsorption, solute inventory and transient capacity remain external Julia calculations."
+    }
+  },
+  "refinement": {
+    "space_breakthrough_relative": 0.0006993564240496131,
+    "time_breakthrough_relative": 3.8258694927906234e-05
+  },
+  "cases": [
+    {
+      "particle_diameter_m": 0.000575,
+      "native_case": "smallest",
+      "permeability_m2": 1.8094906167730011e-09,
+      "inputs": {
+        "length_m": 1.0,
+        "area_m2": 0.01,
+        "porosity": 0.6,
+        "particle_density_kg_m3": 1000.0,
+        "superficial_velocity_m_s": 0.0002583580840379615,
+        "inlet_concentration_kg_m3": 0.05,
+        "capacity_kg_kg": 0.04169,
+        "affinity_m3_kg": 94.0,
+        "axial_dispersion_m2_s": 0.0,
+        "breakthrough_fraction": 0.05,
+        "initial_concentration_kg_m3": 0.0,
+        "initial_loading_kg_kg": 0.0,
+        "linear_partition_m3_kg": null,
+        "equilibrium": false,
+        "ldf_s_inv": 0.0011972415879017012,
+        "t_end_s": 2133532.769640369,
+        "cells": 640,
+        "dt_s": 266.6915962050461
+      },
+      "dwsim": {
+        "tool": "DWSIM",
+        "version": "10.2.15.0",
+        "timestamp_utc": "2026-11-10T00:33:37.083391+00:00",
+        "inputs": {
+          "Temperature_K": 298.15,
+          "Inlet_pressure_Pa": 100000,
+          "Outlet_pressure_Pa": 100127.08549673816,
+          "Mass_flow_kg_s": 0.00257595265106999,
+          "Pump_efficiency_fraction": 0.75,
+          "Scope": "Actual pump load from native FCC permeability, geometrically scaled within low-Re scope. Julia alone calculates dilute phenol uptake. No DWSIM adsorption unit or experimental material calibration claimed."
+        },
+        "property_package": "Steam Tables (IAPWS-IF97)",
+        "compounds": [
+          "Water"
+        ],
+        "inlet_pressure_Pa": 100000,
+        "outlet_pressure_Pa": 100127.08549673816,
+        "inlet_temperature_K": 298.15,
+        "outlet_temperature_K": 298.150012494435,
+        "inlet_mass_flow_kg_s": 0.00257595265106999,
+        "outlet_mass_flow_kg_s": 0.00257595265106999,
+        "inlet_density_kg_m3": 997.0474354080965,
+        "inlet_enthalpy_J_kg": 104928.06751189622,
+        "inlet_viscosity_Pa_s": 0.000890082517572212,
+        "outlet_viscosity_Pa_s": 0.0008900822343924389,
+        "outlet_density_kg_m3": 997.047489426254,
+        "outlet_enthalpy_J_kg": 104928.2374609274,
+        "inlet_vapor_fraction": 0,
+        "outlet_vapor_fraction": 0,
+        "shaft_power_W": 0.00043778087261711553,
+        "energy_stream_power_W": 0.00043778087261711553,
+        "analytical_shaft_power_W": 0.0004377808726171155,
+        "mass_balance_error_kg_s": 0,
+        "energy_balance_error_W": -2.1525278716579e-10,
+        "pump_power_relative_error": 1.2382932196237717e-16,
+        "save_reload_solve_checked": true,
+        "forced_liquid": true,
+        "saturation_pressure_Pa": 3173.6004319163803,
+        "initialization_s": 1.1516902,
+        "solve_s": 0.0708282,
+        "scope": "Actual pump load from native FCC permeability, geometrically scaled within low-Re scope. Julia alone calculates dilute phenol uptake. No DWSIM adsorption unit or experimental material calibration claimed."
+      },
+      "column_metrics": {
+        "max_mass_residual_kg": 1.27675647831893e-15,
+        "normalized_mass_residual": 4.632513492618523e-15,
+        "breakthrough_time_s": 1063895.8262259765,
+        "treated_volume_m3": 2.7486608727972732,
+        "adsorbed_solute_at_breakthrough_kg": 0.1371270296090239,
+        "solid_utilization_at_breakthrough": 0.997259494816651,
+        "adsorbent_mass_kg": 4.0,
+        "fluid_holdup_m3": 0.006,
+        "bulk_density_kg_m3": 400.0,
+        "equilibrium_feed_loading_kg_kg": 0.034375964912280704,
+        "sharp_front_capacity_time_s": 1066766.3848201844,
+        "dt_s": 266.6915962050461,
+        "cells": 640,
+        "steps": 8000,
+        "max_Newton_iterations": 7
+      }
+    },
+    {
+      "particle_diameter_m": 0.00115,
+      "native_case": "scaled",
+      "permeability_m2": 7.237398265764682e-09,
+      "inputs": {
+        "length_m": 1.0,
+        "area_m2": 0.01,
+        "porosity": 0.6,
+        "particle_density_kg_m3": 1000.0,
+        "superficial_velocity_m_s": 0.0002583580840379615,
+        "inlet_concentration_kg_m3": 0.05,
+        "capacity_kg_kg": 0.04169,
+        "affinity_m3_kg": 94.0,
+        "axial_dispersion_m2_s": 0.0,
+        "breakthrough_fraction": 0.05,
+        "initial_concentration_kg_m3": 0.0,
+        "initial_loading_kg_kg": 0.0,
+        "linear_partition_m3_kg": null,
+        "equilibrium": false,
+        "ldf_s_inv": 0.0002993103969754253,
+        "t_end_s": 2133532.769640369,
+        "cells": 640,
+        "dt_s": 266.6915962050461
+      },
+      "dwsim": {
+        "tool": "DWSIM",
+        "version": "10.2.15.0",
+        "timestamp_utc": "2026-11-10T00:33:41.707863+00:00",
+        "inputs": {
+          "Temperature_K": 298.15,
+          "Inlet_pressure_Pa": 100000,
+          "Outlet_pressure_Pa": 100031.77385096568,
+          "Mass_flow_kg_s": 0.00257595265106999,
+          "Pump_efficiency_fraction": 0.75,
+          "Scope": "Actual pump load from native FCC permeability, geometrically scaled within low-Re scope. Julia alone calculates dilute phenol uptake. No DWSIM adsorption unit or experimental material calibration claimed."
+        },
+        "property_package": "Steam Tables (IAPWS-IF97)",
+        "compounds": [
+          "Water"
+        ],
+        "inlet_pressure_Pa": 100000,
+        "outlet_pressure_Pa": 100031.77385096568,
+        "inlet_temperature_K": 298.15,
+        "outlet_temperature_K": 298.1500031238518,
+        "inlet_mass_flow_kg_s": 0.00257595265106999,
+        "outlet_mass_flow_kg_s": 0.00257595265106999,
+        "inlet_density_kg_m3": 997.0474354080965,
+        "inlet_enthalpy_J_kg": 104928.06751189622,
+        "inlet_viscosity_Pa_s": 0.000890082517572212,
+        "outlet_viscosity_Pa_s": 0.0008900824467717392,
+        "outlet_density_kg_m3": 997.0474489136902,
+        "outlet_enthalpy_J_kg": 104928.11000246654,
+        "inlet_vapor_fraction": 0,
+        "outlet_vapor_fraction": 0,
+        "shaft_power_W": 0.00010945375010666864,
+        "energy_stream_power_W": 0.00010945375010666864,
+        "analytical_shaft_power_W": 0.00010945375010666864,
+        "mass_balance_error_kg_s": 0,
+        "energy_balance_error_W": -5.28720836643487e-11,
+        "pump_power_relative_error": 0,
+        "save_reload_solve_checked": true,
+        "forced_liquid": true,
+        "saturation_pressure_Pa": 3173.5986575387105,
+        "initialization_s": 1.0411741,
+        "solve_s": 0.0666295,
+        "scope": "Actual pump load from native FCC permeability, geometrically scaled within low-Re scope. Julia alone calculates dilute phenol uptake. No DWSIM adsorption unit or experimental material calibration claimed."
+      },
+      "column_metrics": {
+        "max_mass_residual_kg": 1.4242079737769586e-15,
+        "normalized_mass_residual": 5.1675184476084336e-15,
+        "breakthrough_time_s": 1059954.6404684775,
+        "treated_volume_m3": 2.738478500785822,
+        "adsorbed_solute_at_breakthrough_kg": 0.13661449935609582,
+        "solid_utilization_at_breakthrough": 0.9935321066965216,
+        "adsorbent_mass_kg": 4.0,
+        "fluid_holdup_m3": 0.006,
+        "bulk_density_kg_m3": 400.0,
+        "equilibrium_feed_loading_kg_kg": 0.034375964912280704,
+        "sharp_front_capacity_time_s": 1066766.3848201844,
+        "dt_s": 266.6915962050461,
+        "cells": 640,
+        "steps": 8000,
+        "max_Newton_iterations": 7
+      }
+    },
+    {
+      "particle_diameter_m": 0.0023,
+      "native_case": "grid48",
+      "permeability_m2": 2.8940604946338634e-08,
+      "inputs": {
+        "length_m": 1.0,
+        "area_m2": 0.01,
+        "porosity": 0.6,
+        "particle_density_kg_m3": 1000.0,
+        "superficial_velocity_m_s": 0.0002583580840379615,
+        "inlet_concentration_kg_m3": 0.05,
+        "capacity_kg_kg": 0.04169,
+        "affinity_m3_kg": 94.0,
+        "axial_dispersion_m2_s": 0.0,
+        "breakthrough_fraction": 0.05,
+        "initial_concentration_kg_m3": 0.0,
+        "initial_loading_kg_kg": 0.0,
+        "linear_partition_m3_kg": null,
+        "equilibrium": false,
+        "ldf_s_inv": 7.482759924385633e-05,
+        "t_end_s": 2133532.769640369,
+        "cells": 640,
+        "dt_s": 266.6915962050461
+      },
+      "dwsim": {
+        "tool": "DWSIM",
+        "version": "10.2.15.0",
+        "timestamp_utc": "2026-11-10T00:33:45.989118+00:00",
+        "inputs": {
+          "Temperature_K": 298.15,
+          "Inlet_pressure_Pa": 100000,
+          "Outlet_pressure_Pa": 100007.94592975172,
+          "Mass_flow_kg_s": 0.00257595265106999,
+          "Pump_efficiency_fraction": 0.75,
+          "Scope": "Actual pump load from native FCC permeability, geometrically scaled within low-Re scope. Julia alone calculates dilute phenol uptake. No DWSIM adsorption unit or experimental material calibration claimed."
+        },
+        "property_package": "Steam Tables (IAPWS-IF97)",
+        "compounds": [
+          "Water"
+        ],
+        "inlet_pressure_Pa": 100000,
+        "outlet_pressure_Pa": 100007.94592975172,
+        "inlet_temperature_K": 298.15,
+        "outlet_temperature_K": 298.15000078120545,
+        "inlet_mass_flow_kg_s": 0.00257595265106999,
+        "outlet_mass_flow_kg_s": 0.00257595265106999,
+        "inlet_density_kg_m3": 997.0474354080965,
+        "inlet_enthalpy_J_kg": 104928.06751189622,
+        "inlet_viscosity_Pa_s": 0.000890082517572212,
+        "outlet_viscosity_Pa_s": 0.0008900824998665946,
+        "outlet_density_kg_m3": 997.0474387855436,
+        "outlet_enthalpy_J_kg": 104928.07813783771,
+        "inlet_vapor_fraction": 0,
+        "outlet_vapor_fraction": 0,
+        "shaft_power_W": 2.737193582071753e-05,
+        "energy_stream_power_W": 2.737193582071753e-05,
+        "analytical_shaft_power_W": 2.7371935820717528e-05,
+        "mass_balance_error_kg_s": 0,
+        "energy_balance_error_W": -1.3662536125911466e-11,
+        "pump_power_relative_error": 1.2378122655295576e-16,
+        "save_reload_solve_checked": true,
+        "forced_liquid": true,
+        "saturation_pressure_Pa": 3173.598213944303,
+        "initialization_s": 1.0722182,
+        "solve_s": 0.0670475,
+        "scope": "Actual pump load from native FCC permeability, geometrically scaled within low-Re scope. Julia alone calculates dilute phenol uptake. No DWSIM adsorption unit or experimental material calibration claimed."
+      },
+      "column_metrics": {
+        "max_mass_residual_kg": 1.2975731600306517e-15,
+        "normalized_mass_residual": 4.7080436039112166e-15,
+        "breakthrough_time_s": 1044184.177647456,
+        "treated_volume_m3": 2.6977342351975118,
+        "adsorbed_solute_at_breakthrough_kg": 0.13456549276773686,
+        "solid_utilization_at_breakthrough": 0.9786306588856198,
+        "adsorbent_mass_kg": 4.0,
+        "fluid_holdup_m3": 0.006,
+        "bulk_density_kg_m3": 400.0,
+        "equilibrium_feed_loading_kg_kg": 0.034375964912280704,
+        "sharp_front_capacity_time_s": 1066766.3848201844,
+        "dt_s": 266.6915962050461,
+        "cells": 640,
+        "steps": 8000,
+        "max_Newton_iterations": 8
+      }
+    }
+  ]
+}

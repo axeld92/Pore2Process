@@ -1,0 +1,217 @@
+{
+  "source_id": "Alhamed2009",
+  "doi": "10.1016/j.jhazmat.2009.05.002",
+  "pdf_sha256": "c0d9eb61560f643b5b890b1926f1b0f2bc279386dc6bd882cb640ae3f0061b22",
+  "material": "ZnCl2-activated date-stone carbon; separate from coconut-shell carbon",
+  "source_parameters": {
+    "capacity_kg_kg": 0.1115,
+    "affinity_m3_kg": 139.0,
+    "bulk_density_kg_m3": 740.0,
+    "porosity": 0.427,
+    "particle_density_kg_m3": 1291.4485165794067,
+    "temperature_K": 295.15,
+    "source_temperature_range_K": [
+      294.15,
+      296.15
+    ],
+    "molecular_diffusivity_m2_s": 1e-09,
+    "viscosity_Pa_s": 0.0008333333333333334,
+    "density_kg_m3": 1000.0
+  },
+  "figure_2": {
+    "location": "Figure 2, journal p765 / PDF p3",
+    "raster_name": "page3-image1-Im4.jpg",
+    "raster_dimensions": [
+      682,
+      493
+    ],
+    "raster_sha256": "06bade2a5a80af4f1230980d535d27cef752dc3dc9745750c44e610e1636281c",
+    "pixel_origin": "zero-based x rightward, y downward in unchanged embedded raster",
+    "axes": {
+      "x0_pixel": 74,
+      "x3000min_pixel": 663,
+      "y30_mg_g_pixel": 425,
+      "y50_mg_g_pixel": 9
+    },
+    "pixel_csv_sha256": "d79c29b0462262e5303be1ac68bace3dd878fce3afbdce691ce15ae4f15814dc",
+    "initial_concentration_kg_m3": 0.2,
+    "fluid_volume_m3": 0.00025,
+    "dry_mass_kg": 0.001,
+    "shaker_rpm": 200,
+    "selected_points": 24,
+    "calibration_diameters_m": [
+      0.0008,
+      0.0015
+    ],
+    "holdout_diameters_m": [
+      0.00045,
+      0.000225
+    ],
+    "reading_sensitivity_pixels": 2.0,
+    "reading_sensitivity_time_s": 611.2054329371816,
+    "reading_sensitivity_loading_kg_kg": 9.615384615384615e-05,
+    "reading_role": "chosen image-reading sensitivity, not experimental uncertainty",
+    "pointwise_measurement_uncertainty": null,
+    "sampling": "Section 2.2 reports 1 mL aliquots; complete sampling schedule unavailable.",
+    "unobserved": "Uptake below 30 mg/g and unresolved overlapping early markers."
+  },
+  "batch_table_3": [
+    {
+      "experiment": 1,
+      "diameter_mm": 0.225,
+      "inlet_mg_L": 200,
+      "dose_g": 1.0,
+      "fitted_qe_mg_g": 48.49,
+      "fitted_k2_g_mg_min": 0.02588,
+      "fitted_R2": 0.99995,
+      "fitted_MSE": 0.0163,
+      "fitted_initial_rate_mg_g_min": 60.85,
+      "solution_volume_L": 0.25,
+      "location": "Table 3, p765",
+      "role": "published batch fits, not raw observations",
+      "pointwise_uncertainty": null
+    },
+    {
+      "experiment": 2,
+      "diameter_mm": 0.45,
+      "inlet_mg_L": 200,
+      "dose_g": 1.0,
+      "fitted_qe_mg_g": 48.76,
+      "fitted_k2_g_mg_min": 0.00448,
+      "fitted_R2": 0.99999,
+      "fitted_MSE": 0.0045,
+      "fitted_initial_rate_mg_g_min": 10.65,
+      "solution_volume_L": 0.25,
+      "location": "Table 3, p765",
+      "role": "published batch fits, not raw observations",
+      "pointwise_uncertainty": null
+    },
+    {
+      "experiment": 3,
+      "diameter_mm": 0.45,
+      "inlet_mg_L": 400,
+      "dose_g": 1.0,
+      "fitted_qe_mg_g": 90.3,
+      "fitted_k2_g_mg_min": 0.00207,
+      "fitted_R2": 0.9998,
+      "fitted_MSE": 0.2004,
+      "fitted_initial_rate_mg_g_min": 16.88,
+      "solution_volume_L": 0.25,
+      "location": "Table 3, p765",
+      "role": "published batch fits, not raw observations",
+      "pointwise_uncertainty": null
+    },
+    {
+      "experiment": 4,
+      "diameter_mm": 0.8,
+      "inlet_mg_L": 200,
+      "dose_g": 1.0,
+      "fitted_qe_mg_g": 48.95,
+      "fitted_k2_g_mg_min": 0.00209,
+      "fitted_R2": 0.99987,
+      "fitted_MSE": 0.0406,
+      "fitted_initial_rate_mg_g_min": 5.01,
+      "solution_volume_L": 0.25,
+      "location": "Table 3, p765",
+      "role": "published batch fits, not raw observations",
+      "pointwise_uncertainty": null
+    },
+    {
+      "experiment": 5,
+      "diameter_mm": 1.5,
+      "inlet_mg_L": 200,
+      "dose_g": 1.0,
+      "fitted_qe_mg_g": 48.75,
+      "fitted_k2_g_mg_min": 0.00074,
+      "fitted_R2": 0.99997,
+      "fitted_MSE": 0.0085,
+      "fitted_initial_rate_mg_g_min": 1.76,
+      "solution_volume_L": 0.25,
+      "location": "Table 3, p765",
+      "role": "published batch fits, not raw observations",
+      "pointwise_uncertainty": null
+    },
+    {
+      "experiment": 6,
+      "diameter_mm": 1.5,
+      "inlet_mg_L": 400,
+      "dose_g": 1.0,
+      "fitted_qe_mg_g": 90.4,
+      "fitted_k2_g_mg_min": 0.00022,
+      "fitted_R2": 0.9987,
+      "fitted_MSE": 1.111,
+      "fitted_initial_rate_mg_g_min": 1.8,
+      "solution_volume_L": 0.25,
+      "location": "Table 3, p765",
+      "role": "published batch fits, not raw observations",
+      "pointwise_uncertainty": null
+    },
+    {
+      "experiment": 7,
+      "diameter_mm": 0.45,
+      "inlet_mg_L": 200,
+      "dose_g": 0.5,
+      "fitted_qe_mg_g": 85.4,
+      "fitted_k2_g_mg_min": 0.0008,
+      "fitted_R2": 0.99984,
+      "fitted_MSE": 0.135,
+      "fitted_initial_rate_mg_g_min": 5.83,
+      "solution_volume_L": 0.25,
+      "location": "Table 3, p765",
+      "role": "published batch fits, not raw observations",
+      "pointwise_uncertainty": null
+    }
+  ],
+  "figure_7": {
+    "location": "Figure 7, p768 / PDF p6",
+    "calibration_diameter_m": 0.0008,
+    "holdout_diameter_m": 0.00045,
+    "length_m": 0.1,
+    "flow_m3_s": 7.3e-07,
+    "feed_kg_m3": 0.15,
+    "area_m2": 9.503317777109123e-05,
+    "derived_dry_mass_kg": 0.007032455155060752,
+    "digitization": "manual centres of open experimental markers, not solid model lines",
+    "pixel_origin": "zero-based x rightward, y downward in original embedded Im9 JPEG",
+    "raster_dimensions": [
+      674,
+      532
+    ],
+    "raster_sha256": "09f8685d2898e06efbb530f2d19e1a5632a75931911d9988f5a460cbe10ef2c8",
+    "axes": {
+      "x0_pixel": 83,
+      "x400min_pixel": 606,
+      "y0_pixel": 471,
+      "y1_pixel": 9
+    },
+    "pixel_csv_sha256": "a0bdb92af70489fd05b5ce5ad2649c272db7a00da03319c5ae7638398d21af63",
+    "reading_sensitivity_pixels": 2.0,
+    "reading_sensitivity_time_s": 91.77820267686424,
+    "reading_sensitivity_fraction": 0.004329004329004329,
+    "reading_sensitivity_role": "chosen reading scenario; not experimental uncertainty",
+    "pointwise_uncertainty": null
+  },
+  "equilibrium_factors": {
+    "primary_capacity_multiplier": 1.0,
+    "primary_affinity_multiplier": 1.0,
+    "diagnostic_capacity_factor": "fit only to training Table 3 rows 4, 5, 6; not used silently in forward runs"
+  },
+  "inventory": {
+    "source_bulk_density_kg_m3": 740.0,
+    "derived_column_dry_mass_kg": 0.007032455155060752,
+    "mass_role": "density times bed geometry, not a per-run weighed mass",
+    "primary_active_fraction": 1.0,
+    "chosen_active_fraction_scenarios": [
+      0.5,
+      0.75
+    ],
+    "scenario_role": "unmeasured accessibility scenarios, not uncertainty bounds or fitted masses"
+  },
+  "protocol_sha256": "f61d7da1fa65d5596fcbbe72f3472667d73db44c0ba545c017496c106dab1351",
+  "unavailable": {
+    "pressure_drop_Pa": null,
+    "pointwise_measurement_uncertainty": null,
+    "experimental_3D_connected_geometry": null,
+    "pH": null
+  }
+}

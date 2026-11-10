@@ -24,6 +24,9 @@ support future chemistry; it does not replace either mandatory simulator.
 | TRT support update and biological-feed sensitivity | Complete: 24 revalidated support cases, 28 actual DWSIM recycle cases including seed validation; distributed Julia pressure/flux and conservative COD balance. At 12 LMH and Re=20 the widest support saves 11.20% of total pump shaft energy. Retention is a transfer scenario; sustainable flux remains unavailable. |
 | Local connected interface | Complete: actual Julia/DWSIM runs, support controls, native 3D inspection, labelled profiles, per-session snapshots/downloads, invalid recovery and preserved original capillary tab. Browser and downloaded-file checks pass. |
 | Higher-Re hydraulics, source audit and operating map | Complete: 16 stock D3Q27/TRT cases, 91 actual DWSIM solve/save/reload cases and a bounded critical-flux policy comparison. Native laminar-branch envelope is approximately Re=1000–2000; physical transition and sustainable operation are not established. |
+| Isothermal adsorption, first synthetic loop | Implemented and verified: 8 stock-TRT FCC bed cases, 7 scalar-TRT reference cases, conservative Julia breakthrough/dispersion scenarios and 4 actual DWSIM pump solves/reloads. Experimental column validation, resolved native bed mass transfer and a full adsorption-service flowsheet remain pending. |
+| Date-stone-carbon particle-size evidence | Supplied Alhamed PDF reviewed; 48 Figure 7 markers, seven batch fits and 18 column-fit rows retained. Ten real Julia calculations replay with passing numerical checks. The original Langmuir/LDF combination fails calibration and withheld-diameter prediction; its record is preserved. |
+| Finite-bath and film/particle alternative | Implemented: 24 further Figure 2 markers, shared batch transport fit and withheld smaller-size comparisons. Batch RMSE screens pass; fully transferred and one-anchor Figure 7 predictions fail. 51 new Julia assertions, 112 Python tests and 57 independently replayed cases pass numerical/software checks. Source equilibrium, physical inventory and fitted film factors remain separate. Next is a common column contact/flow-distribution audit. |
 
 The first connected technical acceptance criterion is met for the synthetic
 hydraulic demonstration. See [the results](connected_hydraulics.md) and
@@ -116,12 +119,27 @@ will require a selected application plus published kinetic/thermal inputs.
 No inaccessible raw dataset, specimen reconstruction or new laboratory
 measurement is a gate for these computational milestones.
 
-The filtration hydraulic example is **closed for now** and remains a regression
-benchmark. The active next example is **isothermal adsorption**, being developed
-separately. Its research question is how particle size changes usable treatment
-capacity and pumping energy at fixed adsorbent inventory and required outlet
-quality. Its implementation and validation will be published in a separate
-update after that work is ready.
+The user has now selected **isothermal adsorption** as the next example.
+[The first synthetic release](adsorption_example.md) connects measured FCC
+permeability to a Julia phenol-uptake model and actual DWSIM pump requirements.
+It preserves inventory and flow across particle sizes and records source
+conflicts instead of fitting them away. Forty-six new Julia assertions, the
+902 existing package assertions and 86 Python tests pass. This establishes the
+software/numerical starting point, not a validated industrial carbon bed.
+
+The article-based Alhamed (2009) comparison now includes a
+[batch-qualified particle component](film_particle_adsorption.md) and a
+[common column contact/inventory audit](column_contact_audit.md). Its date-stone
+carbon remains separate from the coconut-shell starting parameters. Numerical
+checks pass but frozen-particle column transfer still fails both diameters;
+neither fitted breakthrough dispersion nor a relabelled bulk density rescues
+that qualification. Preserve these failed comparisons rather than add per-curve
+fits. The next executable native transport milestone is a synthetic packed-bed
+inert-tracer RTD benchmark using stock OpenLB TRT, followed by verified contact
+translation through saved data. It will not reconstruct this experimental bed.
+Full bed-service/switching integration in DWSIM follows a qualified column model.
+Reaction and thermal extensions remain deferred; the optional filtration
+refinement is not the active next task.
 
 Implementation choices for that milestone:
 

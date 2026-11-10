@@ -1,0 +1,218 @@
+{
+  "status": "literature-informed starting parameters; experimental column validation not passed or claimed",
+  "sources": [
+    {
+      "id": "Meneghini2017",
+      "type": "author undergraduate dissertation",
+      "title": "Simula\u00e7\u00e3o num\u00e9rica e ensaios experimentais da remo\u00e7\u00e3o de fenol em coluna de leito fixo utilizando carv\u00e3o ativado como adsorvente",
+      "material": "Carbomafra coconut-shell activated carbon",
+      "source_url": "https://rd.uffs.edu.br/handle/prefix/1681",
+      "pdf_url": "https://rd.uffs.edu.br/bitstream/prefix/1681/1/MENEGHINI.pdf",
+      "sha256": "84a6d3c1f196ab0a89e2e83012051fa31164ee744de20f577056227c92296993",
+      "local_path": "literature/inbox/Meneghini2017Phenol/MENEGHINI.pdf",
+      "available_locally": true,
+      "visual_audit_pages": [
+        23,
+        25,
+        26
+      ]
+    },
+    {
+      "id": "Meneghini2021",
+      "doi": "10.1590/S1413-415220180046",
+      "relationship": "Related journal article; not used as independent validation of the author-source parameters.",
+      "access": "publisher HTML reviewed; PDF not retrieved",
+      "source_url": "https://www.scielo.br/j/esa/a/k97n87Dwkz5RLKMKCW3Rd3M/?lang=pt"
+    },
+    {
+      "id": "Alhamed2009",
+      "doi": "10.1016/j.jhazmat.2009.05.002",
+      "material": "date-stone activated carbon",
+      "access": "publisher abstract only",
+      "role": "Candidate particle-size validation series; no numbers borrowed into coconut-shell model."
+    },
+    {
+      "id": "Iheanacho2021",
+      "doi": "10.1016/j.sajce.2021.02.003",
+      "material": "corn-cob activated carbon",
+      "access": "publisher abstract only",
+      "role": "Alternative particle-size series; separate specimen, not pooled."
+    }
+  ],
+  "measurements_and_fitted_parameters": [
+    {
+      "name": "temperature",
+      "value": 25,
+      "unit": "degC",
+      "SI_value": 298.15,
+      "SI_unit": "K",
+      "source": "Meneghini2017",
+      "location": "Table 2, p23; Table 4, p26",
+      "role": "reported",
+      "pointwise_uncertainty": null
+    },
+    {
+      "name": "Langmuir_capacity",
+      "value": 41.69,
+      "unit": "mg/g",
+      "SI_value": 0.04169,
+      "SI_unit": "kg/kg dry solid",
+      "source": "Meneghini2017",
+      "location": "Table 2, p23",
+      "role": "reported fitted batch parameter",
+      "pointwise_uncertainty": null
+    },
+    {
+      "name": "Langmuir_affinity",
+      "value": 0.094,
+      "unit": "L/mg",
+      "SI_value": 94.0,
+      "SI_unit": "m3/kg solute",
+      "source": "Meneghini2017",
+      "location": "Table 2, p23",
+      "role": "reported fitted batch parameter",
+      "pointwise_uncertainty": null
+    },
+    {
+      "name": "effective_intraparticle_diffusivity_at_50mg_L",
+      "value": 6.5973e-08,
+      "unit": "cm2/s",
+      "SI_value": 6.5973e-12,
+      "SI_unit": "m2/s",
+      "source": "Meneghini2017",
+      "location": "Table 4, p25",
+      "role": "reported fitted parameter; not independent prediction",
+      "pointwise_uncertainty": null
+    },
+    {
+      "name": "molecular_diffusivity",
+      "value": 9.1e-06,
+      "unit": "cm2/s",
+      "SI_value": 9.1e-10,
+      "SI_unit": "m2/s",
+      "source": "Meneghini2017",
+      "location": "Table 4, p25",
+      "role": "reported model input",
+      "pointwise_uncertainty": null
+    },
+    {
+      "name": "particle_diameter",
+      "value": 0.23,
+      "unit": "cm",
+      "SI_value": 0.0023,
+      "SI_unit": "m",
+      "source": "Meneghini2017",
+      "location": "Table 4 continuation, p26",
+      "role": "reported",
+      "pointwise_uncertainty": null
+    },
+    {
+      "name": "bed_length",
+      "value": 10.0,
+      "unit": "cm",
+      "SI_value": 0.1,
+      "SI_unit": "m",
+      "source": "Meneghini2017",
+      "location": "Table 4 continuation, p26",
+      "role": "reported",
+      "pointwise_uncertainty": null
+    },
+    {
+      "name": "column_diameter",
+      "value": 2.04,
+      "unit": "cm",
+      "SI_value": 0.0204,
+      "SI_unit": "m",
+      "source": "Meneghini2017",
+      "location": "Table 4 continuation, p26",
+      "role": "reported",
+      "pointwise_uncertainty": null
+    },
+    {
+      "name": "bed_porosity",
+      "value": 0.44,
+      "unit": "1",
+      "SI_value": 0.44,
+      "SI_unit": "1",
+      "source": "Meneghini2017",
+      "location": "Table 4 continuation, p26",
+      "role": "reported",
+      "pointwise_uncertainty": null
+    },
+    {
+      "name": "dry_adsorbent_mass",
+      "value": 20.0,
+      "unit": "g",
+      "SI_value": 0.02,
+      "SI_unit": "kg",
+      "source": "Meneghini2017",
+      "location": "Table 4, p25",
+      "role": "reported",
+      "pointwise_uncertainty": null
+    },
+    {
+      "name": "density_as_printed",
+      "value": 574.33,
+      "unit": "g/L",
+      "SI_value": 574.33,
+      "SI_unit": "kg/m3",
+      "source": "Meneghini2017",
+      "location": "Table 4, p25",
+      "role": "density interpretation unresolved",
+      "pointwise_uncertainty": null
+    },
+    {
+      "name": "column_flow",
+      "value": 20.0,
+      "unit": "mL/min",
+      "SI_value": 3.3333333333333335e-07,
+      "SI_unit": "m3/s",
+      "source": "Meneghini2017",
+      "location": "Table 4, p25",
+      "role": "reported",
+      "pointwise_uncertainty": null
+    }
+  ],
+  "source_consistency": {
+    "bed_volume_m3": 3.268512996794821e-05,
+    "bulk_density_from_mass_and_dimensions_kg_m3": 611.8990507185518,
+    "particle_density_if_mass_dimensions_porosity_are_used_kg_m3": 1092.676876283128,
+    "mass_if_printed_density_is_particle_density_kg": 0.01051234838891535,
+    "printed_density_not_used_as_an_unambiguous_particle_density": true
+  },
+  "conflicts": [
+    "Table 2 affinity is L/mg; Table 4 prints L/g for a similar number. Use only the unambiguous Table 2 units.",
+    "Journal Table 2 has 44.15 mg/g and 0.07 L/mg, differing from author Table 2 and journal Table 5; do not merge fits.",
+    "Printed density, mass, porosity and dimensions cannot all satisfy one particle-envelope inventory definition.",
+    "Figure 7 early effluent and error bars require digitization and an initial/dead-volume audit before a clean-bed holdout comparison.",
+    "Source radial-diffusion model is more detailed than the initial intraparticle LDF approximation."
+  ],
+  "uncertainty_status": "Figure 7 has visible error bars; numerical intervals and their definition have not yet been digitized/audited. The related journal methodology reports duplicate tests and 95% confidence; no pointwise standard deviation is inferred.",
+  "unavailable": {
+    "experimental_pressure_drop": null,
+    "pointwise_measurement_uncertainty": null,
+    "matched_particle_size_effect_for_this_carbon": null,
+    "validated_bed_dispersion_m2_s": null
+  },
+  "scenario_assumptions": {
+    "synthetic_geometry": "periodic FCC sphere bed, porosity 0.6; not reconstruction of carbon granules",
+    "particle_envelope_dry_density_kg_m3": 1000.0,
+    "bed_length_m": 1.0,
+    "bed_area_m2": 0.01,
+    "breakthrough_Cout_Cin": 0.05,
+    "particle_diameters_m": [
+      0.000575,
+      0.00115,
+      0.0023
+    ],
+    "axial_dispersion_m2_s": 0.0,
+    "film_resistance": "not separately resolved in this initial LDF model",
+    "dispersion_sensitivity_factors": [
+      0.1,
+      1.0
+    ],
+    "dispersion_sensitivity_definition": "Dax = chosen factor * interstitial velocity * particle diameter; scenario only, not fitted uncertainty.",
+    "kinetic_transfer": "60 Deff/dp^2 assumes spherical intraparticle control and unchanged material Deff.",
+    "DWSIM_role": "Actual water-carrier pump; adsorption, solute inventory and transient capacity remain external Julia calculations."
+  }
+}

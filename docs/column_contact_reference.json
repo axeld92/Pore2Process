@@ -1,0 +1,1358 @@
+{
+  "run_id": "20261110T092735Z-39dae4b2",
+  "physical_status": {
+    "batch_component_preserved": true,
+    "common_column_comparison_passed": false,
+    "experimental_pressure_validation": false,
+    "process_energy_recommendation_supported": false
+  },
+  "numerical_refinement_passed": true,
+  "selection": {
+    "selected_sections": 1,
+    "fitted_curve": "Figure 7, 0.8 mm only",
+    "holdout_used": false,
+    "range": [
+      1,
+      64
+    ],
+    "boundary_selection": true,
+    "fine_candidate_RMSE": 0.18211587334497464,
+    "evaluations": [
+      {
+        "sections": 1,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.1820501232139814,
+        "normalized_mass_residual": 1.6689342421717255e-13
+      },
+      {
+        "sections": 2,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.1824265811471175,
+        "normalized_mass_residual": 1.7228418083328425e-13
+      },
+      {
+        "sections": 3,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.1865483152409388,
+        "normalized_mass_residual": 1.7195413450984885e-13
+      },
+      {
+        "sections": 4,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.18977017403224047,
+        "normalized_mass_residual": 1.6997385656923637e-13
+      },
+      {
+        "sections": 5,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.19208929626233254,
+        "normalized_mass_residual": 1.6964381024580096e-13
+      },
+      {
+        "sections": 6,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.19380742524968916,
+        "normalized_mass_residual": 1.697538256869461e-13
+      },
+      {
+        "sections": 7,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.1951250698345899,
+        "normalized_mass_residual": 1.6722347054060796e-13
+      },
+      {
+        "sections": 8,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.19616307230845356,
+        "normalized_mass_residual": 1.72064149950994e-13
+      },
+      {
+        "sections": 9,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.19700095377262003,
+        "normalized_mass_residual": 1.7195413450984885e-13
+      },
+      {
+        "sections": 10,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.1976908195859023,
+        "normalized_mass_residual": 1.706339492161072e-13
+      },
+      {
+        "sections": 11,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.19826834514598177,
+        "normalized_mass_residual": 1.723941962744294e-13
+      },
+      {
+        "sections": 12,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.19875873547313969,
+        "normalized_mass_residual": 1.7041391833381692e-13
+      },
+      {
+        "sections": 13,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.19918021922381995,
+        "normalized_mass_residual": 1.715140727452683e-13
+      },
+      {
+        "sections": 14,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.19954630017451833,
+        "normalized_mass_residual": 1.7371438156817103e-13
+      },
+      {
+        "sections": 15,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.19986718771484424,
+        "normalized_mass_residual": 1.690937330400753e-13
+      },
+      {
+        "sections": 16,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20015073717465007,
+        "normalized_mass_residual": 1.6997385656923637e-13
+      },
+      {
+        "sections": 17,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20040308886089456,
+        "normalized_mass_residual": 1.7140405730412315e-13
+      },
+      {
+        "sections": 18,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20062911055165134,
+        "normalized_mass_residual": 1.739344124504613e-13
+      },
+      {
+        "sections": 19,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20083270988345547,
+        "normalized_mass_residual": 1.6843364039320447e-13
+      },
+      {
+        "sections": 20,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20101705938065573,
+        "normalized_mass_residual": 1.6953379480465584e-13
+      },
+      {
+        "sections": 21,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.2011847611730055,
+        "normalized_mass_residual": 1.6986384112809125e-13
+      },
+      {
+        "sections": 22,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20133796942207424,
+        "normalized_mass_residual": 1.7019388745152666e-13
+      },
+      {
+        "sections": 23,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20147848257635267,
+        "normalized_mass_residual": 1.7118402642183288e-13
+      },
+      {
+        "sections": 24,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20160781376887665,
+        "normalized_mass_residual": 1.6656337789373714e-13
+      },
+      {
+        "sections": 25,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.2017272451591653,
+        "normalized_mass_residual": 1.7052393377496207e-13
+      },
+      {
+        "sections": 26,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20183787032839196,
+        "normalized_mass_residual": 1.671134550994628e-13
+      },
+      {
+        "sections": 27,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20194062767924822,
+        "normalized_mass_residual": 1.7162408818641344e-13
+      },
+      {
+        "sections": 28,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20203632698829693,
+        "normalized_mass_residual": 1.6931376392236555e-13
+      },
+      {
+        "sections": 29,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20212567069253093,
+        "normalized_mass_residual": 1.721741653921391e-13
+      },
+      {
+        "sections": 30,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20220927108825587,
+        "normalized_mass_residual": 1.7019388745152666e-13
+      },
+      {
+        "sections": 31,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20228766432875,
+        "normalized_mass_residual": 1.673334859817531e-13
+      },
+      {
+        "sections": 32,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20236132189427616,
+        "normalized_mass_residual": 1.7074396465725233e-13
+      },
+      {
+        "sections": 33,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20243066005099933,
+        "normalized_mass_residual": 1.7074396465725233e-13
+      },
+      {
+        "sections": 34,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20249604769813745,
+        "normalized_mass_residual": 1.715140727452683e-13
+      },
+      {
+        "sections": 35,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20255781291471664,
+        "normalized_mass_residual": 1.697538256869461e-13
+      },
+      {
+        "sections": 36,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20261624845038875,
+        "normalized_mass_residual": 1.7085398009839748e-13
+      },
+      {
+        "sections": 37,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.2026716163537053,
+        "normalized_mass_residual": 1.703039028926718e-13
+      },
+      {
+        "sections": 38,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20272415189177498,
+        "normalized_mass_residual": 1.7250421171557452e-13
+      },
+      {
+        "sections": 39,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.2027740668846935,
+        "normalized_mass_residual": 1.7140405730412315e-13
+      },
+      {
+        "sections": 40,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20282155255409753,
+        "normalized_mass_residual": 1.6931376392236555e-13
+      },
+      {
+        "sections": 41,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20286678196654773,
+        "normalized_mass_residual": 1.7162408818641344e-13
+      },
+      {
+        "sections": 42,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20290991213724424,
+        "normalized_mass_residual": 1.7085398009839748e-13
+      },
+      {
+        "sections": 43,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20295108584805435,
+        "normalized_mass_residual": 1.694237793635107e-13
+      },
+      {
+        "sections": 44,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20299043322392538,
+        "normalized_mass_residual": 1.703039028926718e-13
+      },
+      {
+        "sections": 45,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20302807310448037,
+        "normalized_mass_residual": 1.706339492161072e-13
+      },
+      {
+        "sections": 46,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.2030641142410463,
+        "normalized_mass_residual": 1.703039028926718e-13
+      },
+      {
+        "sections": 47,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20309865634455904,
+        "normalized_mass_residual": 1.6997385656923637e-13
+      },
+      {
+        "sections": 48,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20313179100553722,
+        "normalized_mass_residual": 1.7228418083328425e-13
+      },
+      {
+        "sections": 49,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20316360250401735,
+        "normalized_mass_residual": 1.7228418083328425e-13
+      },
+      {
+        "sections": 50,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20319416852443234,
+        "normalized_mass_residual": 1.6920374848122043e-13
+      },
+      {
+        "sections": 51,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20322356078826675,
+        "normalized_mass_residual": 1.7316430436244534e-13
+      },
+      {
+        "sections": 52,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20325184561527018,
+        "normalized_mass_residual": 1.7019388745152666e-13
+      },
+      {
+        "sections": 53,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.2032790844224686,
+        "normalized_mass_residual": 1.7107401098068774e-13
+      },
+      {
+        "sections": 54,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.2033053341688873,
+        "normalized_mass_residual": 1.7195413450984885e-13
+      },
+      {
+        "sections": 55,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20333064775273013,
+        "normalized_mass_residual": 1.7074396465725233e-13
+      },
+      {
+        "sections": 56,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20335507436684663,
+        "normalized_mass_residual": 1.690937330400753e-13
+      },
+      {
+        "sections": 57,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20337865981752387,
+        "normalized_mass_residual": 1.718441190687037e-13
+      },
+      {
+        "sections": 58,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20340144681091452,
+        "normalized_mass_residual": 1.7283425803900993e-13
+      },
+      {
+        "sections": 59,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20342347521089083,
+        "normalized_mass_residual": 1.7349435068588077e-13
+      },
+      {
+        "sections": 60,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20344478227159296,
+        "normalized_mass_residual": 1.703039028926718e-13
+      },
+      {
+        "sections": 61,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20346540284749762,
+        "normalized_mass_residual": 1.6898371759893014e-13
+      },
+      {
+        "sections": 62,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20348536958355318,
+        "normalized_mass_residual": 1.694237793635107e-13
+      },
+      {
+        "sections": 63,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.20350471308748783,
+        "normalized_mass_residual": 1.6777354774633365e-13
+      },
+      {
+        "sections": 64,
+        "radial_cells": 16,
+        "dt_s": 2.0,
+        "RMSE": 0.2035234620862674,
+        "normalized_mass_residual": 1.694237793635107e-13
+      },
+      {
+        "sections": 1,
+        "radial_cells": 32,
+        "dt_s": 0.5,
+        "RMSE": 0.18211587334497464,
+        "normalized_mass_residual": 4.557939726642392e-13
+      },
+      {
+        "sections": 2,
+        "radial_cells": 32,
+        "dt_s": 0.5,
+        "RMSE": 0.18260457316735715,
+        "normalized_mass_residual": 3.953954954755674e-13
+      }
+    ],
+    "changed_coarse_selection": false,
+    "particle_film_equilibrium_inventory_fitted": false
+  },
+  "refinement": {
+    "calibration": {
+      "radial": {
+        "t05_relative_change": 0.0006545393116177411,
+        "t50_relative_change": 0.0001376755973039323,
+        "maximum_fraction_change": 0.0006355805420457661,
+        "time_window_s": [
+          0.0,
+          18000.0
+        ],
+        "passed": true
+      },
+      "time": {
+        "t05_relative_change": 0.08911810708395385,
+        "t50_relative_change": 1.6597876565160874e-05,
+        "maximum_fraction_change": 0.0068662300180862695,
+        "time_window_s": [
+          0.0,
+          18000.0
+        ],
+        "passed": false
+      }
+    },
+    "holdout": {
+      "radial": {
+        "t05_relative_change": 0.0008447197710297338,
+        "t50_relative_change": 3.689096898296107e-05,
+        "maximum_fraction_change": 0.0002371474986724113,
+        "time_window_s": [
+          0.0,
+          18000.0
+        ],
+        "passed": true
+      },
+      "time": {
+        "t05_relative_change": 0.11259465798887558,
+        "t50_relative_change": 1.0957853736615064e-05,
+        "maximum_fraction_change": 0.006042752490246726,
+        "time_window_s": [
+          0.0,
+          18000.0
+        ],
+        "passed": false
+      }
+    }
+  },
+  "qualified_refinement": {
+    "calibration": {
+      "late_radial": {
+        "t50_relative_change": 0.0001376755973039323,
+        "maximum_fraction_change": 0.0006355805420457661,
+        "time_window_s": [
+          5.0,
+          18000.0
+        ],
+        "passed": true
+      },
+      "late_time": {
+        "t50_relative_change": 1.6597876565160874e-05,
+        "maximum_fraction_change": 0.0031175790539327473,
+        "time_window_s": [
+          5.0,
+          18000.0
+        ],
+        "passed": true
+      },
+      "early_radial": {
+        "t05_relative_change": 0.00014121899543129146,
+        "maximum_fraction_change": 0.00022609694081521248,
+        "time_window_s": [
+          0.0,
+          4.999999999999671
+        ],
+        "passed": true
+      },
+      "early_time": {
+        "t05_relative_change": 0.0003171536029320521,
+        "maximum_fraction_change": 3.305029629190048e-05,
+        "time_window_s": [
+          0.0,
+          4.999999999999671
+        ],
+        "passed": true
+      }
+    },
+    "holdout": {
+      "late_radial": {
+        "t50_relative_change": 3.689096898296107e-05,
+        "maximum_fraction_change": 0.0002298816647179856,
+        "time_window_s": [
+          5.0,
+          18000.0
+        ],
+        "passed": true
+      },
+      "late_time": {
+        "t50_relative_change": 1.0957853736615064e-05,
+        "maximum_fraction_change": 0.0005419537855064216,
+        "time_window_s": [
+          5.0,
+          18000.0
+        ],
+        "passed": true
+      },
+      "early_radial": {
+        "t05_relative_change": 0.00026734630817082383,
+        "maximum_fraction_change": 8.322044422049794e-05,
+        "time_window_s": [
+          0.0,
+          4.999999999999671
+        ],
+        "passed": true
+      },
+      "early_time": {
+        "t05_relative_change": 0.0006101070623337757,
+        "maximum_fraction_change": 3.3021350101305566e-05,
+        "time_window_s": [
+          0.0,
+          4.999999999999671
+        ],
+        "passed": true
+      }
+    }
+  },
+  "qualified_t05": {
+    "calibration": {
+      "observed_interpolated_s": 101.5678776290631,
+      "predicted_s": 0.3059983550110253,
+      "reading_sensitivity_s": [
+        21.720841300191196,
+        205.5831739961759
+      ],
+      "relative_error": 0.99698725264174,
+      "observed_crossing_resolved": true
+    },
+    "holdout": {
+      "observed_interpolated_s": 1412.2370936902485,
+      "predicted_s": 0.34005394476845086,
+      "reading_sensitivity_s": [
+        1297.514340344168,
+        1526.959847036329
+      ],
+      "relative_error": 0.9997592090263825,
+      "observed_crossing_resolved": true
+    }
+  },
+  "audit": {
+    "source": {
+      "doi": "10.1016/j.jhazmat.2009.05.002",
+      "pdf_sha256": "c0d9eb61560f643b5b890b1926f1b0f2bc279386dc6bd882cb640ae3f0061b22",
+      "locations": [
+        "PDF p2 / journal p764: Tables 1,2 and Section 2.3",
+        "PDF p5 / journal p767: Table 5",
+        "PDF p6 / journal p768: Figure 7"
+      ]
+    },
+    "printed_bulk_density_kg_m3": 740.0,
+    "printed_bed_voidage": 0.427,
+    "derived_particle_envelope_density_kg_m3": 1291.4485165794067,
+    "derived_bed_mass_kg": 0.007032455155060752,
+    "density_interpretation": "Take the printed bulk label literally as dry mass per bed volume; transfer to both size fractions is an assumption.",
+    "density_method": null,
+    "per_column_weighed_mass_kg": null,
+    "per_fraction_voidage": null,
+    "total_pore_volume_m3_kg": 0.000456,
+    "implied_skeletal_density_if_all_conventions_compatible_kg_m3": 3141.4501613177117,
+    "skeletal_diagnostic_role": "conditional consistency diagnostic; pore-volume and density measurement bases are not documented sufficiently to prove inconsistency",
+    "alternative_label_diagnostic": {
+      "if_740_were_particle_density_bulk_kg_m3": 424.02,
+      "if_740_were_particle_density_bed_mass_kg": 0.00402959680384981,
+      "forward_use": false,
+      "reason": "Contradicts printed bulk label and changes the batch particle density; requires requalification, not a silent inventory correction."
+    },
+    "geometry": {
+      "length_m": 0.1,
+      "diameter_m": 0.011,
+      "area_m2": 9.503317777109123e-05,
+      "volume_m3": 9.503317777109125e-06,
+      "flow_m3_s": 7.3e-07,
+      "superficial_velocity_m_s": 0.0076815278318732964,
+      "interstitial_velocity_m_s": 0.017989526538344958,
+      "empty_bed_contact_time_s": 13.018243530286473,
+      "void_residence_time_s": 5.5587899874323226,
+      "diameter_to_particle_ratio": {
+        "calibration": 13.749999999999998,
+        "holdout": 24.444444444444443
+      }
+    },
+    "inlet_section": {
+      "source": "Section 2.3: 5 cm top glass beads, glass-wool plugs and bottom mesh; downflow",
+      "bead_section_length_m": 0.05,
+      "bead_voidage": null,
+      "liquid_residence_upper_bound_s": 6.509121765143236,
+      "bound_role": "geometric upper bound with bead section entirely liquid; excludes unreported tubing/plugs",
+      "full_50cm_tube_liquid_upper_bound_s": 65.09121765143234,
+      "tubing_holdup_m3": null,
+      "tracer_RTD": null
+    },
+    "equilibrium": {
+      "source_qmax_kg_kg": 0.1115,
+      "source_b_m3_kg": 139.0,
+      "loading_at_feed_kg_kg": 0.10639702517162472,
+      "full_solid_inventory_kg": 0.0007482323081513209,
+      "full_liquid_inventory_kg": 6.086875036238393e-07,
+      "full_equilibrium_inventory_kg": 0.0007488409956549447,
+      "capacity_area_time_s": 6838.730553926436,
+      "role": "asymptotic mass-balance target, not an experimental saturation observation"
+    },
+    "observed_windows": {
+      "calibration": {
+        "window_end_s": 16841.300191204587,
+        "last_fraction": 0.9242424242424242,
+        "finite_window_retained_kg": 0.000432442204067443,
+        "retained_loading_if_printed_inventory_kg_kg": 0.06149235146650675,
+        "fraction_of_full_equilibrium_inventory": 0.5774820109697977,
+        "assumed_tail_retention_required_kg": 0.0003163987915875017,
+        "minimum_additional_monotone_tail_s": 38141.224191370056,
+        "reading_sensitivity_retained_kg": [
+          0.0004147627573191626,
+          0.0004503337389188249
+        ],
+        "role": "trapezoid reading audit, not saturation uptake or a measured bed mass"
+      },
+      "holdout": {
+        "window_end_s": 14455.066921606118,
+        "last_fraction": 0.9393939393939394,
+        "finite_window_retained_kg": 0.000473777631546274,
+        "retained_loading_if_printed_inventory_kg_kg": 0.0673701603636008,
+        "fraction_of_full_equilibrium_inventory": 0.6326812157658419,
+        "assumed_tail_retention_required_kg": 0.00027506336410867076,
+        "minimum_additional_monotone_tail_s": 41447.90418075865,
+        "reading_sensitivity_retained_kg": [
+          0.0004573870278860719,
+          0.0004902117404583943
+        ],
+        "role": "trapezoid reading audit, not saturation uptake or a measured bed mass"
+      }
+    },
+    "paper_dispersion": [
+      {
+        "diameter_mm": 0.8,
+        "fitted_DL_cm2_min": 1601,
+        "reported_Pe": 0.674,
+        "derived_Pe": 0.6741858790135523,
+        "role": "fitted breakthrough-shape descriptors; not independently measured fluid dispersion",
+        "used_as_model_input": false
+      },
+      {
+        "diameter_mm": 0.45,
+        "fitted_DL_cm2_min": 171,
+        "reported_Pe": 6.309,
+        "derived_Pe": 6.31211457485788,
+        "role": "fitted breakthrough-shape descriptors; not independently measured fluid dispersion",
+        "used_as_model_input": false
+      }
+    ],
+    "prior_batch_study": "results/adsorption/film_particle/runs/20261110T083144Z-e33389b9/summary.json",
+    "prior_batch_source_sha256": {
+      "adsorption/film_particle/metrics.py": "7532dff5f9160bb9159dcc564ebc0b611f00720f1f79704d86b5943746e1dbd1",
+      "adsorption/film_particle/run.py": "3d6dc31253c37fcc5a4acd649a66ca76cd59ce6116a08addd5efe01bc5da00ab",
+      "adsorption/film_particle/plot.py": "dc9495f580c508ec01479189774f95a93f75cfab127282c732670fc241f60eca",
+      "adsorption/film_particle/check.py": "435dc28a148bd2100b62f6ab9854642c355a04be1565493f229d0461327d0895",
+      "adsorption/film_particle/bridge.py": "254aa9b857f58190b755ea650aa9d564399e0c74998947a2eb51674dc7334b6b",
+      "adsorption/film_particle/__init__.py": "a7491f9dbf7c4922694574266422b040e264a047a15327009f4479e22afb4dd2",
+      "adsorption/film_particle/cases.py": "6c242d775714f94fa3f2d3782707a5939e8260c07cd8e8dc4906fd3dc882ee08",
+      "adsorption/film_particle/fitting.py": "fc367286d858a225b406faf4e9cace5d5e39d8ff4e202c2bcaeb3a5ecdf71268",
+      "adsorption/film_particle/data.py": "d8afa62efcf2352732954cad81daae91b3875c66f0c0048cf43613648b6e09a3",
+      "julia/adsorption/FilmParticle.jl": "5764d5d30e103e60694b76530394cc122b42f48657cebbfd07791c1f72b516e6",
+      "julia/adsorption/test_film_particle.jl": "90330d7b401668ef636d202c931131156b2a70af62c1ba40ac95a60af0440613",
+      "literature/alhamed2009_fig2_pixels.csv": "d79c29b0462262e5303be1ac68bace3dd878fce3afbdce691ce15ae4f15814dc",
+      "literature/alhamed2009_film_particle_protocol.md": "f61d7da1fa65d5596fcbbe72f3472667d73db44c0ba545c017496c106dab1351",
+      "adsorption/alhamed/source.py": "0e3067092808c11aa27968b3f4f459a7a32cfaf69d750f9e2897c553cef2130f",
+      "adsorption/alhamed/study.py": "d79de4cadfc70a51667c182ec1b5ff3bc084df408cf7d3631c6d9c07924943dc",
+      "literature/alhamed2009_fig7_pixels.csv": "a0bdb92af70489fd05b5ce5ad2649c272db7a00da03319c5ae7638398d21af63",
+      "src/pore2process_demo/bridge.py": "1daf257b23659f514e1c9640c9a8c7bb3120526ad917a72941d43a62915e3d22",
+      "uv.lock": "597eb4f6ed765f5144b2cb88c822242d9da9107cf9bcd0710e973e5a74969b67",
+      "julia/Project.toml": "7ca5c4f8d603b196334e900593b48ba6b38852fb24c2f20efff62bae80187989",
+      "julia/Manifest.toml": "c9685af7a0a71855ef210a7699134be2f2df9e3173f8494ff18f2db157d01a36"
+    },
+    "batch_diffusivity_m2_s": 1.846035489738998e-12,
+    "batch_film_ref_m_s": 7.732246026461306e-05,
+    "applied_previous_column_film_multiplier": false,
+    "protocol_sha256": "9bf6dcb1c945f5a68bce633e6c6840a951aa887819d4abb506cea6ab1f368f10",
+    "missing": [
+      "weighed mass and voidage for each packed fraction",
+      "inert tracer RTD",
+      "unobserved breakthrough tails",
+      "experimental pointwise uncertainty",
+      "column pressure loss"
+    ]
+  },
+  "maximum_normalized_mass_residual": 1.613196487495289e-11,
+  "maximum_normalized_interface_flux_mismatch": 2.0089415167167907e-13,
+  "cases": [
+    {
+      "id": "selected_calibration",
+      "inputs": {
+        "length_m": 0.1,
+        "area_m2": 9.503317777109123e-05,
+        "porosity": 0.427,
+        "superficial_velocity_m_s": 0.0076815278318732964,
+        "inlet_concentration_kg_m3": 0.15,
+        "particle_diameter_m": 0.0008,
+        "particle_density_kg_m3": 1291.4485165794067,
+        "capacity_kg_kg": 0.1115,
+        "affinity_m3_kg": 139.0,
+        "diffusivity_m2_s": 1.846035489738998e-12,
+        "film_m_s": 4.540819586217862e-05,
+        "radial_cells": 32,
+        "t_end_s": 18000.0,
+        "dt_s": 0.5,
+        "initial_concentration_kg_m3": 0.0,
+        "initial_loading_kg_kg": 0.0,
+        "linear_partition_m3_kg": null,
+        "sections": 1
+      },
+      "metrics": {
+        "RMSE": 0.18211587334497464,
+        "maximum_absolute_fraction_error": 0.30218310906242185,
+        "numerical_normalized_mass_residual": 4.557939726642392e-13,
+        "t05": {
+          "observed_interpolated_s": 101.5678776290631,
+          "predicted_s": 0.3659542467738616,
+          "reading_sensitivity_s": [
+            21.720841300191196,
+            205.5831739961759
+          ],
+          "relative_error": 0.9963969489634276,
+          "observed_crossing_resolved": true
+        },
+        "t50": {
+          "observed_interpolated_s": 1844.7418738049712,
+          "predicted_s": 5249.687464876478,
+          "reading_sensitivity_s": [
+            1725.4302103250475,
+            1964.0535372848947
+          ],
+          "relative_error": 1.8457571974817557,
+          "observed_crossing_resolved": true
+        },
+        "RMSE_screen_passed": false,
+        "t50_screen_passed": false,
+        "t05_screen_passed": false
+      },
+      "kind": "selected",
+      "series": "calibration",
+      "result_scalars": {
+        "physical_adsorbent_mass_kg": 0.007032455155060752,
+        "active_adsorbent_mass_kg": 0.007032455155060752,
+        "normalized_mass_residual": 4.557939726642392e-13,
+        "max_mass_residual_kg": 8.98369920121489e-16,
+        "max_interface_flux_mismatch_kg_m2_s": 1.152441264298679e-18,
+        "normalized_interface_flux_mismatch": 1.6919724767991649e-13,
+        "max_particle_balance_error_kg_kg_s": 7.072386296394506e-17,
+        "axial_cells": 1,
+        "radial_cells": 32,
+        "steps": 36000,
+        "max_Newton_iterations": 3,
+        "sections": 1,
+        "liquid_residence_time_s": 5.558789987432323,
+        "section_liquid_volume_m3": 4.057916690825595e-06,
+        "section_dry_mass_kg": 0.007032455155060752
+      },
+      "last_outlet_kg_m3": 0.13733712362166905,
+      "last_loading_kg_kg": 0.09456351997980447
+    },
+    {
+      "id": "porosity0.35_calibration",
+      "inputs": {
+        "length_m": 0.1,
+        "area_m2": 9.503317777109123e-05,
+        "porosity": 0.35,
+        "superficial_velocity_m_s": 0.0076815278318732964,
+        "inlet_concentration_kg_m3": 0.15,
+        "particle_diameter_m": 0.0008,
+        "particle_density_kg_m3": 1291.4485165794067,
+        "capacity_kg_kg": 0.1115,
+        "affinity_m3_kg": 139.0,
+        "diffusivity_m2_s": 1.846035489738998e-12,
+        "film_m_s": 4.540819586217862e-05,
+        "radial_cells": 32,
+        "t_end_s": 18000.0,
+        "dt_s": 0.5,
+        "initial_concentration_kg_m3": 0.0,
+        "initial_loading_kg_kg": 0.0,
+        "linear_partition_m3_kg": null,
+        "sections": 1
+      },
+      "metrics": {
+        "RMSE": 0.20959838170603448,
+        "maximum_absolute_fraction_error": 0.35691163920693747,
+        "numerical_normalized_mass_residual": 4.76366860158377e-13,
+        "t05": {
+          "observed_interpolated_s": 101.5678776290631,
+          "predicted_s": 0.32430116306444823,
+          "reading_sensitivity_s": [
+            21.720841300191196,
+            205.5831739961759
+          ],
+          "relative_error": 0.9968070499193767,
+          "observed_crossing_resolved": true
+        },
+        "t50": {
+          "observed_interpolated_s": 1844.7418738049712,
+          "predicted_s": 6256.511676627151,
+          "reading_sensitivity_s": [
+            1725.4302103250475,
+            1964.0535372848947
+          ],
+          "relative_error": 2.3915377351534,
+          "observed_crossing_resolved": true
+        },
+        "RMSE_screen_passed": false,
+        "t50_screen_passed": false,
+        "t05_screen_passed": false
+      },
+      "kind": "packing_scenario",
+      "series": "calibration",
+      "result_scalars": {
+        "physical_adsorbent_mass_kg": 0.007977479669789683,
+        "active_adsorbent_mass_kg": 0.007977479669789683,
+        "normalized_mass_residual": 4.76366860158377e-13,
+        "max_mass_residual_kg": 9.389190813724468e-16,
+        "max_interface_flux_mismatch_kg_m2_s": 1.1311066219397113e-18,
+        "normalized_interface_flux_mismatch": 1.6606497284804518e-13,
+        "max_particle_balance_error_kg_kg_s": 6.970911749313441e-17,
+        "axial_cells": 1,
+        "radial_cells": 32,
+        "steps": 36000,
+        "max_Newton_iterations": 3,
+        "sections": 1,
+        "liquid_residence_time_s": 4.556385235600264,
+        "section_liquid_volume_m3": 3.326161221988193e-06,
+        "section_dry_mass_kg": 0.007977479669789683
+      },
+      "last_outlet_kg_m3": 0.13490112018903344,
+      "last_loading_kg_kg": 0.09393714805366375
+    },
+    {
+      "id": "porosity0.5_calibration",
+      "inputs": {
+        "length_m": 0.1,
+        "area_m2": 9.503317777109123e-05,
+        "porosity": 0.5,
+        "superficial_velocity_m_s": 0.0076815278318732964,
+        "inlet_concentration_kg_m3": 0.15,
+        "particle_diameter_m": 0.0008,
+        "particle_density_kg_m3": 1291.4485165794067,
+        "capacity_kg_kg": 0.1115,
+        "affinity_m3_kg": 139.0,
+        "diffusivity_m2_s": 1.846035489738998e-12,
+        "film_m_s": 4.540819586217862e-05,
+        "radial_cells": 32,
+        "t_end_s": 18000.0,
+        "dt_s": 0.5,
+        "initial_concentration_kg_m3": 0.0,
+        "initial_loading_kg_kg": 0.0,
+        "linear_partition_m3_kg": null,
+        "sections": 1
+      },
+      "metrics": {
+        "RMSE": 0.15901016046812586,
+        "maximum_absolute_fraction_error": 0.2838759417231501,
+        "numerical_normalized_mass_residual": 4.485329535486612e-13,
+        "t05": {
+          "observed_interpolated_s": 101.5678776290631,
+          "predicted_s": 0.40544324228107576,
+          "reading_sensitivity_s": [
+            21.720841300191196,
+            205.5831739961759
+          ],
+          "relative_error": 0.99600815482468,
+          "observed_crossing_resolved": true
+        },
+        "t50": {
+          "observed_interpolated_s": 1844.7418738049712,
+          "predicted_s": 4307.441191150372,
+          "reading_sensitivity_s": [
+            1725.4302103250475,
+            1964.0535372848947
+          ],
+          "relative_error": 1.3349831498462321,
+          "observed_crossing_resolved": true
+        },
+        "RMSE_screen_passed": false,
+        "t50_screen_passed": false,
+        "t05_screen_passed": false
+      },
+      "kind": "packing_scenario",
+      "series": "calibration",
+      "result_scalars": {
+        "physical_adsorbent_mass_kg": 0.006136522822915142,
+        "active_adsorbent_mass_kg": 0.006136522822915142,
+        "normalized_mass_residual": 4.485329535486612e-13,
+        "max_mass_residual_kg": 8.840584514446803e-16,
+        "max_interface_flux_mismatch_kg_m2_s": 1.1713406869342906e-18,
+        "normalized_interface_flux_mismatch": 1.7197199238209526e-13,
+        "max_particle_balance_error_kg_kg_s": 8.168997501557286e-17,
+        "axial_cells": 1,
+        "radial_cells": 32,
+        "steps": 36000,
+        "max_Newton_iterations": 3,
+        "sections": 1,
+        "liquid_residence_time_s": 6.509121765143235,
+        "section_liquid_volume_m3": 4.751658888554562e-06,
+        "section_dry_mass_kg": 0.006136522822915142
+      },
+      "last_outlet_kg_m3": 0.13943254138369496,
+      "last_loading_kg_kg": 0.09510179945327842
+    },
+    {
+      "id": "porosity0.6_calibration",
+      "inputs": {
+        "length_m": 0.1,
+        "area_m2": 9.503317777109123e-05,
+        "porosity": 0.6,
+        "superficial_velocity_m_s": 0.0076815278318732964,
+        "inlet_concentration_kg_m3": 0.15,
+        "particle_diameter_m": 0.0008,
+        "particle_density_kg_m3": 1291.4485165794067,
+        "capacity_kg_kg": 0.1115,
+        "affinity_m3_kg": 139.0,
+        "diffusivity_m2_s": 1.846035489738998e-12,
+        "film_m_s": 4.540819586217862e-05,
+        "radial_cells": 32,
+        "t_end_s": 18000.0,
+        "dt_s": 0.5,
+        "initial_concentration_kg_m3": 0.0,
+        "initial_loading_kg_kg": 0.0,
+        "linear_partition_m3_kg": null,
+        "sections": 1
+      },
+      "metrics": {
+        "RMSE": 0.14259060956096742,
+        "maximum_absolute_fraction_error": 0.3338182416541644,
+        "numerical_normalized_mass_residual": 4.825277248625038e-13,
+        "t05": {
+          "observed_interpolated_s": 101.5678776290631,
+          "predicted_s": 0.4595374326835978,
+          "reading_sensitivity_s": [
+            21.720841300191196,
+            205.5831739961759
+          ],
+          "relative_error": 0.9954755633039624,
+          "observed_crossing_resolved": true
+        },
+        "t50": {
+          "observed_interpolated_s": 1844.7418738049712,
+          "predicted_s": 3026.9840751325873,
+          "reading_sensitivity_s": [
+            1725.4302103250475,
+            1964.0535372848947
+          ],
+          "relative_error": 0.6408713425521799,
+          "observed_crossing_resolved": true
+        },
+        "RMSE_screen_passed": false,
+        "t50_screen_passed": false,
+        "t05_screen_passed": false
+      },
+      "kind": "packing_scenario",
+      "series": "calibration",
+      "result_scalars": {
+        "physical_adsorbent_mass_kg": 0.004909218258332113,
+        "active_adsorbent_mass_kg": 0.004909218258332113,
+        "normalized_mass_residual": 4.825277248625038e-13,
+        "max_mass_residual_kg": 9.510621457042845e-16,
+        "max_interface_flux_mismatch_kg_m2_s": 1.1978104665359875e-18,
+        "normalized_interface_flux_mismatch": 1.7585818944397032e-13,
+        "max_particle_balance_error_kg_kg_s": 7.155056712046526e-17,
+        "axial_cells": 1,
+        "radial_cells": 32,
+        "steps": 36000,
+        "max_Newton_iterations": 3,
+        "sections": 1,
+        "liquid_residence_time_s": 7.810946118171882,
+        "section_liquid_volume_m3": 5.701990666265474e-06,
+        "section_dry_mass_kg": 0.004909218258332113
+      },
+      "last_outlet_kg_m3": 0.14201322024331955,
+      "last_loading_kg_kg": 0.09575810234935041
+    },
+    {
+      "id": "selected_holdout",
+      "inputs": {
+        "length_m": 0.1,
+        "area_m2": 9.503317777109123e-05,
+        "porosity": 0.427,
+        "superficial_velocity_m_s": 0.0076815278318732964,
+        "inlet_concentration_kg_m3": 0.15,
+        "particle_diameter_m": 0.00045,
+        "particle_density_kg_m3": 1291.4485165794067,
+        "capacity_kg_kg": 0.1115,
+        "affinity_m3_kg": 139.0,
+        "diffusivity_m2_s": 1.846035489738998e-12,
+        "film_m_s": 5.845656690534902e-05,
+        "radial_cells": 32,
+        "t_end_s": 18000.0,
+        "dt_s": 0.5,
+        "initial_concentration_kg_m3": 0.0,
+        "initial_loading_kg_kg": 0.0,
+        "linear_partition_m3_kg": null,
+        "sections": 1
+      },
+      "metrics": {
+        "RMSE": 0.2908591116372299,
+        "maximum_absolute_fraction_error": 0.4979471393681797,
+        "numerical_normalized_mass_residual": 4.711961344245563e-13,
+        "t05": {
+          "observed_interpolated_s": 1412.2370936902485,
+          "predicted_s": 0.44745103279887405,
+          "reading_sensitivity_s": [
+            1297.514340344168,
+            1526.959847036329
+          ],
+          "relative_error": 0.9996831615351289,
+          "observed_crossing_resolved": true
+        },
+        "t50": {
+          "observed_interpolated_s": 3321.561129231807,
+          "predicted_s": 7098.9798718618895,
+          "reading_sensitivity_s": [
+            3210.8874142391182,
+            3432.234844224496
+          ],
+          "relative_error": 1.1372419761859698,
+          "observed_crossing_resolved": true
+        },
+        "RMSE_screen_passed": false,
+        "t50_screen_passed": false,
+        "t05_screen_passed": false
+      },
+      "kind": "selected",
+      "series": "holdout",
+      "result_scalars": {
+        "physical_adsorbent_mass_kg": 0.007032455155060752,
+        "active_adsorbent_mass_kg": 0.007032455155060752,
+        "normalized_mass_residual": 4.711961344245563e-13,
+        "max_mass_residual_kg": 9.28727580951083e-16,
+        "max_interface_flux_mismatch_kg_m2_s": 1.3216360955127255e-18,
+        "normalized_interface_flux_mismatch": 1.5072570576517957e-13,
+        "max_particle_balance_error_kg_kg_s": 7.54977406546703e-17,
+        "axial_cells": 1,
+        "radial_cells": 32,
+        "steps": 36000,
+        "max_Newton_iterations": 3,
+        "sections": 1,
+        "liquid_residence_time_s": 5.558789987432323,
+        "section_liquid_volume_m3": 4.057916690825595e-06,
+        "section_dry_mass_kg": 0.007032455155060752
+      },
+      "last_outlet_kg_m3": 0.14805891524599926,
+      "last_loading_kg_kg": 0.1057902641902162
+    },
+    {
+      "id": "porosity0.35_holdout",
+      "inputs": {
+        "length_m": 0.1,
+        "area_m2": 9.503317777109123e-05,
+        "porosity": 0.35,
+        "superficial_velocity_m_s": 0.0076815278318732964,
+        "inlet_concentration_kg_m3": 0.15,
+        "particle_diameter_m": 0.00045,
+        "particle_density_kg_m3": 1291.4485165794067,
+        "capacity_kg_kg": 0.1115,
+        "affinity_m3_kg": 139.0,
+        "diffusivity_m2_s": 1.846035489738998e-12,
+        "film_m_s": 5.845656690534902e-05,
+        "radial_cells": 32,
+        "t_end_s": 18000.0,
+        "dt_s": 0.5,
+        "initial_concentration_kg_m3": 0.0,
+        "initial_loading_kg_kg": 0.0,
+        "linear_partition_m3_kg": null,
+        "sections": 1
+      },
+      "metrics": {
+        "RMSE": 0.3376131264891657,
+        "maximum_absolute_fraction_error": 0.5597689229144832,
+        "numerical_normalized_mass_residual": 4.816476013333429e-13,
+        "t05": {
+          "observed_interpolated_s": 1412.2370936902485,
+          "predicted_s": 0.41674985078378185,
+          "reading_sensitivity_s": [
+            1297.514340344168,
+            1526.959847036329
+          ],
+          "relative_error": 0.9997049009315463,
+          "observed_crossing_resolved": true
+        },
+        "t50": {
+          "observed_interpolated_s": 3321.561129231807,
+          "predicted_s": 8116.293220757531,
+          "reading_sensitivity_s": [
+            3210.8874142391182,
+            3432.234844224496
+          ],
+          "relative_error": 1.4435176427521066,
+          "observed_crossing_resolved": true
+        },
+        "RMSE_screen_passed": false,
+        "t50_screen_passed": false,
+        "t05_screen_passed": false
+      },
+      "kind": "packing_scenario",
+      "series": "holdout",
+      "result_scalars": {
+        "physical_adsorbent_mass_kg": 0.007977479669789683,
+        "active_adsorbent_mass_kg": 0.007977479669789683,
+        "normalized_mass_residual": 4.816476013333429e-13,
+        "max_mass_residual_kg": 9.493274222283077e-16,
+        "max_interface_flux_mismatch_kg_m2_s": 1.3013602443378257e-18,
+        "normalized_interface_flux_mismatch": 1.4841335065570375e-13,
+        "max_particle_balance_error_kg_kg_s": 7.141885349716721e-17,
+        "axial_cells": 1,
+        "radial_cells": 32,
+        "steps": 36000,
+        "max_Newton_iterations": 3,
+        "sections": 1,
+        "liquid_residence_time_s": 4.556385235600264,
+        "section_liquid_volume_m3": 3.326161221988193e-06,
+        "section_dry_mass_kg": 0.007977479669789683
+      },
+      "last_outlet_kg_m3": 0.14713339237234987,
+      "last_loading_kg_kg": 0.10559920324893388
+    },
+    {
+      "id": "porosity0.5_holdout",
+      "inputs": {
+        "length_m": 0.1,
+        "area_m2": 9.503317777109123e-05,
+        "porosity": 0.5,
+        "superficial_velocity_m_s": 0.0076815278318732964,
+        "inlet_concentration_kg_m3": 0.15,
+        "particle_diameter_m": 0.00045,
+        "particle_density_kg_m3": 1291.4485165794067,
+        "capacity_kg_kg": 0.1115,
+        "affinity_m3_kg": 139.0,
+        "diffusivity_m2_s": 1.846035489738998e-12,
+        "film_m_s": 5.845656690534902e-05,
+        "radial_cells": 32,
+        "t_end_s": 18000.0,
+        "dt_s": 0.5,
+        "initial_concentration_kg_m3": 0.0,
+        "initial_loading_kg_kg": 0.0,
+        "linear_partition_m3_kg": null,
+        "sections": 1
+      },
+      "metrics": {
+        "RMSE": 0.23710103568283977,
+        "maximum_absolute_fraction_error": 0.4155075691753433,
+        "numerical_normalized_mass_residual": 5.190528513226842e-13,
+        "t05": {
+          "observed_interpolated_s": 1412.2370936902485,
+          "predicted_s": 0.4765572021470976,
+          "reading_sensitivity_s": [
+            1297.514340344168,
+            1526.959847036329
+          ],
+          "relative_error": 0.9996625515614366,
+          "observed_crossing_resolved": true
+        },
+        "t50": {
+          "observed_interpolated_s": 3321.561129231807,
+          "predicted_s": 6124.855742458117,
+          "reading_sensitivity_s": [
+            3210.8874142391182,
+            3432.234844224496
+          ],
+          "relative_error": 0.8439689965527266,
+          "observed_crossing_resolved": true
+        },
+        "RMSE_screen_passed": false,
+        "t50_screen_passed": false,
+        "t05_screen_passed": false
+      },
+      "kind": "packing_scenario",
+      "series": "holdout",
+      "result_scalars": {
+        "physical_adsorbent_mass_kg": 0.006136522822915142,
+        "active_adsorbent_mass_kg": 0.006136522822915142,
+        "normalized_mass_residual": 5.190528513226842e-13,
+        "max_mass_residual_kg": 1.023053169957322e-15,
+        "max_interface_flux_mismatch_kg_m2_s": 1.3553585947252873e-18,
+        "normalized_interface_flux_mismatch": 1.545715809733678e-13,
+        "max_particle_balance_error_kg_kg_s": 7.700786805072671e-17,
+        "axial_cells": 1,
+        "radial_cells": 32,
+        "steps": 36000,
+        "max_Newton_iterations": 3,
+        "sections": 1,
+        "liquid_residence_time_s": 6.509121765143235,
+        "section_liquid_volume_m3": 4.751658888554562e-06,
+        "section_dry_mass_kg": 0.006136522822915142
+      },
+      "last_outlet_kg_m3": 0.14867447521428054,
+      "last_loading_kg_kg": 0.1059266181913441
+    },
+    {
+      "id": "porosity0.6_holdout",
+      "inputs": {
+        "length_m": 0.1,
+        "area_m2": 9.503317777109123e-05,
+        "porosity": 0.6,
+        "superficial_velocity_m_s": 0.0076815278318732964,
+        "inlet_concentration_kg_m3": 0.15,
+        "particle_diameter_m": 0.00045,
+        "particle_density_kg_m3": 1291.4485165794067,
+        "capacity_kg_kg": 0.1115,
+        "affinity_m3_kg": 139.0,
+        "diffusivity_m2_s": 1.846035489738998e-12,
+        "film_m_s": 5.845656690534902e-05,
+        "radial_cells": 32,
+        "t_end_s": 18000.0,
+        "dt_s": 0.5,
+        "initial_concentration_kg_m3": 0.0,
+        "initial_loading_kg_kg": 0.0,
+        "linear_partition_m3_kg": null,
+        "sections": 1
+      },
+      "metrics": {
+        "RMSE": 0.15051869963097028,
+        "maximum_absolute_fraction_error": 0.2636086053846546,
+        "numerical_normalized_mass_residual": 5.899027954201426e-13,
+        "t05": {
+          "observed_interpolated_s": 1412.2370936902485,
+          "predicted_s": 0.5217222772880162,
+          "reading_sensitivity_s": [
+            1297.514340344168,
+            1526.959847036329
+          ],
+          "relative_error": 0.9996305703343872,
+          "observed_crossing_resolved": true
+        },
+        "t50": {
+          "observed_interpolated_s": 3321.561129231807,
+          "predicted_s": 4771.166812010474,
+          "reading_sensitivity_s": [
+            3210.8874142391182,
+            3432.234844224496
+          ],
+          "relative_error": 0.43642300303349346,
+          "observed_crossing_resolved": true
+        },
+        "RMSE_screen_passed": false,
+        "t50_screen_passed": false,
+        "t05_screen_passed": false
+      },
+      "kind": "packing_scenario",
+      "series": "holdout",
+      "result_scalars": {
+        "physical_adsorbent_mass_kg": 0.004909218258332113,
+        "active_adsorbent_mass_kg": 0.004909218258332113,
+        "normalized_mass_residual": 5.899027954201426e-13,
+        "max_mass_residual_kg": 1.162698409773455e-15,
+        "max_interface_flux_mismatch_kg_m2_s": 1.7467606082506788e-18,
+        "normalized_interface_flux_mismatch": 1.9920893987028888e-13,
+        "max_particle_balance_error_kg_kg_s": 7.853096563878795e-17,
+        "axial_cells": 1,
+        "radial_cells": 32,
+        "steps": 36000,
+        "max_Newton_iterations": 3,
+        "sections": 1,
+        "liquid_residence_time_s": 7.810946118171882,
+        "section_liquid_volume_m3": 5.701990666265474e-06,
+        "section_dry_mass_kg": 0.004909218258332113
+      },
+      "last_outlet_kg_m3": 0.149233259907184,
+      "last_loading_kg_kg": 0.10606121335408952
+    }
+  ]
+}

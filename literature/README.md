@@ -1,5 +1,53 @@
 # Article workspace and experimental evidence
 
+## Column contact and inventory audit - 10 November 2026
+
+[The preselection protocol](alhamed2009_column_contact_protocol.md) and
+[executed audit](../docs/column_contact_audit.md) retain Alhamed's printed
+bulk-density label. Derived bed inventory is not a per-run weighed mass;
+truncated Figure 7 integrals do not establish saturation capacity. Table 5's
+DL/Pe remain fitted breakthrough-shape descriptors, never independently
+measured fluid dispersion. One common contact topology is selected on
+0.8 mm only and transferred to 0.45 mm with frozen batch particles. Both
+column comparisons fail despite passing numerical checks. No raw-data or
+new-laboratory prerequisite is introduced.
+
+## Finite-bath and film/particle audit — 10 November 2026
+
+The separate [protocol](alhamed2009_film_particle_protocol.md),
+[extraction](alhamed2009_film_particle_extraction.json) and
+[24 Figure 2 marker centres](alhamed2009_fig2_pixels.csv) support the
+[executed model comparison](../docs/film_particle_adsorption.md). Shared
+transport is fitted only to 0.8/1.5 mm batch curves; 0.45/0.225 mm are withheld.
+The batch error screens pass, but frozen-parameter column prediction and a
+single 0.8 mm column film-factor anchor both fail Figure 7. The original
+source equilibrium and density-derived bed mass are unchanged. Diagnostic
+equilibrium factors, active-inventory scenarios and image-reading sensitivities
+are separately labelled, not substituted for measurements. No new article or
+unavailable dataset was required for this check.
+
+## Isothermal adsorption starting evidence — 10 November 2026
+
+[The adsorption ledger](adsorption_evidence.json) records a public author
+dissertation for phenol/coconut-shell activated carbon, visually checked
+Langmuir and column-parameter tables, SI conversions, source hash and explicit
+density/unit conflicts. The related Meneghini et al. (2021) article, DOI
+10.1590/S1413-415220180046, is not used as an independent holdout here.
+Visible figure error bars have not yet been numerically digitized/audited;
+their existence is distinguished from missing pointwise numbers.
+
+[The synthetic starting example](../docs/adsorption_example.md) transfers those
+parameters as scenarios into a separate FCC bed, rather than claiming an
+experimental specimen reconstruction. Its numerical/software checks pass;
+experimental column validation is pending. Alhamed (2009), DOI
+10.1016/j.jhazmat.2009.05.002, has now been received as a PDF and reviewed;
+Markdown conversion is not needed to use it. The separate
+[extraction](alhamed2009_extraction.json), [comparison protocol](alhamed2009_protocol.md)
+and [executed comparison](../docs/alhamed2009_comparison.md) retain 48 digitized
+Figure 7 points. The current reduced model fails calibration and held-out
+diameter transfer. Its date-stone carbon and Iheanacho (2021)'s alternative
+corn-cob carbon are separate datasets and are not pooled with the coconut fit.
+
 ## Qualified operating-map audit — 9–10 November 2026
 
 [The operating-window ledger](operating_window_evidence.json) now audits the

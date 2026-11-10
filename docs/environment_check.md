@@ -249,3 +249,48 @@ actual DWSIM solve/save/reload checks; a one-iteration recycle is rejected.
 Full independent replay passes, and the normal-host Python suite passes
 74 tests. Native/process acceptance results are recorded in
 [operating_window.md](operating_window.md). No dependency lock changed.
+
+## Isothermal adsorption starting example — 10 November 2026
+
+`results/adsorption/preflight.json` records a fresh target-machine inventory.
+All existing Python/graphics/Julia imports pass. macOS ARM64, Python 3.12.9,
+Julia 1.11.6, JuliaCall/PythonCall 0.9.37, GCC 15.2, OpenLB 1.9r0,
+DWSIM 10.2.15 and the project-local .NET SDK 10.0.403 are reused. No Python
+or Julia dependency installation, manifest change or privileged setup was
+required. New C# restore/build products remain in `.local/adsorption/`.
+
+The new applications are in `adsorption/openlb/` and `adsorption/openlb_bed/`;
+the existing external builder puts all core/application build products in
+separate `.local/adsorption/` folders. The first scalar compilation recorded
+515.65 seconds; subsequent cached checks take much less. Native timings are
+execution records, not performance comparisons. All 2,070 checked original
+OpenLB files still match the pinned archive, with the pre-existing vendor
+configuration exception retained.
+
+The initial FCC-bed scaling failed its density-departure screen. It is
+preserved in `results/adsorption/bed_initial_compressibility_rejected/`.
+Smaller lattice time steps, with stock TRT and magic 3/16, pass the unchanged
+1e-4 density limit. Optional initial velocity fields from that attempt are
+only starting estimates; new convergence and a separate cold-start check
+are required. Eight revised bed cases and seven scalar-TRT cases pass.
+
+The new standalone Julia module stays in `julia/adsorption/`; loading it does
+not edit the frozen filtration package or shared environment. Its 46 assertions
+pass, including a fast-uptake zero-tail regression after improving the
+conservative implicit line search. The existing package still passes all
+902 assertions. Full normal-host Python regression passes 86 tests. No new
+Julia worker thread or background-runtime interaction is introduced.
+
+The low-head DWSIM diagnostic and stock forced-liquid remedy are documented in
+[the adsorption report](adsorption_example.md). The separate adapter preserves
+the earlier pump/recycle adapters and checks phase margins and reload work.
+Four actual solves/reloads and independent replay pass. All native fields,
+input/source snapshots and actual simulator archives are saved in a unique
+accepted process run. Existing simulator distributions remain untouched.
+
+The publicly available author PDF was saved in the literature inbox and its
+tables visually checked. Bundled Poppler initially retried an unavailable
+font cache; a project-local fontconfig file/cache resolved rendering without
+system installation. This reading-tool issue is separate from simulation.
+The scientific figure was visually inspected. There is no new adsorption
+Panel interface or browser-pass claim.
