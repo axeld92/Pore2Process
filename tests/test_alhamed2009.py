@@ -4,9 +4,9 @@ import json
 import numpy as np
 import pytest
 
-from adsorption.bridge import column
-from adsorption.alhamed.source import ROOT, evidence, points
-from adsorption.alhamed.study import crossing, compare
+from examples.adsorption.bridge import column
+from examples.adsorption.alhamed.source import ROOT, evidence, points
+from examples.adsorption.alhamed.study import crossing, compare
 
 
 def reference():

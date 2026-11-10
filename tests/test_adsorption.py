@@ -2,12 +2,12 @@
 from pathlib import Path
 import numpy as np
 import pytest
-from adsorption.bridge import column,module
-from adsorption.evidence import evidence
-from adsorption.check import artifacts,topology
-from hydraulic.build import ROOT
-from adsorption.run import read
-from calibration.check import close_tree
+from examples.adsorption.bridge import column, module
+from examples.adsorption.evidence import evidence
+from examples.adsorption.check import artifacts, topology
+from pore2process_demo.runtime.openlb import ROOT
+from examples.adsorption.run import read
+from examples.filtration.calibration.check import close_tree
 
 def reference():return read(ROOT/'docs/adsorption_reference.json')
 
@@ -68,7 +68,7 @@ def test_invalid_adsorption_input_fails_before_a_process_solve(kwargs):
     with pytest.raises(Exception,match='porosity|Porosity|ldf|cells|dt_s'):column(**kwargs)
 
 def test_changed_saved_artifact_rejected(tmp_path):
-    from coupling.run import sha
+    from pore2process_demo.io import sha
     f=tmp_path/'field.csv';f.write_text('C\n1\n');s={'artifacts_sha256':{'field.csv':sha(f)}}
     f.write_text('C\n2\n')
     with pytest.raises(ValueError,match='Changed artifact'):artifacts(tmp_path/'summary.json',s)

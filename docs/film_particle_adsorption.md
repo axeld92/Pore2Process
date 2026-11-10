@@ -246,10 +246,10 @@ From the project root:
 ```sh
 source scripts/env.sh
 uv sync --locked
-uv run python -m adsorption.film_particle.data
+uv run python -m examples.adsorption.film_particle.data
 julia --project=julia julia/adsorption/test_film_particle.jl
-uv run python -m adsorption.film_particle.run
-uv run python -m adsorption.film_particle.check
+uv run python -m examples.adsorption.film_particle.run
+uv run python -m examples.adsorption.film_particle.check
 uv run pytest -q
 ```
 

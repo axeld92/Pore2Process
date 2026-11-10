@@ -184,9 +184,9 @@ From the project root, using the existing locked environment:
 ```sh
 source scripts/env.sh
 uv sync --locked
-uv run python -m adsorption.alhamed.source
-uv run python -m adsorption.alhamed.study
-uv run python -m adsorption.alhamed.check
+uv run python -m examples.adsorption.alhamed.source
+uv run python -m examples.adsorption.alhamed.study
+uv run python -m examples.adsorption.alhamed.check
 uv run pytest -q
 ```
 

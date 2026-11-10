@@ -52,7 +52,7 @@ also prevents deriving a verified intrinsic support k for each point.
 
 ## Frozen fit and data reading
 
-[The protocol](../calibration/zhu_protocol.json) was saved before fitting the
+[The protocol](../examples/filtration/calibration/zhu_protocol.json) was saved before fitting the
 digitized values. Article plots and reported fits had already been read, so
 this is a retrospective same-study split, not blind or independent-laboratory
 validation. It uses all **21 M1 black diamonds** from Figure 6: odd ranks in
@@ -63,7 +63,7 @@ out (**10**). No residual-based exclusions were made.
 pixel centres, axis anchors, units and reading method. Dark connected-component
 centres are used, with four visually inspected touching pairs separated
 explicitly. A numbered original-image overlay was inspected. The
-[reproduction helper](../calibration/digitize_zhu.py) reproduces the recorded
+[reproduction helper](../examples/filtration/calibration/digitize_zhu.py) reproduces the recorded
 points from the source JPEG. Deterministic sensitivity bounds are ±2 pixels
 for marker centres and ±1 pixel for each axis anchor. These are **reading
 bounds**, not experimental error bars or statistical confidence intervals.
@@ -159,7 +159,7 @@ the plateau and is flagged above the authors' practical flux discussion.
 
 ## Reproduce and continue
 
-Commands are in [the calibration guide](../calibration/README.md). The
+Commands are in [the calibration guide](../examples/filtration/calibration/README.md). The
 [compact reference](zhu_validation_reference.json) identifies the final run,
 code/source/lock hashes, numerical values and timing. Saved inputs, predictions,
 figures and artifacts can be replayed through Julia. Tests verify an independent

@@ -36,7 +36,7 @@ network access, which was approved. No outstanding download/install blocker
 remains for these probes.
 
 Exact setup, launch, and validation commands are in
-[compatibility/README.md](../compatibility/README.md). Generated
+[compatibility/README.md](../examples/hydraulics/tool_checks/README.md). Generated
 `results/compatibility/environment.json` records the bounded target-machine
 inventory, source records, and OpenLB linked library paths. Dependency updates
 on this Mac can affect the OpenLB binary; rerun the inventory and benchmarks

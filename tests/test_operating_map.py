@@ -4,10 +4,10 @@ from pathlib import Path
 import numpy as np
 import pytest
 from pore2process_demo.bridge import runtime
-from process_filtration.run import ROOT,read
-from operating_map.evidence import extract
-from operating_map.model import capacity_decisions,translate
-from calibration.check import close_tree
+from pore2process_demo.paths import ROOT; from pore2process_demo.io import read_json as read
+from examples.filtration.operating_map.evidence import extract
+from examples.filtration.operating_map.model import capacity_decisions, translate
+from examples.filtration.calibration.check import close_tree
 
 
 def test_source_conditions_reading_bounds_and_no_pooling():
@@ -22,7 +22,7 @@ def test_source_conditions_reading_bounds_and_no_pooling():
 
 
 def test_capacity_tests_peak_flux_and_keeps_extrapolation_unavailable():
-    p=read(ROOT/'operating_map/protocol.json');e=extract();jl=runtime()
+    p=read(ROOT/'examples/filtration/operating_map/protocol.json');e=extract();jl=runtime()
     a={'axial':{'inlet_Re':1388.,'inlet_velocity_m_s':.5,'local_flux_m_s':[24/3.6e6,12/3.6e6]}}
     rows=capacity_decisions(jl,a,e,p)
     nominal=next(v for v in rows if (v['mapping'],v['capacity_fraction'],v['transfer_factor'])==('equal_Re',1.,1.))
@@ -48,7 +48,7 @@ def test_real_native_measurement_drives_saved_dwsim_replay():
     r=reference();c=r['actual_case'];q=c['request'];jl=runtime()
     t=translate(jl,r['native_for_replay'],r['TRT_support_for_replay'],r['protocol'],q)
     close_tree(t,c['translation'],'Real Julia replay')
-    from crossflow_recycle.model import validate
+    from examples.filtration.crossflow_recycle.model import validate
     close_tree(validate(c['dwsim'],c['dwsim']['inputs'],t['process'],r['hydraulics'],r['TRT_support_for_replay']),c['validation'])
     assert t['axial']['geometry_coefficient_m4']==r['native_for_replay']['geometry_coefficient_m4']
     assert t['axial']['inlet_Re']>1000
@@ -70,15 +70,15 @@ def test_unsupported_physics_rejected_before_dwsim(change):
 
 
 def test_changed_native_artifact_is_rejected(tmp_path):
-    from coupling.run import sha
-    from operating_map.check import artifacts
+    from pore2process_demo.io import sha
+    from examples.filtration.operating_map.check import artifacts
     f=tmp_path/'native.csv';f.write_text('x,u\n1,2\n')
     s={'artifacts_sha256':{'native.csv':sha(f)}};f.write_text('x,u\n1,3\n')
     with pytest.raises(ValueError,match='Changed artifact'):artifacts(tmp_path/'summary.json',s)
 
 
 def test_retained_measurements_replay_without_licensed_originals(monkeypatch,tmp_path):
-    import calibration.audit_crossflow_sources as audit_module
+    import examples.filtration.calibration.audit_crossflow_sources as audit_module
     before=extract();monkeypatch.setattr(audit_module,'ROOT',tmp_path)
     after=extract()
     assert before['points']==after['points']

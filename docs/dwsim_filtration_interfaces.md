@@ -57,7 +57,7 @@ test. These primary references were consulted during implementation.
 
 ## Data boundary
 
-`process_filtration/model.py` calls the same Julia package through the existing
+`examples/filtration/once_through/model.py` calls the same Julia package through the existing
 single bridge. JSON passes absolute pressure in Pa, temperature in K, mass
 flow in kg/s, TMP/channel loss in Pa, and dimensionless mass recovery and pump
 efficiency. All inputs must be finite; recovery is strictly between zero and

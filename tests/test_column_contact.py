@@ -3,9 +3,9 @@ from concurrent.futures import ThreadPoolExecutor
 import json
 import numpy as np
 import pytest
-from adsorption.alhamed.source import ROOT
-from adsorption.column_contact.audit import audit,frozen
-from adsorption.column_contact.bridge import contact,module
+from examples.adsorption.alhamed.source import ROOT
+from examples.adsorption.column_contact.audit import audit, frozen
+from examples.adsorption.column_contact.bridge import contact, module
 
 
 def reference():

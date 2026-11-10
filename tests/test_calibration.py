@@ -4,8 +4,8 @@ import math
 
 import pytest
 
-from calibration.run import analyze, export, load_snapshot, read_json, validate_snapshot, write_json
-from calibration.check import check
+from examples.filtration.calibration.run import analyze, export, load_snapshot, read_json, validate_snapshot, write_json
+from examples.filtration.calibration.check import check
 
 
 def test_julia_fit_against_independent_oracle_and_no_holdout_leakage():

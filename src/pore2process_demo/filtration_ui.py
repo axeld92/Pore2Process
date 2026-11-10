@@ -10,14 +10,15 @@ from uuid import uuid4
 import panel as pn
 
 from .bridge import runtime, runtime_versions
-from star_channel import model
-from star_channel.export import export_completed, native_pane
-from star_channel.plot import profile_figure
-from star_channel.run import evidence, support_evidence
-from process_filtration.run import ROOT, read
-from hydraulic.run import write_json
-from crossflow_recycle import dwsim
-from crossflow_recycle.model import validate, topology
+from examples.filtration.star_channel import model
+from examples.filtration.star_channel.export import export_completed, native_pane
+from examples.filtration.star_channel.plot import profile_figure
+from examples.filtration.star_channel.run import evidence, support_evidence
+from pore2process_demo.paths import ROOT; from pore2process_demo.io import read_json as read
+from pore2process_demo.io import write_json
+from pore2process_demo.provenance import verified_source_path
+from examples.filtration.crossflow_recycle import dwsim
+from examples.filtration.crossflow_recycle.model import validate, topology
 
 
 class FiltrationApp:
@@ -42,11 +43,11 @@ class FiltrationApp:
         try:
             self.native_path,self.parent_path=evidence();self.source_path=support_evidence()
             self.native=read(self.native_path);self.source=read(self.source_path)
-            self.protocol=read(ROOT/'star_channel/protocol.json');self.h=model.settings(read(self.parent_path))
+            self.protocol=read(ROOT/'examples/filtration/star_channel/protocol.json');self.h=model.settings(read(self.parent_path))
             # A source hash mismatch cannot silently reuse stale geometry results.
-            from coupling.run import sha
+            from pore2process_demo.io import sha
             for name,digest in self.native['source_sha256'].items():
-                if sha(ROOT/name)!=digest:raise ValueError('Channel implementation changed. Rerun star_channel.native_run.')
+                if sha(verified_source_path(name,digest))!=digest:raise ValueError('Channel implementation changed. Rerun examples.filtration.star_channel.native_run.')
             self.ready=True
             self.status.object='Ready. This runs Julia scale translation and an actual DWSIM solve, save and reload.'
             self._sources()
@@ -129,7 +130,7 @@ class FiltrationApp:
             run_id=datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'-'+uuid4().hex[:8]
             directory=ROOT/'results/star_channel/sessions'/self.session_id/run_id
             directory.mkdir(parents=True);write_json(directory/'inputs.json',a)
-            if not dwsim.RUNNER.is_file():raise ValueError('DWSIM adapter is not built. Run python -m star_channel.run first.')
+            if not dwsim.RUNNER.is_file():raise ValueError('DWSIM adapter is not built. Run python -m examples.filtration.star_channel.run first.')
             command=[str(dwsim.DOTNET),str(dwsim.RUNNER),str(dwsim.DISTRIBUTION),str(directory/'inputs.json'),str(directory)]
             with (directory/'stdout.log').open('w') as log:
                 process=await asyncio.create_subprocess_exec(*command,cwd=dwsim.DISTRIBUTION,env=dwsim.environment(),stdout=log,stderr=asyncio.subprocess.STDOUT)
@@ -180,7 +181,7 @@ class FiltrationApp:
             'Cooling heat is exported separately; electricity for cooling is not included.')
 
     def _baseline_comparison(self,case):
-        from coupling.run import sha
+        from pore2process_demo.io import sha
         latest=ROOT/'results/star_channel/process/latest.json'
         if not latest.is_file():return None
         path=Path(read(latest)['summary']);study=read(path)

@@ -123,7 +123,7 @@ ceramic membrane**. Alumina is the first literature candidate; SiC is retained
 as a comparison. A limited alumina support reduced model has now been fitted
 to Biesheuvel data and tested against held-out cases; **the 25% screen fails**.
 See [the calibration report](../docs/experimental_calibration.md) and
-[commands](../calibration/README.md). The separate OpenLB study still uses
+[commands](../examples/filtration/calibration/README.md). The separate OpenLB study still uses
 synthetic geometry and assumed layer resistance. Exact reconstruction of a
 manufactured specimen is outside [the computational scope](../docs/verification_scope.md).
 

@@ -266,7 +266,7 @@ timings include machine contention and do not establish a speed comparison.
 
 ![Actual saved DWSIM circuit](star_channel_flowsheet.png)
 
-See [star_channel/README.md](../star_channel/README.md) for setup and ordered
+See [star_channel/README.md](../examples/filtration/star_channel/README.md) for setup and ordered
 commands. The shared Julia executable is
 `/Users/dula/.julia/juliaup/julia-1.11.6+0.aarch64.apple.darwin14/bin/julia`.
 It is the same executable used by JuliaCall. Direct tests use:

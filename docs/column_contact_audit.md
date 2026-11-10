@@ -192,7 +192,7 @@ Physical/active mass are equal and separate from liquid/adsorbed inventory,
 cumulative feed/effluent, global residual and interface-flux diagnostics.
 Missing crossings are JSON null, never NaN/Infinity.
 
-Exact commands are in [the module README](../adsorption/column_contact/README.md).
+Exact commands are in [the module README](../examples/adsorption/column_contact/README.md).
 Python 3.12.9, Julia 1.11.6, JuliaCall/PythonCall 0.9.37 and the existing locked
 project environment are reused. Cold runtime initialization is recorded
 separately from warmed Julia solver and complete study time. The bridge uses

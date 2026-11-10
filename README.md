@@ -1,334 +1,214 @@
-# Pore2Process: first Python–Julia simulation
+<p align="center">
+  <img src="assets/branding/pore2process-logo.png" alt="Pore2Process — packed porous column and wordmark" width="820">
+</p>
 
-A local vertical slice: Python configures a synthetic capillary lattice, Julia
-solves the sparse pressure equations, and Panel displays the network and a Darcy
-column demonstration. The numerical package also works directly from Julia.
-No external dataset or Python production solver is used.
+# Pore2Process
 
-The next [isothermal adsorption example](docs/adsorption_example.md) now has a
-working synthetic OpenLB → Julia → DWSIM loop. It compares three particle sizes
-at fixed adsorbent inventory, flow and outlet-quality limit, using actual native
-bed resistance, a conservative Julia breakthrough model and actual DWSIM pump
-cases. Its [commands](adsorption/README.md), source audit and numerical checks
-are separate from the completed filtration studies. Experimental column
-validation and native bed mass-transfer closures remain pending; reaction and
-non-isothermal extensions remain deferred.
+**From porous-material structure to process-scale performance.**
 
-The separate [finite-bath and film/particle check](docs/film_particle_adsorption.md)
-now tests the supplied Alhamed data. Shared batch transport predicts both
-withheld particle sizes within the declared screen, but transfer to the packed
-column still fails. Source equilibrium, derived bed inventory and the optional
-single column film factor remain distinct; no per-curve fitting is used.
+Pore2Process is a research software project for connecting what happens inside a
+porous material to what matters in a chemical process: pressure requirements,
+pumping energy, throughput and, in future applications, conversion and thermal
+performance.
 
-The subsequent [column contact and density audit](docs/column_contact_audit.md)
-preserves that batch component and tests one common mixed-section topology.
-Numerical verification passes, but both column diameters still fail the
-literature comparison. The printed density gives a derived inventory;
-published breakthrough-fit dispersion values are not measured fluid dispersion.
+The aim is a reproducible chain of calculations in which a change in pore
+geometry produces an explainable change in a process result, with the
+assumptions and intermediate evidence available for inspection.
 
-The new [explicit-channel and biological-feed showcase](docs/star_channel_showcase.md)
-adds a **Filtration showcase** tab to the same Panel application. Its
-[ordered launch commands](star_channel/README.md) build separate native TRT
-support/channel evidence before running actual DWSIM recycle cases. The
-biological case reports clean initial hydraulics and an illustrative published
-COD-retention sensitivity; sustainable flux at the new geometry/speed is
-unavailable. Older numerical results below remain preserved as historical studies.
+> **Project status — 10 November 2026.** The filtration hydraulic example is
+> complete and closed for now, with source, tests, dependency locks and curated
+> references preserved as a regression benchmark. **Isothermal adsorption** is
+> the next case in development. The verified native setup targets Apple Silicon
+> macOS.
 
-The [higher-Re operating map](docs/operating_window.md) extends the hydraulic
-verification and audits the supplied crossflow papers before comparing material
-and operating choices. It passes 16 stock D3Q27/TRT OpenLB cases and 91 actual
-DWSIM solve/save/reload cases, including a perturbed-seed check. At 12 LMH and
-Re=1388, circulation supplies about 98.7% of pump shaft duty, so widening the
-support interior from 4 to 6 µm saves only about 0.18% of total shaft energy.
-Published critical-flux transfer remains a conditional capacity screen, not a
-sustainable-operation prediction. See [run and replay commands](operating_map/README.md).
-This extension exports a report, figure and CSVs; the existing Panel controls
-retain their separately verified low-Re range. Reaction and non-isothermal
-extensions remain deferred.
+## The connected workflow
 
-The final workflow requires OpenLB, Julia, Python, and DWSIM. The first example
-below establishes the Python–Julia reference. Native OpenLB/DWSIM compatibility
-checks have since passed on this Mac; see
-[compatibility commands](compatibility/README.md),
-[verified results and limitations](docs/compatibility_check.md), and
-[integration milestones](docs/integration_roadmap.md).
+```mermaid
+flowchart LR
+    G["Synthetic or literature-informed geometry"] --> O["OpenLB<br/>Pore-scale simulation"]
+    O --> J["Julia<br/>Effective properties and scale translation"]
+    J --> D["DWSIM<br/>Process simulation"]
+    D --> R["Process metrics<br/>Energy, throughput and performance"]
+    P["Python<br/>Coordination, data and interface"] -.-> O
+    P -.-> J
+    P -.-> D
+```
 
-The next hydraulic milestone is also implemented: a real 3D OpenLB capillary
-solve with Python exports and Julia permeability extraction. See
-[hydraulic launch commands](hydraulic/README.md) and
-[the verified benchmark](docs/hydraulic_benchmark.md). This remains a separate
-CLI workflow from the first Panel interface.
+| Component | Defined role |
+| --- | --- |
+| **OpenLB** | Detailed pore-scale physics using existing OpenLB facilities and the structure of its official examples. |
+| **Julia** | Custom numerical models, analysis, effective-property extraction and translation between scales. |
+| **Python** | Workflow coordination, data handling, integration, visualization and a local Panel interface. |
+| **DWSIM** | Actual process calculations in saved flowsheets, including equipment duties, recycle and balances. |
 
-The connected hydraulic comparison runs **OpenLB → Python/Julia → DWSIM**:
-two pore radii, measured permeability, a Julia Darcy pressure requirement, and
-actual saved DWSIM pump flowsheets. See [launch and verification commands](coupling/README.md)
-and [the OpenLB implementation policy](docs/openlb_code_policy.md).
+Models remain usable independently of the interface.
 
-Candidate research directions, including European industrial showcases and
-reacting/non-isothermal bioprocess options relevant to DTU PROSYS, are collected
-in [research showcase options](docs/research_showcase_options.md).
+## First research showcase: membrane support design
 
-An experimental support-permeability calibration and held-out check is now
-implemented in Julia/Python. It improves prediction error but **fails the
-declared 25% screen**; it does not validate an OpenLB material geometry or the
-complete membrane. See [results and limitations](docs/experimental_calibration.md)
-and [run/replay commands](calibration/README.md).
+**At a fixed filtration flux and unchanged selective layer, how much can support
+geometry reduce total pumping energy, and when does the selective layer become
+the dominant resistance?**
 
-The supplied Zhu (2021) matched support/membrane series has since been fitted
-and tested through Julia. The added original PDF improves the Figure 6 reading:
-nominal held-out maximum error is 4.56%, and the conservative reading-corner
-maximum is 7.88%, both within the unchanged 10% screen. See [the PDF refinement](docs/zhu_pdf_refinement.md);
-the earlier JPEG reading and its failed sensitivity screen remain preserved.
-This is a bounded effective-hydraulic comparison using published evidence.
+The current hydraulic study compares synthetic ceramic-membrane support
+geometries with a fixed selective-side opening and different interior widths.
+OpenLB resolves the support hydraulics; Julia translates the measured resistance
+into a membrane pressure requirement; DWSIM calculates the resulting pump duties.
 
-This is a computational-tool project. Synthetic or literature-informed
-geometries, numerical verification and published-data comparisons are the
-scope. New experiments, unavailable raw data and reconstruction of a particular
-specimen's 3D pore structure are not prerequisites. See [verification scope](docs/verification_scope.md).
+A crossflow extension includes separate feed and circulation pumps, recycle,
+purge and temperature control. Its main process metric is **pump shaft energy
+per cubic metre of filtrate**. Cooling heat is reported separately from shaft
+work. This makes the trade-off visible: improving the support can reduce its
+own pressure loss while other membrane resistances and circulation consume a
+larger share of the total energy.
 
-The selected research question is now **support geometry versus pumping energy
-at fixed filtration flux and unchanged selective-layer resistance**. The first
-synthetic application study adds a Julia layer-resistance model and real DWSIM
-pump cases to fresh OpenLB support solves. See [scope and assumptions](docs/filtration_research_case.md),
-[launch commands](filtration/README.md), and [the literature evidence](literature/README.md).
+The current literature comparison identifies an **effective non-support
+resistance**, which can include intermediate-layer and interface contributions.
+It does not uniquely identify the intrinsic selective-layer resistance or
+reconstruct a particular experimental specimen.
 
-The controlled **fixed-opening interior-widening study** is now complete:
-three geometries, 24 verified native OpenLB cases, Julia scale translation and
-nine actual saved DWSIM pump cases. Widening the interior radius from 4 to
-6 µm reduces native support resistance by **35.88%** and conditional
-transmembrane shaft energy by **11.30%**. See [results, geometry views and limits](docs/graded_support_study.md)
-and [fresh-run/replay commands](graded_support/README.md). The literature
-baseline calibration is common to all designs; this remains a synthetic
-geometry study.
+The final operating-map study makes the process trade-off clear. At **12 LMH**
+and inlet **Re = 1388**, widening the support interior from **4 to 6 µm** lowers
+mean transmembrane pressure from **1.2211 to 1.0831 kPa**, while total pump
+shaft energy falls by **0.18166%**. Circulation supplies **98.72%** of baseline
+shaft duty. The effective fixed resistance accounts for 68.50–77.23% of membrane
+resistance across that geometry pair.
 
-The **explicit hydraulic filtration flowsheet** is also complete: stock DWSIM
-pump, splitter and pressure-loss valves, with feed/permeate/retentate streams.
-All 18 geometry/recovery/channel-loss cases pass balances and saved/reloaded
-solves. At 50% recovery, an assumed 20 kPa upstream loss reduces the widest
-support's shaft-energy saving to **3.81%**. See [results and assumptions](docs/process_filtration.md),
-[interface investigation](docs/dwsim_filtration_interfaces.md), and
-[run/check commands](process_filtration/README.md). This is a once-through
-pure-water hydraulic surrogate.
+The study verifies **16 native hydraulic cases** and **91 actual DWSIM
+solve/save/reload cases**, with **902 Julia assertions** and **74 Python tests**.
+Its operating selections are conditional on the declared literature-transfer
+policies and evaluated grid. See the [final report](docs/operating_window.md)
+and [reproduction commands](examples/filtration/operating_map/README.md).
 
-The **crossflow recycle and circulation-energy extension** is now verified:
-25 actual DWSIM recycle cases, separate feed/circulation pumps, temperature
-control, purge, balances and saved/reloaded flowsheets. At 50% recovery and
-module flow five times permeate flow, circulation is **83.09%** of shaft duty
-and the widest support saves **1.91%** of total shaft energy. Higher circulation
-dilutes the material benefit further under the declared channel-resistance law.
-See [results and scope](docs/crossflow_recycle.md) and
-[reproduction commands](crossflow_recycle/README.md). Cooling heat and shaft
-work remain separate.
+![Hydraulic refinement, conditional capacity screen and filtration energy map](docs/operating_map.png)
 
-The **literature-constrained crossflow benchmark** now adds that performance
-role: real Julia flux constraints and 32 actual DWSIM cases, with explicit
-source-flow conventions and passive-solute balances. At fixed 100 LMH, the
-table policy selects 0.9 m/s among tested points; a conservative source-reading
-policy selects 1.4 m/s. The widest support saves **7.11–10.99%** at these
-conditional selected points. See [results and evidence limits](docs/crossflow_benchmark.md)
-and [run/check commands](crossflow_benchmark/README.md). No absolute module
-calibration or physical fouling-time prediction is inferred.
+The earlier [low-Re interface showcase](docs/star_channel_showcase.md) remains
+available with its own verified numerical range and completed browser checks.
 
-## Run on this Mac
+## What has been demonstrated locally
 
-From `/Users/dula/Documents/ChatGPT/Pore2Process`:
+| Stage | Documented development status |
+| --- | --- |
+| **Python–Julia reference** | Synthetic capillary network, Julia sparse pressure solve, analytical checks, permeability and a Darcy column calculation. |
+| **Native hydraulic benchmark** | Actual 3D OpenLB calculations with conservation, analytical-reference and discretization checks; stock TRT revalidation of the current porous-support cases. |
+| **Property-to-process connection** | OpenLB-derived hydraulic properties drive Julia pressure-load calculations and actual DWSIM pump flowsheets. |
+| **Filtration and crossflow** | Controlled support comparisons, distributed hydraulic calculations, circulation energy, recycle balances and saved/reloaded DWSIM cases. |
+| **Final operating map** | Higher-Re laminar-branch verification, literature-capacity policies and discrete material/operation comparisons; filtration hydraulics closed for now. |
+| **Local interface and exports** | Panel/PyVista network and geometry inspection, pressure profiles, completed-run snapshots and downloadable results; browser checks performed on the development Mac. |
+| **Literature comparisons** | Audited extractions, reduced-model calibration and held-out comparisons, with failed screens and evidence limits retained. |
+
+These are computational demonstrations of idealized or literature-informed
+systems.
+
+## How results stay traceable
+
+- **Explicit contracts:** SI units, coordinate systems, node indexing, array
+  shapes, flow orientation and file formats are recorded at software boundaries.
+- **Independent checks:** analytical solutions, conservation, numerical
+  convergence and appropriate published comparisons support each stage.
+- **Saved evidence:** inputs, assumptions, solver settings, diagnostics, software
+  versions and outputs travel with each completed run.
+- **Clear provenance:** extracted measurements are distinguished from illustrative
+  scenarios; unreported quantities remain unavailable or are explored as labelled
+  assumptions.
+- **Reproducible environments:** the implementation uses an isolated Python
+  environment, a shared explicit Julia project and saved dependency locks.
+
+Published articles and their available supplements provide experimental
+evidence.
+
+## Scientific references
+
+The membrane-structure, hydraulic and crossflow studies draw on the following
+articles. Source locations and extraction records are in the
+[literature workspace](literature/README.md) and [source ledger](literature/sources.json).
+
+1. **Biesheuvel, P. M., and Verweij, H. (1999).** [Design of ceramic membrane supports: permeability, tensile strength and stress](https://doi.org/10.1016/S0376-7388(98)00335-4). *Journal of Membrane Science*, 156, 141–152.
+2. **Zhu, W., et al. (2021).** [Design and optimization of ceramic membrane structure: From the perspective of flux matching between support and membrane](https://doi.org/10.1016/j.ceramint.2021.01.088). *Ceramics International*, 47, 12357–12365.
+3. **Mo, J., Li, X., and Yang, Z. (2022).** [Dissecting the structure-property relationship of ceramic membrane with asymmetric multilayer structures for maximizing permselectivity](https://doi.org/10.1016/j.watres.2022.118658). *Water Research*, 220, 118658.
+4. **Jan, A., et al. (2025).** [Silicon carbide coated alumina tight-ultrafiltration membrane prepared by low-pressure chemical vapor deposition for sulphate ion retention](https://doi.org/10.1016/j.desal.2025.119085). *Desalination*, 613, 119085.
+5. **Chiu, T. Y., and James, A. E. (2005).** [Critical flux determination of non-circular multi-channel ceramic membranes using TiO2 suspensions](https://doi.org/10.1016/j.memsci.2005.01.037). *Journal of Membrane Science*, 254, 295–301.
+6. **Chiu, T. Y., Lara Dominguez, M. V., and James, A. E. (2006).** [Critical flux and rejection behaviour of non-circular-channelled membranes: Influence of some operating conditions](https://doi.org/10.1016/j.seppur.2005.11.028). *Separation and Purification Technology*, 50, 212–219.
+7. **Garcia Garcia, F. J., and Chiu, T. Y. (2008).** [Economic aspects of critical flux operability in star shaped microfiltration membranes: Influence of some operating conditions](https://doi.org/10.1016/j.memsci.2008.08.033). *Journal of Membrane Science*, 325, 641–646.
+8. **Frederic, E., et al. (2018).** [Modelling of fluid flow distribution in multichannel ceramic membrane: Application to the filtration of produced water](https://doi.org/10.1016/j.memsci.2018.09.021). *Journal of Membrane Science*, 567, 290–302.
+
+## Where this can go
+
+The next case adds **isothermal adsorption and mass transfer**. Its research
+question is how particle size changes usable treatment capacity and pumping
+energy at fixed adsorbent inventory and required outlet quality. That work is
+in progress; its current source and comparison reports are in
+[examples/adsorption/](examples/adsorption/README.md).
+
+The filtration example remains available for regression and comparison.
+Reacting and non-isothermal chemical and bioprocess applications remain
+longer-term directions.
+
+See the [project roadmap](ROADMAP.md) for milestones and acceptance criteria.
+
+## Project layout
+
+Runnable studies are grouped in [examples/](examples/README.md):
+
+- **[Hydraulics](examples/hydraulics/capillary_network/README.md):** network reference, native capillary benchmark, Darcy/pump coupling and tool checks.
+- **[Filtration](examples/filtration/README.md):** the completed support/channel/crossflow operating-map study.
+- **[Adsorption](examples/adsorption/README.md):** bed hydraulics, uptake models and literature comparisons in development.
+
+Shared Python code stays in `src/pore2process_demo/`; Julia models and their
+explicit environment stay in `julia/`. The article workspace, existing runs and
+local tool installations remain in `literature/`, `results/` and `.local/`.
+See [the layout and migration guide](docs/project_layout.md).
+
+## Start with the capillary-network example
+
+Install **uv** and **Julia** using their official installation instructions,
+then run from a terminal. The initial Python–Julia example does not require
+OpenLB or DWSIM.
 
 ```sh
+git clone https://github.com/axeld92/Pore2Process.git
+cd Pore2Process
 source scripts/env.sh
 uv sync --locked
 uv run python scripts/bootstrap_julia.py
-uv run panel serve app.py --address 127.0.0.1 --port 5006
+uv run python -m pore2process_demo.cli --output results/default
+uv run panel serve app.py --address 127.0.0.1 --port 5006 --show
 ```
 
-Open [the local app](http://127.0.0.1:5006/app). With the verified native study
-available it opens **Filtration showcase**; press **Run filtration process**.
-Select **Capillary network** and press **Run simulation** for the original
-Julia network/Darcy reference. Without the later study evidence, that original
-tab opens by default.
-Add `--show` to the serve command to request automatic browser opening.
-Stop the server with Control-C. The app listens only on this computer.
-The environment script adds the project-local uv installation to PATH and keeps
-Python/graphics caches inside `.local/`; source it from the project root.
-
-The selected Julia executable is:
-
-```text
-/Users/dula/.julia/juliaup/julia-1.11.6+0.aarch64.apple.darwin14/bin/julia
-```
-
-`/Users/dula/.juliaup/bin/julia` resolved to that same executable during setup.
-Bootstrap saves its absolute path in ignored `.local/julia_runtime.json` and
-sets up the single `julia/` project. Both JuliaCall override variables are set
-before import, PythonCall is pinned to exactly the installed JuliaCall version,
-and application launches never rewrite manifests or install Julia packages.
-If the project moves, Julia changes, or the Python lock is updated, rerun
-bootstrap. Use `--julia /absolute/path/to/julia` to select a different installed
-Julia deliberately. The normal user Julia depot is used; no second Julia
-installation or separate Julia bridge environment is created.
-
-## Recreate setup
-
-Install Julia using the [official installer](https://julialang.org/install/), or
-reuse an existing compatible Julia (tested here: 1.11.6). Install uv through an
-[official supported method](https://docs.astral.sh/uv/getting-started/installation/).
-For a project-local uv installation, this machine used:
+Open `http://127.0.0.1:5006/app` and press **Run simulation** in **Capillary
+network**. Bootstrap accepts `--julia /absolute/path/to/julia` if Julia is not on
+PATH. Python 3.12 and Julia 1.11.6 were tested with matching
+JuliaCall/PythonCall 0.9.37; the exact dependencies are saved in `uv.lock` and
+`julia/Manifest.toml`.
 
 ```sh
-/Users/dula/.pyenv/versions/3.11.9/bin/python3 -m pip install --target .tools uv
-source scripts/env.sh
-uv sync --locked
-uv run python scripts/bootstrap_julia.py
-```
-
-On another machine, use an available Python 3 with pip for the first command.
-uv selects Python 3.12 and creates `.venv`; it can download Python if needed.
-This Mac already had Homebrew Python 3.12.9. System Python and other Python
-environments were not changed. Initial package downloads require internet access.
-
-Tested on macOS 26.6.2 / Apple Silicon with Python 3.12.9, Julia 1.11.6,
-uv 0.13.7, NumPy 2.5.4, Panel 1.10.0, PyVista 0.49.2, VTK 9.7.2,
-Matplotlib 3.11.2, JuliaCall/PythonCall 0.9.37, and pytest 9.2.0.
-`uv.lock` and `julia/Manifest.toml` record the resolved dependencies.
-
-## Tests and exports
-
-```sh
-source scripts/env.sh
 uv run python scripts/preflight.py
-uv run python scripts/preflight.py --https
 julia --startup-file=no --project=julia -e 'using Pkg; Pkg.instantiate(); Pkg.test()'
 uv run pytest -q
-uv run python -m pore2process_demo.cli --output results/default
-uv run python scripts/verify_reference.py
 ```
 
-For an exact Julia selection, replace `julia` in the test command with the
-absolute executable above. Preflight uses only the Python standard library,
-distinguishes absent packages from failed imports, and runs bounded probes.
-Its optional HTTPS metadata checks do not establish artifact availability.
-It defers importing JuliaCall until bootstrap exists to avoid automatic downloads.
+Use the same Julia executable selected by bootstrap for direct Julia tests.
+The VTK tests need normal host graphics access. The recorded full numerical
+and interface checks are in the [acceptance report](docs/implementation_status.md)
+and [browser record](docs/browser_checks.md).
 
-On this Mac, running the full UI test inside Codex's terminal sandbox aborted
-when PyVista initialized macOS graphics. The full suite passed when run with
-normal macOS graphics access. Numerical/CLI operations do not need an OpenGL
-window. Do not mistake the sandbox graphics restriction for a solver failure.
+## Reproduce the connected showcase
 
-CLI inputs use SI units, for example:
+The native setup has been checked on **macOS ARM64**, with **OpenLB 1.9r0**,
+**DWSIM 10.2.15**, a private **.NET 10** runtime and **Homebrew GCC 15**. Its
+builders currently use that platform's compiler and library paths.
 
-```sh
-uv run python -m pore2process_demo.cli --p-in-Pa 200 --radius-m 0.00005 --output results/changed
-```
+Follow the [clean-checkout reproduction guide](docs/reproduction.md) to download
+the pinned tools, run the prerequisite studies and generate the filtration
+showcase. The interface uses completed native evidence and launches actual
+Julia/DWSIM process calculations; it does not rerun OpenLB whenever a control
+changes. Native study generation can take substantial time.
 
-Each CLI export directory and UI download contains:
-
-| File | Contract |
+| Documentation | Contents |
 | --- | --- |
-| `summary.json` | Completed input snapshot, SI units, run ID/time, counts, geometry convention, flow, inferred permeability, column inputs/result, diagnostics, runtime versions, timing |
-| `nodes.csv` | Zero-based node ID, x/y/z in m, pressure in Pa |
-| `throats.csv` | Zero-based from/to IDs, radius and length in m, signed from-to flow in m³/s |
-| `pressure_profile.png` | Numerical mean pressure and independent analytical line, labelled axes |
-| `network.vtp` | Original SI line geometry with node IDs, pressure, throat flow/radius/length and orientation metadata |
-
-Unavailable values are JSON `null`. UI ZIPs use private temporary directories
-and immutable completed-run snapshots. Editing network controls does not solve
-automatically; it marks old results as stale. Failed runs preserve the previous
-successful result. Column edits call only the separate Julia Darcy function;
-invalid column inputs disable export until corrected. Downloads retain the run
-ID of the network supplying permeability and its viscosity.
-
-## Model and independent analytical reference
-
-Nodes are junctions without storage or additional pressure loss. Each edge is
-a cylindrical capillary of length `a` and radius `r`, with Newtonian viscosity
-`mu`. Flow is steady, incompressible, fully developed and laminar, without
-gravity, entrance losses, or periodic boundaries. Transverse boundaries are
-closed because no edges cross them.
-
-For logical zero-based `(i,j,k)`, node ID is `i + nx*(j + ny*k)` (x fastest).
-Coordinates are `(i*a, (j+0.5)*a, (k+0.5)*a)`. In node order, existing positive
-x, y and z edges are emitted once, in that order. Positive flow goes from the
-first endpoint to the second. Julia uses one-based endpoint IDs internally;
-the bridge subtracts one exactly once and copies arrays into ordinary NumPy
-`float64`/`int64` arrays. Returned snapshots do not share mutable simulation state.
-
-The solver assembles the sparse conductance Laplacian from
-`g = pi*r^4/(8*mu*a)` and solves `K_II*p_I = -K_IB*p_B` with inlet/outlet
-Dirichlet pressures. Signed throat flow is `q = g*(p_from-p_to)`.
-Nodal net outflow adds `q` at the first endpoint and subtracts it at the second.
-`Q_in` sums inlet nodal net outflows; `Q_out` negates their outlet sum, so
-transverse boundary edges cancel without double counting. `nx=2` has no
-interior solve. Zero pressure drop is assigned the exact constant state.
-
-Independently of the sparse assembly: a path along x contains `nx-1`
-capillaries in series, so its hydraulic resistance is `(nx-1)/g`.
-There are `ny*nz` identical paths in parallel. The linear pressure field has
-equal transverse pressures, satisfying every transverse edge and interior
-balance. Consequently:
-
-```text
-L = (nx - 1)*a
-A = ny*nz*a^2
-p(x) = p_in - (p_in - p_out)*x/L
-Q_exact = ny*nz*pi*r^4*(p_in - p_out)/(8*mu*L)
-k_exact = mu*L*Q_exact/(A*(p_in-p_out)) = pi*r^4/(8*a^2)
-```
-
-Each transverse node represents a cell of area `a²`. The y/z domains are
-`[0,ny*a]` and `[0,nz*a]`, leaving a half-cell beyond outer node centres.
-This convention also supports a single-capillary chain.
-The analytical expressions are used only for tests and comparison plots;
-the production answer comes from Julia's sparse equations.
-
-Inferred permeability is `mu*L*Q_in/(A*delta_p)`. It remains positive on
-pressure reversal and is unavailable at zero pressure drop. The independent
-Julia column function uses `Q_column = k*A_column*delta_p_column/(mu*L_column)`.
-The column assumes the same repeating medium at a larger scale; this is an
-upscaling demonstration, without empirical validation for a real material.
-
-Default inputs are `(6,4,4)`, `a=1e-3 m`, `r=50e-6 m`, `mu=1e-3 Pa s`,
-inlet/outlet pressures 100/0 Pa. Expected flow is 47.1238898038469 µL/min,
-permeability 2.4543692606170265e-12 m², and column flow 0.736310778185108 mL/min
-for `L_column=.02 m`, `A_column=1e-4 m²`, `delta_p_column=1000 Pa`.
-See [verified numerical observations](docs/verified_reference.json).
-
-## Scope and implementation notes
-
-UI dimensions are bounded to `2 <= nx <= 20`, `1 <= ny,nz <= 8`. Inputs must
-be finite, dimensions integers, spacing/radius/viscosity positive, and diameter
-smaller than spacing. The 3D view uses physical tube radii (1×); coordinates
-are converted to mm only for display. Export geometry stays in metres.
-The pressure colorbar is labelled in Pa.
-
-One Julia runtime is shared by the local server process; controls and result
-snapshots belong to each browser session. Julia runs synchronously on the main
-server thread. Panel/Bokeh event callbacks use async wrappers to retain event-loop
-execution; there is no `await` during a Julia solve, no background Julia worker,
-and no cancellation. Bokeh 3.10 moves synchronous callbacks onto workers, so
-plain synchronous callbacks are unsuitable for this bridge. A bridge guard
-rejects worker-thread calls before entering Julia.
-
-Initialization and first compilation take seconds; warmed bounded solves were
-milliseconds or less in the recorded run. Plots/serialization/export add their
-own time. This is not a speedup or performance claim. Timing fields distinguish
-runtime initialization, bridge calls including first compilation/conversion,
-core function time, and reduced linear solve time.
-
-If 3D creation raises a Python exception, the app keeps the numerical result
-and pressure plot and reports the graphics failure. Interactive 3D must still
-be verified on each target platform. This prototype excludes images, extracted
-networks, heterogeneous radii, transients, optimization, authentication, cloud
-hosting, and production job orchestration.
-
-See [environment findings](docs/environment_check.md) and
-[acceptance status](docs/implementation_status.md) for the exact checks and
-remaining limitations. The supplied handoff is preserved unchanged.
-
-## Primary documentation
-
-- [JuliaCall existing environment requirements](https://juliapy.github.io/PythonCall.jl/stable/juliacall/#Using-existing-environments)
-- [Julia project environments](https://pkgdocs.julialang.org/v1/environments/)
-- [Julia sparse arrays](https://docs.julialang.org/en/v1/stdlib/SparseArrays/)
-- [uv projects and lockfiles](https://docs.astral.sh/uv/guides/projects/)
-- [Panel VTK pane](https://panel.holoviz.org/reference/panes/VTK.html) (the linked page returned 404 during this work; installed Panel's VTK docstrings/source and published reference examples were also inspected)
-- [Panel FileDownload](https://panel.holoviz.org/en/docs/latest/reference/widgets/FileDownload.html)
-- [PyVista](https://docs.pyvista.org/)
+| [Setup and examples](docs/setup_and_examples.md) | Detailed Python–Julia setup, model derivation, contracts and original example commands |
+| [Clean-checkout reproduction](docs/reproduction.md) | Native prerequisites and ordered connected-study commands |
+| [Filtration showcase](docs/star_channel_showcase.md) | Geometry, model, quantitative results and evidence limits |
+| [Closed filtration operating map](docs/operating_window.md) | Final hydraulic range, material/operation comparison and circulation-energy result |
+| [Literature workspace](literature/README.md) | Curated references, extractions and provenance |
+| [Integration roadmap](docs/integration_roadmap.md) | Detailed milestone and research status |
+| [Publication record](docs/code_publication.md) | Published snapshot and verification scope |

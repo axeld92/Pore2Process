@@ -10,7 +10,7 @@ validation remains unfinished.
 
 Run ID: `20261108T181450Z-e1b190f9`. Full snapshot:
 `results/coupling/runs/20261108T181450Z-e1b190f9/summary.json`. The compact observation is
-`docs/coupling_reference.json`. [Exact commands, contracts and limitations](../coupling/README.md).
+`docs/coupling_reference.json`. [Exact commands, contracts and limitations](../examples/hydraulics/darcy_pump/README.md).
 
 ## Observed process effect
 

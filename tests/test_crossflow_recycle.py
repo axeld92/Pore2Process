@@ -6,13 +6,13 @@ import zipfile
 
 import pytest
 from pore2process_demo.bridge import runtime
-from process_filtration.run import read,ROOT
-from crossflow_recycle.model import translate,adapter_inputs,topology,CONNECTIONS,validate
-from crossflow_recycle.run import jobs,check_protocol
-from crossflow_recycle.check import verify
+from pore2process_demo.io import read_json as read; from pore2process_demo.paths import ROOT
+from examples.filtration.crossflow_recycle.model import translate, adapter_inputs, topology, CONNECTIONS, validate
+from examples.filtration.crossflow_recycle.run import jobs, check_protocol
+from examples.filtration.crossflow_recycle.check import verify
 
 def source():return read(ROOT/'docs/process_filtration_reference.json')['source_for_Julia_replay']
-def protocol():return read(ROOT/'crossflow_recycle/protocol.json')
+def protocol():return read(ROOT/'examples/filtration/crossflow_recycle/protocol.json')
 
 def test_real_julia_distinguishes_fresh_feed_module_and_return():
     s=source();p=protocol();m,c=translate(runtime(),s,s['supports'][0],p,.5,5.)
@@ -66,7 +66,7 @@ def test_saved_recycle_and_heat_connector_contract(tmp_path):
     with pytest.raises(RuntimeError,match='topology differs'):topology(f)
 
 def test_changed_cooling_artifact_fails_before_replay(tmp_path):
-    from coupling.run import sha
+    from pore2process_demo.io import sha
     f=tmp_path/'process/case/summary.json';f.parent.mkdir(parents=True);f.write_text('{"cooling_W":2}\n')
     s={'status':'passed','artifact_sha256':{'process/case/summary.json':sha(f)}}
     (tmp_path/'summary.json').write_text(json.dumps(s));f.write_text('{"cooling_W":0}\n')

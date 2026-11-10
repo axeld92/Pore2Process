@@ -141,7 +141,7 @@ stock stream-context binding; that diagnostic attempt is retained. Original
 simulator sources and earlier adapters are untouched. See the official
 [material-stream API](https://dwsim.org/help/api/streams/material-stream.html).
 
-[Exact launch and test commands](../adsorption/README.md). No new dependency
+[Exact launch and test commands](../examples/adsorption/README.md). No new dependency
 installation or manifest change is needed. The existing Panel interface is
 preserved; no new adsorption UI or browser pass is claimed.
 
@@ -181,7 +181,7 @@ Doubling the column cells changes the largest-particle breakthrough time by 0.06
 
 The first connected attempt exposed an overly restrictive Newton feasibility rule in the nearly zero-concentration tail for the smallest particles. A bound-constrained line search now re-evaluates the original conservative residual at each trial iterate; completed states are not clipped or mass-corrected. A dedicated stiff, fast-uptake regression passes along with the analytical tests. The failed attempt remains saved.
 
-[Scientific figure](adsorption.png) · [Compact real-simulator reference](adsorption_reference.json) · [Commands](../adsorption/README.md)
+[Scientific figure](adsorption.png) · [Compact real-simulator reference](adsorption_reference.json) · [Commands](../examples/adsorption/README.md)
 
 ## Next executable milestone
 

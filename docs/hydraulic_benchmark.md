@@ -30,7 +30,7 @@ OpenLB's existing numerical components throughout and follows the stock example
 lifecycle. The custom cylinder helper is removed. All additions/build products
 stay outside the original distribution; 2,070 original files match the official
 archive. See [the code policy](openlb_code_policy.md) and
-[launch commands/data contract](../hydraulic/README.md).
+[launch commands/data contract](../examples/hydraulics/capillary_benchmark/README.md).
 
 The previous implementation and measurements remain in Git and
 [the historical report](hydraulic_benchmark_legacy.md). Its numbers apply to that

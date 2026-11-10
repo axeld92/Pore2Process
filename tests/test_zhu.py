@@ -4,16 +4,16 @@ import math
 
 import pytest
 
-from calibration.digitize_zhu import digitize, pixels_to_flux
-from calibration.run import ROOT, write_json
-from calibration.zhu import analyze, check, export, load_snapshot, validate
+from examples.filtration.calibration.digitize_zhu import digitize, pixels_to_flux
+from examples.filtration.calibration.run import ROOT, write_json
+from examples.filtration.calibration.zhu import analyze, check, export, load_snapshot, validate
 from pore2process_demo.bridge import runtime
 
 
 def test_actual_julia_fit_oracle_and_heldout_isolation():
     snapshot=load_snapshot()
     r=analyze(snapshot,with_sensitivity=False)
-    train=[c for c in r["cases"] if c["role"]=="calibration"]
+    train=[c for c in r["cases"] if c["role"]=='calibration']
     expected=math.fsum(1e5/c["measured_flux_m_s"]-1/c["support_permeance_m_Pa_s"] for c in train)/len(train)
     assert r["fit"]["fixed_impedance_Pa_s_m"]==pytest.approx(expected,rel=1e-12)
     assert len(train)==11
@@ -74,7 +74,7 @@ def test_pdf_refinement_preserves_split_and_uses_actual_julia(tmp_path):
     if (ROOT/snapshot["digitized"]["config"]["image"]).exists():
         assert digitize(snapshot["digitized"]["config"])==snapshot["digitized"]
     result=analyze(snapshot)
-    train=[c for c in result["cases"] if c["role"]=="calibration"]
+    train=[c for c in result["cases"] if c["role"]=='calibration']
     expected=math.fsum(1e5/c["measured_flux_m_s"]-1/c["support_permeance_m_Pa_s"] for c in train)/len(train)
     assert result["fit"]["fixed_impedance_Pa_s_m"]==pytest.approx(expected,rel=1e-12)
     assert [c["point_id"] for c in result["cases"] if c["role"]=="holdout"]==list(range(2,22,2))

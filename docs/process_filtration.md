@@ -143,7 +143,7 @@ the hydraulic partition is not added again to that balance.
 
 ## Declared scenarios and acceptance
 
-`process_filtration/protocol.json` freezes the scope and thresholds. Conditions
+`examples/filtration/once_through/protocol.json` freezes the scope and thresholds. Conditions
 are 298.15 K, 100000 Pa external pressure, 100 LMH reference flux, 1 m² membrane,
 75% pump efficiency, three already verified support geometries, mass recoveries
 25/50/75%, and separate upstream drops 0/20000 Pa. The latter values are scenario
@@ -167,7 +167,7 @@ exports retain their original SI units and indexing contract.
 
 ## Reproduction and remaining scope
 
-[Run and check commands](../process_filtration/README.md) reproduce this stage
+[Run and check commands](../examples/filtration/once_through/README.md) reproduce this stage
 from intact saved OpenLB data. Each run stores inputs, original source summary,
 model/runtime versions and hashes, actual DWSIM archives, stream results,
 timings, logs, CSV and figures. The checker replays Julia and validates stored

@@ -7,7 +7,7 @@ seed/tolerance checks. Each flowsheet was saved, loaded and solved again.
 The separately forced one-iteration run is rejected. No new OpenLB simulation
 or experimental parameter fit was made.
 
-[Exact commands and contracts](../crossflow_benchmark/README.md),
+[Exact commands and contracts](../examples/filtration/literature_benchmark/README.md),
 [compact reference](crossflow_benchmark_reference.json),
 [source review](../literature/crossflow_papers_review.md).
 
@@ -155,7 +155,7 @@ preflight imports and actual tests pass. This is not an installation blocker.
 Observed cold-process Julia initialization is **2.43 s**. Timing records for
 every DWSIM setup/solve and Julia translation remain in the saved JSON. These
 are observations on this machine, not a speedup claim. Reproduction commands
-and ancestor prerequisites are in [the benchmark README](../crossflow_benchmark/README.md).
+and ancestor prerequisites are in [the benchmark README](../examples/filtration/literature_benchmark/README.md).
 
 ## Remaining research step
 

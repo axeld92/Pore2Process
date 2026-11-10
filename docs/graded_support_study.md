@@ -107,7 +107,7 @@ porosity or equal mechanical strength is not imposed.
 OpenLB uses its existing cylinder/cone indicators and union operator, D3Q19,
 BGK dynamics in this historical run, Bouzidi walls, local pressure boundaries, physical plane-integral
 functors and ValueTracer stopping. The project code follows the official
-example lifecycle and stays in [a separate application folder](../graded_support/openlb/case.h).
+example lifecycle and stays in [a separate application folder](../examples/filtration/graded_support/openlb/case.h).
 The installed poiseuille3d and venturi3d examples and
 [official geometry documentation](https://openlb.gitlab.io/release/content/03_geometry.html)
 were consulted. No original OpenLB implementation is changed.
@@ -125,7 +125,7 @@ k_body = mu * L_body / (A_cell * R_body)   [m²]
 Every design has three neck grids, N24/N32/N40. Additional N24 cases use
 5, 20 and −10 Pa, longer leads and half the physical time step through
 tau=0.65 instead of 0.8. This gives **24 actual native solves**. The
-[protocol](../graded_support/protocol.json) fixes tolerances before those solves:
+[protocol](../examples/filtration/graded_support/protocol.json) fixes tolerances before those solves:
 1% fine-grid resistance change, 0.5% cross-case resistance change, 1% maximum
 all-plane mass spread, 0.01% inlet/outlet mass mismatch, native Re<0.05 and
 Mach<0.001. The straight case must also meet 1% analytical permeability and
@@ -190,7 +190,7 @@ a subsequent process milestone.
 
 ## Reproduction and acceptance record
 
-[Launch commands and all array/file contracts](../graded_support/README.md)
+[Launch commands and all array/file contracts](../examples/filtration/graded_support/README.md)
 include fresh execution, native-data reuse with strict hashes, saved-result
 verification, direct Julia tests and the Python integration suite. The
 separate native input validator exercises invalid geometry, fluid/numerical

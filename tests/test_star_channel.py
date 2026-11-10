@@ -8,9 +8,9 @@ import pyvista as pv
 import pytest
 
 from pore2process_demo.bridge import runtime
-from star_channel.geometry import polygon,dimensions,write_stl
-from star_channel.model import translate,requests
-from process_filtration.run import ROOT,read
+from examples.filtration.star_channel.geometry import polygon, dimensions, write_stl
+from examples.filtration.star_channel.model import translate, requests
+from pore2process_demo.paths import ROOT; from pore2process_demo.io import read_json as read
 
 def evidence():
     r=read(ROOT/'docs/star_channel_reference.json')
@@ -58,8 +58,8 @@ def test_invalid_inputs_and_range_fail_before_external_solver(change):
 def test_saved_actual_dwsim_replays_new_trt_geometry():
     r,n,s,p=evidence();c=r['actual_case'];q=c['request']
     t=translate(runtime(),n,s,p,q)
-    from calibration.check import close_tree
-    from crossflow_recycle.model import validate
+    from examples.filtration.calibration.check import close_tree
+    from examples.filtration.crossflow_recycle.model import validate
     close_tree(t,c['translation'])
     checked=validate(c['dwsim'],c['dwsim']['inputs'],t['process'],r['hydraulics'],s)
     assert all(checked['checks'].values())
@@ -73,8 +73,8 @@ def test_saved_actual_dwsim_replays_new_trt_geometry():
     assert n['cases']['grid48']['raw']['collision_model']=='TRT'
 
 def test_corrupt_artifact_is_rejected(tmp_path):
-    from coupling.run import sha
-    from star_channel.check import verify
+    from pore2process_demo.io import sha
+    from examples.filtration.star_channel.check import verify
     f=tmp_path/'state.json';f.write_text('{}')
     (tmp_path/'summary.json').write_text(json.dumps({'status':'passed','artifacts_sha256':{'state.json':sha(f)}}))
     f.write_text('{"changed":true}')

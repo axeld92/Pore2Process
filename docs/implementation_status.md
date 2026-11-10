@@ -77,7 +77,7 @@ and an initial stiff-uptake solver failure are retained. Revised scaling,
 stock forced-liquid DWSIM and a conservative residual line search pass the
 unchanged acceptance screens. The figure was visually inspected; no new
 adsorption Panel UI/browser verification is claimed. See
-[commands](../adsorption/README.md) and [the compact reference](adsorption_reference.json).
+[commands](../examples/adsorption/README.md) and [the compact reference](adsorption_reference.json).
 
 Earlier completed milestone, 9–10 November: the [higher-Re operating map](operating_window.md)
 completes the three requested hydraulic/evidence/design-map steps. **16 native
@@ -110,7 +110,7 @@ policies can select different grid points; they remain conditional scenarios.
 The figure was visually inspected. This report/CSV extension adds no new Panel
 controls or browser-pass claim. Existing examples, the live interface, locks
 and unrelated files are preserved. Reaction and non-isothermal work remain
-deferred. [Commands](../operating_map/README.md) and
+deferred. [Commands](../examples/filtration/operating_map/README.md) and
 [the numerical reference](operating_map_reference.json) support reproduction.
 
 Earlier completed milestone, 9 November: the [explicit-channel and biological-feed
@@ -299,7 +299,7 @@ actual 50/40 µm pore simulations supply measured permeability, Julia derives
 a fixed-flow pressure requirement, and actual saved/reloaded DWSIM pump cases
 show the expected power change. All stages share DWSIM-derived water properties.
 See [verified connected results and limitations](connected_hydraulics.md) and
-[launch commands](../coupling/README.md). The original app, bridge and dependency
+[launch commands](../examples/hydraulics/darcy_pump/README.md). The original app, bridge and dependency
 locks/manifests remain unchanged. This adds a CLI demonstration and scientific
 figures, without a new connected UI or a real-material validation claim.
 
@@ -360,7 +360,7 @@ formula and nominal powder means were rendered and visually inspected;
 and hashes. All nine extracted cases and the permeability multiplier agree.
 This resolves the table audit without creating another independent dataset.
 
-The new [fixed protocol](../calibration/protocol.json) fits one Julia closure
+The new [fixed protocol](../examples/filtration/calibration/protocol.json) fits one Julia closure
 multiplier to AKP-30 temperature-series rows 2–4, then evaluates held-out
 hold-time rows 5–7. Fitted b is 2.98438. Primary held-out mean absolute relative
 error improves from 66.66% to 21.11%, but row 5 has +30.89% error and fails the
@@ -381,7 +381,7 @@ conditional energy and replay/tamper rejection. The final saved nine-case run
 replays successfully. Enabling `--require-screen-pass` correctly rejects its
 scientific outcome while the normal integrity checker passes. Plots were
 visually reviewed. Locks, Julia environment/depot and bridge configuration
-remain unchanged. [Commands](../calibration/README.md), [result report](experimental_calibration.md)
+remain unchanged. [Commands](../examples/filtration/calibration/README.md), [result report](experimental_calibration.md)
 and [compact reference](experimental_calibration_reference.json) preserve the outcome.
 
 At this stage the next evidence request was Mo's S1/S2 and original PDF,
@@ -446,7 +446,7 @@ Final direct Julia tests pass **347 assertions** and the complete Python suite
 passes **19 tests**, including fit/oracle agreement, held-out isolation,
 digitization reproduction, impedance-versus-μR equivalence, reading sensitivity,
 energy/threshold checks and export replay/tamper rejection. [The report](zhu_matched_validation.md)
-and [commands](../calibration/README.md) explain reproduction and limits.
+and [commands](../examples/filtration/calibration/README.md) explain reproduction and limits.
 Dependency locks/runtime/bridge configuration and original OpenLB files remain
 unchanged; the Julia package adds only the independent measured-impedance API.
 
@@ -522,7 +522,7 @@ native launch helper gains only an optional timeout; earlier defaults remain
 that execution allowance without changing numerical thresholds. Interrupted
 pilots/partial runs and earlier failed literature screens remain preserved.
 [Results and limits](graded_support_study.md), [compact reference](graded_support_reference.json)
-and [commands](../graded_support/README.md) describe exact reproduction.
+and [commands](../examples/filtration/graded_support/README.md) describe exact reproduction.
 
 The subsequent [explicit hydraulic filtration milestone](process_filtration.md)
 is completed below; circulation/recycle duty remains the following extension.
@@ -567,7 +567,7 @@ No numerical thresholds were
 relaxed. Original simulations, installed distributions, prior failures and
 unrelated files are preserved.
 
-[Commands](../process_filtration/README.md), [results/model limits](process_filtration.md)
+[Commands](../examples/filtration/once_through/README.md), [results/model limits](process_filtration.md)
 and [the compact reference](process_filtration_reference.json) give reproduction.
 That subsequent pressure-consistent mixer/recycle/circulation-pump case is now
 complete, as recorded below. No new experimental dataset was required.
@@ -617,7 +617,7 @@ Implementation/runtime hashes match the accepted run. No dependencies, locks,
 original simulator sources or unrelated `assets/` were changed.
 
 [Results and assumptions](crossflow_recycle.md), [compact reference](crossflow_recycle_reference.json)
-and [commands](../crossflow_recycle/README.md) document reproduction. Next is an
+and [commands](../examples/filtration/crossflow_recycle/README.md) document reproduction. Next is an
 application-specific published channel geometry and transport/fouling relation
 that gives circulation a performance benefit to compare against its cost.
 
@@ -653,4 +653,4 @@ visually inspected. No new OpenLB solve or original OpenLB source change was
 required. Exact commands, results, source limits and the next explicit
 star-channel hydraulic reference are documented in
 [the report](crossflow_benchmark.md) and
-[launch instructions](../crossflow_benchmark/README.md).
+[launch instructions](../examples/filtration/literature_benchmark/README.md).

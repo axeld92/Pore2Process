@@ -4,16 +4,16 @@ import json
 
 import pytest
 
-from crossflow_benchmark.model import prepare, requests, translate
-from crossflow_benchmark.check import verify
+from examples.filtration.literature_benchmark.model import prepare, requests, translate
+from examples.filtration.literature_benchmark.check import verify
 from pore2process_demo.bridge import runtime
-from process_filtration.run import ROOT, read
+from pore2process_demo.paths import ROOT; from pore2process_demo.io import read_json as read
 
 
 def inputs():
-    p = read(ROOT / 'crossflow_benchmark/protocol.json')
+    p = read(ROOT / 'examples/filtration/literature_benchmark/protocol.json')
     e = read(ROOT / p['extraction'])
-    h = read(ROOT / 'crossflow_recycle/protocol.json')
+    h = read(ROOT / 'examples/filtration/crossflow_recycle/protocol.json')
     h['recycle']['maximum_iterations'] = p['maximum_recycle_iterations']
     s = read(ROOT / 'docs/crossflow_recycle_reference.json')['source_for_Julia_replay']
     return p, e, h, s
@@ -63,7 +63,7 @@ def test_actual_julia_flow_convention_and_finite_pass_solute_balance():
 
 
 def test_mutated_saved_source_fails_before_runtime_replay(tmp_path):
-    from coupling.run import sha
+    from pore2process_demo.io import sha
     f = tmp_path / 'inputs.json'; f.write_text('{}\n')
     summary = {'status': 'passed', 'artifact_sha256': {'inputs.json': sha(f)}}
     (tmp_path / 'summary.json').write_text(json.dumps(summary))
@@ -73,7 +73,7 @@ def test_mutated_saved_source_fails_before_runtime_replay(tmp_path):
 
 
 def test_actual_saved_high_circulation_dwsim_case_matches_julia():
-    from crossflow_recycle.model import validate
+    from examples.filtration.crossflow_recycle.model import validate
     r = read(ROOT / 'docs/crossflow_benchmark_reference.json')
     c = r['actual_high_circulation_case']
     t = translate(runtime(), r['extraction'], r['protocol'], r['hydraulics'],
@@ -88,7 +88,7 @@ def test_actual_saved_high_circulation_dwsim_case_matches_julia():
 
 @pytest.mark.parametrize('change', ['false_convergence', 'lost_heat', 'lost_mass'])
 def test_high_recycle_flags_cannot_hide_invalid_saved_states(change):
-    from crossflow_recycle.model import validate
+    from examples.filtration.crossflow_recycle.model import validate
     r = read(ROOT / 'docs/crossflow_benchmark_reference.json')
     c = r['actual_high_circulation_case']; actual = copy.deepcopy(c['dwsim'])
     if change == 'false_convergence':

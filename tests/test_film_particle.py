@@ -5,9 +5,9 @@ import json
 import numpy as np
 import pytest
 
-from adsorption.film_particle.bridge import batch,bed,call
-from adsorption.film_particle.check import verify_hashes,inventories
-from adsorption.film_particle.data import ROOT,evidence,observations
+from examples.adsorption.film_particle.bridge import batch, bed, call
+from examples.adsorption.film_particle.check import verify_hashes, inventories
+from examples.adsorption.film_particle.data import ROOT, evidence, observations
 
 
 def reference():
@@ -96,7 +96,7 @@ def test_invalid_particle_inputs_fail_before_solving(kwargs):
 
 
 def test_changed_saved_artifact_is_rejected(tmp_path):
-    from adsorption.alhamed.source import sha
+    from examples.adsorption.alhamed.source import sha
     p=tmp_path/'field.csv';p.write_text('q_kg_kg\n0\n');digest=sha(p)
     p.write_text('q_kg_kg\n1\n')
     with pytest.raises(ValueError,match='Changed or invalid artifact'):

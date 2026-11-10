@@ -3,9 +3,9 @@ import json
 
 import pytest
 from pore2process_demo.bridge import runtime
-from graded_support.geometry import audit
-from graded_support.model import read_protocol,profile,load_case
-from graded_support.run import requests,native_case
+from examples.filtration.graded_support.geometry import audit
+from examples.filtration.graded_support.model import read_protocol, profile, load_case
+from examples.filtration.graded_support.run import requests, native_case
 
 def test_actual_julia_ratio_translation_and_fixed_interface():
     p=read_protocol(); jl=runtime()
@@ -41,9 +41,9 @@ def test_native_geometry_disconnection_rejected(tmp_path):
 def test_native_cache_tamper_is_rejected_before_reuse(tmp_path,monkeypatch):
     origin=tmp_path/'old'/'case';origin.mkdir(parents=True)
     binary=tmp_path/'test-binary';binary.write_bytes(b'not executed')
-    monkeypatch.setattr('graded_support.run.BINARY',binary)
-    from coupling.run import sha
-    from graded_support.run import MEASUREMENTS
+    monkeypatch.setattr('examples.filtration.graded_support.run.BINARY',binary)
+    from pore2process_demo.io import sha
+    from examples.filtration.graded_support.run import MEASUREMENTS
     inputs={'resolution':24}
     record={'binary_sha256':sha(binary),'inputs':inputs,'artifact_sha256':{name:'0'*64 for name in MEASUREMENTS}}
     for name in MEASUREMENTS: (origin/name).write_text('changed')
@@ -52,8 +52,8 @@ def test_native_cache_tamper_is_rejected_before_reuse(tmp_path,monkeypatch):
         native_case(tmp_path/'new','case',inputs,read_protocol(),tmp_path/'old')
 
 def test_nested_dwsim_summary_is_hash_checked(tmp_path):
-    from coupling.run import sha
-    from graded_support.check import verify
+    from pore2process_demo.io import sha
+    from examples.filtration.graded_support.check import verify
     nested=tmp_path/'process'/'nominal'/'straight'/'summary.json'
     nested.parent.mkdir(parents=True);nested.write_text('{"value":1}\n')
     s={'status':'passed','protocol':{},'artifact_sha256':{str(nested.relative_to(tmp_path)):sha(nested)}}

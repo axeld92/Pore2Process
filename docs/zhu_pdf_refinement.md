@@ -26,7 +26,7 @@ pairs were separated explicitly, using the same method as before. The
 hashes, coordinates and provenance; [the new points](../literature/zhu2021_fig6_pdf_points.json)
 retain raw pixels and SI conversion information.
 
-[The PDF protocol](../calibration/zhu_protocol_pdf.json) was fixed before this
+[The PDF protocol](../examples/filtration/calibration/zhu_protocol_pdf.json) was fixed before this
 reading was fitted: same 21 M1 points, 11 odd-rank calibration points, ten
 even-rank holdouts, support coefficient one, one positive non-support impedance
 and 10% screen. The same ±2-pixel marker and ±1-pixel axis bounds cover a
@@ -96,9 +96,9 @@ From the project root:
 
 ```sh
 source scripts/env.sh
-uv run python -m calibration.zhu --source pdf --require-sources
-uv run python -m calibration.zhu --check results/zhu_calibration/runs/20261108T211057Z-3d592c4b
-uv run python -m calibration.zhu --source jpeg
+uv run python -m examples.filtration.calibration.zhu --source pdf --require-sources
+uv run python -m examples.filtration.calibration.zhu --check results/zhu_calibration/runs/20261108T211057Z-3d592c4b
+uv run python -m examples.filtration.calibration.zhu --source jpeg
 uv run pytest -q
 ```
 

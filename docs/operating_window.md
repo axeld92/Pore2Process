@@ -20,7 +20,7 @@ extensions are deferred.
 
 ## Native implementation and acceptance
 
-All project application source is in `operating_map/openlb/`; external build
+All project application source is in `examples/filtration/operating_map/openlb/`; external build
 products are in `.local/operating_map/build_trt27/`. Original OpenLB files are
 not modified. The installed 1.9r0 examples and stock components determine the
 API and lifecycle: mesh, geometry, lattice, initial conditions, simulation,
@@ -149,7 +149,7 @@ they are not validated physical or continuous optima.
 
 ## Reproduction and verification record
 
-See [exact commands and resumption](../operating_map/README.md). Existing locks
+See [exact commands and resumption](../examples/filtration/operating_map/README.md). Existing locks
 and runtimes are reused; no dependency installation or system changes are
 required. `results/operating_map/preflight.json` records the actual machine.
 
@@ -247,6 +247,6 @@ Largest omitted-axial-momentum/friction upper screen: 1.317500% (limit 2%).
 
 The checker replays 1620 source-capacity comparisons and 1458 discrete policy selections. Independent upstream replay recorded: `True`.
 
-[Scientific figure](operating_map.png) · [Compact numerical reference](operating_map_reference.json) · [Reproduction commands](../operating_map/README.md)
+[Scientific figure](operating_map.png) · [Compact numerical reference](operating_map_reference.json) · [Reproduction commands](../examples/filtration/operating_map/README.md)
 
 The standalone map adds no new Panel browser controls. The existing low-Re interface retains its previous browser verification; no new browser pass is claimed for this CLI/report extension. Reacting and non-isothermal additions remain deferred.

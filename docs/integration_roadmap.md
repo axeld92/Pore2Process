@@ -30,7 +30,7 @@ support future chemistry; it does not replace either mandatory simulator.
 
 The first connected technical acceptance criterion is met for the synthetic
 hydraulic demonstration. See [the results](connected_hydraulics.md) and
-[reproduction commands](../coupling/README.md). The separately calculated
+[reproduction commands](../examples/hydraulics/darcy_pump/README.md). The separately calculated
 porous load drives a DWSIM pump; there is no porous unit operation in that
 flowsheet. The original reference remains available in its own app tab; the
 new filtration tab runs the verified Julia/DWSIM workflow with per-session

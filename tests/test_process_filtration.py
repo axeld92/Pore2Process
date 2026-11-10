@@ -5,11 +5,11 @@ import xml.etree.ElementTree as ET
 import zipfile
 
 import pytest
-from graded_support.model import read_protocol
+from examples.filtration.graded_support.model import read_protocol
 from pore2process_demo.bridge import runtime
-from process_filtration.model import translate,adapter_inputs,topology,CONNECTIONS,validate
-from process_filtration.run import ROOT,read,check_protocol
-from process_filtration.check import verify
+from examples.filtration.once_through.model import translate, adapter_inputs, topology, CONNECTIONS, validate
+from pore2process_demo.paths import ROOT; from pore2process_demo.io import read_json as read; from examples.filtration.once_through.run import check_protocol
+from examples.filtration.once_through.check import verify
 
 def source_fixture():
     return {'protocol':read_protocol(),
@@ -19,7 +19,7 @@ def source_fixture():
         'fluid_anchor':{'inlet_density_kg_m3':1000.,'inlet_viscosity_Pa_s':1e-3}}
 
 def test_actual_julia_full_feed_load_and_reference_mass_conversion():
-    s=source_fixture();p=read(ROOT/'process_filtration/protocol.json');jl=runtime()
+    s=source_fixture();p=read(ROOT/'examples/filtration/once_through/protocol.json');jl=runtime()
     check_protocol(p,s)
     a,b=translate(jl,s,s['supports'][1],.25,2e4)
     expected_tmp=100/3.6e6*(.5/(3.12/3600/1e5)+2.5e8)
@@ -34,7 +34,7 @@ def test_actual_julia_full_feed_load_and_reference_mass_conversion():
     assert b['membrane_dissipation_W']+b['channel_dissipation_W']+b['retentate_throttle_dissipation_W']==pytest.approx(b['hydraulic_power_W'])
 
 def test_changed_anchor_requires_new_native_property_review():
-    s=source_fixture();p=read(ROOT/'process_filtration/protocol.json')
+    s=source_fixture();p=read(ROOT/'examples/filtration/once_through/protocol.json')
     s['protocol']['process']['temperature_K']=310.
     with pytest.raises(RuntimeError,match='changed anchor'): check_protocol(p,s)
 
@@ -60,7 +60,7 @@ def test_saved_topology_rejects_swapped_splitter_ports(tmp_path):
     with pytest.raises(RuntimeError,match='topology differs'):topology(path)
 
 def test_altered_nested_process_artifact_rejected_before_replay(tmp_path):
-    from coupling.run import sha
+    from pore2process_demo.io import sha
     f=tmp_path/'process/summary.json';f.parent.mkdir();f.write_text('{"power":1}\n')
     s={'status':'passed','artifact_sha256':{'process/summary.json':sha(f)}}
     (tmp_path/'summary.json').write_text(json.dumps(s));f.write_text('{"power":2}\n')

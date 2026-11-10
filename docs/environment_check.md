@@ -134,7 +134,7 @@ core archive, executable and copied stock example now live outside the original
 OpenLB distribution. The preexisting vendor config from the older compatibility
 probe is ignored. All 2,070 checked original distribution files match the pinned
 archive. The project code policy and exact setup/run commands are documented
-in `docs/openlb_code_policy.md`, `hydraulic/README.md` and `coupling/README.md`.
+in `docs/openlb_code_policy.md`, `examples/hydraulics/capillary_benchmark/README.md` and `examples/hydraulics/darcy_pump/README.md`.
 
 Julia's normal user compilation cache required approved host access to update
 a compiled project module; the original VTK regression suite required normal
@@ -150,7 +150,7 @@ are present. The actual DWSIM anchor reports version 10.2.15.0; the private
 adapter build checks SDK 10.0.403. GCC 15.2 and the existing OpenLB 1.9r0 source
 are reused without installation or dependency changes.
 
-The new application code is under `graded_support/openlb/`; binaries and
+The new application code is under `examples/filtration/graded_support/openlb/`; binaries and
 objects stay in `.local/graded_support/build/`. Vendor verification again
 checks 2,070 original files against the pinned archive. The original numerical
 cases, bridge and DWSIM adapter are preserved. The shared native launch helper
@@ -158,7 +158,7 @@ adds only an optional execution timeout, retaining its 600-second default for
 earlier examples. This study requests 1,800 seconds per native solve after its
 finest baseline took 535 seconds; numerical settings/screens remain fixed.
 Two external native processes may run concurrently; Julia analysis runs only
-on the main Python thread. See [the study commands](../graded_support/README.md)
+on the main Python thread. See [the study commands](../examples/filtration/graded_support/README.md)
 and [scientific scope](graded_support_study.md).
 
 ## TRT and explicit-channel extension — 9 November 2026
@@ -176,7 +176,7 @@ The user requires at least TRT for porous media. Existing pressure-driven
 application cases now use stock TRT with magic parameter 3/16. The new star
 channel uses stock TRT collision with stock exact-difference forcing, composed
 through OpenLB's existing `Tuple`. Project source/configuration is in
-`star_channel/openlb/`; its external build is `.local/star_channel/build/`.
+`examples/filtration/star_channel/openlb/`; its external build is `.local/star_channel/build/`.
 All 2,070 original checked OpenLB files still match their pinned archive.
 
 The eight-case capillary TRT regression and its independent SI/export replay
@@ -212,7 +212,7 @@ The live server uses the documented `uv run panel serve app.py --address
 `results/operating_map/preflight.json` records the actual target-machine check.
 The existing macOS ARM64 Python/Julia/OpenLB/DWSIM runtimes and dependency locks
 are reused; no package or system installation was performed. All new native
-application code is under `operating_map/openlb/`, with external build products
+application code is under `examples/filtration/operating_map/openlb/`, with external build products
 in `.local/operating_map/build_trt27/`. Stock D3Q27/TRT replaces the rejected
 higher-Re D3Q19 pilots for this new study; completed earlier examples retain
 their own evidence and controls. Original OpenLB source remains untouched.
@@ -259,7 +259,7 @@ DWSIM 10.2.15 and the project-local .NET SDK 10.0.403 are reused. No Python
 or Julia dependency installation, manifest change or privileged setup was
 required. New C# restore/build products remain in `.local/adsorption/`.
 
-The new applications are in `adsorption/openlb/` and `adsorption/openlb_bed/`;
+The new applications are in `examples/adsorption/openlb/` and `examples/adsorption/openlb_bed/`;
 the existing external builder puts all core/application build products in
 separate `.local/adsorption/` folders. The first scalar compilation recorded
 515.65 seconds; subsequent cached checks take much less. Native timings are

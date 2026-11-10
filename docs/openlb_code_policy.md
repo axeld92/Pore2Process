@@ -45,7 +45,7 @@ even in discrete mode. We supply the surrounding material set and restrict the
 integration plane with its existing circle indicator, so those checks do not
 trim valid fluid-center samples. There is no analytical area correction.
 
-All tracked application files are in `hydraulic/openlb/`. The external build
+All tracked application files are in `examples/hydraulics/capillary_benchmark/openlb/`. The external build
 configuration is there too. Sources/headers are copied into
 `.local/hydraulic/build/`; core objects/archive and case objects/executable stay
 there. The five upstream core translation units are compiled directly without

@@ -1,11 +1,12 @@
 """Scientific plots and the PyVista geometry used by exports and Panel."""
+from pore2process_demo.paths import ROOT
 import os
 from pathlib import Path
 
 import numpy as np
 
-os.environ.setdefault("MPLCONFIGDIR", str(Path(__file__).resolve().parents[2] / ".local/matplotlib"))
-os.environ.setdefault("XDG_CACHE_HOME", str(Path(__file__).resolve().parents[2] / ".local/cache"))
+os.environ.setdefault("MPLCONFIGDIR", str(ROOT / ".local/matplotlib"))
+os.environ.setdefault("XDG_CACHE_HOME", str(ROOT / ".local/cache"))
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_agg import FigureCanvasAgg
 import pyvista as pv

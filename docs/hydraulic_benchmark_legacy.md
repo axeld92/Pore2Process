@@ -11,7 +11,7 @@ checks. The inferred permeability drives a Julia Darcy column calculation.
 The existing DWSIM compatibility case has not yet been connected to this output.
 
 Setup, exact launch/test commands, assumptions, acceptance thresholds, and
-the versioned data contract are in [hydraulic/README.md](../hydraulic/README.md).
+the versioned data contract are in [hydraulic/README.md](../examples/hydraulics/capillary_benchmark/README.md).
 The accepted result snapshot is
 `results/hydraulic/runs/20261108T164130Z-9f02cde8/summary.json`.
 The compact observation is preserved in `docs/hydraulic_reference.json`;

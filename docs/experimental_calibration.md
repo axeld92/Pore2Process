@@ -30,7 +30,7 @@ were not used as permeability uncertainty or device pressure certification.
 
 ## Calibration and evaluation
 
-The fixed [protocol](../calibration/protocol.json) fits only one dimensionless
+The fixed [protocol](../examples/filtration/calibration/protocol.json) fits only one dimensionless
 multiplier in `k = b*d²*epsilon³/[180*(1-epsilon)²]`, using equal-weight squared
 natural-log residuals. The Julia implementation evaluates the exact log-space
 minimiser. Python sends typed vectors through the existing persistent bridge.
@@ -109,7 +109,7 @@ The original synthetic four-tool workflow is preserved.
 
 The final run, source/model/lock hashes, versions, fitted values and metrics
 are preserved in [experimental_calibration_reference.json](experimental_calibration_reference.json).
-See [launch and replay commands](../calibration/README.md). Tests cover the
+See [launch and replay commands](../examples/filtration/calibration/README.md). Tests cover the
 analytic fit, units and scaling, invalid inputs, an independent prediction
 oracle, isolation of held-out values from fitting, unchanged selective
 resistance, JSON/CSV export replay, refusal to overwrite results, and rejection

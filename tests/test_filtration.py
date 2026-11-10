@@ -1,8 +1,8 @@
 """Actual Julia integration for the filtration boundary; analytical independent oracle."""
 import pytest
-from filtration.model import layer_load
+from examples.filtration.layered_support.model import layer_load
 from pore2process_demo.bridge import runtime
-from filtration.run import SETTINGS
+from examples.filtration.layered_support.run import SETTINGS
 
 
 def test_actual_julia_layer_units_and_fixed_selective_pair():

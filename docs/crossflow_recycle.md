@@ -221,7 +221,7 @@ Installed-version execution and saved archives supply the actual verification.
 
 ## Acceptance, provenance and remaining scope
 
-`crossflow_recycle/protocol.json` declares thresholds before the accepted study.
+`examples/filtration/crossflow_recycle/protocol.json` declares thresholds before the accepted study.
 The matrix comprises 21 design scenarios: three supports; circulation ratios
 5/10/15 at 50% recovery; recovery 25/75% at ratio 5; and half/double channel
 resistance at the nominal operating point. Four additional cases test initial
@@ -241,7 +241,7 @@ below 1e-3 of total shaft power. Property-corrected pump work must agree within
 screen; viscosity/density departures must remain below 0.1%. These screen
 constant-property hydraulic assumptions, not experimental uncertainty.
 
-[Reproduction commands](../crossflow_recycle/README.md) preserve the original
+[Reproduction commands](../examples/filtration/crossflow_recycle/README.md) preserve the original
 native data and earlier filtration evidence. Snapshots, units, numerical
 settings, runtime/source hashes, actual flowsheets, CSV, images and cold versus
 solve timings are retained. The original Panel app is unchanged and separate.
