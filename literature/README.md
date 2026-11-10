@@ -1,5 +1,23 @@
 # Article workspace and experimental evidence
 
+## Qualified operating-map audit — 9–10 November 2026
+
+[The operating-window ledger](operating_window_evidence.json) now audits the
+four supplied crossflow papers for the higher-Re hydraulic map. Chiu (2006)
+is the biological-feed critical-flux source; Chiu (2005)/García (2008) retain
+their separate TiO2 scope and shared-data caveat, and Frederic (2018) supplies
+no calibrated physical fouling time. No additional article was required for
+this bounded milestone.
+
+[The computational report](../docs/operating_window.md) distinguishes the
+source's short-step protocol, figure-reading sensitivities, unavailable
+pointwise uncertainty and transferred retention from verified native/process
+hydraulics. Linear interpolation, monotonic bounds, equal-Re/equal-velocity
+mapping and transfer factors remain separate scenarios. An internal
+leave-one-point-out shape check is not independent experimental validation.
+The synthetic geometry, Zhu impedance and biological feed do not constitute
+a matched experimental specimen.
+
 ## Crossflow performance search: 9 November 2026
 
 [The initial crossflow search](crossflow_evidence_review.md) identified eight

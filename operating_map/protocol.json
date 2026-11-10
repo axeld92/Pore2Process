@@ -1,0 +1,8 @@
+{
+  "id":"higher-Re-qualified-operating-map-v1",
+  "native": {"collision_model":"TRT", "forcing":"stock Kupershtokh exact difference", "resolutions":[32,48,64], "accepted_resolution":64, "Re_targets":[1000,1388,1600,1850], "tau":0.5007, "max_steps":1800000},
+  "native_acceptance": {"Mach":0.1,"density_departure":0.0001,"plane_mass_relative":1e-7,"grid_relative":0.03,"reference_relative":0.03,"pressure_scaling_relative":0.02,"time_step_relative":0.02,"domain_relative":0.005,"transverse_relative":0.01},
+  "process": {"Re_targets":[1388,1600,1850], "fluxes_LMH":[8,12,15],"fixed_multipliers":[0.5,1,2],"recovery":0.5,"area_m2":1.0,"efficiency":0.75,"rejection":0.65,"temperature_K":298.15,"viscosity_multiplier":1.0},
+  "capacity": {"fractions":[0.8,0.95,1.0],"transfer_factors":[0.8,1.0,1.2],"mappings":["equal_Re","equal_velocity"],"policies":["linear_nominal","linear_lower_reading","monotonic_lower"]},
+  "scope":"Conditional clean initial biological-feed operating map: measured native fully developed laminar-branch conductance, source critical-flux comparison under explicit transfer assumptions and actual DWSIM hydraulic recycle. No turbulent, reaction, non-isothermal, fouling-time or indefinitely sustainable-operation prediction."
+}

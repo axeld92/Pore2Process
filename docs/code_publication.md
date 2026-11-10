@@ -65,3 +65,28 @@ The requested logo was copied without image edits. The upload was checked for
 credential patterns and excluded environment/article/simulator artifacts. No
 new native OpenLB or DWSIM study was run for this publication; their completed
 handoff evidence remains the source of those verification claims.
+
+## Filtration closure update — 10 November 2026
+
+The closed higher-Re filtration continuation is now included: native application,
+Julia capacity/momentum-screen functions, source audit, conditional operating map,
+compact measured/simulator reference, scientific figure and tests. The stock-DWSIM
+adapter's input ceiling increases from 5,000 to 20,000 iterations for this study;
+existing defaults and scientific acceptance thresholds remain unchanged.
+
+The publication was prepared in a separate checkout. Final native/application
+and process implementation hashes match the accepted filtration runs. The
+isolated environment installs with `uv sync --locked --offline` and bootstraps
+the existing Julia runtime. Repeated checks pass **902 Julia assertions** and
+**74 Python tests** (112.43 seconds for that Python suite). Full saved-evidence
+replay passes **91 DWSIM cases**, **682 artifacts**, **1,620 capacity decisions**
+and **1,458 discrete policy selections**, including the upstream native/support
+checks. Replay launches no new external simulations and does not rewrite the
+accepted run folders. Existing tool distributions were read from the local
+cache; no simulator distribution is published.
+
+The README and roadmap mark filtration hydraulics closed for now, preserve the
+selected logo and eight article references, and identify isothermal adsorption
+as the next case in progress. Active adsorption code, tests, source extractions
+and draft case reports are excluded. The original development checkout and its
+concurrent work remain untouched.

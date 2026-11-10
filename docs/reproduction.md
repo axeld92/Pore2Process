@@ -97,6 +97,31 @@ Do not run `star_channel.reference` merely to use the app: that maintainer
 command replaces the compact tracked documentation reference. A normal new
 study remains in ignored `results/` with its own snapshots and checks.
 
+## Reproduce the closed filtration operating map
+
+After the preceding native/channel and process chain has passed:
+
+```sh
+uv run python -m operating_map.evidence
+uv run python -m operating_map.native
+uv run python -m operating_map.run
+uv run python -m operating_map.check
+julia --startup-file=no --project=julia -e 'using Pkg; Pkg.test()'
+uv run pytest -q
+```
+
+The native study verifies the higher-Re fully developed laminar branch; the
+process study evaluates the conditional material/operation map in actual DWSIM.
+This extension produces a report, figure, profiles and comparison/selection CSVs.
+The Panel interface retains its previously verified low-Re controls. See
+[operating_map/README.md](../operating_map/README.md) for bounds and resumption
+commands, and [the final report](operating_window.md) for results.
+
+The `operating_map.reference` command is a maintainer tool that replaces tracked
+documentation references; it is not required for normal reproduction. The
+filtration hydraulic case is now closed for active development and retained
+for regression. The separate adsorption case is outside this publication.
+
 ## What is and is not established
 
 The development workspace completed the full native/DWSIM sequence and browser

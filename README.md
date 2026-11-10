@@ -15,11 +15,11 @@ The aim is a reproducible chain of calculations in which a change in pore
 geometry produces an explainable change in a process result, with the
 assumptions and intermediate evidence available for inspection.
 
-> **Research prototype — 9 November 2026.** Source, tests, dependency locks and
-> curated numerical references are included. The connected hydraulic workflow
-> has been checked on an Apple Silicon Mac; the native OpenLB/DWSIM setup is
-> platform-specific. Reacting systems and physical fouling predictions remain
-> future work.
+> **Project status — 10 November 2026.** The filtration hydraulic example is
+> complete and closed for now, with source, tests, dependency locks and curated
+> references preserved as a regression benchmark. **Isothermal adsorption** is
+> the next case in development. The verified native setup targets Apple Silicon
+> macOS.
 
 ## The connected workflow
 
@@ -66,14 +66,23 @@ resistance**, which can include intermediate-layer and interface contributions.
 It does not uniquely identify the intrinsic selective-layer resistance or
 reconstruct a particular experimental specimen.
 
-At **12 LMH** and inlet **Re = 20**, widening the support interior from **4 to
-6 µm** reduced total pump shaft energy by **11.20%**, with the openings and
-effective non-support resistance held fixed. The fixed contribution rose from
-68.5% to 77.2% of membrane resistance. This is a conditional clean-hydraulic
-scenario, with biological retention treated as a separate transferred
-sensitivity. See the [scientific report](docs/star_channel_showcase.md).
+The final operating-map study makes the process trade-off clear. At **12 LMH**
+and inlet **Re = 1388**, widening the support interior from **4 to 6 µm** lowers
+mean transmembrane pressure from **1.2211 to 1.0831 kPa**, while total pump
+shaft energy falls by **0.18166%**. Circulation supplies **98.72%** of baseline
+shaft duty. The effective fixed resistance accounts for 68.50–77.23% of membrane
+resistance across that geometry pair.
 
-![Synthetic channel, hydraulic refinement, pump energy and axial flux](docs/star_channel_study.png)
+The study verifies **16 native hydraulic cases** and **91 actual DWSIM
+solve/save/reload cases**, with **902 Julia assertions** and **74 Python tests**.
+Its operating selections are conditional on the declared literature-transfer
+policies and evaluated grid. See the [final report](docs/operating_window.md)
+and [reproduction commands](operating_map/README.md).
+
+![Hydraulic refinement, conditional capacity screen and filtration energy map](docs/operating_map.png)
+
+The earlier [low-Re interface showcase](docs/star_channel_showcase.md) remains
+available with its own verified numerical range and completed browser checks.
 
 ## What has been demonstrated locally
 
@@ -83,6 +92,7 @@ sensitivity. See the [scientific report](docs/star_channel_showcase.md).
 | **Native hydraulic benchmark** | Actual 3D OpenLB calculations with conservation, analytical-reference and discretization checks; stock TRT revalidation of the current porous-support cases. |
 | **Property-to-process connection** | OpenLB-derived hydraulic properties drive Julia pressure-load calculations and actual DWSIM pump flowsheets. |
 | **Filtration and crossflow** | Controlled support comparisons, distributed hydraulic calculations, circulation energy, recycle balances and saved/reloaded DWSIM cases. |
+| **Final operating map** | Higher-Re laminar-branch verification, literature-capacity policies and discrete material/operation comparisons; filtration hydraulics closed for now. |
 | **Local interface and exports** | Panel/PyVista network and geometry inspection, pressure profiles, completed-run snapshots and downloadable results; browser checks performed on the development Mac. |
 | **Literature comparisons** | Audited extractions, reduced-model calibration and held-out comparisons, with failed screens and evidence limits retained. |
 
@@ -123,11 +133,14 @@ articles. Source locations and extraction records are in the
 
 ## Where this can go
 
-The immediate research extension is to strengthen the channel operating range
-and introduce a defensible transport or retention/fouling relation before
-optimizing circulation. Reacting and non-isothermal systems are longer-term
-goals, including chemical and bioprocess applications selected around a clear
-research question and published kinetic and thermal data.
+The next case adds **isothermal adsorption and mass transfer**. Its research
+question is how particle size changes usable treatment capacity and pumping
+energy at fixed adsorbent inventory and required outlet quality. That work is
+in progress and will be published separately.
+
+The filtration example remains available for regression and comparison.
+Reacting and non-isothermal chemical and bioprocess applications remain
+longer-term directions.
 
 See the [project roadmap](ROADMAP.md) for milestones and acceptance criteria.
 
@@ -181,6 +194,7 @@ changes. Native study generation can take substantial time.
 | [Setup and examples](docs/setup_and_examples.md) | Detailed Python–Julia setup, model derivation, contracts and original example commands |
 | [Clean-checkout reproduction](docs/reproduction.md) | Native prerequisites and ordered connected-study commands |
 | [Filtration showcase](docs/star_channel_showcase.md) | Geometry, model, quantitative results and evidence limits |
+| [Closed filtration operating map](docs/operating_window.md) | Final hydraulic range, material/operation comparison and circulation-energy result |
 | [Literature workspace](literature/README.md) | Curated references, extractions and provenance |
 | [Integration roadmap](docs/integration_roadmap.md) | Detailed milestone and research status |
 | [Publication record](docs/code_publication.md) | Published snapshot and verification scope |

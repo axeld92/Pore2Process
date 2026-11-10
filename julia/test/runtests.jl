@@ -9,6 +9,7 @@ include("process_filtration.jl")
 include("crossflow_recycle.jl")
 include("crossflow_benchmark.jl")
 include("star_channel.jl")
+include("operating_map.jl")
 
 function reference(nx=6,ny=4,nz=4,a=1e-3,r=50e-6,mu=1e-3,pin=100.0,pout=0.0)
     s = run_case(nx,ny,nz,a,r,mu,pin,pout)

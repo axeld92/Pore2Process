@@ -2,7 +2,7 @@
 
 This roadmap separates locally demonstrated capabilities from work still to be
 published or investigated. Status reflects the development workspace on
-**9 November 2026**.
+**10 November 2026**.
 
 ## 1. Establish the numerical and software reference
 
@@ -66,20 +66,36 @@ preserves the original GitHub overview history; earlier development commits
 remain in the local repository. Other operating systems and unattended full
 native reproduction on a new machine remain to be checked.
 
-## 5. Strengthen the crossflow research model
+## 5. Close the filtration hydraulic showcase
 
-**Next executable numerical step.**
+**Completed and closed for now; retained as a regression benchmark.**
 
-Verify an appropriate stock OpenLB higher-Reynolds-number channel reference,
-including low Mach number, spatial/time-step refinement and stationarity checks.
-Then extend the synthetic star channel only within a checked operating envelope.
+The higher-Re extension checks 16 native D3Q27/TRT cases on the fully developed
+laminar branch near Re=1000–2000. Spatial, temporal, domain, initial-state,
+pressure-law, Mach and conservation checks precede scale translation. The
+conditional operating map includes 91 actual DWSIM solve/save/reload cases.
 
-Before optimizing circulation, select a published relation or benchmark that
-connects crossflow to useful separation performance, retention or fouling.
-Track its material, fluid and operating-range assumptions. Increasing circulation
-must have a supported performance benefit if its energy cost is to be justified.
+At 12 LMH and Re=1388, widening the support from 4 to 6 µm lowers mean TMP
+from 1.2211 to 1.0831 kPa, but saves 0.18166% of total shaft energy because
+circulation accounts for 98.72% of the baseline duty. Membrane resistance
+and process-energy dominance are therefore distinct.
 
-## 6. Select a reacting or non-isothermal showcase
+Published capacity data, interpolation/monotonic policies and transfer
+sensitivities remain explicit in [the final report](docs/operating_window.md).
+Further filtration physics is an optional future extension, not the active
+next milestone.
+
+## 6. Develop the isothermal adsorption case
+
+**In progress separately; implementation publication pending.**
+
+The next research question is: at fixed adsorbent inventory and required outlet
+quality, how does particle size affect usable treatment capacity and pumping
+energy? This adds mass transfer and breakthrough modelling to the established
+OpenLB → Python/Julia → DWSIM workflow. Source selection, model qualification
+and process coupling belong to that case's own verification and publication.
+
+## 7. Select a reacting or non-isothermal showcase
 
 **Research direction; application and physical model not yet selected.**
 

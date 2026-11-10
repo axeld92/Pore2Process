@@ -206,3 +206,46 @@ phase calculation and original tolerances. No simulator source is patched.
 The final regression suite passes 61 Python tests and 878 Julia assertions.
 The live server uses the documented `uv run panel serve app.py --address
 127.0.0.1 --port 5006` command, with browser evidence recorded separately.
+
+## Higher-Re operating-map continuation — 9–10 November 2026
+
+`results/operating_map/preflight.json` records the actual target-machine check.
+The existing macOS ARM64 Python/Julia/OpenLB/DWSIM runtimes and dependency locks
+are reused; no package or system installation was performed. All new native
+application code is under `operating_map/openlb/`, with external build products
+in `.local/operating_map/build_trt27/`. Stock D3Q27/TRT replaces the rejected
+higher-Re D3Q19 pilots for this new study; completed earlier examples retain
+their own evidence and controls. Original OpenLB source remains untouched.
+
+Native cases may use four independent single-core processes. The actual DWSIM
+matrix uses two independent child processes. Julia calls stay on the main Python
+thread. The initial native pass permitted 3,600 seconds per case; the longer-domain
+case was restarted from its latest native field with a 7,200-second allowance.
+Scientific stationarity, conservation, Mach, refinement and physical-time screens are
+distinct from those execution ceilings. Normal user Julia-cache/graphics access is still
+needed for the existing local runtime tests; no new installation blocker was
+found. Unaccepted exploratory attempts remain under `results/operating_map/`.
+
+All 16 native cases subsequently passed 144 acceptance checks. The restarted
+domain case converged after 833,536 steps and 3,545.46 seconds in that attempt;
+the earlier attempt and initial-field provenance remain saved. These times
+include the actual execution conditions and are not a performance benchmark.
+
+The first process launch stopped before a solve when the installed .NET SDK
+version probe exceeded its existing 15-second ceiling. A normal-host retry
+reported the unchanged SDK 10.0.403 in 0.35 seconds. The same process run was
+resumed, with no SDK, simulator, scientific tolerance or source-code change.
+The subsequent first process requests exposed our adapter's older 5,000-
+iteration input guard. It now permits up to 20,000, as requested by the new
+high-circulation protocol; older input defaults and the stock solver remain
+unchanged. The failed attempt is preserved and the corrected process matrix
+uses a fresh source/input snapshot. No result from the rejected attempt is
+promoted as accepted evidence.
+
+The direct numerical suite, including the bounded source relation and an
+independent circular-profile momentum screen, passes 902 Julia assertions.
+All 90 process design cases plus the independent seed case subsequently pass
+actual DWSIM solve/save/reload checks; a one-iteration recycle is rejected.
+Full independent replay passes, and the normal-host Python suite passes
+74 tests. Native/process acceptance results are recorded in
+[operating_window.md](operating_window.md). No dependency lock changed.

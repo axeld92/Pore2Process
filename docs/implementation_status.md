@@ -1,6 +1,43 @@
-# Implementation and acceptance — 7 November 2026
+# Implementation and acceptance
 
-Latest completed milestone, 9 November: the [explicit-channel and biological-feed
+The filtration hydraulic example is closed for now and retained as a regression
+benchmark. Adsorption is the next case in development.
+
+Latest completed filtration milestone, 9–10 November: the [higher-Re operating map](operating_window.md)
+completes the three requested hydraulic/evidence/design-map steps. **16 native
+D3Q27/TRT cases pass 144 numerical screens; 91 actual DWSIM cases solve, save
+and reload; 902 Julia assertions and 74 Python tests pass.** A deliberately
+one-iteration recycle is rejected. Independent replay checks 682 local
+artifacts, native/support ancestry, 1,620 capacity comparisons and 1,458
+discrete selections. All 2,070 checked original OpenLB files remain unchanged.
+
+The measured fully developed laminar-branch envelope is approximately
+Re=1000–2000. Spatial, temporal, domain, initial-state and pressure-law checks
+pass before the native coefficient is used by Julia. This does not validate
+physical transition, entrance loss or permeating-wall CFD. The longer-domain
+case required a retained native-field restart and larger wall-time budget;
+scientific tolerances were unchanged. The DWSIM adapter input guard now allows
+20,000 iterations; the independent perturbed-seed case takes 8,796 iterations
+and reproduces the nominal pump/cooling duties within 1e-8 relative.
+
+At 12 LMH and Re=1388, widening the support interior from 4 to 6 µm reduces
+mean TMP from 1.2211 to 1.0831 kPa, but total pump shaft energy falls only
+**0.18166%**, from 0.056703822 to 0.056600813 kWh/m³. Circulation supplies
+98.7234% of baseline shaft duty. Fixed effective non-support resistance rises
+from 68.5026% to 77.2330% of membrane resistance. This separates membrane
+resistance dominance from total process-energy dominance.
+
+The supplied-paper audit preserves Chiu's biological-feed critical-flux
+protocol, TiO2/shared-data caveats, reading sensitivities and unknown physical
+fouling time. Equal-Re/equal-velocity transfer and linear/monotonic capacity
+policies can select different grid points; they remain conditional scenarios.
+The figure was visually inspected. This report/CSV extension adds no new Panel
+controls or browser-pass claim. Existing examples, the live interface, locks
+and unrelated files are preserved. Reaction and non-isothermal work remain
+deferred. [Commands](../operating_map/README.md) and
+[the numerical reference](operating_map_reference.json) support reproduction.
+
+Earlier completed milestone, 9 November: the [explicit-channel and biological-feed
 showcase](star_channel_showcase.md) passes **17 native channel cases, 24 freshly
 verified TRT support cases, 28 actual DWSIM crossflow solve/save/reload cases,
 878 Julia assertions and 61 Python tests**. A separate eight-case capillary

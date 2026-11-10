@@ -10,6 +10,7 @@ export once_through_filtration
 export crossflow_recycle_load
 export crossflow_benchmark_point, critical_flux_bracket, crossflow_solute_balance
 export duct_stokes_reference, star_membrane_load, star_feed_balance
+export critical_flux_capacity, axial_momentum_screen
 
 function positive(name, x)
     x isa Real && !(x isa Bool) && isfinite(x) && x > 0 ||
@@ -129,5 +130,6 @@ include("ProcessFiltration.jl")
 include("CrossflowRecycle.jl")
 include("CrossflowBenchmark.jl")
 include("StarChannel.jl")
+include("OperatingMap.jl")
 
 end

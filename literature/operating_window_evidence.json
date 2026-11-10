@@ -1,0 +1,329 @@
+{
+  "schema_version": 1,
+  "source_extraction_sha256": "95e64df6937d0ef0565297b4f3a0ad09d5bfad61dac148a3229c65730a67b42f",
+  "source_audit": [
+    {
+      "path": "literature/inbox/Garcia2008Economic/Garcia2008Economic.md",
+      "status": "hash_matches"
+    },
+    {
+      "path": "literature/inbox/Garcia2008Economic/Garcia2008Economic_meta.json",
+      "status": "hash_matches"
+    },
+    {
+      "path": "literature/inbox/Garcia2008Economic/_page_1_Figure_7.jpeg",
+      "status": "hash_matches"
+    },
+    {
+      "path": "literature/inbox/Garcia2008Economic/_page_2_Figure_2.jpeg",
+      "status": "hash_matches"
+    },
+    {
+      "path": "literature/inbox/Chiu2005Critical/Chiu2005Critical.md",
+      "status": "hash_matches"
+    },
+    {
+      "path": "literature/inbox/Chiu2005Critical/Chiu2005Critical_meta.json",
+      "status": "hash_matches"
+    },
+    {
+      "path": "literature/inbox/Chiu2005Critical/_page_3_Figure_2.jpeg",
+      "status": "hash_matches"
+    },
+    {
+      "path": "literature/inbox/Chiu2006Critical/Chiu2006Critical.md",
+      "status": "hash_matches"
+    },
+    {
+      "path": "literature/inbox/Chiu2006Critical/Chiu2006Critical_meta.json",
+      "status": "hash_matches"
+    },
+    {
+      "path": "literature/inbox/Chiu2006Critical/_page_3_Figure_15.jpeg",
+      "status": "hash_matches"
+    },
+    {
+      "path": "literature/inbox/Chiu2006Critical/_page_4_Figure_9.jpeg",
+      "status": "hash_matches"
+    },
+    {
+      "path": "literature/inbox/Frederic2018Modeling/Frederic2018Modeling.md",
+      "status": "hash_matches"
+    },
+    {
+      "path": "literature/inbox/Frederic2018Modeling/Frederic2018Modeling_meta.json",
+      "status": "hash_matches"
+    },
+    {
+      "path": "literature/inbox/Frederic2018Modeling/_page_3_Figure_2.jpeg",
+      "status": "hash_matches"
+    }
+  ],
+  "biological_feed_extraction": {
+    "source_id": "chiu_2006_biological_critical",
+    "title": "Critical flux and rejection behaviour of non-circular-channelled membranes: Influence of some operating conditions",
+    "doi": "10.1016/j.seppur.2005.11.028",
+    "markdown": "literature/inbox/Chiu2006Critical/Chiu2006Critical.md",
+    "markdown_sha256": "1841fcaa47912266257c59ccffa1ed1eedc74add0d06de8a54e1c8ba4994affa",
+    "specimen": "Reported non-circular seven-channel ceramic microfiltration family; 0.2 micrometre nominal pore size, not a reconstruction of the project synthetic star",
+    "feed": "Effluent of synthetic activated-sludge production system; not the upstream porous-pot recipe in Table 1",
+    "measurements": [
+      {
+        "quantity": "module feed total COD",
+        "value": 68.7,
+        "unit": "mg/L",
+        "reported_operating_range": [
+          65.3,
+          72.1
+        ],
+        "location": "Table 2",
+        "uncertainty": null,
+        "note": "Operating-period average and range, not paired point-specific feed measurements or experimental confidence limits"
+      },
+      {
+        "quantity": "critical flux",
+        "value": 21.4,
+        "unit": "L/m2/h",
+        "Re": 1388,
+        "pH": 7.5,
+        "temperature_range_degC": [
+          20,
+          25
+        ],
+        "location": "Section 3.2; Fig. 6",
+        "uncertainty": null,
+        "reported_reproducibility": "Section 2.3 states errors never exceed 5%; not identified as a standard deviation, confidence interval or point-specific error bar"
+      },
+      {
+        "quantity": "below-critical COD rejection",
+        "value": 0.65,
+        "unit": "fraction",
+        "permeate_COD_mg_L": 24.1,
+        "crossflow_velocity_m_s": 1.6,
+        "TMP_bar": 0.1,
+        "pH": 7.5,
+        "location": "Table 3, 0.2 micrometre column, transient filtration",
+        "uncertainty": null
+      }
+    ],
+    "transfers_not_measurements": [
+      "The reported Re 1388 critical flux remains source context. It is not transferred to the project's verified low-Re synthetic star; sustainable flux there remains unavailable.",
+      "Reported module-scale rejection is used as a constant local rejection in the distributed tracer calculation; its transfer from 1.6 m/s and 0.1 bar is an assumption. 0.5-0.8 is a chosen scenario sensitivity, not experimental uncertainty.",
+      "The module inlet is fixed at the reported average COD. Fresh-feed concentration is derived from the recycle balance, rather than silently held at that same concentration.",
+      "A water-carrier property model and a 1.2-times-viscosity scenario are used; neither constitutes measured effluent rheology.",
+      "Exploratory high-Re runs and an exploratory 0.8 times 0.95 critical-flux transfer were not accepted for the final low-Re showcase. The final case makes no fouling-free or sustainable-flux admission claim."
+    ],
+    "original_pdf_available_locally": false,
+    "unit_audit": "The Markdown omits the micro symbol in some pore-size labels; 0.2 micrometre is established by the microfiltration context and figure axis retained in the supplied source audit. No original PDF typography check is claimed."
+  },
+  "biological_feed_extraction_sha256": "95986544d0e81edb1d7bf049354316787707b33ba4f500bc5131178bd4f61213",
+  "sources": [
+    {
+      "id": "garcia2008",
+      "doi": "10.1016/j.memsci.2008.08.033",
+      "files": [
+        {
+          "path": "literature/inbox/Garcia2008Economic/Garcia2008Economic.md",
+          "sha256": "e09456a030842ca2d2f234f0531de50293e2ccac804b51afc8eef48e91afeb05",
+          "role": "full_article_Markdown"
+        },
+        {
+          "path": "literature/inbox/Garcia2008Economic/Garcia2008Economic_meta.json",
+          "sha256": "6944e34fa0bc64e6c56a28ebef0adde83c0e252c85de0117b55fbedcaa3d70eb",
+          "role": "conversion_metadata"
+        },
+        {
+          "path": "literature/inbox/Garcia2008Economic/_page_1_Figure_7.jpeg",
+          "sha256": "19d1700cec3fe84e68ccfd41532de7695b2dd8500449533bf9bad7a4444d3dee",
+          "role": "visually_reviewed_figure"
+        },
+        {
+          "path": "literature/inbox/Garcia2008Economic/_page_2_Figure_2.jpeg",
+          "sha256": "c744961854a9510b284a949077421a31b650a53469656fd8802619a26858ac44",
+          "role": "visually_reviewed_figure"
+        }
+      ],
+      "role": "Pressure/energy arithmetic and separate TiO2 benchmark; Q convention unresolved."
+    },
+    {
+      "id": "chiu2005",
+      "doi": "10.1016/j.memsci.2005.01.037",
+      "files": [
+        {
+          "path": "literature/inbox/Chiu2005Critical/Chiu2005Critical.md",
+          "sha256": "b56a19f633fbb92bcac35c1dc75567acb33b955c40ffb400585d6e74f3598973",
+          "role": "full_article_Markdown"
+        },
+        {
+          "path": "literature/inbox/Chiu2005Critical/Chiu2005Critical_meta.json",
+          "sha256": "5ea2d5a831f99e6b38dd9049892e47eac1cd02db6aaad5c34efd85b17c31ebff",
+          "role": "conversion_metadata"
+        },
+        {
+          "path": "literature/inbox/Chiu2005Critical/_page_3_Figure_2.jpeg",
+          "sha256": "edf2b4d7124df426b75def195926d01a2853bfc6acd04bffc578915048ef0afe",
+          "role": "visually_reviewed_figure"
+        }
+      ],
+      "role": "TiO2 comparison only; feed differs. Not pooled with biological measurements."
+    },
+    {
+      "id": "chiu2006",
+      "doi": "10.1016/j.seppur.2005.11.028",
+      "files": [
+        {
+          "path": "literature/inbox/Chiu2006Critical/Chiu2006Critical.md",
+          "sha256": "1841fcaa47912266257c59ccffa1ed1eedc74add0d06de8a54e1c8ba4994affa",
+          "role": "full_article_Markdown"
+        },
+        {
+          "path": "literature/inbox/Chiu2006Critical/Chiu2006Critical_meta.json",
+          "sha256": "c04bb87957957a96b10e06a350330c02b0a84c80c4b085ab25ad946785ab861b",
+          "role": "conversion_metadata"
+        },
+        {
+          "path": "literature/inbox/Chiu2006Critical/_page_3_Figure_15.jpeg",
+          "sha256": "3f81b94c677b0e1014cdb60fb28b3631878e5b072a9dbc4122673918f787f84d",
+          "role": "visually_reviewed_figure"
+        },
+        {
+          "path": "literature/inbox/Chiu2006Critical/_page_4_Figure_9.jpeg",
+          "sha256": "1bb4ea65d3de7da62f42c10260f13d17719c6e17e12b99c0f5586b180752ba52",
+          "role": "visually_reviewed_figure"
+        }
+      ],
+      "role": "Primary biological-feed Jcrit(Re) and protocol; no same-condition retention curve."
+    },
+    {
+      "id": "frederic2018",
+      "doi": "10.1016/j.memsci.2018.09.021",
+      "files": [
+        {
+          "path": "literature/inbox/Frederic2018Modeling/Frederic2018Modeling.md",
+          "sha256": "e3c3af50a6462161b8b524dee90b5ed468a8a930b6e0379ac434610dffceafea",
+          "role": "full_article_Markdown"
+        },
+        {
+          "path": "literature/inbox/Frederic2018Modeling/Frederic2018Modeling_meta.json",
+          "sha256": "d231f626445d14e638a711810a241770689baa8e255150367c63e271b182c8a6",
+          "role": "conversion_metadata"
+        },
+        {
+          "path": "literature/inbox/Frederic2018Modeling/_page_3_Figure_2.jpeg",
+          "sha256": "948d77191b9bb852eaffae4ce1e5a7c0412a114870f87686f9690be3f72c0e8f",
+          "role": "visually_reviewed_figure"
+        }
+      ],
+      "role": "Cross-sectional resistance model; arbitrary fouling coefficient cannot supply a measured crossflow benefit."
+    }
+  ],
+  "primary_source_doi": "10.1016/j.seppur.2005.11.028",
+  "points": [
+    {
+      "source_Re": 1388.0,
+      "critical_flux_LMH": 21.4,
+      "reading_interval_LMH": [
+        20.216606498194945,
+        23.104693140794225
+      ],
+      "flux_provenance": "Section 3.2 text anchor, checked against Fig. 6",
+      "Re_provenance": "Section 3.2 written Reynolds values; checked against digitized x interval",
+      "digitized_Re_interval": [
+        1354.8085901027077,
+        1414.5658263305322
+      ],
+      "experimental_point_uncertainty": null
+    },
+    {
+      "source_Re": 2776.0,
+      "critical_flux_LMH": 57.761732851985556,
+      "reading_interval_LMH": [
+        56.31768953068592,
+        59.2057761732852
+      ],
+      "flux_provenance": "Fig. 6 digitized marker",
+      "Re_provenance": "Section 3.2 written Reynolds values; checked against digitized x interval",
+      "digitized_Re_interval": [
+        2736.6946778711485,
+        2796.4519140989732
+      ],
+      "experimental_point_uncertainty": null
+    },
+    {
+      "source_Re": 3701.0,
+      "critical_flux_LMH": 72.5,
+      "reading_interval_LMH": [
+        71.29963898916968,
+        74.18772563176896
+      ],
+      "flux_provenance": "Section 3.2 text anchor, checked against Fig. 6",
+      "Re_provenance": "Section 3.2 written Reynolds values; checked against digitized x interval",
+      "digitized_Re_interval": [
+        3670.401493930906,
+        3730.15873015873
+      ],
+      "experimental_point_uncertainty": null
+    },
+    {
+      "source_Re": 4626.0,
+      "critical_flux_LMH": 82.67148014440433,
+      "reading_interval_LMH": [
+        81.2274368231047,
+        84.11552346570397
+      ],
+      "flux_provenance": "Fig. 6 digitized marker",
+      "Re_provenance": "Section 3.2 written Reynolds values; checked against digitized x interval",
+      "digitized_Re_interval": [
+        4596.638655462185,
+        4656.395891690009
+      ],
+      "experimental_point_uncertainty": null
+    }
+  ],
+  "conditions": {
+    "pH": 7.5,
+    "nominal_pore_size_m": 2e-07,
+    "temperature_range_degC": [
+      20,
+      25
+    ],
+    "feed": "Effluent of synthetic activated-sludge production system; not raw porous-pot feed recipe."
+  },
+  "source_rig_orientation": {
+    "value": "vertically mounted",
+    "location": "Chiu 2006 Section 2.1"
+  },
+  "specimen": "Seven-channel ceramic microfilter, nominal pore size 0.2 micrometre; star-channel family, not reconstructed geometry.",
+  "protocol": "TMP steps 30 min before nonlinearity and 15 min after; average of last time-independent and first time-dependent flux. Maximum TMP 1.2 bar.",
+  "reported_reproducibility": {
+    "maximum_relative_error_as_reported": 0.05,
+    "source_location": "Section 2.3",
+    "interpretation": "Authors state errors never exceed 5% for critical flux/rejection; not identified as standard deviation, confidence interval or point-specific uncertainty."
+  },
+  "reading_bounds_scope": "Chosen independent +/-2 pixel marker/tick sensitivity, not experimental uncertainty.",
+  "reference_velocity_pair": {
+    "Re": 1388.0,
+    "velocity_m_s": 0.6,
+    "location": "Sections 2.1 and 3.2"
+  },
+  "nominal_relation": "Piecewise linear interpolation of critical flux versus source Reynolds number; no extrapolation.",
+  "shape_relation": "Monotonic brackets without assuming an interpolation shape; exact source nodes use their own reading intervals.",
+  "transfer_assumptions": [
+    "The synthetic hydraulic case is horizontal with gravity neglected and uniform external permeate pressure; no hydrostatic profile is inferred from the vertically mounted source rig.",
+    "The hydraulic fixed-impedance anchor derives from the earlier paired Zhu specimen extraction. Chiu uses a different membrane/feed; this combination is a scenario, not a matched experimental prediction.",
+    "Transfer the source critical-flux curve to a synthetic wall/support at unchanged nominal selective-layer scenario.",
+    "Compare equal Reynolds number and equal channel velocity as separate mappings; neither identifies the source flow convention.",
+    "A constant transfer multiplier and capacity fraction are explicit scenario choices, not measured uncertainty.",
+    "Apply source module-average Jcrit as a conservative local-flux screen: maximum J(x) <= scenario capacity; this local use is an assumption.",
+    "Water-carrier properties; biological feed rheology unavailable. COD retention remains a separate constant scenario.",
+    "Changing support geometry is assumed not to change the source critical-flux curve except through local flux redistribution."
+  ],
+  "unavailable": {
+    "sustainable_flux_LMH": null,
+    "fouling_time_s": null,
+    "same_condition_rejection_curve": null,
+    "measured_feed_viscosity_Pa_s": null,
+    "pointwise_experimental_uncertainty": null
+  },
+  "no_new_article_required_for_this_bounded_milestone": true
+}

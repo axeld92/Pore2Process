@@ -5,7 +5,7 @@ Julia for custom models/analysis/scale translation, Python for coordination,
 data/visualization/interface, and DWSIM for process simulation. Cantera may
 support future chemistry; it does not replace either mandatory simulator.
 
-| Milestone | Verified state on 9 November 2026 |
+| Milestone | Verified state on 10 November 2026 |
 | --- | --- |
 | Python–Julia capillary-network reference | Complete numerics, bridge, exports and Panel app; canvas rotation also verified in the browser on 9 November. |
 | Native tool compatibility | Complete: stock OpenLB channel and actual DWSIM pump cases, saved/reloaded and solved. Builds now remain outside OpenLB. |
@@ -23,6 +23,7 @@ support future chemistry; it does not replace either mandatory simulator.
 | Explicit star-channel hydraulic definition | Complete: declared six-point polygon, unambiguous area/perimeter/velocity convention, 17 actual stock-TRT OpenLB cases, independent Julia duct reference and checked Re envelope 4.94–34.59. |
 | TRT support update and biological-feed sensitivity | Complete: 24 revalidated support cases, 28 actual DWSIM recycle cases including seed validation; distributed Julia pressure/flux and conservative COD balance. At 12 LMH and Re=20 the widest support saves 11.20% of total pump shaft energy. Retention is a transfer scenario; sustainable flux remains unavailable. |
 | Local connected interface | Complete: actual Julia/DWSIM runs, support controls, native 3D inspection, labelled profiles, per-session snapshots/downloads, invalid recovery and preserved original capillary tab. Browser and downloaded-file checks pass. |
+| Higher-Re hydraulics, source audit and operating map | Complete: 16 stock D3Q27/TRT cases, 91 actual DWSIM solve/save/reload cases and a bounded critical-flux policy comparison. Native laminar-branch envelope is approximately Re=1000–2000; physical transition and sustainable operation are not established. |
 
 The first connected technical acceptance criterion is met for the synthetic
 hydraulic demonstration. See [the results](connected_hydraulics.md) and
@@ -96,14 +97,31 @@ geometry removes ambiguity in our own flow convention without identifying the
 paper's unreported convention. Its low-Re hydraulic case does not inherit the
 paper's Re=1388 critical-flux limit.
 
-Next executable numerical step: verify a suitable stock OpenLB higher-Re
-channel reference with low Mach number, spatial/time-step refinement and
-stationarity checks, then extend the synthetic star toward the source range.
-A circulation-performance benefit needs a defensible literature-based transport
-or retention/fouling relation before circulation can be optimized. Reacting,
-non-isothermal work additionally needs a selected reaction/process and published
-kinetic/thermal inputs. No inaccessible raw dataset, specimen reconstruction or
-new laboratory measurement is a gate for these computational milestones.
+The [higher-Re continuation](operating_window.md) now completes that numerical
+step, the supplied-paper audit and a material–operation map. Spatial, time-step,
+periodic-domain, initial-state and pressure-law checks pass before the measured
+coefficient enters Julia and actual DWSIM cases. The capacity policies retain
+equal-Re/equal-velocity transfer, source reading bounds and shape-free monotonic
+alternatives. These support conditional discrete-grid choices; they do not
+validate physical transition, indefinitely sustainable flux or a fouling-time law.
+
+The current hydraulic milestone is complete and is retained as a regression
+example. A concrete optional hydraulic
+verification, if selected, is a permeating-wall channel benchmark against the
+existing distributed Julia model, using stock OpenLB boundary facilities in a
+new project folder. It would test the present slowly varying approximation;
+it would not resolve the separate experimental capacity-transfer question.
+Reacting and non-isothermal additions are deferred at the user's request and
+will require a selected application plus published kinetic/thermal inputs.
+No inaccessible raw dataset, specimen reconstruction or new laboratory
+measurement is a gate for these computational milestones.
+
+The filtration hydraulic example is **closed for now** and remains a regression
+benchmark. The active next example is **isothermal adsorption**, being developed
+separately. Its research question is how particle size changes usable treatment
+capacity and pumping energy at fixed adsorbent inventory and required outlet
+quality. Its implementation and validation will be published in a separate
+update after that work is ready.
 
 Implementation choices for that milestone:
 

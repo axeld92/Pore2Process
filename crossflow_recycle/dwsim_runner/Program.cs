@@ -77,9 +77,9 @@ static class Crossflow {
             a.Module_to_permeate_ratio,a.Recovery_fraction,a.Feed_efficiency_fraction,a.Circulation_efficiency_fraction,
             a.Seed_module_mass_flow_kg_s,a.Seed_temperature_K,a.Mass_tolerance_kg_s,a.Temperature_tolerance_K,a.Pressure_tolerance_Pa];
         if(positives.Any(v=>!double.IsFinite(v)||v<=0)||a.Recovery_fraction>=1||a.Module_to_permeate_ratio<=1/a.Recovery_fraction||
-            a.Feed_efficiency_fraction>1||a.Circulation_efficiency_fraction>1||a.Maximum_iterations<1||a.Maximum_iterations>5000||
+            a.Feed_efficiency_fraction>1||a.Circulation_efficiency_fraction>1||a.Maximum_iterations<1||a.Maximum_iterations>20000||
             !double.IsFinite(a.External_pressure_Pa+a.TMP_Pa+a.Channel_drop_Pa))
-            throw new ArgumentException("Require finite positive inputs, recovery in (0,1), module/permeate > 1/recovery, efficiencies <=1 and 1..5000 iterations.");
+            throw new ArgumentException("Require finite positive inputs, recovery in (0,1), module/permeate > 1/recovery, efficiencies <=1 and 1..20000 iterations.");
         var watch=Stopwatch.StartNew();
         var fs=Flowsheet.Create("Pore2Process: clean-water crossflow recycle")
             .WithCompound("Water").WithPropertyPackage(PropertyPackages.SteamTables);
