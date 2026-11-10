@@ -38,18 +38,18 @@ validation dataset for these parameters.
 With axial coordinate $z$ in metres, liquid concentration $C$ in kg/m³ and
 solid loading $q$ in kg phenol/kg dry solid, Julia solves
 
-$$
+```math
 \epsilon\frac{\partial C}{\partial t}
 +\frac{\partial}{\partial z}\left(uC-\epsilon D_{ax}\frac{\partial C}{\partial z}\right)
 =-\rho_b\frac{\partial q}{\partial t},\qquad
 \rho_b=(1-\epsilon)\rho_p,
-$$
+```
 
-$$
+```math
 \frac{\partial q}{\partial t}=k_{LDF}(q_{eq}(C)-q),\qquad
 q_{eq}(C)=\frac{q_{max}bC}{1+bC},\qquad
 k_{LDF}=\frac{15D_{eff}}{R_p^2},\quad R_p=d_p/2.
-$$
+```
 
 The linear-driving-force law approximates intraparticle diffusion; it does
 not separately resolve an external film. A Danckwerts inlet imposes total
@@ -61,10 +61,10 @@ $D_{ax}=a_D(u/\epsilon)d_p$ with $a_D=0.1,1$.
 The breakthrough time $t_b$ is the first crossing of $C_{out}/C_{in}=0.05$;
 missing crossings remain unavailable. Treated volume and solid utilisation are
 
-$$
+```math
 V_b=Qt_b,\qquad
 U_s=\frac{M_{ads}(t_b)}{M_s q_{eq}(C_{in})}.
-$$
+```
 
 Utilisation is relative to equilibrium at feed concentration, not the
 infinite-concentration Langmuir capacity.

@@ -22,17 +22,17 @@ second. The inlet/outlet faces have prescribed pressures $p_{in},p_{out}$.
 
 Hagen–Poiseuille flow gives each throat's conductance and signed discharge:
 
-$$
+```math
 g_{ij}=\frac{\pi r_{ij}^{4}}{8\mu\ell_{ij}},\qquad
 q_{ij}=g_{ij}(p_i-p_j).
-$$
+```
 
 Here $g$ is in m³/(Pa s) and $q$ in m³/s. Julia assembles the sparse
 conductance Laplacian $K$. Conservation at interior junctions gives
 
-$$
+```math
 K_{II}p_I=-K_{IB}p_B.
-$$
+```
 
 There is no interior solve when $n_x=2$. Summing signed nodal net outflows on
 the inlet, and their negatives on the outlet, gives $Q_{in}$ and $Q_{out}$
@@ -43,10 +43,10 @@ $A=n_yn_za^2$. Each transverse junction represents one cell of area $a^2$;
 the declared transverse domain is $[0,n_ya]\times[0,n_za]$. The area between
 outer node centres is therefore not the sample area used for permeability.
 
-$$
+```math
 k=\frac{\mu LQ_{in}}{A(p_{in}-p_{out})},\qquad
 Q_{column}=\frac{kA_{column}\Delta p_{column}}{\mu L_{column}}.
-$$
+```
 
 Permeability $k$ is in m². At zero pressure drop the exact constant-pressure,
 zero-flow state is returned; inferred $k$ and column flow are unavailable.
@@ -55,11 +55,11 @@ The column assumes repetition of the same idealized medium at a larger scale.
 An independent analytical reference follows from $n_yn_z$ parallel paths, each
 containing $n_x-1$ capillaries in series. Transverse pressure differences vanish:
 
-$$
+```math
 p(x)=p_{in}-\Delta p\,x/L,\qquad
 Q_{exact}=\frac{n_yn_z\pi r^4\Delta p}{8\mu L},\qquad
 k_{exact}=\frac{\pi r^4}{8a^2}.
-$$
+```
 
 These expressions check the matrix solution; they do not generate its answer.
 

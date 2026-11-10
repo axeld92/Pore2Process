@@ -13,11 +13,11 @@ The three synthetic supports retain 4 µm mouths and 4/5/6 µm interiors.
 Their previously measured native body-resistance ratios $c_i$ are translated
 through one literature baseline permeance:
 
-$$
+```math
 P_{s,0}=\frac{3.12/3600}{10^5}\quad[\mathrm{m/(Pa\ s)}],\qquad
 Z_{s,i}=c_i/P_{s,0},\qquad
 \mathrm{TMP}_i=J(Z_{s,i}+Z_f).
-$$
+```
 
 $Z_f=2.5094652448872787\times10^8$ Pa s/m is the unchanged effective
 non-support impedance from Zhu's matched M1 series. It includes possible
@@ -28,9 +28,9 @@ temperature are assumptions; the geometry is not the experimental specimen.
 Let $A_m$ be membrane area, $J$ flux, and $y$ the permeate/feed mass recovery.
 Reference volumetric rates all use the same fresh-feed density:
 
-$$
+```math
 Q_p=JA_m,\qquad Q_f=Q_p/y,\qquad Q_r=Q_f-Q_p.
-$$
+```
 
 A stock DWSIM pump supplies $\mathrm{TMP}+\Delta p_c$ to the full feed. A
 channel-loss valve precedes a prescribed split; permeate and retentate valves
@@ -39,25 +39,25 @@ surrogate with imposed recovery, not a separation/rejection prediction.
 
 The independent incompressible reference is
 
-$$
+```math
 W=\frac{Q_f(\mathrm{TMP}+\Delta p_c)}{\eta},\qquad
 e=\frac{\mathrm{TMP}+\Delta p_c}{\eta y\,3.6\times10^6}
 \quad[\mathrm{kWh/m^3\ permeate}].
-$$
+```
 
 For equal channel loss, recovery and efficiency, the fractional design saving is
 
-$$
+```math
 1-W_i/W_0=\frac{\mathrm{TMP}_0-\mathrm{TMP}_i}
 {\mathrm{TMP}_0+\Delta p_c}.
-$$
+```
 
 Hydraulic work separates into membrane dissipation, retentate letdown and
 upstream loss:
 
-$$
+```math
 \eta W=Q_p\mathrm{TMP}+Q_r\mathrm{TMP}+Q_f\Delta p_c.
-$$
+```
 
 DWSIM's thermodynamic check instead balances full stream enthalpy flows
 against shaft work; the hydraulic terms are not added a second time.

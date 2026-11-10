@@ -19,10 +19,10 @@ Figure 7 compares 0.8 and 0.45 mm particles at 150 mg/L phenol, 43.8 mL/min,
 bulk density 740 kg/m³, porosity 0.427, $q_{max}=0.1115$ kg/kg and
 $b=139$ m³/kg. Literal density interpretation gives
 
-$$
+```math
 M_s=\rho_bAL=7.032455\ \mathrm g,\qquad
 \rho_p=\frac{\rho_b}{1-\epsilon}=1291.45\ \mathrm{kg/m^3}.
-$$
+```
 
 The mass is derived, not a reported per-fraction weighing; $\rho_p$ is
 particle-envelope dry density, not skeletal density. Missing pointwise
@@ -34,11 +34,11 @@ bed heights are not silently resolved or pooled into this test.
 For superficial velocity $u=Q/A$, concentration $C$ in kg/m³ liquid and
 loading $q$ in kg/kg dry solid, the conservative Julia model is
 
-$$
+```math
 \epsilon C_t+\partial_z(uC-\epsilon D_{ax}C_z)=-\rho_b q_t,
 \qquad q_t=k_{LDF}(q_{eq}(C)-q),\qquad
 q_{eq}(C)=\frac{q_{max}bC}{1+bC}.
-$$
+```
 
 It assumes isothermal constant properties, a clean bed, Danckwerts inlet total
 flux and zero dispersive outlet flux. It does not resolve external film and
@@ -49,10 +49,10 @@ forward calculation uses the existing Julia solver.
 The fitted rate and dispersion are effective reduced parameters, not separately
 measured diffusivities. Primary prediction keeps dispersion fixed and applies
 
-$$
+```math
 k_{LDF}(0.45\ \mathrm{mm})
 =k_{LDF}(0.8\ \mathrm{mm})\left(0.8/0.45\right)^2.
-$$
+```
 
 A separate scenario scales dispersion with diameter. The 0.45 mm observations
 are withheld from fitting. The declared screens are concentration-fraction

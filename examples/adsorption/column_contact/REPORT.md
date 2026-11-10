@@ -15,11 +15,11 @@ uses 150 mg/L phenol, 43.8 mL/min, 10 cm bed height, 11 mm column diameter
 and 22 ±1 °C. Table 1 labels 740 kg/m³ as **bulk density** and gives porosity
 0.427. Literal interpretation implies
 
-$$
+```math
 M_s=\rho_bAL=7.032455\ \mathrm g,\quad
 \rho_p=\rho_b/(1-\epsilon)=1291.4485\ \mathrm{kg/m^3},\quad
 u=Q/A=0.00768153\ \mathrm{m/s}.
-$$
+```
 
 The liquid void residence time is $\epsilon AL/Q=5.55879$ s; empty-bed
 contact time is 13.0182 s. The dry mass is derived, not a reported weighing
@@ -30,10 +30,10 @@ diagnostic, not an applied correction.
 At $C_0=150$ mg/L, the unchanged Langmuir isotherm gives 106.397 mg/g.
 For a clean bed eventually equilibrated to its feed,
 
-$$
+```math
 M_\infty=M_s q_{eq}(C_0)+\epsilon ALC_0
 =748.232+0.609\ \mathrm{mg}.
-$$
+```
 
 The complete breakthrough deficit would integrate to
 $M_\infty/(QC_0)=113.979$ min. Changing contact pattern can change curve shape
@@ -45,20 +45,20 @@ all the assumed solid remains active and equilibrates.
 The model has $N$ equal perfectly mixed sections, each containing its full
 share of liquid and solid. For section $j$,
 
-$$
+```math
 V_{l,j}\frac{dC_j}{dt}+M_{s,j}\frac{d\bar q_j}{dt}
 =Q(C_{j-1}-C_j),\qquad
 V_{l,j}=\epsilon AL/N,\quad M_{s,j}=(1-\epsilon)\rho_pAL/N.
-$$
+```
 
 $C_0=C_{in}$ and $C_{out}=C_N$. There is no bypass, dead solid, external
 delay or reverse exchange. Each section reuses the existing particle model:
 
-$$
+```math
 q_t=\frac{D_s}{r^2}(r^2q_r)_r,\quad q_r(0)=0,\quad
 q(R)=\frac{q_{max}bC_s}{1+bC_s},\quad
 k_f(C_j-C_s)=\rho_pD_sq_r(R).
-$$
+```
 
 Frozen values are $D_s=1.84603549\times10^{-12}$ m²/s,
 $q_{max}=0.1115$ kg/kg, $b=139$ m³/kg and the above particle density.
@@ -71,10 +71,10 @@ All integers 1–64 are evaluated against the 24 digitized 0.8 mm markers only;
 0.45 mm remains withheld. Radial shells/time steps are refined at fixed $N$.
 For a nonadsorbing tracer, the independent tanks-in-series step response is
 
-$$
+```math
 F(t)=1-e^{-x}\sum_{k=0}^{N-1}\frac{x^k}{k!},\qquad
 x=Nt/\tau,\quad \tau=\epsilon AL/Q.
-$$
+```
 
 Its mean residence time is $\tau$ and variance $\tau^2/N$. These limits and
 the retarded linear-adsorption limit verify the implementation independently

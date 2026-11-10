@@ -13,11 +13,11 @@ A straight channel has a 12-vertex star cross-section, alternating radii
 $R=2.3$ mm and $r=1.4$ mm at angles $n\pi/6$. Its area, wetted perimeter and
 hydraulic diameter are
 
-$$
+```math
 A_c=3Rr=9.66\times10^{-6}\ \mathrm{m^2},\quad
 P=12\sqrt{R^2+r^2-2Rr\cos(\pi/6)}=0.01552039566\ \mathrm m,\quad
 D_h=4A_c/P=0.00248962725\ \mathrm m.
-$$
+```
 
 Flow is axial $+x$ and mean speed is explicitly $u=Q_c/A_c$. Seven 0.3 m
 channels give $7PL=0.03259283$ m² active area; parallel replication normalizes
@@ -28,13 +28,13 @@ OpenLB measures fully developed, no-slip flow in a short periodic window under
 equivalent pressure gradient $G>0$. Its stock TRT/forcing and geometry
 facilities give a geometry coefficient
 
-$$
+```math
 \mathcal C=\frac{\mu Q_c}{G}\quad[\mathrm{m^4}],\qquad
 -\frac{dp}{dx}=\frac{\mu Q_c}{\mathcal C}.
-$$
+```
 
 An independent Julia oracle solves $-\nabla_\perp^2w=1$ with $w=0$ at the wall;
-then $u_x=(G/\mu)w$ and $\mathcal C=\int w\,dA$. It is a numerical check,
+then $u_x=(G/\mu)w$ and $\mathcal C=\int w dA$. It is a numerical check,
 not the production hydraulic input or a native initial field. The native
 periodic density field is not interpreted as a full physical module pressure.
 
@@ -43,10 +43,10 @@ periodic density field is not interpreted as a full physical module pressure.
 Let $p(x)$ be TMP relative to uniform permeate pressure, $q(x)$ channel flow,
 and $Z=Z_s+Z_f$ a uniform local membrane impedance in Pa s/m:
 
-$$
+```math
 \frac{dp}{dx}=-\frac{\mu}{\mathcal C}q,\qquad
 \frac{dq}{dx}=-\frac{P}{Z}p,\qquad J(x)=p(x)/Z.
-$$
+```
 
 Consequently $p''=\lambda^2p$, with $\lambda^2=\mu P/(\mathcal C Z)$.
 Prescribed inlet Re fixes $q(0)$; prescribed mean flux fixes
@@ -66,10 +66,10 @@ Its feed pump lifts fresh flow to outlet pressure; the circulation pump
 supplies the axial drop. Recycle, purge, cooler, splitters and valves are
 actual stock units. The distributed hydraulic port identity per channel is
 
-$$
+```math
 q_{in}(p_{in}-p_{out})+q_p p_{out}
 =\int_0^L\left(\frac{\mu}{\mathcal C}q^2+\frac{P}{Z}p^2\right)dx.
-$$
+```
 
 The lumped valves preserve the port work; their individual losses are not
 claimed to resolve distributed dissipation. Actual pump checks use inlet
@@ -84,10 +84,10 @@ reports rejection 0.65 for another membrane/operating condition. Here that
 value is an explicitly transferred local rejection $r_C$, not a fitted law.
 For a conserved COD-equivalent tracer,
 
-$$
+```math
 c(x)=c_{in}\left(q_{in}/q(x)\right)^{r_C},\qquad
 c_p=\frac{q_{in}c_{in}-q_{out}c_{out}}{q_p}.
-$$
+```
 
 Mixer and purge balances determine fresh-feed concentration. COD is not a
 DWSIM compound, a measured rheology or a reaction. “Removal” denotes diversion

@@ -26,21 +26,21 @@ are a consistency audit, not seven independent raw equilibrium experiments.
 The homogeneous spherical loading-diffusion approximation uses loading
 $q(r,t)$ in kg/kg dry solid and an effective diffusivity $D_s$ in m²/s:
 
-$$
+```math
 \frac{\partial q}{\partial t}
 =\frac{D_s}{r^2}\frac{\partial}{\partial r}
 \left(r^2\frac{\partial q}{\partial r}\right),\qquad
 q_r(0,t)=0,\qquad
 q(R,t)=\frac{q_{max}bC_s}{1+bC_s}.
-$$
+```
 
 Surface liquid concentration $C_s$ couples film supply to particle uptake
 through one shared inward solute flux $j_s$ in kg/(m² s):
 
-$$
+```math
 j_s=k_f(C-C_s)=\rho_pD_s q_r(R,t),\qquad
 \bar q=\frac{3}{R^3}\int_0^R q(r,t)r^2dr.
-$$
+```
 
 Internal liquid storage is neglected explicitly. This $D_s$ is an effective
 loading-diffusion parameter, not free-liquid diffusivity or a uniquely
@@ -48,10 +48,10 @@ identified micropore property.
 
 A finite bath loses dissolved solute as the carbon loads:
 
-$$
+```math
 V\frac{dC}{dt}=-M_s\frac{d\bar q}{dt},\qquad
 VC_{eq}+M_s q_{eq}(C_{eq})=VC_0.
-$$
+```
 
 The equilibrium equation is independently checked against the Langmuir
 quadratic. Holding bath concentration artificially fixed would violate this
@@ -60,10 +60,10 @@ $d\bar q/dt=3k_f C_0/(\rho_pR)$ at $t\to0$.
 
 For the column, axial finite volumes conserve
 
-$$
+```math
 \epsilon C_t+\partial_z(uC-\epsilon D_{ax}C_z)
 =-a_s\rho_b\bar q_t,\qquad \rho_b=(1-\epsilon)\rho_p.
-$$
+```
 
 The primary active-solid fraction $a_s=1$; chosen sensitivities 0.5/0.75 are
 not measured inventories. The clean-bed inlet specifies total solute flux
@@ -72,10 +72,10 @@ dispersion scenario uses $0.5(u/\epsilon)d_p$ without claiming it is measured.
 
 The declared column film correlation is
 
-$$
+```math
 Sh=\frac{k_fd_p}{D_m}=2+1.1Re_p^{0.6}Sc^{1/3},\quad
 Re_p=\frac{\rho u d_p}{\mu},\quad Sc=\frac{\mu}{\rho D_m}.
-$$
+```
 
 It follows Alhamed Eq. 19 and
 [Wakao–Funazkri (1978)](https://doi.org/10.1016/0009-2509(78)85120-3).

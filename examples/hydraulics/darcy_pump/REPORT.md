@@ -12,19 +12,19 @@ Two straight pores, with radii 50 and 40 µm, share a 400 µm length and a
 200 µm square representative cell. Each native flow calculation measures
 discharge $Q_p$ and the pressure difference between internal taps. Julia infers
 
-$$
+```math
 k=\frac{\mu L_{taps}Q_p}{A_{cell}\Delta p_{taps}}.
-$$
+```
 
 The upscaled slab has $L_b=1$ m, $A_b=1$ m² and prescribed total water flow
 $Q_b=10^{-5}$ m³/s. Repetition of the aligned-pore medium and Darcy linearity
 are assumptions. The required pressure rise and independent pump-work oracle are
 
-$$
+```math
 \Delta p_b=\frac{\mu L_b Q_b}{kA_b},\qquad
 W_{shaft}=\frac{Q_b\Delta p_b}{\eta}
 =\frac{\dot m\Delta p_b}{\rho\eta},\qquad \eta=0.75.
-$$
+```
 
 The actual DWSIM Steam Tables calculation at 298.15 K and 100000 Pa supplies
 $\mu=0.0008900825175722$ Pa s and $\rho=997.0474354081$ kg/m³. These

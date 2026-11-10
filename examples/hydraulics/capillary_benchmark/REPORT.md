@@ -19,28 +19,28 @@ no-slip walls and no gravity.
 
 The continuum reference obeys incompressible mass and momentum balance,
 
-$$
+```math
 \nabla\cdot\mathbf u=0,\qquad
 \rho(\mathbf u\cdot\nabla)\mathbf u=-\nabla p+\mu\nabla^2\mathbf u.
-$$
+```
 
 For fully developed axial flow, the convective term vanishes and the radial
 viscous balance produces the profile below.
 
 For an axial pressure gradient, fully developed momentum balance yields
 
-$$
+```math
 u(s)=\frac{\Delta p}{4\mu L}(R^2-s^2),\qquad
 Q=\int_0^R2\pi s u(s)\,ds=\frac{\pi R^4\Delta p}{8\mu L}.
-$$
+```
 
 Here $s$ is radial distance. Comparing with Darcy flow gives the independent
 sample-area permeability:
 
-$$
+```math
 k_{exact}=\frac{\pi R^4}{8A_{cell}}
 =6.13592315154\times10^{-11}\ \mathrm{m^2}.
-$$
+```
 
 OpenLB evolves its lattice populations with stock collision, streaming, wall
 and pressure-boundary facilities. The accepted current porous-flow benchmark
@@ -48,9 +48,9 @@ uses D3Q19/TRT with magic parameter $3/16$. It starts from a numerical initial
 state; the analytical profile is a verification oracle. Julia instead uses
 the measured plane discharge and interior pressure taps:
 
-$$
+```math
 k_{measured}=\frac{\mu L_{taps}Q}{A_{cell}\Delta p_{taps}}.
-$$
+```
 
 Interior taps isolate the bulk pressure gradient from boundary effects. This
 measurement is not a reservoir-to-reservoir entrance-loss coefficient. Profile
@@ -64,21 +64,21 @@ In the unforced bulk, opposite discrete velocities $i,\bar i$ define even/odd
 population parts $f_i^{\pm}=(f_i\pm f_{\bar i})/2$. With the corresponding
 second-order equilibrium parts, the stock TRT collision and streaming are
 
-$$
-f_i^*=f_i-\omega_+(f_i^+-f_i^{eq,+})
+```math
+f_i^{\star}=f_i-\omega_+(f_i^+-f_i^{eq,+})
 -\omega_-(f_i^--f_i^{eq,-}),\qquad
-f_i(\mathbf x+\mathbf c_i\Delta t,t+\Delta t)=f_i^*(\mathbf x,t).
-$$
+f_i(\mathbf x+\mathbf c_i\Delta t,t+\Delta t)=f_i^{\star}(\mathbf x,t).
+```
 
 For this D3Q19 model, lattice viscosity is
 $\nu_{lb}=(1/3)(1/\omega_+-1/2)$ and
 $\nu=\nu_{lb}\Delta x^2/\Delta t$. The odd rate follows the chosen magic
 parameter,
 
-$$
+```math
 \left(\frac{1}{\omega_+}-\frac12\right)
 \left(\frac{1}{\omega_-}-\frac12\right)=\frac{3}{16}.
-$$
+```
 
 OpenLB supplies these operations, its D3Q19 velocities, equilibrium and
 Bouzidi wall treatment; project code does not recreate them. This bulk

@@ -19,25 +19,25 @@ conditional cross-paper transfer, not one matched experimental system.
 At membrane area $A_m$, prescribed $Q_p=JA_m$, recovery $y$ and reference
 module flow $Q_m$, the recycle balances give
 
-$$
+```math
 Q_f=Q_p/y,\quad Q_{return}=Q_m-Q_f,\quad Q_{purge}=Q_f-Q_p.
-$$
+```
 
 Actual stock DWSIM equipment supplies feed and circulation shaft duties.
 Their incompressible references and the reported process metric are
 
-$$
+```math
 W_f\simeq Q_f\mathrm{TMP}/\eta_f,\qquad
 W_c\simeq Q_m\Delta p_c/\eta_c,\qquad
 e=\frac{W_f+W_c}{3.6\times10^6Q_p}\quad[\mathrm{kWh/m^3}].
-$$
+```
 
 The source's own hydraulic energy definition is reproduced separately:
 
-$$
+```math
 E_{source}=\frac{\Delta p_c Q_{source}}{J_{crit}S}
 \quad[\mathrm{J/m^3}].
-$$
+```
 
 It uses source critical flux and source area $S$, excludes pump efficiency and
 TMP work, and is not the same boundary as total two-pump energy at fixed $J$.

@@ -12,10 +12,10 @@ temperature control. It quantifies hydraulic cost under prescribed flux.
 Clean water has prescribed permeate flux $J$ through area $A_m$. The membrane
 pressure requirement retains the native support ratios and common Zhu anchor:
 
-$$
+```math
 Q_p=JA_m,\qquad \mathrm{TMP}=J(Z_s+Z_f),\qquad
 Z_s=c_i/P_{s,0},\quad Z_f=2.5094652448872787\times10^8\ \mathrm{Pa\ s/m}.
-$$
+```
 
 $P_{s,0}=(3.12/3600)/10^5$ m/(Pa s); $c_i$ is the measured body-resistance
 ratio for a 4/5/6 µm interior with 4 µm mouths. The fixed non-support impedance
@@ -25,10 +25,10 @@ fit to each design, maps the synthetic pore ratios to the literature baseline.
 Define overall recovery $y=Q_p/Q_f$ and module/permeate ratio $C_m=Q_m/Q_p$.
 All reference volumes use fresh-feed density, so these also define mass ratios:
 
-$$
+```math
 Q_f=Q_p/y,\quad Q_m=C_mQ_p,\quad
 Q_{return}=Q_m-Q_f,\quad Q_{purge}=Q_f-Q_p.
-$$
+```
 
 Positive purge and return require $0<y<1$ and $C_m>1/y$. The membrane split
 is $1/C_m$; purge fraction of its retentate is $(1/y-1)/(C_m-1)$.
@@ -39,12 +39,12 @@ The feed pump lifts only fresh feed to chamber pressure. The return retains
 that pressure. After mixing and temperature control, a circulation pump
 supplies a separate upstream channel loss:
 
-$$
+```math
 \Delta p_c=R_cQ_m,\qquad
 W_f\simeq Q_f\mathrm{TMP}/\eta_f,\qquad
 W_c\simeq R_cQ_m^2/\eta_c,\qquad
 e=\frac{W_f+W_c}{3.6\times10^6Q_p}.
-$$
+```
 
 $R_c$ is in Pa s/m³ and $e$ in kWh/m³ permeate. Each actual DWSIM pump is
 checked more precisely using $W=\dot m\Delta p/(\rho_{in}\eta)$ at its own
@@ -52,9 +52,9 @@ inlet density. Reference and actual flashed volumes remain distinct.
 
 The thermodynamic energy balance includes cooling separately:
 
-$$
+```math
 \dot H_p+\dot H_{purge}-\dot H_f-(W_f+W_c)+\dot Q_{removed}=0.
-$$
+```
 
 Cooling duty is heat, not cooling electricity. No COP or motor efficiency is
 assumed. The channel is a lumped upstream loss, not a resolved axial flow field.

@@ -19,17 +19,17 @@ OpenLB constructs the case with stock cylinder/cone indicators and follows
 the official mesh–geometry–lattice–boundary–solve–results lifecycle. Body
 pressure taps exclude the external development sections. Julia calculates
 
-$$
+```math
 \mathcal R_b=\frac{\Delta p_b}{Q}\quad[\mathrm{Pa\ s/m^3}],\qquad
 k_b=\frac{\mu L_b}{A_{cell}\mathcal R_b}\quad[\mathrm{m^2}].
-$$
+```
 
 Positive flow is axial $+x$; pressure is gauge Pa. For comparison only,
 locally developed Poiseuille flow gives
 
-$$
+```math
 \mathcal R_{lub}=\frac{8\mu}{\pi}\int_0^{L_b}\frac{dx}{r(x)^4}.
-$$
+```
 
 For a linear-radius segment of length $\ell$ and endpoint radii $a,b$, the
 integral is $\ell(a^2+ab+b^2)/(3a^3b^3)$, including $a=b$. This is exact for
@@ -42,11 +42,11 @@ The matched [Zhu M1 calibration](../calibration/REPORT.md) supplies baseline
 support permeance $P_{s,0}=(3.12/3600)/10^5$ m/(Pa s) and fixed impedance
 $Z_f=2.5094652448872787\times10^8$ Pa s/m. For design $i$,
 
-$$
+```math
 c_i=\frac{\mathcal R_{b,i}}{\mathcal R_{b,0}},\qquad
 Z_{s,i}=\frac{c_i}{P_{s,0}},\qquad
 \mathrm{TMP}_i=J(Z_{s,i}+Z_f).
-$$
+```
 
 The common baseline anchor assumes that the measured native shape ratio
 transfers through the same unresolved structural multiplier for every design.
@@ -56,7 +56,7 @@ $1.15385\times10^8$ Pa s/m: the multiplier is 813.84 and remains explicit.
 
 At 100 LMH, 1 m² and pump efficiency 0.75, DWSIM receives $Q=JA_m$ and the
 Julia pressure rise. Specific shaft energy is independently checked against
-$e=\mathrm{TMP}/(\eta\,3.6\times10^6)$ kWh/m³. This stage has a pump-load
+$e=\mathrm{TMP}/(\eta 3.6\times10^6)$ kWh/m³. This stage has a pump-load
 flowsheet; feed recovery and circulation are added in subsequent examples.
 
 ## Results

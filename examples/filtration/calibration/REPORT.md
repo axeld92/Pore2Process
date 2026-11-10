@@ -14,18 +14,18 @@ must remain separate.
 
 The first closure uses nominal powder diameter $d$ in m and porosity $\epsilon$:
 
-$$
+```math
 k_i=b\,k_{CK,i},\qquad
 k_{CK,i}=\frac{d_i^2\epsilon_i^3}{180(1-\epsilon_i)^2}.
-$$
+```
 
 $k$ is in m² and $b$ is dimensionless. Equal-weight squared natural-log
 residuals on calibration cases $\mathcal C$ have the exact minimizer
 
-$$
+```math
 \log b=\frac{1}{|\mathcal C|}\sum_{i\in\mathcal C}
 \log\left(\frac{k_{obs,i}}{k_{CK,i}}\right).
-$$
+```
 
 Powder diameter is not interpreted as resolved hydraulic pore radius. Fitting
 one multiplier cannot identify a connected three-dimensional geometry.
@@ -36,12 +36,12 @@ For a support and coated membrane measured at the same pressure drop,
 define permeance $P=J/\Delta p$ in m/(Pa s) and impedance $Z=1/P$ in Pa s/m.
 Common flux through series layers gives
 
-$$
+```math
 \frac{1}{P_{tot}}=\frac{1}{P_s}+Z_f,\qquad
 \widehat Z_f=\operatorname{mean}_{\mathcal C}
 \left(\frac{1}{P_{tot}}-\frac{1}{P_s}\right),\qquad
 J_{pred}=\frac{\Delta p}{1/P_s+\widehat Z_f}.
-$$
+```
 
 $Z_f$ is an effective **non-support** impedance, potentially including
 intermediate layers and interface/access effects. It is not a separately
@@ -50,11 +50,11 @@ assigning an unreported measurement viscosity.
 
 At target flux $J_t$ and efficiency $\eta$, the conditional energy translation is
 
-$$
+```math
 \Delta p_t=J_t(Z_s+Z_f),\qquad
 e=\frac{\Delta p_t}{\eta\,3.6\times10^6},\qquad
 \phi_f=\frac{Z_f}{Z_s+Z_f}.
-$$
+```
 
 The fixed contribution exceeds 50% when $Z_f>Z_s$ and reaches 90% when
 $Z_f\ge9Z_s$. These relations presume linear clean-water behavior.

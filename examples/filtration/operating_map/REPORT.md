@@ -26,11 +26,11 @@ The support family has fixed 4 µm mouths and 4/5/6 µm interior radii in a
 40 µm body and 20 µm square cell. Separately verified TRT body-resistance
 ratios $c_i$ give
 
-$$
+```math
 Z_{s,i}=\frac{c_i}{P_{s,0}},\qquad
 P_{s,0}=\frac{3.12/3600}{10^5}\ \mathrm{m/(Pa\ s)},\qquad
 Z=Z_{s,i}+\gamma Z_f,
-$$
+```
 
 where $Z_f=2.5094652448872787\times10^8$ Pa s/m is Zhu's paired M1
 effective non-support impedance and $\gamma$ is a declared scenario multiplier.
@@ -39,10 +39,10 @@ geometry. $Z_f$ may include interfaces and intermediate layers.
 
 For TMP $p(x)$ and channel flow $q(x)$, Julia solves
 
-$$
+```math
 p'=-\mu q/\mathcal C,\qquad q'=-Pp/Z,\qquad
 J(x)=p(x)/Z,\qquad p''=\frac{\mu P}{\mathcal C Z}p.
-$$
+```
 
 Inlet Re and prescribed mean flux set the hyperbolic solution; outlet TMP
 must remain positive. The model is a slowly varying fully developed
@@ -50,9 +50,9 @@ approximation, with no resolved entrance, turbulence or fouling physics.
 A native velocity-profile bound $\beta_m\le u_{max}/\bar u$ screens the
 omitted axial momentum term relative to friction:
 
-$$
+```math
 \frac{2\beta_m\rho\mathcal C P J_{max}}{\mu A_c^2}<0.02.
-$$
+```
 
 This is a reduced-model screen, not validation against permeating-wall CFD.
 
@@ -62,15 +62,15 @@ DWSIM solves the real stock feed/circulation pumps, recycle, cooler and
 hydraulic port representation. Feed rises to outlet TMP and circulation
 supplies the axial drop. The independent hydraulic references are
 
-$$
+```math
 Q_p=\bar J A_m,\qquad Q_f=Q_p/y,\qquad
 W_f\simeq Q_fp_{out}/\eta_f,\quad
 W_c\simeq Q_{in}(p_{in}-p_{out})/\eta_c,
-$$
+```
 
-$$
+```math
 e=\frac{W_f+W_c}{3.6\times10^6Q_p}\quad[\mathrm{kWh/m^3\ filtrate}].
-$$
+```
 
 Actual pump checks use the individual inlet densities. Cooling heat, motor
 electricity and shaft work are not combined as one utility. COD is an external
@@ -87,9 +87,9 @@ Within the source range, chosen equal-Re or equal-velocity mappings evaluate
 piecewise-linear capacity or shape-free monotonic brackets. A capacity fraction
 $f_c$ and transfer factor $t_c$ give the conditional local requirement
 
-$$
+```math
 J_{max}\le f_ct_c J_{crit,source}.
-$$
+```
 
 Comparing maximum local model flux with source module-average critical flux
 is itself a transfer assumption. No extrapolation or indefinitely sustainable

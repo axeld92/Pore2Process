@@ -12,10 +12,10 @@ The unmodified official OpenLB plane-channel example solves steady laminar
 flow between no-slip walls separated by $H$, with length $L$ and maximum
 velocity $U_{max}$. The independent reference is
 
-$$
+```math
 u_x(y)=4U_{max}\frac{y}{H}\left(1-\frac{y}{H}\right),\qquad
 \Delta p=\frac{8\rho\nu U_{max}L}{H^2}.
-$$
+```
 
 The stock probe uses D2Q9/BGK, Re=10, relaxation time 0.8 and a 2 m × 1 m
 domain. It is a compatibility test of an unchanged official channel example,
@@ -28,9 +28,9 @@ using IAPWS-IF97 properties. Inputs are 298.15 K, 100000 Pa inlet, 10 kg/s and
 75% efficiency. Outlet pressures 1000000 and 1900000 Pa give pressure rises
 of 900000 and 1800000 Pa. The independent work relation is
 
-$$
+```math
 W=\frac{\dot m\Delta p}{\rho_{in}\eta}.
-$$
+```
 
 Mass and enthalpy-flow balances are checked separately. Efficiency is a
 fraction, pressure is absolute Pa, and DWSIM kW/kJ kg⁻¹ outputs are converted

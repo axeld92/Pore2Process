@@ -14,10 +14,10 @@ Flow is steady, isothermal and linear; osmosis, fouling and gravity are absent.
 Support thickness $L_s$ and axial permeability $k_s$ define an area-specific
 resistance $R_s=L_s/k_s$ in m⁻¹. The model is
 
-$$
+```math
 R_{tot}=R_s+R_{sel}+R_{other},\qquad
 \Delta p=\mu J R_{tot},\qquad Q=JA_m.
-$$
+```
 
 $J$ is superficial membrane flux in m/s, $A_m$ is membrane area in m² and
 $\mu$ is viscosity in Pa s. $R_{sel}$ denotes the stipulated selective-layer
@@ -25,20 +25,20 @@ resistance; $R_{other}=0$ in this initial sweep. An actual pump is assigned
 the Julia pressure load and water mass flow in DWSIM. Its independent work
 and specific-energy references are
 
-$$
+```math
 W=\frac{Q\Delta p}{\eta},\qquad
 e=\frac{\Delta p}{\eta\,3.6\times10^6}
 \quad[\mathrm{kWh/m^3\ filtrate}].
-$$
+```
 
 Let $f=k_{s,new}/k_{s,0}$ at unchanged thickness and
 $\alpha=R_{sel}/R_{s,0}$. The same absolute selective resistance is retained
 for both supports; $\alpha$ is always defined against the baseline. Then
 
-$$
+```math
 1-\frac{W_{new}}{W_0}=\frac{1-1/f}{1+\alpha},\qquad
 \lim_{f\to\infty}\left(1-\frac{W_{new}}{W_0}\right)=\frac{1}{1+\alpha}.
-$$
+```
 
 The selective share is $\alpha/(\alpha+1/f)$. It exceeds 50% when
 $\alpha>1/f$ and reaches 90% when $\alpha\ge9/f$. These are reporting
