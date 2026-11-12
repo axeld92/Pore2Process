@@ -1,0 +1,264 @@
+{
+  "summary": "results/adsorption/exchange_attribution/runs/20261112T095114Z-99e65489/summary.json",
+  "sha256": "a926d1471756ab8675685639e15b16c455f61aab5961576af96b7f6e9df803a8",
+  "analysis": {
+    "d800": {
+      "observed_t50_s": 1844.7418738049712,
+      "scenarios": {
+        "void": {
+          "none": {
+            "t50_s": 4145.057965572406,
+            "RMSE": 0.16625710071472702,
+            "passes_midpoint": false,
+            "passes_RMSE": false,
+            "conservation": 2.8332606604430518e-11
+          },
+          "synthetic": {
+            "t50_s": 4730.625883105553,
+            "RMSE": 0.19710024194864595,
+            "passes_midpoint": false,
+            "passes_RMSE": false,
+            "conservation": 2.9040996029964056e-11
+          },
+          "matched_Pe": {
+            "t50_s": 4733.077415085565,
+            "RMSE": 0.1942489866928167,
+            "passes_midpoint": false,
+            "passes_RMSE": false,
+            "conservation": 6.390356914357892e-12
+          }
+        },
+        "flow": {
+          "none": {
+            "t50_s": 4678.683134518113,
+            "RMSE": 0.20466156186281872,
+            "passes_midpoint": false,
+            "passes_RMSE": false,
+            "conservation": 6.394537501121408e-12
+          },
+          "synthetic": {
+            "t50_s": 4678.6821609007475,
+            "RMSE": 0.20466174129609746,
+            "passes_midpoint": false,
+            "passes_RMSE": false,
+            "conservation": 6.395527640091715e-12
+          },
+          "matched_Pe": {
+            "t50_s": 4678.682211569915,
+            "RMSE": 0.20466173842182958,
+            "passes_midpoint": false,
+            "passes_RMSE": false,
+            "conservation": 6.395417624650569e-12
+          }
+        },
+        "slow": {
+          "none": {
+            "t50_s": 2323.5620002725277,
+            "RMSE": 0.08552101626477217,
+            "passes_midpoint": false,
+            "passes_RMSE": true,
+            "conservation": 6.0944153776774055e-12
+          },
+          "synthetic": {
+            "t50_s": 4656.234070346367,
+            "RMSE": 0.16331022899667605,
+            "passes_midpoint": false,
+            "passes_RMSE": false,
+            "conservation": 2.500243920096723e-11
+          },
+          "matched_Pe": {
+            "t50_s": 4413.544890563,
+            "RMSE": 0.15402625595655425,
+            "passes_midpoint": false,
+            "passes_RMSE": false,
+            "conservation": 2.4871520826004516e-11
+          }
+        }
+      },
+      "allocation_effect_s": {
+        "flow": {
+          "none": 533.6251689457067,
+          "synthetic": -51.943722204805454,
+          "matched_Pe": -54.39520351564988
+        },
+        "slow": {
+          "none": -1821.4959652998782,
+          "synthetic": -74.391812759186,
+          "matched_Pe": -319.5325245225649
+        }
+      },
+      "law_effect_s": {
+        "void": {
+          "none": -585.567917533147,
+          "matched_Pe": 2.451531980012078
+        },
+        "flow": {
+          "none": 0.0009736173651617719,
+          "matched_Pe": 5.0669167649175506e-05
+        },
+        "slow": {
+          "none": -2332.672070073839,
+          "matched_Pe": -242.68917978336685
+        }
+      },
+      "interaction_s": {
+        "flow": {
+          "none": 585.5688911505122,
+          "matched_Pe": -2.4514813108444287
+        },
+        "slow": {
+          "none": -1747.1041525406922,
+          "matched_Pe": -245.14071176337893
+        }
+      },
+      "original_gap_s": 2885.884009300582,
+      "closest_midpoint": {
+        "allocation": "slow",
+        "law": "none",
+        "gap_s": 478.8201264675565
+      }
+    },
+    "d450": {
+      "observed_t50_s": 3321.561129231807,
+      "scenarios": {
+        "void": {
+          "none": {
+            "t50_s": 5606.851204014126,
+            "RMSE": 0.24169563614952533,
+            "passes_midpoint": false,
+            "passes_RMSE": false,
+            "conservation": 1.4798066972991204e-11
+          },
+          "synthetic": {
+            "t50_s": 6349.567268200042,
+            "RMSE": 0.3158078995452087,
+            "passes_midpoint": false,
+            "passes_RMSE": false,
+            "conservation": 1.4228737065065122e-11
+          },
+          "matched_Pe": {
+            "t50_s": 6335.344432367753,
+            "RMSE": 0.31750318111712894,
+            "passes_midpoint": false,
+            "passes_RMSE": false,
+            "conservation": 1.1813128023844082e-11
+          }
+        },
+        "flow": {
+          "none": {
+            "t50_s": 6268.9611503295755,
+            "RMSE": 0.32281736423512125,
+            "passes_midpoint": false,
+            "passes_RMSE": false,
+            "conservation": 1.1787274395174969e-11
+          },
+          "synthetic": {
+            "t50_s": 6268.959257194045,
+            "RMSE": 0.3228174995985075,
+            "passes_midpoint": false,
+            "passes_RMSE": false,
+            "conservation": 1.1787274395174969e-11
+          },
+          "matched_Pe": {
+            "t50_s": 6268.959240294804,
+            "RMSE": 0.3228175006134028,
+            "passes_midpoint": false,
+            "passes_RMSE": false,
+            "conservation": 1.1782873777529162e-11
+          }
+        },
+        "slow": {
+          "none": {
+            "t50_s": 3570.942114416794,
+            "RMSE": 0.08467457454022645,
+            "passes_midpoint": true,
+            "passes_RMSE": true,
+            "conservation": 1.2486862585417056e-11
+          },
+          "synthetic": {
+            "t50_s": 6554.965385496927,
+            "RMSE": 0.27993238640713,
+            "passes_midpoint": false,
+            "passes_RMSE": false,
+            "conservation": 1.236056485898241e-11
+          },
+          "matched_Pe": {
+            "t50_s": 6541.270979058365,
+            "RMSE": 0.28862524749328583,
+            "passes_midpoint": false,
+            "passes_RMSE": false,
+            "conservation": 1.2307977478115022e-11
+          }
+        }
+      },
+      "allocation_effect_s": {
+        "flow": {
+          "none": 662.1099463154496,
+          "synthetic": -80.60801100599747,
+          "matched_Pe": -66.3851920729494
+        },
+        "slow": {
+          "none": -2035.9090895973318,
+          "synthetic": 205.39811729688518,
+          "matched_Pe": 205.92654669061176
+        }
+      },
+      "law_effect_s": {
+        "void": {
+          "none": -742.7160641859164,
+          "matched_Pe": -14.222835832289093
+        },
+        "flow": {
+          "none": 0.00189313553073589,
+          "matched_Pe": -1.6899241018109024e-05
+        },
+        "slow": {
+          "none": -2984.0232710801333,
+          "matched_Pe": -13.69440643856251
+        }
+      },
+      "interaction_s": {
+        "flow": {
+          "none": 742.7179573214471,
+          "matched_Pe": 14.222818933048075
+        },
+        "slow": {
+          "none": -2241.307206894217,
+          "matched_Pe": 0.5284293937265829
+        }
+      },
+      "original_gap_s": 3028.006138968235,
+      "closest_midpoint": {
+        "allocation": "slow",
+        "law": "none",
+        "gap_s": 249.3809851849869
+      }
+    }
+  },
+  "allocations": {
+    "void": {
+      "fastest_tenth_carbon_fraction": 0.06930076981523797,
+      "slowest_tenth_carbon_fraction": 0.23028845625077382,
+      "local_voidage_range": [
+        0.4269999999999999,
+        0.427
+      ]
+    },
+    "flow": {
+      "fastest_tenth_carbon_fraction": 0.1,
+      "slowest_tenth_carbon_fraction": 0.09999999999999998,
+      "local_voidage_range": [
+        0.3384736238934709,
+        0.8196769392564475
+      ]
+    },
+    "slow": {
+      "fastest_tenth_carbon_fraction": 0.036835964798338894,
+      "slowest_tenth_carbon_fraction": 0.4781463603670728,
+      "local_voidage_range": [
+        0.13740218755992467,
+        0.5859451427712554
+      ]
+    }
+  }
+}

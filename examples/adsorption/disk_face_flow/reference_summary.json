@@ -1,0 +1,458 @@
+{
+  "initial_summary": "results/adsorption/disk_face_flow/runs/20261111T153035Z-2fda74bc/summary.json",
+  "initial_summary_sha256": "400d11c320252b0cb5c54c08fa4dd843b05568e0118f2be6256d2b5fbdb206f2",
+  "confirmation_summary": "results/adsorption/disk_face_flow/confirmations/20261111T153229Z-96c67149/summary.json",
+  "confirmation_summary_sha256": "8491972bf076e8b7457f76b5c0cada39f1a6d32f823d29e2483ac9005868d07e",
+  "radial_reference_sha256": "d4b34bf83be22416e721014dca36580082b886d1d404f40cb9b12d507960bd27",
+  "initial": {
+    "cases": {
+      "coarse": {
+        "settings": {
+          "nr": 40,
+          "na": 256,
+          "dt_max_s": 0.0002,
+          "amplitude_kg_m3": 0.25
+        },
+        "metrics": {
+          "grid": {
+            "liquid_volume_m3": 2.1821071456009433e-11,
+            "maximum_cell_net_flow_m3_s": 0.0,
+            "maximum_theta_face_flow_m3_s": 5.612334012582695e-12,
+            "wall_carrier_flow_m3_s": 0.0,
+            "wall_tracer_flux_kg_s": 0.0
+          },
+          "history_steps": 1074,
+          "effective_dt_s": [
+            0.00019994889278681846,
+            0.0001999843070434226
+          ],
+          "range_kg_m3": [
+            0.25022349545151723,
+            0.7497765045484827
+          ],
+          "maximum_excursion_kg_m3": 0.0,
+          "liquid_inventory_relative_drift": 1.887379141862766e-15,
+          "checks": {
+            "liquid_inventory": true,
+            "engineering_bounds": true,
+            "physical_bounds": true,
+            "middle_sectors_global": false,
+            "middle_sectors_shell": false,
+            "middle_fixed_global": false,
+            "middle_fixed_shell": false,
+            "final_sectors_global": false,
+            "final_sectors_shell": false,
+            "final_fixed_global": false,
+            "final_fixed_shell": false
+          },
+          "profiles": {
+            "middle": {
+              "time_s": 0.10737255542652152,
+              "sectors_global": 0.012512604839624882,
+              "sectors_shell": 0.02012447406515144,
+              "fixed_global": 0.019098581940811446,
+              "fixed_shell": 0.027441134994725964
+            },
+            "final": {
+              "time_s": 0.21476412830883945,
+              "sectors_global": 0.027672007648902406,
+              "sectors_shell": 0.03843143926807937,
+              "fixed_global": 0.013124720664125015,
+              "fixed_shell": 0.016821452050872293
+            }
+          }
+        }
+      },
+      "medium": {
+        "settings": {
+          "nr": 80,
+          "na": 512,
+          "dt_max_s": 0.0002,
+          "amplitude_kg_m3": 0.25
+        },
+        "metrics": {
+          "grid": {
+            "liquid_volume_m3": 2.1821071456009433e-11,
+            "maximum_cell_net_flow_m3_s": 0.0,
+            "maximum_theta_face_flow_m3_s": 2.8077878944087757e-12,
+            "wall_carrier_flow_m3_s": 0.0,
+            "wall_tracer_flux_kg_s": 0.0
+          },
+          "history_steps": 1074,
+          "effective_dt_s": [
+            0.00019994889278681846,
+            0.0001999843070434226
+          ],
+          "range_kg_m3": [
+            0.25005961983402747,
+            0.7499403801659725
+          ],
+          "maximum_excursion_kg_m3": 0.0,
+          "liquid_inventory_relative_drift": 2.6645352591003757e-15,
+          "checks": {
+            "liquid_inventory": true,
+            "engineering_bounds": true,
+            "physical_bounds": true,
+            "middle_sectors_global": true,
+            "middle_sectors_shell": true,
+            "middle_fixed_global": true,
+            "middle_fixed_shell": true,
+            "final_sectors_global": true,
+            "final_sectors_shell": true,
+            "final_fixed_global": true,
+            "final_fixed_shell": true
+          },
+          "profiles": {
+            "middle": {
+              "time_s": 0.10737255542652152,
+              "sectors_global": 0.0031974500804342943,
+              "sectors_shell": 0.00518327943411238,
+              "fixed_global": 0.0047479463049519555,
+              "fixed_shell": 0.006964673204850634
+            },
+            "final": {
+              "time_s": 0.21476412830883945,
+              "sectors_global": 0.006848249909046414,
+              "sectors_shell": 0.009428329949611352,
+              "fixed_global": 0.0029624949199102708,
+              "fixed_shell": 0.003567071081461034
+            }
+          }
+        }
+      },
+      "medium_half_dt": {
+        "settings": {
+          "nr": 80,
+          "na": 512,
+          "dt_max_s": 0.0001,
+          "amplitude_kg_m3": 0.25
+        },
+        "metrics": {
+          "grid": {
+            "liquid_volume_m3": 2.1821071456009433e-11,
+            "maximum_cell_net_flow_m3_s": 0.0,
+            "maximum_theta_face_flow_m3_s": 2.8077878944087757e-12,
+            "wall_carrier_flow_m3_s": 0.0,
+            "wall_tracer_flux_kg_s": 0.0
+          },
+          "history_steps": 2148,
+          "effective_dt_s": [
+            9.997444639340923e-05,
+            9.99921535217113e-05
+          ],
+          "range_kg_m3": [
+            0.25005961983402747,
+            0.7499403801659725
+          ],
+          "maximum_excursion_kg_m3": 0.0,
+          "liquid_inventory_relative_drift": 2.3314683517128287e-15,
+          "checks": {
+            "liquid_inventory": true,
+            "engineering_bounds": true,
+            "physical_bounds": true,
+            "middle_sectors_global": true,
+            "middle_sectors_shell": true,
+            "middle_fixed_global": true,
+            "middle_fixed_shell": true,
+            "final_sectors_global": true,
+            "final_sectors_shell": true,
+            "final_fixed_global": true,
+            "final_fixed_shell": true
+          },
+          "profiles": {
+            "middle": {
+              "time_s": 0.10737255542652152,
+              "sectors_global": 0.0031911468968980157,
+              "sectors_shell": 0.00518247392063067,
+              "fixed_global": 0.004733536475117719,
+              "fixed_shell": 0.006965305853769468
+            },
+            "final": {
+              "time_s": 0.21476412830883945,
+              "sectors_global": 0.006839057140576827,
+              "sectors_shell": 0.009426796462110013,
+              "fixed_global": 0.002956835466738164,
+              "fixed_shell": 0.0035669460125392384
+            }
+          }
+        }
+      },
+      "fine": {
+        "settings": {
+          "nr": 160,
+          "na": 1024,
+          "dt_max_s": 0.0002,
+          "amplitude_kg_m3": 0.25
+        },
+        "metrics": {
+          "grid": {
+            "liquid_volume_m3": 2.1821071456009433e-11,
+            "maximum_cell_net_flow_m3_s": 0.0,
+            "maximum_theta_face_flow_m3_s": 1.404048688583734e-12,
+            "wall_carrier_flow_m3_s": 0.0,
+            "wall_tracer_flux_kg_s": 0.0
+          },
+          "history_steps": 1074,
+          "effective_dt_s": [
+            0.00019994889278681846,
+            0.0001999843070434226
+          ],
+          "range_kg_m3": [
+            0.25001492661000607,
+            0.749985073389994
+          ],
+          "maximum_excursion_kg_m3": 0.0,
+          "liquid_inventory_relative_drift": 3.4416913763379853e-15,
+          "checks": {
+            "liquid_inventory": true,
+            "engineering_bounds": true,
+            "physical_bounds": true,
+            "middle_sectors_global": true,
+            "middle_sectors_shell": true,
+            "middle_fixed_global": true,
+            "middle_fixed_shell": true,
+            "final_sectors_global": true,
+            "final_sectors_shell": true,
+            "final_fixed_global": true,
+            "final_fixed_shell": true
+          },
+          "profiles": {
+            "middle": {
+              "time_s": 0.10737255542652152,
+              "sectors_global": 0.0008174904522747297,
+              "sectors_shell": 0.0013068964395196378,
+              "fixed_global": 0.0011927544894883486,
+              "fixed_shell": 0.001635015386538737
+            },
+            "final": {
+              "time_s": 0.21476412830883945,
+              "sectors_global": 0.0017212679711105297,
+              "sectors_shell": 0.0023465952072924162,
+              "fixed_global": 0.0007362532117265576,
+              "fixed_shell": 0.0008947692589178299
+            }
+          }
+        }
+      },
+      "fine_half_dt": {
+        "settings": {
+          "nr": 160,
+          "na": 1024,
+          "dt_max_s": 0.0001,
+          "amplitude_kg_m3": 0.25
+        },
+        "metrics": {
+          "grid": {
+            "liquid_volume_m3": 2.1821071456009433e-11,
+            "maximum_cell_net_flow_m3_s": 0.0,
+            "maximum_theta_face_flow_m3_s": 1.404048688583734e-12,
+            "wall_carrier_flow_m3_s": 0.0,
+            "wall_tracer_flux_kg_s": 0.0
+          },
+          "history_steps": 2148,
+          "effective_dt_s": [
+            9.997444639340923e-05,
+            9.99921535217113e-05
+          ],
+          "range_kg_m3": [
+            0.25001492661000607,
+            0.749985073389994
+          ],
+          "maximum_excursion_kg_m3": 0.0,
+          "liquid_inventory_relative_drift": 3.4416913763379853e-15,
+          "checks": {
+            "liquid_inventory": true,
+            "engineering_bounds": true,
+            "physical_bounds": true,
+            "middle_sectors_global": true,
+            "middle_sectors_shell": true,
+            "middle_fixed_global": true,
+            "middle_fixed_shell": true,
+            "final_sectors_global": true,
+            "final_sectors_shell": true,
+            "final_fixed_global": true,
+            "final_fixed_shell": true
+          },
+          "profiles": {
+            "middle": {
+              "time_s": 0.10737255542652152,
+              "sectors_global": 0.0008039749972053345,
+              "sectors_shell": 0.0013060897919870557,
+              "fixed_global": 0.0011738342305018488,
+              "fixed_shell": 0.0016356446103907682
+            },
+            "final": {
+              "time_s": 0.21476412830883945,
+              "sectors_global": 0.0017066796857937584,
+              "sectors_shell": 0.0023450546205064293,
+              "fixed_global": 0.0007172083439978569,
+              "fixed_shell": 0.0008945884164616207
+            }
+          }
+        }
+      },
+      "uniform": {
+        "settings": {
+          "nr": 160,
+          "na": 1024,
+          "dt_max_s": 0.0001,
+          "amplitude_kg_m3": 0.0
+        },
+        "metrics": {
+          "grid": {
+            "liquid_volume_m3": 2.1821071456009433e-11,
+            "maximum_cell_net_flow_m3_s": 0.0,
+            "maximum_theta_face_flow_m3_s": 1.404048688583734e-12,
+            "wall_carrier_flow_m3_s": 0.0,
+            "wall_tracer_flux_kg_s": 0.0
+          },
+          "history_steps": 2148,
+          "effective_dt_s": [
+            9.997444639340923e-05,
+            9.99921535217113e-05
+          ],
+          "range_kg_m3": [
+            0.5,
+            0.5
+          ],
+          "maximum_excursion_kg_m3": 0.0,
+          "liquid_inventory_relative_drift": 0.0,
+          "checks": {
+            "liquid_inventory": true,
+            "engineering_bounds": true,
+            "physical_bounds": true,
+            "uniform": true
+          }
+        }
+      }
+    },
+    "selected": "fine_half_dt",
+    "space": {
+      "coarse_to_medium": {
+        "errors": {
+          "middle": {
+            "global_rms": 0.01582525809714558,
+            "shell_rms": 0.02280295560370386
+          },
+          "final": {
+            "global_rms": 0.012866131613135663,
+            "shell_rms": 0.01663169718254695
+          }
+        },
+        "limit": 0.005,
+        "passed": false
+      },
+      "medium_to_fine": {
+        "errors": {
+          "middle": {
+            "global_rms": 0.0039729715005619405,
+            "shell_rms": 0.005999180027324874
+          },
+          "final": {
+            "global_rms": 0.0029170875976123685,
+            "shell_rms": 0.0036228765402311577
+          }
+        },
+        "limit": 0.005,
+        "passed": false
+      }
+    },
+    "time": {
+      "errors": {
+        "middle": {
+          "global_rms": 9.84707109489241e-05,
+          "shell_rms": 3.897148800800989e-06
+        },
+        "final": {
+          "global_rms": 0.00012199304494063424,
+          "shell_rms": 2.1834120322948528e-06
+        }
+      },
+      "limit": 0.001,
+      "passed": true
+    },
+    "disk_qualified": false
+  },
+  "confirmation": {
+    "working_case": "fine_half_dt",
+    "working_mesh": {
+      "nr": 160,
+      "na": 1024,
+      "dt_max_s": 0.0001,
+      "amplitude_kg_m3": 0.25
+    },
+    "confirmation_mesh": {
+      "nr": 320,
+      "na": 2048,
+      "dt_max_s": 0.0001,
+      "amplitude_kg_m3": 0.25
+    },
+    "confirmation_metrics": {
+      "grid": {
+        "liquid_volume_m3": 2.1821071456009433e-11,
+        "maximum_cell_net_flow_m3_s": 0.0,
+        "maximum_theta_face_flow_m3_s": 7.020320117828756e-13,
+        "wall_carrier_flow_m3_s": 0.0,
+        "wall_tracer_flux_kg_s": 0.0
+      },
+      "history_steps": 2148,
+      "effective_dt_s": [
+        9.997444639340923e-05,
+        9.99921535217113e-05
+      ],
+      "range_kg_m3": [
+        0.25000373427746914,
+        0.7499962657225309
+      ],
+      "maximum_excursion_kg_m3": 0.0,
+      "liquid_inventory_relative_drift": 7.327471962526033e-15,
+      "checks": {
+        "liquid_inventory": true,
+        "engineering_bounds": true,
+        "physical_bounds": true,
+        "middle_sectors_global": true,
+        "middle_sectors_shell": true,
+        "middle_fixed_global": true,
+        "middle_fixed_shell": true,
+        "final_sectors_global": true,
+        "final_sectors_shell": true,
+        "final_fixed_global": true,
+        "final_fixed_shell": true
+      },
+      "profiles": {
+        "middle": {
+          "time_s": 0.10737255542652152,
+          "sectors_global": 0.0002052387290812857,
+          "sectors_shell": 0.0003286335885004316,
+          "fixed_global": 0.00030965814355728995,
+          "fixed_shell": 0.0004586481402746988
+        },
+        "final": {
+          "time_s": 0.21476412830883945,
+          "sectors_global": 0.0004296900519293696,
+          "sectors_shell": 0.0005857036434464103,
+          "fixed_global": 0.0001870363700325714,
+          "fixed_shell": 0.00022996907076619407
+        }
+      }
+    },
+    "spatial_change": {
+      "errors": {
+        "middle": {
+          "global_rms": 0.0009806997227007187,
+          "shell_rms": 0.001392463022358201
+        },
+        "final": {
+          "global_rms": 0.0007104527970904654,
+          "shell_rms": 0.0009167357448169922
+        }
+      },
+      "limit": 0.005,
+      "passed": true
+    },
+    "disk_qualified": true
+  },
+  "new_openlb_runs": 0,
+  "new_bed_runs": 0,
+  "new_DWSIM_runs": 0
+}

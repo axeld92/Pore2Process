@@ -1,0 +1,116 @@
+{
+  "status": "complete",
+  "scalar_summaries": [
+    {
+      "path": "results/adsorption/transport_root_cause/runs/20261110T205424Z-ed34b563/summary.json",
+      "sha256": "75dbb671a75c25831ebb36d525ab0d4ac15691f87c8d8ed5b3a197bf102d5e25"
+    },
+    {
+      "path": "results/adsorption/transport_root_cause/runs/20261110T205538Z-4e56ceb6/summary.json",
+      "sha256": "65205ba7d3f419e1ebacb636215bbf097c1dcceb18047e1ef3538cfe0939f60f"
+    },
+    {
+      "path": "results/adsorption/transport_root_cause/runs/20261110T205757Z-c62abc03/summary.json",
+      "sha256": "42176a5ab112361910ad82edae47256ceae8443b2f9ab7f1e2bbec2b16966170"
+    },
+    {
+      "path": "results/adsorption/transport_root_cause/runs/20261110T210018Z-0c86e4f0/summary.json",
+      "sha256": "0440327d09a23e83e06f4d81240988588809fcea0d368643389b0ee36ccd7477"
+    },
+    {
+      "path": "results/adsorption/transport_root_cause/parallel/runs/20261110T210521Z-931789b9/summary.json",
+      "sha256": "7157a6855060fc6426852048a358ec4bf73e8785b317d58edfd11d798d01f022"
+    },
+    {
+      "path": "results/adsorption/transport_root_cause/parallel/runs/20261110T212157Z-08b875e7/summary.json",
+      "sha256": "ece4cce95dd2c2ca34240904a6fca78017021e405102fd1b4ab38a55e8b5bd88"
+    },
+    {
+      "path": "results/adsorption/transport_root_cause/parallel/runs/20261110T212155Z-fb52fcc9/summary.json",
+      "sha256": "d443e7d05d91feceb1bb02fa4cfe5207608a013a361528f35eed634abb4e8a40"
+    },
+    {
+      "path": "results/adsorption/transport_root_cause/replay/runs/20261110T213016Z-68e75fda/summary.json",
+      "sha256": "1d47ea62439c5b339cc03355ea290ef9a7dacb32cef9b2108b15707f71606478"
+    },
+    {
+      "path": "results/adsorption/transport_root_cause/replay/runs/20261110T213016Z-84e600d4/summary.json",
+      "sha256": "40cd5d175644906a6a53871aa0526b435fcdb7ccf9a0f2f44e8788126cfb8eef"
+    },
+    {
+      "path": "results/adsorption/transport_root_cause/constant/runs/20261110T215810Z-3e285d89/summary.json",
+      "sha256": "98eff63ace26b8b50fd88234d927c85e41605df050cb6c847e73bb1893580c0c"
+    },
+    {
+      "path": "results/adsorption/transport_root_cause/parallel/runs/20261110T230851Z-6bb12c48/summary.json",
+      "sha256": "6ad3734cda61791751180ad21ba377cf2c974932ce9f69f15c90cf9ecbe97234"
+    }
+  ],
+  "hydraulic_summaries": [
+    {
+      "path": "results/adsorption/transport_root_cause/hydraulics/omp_runs/20261110T210317Z-fdf047ba/summary.json",
+      "sha256": "8692829b62c867de286717250c558e922a6cd4b4a44187fb63d3a2649f5cc2a6"
+    },
+    {
+      "path": "results/adsorption/transport_root_cause/hydraulics/continuations/20261110T223616Z-3f4c960a/summary.json",
+      "sha256": "25ca19605009c26b487b0f57845bef9987e4df7d9e98faccb4eb1e3ee978ce38"
+    }
+  ],
+  "channel_summary": {
+    "path": "results/adsorption/transport_root_cause/channel/runs/20261110T205326Z-c9d87d29/summary.json",
+    "sha256": "d18a9c400089884f0b3086481d67d51699ecbfab66dab011c7eab699c4e6efb0"
+  },
+  "candidate_summary": {
+    "path": "results/adsorption/transport_root_cause/second_order_candidate/runs/20261110T210039Z-4ac42cbc/summary.json",
+    "sha256": "1c5943b2a1d20e4df19620ac8bc411c2ba508608c61018ae5393cadab2a9ee1c"
+  },
+  "crosscheck_summary": {
+    "path": "results/adsorption/transport_root_cause/hydraulics/omp_checks/20261110T205922Z-84ff1b38/summary.json",
+    "sha256": "e8d63b56d6d54670a7d314423d6d72adb67fe20fe417650d2df8ed99501d6430"
+  },
+  "thin_summary": {
+    "path": "results/adsorption/transport_root_cause/channel/thin/runs/20261110T211453Z-27c6512d/summary.json",
+    "sha256": "d05281e1760e0774a2ac38232933264655613f7e1cc3eba846d9d9b2523de452"
+  },
+  "interrupted_summary": {
+    "path": "results/adsorption/transport_root_cause/hydraulics/runs/20261110T205236Z-c959571b/summary.json",
+    "sha256": "559c0a77a5a1c7a0a1166c2b31991749871be206bf9f3d2f5f7809ad3dd067c5"
+  },
+  "flat_summary": {
+    "path": "results/adsorption/transport_root_cause/flat_channel/qualified_runs/20261110T213218Z-a0021dff/summary.json",
+    "sha256": "9f7db668bc71696e4d81c35eb54641867b018559c82dc7f80402790224b2b95f"
+  },
+  "phase_summary": {
+    "path": "results/adsorption/transport_root_cause/grid_phase/runs/20261110T213713Z-06d80a4b/summary.json",
+    "sha256": "b87269aade6e463ce0510cb9919ba4b861313291d22b90cc6b91f9c4cc43d883"
+  },
+  "compatibility_summaries": [
+    {
+      "path": "results/adsorption/transport_root_cause/initial_compatibility/assessments/20261110T214943Z-860fc2bb/summary.json",
+      "sha256": "b0edb6c7e0122f3769e8528777487ae8ac38bda8cc61ad9f84caf1e72ee54351"
+    },
+    {
+      "path": "results/adsorption/transport_root_cause/initial_compatibility/assessments/20261110T214946Z-5eab0ccf/summary.json",
+      "sha256": "89d176b94f055d0a6c63f78b6afc12b1bff2aedc94c1e238f4a32aecab9798d0"
+    }
+  ],
+  "halfway_summary": {
+    "path": "results/adsorption/transport_root_cause/half_way/runs/20261110T220640Z-532998c7/summary.json",
+    "sha256": "a25bc0a3ed378eb31f715144a03f148759dd22d8498f8c080d60630c9be953f9"
+  },
+  "halfway_review": {
+    "path": "results/adsorption/transport_root_cause/half_way/runs/20261110T220640Z-532998c7/independent_review.json",
+    "sha256": "39c1dbcfffbb52e4f7053750b9f192c61923ed3554b1b1c0d4450ebb0418cb3f"
+  },
+  "conditional_fine_time_check": {
+    "path": "examples/adsorption/transport_root_cause/resolution96_time_decision.md",
+    "sha256": "97966e777a2a70d3ac11670efb0e3b11cc8dafce7dab6836e2e5388e2e3dea78",
+    "engineering_excursion_limit_kg_m3": 0.02,
+    "strong_improvement_trigger_kg_m3": 0.06427167775354425,
+    "status": "not_triggered",
+    "observed_excursion_kg_m3": 0.10846286877002898
+  },
+  "application_transport_qualified": false,
+  "new_adsorption_predictions": 0,
+  "new_DWSIM_runs": 0
+}

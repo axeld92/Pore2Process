@@ -1,0 +1,410 @@
+{
+  "schema": "pore2process.root-cause-population-findings.v1",
+  "constant_stencil": {
+    "fluid_nodes": 19456,
+    "max_abs_one_step_relative_constant_change": 0.0001191224893694054,
+    "rms_one_step_relative_constant_change": 2.7089496581853336e-05,
+    "max_abs_scalar_equilibrium_divergence_per_s": 6.263849941057993,
+    "rms_scalar_equilibrium_divergence_per_s": 1.4244542946154493,
+    "first_step_comparison": {
+      "initial_concentration_kg_m3": 0.5,
+      "max_abs_prediction_error_kg_m3": 5.551115123125783e-16,
+      "matches_to_roundoff": true
+    },
+    "interpretation": "A read-only exact first-order-equilibrium streaming stencil. This predicts the first step of an initially uniform scalar, not the evolved long-time scalar flux and not the carrier's population flux. A nonzero value demonstrates that exported cell velocities are not exactly divergence-free under this scalar equilibrium stencil."
+  },
+  "constant_actual_first_step": {
+    "schema": "pore2process.exact_population_audit.v1",
+    "step": 1,
+    "dx_m": 4.341164232231704e-05,
+    "dt_s": 1.9017455796408345e-05,
+    "density_scale_kg_m3": 1.0,
+    "all": {
+      "nodes": 32768,
+      "min_density_after_native": 0.4999314619949611,
+      "max_density_after_native": 0.500067924058247,
+      "max_abs_density_change_native": 6.853800503903162e-05,
+      "max_abs_collision_change_native": 3.3306690738754696e-16,
+      "max_abs_stream_residual_native": 7.771561172376096e-16,
+      "max_abs_link_balance_residual_native": 7.741204570337686e-16,
+      "negative_post_population_nodes": 0,
+      "negative_post_populations": 0,
+      "min_unshifted_post_population_native": 0.0022104980394875556,
+      "inventory_change_kg": 4.6722905087907296e-26
+    },
+    "fluid": {
+      "nodes": 19456,
+      "min_density_after_native": 0.49994043875531535,
+      "max_density_after_native": 0.5000523280449205,
+      "max_abs_density_change_native": 5.9561244684647185e-05,
+      "max_abs_collision_change_native": 3.3306690738754696e-16,
+      "max_abs_stream_residual_native": 7.771561172376096e-16,
+      "max_abs_link_balance_residual_native": 7.741204570337686e-16,
+      "negative_post_population_nodes": 0,
+      "negative_post_populations": 0,
+      "min_unshifted_post_population_native": 0.0022104980394875556,
+      "inventory_change_kg": 1.8949307795899636e-16
+    },
+    "wall_adjacent_fluid": {
+      "nodes": 7328,
+      "min_density_after_native": 0.49994043875531535,
+      "max_density_after_native": 0.5000523280449205,
+      "max_abs_density_change_native": 5.9561244684647185e-05,
+      "max_abs_collision_change_native": 3.3306690738754696e-16,
+      "max_abs_stream_residual_native": 7.771561172376096e-16,
+      "max_abs_link_balance_residual_native": 6.340473597001538e-16,
+      "negative_post_population_nodes": 0,
+      "negative_post_populations": 0,
+      "min_unshifted_post_population_native": 0.0022324402028844636,
+      "inventory_change_kg": 9.520779942782103e-16
+    },
+    "bulk_fluid": {
+      "nodes": 12128,
+      "min_density_after_native": 0.49996630125832753,
+      "max_density_after_native": 0.5000227793546485,
+      "max_abs_density_change_native": 3.369874167247211e-05,
+      "max_abs_collision_change_native": 3.3306690738754696e-16,
+      "max_abs_stream_residual_native": 6.661338147750939e-16,
+      "max_abs_link_balance_residual_native": 7.741204570337686e-16,
+      "negative_post_population_nodes": 0,
+      "negative_post_populations": 0,
+      "min_unshifted_post_population_native": 0.0022104980394875556,
+      "inventory_change_kg": -7.62584916319214e-16
+    },
+    "wall": {
+      "nodes": 13312,
+      "min_density_after_native": 0.4999314619949611,
+      "max_density_after_native": 0.500067924058247,
+      "max_abs_density_change_native": 6.853800503903162e-05,
+      "max_abs_collision_change_native": 0.0,
+      "max_abs_stream_residual_native": 6.106226635438361e-16,
+      "max_abs_link_balance_residual_native": 5.546786784765313e-16,
+      "negative_post_population_nodes": 0,
+      "negative_post_populations": 0,
+      "min_unshifted_post_population_native": 0.0023148148148148147,
+      "inventory_change_kg": -1.8949307791227346e-16
+    },
+    "fluid_to_wall_net_kg_s": -9.964165550731721e-12,
+    "wall_to_fluid_net_kg_s": 9.964165550731705e-12,
+    "interface_antisymmetry_residual_kg_s": -1.6155871338926322e-26,
+    "global_net_link_outflow_kg_s": -4.647968453562202e-25,
+    "max_abs_collision_mass_change_native": 3.3306690738754696e-16,
+    "max_abs_stream_residual_native": 7.771561172376096e-16,
+    "max_abs_link_balance_residual_native": 7.741204570337686e-16,
+    "density_tolerance_native": 1e-11,
+    "checks": {
+      "collision_preserves_local_density": true,
+      "streaming_matches_actual_population_links": true,
+      "local_link_balance_closes": true,
+      "wall_interface_flux_is_antisymmetric": true,
+      "global_periodic_link_flux_cancels": true
+    },
+    "interpretation": "These are exact population balances, not centred div(u). Local density changes and instantaneous fluid-wall exchange are allowed by full-way BounceBack numerical storage. Passing conservation does not establish concentration boundedness or transport accuracy. Negative individual populations are a diagnostic, not by themselves an acceptance criterion."
+  },
+  "peaks": {
+    "n32_sine": {
+      "file": "results/adsorption/transport_root_cause/runs/20261110T205424Z-ed34b563/native/n32_sine/peak.csv",
+      "sha256": "9ee5a04af129e77c5561759a485b236a57e077aa792da7e110a0d2a048ce217e",
+      "n": 32,
+      "fluid": {
+        "nodes": 19456,
+        "wall_adjacent_nodes": 7328,
+        "bulk_nodes": 12128,
+        "gap_over_dx_quantiles": [
+          0.0998498883470213,
+          1.0206266284778045,
+          1.8651417863286142,
+          2.7336850285969647,
+          6.302002532431345
+        ],
+        "downstream_pole_nodes": 1368,
+        "upstream_pole_nodes": 1137
+      },
+      "engineering_violations": {
+        "nodes": 672,
+        "wall_adjacent_nodes": 64,
+        "bulk_nodes": 608,
+        "gap_over_dx_quantiles": [
+          0.3121613248772699,
+          3.145088977556718,
+          3.385485051602596,
+          3.853016228620421,
+          4.378159102316632
+        ],
+        "downstream_pole_nodes": 64,
+        "upstream_pole_nodes": 0
+      },
+      "severe_violations_over_0p1_kg_m3": {
+        "nodes": 16,
+        "wall_adjacent_nodes": 16,
+        "bulk_nodes": 0,
+        "gap_over_dx_quantiles": [
+          0.3121613248772699,
+          0.3121613248772699,
+          0.3121613248772699,
+          0.3121613248772699,
+          0.3121613248772699
+        ],
+        "downstream_pole_nodes": 16,
+        "upstream_pole_nodes": 0
+      },
+      "minimum": {
+        "node_id_ijk": [
+          25,
+          15,
+          0
+        ],
+        "coordinates_m": [
+          0.0011069968792190845,
+          0.0006728804559959141,
+          2.170582116115852e-05
+        ],
+        "concentration_kg_m3": 0.11769968041757939,
+        "speed_m_s": 0.000755189812632519,
+        "voxel_solid_neighbours": 9,
+        "nearest_sphere_centre_m": [
+          0.0006945862771570726,
+          0.0006945862771570726,
+          0.0
+        ],
+        "smooth_surface_gap_m": 1.3551435782432647e-05,
+        "gap_over_dx": 0.3121613248772699,
+        "sphere_outward_normal": [
+          0.9972413740548081,
+          -0.052486388108147757,
+          0.0524863881081478
+        ]
+      },
+      "maximum": {
+        "node_id_ijk": [
+          9,
+          0,
+          31
+        ],
+        "coordinates_m": [
+          0.0004124106020620119,
+          2.170582116115852e-05,
+          0.0013674667331529868
+        ],
+        "concentration_kg_m3": 0.882506914143073,
+        "speed_m_s": 0.0007551898126361402,
+        "voxel_solid_neighbours": 9,
+        "nearest_sphere_centre_m": [
+          0.0,
+          0.0,
+          0.0013891725543141453
+        ],
+        "smooth_surface_gap_m": 1.3551435782432647e-05,
+        "gap_over_dx": 0.3121613248772699,
+        "sphere_outward_normal": [
+          0.9972413740548081,
+          0.0524863881081478,
+          -0.052486388108147757
+        ]
+      },
+      "caveat": "Peak localization is association, not proof of the first origin. Smooth solid spheres are convex; narrow void passages and voxel corners are separate geometry notions."
+    },
+    "n48_sine": {
+      "file": "results/adsorption/transport_root_cause/runs/20261110T205424Z-ed34b563/native/n48_sine/peak.csv",
+      "sha256": "cce5dcd570a4d15547bfc553952bf5f76cd63e14fd9ac9a7c2041c2b1fd73fd0",
+      "n": 48,
+      "fluid": {
+        "nodes": 65984,
+        "wall_adjacent_nodes": 15968,
+        "bulk_nodes": 50016,
+        "gap_over_dx_quantiles": [
+          0.062266201787482024,
+          1.565505378301785,
+          2.844629133211731,
+          4.088317513444987,
+          9.689458715890161
+        ],
+        "downstream_pole_nodes": 4486,
+        "upstream_pole_nodes": 4222
+      },
+      "engineering_violations": {
+        "nodes": 1136,
+        "wall_adjacent_nodes": 96,
+        "bulk_nodes": 1040,
+        "gap_over_dx_quantiles": [
+          0.1341085618255248,
+          4.746267452499808,
+          5.066649592396771,
+          5.640323280901228,
+          6.691014321638683
+        ],
+        "downstream_pole_nodes": 80,
+        "upstream_pole_nodes": 32
+      },
+      "severe_violations_over_0p1_kg_m3": {
+        "nodes": 16,
+        "wall_adjacent_nodes": 16,
+        "bulk_nodes": 0,
+        "gap_over_dx_quantiles": [
+          0.6960539658306406,
+          0.6960539658306406,
+          0.6960539658306406,
+          0.6960539658306406,
+          0.6960539658306406
+        ],
+        "downstream_pole_nodes": 16,
+        "upstream_pole_nodes": 0
+      },
+      "minimum": {
+        "node_id_ijk": [
+          38,
+          0,
+          23
+        ],
+        "coordinates_m": [
+          0.0011142321529394707,
+          1.4470547440772347e-05,
+          0.0006801157297163003
+        ],
+        "concentration_kg_m3": 0.13418973775968246,
+        "speed_m_s": 0.0004989361687683959,
+        "voxel_solid_neighbours": 9,
+        "nearest_sphere_centre_m": [
+          0.0006945862771570726,
+          0.0,
+          0.0006945862771570726
+        ],
+        "smooth_surface_gap_m": 2.014456386778004e-05,
+        "gap_over_dx": 0.6960539658306406,
+        "sphere_outward_normal": [
+          0.9988130559615215,
+          0.034441829515914534,
+          -0.034441829515914506
+        ]
+      },
+      "maximum": {
+        "node_id_ijk": [
+          14,
+          23,
+          24
+        ],
+        "coordinates_m": [
+          0.00041964587578239806,
+          0.0006801157297163003,
+          0.000709056824597845
+        ],
+        "concentration_kg_m3": 0.8681220515794079,
+        "speed_m_s": 0.0004989361687669316,
+        "voxel_solid_neighbours": 9,
+        "nearest_sphere_centre_m": [
+          0.0,
+          0.0006945862771570726,
+          0.0006945862771570726
+        ],
+        "smooth_surface_gap_m": 2.014456386778004e-05,
+        "gap_over_dx": 0.6960539658306406,
+        "sphere_outward_normal": [
+          0.9988130559615215,
+          -0.034441829515914506,
+          0.034441829515914506
+        ]
+      },
+      "caveat": "Peak localization is association, not proof of the first origin. Smooth solid spheres are convex; narrow void passages and voxel corners are separate geometry notions."
+    }
+  },
+  "actual_n32_peak_population_audit": {
+    "schema": "pore2process.exact_population_audit.v1",
+    "step": 4145,
+    "dx_m": 4.341164232231704e-05,
+    "dt_s": 1.9017455796408345e-05,
+    "density_scale_kg_m3": 1.0,
+    "all": {
+      "nodes": 32768,
+      "min_density_after_native": 0.11769968041757939,
+      "max_density_after_native": 0.882506914143073,
+      "max_abs_density_change_native": 0.004918010555182928,
+      "max_abs_collision_change_native": 6.661338147750939e-16,
+      "max_abs_stream_residual_native": 8.881784197001252e-16,
+      "max_abs_link_balance_residual_native": 8.148863528401051e-16,
+      "negative_post_population_nodes": 0,
+      "negative_post_populations": 0,
+      "min_unshifted_post_population_native": 5.821147449418425e-05,
+      "inventory_change_kg": 4.04738073623085e-26
+    },
+    "fluid": {
+      "nodes": 19456,
+      "min_density_after_native": 0.11769968041757939,
+      "max_density_after_native": 0.882506914143073,
+      "max_abs_density_change_native": 0.00047757184304653144,
+      "max_abs_collision_change_native": 5.551115123125783e-16,
+      "max_abs_stream_residual_native": 8.881784197001252e-16,
+      "max_abs_link_balance_residual_native": 7.66315789578649e-16,
+      "negative_post_population_nodes": 0,
+      "negative_post_populations": 0,
+      "min_unshifted_post_population_native": 5.828744090308896e-05,
+      "inventory_change_kg": 1.4735068050314826e-18
+    },
+    "wall_adjacent_fluid": {
+      "nodes": 7328,
+      "min_density_after_native": 0.11769968041757939,
+      "max_density_after_native": 0.882506914143073,
+      "max_abs_density_change_native": 0.0004208857258908294,
+      "max_abs_collision_change_native": 5.551115123125783e-16,
+      "max_abs_stream_residual_native": 8.881784197001252e-16,
+      "max_abs_link_balance_residual_native": 6.812584350812667e-16,
+      "negative_post_population_nodes": 0,
+      "negative_post_populations": 0,
+      "min_unshifted_post_population_native": 5.828744090308896e-05,
+      "inventory_change_kg": -2.2826005596332135e-18
+    },
+    "bulk_fluid": {
+      "nodes": 12128,
+      "min_density_after_native": 0.1753298821001158,
+      "max_density_after_native": 0.822820079076318,
+      "max_abs_density_change_native": 0.00047757184304653144,
+      "max_abs_collision_change_native": 4.440892098500626e-16,
+      "max_abs_stream_residual_native": 7.216449660063518e-16,
+      "max_abs_link_balance_residual_native": 7.66315789578649e-16,
+      "negative_post_population_nodes": 0,
+      "negative_post_populations": 0,
+      "min_unshifted_post_population_native": 0.0006641371993344105,
+      "inventory_change_kg": 3.756107364664696e-18
+    },
+    "wall": {
+      "nodes": 13312,
+      "min_density_after_native": 0.216939193968957,
+      "max_density_after_native": 0.783342672605573,
+      "max_abs_density_change_native": 0.004918010555182928,
+      "max_abs_collision_change_native": 6.661338147750939e-16,
+      "max_abs_stream_residual_native": 8.326672684688674e-16,
+      "max_abs_link_balance_residual_native": 8.148863528401051e-16,
+      "negative_post_population_nodes": 0,
+      "negative_post_populations": 0,
+      "min_unshifted_post_population_native": 5.821147449418425e-05,
+      "inventory_change_kg": -1.4735067645213433e-18
+    },
+    "fluid_to_wall_net_kg_s": -7.748180294305855e-14,
+    "wall_to_fluid_net_kg_s": 7.748180294305855e-14,
+    "interface_antisymmetry_residual_kg_s": 0.0,
+    "global_net_link_outflow_kg_s": -6.617444900424222e-24,
+    "max_abs_collision_mass_change_native": 6.661338147750939e-16,
+    "max_abs_stream_residual_native": 8.881784197001252e-16,
+    "max_abs_link_balance_residual_native": 8.148863528401051e-16,
+    "density_tolerance_native": 1e-11,
+    "checks": {
+      "collision_preserves_local_density": true,
+      "streaming_matches_actual_population_links": true,
+      "local_link_balance_closes": true,
+      "wall_interface_flux_is_antisymmetric": true,
+      "global_periodic_link_flux_cancels": true
+    },
+    "interpretation": "These are exact population balances, not centred div(u). Local density changes and instantaneous fluid-wall exchange are allowed by full-way BounceBack numerical storage. Passing conservation does not establish concentration boundedness or transport accuracy. Negative individual populations are a diagnostic, not by themselves an acceptance criterion."
+  },
+  "evidence_sha256": {
+    "results/adsorption/transport_root_cause/runs/20261110T205538Z-4e56ceb6/native/n32_constant/raw.json": "51bdc7e687e6dde207b1099c836d24a991b16475f6de19cf16a64a03138f8eed",
+    "results/adsorption/transport_root_cause/runs/20261110T205538Z-4e56ceb6/native/n32_constant/uniform_stencil.csv": "51eb4577aad748780989528c894c889cc11a5948311782dbb4dcc7b42616a02f",
+    "results/adsorption/transport_root_cause/runs/20261110T205538Z-4e56ceb6/native/n32_constant/audit_1.csv": "33c65f721872dc216dac923db15efe218651431aaf0df4998e9031549ca4be5e",
+    "results/adsorption/transport_root_cause/runs/20261110T205538Z-4e56ceb6/native/n32_constant/audit_2.csv": "774df1df0291990669a04400532f2d2b99f1e52f2ddc205c179d99c34b5db194",
+    "results/adsorption/transport_root_cause/runs/20261110T205424Z-ed34b563/native/n32_sine/peak.csv": "9ee5a04af129e77c5561759a485b236a57e077aa792da7e110a0d2a048ce217e",
+    "results/adsorption/transport_root_cause/runs/20261110T205424Z-ed34b563/native/n32_sine/peak.json": "d01299abff968d3a60beeb981c0b227db81ab99e373e41a50a68d98126a9f5ce",
+    "results/adsorption/transport_root_cause/runs/20261110T205424Z-ed34b563/native/n48_sine/peak.csv": "cce5dcd570a4d15547bfc553952bf5f76cd63e14fd9ac9a7c2041c2b1fd73fd0",
+    "results/adsorption/transport_root_cause/runs/20261110T205424Z-ed34b563/native/n48_sine/peak.json": "20cefa86a67734c39d45cc9f16c159d12a4cbf735b61a89ac7e19d4733f4b1a3",
+    "results/adsorption/transport_root_cause/runs/20261110T205757Z-c62abc03/native/n32_sine_audit4145/audit_4145.csv": "4d6f1c23bab1c75677619ef37ec684b40461e4e5a37538cf0c3e7ed856eadf66",
+    "results/adsorption/transport_root_cause/runs/20261110T205757Z-c62abc03/native/n32_sine_audit4145/raw.json": "a79fde4f55609741fe0e047c9fefb20c33b0ef551e39cb7a69255be4e61ffd6e"
+  }
+}

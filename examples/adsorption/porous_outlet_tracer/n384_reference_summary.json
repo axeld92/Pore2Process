@@ -1,0 +1,98 @@
+{
+  "summary": "results/adsorption/porous_outlet_tracer/N384/20261111T211006Z-4ab30fe9/summary.json",
+  "summary_sha256": "c45bc2e0bfecd2df1b08f4d3b574e4e886eb3cad14d2b567576e5f10b34428d5",
+  "mesh": {
+    "n": 384,
+    "cells": 33986560,
+    "interior_faces": 101425664,
+    "inlet_faces": 70144,
+    "dx_m": 3.617636860193087e-06,
+    "volume_m3": 1.60909660760255e-09,
+    "flow_m3_s": 1.48238167294761e-08,
+    "transit_s": 0.10854806403555815,
+    "max_local_imbalance_relative": 8.412617245905857e-16,
+    "max_plane_throughput_error_relative": 7.923711492531462e-14,
+    "max_depletion_s_inverse": 10049.005091384326,
+    "depletion_number": 0.8039204073107461,
+    "former_safety_cap_s": 7.960987109916908e-05,
+    "monotone_cap_s": 9.951233887396135e-05
+  },
+  "analysis": {
+    "N288": {
+      "time_s": 0.8684000000000001,
+      "recovery": 0.9999758924526043,
+      "mean_exit_s": 0.11004379838543456,
+      "variance_s2": 0.003477167687511277,
+      "early_arrival_s": {
+        "0.05": 0.07694442568421593,
+        "0.1": 0.07812294909393236
+      },
+      "last_transit_raw_moment_fractions": [
+        0.0007250855838427134,
+        0.004104973015368209
+      ],
+      "tail_passed": true,
+      "injected_kg": 5.929526691790436e-11,
+      "recovered_kg": 5.92938374544468e-11,
+      "remaining_kg": 1.4294634579334228e-15,
+      "mass_balance_relative": 6.75712632780797e-15,
+      "range_kg_m3": [
+        -3.3244744544900894e-18,
+        1.0
+      ],
+      "mass_passed": true,
+      "bounds_passed": true
+    },
+    "N384": {
+      "time_s": 0.8684000000000001,
+      "recovery": 0.9999730740531915,
+      "mean_exit_s": 0.11026202192185187,
+      "variance_s2": 0.0035248725328447476,
+      "early_arrival_s": {
+        "0.05": 0.07696662261987897,
+        "0.1": 0.07812979399805485
+      },
+      "last_transit_raw_moment_fractions": [
+        0.0007964049499139409,
+        0.004490945385396837
+      ],
+      "tail_passed": true,
+      "mass_balance_relative": 5.231323608625525e-15,
+      "range_kg_m3": [
+        -4.113227980658622e-18,
+        1.0000000000000002
+      ],
+      "remaining_kg": 1.5965812031654184e-15,
+      "injected_kg": 5.929526691790436e-11,
+      "recovered_kg": 5.929367033670133e-11
+    },
+    "tail": {
+      "288": {
+        "time_to_99pct_s": 0.3988822173142857,
+        "unrecovered_fraction_at_0_30_s": 0.02397831643687498,
+        "variance_from_after_0_30_s2": 0.002279002309307392,
+        "variance_fraction_from_after_0_30_s": 0.6554191555077248
+      },
+      "384": {
+        "time_to_99pct_s": 0.4004841448123259,
+        "unrecovered_fraction_at_0_30_s": 0.024108169202136653,
+        "variance_from_after_0_30_s2": 0.002312208488658753,
+        "variance_fraction_from_after_0_30_s": 0.6559693909818313
+      }
+    },
+    "mean_relative_difference": 0.0019791359945492415,
+    "variance_relative_difference": 0.013533778849861178,
+    "checks": {
+      "same_time_grid": true,
+      "mass": true,
+      "bounds": true,
+      "recovery_and_tail": true,
+      "mean": true,
+      "variance": true
+    },
+    "short_segment_qualified": true
+  },
+  "new_openlb_runs": 0,
+  "new_bed_runs": 0,
+  "new_DWSIM_runs": 0
+}

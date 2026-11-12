@@ -1,0 +1,280 @@
+{
+  "run_id": "20261110T205326Z-c9d87d29",
+  "source_summary": "results/adsorption/transport_root_cause/channel/runs/20261110T205326Z-c9d87d29/summary.json",
+  "source_summary_sha256": "d18a9c400089884f0b3086481d67d51699ecbfab66dab011c7eab699c4e6efb0",
+  "sources_checked": 24,
+  "artifacts_checked": 91,
+  "actual_native_runs": 5,
+  "new_native_runs_in_check": 0,
+  "new_DWSIM_runs_in_check": 0,
+  "vendor": {
+    "archive_sha256": "e4d2421b50643482036917c4416145f7d6b495492f3afac64e048212361c8b3e",
+    "original_files_checked": 2070,
+    "preexisting_vendor_config_ignored": true
+  },
+  "cases": {
+    "uniform32": {
+      "raw": {
+        "solver": "OpenLB 1.9r0",
+        "model": "stock CombinedAdvectionDiffusionRLBdynamics with AdvectionDiffusionTRTdynamics",
+        "descriptor": "D3Q27 VELOCITY",
+        "periodic": [
+          true,
+          true,
+          true
+        ],
+        "n": 32,
+        "side_m": 0.0013891725543141453,
+        "dx_m": 4.341164232231704e-05,
+        "dt_s": 1.90174557964e-05,
+        "steps": 11294,
+        "duration_s": 0.2147831457645416,
+        "speed_m_s": 0.012937295182166382,
+        "shear_fraction": 0,
+        "diffusivity_m2_s": 1e-09,
+        "initial_amplitude_kg_m3": 0.25,
+        "initial_mean_kg_m3": 0.5,
+        "tau_odd": 0.5000302734027005,
+        "tau_even": 9910.188810617397,
+        "magic": 0.3,
+        "peak_step": 76,
+        "peak_time_s": 0.0014453266405264,
+        "wall_s": 83.679656
+      },
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "z_invariance": true,
+        "strict_bounds": true,
+        "engineering_bounds": true,
+        "profile": true,
+        "uniform_oracle": true
+      },
+      "minimum_concentration_kg_m3": 0.2505413310231305,
+      "maximum_concentration_kg_m3": 0.7494586689768732,
+      "maximum_bound_excursion_kg_m3": 0.0,
+      "relative_inventory_drift": 1.2514433933574765e-12,
+      "application_transport_qualified": false,
+      "new_service_prediction": false,
+      "reference_convergence": {
+        "spatial_max_over_amplitude": 0.0,
+        "temporal_max_over_amplitude": 1.9317880628477724e-13,
+        "points": 256,
+        "steps": 2048,
+        "tolerance": 0.0001,
+        "passed": true
+      },
+      "RMS_error_over_amplitude": 0.002248185902748217,
+      "maximum_error_over_amplitude": 0.003173279821313768,
+      "independent_uniform_reference_max_error_kg_m3": 5.21249710061511e-14,
+      "control_checks_passed": true
+    },
+    "constant_shear32": {
+      "raw": {
+        "solver": "OpenLB 1.9r0",
+        "model": "stock CombinedAdvectionDiffusionRLBdynamics with AdvectionDiffusionTRTdynamics",
+        "descriptor": "D3Q27 VELOCITY",
+        "periodic": [
+          true,
+          true,
+          true
+        ],
+        "n": 32,
+        "side_m": 0.0013891725543141453,
+        "dx_m": 4.341164232231704e-05,
+        "dt_s": 1.90174557964e-05,
+        "steps": 11294,
+        "duration_s": 0.2147831457645416,
+        "speed_m_s": 0.012937295182166382,
+        "shear_fraction": 0.75,
+        "diffusivity_m2_s": 1e-09,
+        "initial_amplitude_kg_m3": 0,
+        "initial_mean_kg_m3": 0.5,
+        "tau_odd": 0.5000302734027005,
+        "tau_even": 9910.188810617397,
+        "magic": 0.3,
+        "peak_step": 0,
+        "peak_time_s": 0,
+        "wall_s": 83.268827
+      },
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "z_invariance": true,
+        "strict_bounds": true,
+        "engineering_bounds": true,
+        "constant_preservation": true
+      },
+      "minimum_concentration_kg_m3": 0.4999999999999999,
+      "maximum_concentration_kg_m3": 0.5000000000000279,
+      "maximum_bound_excursion_kg_m3": 2.786659791809143e-14,
+      "relative_inventory_drift": 4.440892098500626e-16,
+      "application_transport_qualified": false,
+      "new_service_prediction": false,
+      "maximum_constant_error_kg_m3": 2.786659791809143e-14,
+      "control_checks_passed": true
+    },
+    "shear32": {
+      "raw": {
+        "solver": "OpenLB 1.9r0",
+        "model": "stock CombinedAdvectionDiffusionRLBdynamics with AdvectionDiffusionTRTdynamics",
+        "descriptor": "D3Q27 VELOCITY",
+        "periodic": [
+          true,
+          true,
+          true
+        ],
+        "n": 32,
+        "side_m": 0.0013891725543141453,
+        "dx_m": 4.341164232231704e-05,
+        "dt_s": 1.90174557964e-05,
+        "steps": 11294,
+        "duration_s": 0.2147831457645416,
+        "speed_m_s": 0.012937295182166382,
+        "shear_fraction": 0.75,
+        "diffusivity_m2_s": 1e-09,
+        "initial_amplitude_kg_m3": 0.25,
+        "initial_mean_kg_m3": 0.5,
+        "tau_odd": 0.5000302734027005,
+        "tau_even": 9910.188810617397,
+        "magic": 0.3,
+        "peak_step": 11238,
+        "peak_time_s": 0.2137181682399432,
+        "wall_s": 94.987346
+      },
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "z_invariance": true,
+        "strict_bounds": false,
+        "engineering_bounds": false,
+        "profile": false
+      },
+      "minimum_concentration_kg_m3": 0.20271045806467147,
+      "maximum_concentration_kg_m3": 0.7972895419360634,
+      "maximum_bound_excursion_kg_m3": 0.047289541936063384,
+      "relative_inventory_drift": 7.251976796851523e-13,
+      "application_transport_qualified": false,
+      "new_service_prediction": false,
+      "reference_convergence": {
+        "spatial_max_over_amplitude": 1.5720758028692217e-13,
+        "temporal_max_over_amplitude": 4.028407651901489e-08,
+        "points": 256,
+        "steps": 2048,
+        "tolerance": 0.0001,
+        "passed": true
+      },
+      "RMS_error_over_amplitude": 0.3858197541700453,
+      "maximum_error_over_amplitude": 0.8074395752202157,
+      "control_checks_passed": false
+    },
+    "shear48": {
+      "raw": {
+        "solver": "OpenLB 1.9r0",
+        "model": "stock CombinedAdvectionDiffusionRLBdynamics with AdvectionDiffusionTRTdynamics",
+        "descriptor": "D3Q27 VELOCITY",
+        "periodic": [
+          true,
+          true,
+          true
+        ],
+        "n": 48,
+        "side_m": 0.0013891725543141453,
+        "dx_m": 2.8941094881544695e-05,
+        "dt_s": 1.90174557964e-05,
+        "steps": 11294,
+        "duration_s": 0.2147831457645416,
+        "speed_m_s": 0.012937295182166382,
+        "shear_fraction": 0.75,
+        "diffusivity_m2_s": 1e-09,
+        "initial_amplitude_kg_m3": 0.25,
+        "initial_mean_kg_m3": 0.5,
+        "tau_odd": 0.500068115156076,
+        "tau_even": 4404.8061380557665,
+        "magic": 0.3,
+        "peak_step": 11277,
+        "peak_time_s": 0.2144598490160028,
+        "wall_s": 289.942268
+      },
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "z_invariance": true,
+        "strict_bounds": false,
+        "engineering_bounds": true,
+        "profile": false
+      },
+      "minimum_concentration_kg_m3": 0.24765122847588295,
+      "maximum_concentration_kg_m3": 0.7523487715247208,
+      "maximum_bound_excursion_kg_m3": 0.002348771524720794,
+      "relative_inventory_drift": 1.8465229345565604e-12,
+      "application_transport_qualified": false,
+      "new_service_prediction": false,
+      "reference_convergence": {
+        "spatial_max_over_amplitude": 1.687538997430238e-13,
+        "temporal_max_over_amplitude": 4.04851197011169e-08,
+        "points": 256,
+        "steps": 2048,
+        "tolerance": 0.0001,
+        "passed": true
+      },
+      "RMS_error_over_amplitude": 0.08958840639288966,
+      "maximum_error_over_amplitude": 0.21337053019097585,
+      "control_checks_passed": false
+    },
+    "shear64": {
+      "raw": {
+        "solver": "OpenLB 1.9r0",
+        "model": "stock CombinedAdvectionDiffusionRLBdynamics with AdvectionDiffusionTRTdynamics",
+        "descriptor": "D3Q27 VELOCITY",
+        "periodic": [
+          true,
+          true,
+          true
+        ],
+        "n": 64,
+        "side_m": 0.0013891725543141453,
+        "dx_m": 2.170582116115852e-05,
+        "dt_s": 1.90174557964e-05,
+        "steps": 11294,
+        "duration_s": 0.2147831457645416,
+        "speed_m_s": 0.012937295182166382,
+        "shear_fraction": 0.75,
+        "diffusivity_m2_s": 1e-09,
+        "initial_amplitude_kg_m3": 0.25,
+        "initial_mean_kg_m3": 0.5,
+        "tau_odd": 0.5001210936108018,
+        "tau_even": 2477.9222026543493,
+        "magic": 0.3,
+        "peak_step": 24,
+        "peak_time_s": 0.00045641893911360003,
+        "wall_s": 671.522769
+      },
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "z_invariance": true,
+        "strict_bounds": true,
+        "engineering_bounds": true,
+        "profile": false
+      },
+      "minimum_concentration_kg_m3": 0.250020824413436,
+      "maximum_concentration_kg_m3": 0.7499791755865658,
+      "maximum_bound_excursion_kg_m3": 0.0,
+      "relative_inventory_drift": 1.355138223857466e-12,
+      "application_transport_qualified": false,
+      "new_service_prediction": false,
+      "reference_convergence": {
+        "spatial_max_over_amplitude": 1.7053025658242404e-13,
+        "temporal_max_over_amplitude": 4.055579783113217e-08,
+        "points": 256,
+        "steps": 2048,
+        "tolerance": 0.0001,
+        "passed": true
+      },
+      "RMS_error_over_amplitude": 0.022253084559580718,
+      "maximum_error_over_amplitude": 0.05506138854997911,
+      "control_checks_passed": false
+    }
+  }
+}

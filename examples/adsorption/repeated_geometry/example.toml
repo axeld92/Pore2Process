@@ -1,0 +1,19 @@
+schema_version = 1
+id = "adsorption/repeated_geometry"
+title = "Fast-path bypass across eight repeated porous cells"
+area = "adsorption"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["adsorption/survivor_exposure"]
+run_module = "examples.adsorption.repeated_geometry.run"
+check_module = "examples.adsorption.repeated_geometry.run"
+reference_files = ["reference_summary.json"]
+protocol_files = ["protocol.md"]
+
+[validation]
+numerical = "passed"
+eight_cell_holdout = "passed"
+within_class_reset = "scenario_only"
+literature = "not_assessed"
+scope = "Perfect-sink tracer in eight copies of the balanced N96 TRT field at fixed Péclet exchange. The within-class reset tests fine path memory on the same geometry."

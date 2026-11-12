@@ -1,0 +1,20 @@
+schema_version = 1
+id = "adsorption/disordered_refinement"
+title = "N96 refinement of the disordered packing"
+area = "adsorption"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["adsorption/disordered_packing"]
+run_module = "examples.adsorption.disordered_refinement.native"
+check_module = "examples.adsorption.disordered_refinement.run"
+reference_files = ["reference_summary.json"]
+protocol_files = ["protocol.md"]
+
+[validation]
+native_hydraulics = "passed"
+inert_recovery = "passed"
+time_step = "passed"
+grid = "failed"
+literature = "not_assessed"
+scope = "Stock TRT N96 refinement of the same disordered packing at matched carbon and Péclet numbers. The 2-point wall-free tracer grid screen is exceeded."

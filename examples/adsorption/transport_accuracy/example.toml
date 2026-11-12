@@ -1,0 +1,18 @@
+schema_version = 1
+id = "adsorption/transport_accuracy"
+title = "Engineering accuracy of packed-bed tracer transport"
+area = "adsorption"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["adsorption/column_transport", "adsorption/film_particle"]
+run_module = "examples.adsorption.transport_accuracy.run"
+check_module = "examples.adsorption.transport_accuracy.check"
+reference_files = ["reference/screen_reference.json", "reference/smooth_input_reference.json", "reference/regularized_inlet_reference.json"]
+protocol_files = ["protocol.md", "ramp_protocol.md", "inlet_protocol.md"]
+
+[validation]
+numerical = "mixed"
+literature = "not_assessed"
+scope = "Completed engineering diagnostic study; local uniform drift is assessed separately from front transport. No qualified new adsorption service prediction."
+service_accuracy = "not_assessed"

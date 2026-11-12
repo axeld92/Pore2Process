@@ -1,0 +1,215 @@
+{
+  "run_id": "20261110T163606Z-3e5ef256",
+  "source_summary": "results/adsorption/column_transport/process/runs/20261110T163606Z-3e5ef256/summary.json",
+  "source_summary_sha256": "91aee6c1cb59200514f7173752b5fa97e1cfa9a2b01fee9bb329a7c5832c75e9",
+  "native_summary": "results/adsorption/column_transport/hydraulics/runs/20261110T154704Z-d14d13ed/summary.json",
+  "native_summary_sha256": "57ce925bd15d8bb11e0949d61f362691e9e80481ff6fb8e5fdc7d4d014e9f287",
+  "cases": {
+    "d800": {
+      "julia_inputs": {
+        "native_gradient_Pa_m": 2361.260940517869,
+        "native_velocity_m_s": 0.008030399045252726,
+        "native_viscosity_Pa_s": 0.001,
+        "native_density_kg_m3": 1000,
+        "carrier_viscosity_Pa_s": 0.0009544237449881605,
+        "carrier_density_kg_m3": 997.7723009826169,
+        "superficial_velocity_m_s": 0.0076815278318732964,
+        "length_m": 0.14325000000000002,
+        "area_m2": 9.503317777109123e-05,
+        "efficiency_fraction": 0.75
+      },
+      "julia_output": {
+        "pressure_drop_Pa": 308.8092716739164,
+        "flow_m3_s": 7.3e-07,
+        "reference_shaft_power_W": 0.000300574357762612,
+        "operating_point_apparent_permeability_m2": 3.400894372771655e-09,
+        "native_to_carrier_velocity_scale": 0.9565546608662455,
+        "native_to_carrier_pressure_scale": 0.912958481709842,
+        "requested_to_matched_velocity_ratio": 1.000001587775321,
+        "Reynolds_relative_mismatch": 1.5877753209991852e-06
+      },
+      "checks": {
+        "work": true,
+        "mass": true,
+        "enthalpy": true,
+        "reload": true,
+        "native_Reynolds_match": true
+      },
+      "shaft_power_W": 0.0003005743577626148,
+      "specific_shaft_energy_Wh_m3": 0.11437380432367382
+    },
+    "d450": {
+      "julia_inputs": {
+        "native_gradient_Pa_m": 7326.6418339983375,
+        "native_velocity_m_s": 0.008030411322900144,
+        "native_viscosity_Pa_s": 0.001,
+        "native_density_kg_m3": 1000,
+        "carrier_viscosity_Pa_s": 0.0009544237449881605,
+        "carrier_density_kg_m3": 997.7723009826169,
+        "superficial_velocity_m_s": 0.0076815278318732964,
+        "length_m": 0.14325000000000002,
+        "area_m2": 9.503317777109123e-05,
+        "efficiency_fraction": 0.75
+      },
+      "julia_output": {
+        "pressure_drop_Pa": 958.1878184545149,
+        "flow_m3_s": 7.3e-07,
+        "reference_shaft_power_W": 0.0009326361432957279,
+        "operating_point_apparent_permeability_m2": 1.096056215773515e-09,
+        "native_to_carrier_velocity_scale": 0.9565546608662455,
+        "native_to_carrier_pressure_scale": 0.912958481709842,
+        "requested_to_matched_velocity_ratio": 1.0000000588789273,
+        "Reynolds_relative_mismatch": 5.887892728928534e-08
+      },
+      "checks": {
+        "work": true,
+        "mass": true,
+        "enthalpy": true,
+        "reload": true,
+        "native_Reynolds_match": true
+      },
+      "shaft_power_W": 0.0009326361432957332,
+      "specific_shaft_energy_Wh_m3": 0.3548843772053779
+    }
+  },
+  "sensitivities": [
+    {
+      "particle": "d800",
+      "efficiency": 0.6,
+      "extra_pressure_Pa": 0.0,
+      "shaft_energy_Wh_m3": 0.1429672554045909,
+      "role": "Algebraic chosen scenario using verified pump-work law; not another DWSIM solve or uncertainty interval."
+    },
+    {
+      "particle": "d800",
+      "efficiency": 0.6,
+      "extra_pressure_Pa": 1000.0,
+      "shaft_energy_Wh_m3": 0.6059302183675538,
+      "role": "Algebraic chosen scenario using verified pump-work law; not another DWSIM solve or uncertainty interval."
+    },
+    {
+      "particle": "d800",
+      "efficiency": 0.6,
+      "extra_pressure_Pa": 10000.0,
+      "shaft_energy_Wh_m3": 4.772596885034221,
+      "role": "Algebraic chosen scenario using verified pump-work law; not another DWSIM solve or uncertainty interval."
+    },
+    {
+      "particle": "d800",
+      "efficiency": 0.75,
+      "extra_pressure_Pa": 0.0,
+      "shaft_energy_Wh_m3": 0.11437380432367274,
+      "role": "Algebraic chosen scenario using verified pump-work law; not another DWSIM solve or uncertainty interval."
+    },
+    {
+      "particle": "d800",
+      "efficiency": 0.75,
+      "extra_pressure_Pa": 1000.0,
+      "shaft_energy_Wh_m3": 0.48474417469404313,
+      "role": "Algebraic chosen scenario using verified pump-work law; not another DWSIM solve or uncertainty interval."
+    },
+    {
+      "particle": "d800",
+      "efficiency": 0.75,
+      "extra_pressure_Pa": 10000.0,
+      "shaft_energy_Wh_m3": 3.818077508027376,
+      "role": "Algebraic chosen scenario using verified pump-work law; not another DWSIM solve or uncertainty interval."
+    },
+    {
+      "particle": "d800",
+      "efficiency": 0.85,
+      "extra_pressure_Pa": 0.0,
+      "shaft_energy_Wh_m3": 0.10091806263853477,
+      "role": "Algebraic chosen scenario using verified pump-work law; not another DWSIM solve or uncertainty interval."
+    },
+    {
+      "particle": "d800",
+      "efficiency": 0.85,
+      "extra_pressure_Pa": 1000.0,
+      "shaft_energy_Wh_m3": 0.4277154482594498,
+      "role": "Algebraic chosen scenario using verified pump-work law; not another DWSIM solve or uncertainty interval."
+    },
+    {
+      "particle": "d800",
+      "efficiency": 0.85,
+      "extra_pressure_Pa": 10000.0,
+      "shaft_energy_Wh_m3": 3.3688919188476847,
+      "role": "Algebraic chosen scenario using verified pump-work law; not another DWSIM solve or uncertainty interval."
+    },
+    {
+      "particle": "d450",
+      "efficiency": 0.6,
+      "extra_pressure_Pa": 0.0,
+      "shaft_energy_Wh_m3": 0.44360547150671986,
+      "role": "Algebraic chosen scenario using verified pump-work law; not another DWSIM solve or uncertainty interval."
+    },
+    {
+      "particle": "d450",
+      "efficiency": 0.6,
+      "extra_pressure_Pa": 1000.0,
+      "shaft_energy_Wh_m3": 0.9065684344696828,
+      "role": "Algebraic chosen scenario using verified pump-work law; not another DWSIM solve or uncertainty interval."
+    },
+    {
+      "particle": "d450",
+      "efficiency": 0.6,
+      "extra_pressure_Pa": 10000.0,
+      "shaft_energy_Wh_m3": 5.0732351011363495,
+      "role": "Algebraic chosen scenario using verified pump-work law; not another DWSIM solve or uncertainty interval."
+    },
+    {
+      "particle": "d450",
+      "efficiency": 0.75,
+      "extra_pressure_Pa": 0.0,
+      "shaft_energy_Wh_m3": 0.35488437720537586,
+      "role": "Algebraic chosen scenario using verified pump-work law; not another DWSIM solve or uncertainty interval."
+    },
+    {
+      "particle": "d450",
+      "efficiency": 0.75,
+      "extra_pressure_Pa": 1000.0,
+      "shaft_energy_Wh_m3": 0.7252547475757462,
+      "role": "Algebraic chosen scenario using verified pump-work law; not another DWSIM solve or uncertainty interval."
+    },
+    {
+      "particle": "d450",
+      "efficiency": 0.75,
+      "extra_pressure_Pa": 10000.0,
+      "shaft_energy_Wh_m3": 4.05858808090908,
+      "role": "Algebraic chosen scenario using verified pump-work law; not another DWSIM solve or uncertainty interval."
+    },
+    {
+      "particle": "d450",
+      "efficiency": 0.85,
+      "extra_pressure_Pa": 0.0,
+      "shaft_energy_Wh_m3": 0.31313327400474344,
+      "role": "Algebraic chosen scenario using verified pump-work law; not another DWSIM solve or uncertainty interval."
+    },
+    {
+      "particle": "d450",
+      "efficiency": 0.85,
+      "extra_pressure_Pa": 1000.0,
+      "shaft_energy_Wh_m3": 0.6399306596256584,
+      "role": "Algebraic chosen scenario using verified pump-work law; not another DWSIM solve or uncertainty interval."
+    },
+    {
+      "particle": "d450",
+      "efficiency": 0.85,
+      "extra_pressure_Pa": 10000.0,
+      "shaft_energy_Wh_m3": 3.5811071302138937,
+      "role": "Algebraic chosen scenario using verified pump-work law; not another DWSIM solve or uncertainty interval."
+    }
+  ],
+  "actual_new_DWSIM_cases": 2,
+  "new_native_runs": 0,
+  "new_native_runs_in_check": 0,
+  "new_DWSIM_runs_in_check": 0,
+  "verified": {
+    "source_files": 36,
+    "artifacts": 47
+  },
+  "adsorption_qualified": false,
+  "service_time_s": null,
+  "service_volume_m3": null,
+  "native_to_Julia_to_DWSIM_executed": true
+}

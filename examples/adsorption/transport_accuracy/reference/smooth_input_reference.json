@@ -1,0 +1,325 @@
+{
+  "schema": "pore2process.transport-engineering-accuracy.v1",
+  "assessment_run_id": "20261110T182127Z-a84caa1d",
+  "source_summary": "results/adsorption/transport_accuracy/assessments/20261110T182127Z-a84caa1d/summary.json",
+  "source_summary_sha256": "1463bf8c7228097821267af49974bc550b6a0215dd8c26551895dcf3f9db538a",
+  "native_run_id": "20261110T180944Z-096133a1",
+  "actual_native_runs": 4,
+  "actual_new_DWSIM_runs": 0,
+  "decision": {
+    "eligible_for_closure_assessment": false,
+    "missing_cases": [],
+    "failed_native_screens": {
+      "d800_ramp0.5_n32_cells1": [
+        "concentration_nonnegative",
+        "concentration_upper_bound",
+        "outlet_flux_bounds"
+      ],
+      "d800_ramp1_n32_cells1": [
+        "concentration_nonnegative",
+        "concentration_upper_bound",
+        "outlet_flux_bounds"
+      ],
+      "d450_ramp0.5_n32_cells1": [
+        "concentration_nonnegative",
+        "concentration_upper_bound",
+        "outlet_flux_bounds"
+      ],
+      "d450_ramp1_n32_cells1": [
+        "concentration_nonnegative",
+        "concentration_upper_bound",
+        "outlet_flux_bounds"
+      ]
+    },
+    "closure_qualified": false,
+    "service_prediction_qualified": false,
+    "service_time_s": null,
+    "service_volume_m3": null,
+    "energy_per_on_spec_volume_Wh_m3": null,
+    "reason": "A native screen is a prerequisite, not a qualified closure or a service prediction.",
+    "ramp_duration_comparisons": {
+      "d800": {
+        "available": true,
+        "relative_changes": {
+          "mean_s": 5.0007331608981076e-11,
+          "variance_s2": 0.00028458533132269537
+        },
+        "passed": true
+      },
+      "d450": {
+        "available": true,
+        "relative_changes": {
+          "mean_s": 5.484945830858123e-12,
+          "variance_s2": 0.0002909828843847828
+        },
+        "passed": true
+      }
+    }
+  },
+  "cases": {
+    "d800_ramp0.5_n32_cells1": {
+      "engineering_checks": {
+        "finite": true,
+        "kinetic_mass": true,
+        "concentration_nonnegative": false,
+        "concentration_upper_bound": false,
+        "inlet_moment_audit": true,
+        "positive_RTD_moments": true,
+        "absolute_plateau": true,
+        "completed_front": true,
+        "first_moment_tail": true,
+        "second_moment_tail": true,
+        "outlet_flux_bounds": false
+      },
+      "engineering_screen_passed": false,
+      "actual_duration_s": 1.7180749915622733,
+      "physical_void_time_s": 0.10468410010354848,
+      "observed_transits": 16.411995612159213,
+      "maximum_average_liquid_concentration_relative_change": null,
+      "final_quarter_extrema_drift": null,
+      "final_spatial_diagnostic": null,
+      "final_wall_population_change_over_physical_liquid_plateau_inventory": 0.045730230900533346,
+      "RTD": {
+        "mean_s": 0.10652442653821281,
+        "variance_s2": 0.0028656598537146662,
+        "steady_exit_flux_kg_s": 1.4811276758244899e-08,
+        "final_fraction": 1.0000000000076348,
+        "tail_area_fraction": 2.0666117201795053e-06,
+        "tail_second_moment_fraction": 2.7914151181041916e-05,
+        "equivalent_sections": 3.959804732088404,
+        "minimum_fraction": -0.5324945541071167,
+        "maximum_fraction": 1.0001605446420492
+      },
+      "observed_outlet_moments": {
+        "mean_s": 0.13336876561284014,
+        "variance_s2": 0.0029686051183701045,
+        "steady_exit_flux_kg_s": 1.4811276758244899e-08,
+        "final_fraction": 1.0000000000076348,
+        "tail_area_fraction": 1.6506460666235394e-06,
+        "tail_second_moment_fraction": 1.9114963879857413e-05,
+        "equivalent_sections": 5.9917796176470475,
+        "minimum_fraction": -0.5324945541071167,
+        "maximum_fraction": 1.0001605446420492
+      },
+      "imposed_inlet_moments": {
+        "mean_s": 0.02684433907462732,
+        "variance_s2": 0.00010294526465543831,
+        "steady_exit_flux_kg_s": 1.0,
+        "final_fraction": 1.0,
+        "tail_area_fraction": 0.0,
+        "tail_second_moment_fraction": 0.0,
+        "equivalent_sections": 7.0000163947851375,
+        "minimum_fraction": 0.0,
+        "maximum_fraction": 1.0
+      },
+      "RTD_unavailable_reason": null,
+      "absolute_outlet_plateau_relative_error": 0.0008446184769335119,
+      "extrema_locations": null,
+      "uniform_maximum_departure": null,
+      "minimum_concentration": -0.3427477236839993,
+      "maximum_concentration": 1.279876302739917,
+      "normalized_kinetic_mass_residual": 7.422804820585295e-14
+    },
+    "d800_ramp1_n32_cells1": {
+      "engineering_checks": {
+        "finite": true,
+        "kinetic_mass": true,
+        "concentration_nonnegative": false,
+        "concentration_upper_bound": false,
+        "inlet_moment_audit": true,
+        "positive_RTD_moments": true,
+        "absolute_plateau": true,
+        "completed_front": true,
+        "first_moment_tail": true,
+        "second_moment_tail": true,
+        "outlet_flux_bounds": false
+      },
+      "engineering_screen_passed": false,
+      "actual_duration_s": 1.771742251819836,
+      "physical_void_time_s": 0.10468410010354848,
+      "observed_transits": 16.924654747638982,
+      "maximum_average_liquid_concentration_relative_change": null,
+      "final_quarter_extrema_drift": null,
+      "final_spatial_diagnostic": null,
+      "final_wall_population_change_over_physical_liquid_plateau_inventory": 0.04573023090104031,
+      "RTD": {
+        "mean_s": 0.10652442654353982,
+        "variance_s2": 0.0028648443289557386,
+        "steady_exit_flux_kg_s": 1.4811276758295616e-08,
+        "final_fraction": 1.0000000000035476,
+        "tail_area_fraction": 2.223711256299231e-06,
+        "tail_second_moment_fraction": 3.09339796633421e-05,
+        "equivalent_sections": 3.9609319556173785,
+        "minimum_fraction": -0.5324945541052932,
+        "maximum_fraction": 1.0001231123965624
+      },
+      "observed_outlet_moments": {
+        "mean_s": 0.16021310469278258,
+        "variance_s2": 0.0032766261109055637,
+        "steady_exit_flux_kg_s": 1.4811276758295616e-08,
+        "final_fraction": 1.0000000000035476,
+        "tail_area_fraction": 1.4785280319604295e-06,
+        "tail_second_moment_fraction": 1.518897842773968e-05,
+        "equivalent_sections": 7.833740575364749,
+        "minimum_fraction": -0.5324945541052932,
+        "maximum_fraction": 1.0001231123965624
+      },
+      "imposed_inlet_moments": {
+        "mean_s": 0.05368867814924276,
+        "variance_s2": 0.00041178178194982516,
+        "steady_exit_flux_kg_s": 1.0,
+        "final_fraction": 1.0,
+        "tail_area_fraction": 0.0,
+        "tail_second_moment_fraction": 0.0,
+        "equivalent_sections": 7.000004098685943,
+        "minimum_fraction": 0.0,
+        "maximum_fraction": 1.0
+      },
+      "RTD_unavailable_reason": null,
+      "absolute_outlet_plateau_relative_error": 0.0008446184735121376,
+      "extrema_locations": null,
+      "uniform_maximum_departure": null,
+      "minimum_concentration": -0.2985470984880907,
+      "maximum_concentration": 1.2416094407318135,
+      "normalized_kinetic_mass_residual": 7.54074890685832e-14
+    },
+    "d450_ramp0.5_n32_cells1": {
+      "engineering_checks": {
+        "finite": true,
+        "kinetic_mass": true,
+        "concentration_nonnegative": false,
+        "concentration_upper_bound": false,
+        "inlet_moment_audit": true,
+        "positive_RTD_moments": true,
+        "absolute_plateau": true,
+        "completed_front": true,
+        "first_moment_tail": true,
+        "second_moment_tail": true,
+        "outlet_flux_bounds": false
+      },
+      "engineering_screen_passed": false,
+      "actual_duration_s": 0.9663962151001747,
+      "physical_void_time_s": 0.05888473759117073,
+      "observed_transits": 16.41165868496759,
+      "maximum_average_liquid_concentration_relative_change": null,
+      "final_quarter_extrema_drift": null,
+      "final_spatial_diagnostic": null,
+      "final_wall_population_change_over_physical_liquid_plateau_inventory": 0.04574013014744237,
+      "RTD": {
+        "mean_s": 0.0601284451297272,
+        "variance_s2": 0.000886774912095884,
+        "steady_exit_flux_kg_s": 4.686432052085814e-09,
+        "final_fraction": 1.0000000000000124,
+        "tail_area_fraction": 1.2544754426350868e-06,
+        "tail_second_moment_fraction": 1.6861122543554887e-05,
+        "equivalent_sections": 4.077054802073257,
+        "minimum_fraction": -0.55025379899626,
+        "maximum_fraction": 1.0001444123983068
+      },
+      "observed_outlet_moments": {
+        "mean_s": 0.07522836906218394,
+        "variance_s2": 0.0009193473696204177,
+        "steady_exit_flux_kg_s": 4.686432052085814e-09,
+        "final_fraction": 1.0000000000000124,
+        "tail_area_fraction": 1.0026757027887142e-06,
+        "tail_second_moment_fraction": 1.1539171556048844e-05,
+        "equivalent_sections": 6.1557880065429265,
+        "minimum_fraction": -0.55025379899626,
+        "maximum_fraction": 1.0001444123983068
+      },
+      "imposed_inlet_moments": {
+        "mean_s": 0.015099923932456743,
+        "variance_s2": 3.257245752453375e-05,
+        "steady_exit_flux_kg_s": 1.0,
+        "final_fraction": 1.0,
+        "tail_area_fraction": 0.0,
+        "tail_second_moment_fraction": 0.0,
+        "equivalent_sections": 7.000015353285619,
+        "minimum_fraction": 0.0,
+        "maximum_fraction": 1.0
+      },
+      "RTD_unavailable_reason": null,
+      "absolute_outlet_plateau_relative_error": 0.0008348012080464651,
+      "extrema_locations": null,
+      "uniform_maximum_departure": null,
+      "minimum_concentration": -0.31704497134823484,
+      "maximum_concentration": 1.2697341501605015,
+      "normalized_kinetic_mass_residual": 1.3485508163492833e-13
+    },
+    "d450_ramp1_n32_cells1": {
+      "engineering_checks": {
+        "finite": true,
+        "kinetic_mass": true,
+        "concentration_nonnegative": false,
+        "concentration_upper_bound": false,
+        "inlet_moment_audit": true,
+        "positive_RTD_moments": true,
+        "absolute_plateau": true,
+        "completed_front": true,
+        "first_moment_tail": true,
+        "second_moment_tail": true,
+        "outlet_flux_bounds": false
+      },
+      "engineering_screen_passed": false,
+      "actual_duration_s": 0.996603213789704,
+      "physical_void_time_s": 0.05888473759117073,
+      "observed_transits": 16.924643881560513,
+      "maximum_average_liquid_concentration_relative_change": null,
+      "final_quarter_extrema_drift": null,
+      "final_spatial_diagnostic": null,
+      "final_wall_population_change_over_physical_liquid_plateau_inventory": 0.045740130146155585,
+      "RTD": {
+        "mean_s": 0.060128445130056996,
+        "variance_s2": 0.0008865168757741622,
+        "steady_exit_flux_kg_s": 4.686432052087497e-09,
+        "final_fraction": 0.99999999999921,
+        "tail_area_fraction": 1.3547156805531572e-06,
+        "tail_second_moment_fraction": 1.876949232965241e-05,
+        "equivalent_sections": 4.078241500593042,
+        "minimum_fraction": -0.5502537989960624,
+        "maximum_fraction": 1.000120770537225
+      },
+      "observed_outlet_moments": {
+        "mean_s": 0.09032829299496514,
+        "variance_s2": 0.001016806920198416,
+        "steady_exit_flux_kg_s": 4.686432052087497e-09,
+        "final_fraction": 0.99999999999921,
+        "tail_area_fraction": 9.01787742955673e-07,
+        "tail_second_moment_fraction": 9.208717007678252e-06,
+        "equivalent_sections": 8.024336138263212,
+        "minimum_fraction": -0.5502537989960624,
+        "maximum_fraction": 1.000120770537225
+      },
+      "imposed_inlet_moments": {
+        "mean_s": 0.03019984786490815,
+        "variance_s2": 0.0001302900444242538,
+        "steady_exit_flux_kg_s": 1.0,
+        "final_fraction": 1.0,
+        "tail_area_fraction": 0.0,
+        "tail_second_moment_fraction": 0.0,
+        "equivalent_sections": 7.000003838311844,
+        "minimum_fraction": 0.0,
+        "maximum_fraction": 1.0
+      },
+      "RTD_unavailable_reason": null,
+      "absolute_outlet_plateau_relative_error": 0.00083480120768753,
+      "extrema_locations": null,
+      "uniform_maximum_departure": null,
+      "minimum_concentration": -0.26884681214709927,
+      "maximum_concentration": 1.233260038546807,
+      "normalized_kinetic_mass_residual": 1.1159783277600714e-13
+    }
+  },
+  "native_source_files_checked": 26,
+  "native_artifacts_checked": 596,
+  "assessment_source_files_checked": 27,
+  "assessment_artifacts_checked": 27,
+  "new_native_runs_in_check": 0,
+  "new_DWSIM_runs_in_check": 0,
+  "Julia_RTD_analyses": 4,
+  "vendor": {
+    "archive_sha256": "e4d2421b50643482036917c4416145f7d6b495492f3afac64e048212361c8b3e",
+    "original_files_checked": 2070,
+    "preexisting_vendor_config_ignored": true
+  }
+}

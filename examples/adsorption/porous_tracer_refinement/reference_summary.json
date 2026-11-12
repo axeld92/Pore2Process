@@ -1,0 +1,274 @@
+{
+  "summary": "results/adsorption/porous_tracer_refinement/runs/20261111T160638Z-156b2680/summary.json",
+  "summary_sha256": "3f4de99048825a59235c8193d2d5d357b3cf7ec0246a7bab4e6226544e30e0ef",
+  "analysis": {
+    "cases": {
+      "N96_original": {
+        "history_steps": 644,
+        "range_kg_m3": [
+          0.25013385313090813,
+          0.749866146869092
+        ],
+        "liquid_inventory_relative_drift": 2.220446049250313e-16,
+        "maximum_excursion_kg_m3": 0.0,
+        "checks": {
+          "mass": true,
+          "engineering_bounds": true,
+          "physical_bounds": true
+        },
+        "snapshots": {
+          "middle": {
+            "time_s": 0.10737255542652152,
+            "variance_kg2_m6": 0.02527015559317288,
+            "variance_retained": 0.7244445783035691,
+            "fundamental_amplitude_kg_m3": 0.0946097636389212,
+            "phase_rad": -1.4656711098239592,
+            "integrated_dissipation": 0.003265697231220142,
+            "variance_budget_relative_residual": 0.08831346785760524
+          },
+          "final": {
+            "time_s": 0.21476412830883945,
+            "variance_kg2_m6": 0.011646045638254984,
+            "variance_retained": 0.3338687247176711,
+            "fundamental_amplitude_kg_m3": 0.029935808324330883,
+            "phase_rad": 2.1401955171022418,
+            "integrated_dissipation": 0.007928210881587865,
+            "variance_budget_relative_residual": 0.21155952817639528
+          }
+        }
+      },
+      "N96_half_step": {
+        "history_steps": 1288,
+        "range_kg_m3": [
+          0.25013385313090786,
+          0.7498661468690928
+        ],
+        "liquid_inventory_relative_drift": 2.220446049250313e-16,
+        "maximum_excursion_kg_m3": 0.0,
+        "checks": {
+          "mass": true,
+          "engineering_bounds": true,
+          "physical_bounds": true
+        },
+        "snapshots": {
+          "middle": {
+            "time_s": 0.10737255542652152,
+            "variance_kg2_m6": 0.025398483488965503,
+            "variance_retained": 0.7281234811899917,
+            "fundamental_amplitude_kg_m3": 0.0948250961517542,
+            "phase_rad": -1.4655742758959518,
+            "integrated_dissipation": 0.0032758011139743166,
+            "variance_budget_relative_residual": 0.08405524894330244
+          },
+          "final": {
+            "time_s": 0.21476412830883945,
+            "variance_kg2_m6": 0.011820350923627067,
+            "variance_retained": 0.3388657069678151,
+            "fundamental_amplitude_kg_m3": 0.02996357732664887,
+            "phase_rad": 2.1487396985227067,
+            "integrated_dissipation": 0.008035941248097419,
+            "variance_budget_relative_residual": 0.20038571969748142
+          }
+        }
+      },
+      "N192": {
+        "history_steps": 1314,
+        "range_kg_m3": [
+          0.25003346552260847,
+          0.7499665344773924
+        ],
+        "liquid_inventory_relative_drift": 2.220446049250313e-16,
+        "maximum_excursion_kg_m3": 0.0,
+        "checks": {
+          "mass": true,
+          "engineering_bounds": true,
+          "physical_bounds": true
+        },
+        "snapshots": {
+          "middle": {
+            "time_s": 0.10737255542652152,
+            "variance_kg2_m6": 0.02615283869269166,
+            "variance_retained": 0.749791129786659,
+            "fundamental_amplitude_kg_m3": 0.09526474181772102,
+            "phase_rad": -1.4807103972011177,
+            "integrated_dissipation": 0.003965742064484976,
+            "variance_budget_relative_residual": 0.022816482112572627
+          },
+          "final": {
+            "time_s": 0.21476412830883945,
+            "variance_kg2_m6": 0.0129861738094068,
+            "variance_retained": 0.37230826246337845,
+            "fundamental_amplitude_kg_m3": 0.031427815630990855,
+            "phase_rad": 2.246439794120998,
+            "integrated_dissipation": 0.010330871971389549,
+            "variance_budget_relative_residual": 0.03532803597988789
+          }
+        }
+      },
+      "N96_matched_step": {
+        "history_steps": 1314,
+        "range_kg_m3": [
+          0.2501338531309079,
+          0.7498661468690927
+        ],
+        "liquid_inventory_relative_drift": 2.220446049250313e-16,
+        "maximum_excursion_kg_m3": 0.0,
+        "checks": {
+          "mass": true,
+          "engineering_bounds": true,
+          "physical_bounds": true
+        },
+        "snapshots": {
+          "middle": {
+            "time_s": 0.10737255542652152,
+            "variance_kg2_m6": 0.025400299551845425,
+            "variance_retained": 0.7281755440632244,
+            "fundamental_amplitude_kg_m3": 0.0948287649072656,
+            "phase_rad": -1.4655657051981452,
+            "integrated_dissipation": 0.003275986194215936,
+            "variance_budget_relative_residual": 0.08399257431288464
+          },
+          "final": {
+            "time_s": 0.21476412830883945,
+            "variance_kg2_m6": 0.01182548111772541,
+            "variance_retained": 0.33901277932304796,
+            "fundamental_amplitude_kg_m3": 0.029961482299352703,
+            "phase_rad": 2.148813646951951,
+            "integrated_dissipation": 0.008038194281130067,
+            "variance_budget_relative_residual": 0.20010946748348404
+          }
+        }
+      }
+    },
+    "variance_budget": {
+      "N96_original": {
+        "middle": {
+          "half_variance_loss_kg2_m6": 0.0048059772889164215,
+          "molecular_loss_kg2_m6": 0.003265697231220142,
+          "numerical_loss_kg2_m6": 0.0015402800576962794,
+          "numerical_fraction": 0.320492579365384,
+          "within_numerical_limit": false
+        },
+        "final": {
+          "half_variance_loss_kg2_m6": 0.01161803226637537,
+          "molecular_loss_kg2_m6": 0.007928210881587865,
+          "numerical_loss_kg2_m6": 0.003689821384787505,
+          "numerical_fraction": 0.31759434818118876,
+          "within_numerical_limit": false
+        }
+      },
+      "N96_half_step": {
+        "middle": {
+          "half_variance_loss_kg2_m6": 0.004741813341020111,
+          "molecular_loss_kg2_m6": 0.0032758011139743166,
+          "numerical_loss_kg2_m6": 0.001466012227045794,
+          "numerical_fraction": 0.30916700460638746,
+          "within_numerical_limit": false
+        },
+        "final": {
+          "half_variance_loss_kg2_m6": 0.011530879623689328,
+          "molecular_loss_kg2_m6": 0.008035941248097419,
+          "numerical_loss_kg2_m6": 0.0034949383755919095,
+          "numerical_fraction": 0.30309382195021967,
+          "within_numerical_limit": false
+        }
+      },
+      "N192": {
+        "middle": {
+          "half_variance_loss_kg2_m6": 0.004363663400520641,
+          "molecular_loss_kg2_m6": 0.003965742064484976,
+          "numerical_loss_kg2_m6": 0.0003979213360356653,
+          "numerical_fraction": 0.0911897411675218,
+          "within_numerical_limit": true
+        },
+        "final": {
+          "half_variance_loss_kg2_m6": 0.01094699584216307,
+          "molecular_loss_kg2_m6": 0.010330871971389549,
+          "numerical_loss_kg2_m6": 0.0006161238707735207,
+          "numerical_fraction": 0.05628246138547704,
+          "within_numerical_limit": true
+        }
+      },
+      "N96_matched_step": {
+        "middle": {
+          "half_variance_loss_kg2_m6": 0.00474090530958015,
+          "molecular_loss_kg2_m6": 0.003275986194215936,
+          "numerical_loss_kg2_m6": 0.0014649191153642137,
+          "numerical_fraction": 0.3089956495026359,
+          "within_numerical_limit": false
+        },
+        "final": {
+          "half_variance_loss_kg2_m6": 0.011528314526640156,
+          "molecular_loss_kg2_m6": 0.008038194281130067,
+          "numerical_loss_kg2_m6": 0.003490120245510089,
+          "numerical_fraction": 0.30274332275069,
+          "within_numerical_limit": false
+        }
+      }
+    },
+    "mesh": {
+      "fine_cells": 4248320,
+      "fine_faces": 12628992,
+      "dx_m": 7.235273720386174e-06,
+      "liquid_volume_m3": 1.60909660760255e-09,
+      "maximum_local_imbalance_relative": 1.6608543340242908e-15,
+      "max_plane_error_relative_to_axial": 1.0590989023115299e-13,
+      "coarse_face_flux_preservation": "exact",
+      "coarse_stability_cap_s": 0.00033385580602200574,
+      "fine_stability_cap_s": 0.00016360396840498105,
+      "common_time_cap_s": 0.00016360396840481745,
+      "matched_case": "N96_matched_step",
+      "common_step_counts": [
+        657,
+        657
+      ],
+      "fine_time_factor": 0.999999999999,
+      "matched_coarse_time_factor": 0.4900438017065178
+    },
+    "common_effective_dt_s": [
+      0.0001634285470723311,
+      0.00016345749297156457
+    ],
+    "time_change": {
+      "middle": {
+        "RMS_over_amplitude": 0.008563569928775439,
+        "passed": false
+      },
+      "final": {
+        "RMS_over_amplitude": 0.010793278819204812,
+        "passed": false
+      }
+    },
+    "spatial_change": {
+      "middle": {
+        "variance_relative_change": 0.028774663801850675,
+        "fundamental_amplitude_relative_change": 0.004576477111433386,
+        "fundamental_phase_change_rad": 0.015144692002972526,
+        "coarse_averaged_field_RMS_over_amplitude": 0.08045070403144564,
+        "numerical_loss_reduction_fraction": 0.7283663433276092,
+        "numerical_loss_decreased": true,
+        "passed": true
+      },
+      "final": {
+        "variance_relative_change": 0.08937911264060083,
+        "fundamental_amplitude_relative_change": 0.0466571825689408,
+        "fundamental_phase_change_rad": 0.09762614716904672,
+        "coarse_averaged_field_RMS_over_amplitude": 0.09383729864552243,
+        "numerical_loss_reduction_fraction": 0.8234662912929315,
+        "numerical_loss_decreased": true,
+        "passed": false
+      }
+    },
+    "checks": {
+      "flow_preserved": true,
+      "bounded_and_conserved": true,
+      "temporal_profile": false,
+      "spatial_spreading": false,
+      "numerical_loss_decreases": true,
+      "fine_numerical_share": true
+    }
+  },
+  "new_openlb_runs": 0,
+  "new_bed_runs": 0,
+  "new_DWSIM_runs": 0
+}

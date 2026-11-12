@@ -1,0 +1,79 @@
+{
+  "summary": "results/adsorption/dispersion_holdout/runs/20261112T033234Z-32e27f5e/summary.json",
+  "summary_sha256": "6b6ea7f8c84a3106c40711e11f76895f533ce495274d3ea8a3153d67c31399a7",
+  "model": {
+    "D_m2_s": 3.249794135544994e-06,
+    "velocity_m_s": 0.01279776444339975,
+    "short_variance_target_s2": 0.0035248725328447476,
+    "reference": {
+      "1": {
+        "stats": {
+          "time_s": 0.8684000000000001,
+          "recovery": 0.9999997171536051,
+          "mean_exit_s": 0.11054783463585316,
+          "variance_s2": 0.0035247229908206574,
+          "early_arrival_s": {
+            "0.05": 0.0424125416681119,
+            "0.1": 0.050478809456621504
+          },
+          "last_transit_raw_moment_fractions": [
+            1.3626832801797343e-05,
+            7.633725122644496e-05
+          ],
+          "tail_passed": true
+        },
+        "max_refinement_cdf_change": 1.3433743743261617e-05,
+        "analytical_mean_s": 0.11054806403555816,
+        "analytical_variance_s2": 0.0035248725328447476,
+        "Peclet": 5.470593637577273
+      },
+      "2": {
+        "stats": {
+          "time_s": 1.7368000000000001,
+          "recovery": 0.9999999998867846,
+          "mean_exit_s": 0.21909612790626476,
+          "variance_s2": 0.007829251944287838,
+          "early_arrival_s": {
+            "0.05": 0.10730211159025761,
+            "0.1": 0.12303498922839001
+          },
+          "last_transit_raw_moment_fractions": [
+            1.8203339528923636e-08,
+            1.1283329187849274e-07
+          ],
+          "tail_passed": true
+        },
+        "max_refinement_cdf_change": 6.6067714745918216e-06,
+        "analytical_mean_s": 0.2190961280711163,
+        "analytical_variance_s2": 0.007829215453523239,
+        "Peclet": 10.941187275154546
+      }
+    },
+    "short_cdf_rmse": 0.0561472860293121
+  },
+  "analysis": {
+    "status": "profile_rejected",
+    "physical_time_s": 0.20576000000000003,
+    "samples": 2573,
+    "planned_samples": 21711,
+    "recovered_fraction": 0.6911922719321606,
+    "model_fraction_at_last_sample": 0.5147124823397131,
+    "profile_rmse_lower_bound": 0.030019421425636378,
+    "profile_limit": 0.03,
+    "early_arrival_s": {
+      "0.05": 0.15272541357308453,
+      "0.1": 0.15433208364942422
+    },
+    "predicted_early_arrival_s": {
+      "0.05": 0.10730211159025761,
+      "0.1": 0.12303498922839001
+    },
+    "max_mass_residual": 2.3976899872866992e-15,
+    "concentration_range_kg_m3": [
+      -3.3244744544900894e-18,
+      1.0
+    ],
+    "qualified": false,
+    "full_window_moments": null
+  }
+}

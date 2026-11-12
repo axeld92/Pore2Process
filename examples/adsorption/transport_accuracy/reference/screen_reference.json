@@ -1,0 +1,221 @@
+{
+  "schema": "pore2process.transport-engineering-accuracy.v1",
+  "assessment_run_id": "20261110T181610Z-9737371f",
+  "source_summary": "results/adsorption/transport_accuracy/assessments/20261110T181610Z-9737371f/summary.json",
+  "source_summary_sha256": "e8f43e9d9490d67b21558c3e8a638e1143cc6f6e7525791972c91ca1145f62a9",
+  "native_run_id": "20261110T180254Z-e4d0abff",
+  "actual_native_runs": 4,
+  "actual_new_DWSIM_runs": 0,
+  "decision": {
+    "eligible_for_closure_assessment": false,
+    "missing_cases": [],
+    "failed_native_screens": {
+      "d800_front_base": [
+        "concentration_nonnegative",
+        "concentration_upper_bound",
+        "outlet_flux_bounds"
+      ],
+      "d450_front_base": [
+        "concentration_nonnegative",
+        "concentration_upper_bound",
+        "outlet_flux_bounds"
+      ]
+    },
+    "closure_qualified": false,
+    "service_prediction_qualified": false,
+    "service_time_s": null,
+    "service_volume_m3": null,
+    "energy_per_on_spec_volume_Wh_m3": null,
+    "reason": "A native screen is a prerequisite, not a qualified closure or a service prediction."
+  },
+  "cases": {
+    "d800_constant_base": {
+      "engineering_checks": {
+        "finite": true,
+        "kinetic_mass": true,
+        "concentration_nonnegative": true,
+        "concentration_upper_bound": true,
+        "local_departure": true,
+        "liquid_inventory": true,
+        "bounded_late_drift": true
+      },
+      "engineering_screen_passed": true,
+      "actual_duration_s": 1.7180749915622733,
+      "physical_void_time_s": 0.10737735629845746,
+      "observed_transits": 16.00034728725161,
+      "maximum_average_liquid_concentration_relative_change": 0.00011113628202719106,
+      "final_quarter_extrema_drift": 0.0004089090806409512,
+      "final_spatial_diagnostic": {
+        "physical_fluid_mean_kg_m3": 1.0000038055480593,
+        "physical_fluid_RMS_departure": 0.002841897517651903,
+        "fraction_fluid_nodes_next_to_solid": 0.19901315789473684,
+        "mean_absolute_departure_next_to_solid": 0.0023003677213159113,
+        "mean_absolute_departure_away_from_solid": 0.0023956488769121846,
+        "proximity_definition": "Six immediate Cartesian neighbours; periodic roll; diagnostic of voxel walls, not surface distance."
+      },
+      "final_wall_population_change_over_physical_liquid_plateau_inventory": -3.8055480617524575e-06,
+      "RTD": null,
+      "observed_outlet_moments": null,
+      "imposed_inlet_moments": null,
+      "RTD_unavailable_reason": null,
+      "absolute_outlet_plateau_relative_error": null,
+      "extrema_locations": null,
+      "uniform_maximum_departure": 0.01098727230267138,
+      "minimum_concentration": 0.9890127276973286,
+      "maximum_concentration": 1.0082788987093407,
+      "normalized_kinetic_mass_residual": 5.294793744676931e-13
+    },
+    "d800_front_base": {
+      "engineering_checks": {
+        "finite": true,
+        "kinetic_mass": true,
+        "concentration_nonnegative": false,
+        "concentration_upper_bound": false,
+        "positive_RTD_moments": true,
+        "absolute_plateau": true,
+        "completed_front": true,
+        "first_moment_tail": true,
+        "second_moment_tail": true,
+        "outlet_flux_bounds": false
+      },
+      "engineering_screen_passed": false,
+      "actual_duration_s": 1.6643696963931176,
+      "physical_void_time_s": 0.10468410010354848,
+      "observed_transits": 15.8989731463212,
+      "maximum_average_liquid_concentration_relative_change": null,
+      "final_quarter_extrema_drift": null,
+      "final_spatial_diagnostic": null,
+      "final_wall_population_change_over_physical_liquid_plateau_inventory": 0.04559745367009624,
+      "RTD": {
+        "mean_s": 0.10652442652931582,
+        "variance_s2": 0.0028664750115651016,
+        "steady_exit_flux_kg_s": 1.48112767581582e-08,
+        "final_fraction": 1.0000000000142466,
+        "tail_area_fraction": 2.0120078540663823e-06,
+        "tail_second_moment_fraction": 2.6368988028633513e-05,
+        "equivalent_sections": 3.958678656404498,
+        "minimum_fraction": -0.5324945541102336,
+        "maximum_fraction": 1.0001752453141888
+      },
+      "observed_outlet_moments": {
+        "mean_s": 0.10652442652931582,
+        "variance_s2": 0.0028664750115651016,
+        "steady_exit_flux_kg_s": 1.48112767581582e-08,
+        "final_fraction": 1.0000000000142466,
+        "tail_area_fraction": 2.0120078540663823e-06,
+        "tail_second_moment_fraction": 2.6368988028633513e-05,
+        "equivalent_sections": 3.958678656404498,
+        "minimum_fraction": -0.5324945541102336,
+        "maximum_fraction": 1.0001752453141888
+      },
+      "imposed_inlet_moments": null,
+      "RTD_unavailable_reason": null,
+      "absolute_outlet_plateau_relative_error": 0.0008446184827821668,
+      "extrema_locations": null,
+      "uniform_maximum_departure": null,
+      "minimum_concentration": -0.3565207018554388,
+      "maximum_concentration": 1.3370280230279348,
+      "normalized_kinetic_mass_residual": 5.3721446546639204e-14
+    },
+    "d450_constant_base": {
+      "engineering_checks": {
+        "finite": true,
+        "kinetic_mass": true,
+        "concentration_nonnegative": true,
+        "concentration_upper_bound": true,
+        "local_departure": true,
+        "liquid_inventory": true,
+        "bounded_late_drift": true
+      },
+      "engineering_screen_passed": true,
+      "actual_duration_s": 0.9663962151001747,
+      "physical_void_time_s": 0.06039969572980753,
+      "observed_transits": 16.00001793756146,
+      "maximum_average_liquid_concentration_relative_change": 6.938041273119033e-05,
+      "final_quarter_extrema_drift": 0.00014662013107380467,
+      "final_spatial_diagnostic": {
+        "physical_fluid_mean_kg_m3": 1.0000461258950837,
+        "physical_fluid_RMS_departure": 0.0015485147265000758,
+        "fraction_fluid_nodes_next_to_solid": 0.19901315789473684,
+        "mean_absolute_departure_next_to_solid": 0.0017297019579342098,
+        "mean_absolute_departure_away_from_solid": 0.0010684826937449657,
+        "proximity_definition": "Six immediate Cartesian neighbours; periodic roll; diagnostic of voxel walls, not surface distance."
+      },
+      "final_wall_population_change_over_physical_liquid_plateau_inventory": -4.6125895078900704e-05,
+      "RTD": null,
+      "observed_outlet_moments": null,
+      "imposed_inlet_moments": null,
+      "RTD_unavailable_reason": null,
+      "absolute_outlet_plateau_relative_error": null,
+      "extrema_locations": null,
+      "uniform_maximum_departure": 0.009781091134195563,
+      "minimum_concentration": 0.9902189088658044,
+      "maximum_concentration": 1.0092834376760458,
+      "normalized_kinetic_mass_residual": 1.4736118626498233e-13
+    },
+    "d450_front_base": {
+      "engineering_checks": {
+        "finite": true,
+        "kinetic_mass": true,
+        "concentration_nonnegative": false,
+        "concentration_upper_bound": false,
+        "positive_RTD_moments": true,
+        "absolute_plateau": true,
+        "completed_front": true,
+        "first_moment_tail": true,
+        "second_moment_tail": true,
+        "outlet_flux_bounds": false
+      },
+      "engineering_screen_passed": false,
+      "actual_duration_s": 0.9362099203165328,
+      "physical_void_time_s": 0.05888473759117073,
+      "observed_transits": 15.899025088920657,
+      "maximum_average_liquid_concentration_relative_change": null,
+      "final_quarter_extrema_drift": null,
+      "final_spatial_diagnostic": null,
+      "final_wall_population_change_over_physical_liquid_plateau_inventory": 0.04560735291504579,
+      "RTD": {
+        "mean_s": 0.06012844512872057,
+        "variance_s2": 0.0008870328406765907,
+        "steady_exit_flux_kg_s": 4.686432052080385e-09,
+        "final_fraction": 1.0000000000016798,
+        "tail_area_fraction": 1.2192057142506676e-06,
+        "tail_second_moment_fraction": 1.58921298044213e-05,
+        "equivalent_sections": 4.075869288942973,
+        "minimum_fraction": -0.5502537989968974,
+        "maximum_fraction": 1.0001519789467992
+      },
+      "observed_outlet_moments": {
+        "mean_s": 0.06012844512872057,
+        "variance_s2": 0.0008870328406765907,
+        "steady_exit_flux_kg_s": 4.686432052080385e-09,
+        "final_fraction": 1.0000000000016798,
+        "tail_area_fraction": 1.2192057142506676e-06,
+        "tail_second_moment_fraction": 1.58921298044213e-05,
+        "equivalent_sections": 4.075869288942973,
+        "minimum_fraction": -0.5502537989968974,
+        "maximum_fraction": 1.0001519789467992
+      },
+      "imposed_inlet_moments": null,
+      "RTD_unavailable_reason": null,
+      "absolute_outlet_plateau_relative_error": 0.0008348012092038726,
+      "extrema_locations": null,
+      "uniform_maximum_departure": null,
+      "minimum_concentration": -0.340190157721896,
+      "maximum_concentration": 1.327981040267751,
+      "normalized_kinetic_mass_residual": 9.109952563774922e-14
+    }
+  },
+  "native_source_files_checked": 29,
+  "native_artifacts_checked": 587,
+  "assessment_source_files_checked": 27,
+  "assessment_artifacts_checked": 27,
+  "new_native_runs_in_check": 0,
+  "new_DWSIM_runs_in_check": 0,
+  "Julia_RTD_analyses": 2,
+  "vendor": {
+    "archive_sha256": "e4d2421b50643482036917c4416145f7d6b495492f3afac64e048212361c8b3e",
+    "original_files_checked": 2070,
+    "preexisting_vendor_config_ignored": true
+  }
+}

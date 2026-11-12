@@ -1,0 +1,19 @@
+schema_version = 1
+id = "adsorption/packed_bed_tracer"
+title = "Native pore-scale tracer to a common macroscopic contact model"
+area = "adsorption"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["adsorption", "adsorption/column_contact"]
+run_module = "examples.adsorption.packed_bed_tracer.run"
+check_module = "examples.adsorption.packed_bed_tracer.check"
+reference_files = ["reference/tracer_reference.json", "reference/conservative_reference.json"]
+protocol_files = ["protocol.md", "conservative_protocol.md"]
+
+[validation]
+numerical = "passed"
+literature = "not_applicable"
+scope = "Synthetic inert tracer with absorbing ends; higher-Peclet failures retained. No new adsorption or DWSIM qualification."
+macro_contact = "conditional"
+higher_Peclet = "failed"

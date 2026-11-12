@@ -1,0 +1,36 @@
+{
+  "summary": "results/adsorption/transport_root_cause/grid_phase/runs/20261110T213713Z-06d80a4b/summary.json",
+  "summary_sha256": "b87269aade6e463ce0510cb9919ba4b861313291d22b90cc6b91f9c4cc43d883",
+  "checker_sha256": "4f9de32b773abcfd59680d31acb7a2155dc00789f4807580b53805b674026dd2",
+  "checks": {
+    "unshifted": {
+      "phase_x_m": 0.0,
+      "nodes_checked": 32768,
+      "maximum_initial_profile_error_kg_m3": 4.996003610813204e-16,
+      "initial_liquid_mean_C_kg_m3": 0.5,
+      "initial_liquid_SD_C_kg_m3": 0.18671667997586203,
+      "initial_liquid_inventory_kg": 7.958701389094142e-10,
+      "physical_liquid_volume_m3": 1.5917402778188285e-09,
+      "tolerance_kg_m3": 1e-12,
+      "passed": true
+    },
+    "shifted": {
+      "phase_x_m": 2.170582116115852e-05,
+      "nodes_checked": 32768,
+      "maximum_initial_profile_error_kg_m3": 5.551115123125783e-16,
+      "initial_liquid_mean_C_kg_m3": 0.5,
+      "initial_liquid_SD_C_kg_m3": 0.18652486853702482,
+      "initial_liquid_inventory_kg": 8.043786190128866e-10,
+      "physical_liquid_volume_m3": 1.6087572380257732e-09,
+      "tolerance_kg_m3": 1e-12,
+      "passed": true
+    }
+  },
+  "final_SD_over_initial_SD": {
+    "unshifted": 0.39064342870646135,
+    "shifted": 0.33970359857586935
+  },
+  "relative_change_in_normalized_SD": -0.1303998131986226,
+  "new_native_runs": 0,
+  "new_DWSIM_runs": 0
+}

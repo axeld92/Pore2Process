@@ -1,0 +1,131 @@
+{
+  "run_id": "20261110T213218Z-a0021dff",
+  "summary": "results/adsorption/transport_root_cause/flat_channel/qualified_runs/20261110T213218Z-a0021dff/summary.json",
+  "summary_sha256": "9f7db668bc71696e4d81c35eb54641867b018559c82dc7f80402790224b2b95f",
+  "completed_native_cases": 6,
+  "interrupted_native_attempts": 2,
+  "application_transport_qualified": false,
+  "cases": {
+    "full32": {
+      "minimum_concentration_kg_m3": 0.24451128186740034,
+      "maximum_concentration_kg_m3": 0.7554887181333274,
+      "RMS_error_over_amplitude": 0.3423067859980055,
+      "first_fluid_row_RMS_error_over_amplitude": 0.17743461746755243,
+      "relative_kinetic_inventory_drift": 7.37632177560954e-13,
+      "relative_physical_liquid_inventory_drift": 7.391864897954292e-13,
+      "checks": {
+        "finite": true,
+        "kinetic_mass": true,
+        "physical_liquid_mass": true,
+        "declared_fluid_volume": true,
+        "initial_active_wall_capacity": true,
+        "z_invariance": true,
+        "strict_bounds": false,
+        "engineering_bounds": true,
+        "no_hidden_diffusivity": true,
+        "profile": false
+      }
+    },
+    "thin32": {
+      "minimum_concentration_kg_m3": 0.24451128186740034,
+      "maximum_concentration_kg_m3": 0.7554887181333274,
+      "RMS_error_over_amplitude": 0.3423067859980055,
+      "first_fluid_row_RMS_error_over_amplitude": 0.17743461746755243,
+      "relative_kinetic_inventory_drift": 6.605826996519681e-13,
+      "relative_physical_liquid_inventory_drift": 6.630251903061435e-13,
+      "checks": {
+        "finite": true,
+        "kinetic_mass": true,
+        "physical_liquid_mass": true,
+        "declared_fluid_volume": true,
+        "initial_active_wall_capacity": true,
+        "z_invariance": true,
+        "strict_bounds": false,
+        "engineering_bounds": true,
+        "no_hidden_diffusivity": true,
+        "profile": false
+      }
+    },
+    "constant32": {
+      "minimum_concentration_kg_m3": 0.4999999999999991,
+      "maximum_concentration_kg_m3": 0.5000000000001107,
+      "RMS_error_over_amplitude": null,
+      "first_fluid_row_RMS_error_over_amplitude": null,
+      "relative_kinetic_inventory_drift": 6.17284001691587e-14,
+      "relative_physical_liquid_inventory_drift": 6.150635556423367e-14,
+      "checks": {
+        "finite": true,
+        "kinetic_mass": true,
+        "physical_liquid_mass": true,
+        "declared_fluid_volume": true,
+        "initial_active_wall_capacity": true,
+        "z_invariance": true,
+        "strict_bounds": true,
+        "engineering_bounds": true,
+        "no_hidden_diffusivity": true,
+        "constant_preservation": true
+      }
+    },
+    "diffusion32": {
+      "minimum_concentration_kg_m3": 0.25120381833195105,
+      "maximum_concentration_kg_m3": 0.7487961816680493,
+      "RMS_error_over_amplitude": 0.0022583036351155415,
+      "first_fluid_row_RMS_error_over_amplitude": 0.0017922646842230257,
+      "relative_kinetic_inventory_drift": 6.210587599753126e-13,
+      "relative_physical_liquid_inventory_drift": 6.230571614196379e-13,
+      "checks": {
+        "finite": true,
+        "kinetic_mass": true,
+        "physical_liquid_mass": true,
+        "declared_fluid_volume": true,
+        "initial_active_wall_capacity": true,
+        "z_invariance": true,
+        "strict_bounds": true,
+        "engineering_bounds": true,
+        "no_hidden_diffusivity": true,
+        "profile": true,
+        "diffusion_analytical_oracle": true
+      }
+    },
+    "thin64": {
+      "minimum_concentration_kg_m3": 0.25002393599265604,
+      "maximum_concentration_kg_m3": 0.7499760640073452,
+      "RMS_error_over_amplitude": 0.027371925752704977,
+      "first_fluid_row_RMS_error_over_amplitude": 0.02931504924788468,
+      "relative_kinetic_inventory_drift": 6.235012506294879e-13,
+      "relative_physical_liquid_inventory_drift": 6.24167384444263e-13,
+      "checks": {
+        "finite": true,
+        "kinetic_mass": true,
+        "physical_liquid_mass": true,
+        "declared_fluid_volume": true,
+        "initial_active_wall_capacity": true,
+        "z_invariance": true,
+        "strict_bounds": true,
+        "engineering_bounds": true,
+        "no_hidden_diffusivity": true,
+        "profile": false
+      }
+    },
+    "thin96": {
+      "minimum_concentration_kg_m3": 0.2500064796656444,
+      "maximum_concentration_kg_m3": 0.7499935203343573,
+      "RMS_error_over_amplitude": 0.005033155905739583,
+      "first_fluid_row_RMS_error_over_amplitude": 0.008961104132861837,
+      "relative_kinetic_inventory_drift": 6.517009154549669e-13,
+      "relative_physical_liquid_inventory_drift": 6.52145004664817e-13,
+      "checks": {
+        "finite": true,
+        "kinetic_mass": true,
+        "physical_liquid_mass": true,
+        "declared_fluid_volume": true,
+        "initial_active_wall_capacity": true,
+        "z_invariance": true,
+        "strict_bounds": true,
+        "engineering_bounds": true,
+        "no_hidden_diffusivity": true,
+        "profile": true
+      }
+    }
+  }
+}

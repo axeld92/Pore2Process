@@ -1,0 +1,370 @@
+{
+  "schema": "pore2process.column-transport-audit.v1",
+  "run_id": "20261110T151006Z-1aaf231f",
+  "source_summary": "results/adsorption/column_transport/transport/runs/20261110T151006Z-1aaf231f/summary.json",
+  "source_summary_sha256": "dc97d9e6e058b1e6697ff63dc4864d8a915c3591215f3ddafe23999b6fd045fb",
+  "transport_qualified": false,
+  "application": {
+    "hydraulic_run": "results/adsorption/column_transport/hydraulics/runs/20261110T150020Z-bac62eb7",
+    "field_sha256": "e35dfb903611563853dff48b98976df8120c0bcfdb0db50def2ea06658df8d9f",
+    "flow_raw_sha256": "336ba77e57934c5e69922d6f3f569d22b0ce5bfbaa9ae3c6093377337e9d4418",
+    "physical_velocity_scale": 0.9565546608662455,
+    "application_particle_Peclet": 10349.836145733107,
+    "application_max_cell_Peclet": 990.9688810599826,
+    "source_role": "Synthetic FCC at source flow/diameter; Dm=1e-9 is a declared phenol-water scenario."
+  },
+  "closure": {
+    "boundary": "convective-column",
+    "native_run_id": "20261110T151006Z-1aaf231f",
+    "calibration_boundary": "native-inert-tracer-only",
+    "axial_dispersion_m2_s": null,
+    "checks": {
+      "uniform_preservation": false,
+      "mass": true,
+      "bounds": false,
+      "mesh": false,
+      "time": false,
+      "convective_outlet": false,
+      "longer_segment_prediction": false
+    },
+    "reason": "No transport coefficient is extracted when uniform preservation fails."
+  },
+  "native_runs": 19,
+  "cases": {
+    "constant_free": {
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "positive": true,
+        "bounded": true,
+        "uniform_preservation": true
+      },
+      "minimum_concentration_kg_m3": 1.0,
+      "maximum_concentration_kg_m3": 1.0,
+      "uniform_maximum_departure": 0.0,
+      "normalized_mass_residual": 2.58854811258544e-13,
+      "qualification_passed": true
+    },
+    "constant_fcc_grid24": {
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "positive": true,
+        "bounded": false,
+        "uniform_preservation": false
+      },
+      "minimum_concentration_kg_m3": 0.9093635980503028,
+      "maximum_concentration_kg_m3": 1.0633375970302819,
+      "uniform_maximum_departure": 0.09063640194969724,
+      "normalized_mass_residual": 2.7443595960877736e-13,
+      "qualification_passed": false
+    },
+    "constant_fcc_grid32": {
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "positive": true,
+        "bounded": false,
+        "uniform_preservation": false
+      },
+      "minimum_concentration_kg_m3": 0.9413756319062295,
+      "maximum_concentration_kg_m3": 1.045374197133227,
+      "uniform_maximum_departure": 0.058624368093770474,
+      "normalized_mass_residual": 2.6238653821806005e-13,
+      "qualification_passed": false
+    },
+    "constant_fcc_grid48": {
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "positive": true,
+        "bounded": false,
+        "uniform_preservation": false
+      },
+      "minimum_concentration_kg_m3": 0.9690052906160738,
+      "maximum_concentration_kg_m3": 1.0231813632759694,
+      "uniform_maximum_departure": 0.030994709383926233,
+      "normalized_mass_residual": 5.852279320346042e-13,
+      "qualification_passed": false
+    },
+    "constant_fcc_time24": {
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "positive": true,
+        "bounded": false,
+        "uniform_preservation": false
+      },
+      "minimum_concentration_kg_m3": 0.9093886980621881,
+      "maximum_concentration_kg_m3": 1.0633327397852887,
+      "uniform_maximum_departure": 0.09061130193781186,
+      "normalized_mass_residual": 2.723584731620796e-13,
+      "qualification_passed": false
+    },
+    "molecular_fcc_trt27": {
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "positive": true,
+        "bounded": false,
+        "uniform_preservation": false
+      },
+      "minimum_concentration_kg_m3": 0.8639606879084805,
+      "maximum_concentration_kg_m3": 1.1381058444228054,
+      "uniform_maximum_departure": 0.13810584442280538,
+      "normalized_mass_residual": 2.721507245174098e-13,
+      "qualification_passed": false
+    },
+    "molecular_fcc_regularized27": {
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "positive": true,
+        "bounded": false,
+        "uniform_preservation": false
+      },
+      "minimum_concentration_kg_m3": 0.9952133975336237,
+      "maximum_concentration_kg_m3": 1.0042850445144667,
+      "uniform_maximum_departure": 0.0047866024663763,
+      "normalized_mass_residual": 2.684112489133538e-13,
+      "qualification_passed": false
+    },
+    "molecular_fcc_mrt7": {
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "positive": true,
+        "bounded": false,
+        "uniform_preservation": false
+      },
+      "minimum_concentration_kg_m3": 0.566168599155805,
+      "maximum_concentration_kg_m3": 1.3522968817364414,
+      "uniform_maximum_departure": 0.433831400844195,
+      "normalized_mass_residual": 2.6758025433467465e-13,
+      "qualification_passed": false
+    },
+    "molecular_fcc_trt7": {
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "positive": true,
+        "bounded": false,
+        "uniform_preservation": false
+      },
+      "minimum_concentration_kg_m3": 0.3420968886421455,
+      "maximum_concentration_kg_m3": 1.6173376686110288,
+      "uniform_maximum_departure": 0.6579031113578545,
+      "normalized_mass_residual": 2.690344948473631e-13,
+      "qualification_passed": false
+    },
+    "outlet_constant_zero": {
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "positive": true,
+        "bounded": true,
+        "uniform_preservation": true
+      },
+      "minimum_concentration_kg_m3": 1.0,
+      "maximum_concentration_kg_m3": 1.0,
+      "uniform_maximum_departure": 0.0,
+      "normalized_mass_residual": 4.6959721809772865e-14,
+      "qualification_passed": true
+    },
+    "outlet_step_zero16": {
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "positive": true,
+        "bounded": true,
+        "uniform_preservation": null,
+        "reference_mean": true,
+        "reference_variance": true,
+        "reference_profile": true,
+        "absolute_plateau": true,
+        "tail": true,
+        "final_signal": true
+      },
+      "minimum_concentration_kg_m3": 2.220446049250313e-16,
+      "maximum_concentration_kg_m3": 0.9999999999999993,
+      "uniform_maximum_departure": null,
+      "normalized_mass_residual": 2.274006739352479e-14,
+      "qualification_passed": true,
+      "comparison": {
+        "mean_relative_error": 0.016966631376772234,
+        "variance_relative_error": 0.03285310813561737,
+        "profile_RMSE": 0.008162493100696623,
+        "absolute_plateau_relative_error": 2.1616441969740663e-10
+      }
+    },
+    "outlet_step_zero32": {
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "positive": true,
+        "bounded": true,
+        "uniform_preservation": null,
+        "reference_mean": true,
+        "reference_variance": true,
+        "reference_profile": true,
+        "absolute_plateau": true,
+        "tail": true,
+        "final_signal": true
+      },
+      "minimum_concentration_kg_m3": 2.220446049250313e-16,
+      "maximum_concentration_kg_m3": 0.9999999999999974,
+      "uniform_maximum_departure": null,
+      "normalized_mass_residual": 1.9532474235599183e-13,
+      "qualification_passed": true,
+      "comparison": {
+        "mean_relative_error": 0.004091847037978269,
+        "variance_relative_error": 0.023761276968967793,
+        "profile_RMSE": 0.0024192262114051,
+        "absolute_plateau_relative_error": 1.2031977636439706e-09
+      }
+    },
+    "outlet_constant_robin": {
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "positive": true,
+        "bounded": true,
+        "uniform_preservation": true
+      },
+      "minimum_concentration_kg_m3": 1.0,
+      "maximum_concentration_kg_m3": 1.0,
+      "uniform_maximum_departure": 0.0,
+      "normalized_mass_residual": 4.6959721809770966e-14,
+      "qualification_passed": true
+    },
+    "outlet_step_robin16": {
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "positive": true,
+        "bounded": true,
+        "uniform_preservation": null,
+        "reference_mean": true,
+        "reference_variance": true,
+        "reference_profile": true,
+        "absolute_plateau": true,
+        "tail": true,
+        "final_signal": true
+      },
+      "minimum_concentration_kg_m3": 0.0,
+      "maximum_concentration_kg_m3": 0.999999999999999,
+      "uniform_maximum_departure": null,
+      "normalized_mass_residual": 6.595450319263413e-14,
+      "qualification_passed": true,
+      "comparison": {
+        "mean_relative_error": 0.03471986723646303,
+        "variance_relative_error": 0.09146157772555918,
+        "profile_RMSE": 0.015283335753912792,
+        "absolute_plateau_relative_error": 4.0864189809752816e-10
+      }
+    },
+    "outlet_step_robin32": {
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "positive": true,
+        "bounded": true,
+        "uniform_preservation": null,
+        "reference_mean": true,
+        "reference_variance": true,
+        "reference_profile": true,
+        "absolute_plateau": true,
+        "tail": true,
+        "final_signal": true
+      },
+      "minimum_concentration_kg_m3": 0.0,
+      "maximum_concentration_kg_m3": 0.9999999999999949,
+      "uniform_maximum_departure": null,
+      "normalized_mass_residual": 2.3155250674195925e-13,
+      "qualification_passed": true,
+      "comparison": {
+        "mean_relative_error": 0.01688880949379512,
+        "variance_relative_error": 0.0405417915883719,
+        "profile_RMSE": 0.007219269588234888,
+        "absolute_plateau_relative_error": 1.7156420728525745e-09
+      }
+    },
+    "application_constant_trt27": {
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "positive": false,
+        "bounded": false,
+        "uniform_preservation": false
+      },
+      "minimum_concentration_kg_m3": -0.18502537935630814,
+      "maximum_concentration_kg_m3": 2.2334277690091477,
+      "uniform_maximum_departure": 1.2334277690091477,
+      "normalized_mass_residual": 5.217655141170566e-13,
+      "qualification_passed": false
+    },
+    "application_constant_regularized27": {
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "positive": true,
+        "bounded": false,
+        "uniform_preservation": false
+      },
+      "minimum_concentration_kg_m3": 0.9890127276973286,
+      "maximum_concentration_kg_m3": 1.0057094833202251,
+      "uniform_maximum_departure": 0.01098727230267138,
+      "normalized_mass_residual": 5.294793744676931e-13,
+      "qualification_passed": false
+    },
+    "application_constant_mrt7": {
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "positive": false,
+        "bounded": false,
+        "uniform_preservation": false
+      },
+      "minimum_concentration_kg_m3": -1.1255970341169368,
+      "maximum_concentration_kg_m3": 2.7122286190650953,
+      "uniform_maximum_departure": 2.125597034116937,
+      "normalized_mass_residual": 5.22074068531082e-13,
+      "qualification_passed": false
+    },
+    "application_constant_trt7": {
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "positive": false,
+        "bounded": false,
+        "uniform_preservation": false
+      },
+      "minimum_concentration_kg_m3": -2.6048480567889674,
+      "maximum_concentration_kg_m3": 7.4429445458269985,
+      "uniform_maximum_departure": 6.4429445458269985,
+      "normalized_mass_residual": 5.18679969976802e-13,
+      "qualification_passed": false
+    }
+  },
+  "failed_native_cases": [
+    "constant_fcc_grid24",
+    "constant_fcc_grid32",
+    "constant_fcc_grid48",
+    "constant_fcc_time24",
+    "molecular_fcc_trt27",
+    "molecular_fcc_regularized27",
+    "molecular_fcc_mrt7",
+    "molecular_fcc_trt7",
+    "application_constant_trt27",
+    "application_constant_regularized27",
+    "application_constant_mrt7",
+    "application_constant_trt7"
+  ],
+  "unqualified_handoff_rejected": true,
+  "new_native_runs_in_check": 0,
+  "new_DWSIM_runs_in_check": 0,
+  "verified": {
+    "source_files": 29,
+    "artifacts": 1790
+  }
+}

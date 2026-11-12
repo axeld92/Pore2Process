@@ -1,0 +1,525 @@
+{
+  "schema": "pore2process.n64-peak-localization.v1",
+  "peak": {
+    "file": "results/adsorption/transport_root_cause/parallel/runs/20261110T212155Z-fb52fcc9/native/n64_sine/peak.csv",
+    "sha256": "8e7b7cce1ff488d3998e20bb5c6ecce8c322b8b32b7d30ade6cf84b12ae9bf4e",
+    "n": 64,
+    "fluid": {
+      "nodes": 157344,
+      "wall_adjacent_nodes": 27200,
+      "bulk_nodes": 130144,
+      "gap_over_dx_quantiles": [
+        0.03117870847161702,
+        2.0839552632629026,
+        3.7697366469200015,
+        5.503959654045528,
+        13.079699274873189
+      ],
+      "downstream_pole_nodes": 10802,
+      "upstream_pole_nodes": 9732
+    },
+    "engineering_violations": {
+      "nodes": 2424,
+      "wall_adjacent_nodes": 80,
+      "bulk_nodes": 2344,
+      "gap_over_dx_quantiles": [
+        0.08527234807050454,
+        4.435490496844238,
+        4.9544496686767285,
+        5.711979175643511,
+        7.509188465182764
+      ],
+      "downstream_pole_nodes": 80,
+      "upstream_pole_nodes": 16
+    },
+    "severe_violations_over_0p1_kg_m3": {
+      "nodes": 16,
+      "wall_adjacent_nodes": 16,
+      "bulk_nodes": 0,
+      "gap_over_dx_quantiles": [
+        0.08527234807050704,
+        0.08527234807050704,
+        0.08527234807050704,
+        0.08527234807050704,
+        0.08527234807050704
+      ],
+      "downstream_pole_nodes": 16,
+      "upstream_pole_nodes": 0
+    },
+    "minimum": {
+      "node_id_ijk": [
+        50,
+        31,
+        63
+      ],
+      "coordinates_m": [
+        0.0010961439686385053,
+        0.0006837333665764934,
+        0.001378319643733566
+      ],
+      "concentration_kg_m3": 0.12709329121639268,
+      "speed_m_s": 0.00017154599942252556,
+      "voxel_solid_neighbours": 9,
+      "nearest_sphere_centre_m": [
+        0.0006945862771570726,
+        0.0006945862771570726,
+        0.0013891725543141453
+      ],
+      "smooth_surface_gap_m": 1.8509063372104868e-06,
+      "gap_over_dx": 0.08527234807050704,
+      "sphere_outward_normal": [
+        0.9992703391950749,
+        -0.027007306464731734,
+        -0.027007306464731734
+      ]
+    },
+    "maximum": {
+      "node_id_ijk": [
+        18,
+        31,
+        32
+      ],
+      "coordinates_m": [
+        0.00040155769148143264,
+        0.0006837333665764934,
+        0.0007054391877376519
+      ],
+      "concentration_kg_m3": 0.8785433555070885,
+      "speed_m_s": 0.00017154599942163554,
+      "voxel_solid_neighbours": 9,
+      "nearest_sphere_centre_m": [
+        0.0,
+        0.0006945862771570726,
+        0.0006945862771570726
+      ],
+      "smooth_surface_gap_m": 1.8509063372104868e-06,
+      "gap_over_dx": 0.08527234807050704,
+      "sphere_outward_normal": [
+        0.9992703391950749,
+        -0.027007306464731734,
+        0.027007306464731734
+      ]
+    },
+    "caveat": "Peak localization is association, not proof of the first origin. Smooth solid spheres are convex; narrow void passages and voxel corners are separate geometry notions."
+  },
+  "peak_record": {
+    "step": 7510,
+    "time_s": 0.14282109303102666,
+    "maximum_excursion_kg_m3": 0.1285433555070885,
+    "initial_amplitude_kg_m3": 0.25
+  },
+  "exact_population_balance": {
+    "schema": "pore2process.exact_population_audit.v1",
+    "step": 7510,
+    "dx_m": 2.170582116115852e-05,
+    "dt_s": 1.9017455796408345e-05,
+    "density_scale_kg_m3": 1.0,
+    "all": {
+      "nodes": 262144,
+      "min_density_after_native": 0.12709329121639268,
+      "max_density_after_native": 0.8785433555070885,
+      "max_abs_density_change_native": 0.0025479781165882454,
+      "max_abs_collision_change_native": 7.771561172376096e-16,
+      "max_abs_stream_residual_native": 8.881784197001252e-16,
+      "max_abs_link_balance_residual_native": 8.665485863590394e-16,
+      "negative_post_population_nodes": 32,
+      "negative_post_populations": 32,
+      "min_unshifted_post_population_native": -1.1987617491318256e-05,
+      "inventory_change_kg": 4.036481147174573e-26
+    },
+    "fluid": {
+      "nodes": 157344,
+      "min_density_after_native": 0.12709329121639268,
+      "max_density_after_native": 0.8785433555070885,
+      "max_abs_density_change_native": 0.0005368486007629736,
+      "max_abs_collision_change_native": 5.551115123125783e-16,
+      "max_abs_stream_residual_native": 8.881784197001252e-16,
+      "max_abs_link_balance_residual_native": 7.3980535239548395e-16,
+      "negative_post_population_nodes": 16,
+      "negative_post_populations": 16,
+      "min_unshifted_post_population_native": -1.1584517568665256e-05,
+      "inventory_change_kg": 1.803781635225605e-18
+    },
+    "wall_adjacent_fluid": {
+      "nodes": 27200,
+      "min_density_after_native": 0.12709329121639268,
+      "max_density_after_native": 0.8785433555070885,
+      "max_abs_density_change_native": 9.771256221624558e-05,
+      "max_abs_collision_change_native": 4.440892098500626e-16,
+      "max_abs_stream_residual_native": 7.771561172376096e-16,
+      "max_abs_link_balance_residual_native": 7.342183230753946e-16,
+      "negative_post_population_nodes": 16,
+      "negative_post_populations": 16,
+      "min_unshifted_post_population_native": -1.1584517568665256e-05,
+      "inventory_change_kg": 3.703705155844346e-20
+    },
+    "bulk_fluid": {
+      "nodes": 130144,
+      "min_density_after_native": 0.16688964521445848,
+      "max_density_after_native": 0.8317593871168221,
+      "max_abs_density_change_native": 0.0005368486007629736,
+      "max_abs_collision_change_native": 5.551115123125783e-16,
+      "max_abs_stream_residual_native": 8.881784197001252e-16,
+      "max_abs_link_balance_residual_native": 7.3980535239548395e-16,
+      "negative_post_population_nodes": 0,
+      "negative_post_populations": 0,
+      "min_unshifted_post_population_native": 0.000644585248837825,
+      "inventory_change_kg": 1.766744583673974e-18
+    },
+    "wall": {
+      "nodes": 104800,
+      "min_density_after_native": 0.22298876539785295,
+      "max_density_after_native": 0.778467650737497,
+      "max_abs_density_change_native": 0.0025479781165882454,
+      "max_abs_collision_change_native": 7.771561172376096e-16,
+      "max_abs_stream_residual_native": 8.326672684688674e-16,
+      "max_abs_link_balance_residual_native": 8.665485863590394e-16,
+      "negative_post_population_nodes": 16,
+      "negative_post_populations": 16,
+      "min_unshifted_post_population_native": -1.1987617491318256e-05,
+      "inventory_change_kg": -1.803781594842628e-18
+    },
+    "fluid_to_wall_net_kg_s": -9.484873318843195e-14,
+    "wall_to_fluid_net_kg_s": 9.484873318843518e-14,
+    "interface_antisymmetry_residual_kg_s": 3.2311742677852644e-27,
+    "global_net_link_outflow_kg_s": 0.0,
+    "max_abs_collision_mass_change_native": 7.771561172376096e-16,
+    "max_abs_stream_residual_native": 8.881784197001252e-16,
+    "max_abs_link_balance_residual_native": 8.665485863590394e-16,
+    "density_tolerance_native": 1e-11,
+    "checks": {
+      "collision_preserves_local_density": true,
+      "streaming_matches_actual_population_links": true,
+      "local_link_balance_closes": true,
+      "wall_interface_flux_is_antisymmetric": true,
+      "global_periodic_link_flux_cancels": true
+    },
+    "interpretation": "These are exact population balances, not centred div(u). Local density changes and instantaneous fluid-wall exchange are allowed by full-way BounceBack numerical storage. Passing conservation does not establish concentration boundedness or transport accuracy. Negative individual populations are a diagnostic, not by themselves an acceptance criterion."
+  },
+  "whole_history_minimum_C_kg_m3": 0.12708898156344817,
+  "whole_history_minimum_step": 7497,
+  "peak_replay_maximum_concentration_difference_kg_m3": 0.0,
+  "negative_population_nodes": [
+    {
+      "ijk": [
+        14,
+        2,
+        26
+      ],
+      "C_after_stream_kg_m3": 0.2272200570375842,
+      "min_unshifted_post_population": -1.1584517566169857e-05,
+      "solid_links": 13,
+      "smooth_sphere_gap_m": 1.8509063372104868e-06,
+      "gap_over_dx": 0.08527234807050704,
+      "sphere_outward_normal": [
+        -0.9452557262656114,
+        0.13503653232365878,
+        -0.2970803711120493
+      ]
+    },
+    {
+      "ijk": [
+        14,
+        2,
+        37
+      ],
+      "C_after_stream_kg_m3": 0.22722005703734272,
+      "min_unshifted_post_population": -1.1584517565312903e-05,
+      "solid_links": 13,
+      "smooth_sphere_gap_m": 1.8509063372104868e-06,
+      "gap_over_dx": 0.08527234807050704,
+      "sphere_outward_normal": [
+        -0.9452557262656114,
+        0.13503653232365878,
+        0.2970803711120493
+      ]
+    },
+    {
+      "ijk": [
+        14,
+        5,
+        29
+      ],
+      "C_after_stream_kg_m3": 0.22722005703725578,
+      "min_unshifted_post_population": -1.1584517567830854e-05,
+      "solid_links": 13,
+      "smooth_sphere_gap_m": 1.8509063372104868e-06,
+      "gap_over_dx": 0.08527234807050704,
+      "sphere_outward_normal": [
+        -0.9452557262656114,
+        0.2970803711120493,
+        -0.13503653232365867
+      ]
+    },
+    {
+      "ijk": [
+        14,
+        5,
+        34
+      ],
+      "C_after_stream_kg_m3": 0.22722005703713177,
+      "min_unshifted_post_population": -1.1584517568665256e-05,
+      "solid_links": 13,
+      "smooth_sphere_gap_m": 1.8509063372104868e-06,
+      "gap_over_dx": 0.08527234807050704,
+      "sphere_outward_normal": [
+        -0.9452557262656114,
+        0.2970803711120493,
+        0.13503653232365867
+      ]
+    },
+    {
+      "ijk": [
+        14,
+        26,
+        2
+      ],
+      "C_after_stream_kg_m3": 0.2272200570379984,
+      "min_unshifted_post_population": -1.1584517564004922e-05,
+      "solid_links": 13,
+      "smooth_sphere_gap_m": 1.8509063372104868e-06,
+      "gap_over_dx": 0.08527234807050704,
+      "sphere_outward_normal": [
+        -0.9452557262656114,
+        -0.2970803711120493,
+        0.13503653232365878
+      ]
+    },
+    {
+      "ijk": [
+        14,
+        26,
+        61
+      ],
+      "C_after_stream_kg_m3": 0.22722005703788384,
+      "min_unshifted_post_population": -1.1584517563785479e-05,
+      "solid_links": 13,
+      "smooth_sphere_gap_m": 1.8509063372104868e-06,
+      "gap_over_dx": 0.08527234807050704,
+      "sphere_outward_normal": [
+        -0.9452557262656114,
+        -0.2970803711120493,
+        -0.13503653232365867
+      ]
+    },
+    {
+      "ijk": [
+        14,
+        29,
+        5
+      ],
+      "C_after_stream_kg_m3": 0.2272200570376668,
+      "min_unshifted_post_population": -1.1584517563871348e-05,
+      "solid_links": 13,
+      "smooth_sphere_gap_m": 1.8509063372104868e-06,
+      "gap_over_dx": 0.08527234807050704,
+      "sphere_outward_normal": [
+        -0.9452557262656114,
+        -0.13503653232365867,
+        0.2970803711120493
+      ]
+    },
+    {
+      "ijk": [
+        14,
+        29,
+        58
+      ],
+      "C_after_stream_kg_m3": 0.2272200570380234,
+      "min_unshifted_post_population": -1.1584517563310165e-05,
+      "solid_links": 13,
+      "smooth_sphere_gap_m": 1.8509063372104326e-06,
+      "gap_over_dx": 0.08527234807050454,
+      "sphere_outward_normal": [
+        -0.9452557262656115,
+        -0.1350365323236587,
+        -0.2970803711120491
+      ]
+    },
+    {
+      "ijk": [
+        14,
+        34,
+        5
+      ],
+      "C_after_stream_kg_m3": 0.22722005703734272,
+      "min_unshifted_post_population": -1.1584517565312903e-05,
+      "solid_links": 13,
+      "smooth_sphere_gap_m": 1.8509063372104868e-06,
+      "gap_over_dx": 0.08527234807050704,
+      "sphere_outward_normal": [
+        -0.9452557262656114,
+        0.13503653232365867,
+        0.2970803711120493
+      ]
+    },
+    {
+      "ijk": [
+        14,
+        34,
+        58
+      ],
+      "C_after_stream_kg_m3": 0.2272200570375842,
+      "min_unshifted_post_population": -1.1584517566169857e-05,
+      "solid_links": 13,
+      "smooth_sphere_gap_m": 1.8509063372104326e-06,
+      "gap_over_dx": 0.08527234807050454,
+      "sphere_outward_normal": [
+        -0.9452557262656115,
+        0.1350365323236587,
+        -0.2970803711120491
+      ]
+    },
+    {
+      "ijk": [
+        14,
+        37,
+        2
+      ],
+      "C_after_stream_kg_m3": 0.22722005703713177,
+      "min_unshifted_post_population": -1.1584517568665256e-05,
+      "solid_links": 13,
+      "smooth_sphere_gap_m": 1.8509063372104868e-06,
+      "gap_over_dx": 0.08527234807050704,
+      "sphere_outward_normal": [
+        -0.9452557262656114,
+        0.2970803711120493,
+        0.13503653232365878
+      ]
+    },
+    {
+      "ijk": [
+        14,
+        37,
+        61
+      ],
+      "C_after_stream_kg_m3": 0.22722005703725578,
+      "min_unshifted_post_population": -1.1584517567830854e-05,
+      "solid_links": 13,
+      "smooth_sphere_gap_m": 1.8509063372104868e-06,
+      "gap_over_dx": 0.08527234807050704,
+      "sphere_outward_normal": [
+        -0.9452557262656114,
+        0.2970803711120493,
+        -0.13503653232365867
+      ]
+    },
+    {
+      "ijk": [
+        14,
+        58,
+        29
+      ],
+      "C_after_stream_kg_m3": 0.22722005703788384,
+      "min_unshifted_post_population": -1.1584517563785479e-05,
+      "solid_links": 13,
+      "smooth_sphere_gap_m": 1.8509063372104326e-06,
+      "gap_over_dx": 0.08527234807050454,
+      "sphere_outward_normal": [
+        -0.9452557262656115,
+        -0.2970803711120491,
+        -0.1350365323236587
+      ]
+    },
+    {
+      "ijk": [
+        14,
+        58,
+        34
+      ],
+      "C_after_stream_kg_m3": 0.2272200570379984,
+      "min_unshifted_post_population": -1.1584517564004922e-05,
+      "solid_links": 13,
+      "smooth_sphere_gap_m": 1.8509063372104326e-06,
+      "gap_over_dx": 0.08527234807050454,
+      "sphere_outward_normal": [
+        -0.9452557262656115,
+        -0.2970803711120491,
+        0.1350365323236587
+      ]
+    },
+    {
+      "ijk": [
+        14,
+        61,
+        26
+      ],
+      "C_after_stream_kg_m3": 0.2272200570380234,
+      "min_unshifted_post_population": -1.1584517563310165e-05,
+      "solid_links": 13,
+      "smooth_sphere_gap_m": 1.8509063372104868e-06,
+      "gap_over_dx": 0.08527234807050704,
+      "sphere_outward_normal": [
+        -0.9452557262656114,
+        -0.13503653232365867,
+        -0.2970803711120493
+      ]
+    },
+    {
+      "ijk": [
+        14,
+        61,
+        37
+      ],
+      "C_after_stream_kg_m3": 0.2272200570376668,
+      "min_unshifted_post_population": -1.1584517563871348e-05,
+      "solid_links": 13,
+      "smooth_sphere_gap_m": 1.8509063372104868e-06,
+      "gap_over_dx": 0.08527234807050704,
+      "sphere_outward_normal": [
+        -0.9452557262656114,
+        -0.13503653232365867,
+        0.2970803711120493
+      ]
+    }
+  ],
+  "negative_node_severe_excursion_overlap": 0,
+  "mesh_comparison": {
+    "n32_sine": {
+      "maximum_C_kg_m3": 0.882506914143073,
+      "selected_peak_maximum_excursion_kg_m3": 0.13250691414307303,
+      "smooth_sphere_gap_m": 1.3551435782432647e-05,
+      "gap_over_dx": 0.3121613248772699,
+      "normal_x": 0.9972413740548081,
+      "speed_m_s": 0.0007551898126361402,
+      "solid_neighbours": 9
+    },
+    "n48_sine": {
+      "maximum_C_kg_m3": 0.8681220515794079,
+      "selected_peak_maximum_excursion_kg_m3": 0.11812205157940792,
+      "smooth_sphere_gap_m": 2.014456386778004e-05,
+      "gap_over_dx": 0.6960539658306406,
+      "normal_x": 0.9988130559615215,
+      "speed_m_s": 0.0004989361687669316,
+      "solid_neighbours": 9
+    },
+    "n64_sine": {
+      "maximum_C_kg_m3": 0.8785433555070885,
+      "selected_peak_maximum_excursion_kg_m3": 0.1285433555070885,
+      "smooth_sphere_gap_m": 1.8509063372104868e-06,
+      "gap_over_dx": 0.08527234807050704,
+      "normal_x": 0.9992703391950749,
+      "speed_m_s": 0.00017154599942163554,
+      "solid_neighbours": 9
+    }
+  },
+  "evidence_sha256": {
+    "results/adsorption/transport_root_cause/parallel/runs/20261110T212155Z-fb52fcc9/summary.json": "d443e7d05d91feceb1bb02fa4cfe5207608a013a361528f35eed634abb4e8a40",
+    "results/adsorption/transport_root_cause/parallel/runs/20261110T212155Z-fb52fcc9/native/n64_sine/peak.csv": "8e7b7cce1ff488d3998e20bb5c6ecce8c322b8b32b7d30ade6cf84b12ae9bf4e",
+    "results/adsorption/transport_root_cause/parallel/runs/20261110T212155Z-fb52fcc9/native/n64_sine/peak.json": "29b9e02e2c6eb26340fb59e8274f425ae0fe0cfcd3bf5014779dc7364273320d",
+    "results/adsorption/transport_root_cause/parallel/runs/20261110T212155Z-fb52fcc9/native/n64_sine/raw.json": "fb58744c855e9ed80b15fe5d529b5c818b1cc42f3a8b577a066a02261541626c",
+    "results/adsorption/transport_root_cause/parallel/runs/20261110T212155Z-fb52fcc9/native/n64_sine/inventory.csv": "135a2aa66d07a9f4f97174c6384a5604beaeda81b837c7c00d90d76814b2581d",
+    "results/adsorption/transport_root_cause/replay/runs/20261110T213016Z-68e75fda/summary.json": "1d47ea62439c5b339cc03355ea290ef9a7dacb32cef9b2108b15707f71606478",
+    "results/adsorption/transport_root_cause/replay/runs/20261110T213016Z-68e75fda/native/n64_sine_audit7510/audit_7510.csv": "43a186b23ecd3fac00f597275581e04e56a43f6a2f993aa755af3198e2fbe971",
+    "results/adsorption/transport_root_cause/replay/runs/20261110T213016Z-68e75fda/native/n64_sine_audit7510/raw.json": "8f3f323c8bc635f62a4ed710dee6080a4bc823831ce6f8fcef99ab5eeca1440f",
+    "examples/adsorption/transport_root_cause/flux_audit/findings.json": "da633bb7f7ff5024e711cb21c69b3797b9352107486a4c8833a964fc5a8c8f14"
+  },
+  "analysis_source_sha256": {
+    "examples/adsorption/transport_root_cause/flux_audit/findings64.py": "3999978536a7e7e7cc6b4ae6c711091c3697f7d9b8f8d54a52bc7c304fcfd14c",
+    "examples/adsorption/transport_root_cause/flux_audit/findings.py": "7f08b52db819062120f9b428866a87e3862d420c802b5ea15c106c971acfadc7",
+    "examples/adsorption/transport_root_cause/flux_audit/analysis.py": "d929bd09772e40c641f49436b2958d63d8fa59cf6f607ea9d7f22b64f81be414"
+  },
+  "new_native_runs": 0,
+  "new_DWSIM_runs": 0,
+  "interpretation": "Analytic smooth-surface proximity and voxel wall/stagnation structure are correlated with the selected dominant peaks. The actual full-way wall is a voxel midlink, not the analytic sphere cut. These three meshes do not prove causality or a monotonic gap/error law; grid-phase sensitivity is a separate test."
+}

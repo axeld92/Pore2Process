@@ -1,0 +1,202 @@
+{
+  "summary": "results/adsorption/stock_transport_candidate/runs/20261111T133159Z-7f69a322/summary.json",
+  "summary_sha256": "99f9aaa64ecc977b614d4b1e25051e93e3539f57e72446741729d82961e2c242",
+  "reference_path": "results/adsorption/stationary_curved_wall/runs/20261111T122659Z-56628d90/reference/radial_4096_4096.csv",
+  "reference_sha256": "d4b34bf83be22416e721014dca36580082b886d1d404f40cb9b12d507960bd27",
+  "new_native_runs": 6,
+  "new_bed_runs": 0,
+  "new_DWSIM_runs": 0,
+  "passes_at_128": {
+    "direct_fullway": false,
+    "regularized_halfway": false,
+    "direct_halfway": false
+  },
+  "cases": {
+    "baseline": {
+      "uniform_maximum_departure_kg_m3": 0.06576095473176924,
+      "uniform_range_kg_m3": [
+        0.46385883488610613,
+        0.5657609547317692
+      ],
+      "uniform_checks": {
+        "engineering_bounds": false,
+        "physical_bounds": false,
+        "constant": false
+      },
+      "varying_range_kg_m3": [
+        0.23863521763282114,
+        0.8360055694760828
+      ],
+      "varying_checks": {
+        "engineering_bounds": false,
+        "physical_bounds": false,
+        "middle_profile": false,
+        "middle_shell": false,
+        "final_profile": false,
+        "final_shell": false
+      },
+      "varying_maximum_excursion_kg_m3": 0.08600556947608284,
+      "closed_inventory_relative_drift": 6.270539643082884e-13,
+      "profile": {
+        "middle": {
+          "time_s": 0.10737255542652152,
+          "RMS_over_amplitude": 0.04712983684652256,
+          "shell_RMS_over_amplitude": 0.07811978193593783,
+          "link_RMS_over_amplitude": 0.09537452739033943,
+          "interior_RMS_over_amplitude": 0.03187940083804892,
+          "max_over_amplitude": 0.46409434194133947,
+          "liquid_sd_kg_m3": 0.10680384556366096,
+          "reference_sd_at_cells_kg_m3": 0.11230320920416956
+        },
+        "final": {
+          "time_s": 0.21476412830883945,
+          "RMS_over_amplitude": 0.12287079050387432,
+          "shell_RMS_over_amplitude": 0.1310398495794521,
+          "link_RMS_over_amplitude": 0.15499564905236804,
+          "interior_RMS_over_amplitude": 0.1202220236802046,
+          "max_over_amplitude": 0.5893227940409442,
+          "liquid_sd_kg_m3": 0.028274931882943125,
+          "reference_sd_at_cells_kg_m3": 0.04482562787447762
+        }
+      }
+    },
+    "direct_fullway": {
+      "uniform_maximum_departure_kg_m3": 0.5672258746476637,
+      "uniform_range_kg_m3": [
+        -0.06722587464766372,
+        0.8265854983150874
+      ],
+      "uniform_checks": {
+        "engineering_bounds": false,
+        "physical_bounds": false,
+        "constant": false
+      },
+      "varying_range_kg_m3": [
+        -0.06896889972914888,
+        1.028449996718265
+      ],
+      "varying_checks": {
+        "engineering_bounds": false,
+        "physical_bounds": false,
+        "middle_profile": false,
+        "middle_shell": false,
+        "final_profile": false,
+        "final_shell": false
+      },
+      "varying_maximum_excursion_kg_m3": 0.3189688997291489,
+      "closed_inventory_relative_drift": 3.3306690738754696e-15,
+      "profile": {
+        "middle": {
+          "time_s": 0.10737255542652152,
+          "RMS_over_amplitude": 0.1551781237528285,
+          "shell_RMS_over_amplitude": 0.25850601277944435,
+          "interior_RMS_over_amplitude": 0.1039755242609741,
+          "link_RMS_over_amplitude": 0.44825671568829156,
+          "liquid_sd_kg_m3": 0.11141469946341336,
+          "reference_sd_at_cells_kg_m3": 0.11230320920416956
+        },
+        "final": {
+          "time_s": 0.21476412830883945,
+          "RMS_over_amplitude": 0.2618216505070621,
+          "shell_RMS_over_amplitude": 0.33375240346487867,
+          "interior_RMS_over_amplitude": 0.23505691043824234,
+          "link_RMS_over_amplitude": 0.5941456875518357,
+          "liquid_sd_kg_m3": 0.058775973132505675,
+          "reference_sd_at_cells_kg_m3": 0.04482562787447762
+        }
+      }
+    },
+    "regularized_halfway": {
+      "uniform_maximum_departure_kg_m3": 0.06713656531825762,
+      "uniform_range_kg_m3": [
+        0.46295795800819617,
+        0.5671365653182576
+      ],
+      "uniform_checks": {
+        "engineering_bounds": false,
+        "physical_bounds": false,
+        "constant": false
+      },
+      "varying_range_kg_m3": [
+        0.21637294405118934,
+        0.8452537954647382
+      ],
+      "varying_checks": {
+        "engineering_bounds": false,
+        "physical_bounds": false,
+        "middle_profile": false,
+        "middle_shell": false,
+        "final_profile": false,
+        "final_shell": false
+      },
+      "varying_maximum_excursion_kg_m3": 0.09525379546473822,
+      "closed_inventory_relative_drift": 6.323830348264892e-13,
+      "profile": {
+        "middle": {
+          "time_s": 0.10737255542652152,
+          "RMS_over_amplitude": 0.0482788614432077,
+          "shell_RMS_over_amplitude": 0.08081987453446596,
+          "interior_RMS_over_amplitude": 0.03204267804698651,
+          "link_RMS_over_amplitude": 0.10220686005004946,
+          "liquid_sd_kg_m3": 0.10748289926548245,
+          "reference_sd_at_cells_kg_m3": 0.11230320920416956
+        },
+        "final": {
+          "time_s": 0.21476412830883945,
+          "RMS_over_amplitude": 0.11817033260252871,
+          "shell_RMS_over_amplitude": 0.11035343096640467,
+          "interior_RMS_over_amplitude": 0.12049382748848655,
+          "link_RMS_over_amplitude": 0.09956685579907716,
+          "liquid_sd_kg_m3": 0.029615510828315452,
+          "reference_sd_at_cells_kg_m3": 0.04482562787447762
+        }
+      }
+    },
+    "direct_halfway": {
+      "uniform_maximum_departure_kg_m3": 0.6522953546677006,
+      "uniform_range_kg_m3": [
+        -0.1522953546677006,
+        0.8591901007181323
+      ],
+      "uniform_checks": {
+        "engineering_bounds": false,
+        "physical_bounds": false,
+        "constant": false
+      },
+      "varying_range_kg_m3": [
+        -0.17910122406553075,
+        1.0640973156459796
+      ],
+      "varying_checks": {
+        "engineering_bounds": false,
+        "physical_bounds": false,
+        "middle_profile": false,
+        "middle_shell": false,
+        "final_profile": false,
+        "final_shell": false
+      },
+      "varying_maximum_excursion_kg_m3": 0.42910122406553075,
+      "closed_inventory_relative_drift": 2.6645352591003757e-15,
+      "profile": {
+        "middle": {
+          "time_s": 0.10737255542652152,
+          "RMS_over_amplitude": 0.174758557626464,
+          "shell_RMS_over_amplitude": 0.3065622660270683,
+          "interior_RMS_over_amplitude": 0.10414869085437782,
+          "link_RMS_over_amplitude": 0.5422213596919901,
+          "liquid_sd_kg_m3": 0.11352437945120733,
+          "reference_sd_at_cells_kg_m3": 0.11230320920416956
+        },
+        "final": {
+          "time_s": 0.21476412830883945,
+          "RMS_over_amplitude": 0.26441216397451967,
+          "shell_RMS_over_amplitude": 0.34228902530521793,
+          "interior_RMS_over_amplitude": 0.23504600986267926,
+          "link_RMS_over_amplitude": 0.6108888442914551,
+          "liquid_sd_kg_m3": 0.06055306090982823,
+          "reference_sd_at_cells_kg_m3": 0.04482562787447762
+        }
+      }
+    }
+  }
+}

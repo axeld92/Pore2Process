@@ -1,0 +1,20 @@
+schema_version = 1
+id = "adsorption/disordered_packing"
+title = "Ordered and disordered eight-cell tracer at matched Péclet numbers"
+area = "adsorption"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["adsorption/repeated_geometry"]
+run_module = "examples.adsorption.disordered_packing.native"
+check_module = "examples.adsorption.disordered_packing.compare"
+reference_files = ["reference_summary.json"]
+protocol_files = ["protocol.md"]
+
+[validation]
+native_hydraulics = "passed"
+inert_recovery = "passed"
+time_step = "passed"
+spatial = "mixed"
+literature = "not_assessed"
+scope = "Matched carbon mass and Péclet numbers in one synthetic ordered and one disordered eight-section packing. The disordered bypass reduction holds at both grids and its magnitude remains grid-sensitive."

@@ -1,0 +1,87 @@
+{
+  "schema": "pore2process.column-transport-hydraulics.v1",
+  "run_id": "20261110T154704Z-d14d13ed",
+  "source_summary": "results/adsorption/column_transport/hydraulics/runs/20261110T154704Z-d14d13ed/summary.json",
+  "source_summary_sha256": "57ce925bd15d8bb11e0949d61f362691e9e80481ff6fb8e5fdc7d4d014e9f287",
+  "inputs": {
+    "flow_m3_s": 7.3e-07,
+    "area_m2": 9.503317777109123e-05,
+    "superficial_velocity_m_s": 0.0076815278318732964,
+    "native_target_velocity_m_s": 0.008030411795722147,
+    "native_kinematic_viscosity_m2_s": 1e-06,
+    "carrier_viscosity_Pa_s": 0.0009544237449881605,
+    "carrier_density_kg_m3": 997.7723009826169,
+    "nominal_porosity": 0.6,
+    "particle_density_kg_m3": 1291.4485165794067,
+    "dry_mass_kg": 0.007032455155060752,
+    "length_m": 0.14325000000000002,
+    "source_printed_bulk_density_kg_m3": 740.0,
+    "source_printed_voidage": 0.427,
+    "source_bed_length_m": 0.1,
+    "inventory_role": "Source density-derived mass, transferred as a scenario; not weighed per-run mass.",
+    "geometry_role": "Synthetic FCC at .6 voidage; not experimental specimen reconstruction."
+  },
+  "cases": {
+    "d800": {
+      "diameter_m": 0.0008,
+      "particle_Reynolds": 6.424329436577718,
+      "pressure_drop_Pa": 308.8092716739164,
+      "pressure_gradient_Pa_m": 2155.736625995926,
+      "shaft_power_W": 0.0003005743577626148,
+      "specific_pump_energy_kWh_m3": 0.00011437380432367381,
+      "refinement": {
+        "grid_pressure_relative_change": 0.025450165324248597,
+        "time_pressure_relative_change": 5.666222566702572e-07
+      },
+      "checks": {
+        "native": true,
+        "grid": true,
+        "time": true,
+        "pump": true,
+        "pump_mass": true,
+        "pump_energy": true,
+        "reload": true,
+        "liquid": true
+      },
+      "breakthrough_time_s": null,
+      "service_volume_m3": null,
+      "cumulative_service_energy_kWh": null
+    },
+    "d450": {
+      "diameter_m": 0.00045,
+      "particle_Reynolds": 3.6136853080749667,
+      "pressure_drop_Pa": 958.187818454515,
+      "pressure_gradient_Pa_m": 6688.920198635356,
+      "shaft_power_W": 0.0009326361432957332,
+      "specific_pump_energy_kWh_m3": 0.00035488437720537796,
+      "refinement": {
+        "grid_pressure_relative_change": 0.02697456002222587,
+        "time_pressure_relative_change": 8.771122494977135e-08
+      },
+      "checks": {
+        "native": true,
+        "grid": true,
+        "time": true,
+        "pump": true,
+        "pump_mass": true,
+        "pump_energy": true,
+        "reload": true,
+        "liquid": true
+      },
+      "breakthrough_time_s": null,
+      "service_volume_m3": null,
+      "cumulative_service_energy_kWh": null
+    }
+  },
+  "power_ratio_small_to_large": 3.102846664093359,
+  "hydraulic_checks_passed": true,
+  "service_prediction_qualified": false,
+  "actual_native_flow_runs": 18,
+  "actual_DWSIM_cases": 3,
+  "new_native_runs_in_check": 0,
+  "new_DWSIM_runs_in_check": 0,
+  "verified": {
+    "source_files": 28,
+    "artifacts": 2483
+  }
+}

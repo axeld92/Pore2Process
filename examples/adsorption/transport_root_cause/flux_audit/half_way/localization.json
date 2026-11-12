@@ -1,0 +1,478 @@
+{
+  "schema": "pore2process.halfway-peak-localization.v1",
+  "comparisons": {
+    "32": {
+      "candidate": {
+        "localization": {
+          "file": "results/adsorption/transport_root_cause/half_way/runs/20261110T220640Z-532998c7/native/porous32/peak.csv",
+          "sha256": "f9418170cb6f417391ef744c25af4483cb61d2adb90e9510b45c5807d3ba4587",
+          "n": 32,
+          "fluid": {
+            "nodes": 19456,
+            "wall_adjacent_nodes": 7328,
+            "bulk_nodes": 12128,
+            "gap_over_dx_quantiles": [
+              0.0998498883470213,
+              1.0206266284778045,
+              1.8651417863286142,
+              2.7336850285969647,
+              6.302002532431345
+            ],
+            "downstream_pole_nodes": 1368,
+            "upstream_pole_nodes": 1137
+          },
+          "engineering_violations": {
+            "nodes": 872,
+            "wall_adjacent_nodes": 208,
+            "bulk_nodes": 664,
+            "gap_over_dx_quantiles": [
+              0.0998498883470213,
+              1.3096644731730387,
+              3.0639110410571195,
+              3.4646042163544104,
+              4.378159102316632
+            ],
+            "downstream_pole_nodes": 80,
+            "upstream_pole_nodes": 80
+          },
+          "severe_violations_over_0p1_kg_m3": {
+            "nodes": 16,
+            "wall_adjacent_nodes": 16,
+            "bulk_nodes": 0,
+            "gap_over_dx_quantiles": [
+              0.3121613248772699,
+              0.3121613248772699,
+              0.3121613248772699,
+              0.3121613248772699,
+              0.3121613248772699
+            ],
+            "downstream_pole_nodes": 16,
+            "upstream_pole_nodes": 0
+          },
+          "minimum": {
+            "node_id_ijk": [
+              25,
+              15,
+              0
+            ],
+            "coordinates_m": [
+              0.0011069968792190845,
+              0.0006728804559959141,
+              2.170582116115852e-05
+            ],
+            "concentration_kg_m3": 0.08092350279865379,
+            "speed_m_s": 0.000755189812632519,
+            "voxel_solid_neighbours": 9,
+            "nearest_sphere_centre_m": [
+              0.0006945862771570726,
+              0.0006945862771570726,
+              0.0
+            ],
+            "smooth_surface_gap_m": 1.3551435782432647e-05,
+            "gap_over_dx": 0.3121613248772699,
+            "sphere_outward_normal": [
+              0.9972413740548081,
+              -0.052486388108147757,
+              0.0524863881081478
+            ]
+          },
+          "maximum": {
+            "node_id_ijk": [
+              9,
+              0,
+              31
+            ],
+            "coordinates_m": [
+              0.0004124106020620119,
+              2.170582116115852e-05,
+              0.0013674667331529868
+            ],
+            "concentration_kg_m3": 0.9197001623457356,
+            "speed_m_s": 0.0007551898126361402,
+            "voxel_solid_neighbours": 9,
+            "nearest_sphere_centre_m": [
+              0.0,
+              0.0,
+              0.0013891725543141453
+            ],
+            "smooth_surface_gap_m": 1.3551435782432647e-05,
+            "gap_over_dx": 0.3121613248772699,
+            "sphere_outward_normal": [
+              0.9972413740548081,
+              0.0524863881081478,
+              -0.052486388108147757
+            ]
+          },
+          "caveat": "Peak localization is association, not proof of the first origin. Smooth solid spheres are convex; narrow void passages and voxel corners are separate geometry notions."
+        },
+        "peak_record": {
+          "step": 3949,
+          "time_s": 0.07509993294001656,
+          "maximum_excursion_kg_m3": 0.1697001623457356,
+          "initial_amplitude_kg_m3": 0.25
+        }
+      },
+      "baseline": {
+        "localization": {
+          "file": "results/adsorption/transport_root_cause/runs/20261110T205424Z-ed34b563/native/n32_sine/peak.csv",
+          "sha256": "9ee5a04af129e77c5561759a485b236a57e077aa792da7e110a0d2a048ce217e",
+          "n": 32,
+          "fluid": {
+            "nodes": 19456,
+            "wall_adjacent_nodes": 7328,
+            "bulk_nodes": 12128,
+            "gap_over_dx_quantiles": [
+              0.0998498883470213,
+              1.0206266284778045,
+              1.8651417863286142,
+              2.7336850285969647,
+              6.302002532431345
+            ],
+            "downstream_pole_nodes": 1368,
+            "upstream_pole_nodes": 1137
+          },
+          "engineering_violations": {
+            "nodes": 672,
+            "wall_adjacent_nodes": 64,
+            "bulk_nodes": 608,
+            "gap_over_dx_quantiles": [
+              0.3121613248772699,
+              3.145088977556718,
+              3.385485051602596,
+              3.853016228620421,
+              4.378159102316632
+            ],
+            "downstream_pole_nodes": 64,
+            "upstream_pole_nodes": 0
+          },
+          "severe_violations_over_0p1_kg_m3": {
+            "nodes": 16,
+            "wall_adjacent_nodes": 16,
+            "bulk_nodes": 0,
+            "gap_over_dx_quantiles": [
+              0.3121613248772699,
+              0.3121613248772699,
+              0.3121613248772699,
+              0.3121613248772699,
+              0.3121613248772699
+            ],
+            "downstream_pole_nodes": 16,
+            "upstream_pole_nodes": 0
+          },
+          "minimum": {
+            "node_id_ijk": [
+              25,
+              15,
+              0
+            ],
+            "coordinates_m": [
+              0.0011069968792190845,
+              0.0006728804559959141,
+              2.170582116115852e-05
+            ],
+            "concentration_kg_m3": 0.11769968041757939,
+            "speed_m_s": 0.000755189812632519,
+            "voxel_solid_neighbours": 9,
+            "nearest_sphere_centre_m": [
+              0.0006945862771570726,
+              0.0006945862771570726,
+              0.0
+            ],
+            "smooth_surface_gap_m": 1.3551435782432647e-05,
+            "gap_over_dx": 0.3121613248772699,
+            "sphere_outward_normal": [
+              0.9972413740548081,
+              -0.052486388108147757,
+              0.0524863881081478
+            ]
+          },
+          "maximum": {
+            "node_id_ijk": [
+              9,
+              0,
+              31
+            ],
+            "coordinates_m": [
+              0.0004124106020620119,
+              2.170582116115852e-05,
+              0.0013674667331529868
+            ],
+            "concentration_kg_m3": 0.882506914143073,
+            "speed_m_s": 0.0007551898126361402,
+            "voxel_solid_neighbours": 9,
+            "nearest_sphere_centre_m": [
+              0.0,
+              0.0,
+              0.0013891725543141453
+            ],
+            "smooth_surface_gap_m": 1.3551435782432647e-05,
+            "gap_over_dx": 0.3121613248772699,
+            "sphere_outward_normal": [
+              0.9972413740548081,
+              0.0524863881081478,
+              -0.052486388108147757
+            ]
+          },
+          "caveat": "Peak localization is association, not proof of the first origin. Smooth solid spheres are convex; narrow void passages and voxel corners are separate geometry notions."
+        },
+        "peak_record": {
+          "step": 4145,
+          "time_s": 0.0788273542761126,
+          "maximum_excursion_kg_m3": 0.13250691414307303,
+          "initial_amplitude_kg_m3": 0.25
+        }
+      },
+      "candidate_over_baseline_excursion": 1.280689113041328
+    },
+    "64": {
+      "candidate": {
+        "localization": {
+          "file": "results/adsorption/transport_root_cause/half_way/runs/20261110T220640Z-532998c7/native/porous64/peak.csv",
+          "sha256": "6ec1516f68ad3b1ba39f5457ed13385d4433b0e4c5db45a37984f7d1a5d7912b",
+          "n": 64,
+          "fluid": {
+            "nodes": 157344,
+            "wall_adjacent_nodes": 27200,
+            "bulk_nodes": 130144,
+            "gap_over_dx_quantiles": [
+              0.03117870847161702,
+              2.0839552632629026,
+              3.7697366469200015,
+              5.503959654045528,
+              13.079699274873189
+            ],
+            "downstream_pole_nodes": 10802,
+            "upstream_pole_nodes": 9732
+          },
+          "engineering_violations": {
+            "nodes": 2880,
+            "wall_adjacent_nodes": 128,
+            "bulk_nodes": 2752,
+            "gap_over_dx_quantiles": [
+              0.03117870847161702,
+              4.303899609835495,
+              4.782752543367211,
+              5.503959654045528,
+              7.198897823975887
+            ],
+            "downstream_pole_nodes": 80,
+            "upstream_pole_nodes": 32
+          },
+          "severe_violations_over_0p1_kg_m3": {
+            "nodes": 48,
+            "wall_adjacent_nodes": 48,
+            "bulk_nodes": 0,
+            "gap_over_dx_quantiles": [
+              0.08527234807050704,
+              0.08527234807050704,
+              0.1392083941240302,
+              0.1392083941240302,
+              0.1392083941240302
+            ],
+            "downstream_pole_nodes": 48,
+            "upstream_pole_nodes": 0
+          },
+          "minimum": {
+            "node_id_ijk": [
+              50,
+              31,
+              63
+            ],
+            "coordinates_m": [
+              0.0010961439686385053,
+              0.0006837333665764934,
+              0.001378319643733566
+            ],
+            "concentration_kg_m3": 0.08027115907050153,
+            "speed_m_s": 0.00017154599942252556,
+            "voxel_solid_neighbours": 9,
+            "nearest_sphere_centre_m": [
+              0.0006945862771570726,
+              0.0006945862771570726,
+              0.0013891725543141453
+            ],
+            "smooth_surface_gap_m": 1.8509063372104868e-06,
+            "gap_over_dx": 0.08527234807050704,
+            "sphere_outward_normal": [
+              0.9992703391950749,
+              -0.027007306464731734,
+              -0.027007306464731734
+            ]
+          },
+          "maximum": {
+            "node_id_ijk": [
+              18,
+              31,
+              32
+            ],
+            "coordinates_m": [
+              0.00040155769148143264,
+              0.0006837333665764934,
+              0.0007054391877376519
+            ],
+            "concentration_kg_m3": 0.9266018542186161,
+            "speed_m_s": 0.00017154599942163554,
+            "voxel_solid_neighbours": 9,
+            "nearest_sphere_centre_m": [
+              0.0,
+              0.0006945862771570726,
+              0.0006945862771570726
+            ],
+            "smooth_surface_gap_m": 1.8509063372104868e-06,
+            "gap_over_dx": 0.08527234807050704,
+            "sphere_outward_normal": [
+              0.9992703391950749,
+              -0.027007306464731734,
+              0.027007306464731734
+            ]
+          },
+          "caveat": "Peak localization is association, not proof of the first origin. Smooth solid spheres are convex; narrow void passages and voxel corners are separate geometry notions."
+        },
+        "peak_record": {
+          "step": 7478,
+          "time_s": 0.1422125344455416,
+          "maximum_excursion_kg_m3": 0.17660185421861607,
+          "initial_amplitude_kg_m3": 0.25
+        }
+      },
+      "baseline": {
+        "localization": {
+          "file": "results/adsorption/transport_root_cause/parallel/runs/20261110T212155Z-fb52fcc9/native/n64_sine/peak.csv",
+          "sha256": "8e7b7cce1ff488d3998e20bb5c6ecce8c322b8b32b7d30ade6cf84b12ae9bf4e",
+          "n": 64,
+          "fluid": {
+            "nodes": 157344,
+            "wall_adjacent_nodes": 27200,
+            "bulk_nodes": 130144,
+            "gap_over_dx_quantiles": [
+              0.03117870847161702,
+              2.0839552632629026,
+              3.7697366469200015,
+              5.503959654045528,
+              13.079699274873189
+            ],
+            "downstream_pole_nodes": 10802,
+            "upstream_pole_nodes": 9732
+          },
+          "engineering_violations": {
+            "nodes": 2424,
+            "wall_adjacent_nodes": 80,
+            "bulk_nodes": 2344,
+            "gap_over_dx_quantiles": [
+              0.08527234807050454,
+              4.435490496844238,
+              4.9544496686767285,
+              5.711979175643511,
+              7.509188465182764
+            ],
+            "downstream_pole_nodes": 80,
+            "upstream_pole_nodes": 16
+          },
+          "severe_violations_over_0p1_kg_m3": {
+            "nodes": 16,
+            "wall_adjacent_nodes": 16,
+            "bulk_nodes": 0,
+            "gap_over_dx_quantiles": [
+              0.08527234807050704,
+              0.08527234807050704,
+              0.08527234807050704,
+              0.08527234807050704,
+              0.08527234807050704
+            ],
+            "downstream_pole_nodes": 16,
+            "upstream_pole_nodes": 0
+          },
+          "minimum": {
+            "node_id_ijk": [
+              50,
+              31,
+              63
+            ],
+            "coordinates_m": [
+              0.0010961439686385053,
+              0.0006837333665764934,
+              0.001378319643733566
+            ],
+            "concentration_kg_m3": 0.12709329121639268,
+            "speed_m_s": 0.00017154599942252556,
+            "voxel_solid_neighbours": 9,
+            "nearest_sphere_centre_m": [
+              0.0006945862771570726,
+              0.0006945862771570726,
+              0.0013891725543141453
+            ],
+            "smooth_surface_gap_m": 1.8509063372104868e-06,
+            "gap_over_dx": 0.08527234807050704,
+            "sphere_outward_normal": [
+              0.9992703391950749,
+              -0.027007306464731734,
+              -0.027007306464731734
+            ]
+          },
+          "maximum": {
+            "node_id_ijk": [
+              18,
+              31,
+              32
+            ],
+            "coordinates_m": [
+              0.00040155769148143264,
+              0.0006837333665764934,
+              0.0007054391877376519
+            ],
+            "concentration_kg_m3": 0.8785433555070885,
+            "speed_m_s": 0.00017154599942163554,
+            "voxel_solid_neighbours": 9,
+            "nearest_sphere_centre_m": [
+              0.0,
+              0.0006945862771570726,
+              0.0006945862771570726
+            ],
+            "smooth_surface_gap_m": 1.8509063372104868e-06,
+            "gap_over_dx": 0.08527234807050704,
+            "sphere_outward_normal": [
+              0.9992703391950749,
+              -0.027007306464731734,
+              0.027007306464731734
+            ]
+          },
+          "caveat": "Peak localization is association, not proof of the first origin. Smooth solid spheres are convex; narrow void passages and voxel corners are separate geometry notions."
+        },
+        "peak_record": {
+          "step": 7510,
+          "time_s": 0.14282109303102666,
+          "maximum_excursion_kg_m3": 0.1285433555070885,
+          "initial_amplitude_kg_m3": 0.25
+        }
+      },
+      "candidate_over_baseline_excursion": 1.3738699563422971
+    }
+  },
+  "evidence_sha256": {
+    "results/adsorption/transport_root_cause/half_way/runs/20261110T220640Z-532998c7/summary.json": "a25bc0a3ed378eb31f715144a03f148759dd22d8498f8c080d60630c9be953f9",
+    "results/adsorption/transport_root_cause/half_way/runs/20261110T220640Z-532998c7/native/porous32/peak.csv": "f9418170cb6f417391ef744c25af4483cb61d2adb90e9510b45c5807d3ba4587",
+    "results/adsorption/transport_root_cause/half_way/runs/20261110T220640Z-532998c7/native/porous32/peak.json": "6d8afe280e457ed0cf54bc4c32495fb289dff68641d9a6761fb4138db9ebe901",
+    "results/adsorption/transport_root_cause/half_way/runs/20261110T220640Z-532998c7/native/porous32/raw.json": "22e6632ba82a0b90e6fea799f836e18ce04e1509322be16517fb7a103b3d3e6b",
+    "results/adsorption/transport_root_cause/half_way/runs/20261110T220640Z-532998c7/native/porous32/inventory.csv": "37e73e249bd92ae36abe7aad5f287770634122f84406f1ccdc070af1eaa9b07d",
+    "results/adsorption/transport_root_cause/runs/20261110T205424Z-ed34b563/native/n32_sine/peak.csv": "9ee5a04af129e77c5561759a485b236a57e077aa792da7e110a0d2a048ce217e",
+    "results/adsorption/transport_root_cause/runs/20261110T205424Z-ed34b563/native/n32_sine/peak.json": "d01299abff968d3a60beeb981c0b227db81ab99e373e41a50a68d98126a9f5ce",
+    "results/adsorption/transport_root_cause/runs/20261110T205424Z-ed34b563/native/n32_sine/raw.json": "1e860cd297000ae695ec42f4938e88499ad8f169a800e7e7c9bc17bce6c439d8",
+    "results/adsorption/transport_root_cause/runs/20261110T205424Z-ed34b563/native/n32_sine/inventory.csv": "48376e0668c071cdaa9364cd84339d93d4f27653ca72a6e4307312f75076bd39",
+    "results/adsorption/transport_root_cause/half_way/runs/20261110T220640Z-532998c7/native/porous64/peak.csv": "6ec1516f68ad3b1ba39f5457ed13385d4433b0e4c5db45a37984f7d1a5d7912b",
+    "results/adsorption/transport_root_cause/half_way/runs/20261110T220640Z-532998c7/native/porous64/peak.json": "d4adbffac5c12629c68b504e2450ba677a48b19230c0b34627d09288d0295c4e",
+    "results/adsorption/transport_root_cause/half_way/runs/20261110T220640Z-532998c7/native/porous64/raw.json": "8078720ef7c05e09125fa3db2d31def70fccc5af5149119419cb0c176b1347fb",
+    "results/adsorption/transport_root_cause/half_way/runs/20261110T220640Z-532998c7/native/porous64/inventory.csv": "1581fc66d29cea2bcb0277cda797f19f41dc3da33653001bfaa3634056a83df6",
+    "results/adsorption/transport_root_cause/parallel/runs/20261110T212155Z-fb52fcc9/native/n64_sine/peak.csv": "8e7b7cce1ff488d3998e20bb5c6ecce8c322b8b32b7d30ade6cf84b12ae9bf4e",
+    "results/adsorption/transport_root_cause/parallel/runs/20261110T212155Z-fb52fcc9/native/n64_sine/peak.json": "29b9e02e2c6eb26340fb59e8274f425ae0fe0cfcd3bf5014779dc7364273320d",
+    "results/adsorption/transport_root_cause/parallel/runs/20261110T212155Z-fb52fcc9/native/n64_sine/raw.json": "fb58744c855e9ed80b15fe5d529b5c818b1cc42f3a8b577a066a02261541626c",
+    "results/adsorption/transport_root_cause/parallel/runs/20261110T212155Z-fb52fcc9/native/n64_sine/inventory.csv": "135a2aa66d07a9f4f97174c6384a5604beaeda81b837c7c00d90d76814b2581d"
+  },
+  "analysis_source_sha256": {
+    "examples/adsorption/transport_root_cause/flux_audit/half_way/localization.py": "2bf98f70edb7588f3231c361b8268455fbe5d5484aa6eb6ed0aaa3295f0054a3",
+    "examples/adsorption/transport_root_cause/flux_audit/findings.py": "7f08b52db819062120f9b428866a87e3862d420c802b5ea15c106c971acfadc7",
+    "examples/adsorption/transport_root_cause/flux_audit/half_way/run.py": "3e115afc78b7f5a43aeaa813582957ed814dc48848948f3a72ecd0f04a8cd7ad"
+  },
+  "new_native_runs": 0,
+  "new_DWSIM_runs": 0,
+  "caveat": "Selected peak snapshots describe individual worst-bound events, not simultaneous all-time minima/maxima. Smooth-sphere gaps annotate the prescribed geometry; the actual configured boundary is the voxel midlink. Localization is association rather than proof of causal origin."
+}

@@ -1,0 +1,722 @@
+{
+  "reference": {
+    "passed": true,
+    "reference_file": "radial_4096_4096.csv",
+    "reference_sha256": "d4b34bf83be22416e721014dca36580082b886d1d404f40cb9b12d507960bd27",
+    "radial_points": 4096,
+    "steps_per_window": 4096,
+    "tolerance": 0.0001,
+    "times_s": [
+      0.10737255542652152,
+      0.21476412830883945
+    ],
+    "probe_radii": 4097,
+    "comparisons": [
+      {
+        "coarse": [
+          256,
+          4096
+        ],
+        "fine": [
+          512,
+          4096
+        ],
+        "axis": "radial_spacing",
+        "maximum_over_amplitude": [
+          0.0018870645375586997,
+          0.0012221437730841353
+        ]
+      },
+      {
+        "coarse": [
+          512,
+          4096
+        ],
+        "fine": [
+          1024,
+          4096
+        ],
+        "axis": "radial_spacing",
+        "maximum_over_amplitude": [
+          0.0004723185468393883,
+          0.0003053671694694574
+        ]
+      },
+      {
+        "coarse": [
+          1024,
+          4096
+        ],
+        "fine": [
+          2048,
+          4096
+        ],
+        "axis": "radial_spacing",
+        "maximum_over_amplitude": [
+          0.00011811405121481752,
+          7.634184372066012e-05
+        ]
+      },
+      {
+        "coarse": [
+          2048,
+          4096
+        ],
+        "fine": [
+          4096,
+          4096
+        ],
+        "axis": "radial_spacing",
+        "maximum_over_amplitude": [
+          2.953066483204037e-05,
+          1.908463729663457e-05
+        ]
+      },
+      {
+        "coarse": [
+          4096,
+          2048
+        ],
+        "fine": [
+          4096,
+          4096
+        ],
+        "axis": "time_step",
+        "maximum_over_amplitude": [
+          1.684848333683921e-05,
+          2.3110786552367e-05
+        ]
+      }
+    ],
+    "julia": "1.11.6"
+  },
+  "cases": {
+    "shear32": {
+      "raw": {
+        "solver": "OpenLB 1.9r0",
+        "collision": "stock CombinedAdvectionDiffusionRLBdynamics + AdvectionDiffusionTRTdynamics",
+        "descriptor": "stock D3Q27 VELOCITY",
+        "kind": "stationary_disk",
+        "n": 32,
+        "nz": 4,
+        "steps": 11293,
+        "side_m": 0.0013891725543141453,
+        "dx_m": 4.341164232231704e-05,
+        "dt_s": 1.9017455796408345e-05,
+        "duration_s": 0.21476412830883945,
+        "radius_m": 0.0004,
+        "speed_m_s": 0.012937295182166382,
+        "diffusivity_m2_s": 1e-09,
+        "amplitude_kg_m3": 0.25,
+        "flow_law": "stationary circular wall, quadratic angular speed",
+        "tau_odd": 0.5000302734027005,
+        "tau_even": 9910.188810617397,
+        "magic": 0.3,
+        "active_wall_links": 2160,
+        "peak_step": 3484,
+        "maximum_excursion_kg_m3": 0.14360000832297337,
+        "wall_s": 3.223722
+      },
+      "range_kg_m3": [
+        0.2053813193347942,
+        0.8936000083229734
+      ],
+      "maximum_excursion_kg_m3": 0.14360000832297337,
+      "peak_time_s": 0.06625681599468668,
+      "peak_point": {
+        "ijk": [
+          24,
+          19,
+          0
+        ],
+        "concentration_kg_m3": 0.8936000083229734,
+        "smooth_wall_gap_m": 9.433333087810686e-07,
+        "touches_wall_link": true
+      },
+      "closed_inventory_relative_drift": 6.31272811801864e-13,
+      "liquid_inventory_relative_drift": 0.000833540929768839,
+      "initial_liquid_volume_m3": 8.770279491271506e-11,
+      "continuum_liquid_volume_m3": 8.728428582403773e-11,
+      "initial_maximum_error_kg_m3": 5.551115123125783e-16,
+      "velocity_maximum_error_m_s": 8.239936510889834e-18,
+      "reconstructed_diffusivity_m2_s": 1.0000000000000003e-09,
+      "continuum_maximum_wall_speed_m_s": 1.4926761538821478e-17,
+      "max_lattice_speed": 0.005658689030679098,
+      "axial_invariance_maximum_error": 0.0,
+      "maximum_adjacent_speed_m_s": 0.007608894196309037,
+      "RMS_link_normal_speed_m_s": 0.001496432687161137,
+      "maximum_absolute_link_normal_speed_m_s": 0.0033906447345655186,
+      "checks": {
+        "engineering_bounds": false,
+        "physical_bounds": false,
+        "middle_profile": false,
+        "middle_shell": false,
+        "final_profile": false,
+        "final_shell": false
+      },
+      "fields": {
+        "middle": {
+          "time_s": 0.10737255542652152,
+          "RMS_over_amplitude": 0.45673484212914695,
+          "shell_RMS_over_amplitude": 0.48382008940026383,
+          "link_RMS_over_amplitude": 0.5325697235031466,
+          "interior_RMS_over_amplitude": 0.44861800157171094,
+          "max_over_amplitude": 0.9664497918339983,
+          "liquid_sd_kg_m3": 0.05248514392717293,
+          "reference_sd_at_cells_kg_m3": 0.11341389818176963
+        },
+        "final": {
+          "time_s": 0.21476412830883945,
+          "RMS_over_amplitude": 0.17570682310647445,
+          "shell_RMS_over_amplitude": 0.22903142616813457,
+          "link_RMS_over_amplitude": 0.21672192012016,
+          "interior_RMS_over_amplitude": 0.15699415486327942,
+          "max_over_amplitude": 0.5079153551670919,
+          "liquid_sd_kg_m3": 0.03115002825057668,
+          "reference_sd_at_cells_kg_m3": 0.04332270148607828
+        }
+      }
+    },
+    "shear128": {
+      "raw": {
+        "solver": "OpenLB 1.9r0",
+        "collision": "stock CombinedAdvectionDiffusionRLBdynamics + AdvectionDiffusionTRTdynamics",
+        "descriptor": "stock D3Q27 VELOCITY",
+        "kind": "stationary_disk",
+        "n": 128,
+        "nz": 4,
+        "steps": 11293,
+        "side_m": 0.0013891725543141453,
+        "dx_m": 1.085291058057926e-05,
+        "dt_s": 1.9017455796408345e-05,
+        "duration_s": 0.21476412830883945,
+        "radius_m": 0.0004,
+        "speed_m_s": 0.012937295182166382,
+        "diffusivity_m2_s": 1e-09,
+        "amplitude_kg_m3": 0.25,
+        "flow_law": "stationary circular wall, quadratic angular speed",
+        "tau_odd": 0.5004843744432073,
+        "tau_even": 619.8555506635873,
+        "magic": 0.3,
+        "active_wall_links": 8592,
+        "peak_step": 4209,
+        "maximum_excursion_kg_m3": 0.08600556947608284,
+        "wall_s": 45.46055
+      },
+      "range_kg_m3": [
+        0.23863521763282114,
+        0.8360055694760828
+      ],
+      "maximum_excursion_kg_m3": 0.08600556947608284,
+      "peak_time_s": 0.08004447144708272,
+      "peak_point": {
+        "ijk": [
+          27,
+          59,
+          0
+        ],
+        "concentration_kg_m3": 0.8360055694760828,
+        "smooth_wall_gap_m": 8.695500657189613e-07,
+        "touches_wall_link": true
+      },
+      "closed_inventory_relative_drift": 6.217248937900877e-13,
+      "liquid_inventory_relative_drift": 1.541447305486443e-05,
+      "initial_liquid_volume_m3": 2.184388641949153e-11,
+      "continuum_liquid_volume_m3": 2.1821071456009433e-11,
+      "initial_maximum_error_kg_m3": 8.881784197001252e-16,
+      "velocity_maximum_error_m_s": 1.1167282376600696e-17,
+      "reconstructed_diffusivity_m2_s": 1.0000000000000003e-09,
+      "continuum_maximum_wall_speed_m_s": 1.4926761538821478e-17,
+      "max_lattice_speed": 0.022669900111627027,
+      "axial_invariance_maximum_error": 0.0,
+      "maximum_adjacent_speed_m_s": 0.002287633218713733,
+      "RMS_link_normal_speed_m_s": 0.0003925484192340482,
+      "maximum_absolute_link_normal_speed_m_s": 0.0011463989769753984,
+      "checks": {
+        "engineering_bounds": false,
+        "physical_bounds": false,
+        "middle_profile": false,
+        "middle_shell": false,
+        "final_profile": false,
+        "final_shell": false
+      },
+      "fields": {
+        "middle": {
+          "time_s": 0.10737255542652152,
+          "RMS_over_amplitude": 0.04712983684652256,
+          "shell_RMS_over_amplitude": 0.07811978193593783,
+          "link_RMS_over_amplitude": 0.09537452739033943,
+          "interior_RMS_over_amplitude": 0.03187940083804892,
+          "max_over_amplitude": 0.46409434194133947,
+          "liquid_sd_kg_m3": 0.10680384556366096,
+          "reference_sd_at_cells_kg_m3": 0.11230320920416956
+        },
+        "final": {
+          "time_s": 0.21476412830883945,
+          "RMS_over_amplitude": 0.12287079050387432,
+          "shell_RMS_over_amplitude": 0.1310398495794521,
+          "link_RMS_over_amplitude": 0.15499564905236804,
+          "interior_RMS_over_amplitude": 0.1202220236802046,
+          "max_over_amplitude": 0.5893227940409442,
+          "liquid_sd_kg_m3": 0.028274931882943125,
+          "reference_sd_at_cells_kg_m3": 0.04482562787447762
+        }
+      }
+    },
+    "constant128": {
+      "raw": {
+        "solver": "OpenLB 1.9r0",
+        "collision": "stock CombinedAdvectionDiffusionRLBdynamics + AdvectionDiffusionTRTdynamics",
+        "descriptor": "stock D3Q27 VELOCITY",
+        "kind": "stationary_disk",
+        "n": 128,
+        "nz": 4,
+        "steps": 11293,
+        "side_m": 0.0013891725543141453,
+        "dx_m": 1.085291058057926e-05,
+        "dt_s": 1.9017455796408345e-05,
+        "duration_s": 0.21476412830883945,
+        "radius_m": 0.0004,
+        "speed_m_s": 0.012937295182166382,
+        "diffusivity_m2_s": 1e-09,
+        "amplitude_kg_m3": 0,
+        "flow_law": "stationary circular wall, quadratic angular speed",
+        "tau_odd": 0.5004843744432073,
+        "tau_even": 619.8555506635873,
+        "magic": 0.3,
+        "active_wall_links": 8592,
+        "peak_step": 6362,
+        "maximum_excursion_kg_m3": 0.06576095473176924,
+        "wall_s": 47.429768
+      },
+      "range_kg_m3": [
+        0.46385883488610613,
+        0.5657609547317692
+      ],
+      "maximum_excursion_kg_m3": 0.06576095473176924,
+      "peak_time_s": 0.12098905377674989,
+      "peak_point": {
+        "ijk": [
+          100,
+          68,
+          0
+        ],
+        "concentration_kg_m3": 0.5657609547317692,
+        "smooth_wall_gap_m": 8.695500657189613e-07,
+        "touches_wall_link": true
+      },
+      "closed_inventory_relative_drift": 6.270539643082884e-13,
+      "liquid_inventory_relative_drift": 1.5414473050867628e-05,
+      "initial_liquid_volume_m3": 2.184388641949153e-11,
+      "continuum_liquid_volume_m3": 2.1821071456009433e-11,
+      "initial_maximum_error_kg_m3": 4.440892098500626e-16,
+      "velocity_maximum_error_m_s": 1.1167282376600696e-17,
+      "reconstructed_diffusivity_m2_s": 1.0000000000000003e-09,
+      "continuum_maximum_wall_speed_m_s": 1.4926761538821478e-17,
+      "max_lattice_speed": 0.022669900111627027,
+      "axial_invariance_maximum_error": 0.0,
+      "maximum_adjacent_speed_m_s": 0.002287633218713733,
+      "RMS_link_normal_speed_m_s": 0.0003925484192340482,
+      "maximum_absolute_link_normal_speed_m_s": 0.0011463989769753984,
+      "checks": {
+        "engineering_bounds": false,
+        "physical_bounds": false,
+        "constant": false
+      }
+    },
+    "shear96": {
+      "raw": {
+        "solver": "OpenLB 1.9r0",
+        "collision": "stock CombinedAdvectionDiffusionRLBdynamics + AdvectionDiffusionTRTdynamics",
+        "descriptor": "stock D3Q27 VELOCITY",
+        "kind": "stationary_disk",
+        "n": 96,
+        "nz": 4,
+        "steps": 11293,
+        "side_m": 0.0013891725543141453,
+        "dx_m": 1.4470547440772347e-05,
+        "dt_s": 1.9017455796408345e-05,
+        "duration_s": 0.21476412830883945,
+        "radius_m": 0.0004,
+        "speed_m_s": 0.012937295182166382,
+        "diffusivity_m2_s": 1e-09,
+        "amplitude_kg_m3": 0.25,
+        "flow_law": "stationary circular wall, quadratic angular speed",
+        "tau_odd": 0.5002724606243041,
+        "tau_even": 1101.5765345130442,
+        "magic": 0.3,
+        "active_wall_links": 6480,
+        "peak_step": 2557,
+        "maximum_excursion_kg_m3": 0.04919135812170272,
+        "wall_s": 22.468709
+      },
+      "range_kg_m3": [
+        0.21789854643234585,
+        0.7991913581217027
+      ],
+      "maximum_excursion_kg_m3": 0.04919135812170272,
+      "peak_time_s": 0.04862763447141614,
+      "peak_point": {
+        "ijk": [
+          20,
+          50,
+          0
+        ],
+        "concentration_kg_m3": 0.7991913581217027,
+        "smooth_wall_gap_m": 4.189485008355672e-07,
+        "touches_wall_link": true
+      },
+      "closed_inventory_relative_drift": 6.297184995673888e-13,
+      "liquid_inventory_relative_drift": 3.0483991422469714e-05,
+      "initial_liquid_volume_m3": 2.928274633901598e-11,
+      "continuum_liquid_volume_m3": 2.909476194134591e-11,
+      "initial_maximum_error_kg_m3": 1.1102230246251565e-15,
+      "velocity_maximum_error_m_s": 8.673617379884035e-18,
+      "reconstructed_diffusivity_m2_s": 1.0000000000000005e-09,
+      "continuum_maximum_wall_speed_m_s": 1.4926761538821478e-17,
+      "max_lattice_speed": 0.017002423951238993,
+      "axial_invariance_maximum_error": 0.0,
+      "maximum_adjacent_speed_m_s": 0.0029984147324620953,
+      "RMS_link_normal_speed_m_s": 0.00047266434834497626,
+      "maximum_absolute_link_normal_speed_m_s": 0.001501548616004991,
+      "checks": {
+        "engineering_bounds": false,
+        "physical_bounds": false,
+        "middle_profile": false,
+        "middle_shell": false,
+        "final_profile": false,
+        "final_shell": false
+      },
+      "fields": {
+        "middle": {
+          "time_s": 0.10737255542652152,
+          "RMS_over_amplitude": 0.12195308877049099,
+          "shell_RMS_over_amplitude": 0.1610024010481689,
+          "link_RMS_over_amplitude": 0.14703518931804985,
+          "interior_RMS_over_amplitude": 0.10698196758823596,
+          "max_over_amplitude": 0.3627552422373239,
+          "liquid_sd_kg_m3": 0.09433152323053248,
+          "reference_sd_at_cells_kg_m3": 0.11263598259928358
+        },
+        "final": {
+          "time_s": 0.21476412830883945,
+          "RMS_over_amplitude": 0.15583548030189043,
+          "shell_RMS_over_amplitude": 0.18019717260285412,
+          "link_RMS_over_amplitude": 0.2385804057922702,
+          "interior_RMS_over_amplitude": 0.14746300639239884,
+          "max_over_amplitude": 0.6665798887526604,
+          "liquid_sd_kg_m3": 0.025938102283020847,
+          "reference_sd_at_cells_kg_m3": 0.04545233569550381
+        }
+      }
+    },
+    "shear32_full_depth": {
+      "raw": {
+        "solver": "OpenLB 1.9r0",
+        "collision": "stock CombinedAdvectionDiffusionRLBdynamics + AdvectionDiffusionTRTdynamics",
+        "descriptor": "stock D3Q27 VELOCITY",
+        "kind": "stationary_disk",
+        "n": 32,
+        "nz": 32,
+        "steps": 11293,
+        "side_m": 0.0013891725543141453,
+        "dx_m": 4.341164232231704e-05,
+        "dt_s": 1.9017455796408345e-05,
+        "duration_s": 0.21476412830883945,
+        "radius_m": 0.0004,
+        "speed_m_s": 0.012937295182166382,
+        "diffusivity_m2_s": 1e-09,
+        "amplitude_kg_m3": 0.25,
+        "flow_law": "stationary circular wall, quadratic angular speed",
+        "tau_odd": 0.5000302734027005,
+        "tau_even": 9910.188810617397,
+        "magic": 0.3,
+        "active_wall_links": 17280,
+        "peak_step": 3484,
+        "maximum_excursion_kg_m3": 0.14360000832297337,
+        "wall_s": 19.7232
+      },
+      "range_kg_m3": [
+        0.2053813193347942,
+        0.8936000083229734
+      ],
+      "maximum_excursion_kg_m3": 0.14360000832297337,
+      "peak_time_s": 0.06625681599468668,
+      "peak_point": {
+        "ijk": [
+          24,
+          19,
+          0
+        ],
+        "concentration_kg_m3": 0.8936000083229734,
+        "smooth_wall_gap_m": 9.433333087810686e-07,
+        "touches_wall_link": true
+      },
+      "closed_inventory_relative_drift": 6.352696146905146e-13,
+      "liquid_inventory_relative_drift": 0.0008335409297697272,
+      "initial_liquid_volume_m3": 7.016223593017205e-10,
+      "continuum_liquid_volume_m3": 6.982742865923019e-10,
+      "initial_maximum_error_kg_m3": 5.551115123125783e-16,
+      "velocity_maximum_error_m_s": 8.239936510889834e-18,
+      "reconstructed_diffusivity_m2_s": 1.0000000000000003e-09,
+      "continuum_maximum_wall_speed_m_s": 1.4926761538821478e-17,
+      "max_lattice_speed": 0.005658689030679098,
+      "axial_invariance_maximum_error": 0.0,
+      "maximum_adjacent_speed_m_s": 0.007608894196309037,
+      "RMS_link_normal_speed_m_s": 0.001496432687161137,
+      "maximum_absolute_link_normal_speed_m_s": 0.0033906447345655186,
+      "checks": {
+        "engineering_bounds": false,
+        "physical_bounds": false,
+        "middle_profile": false,
+        "middle_shell": false,
+        "final_profile": false,
+        "final_shell": false
+      },
+      "fields": {
+        "middle": {
+          "time_s": 0.10737255542652152,
+          "RMS_over_amplitude": 0.45673484212914695,
+          "shell_RMS_over_amplitude": 0.4838200894002639,
+          "link_RMS_over_amplitude": 0.5325697235031466,
+          "interior_RMS_over_amplitude": 0.44861800157171094,
+          "max_over_amplitude": 0.9664497918339983,
+          "liquid_sd_kg_m3": 0.05248514392717293,
+          "reference_sd_at_cells_kg_m3": 0.11341389818176963
+        },
+        "final": {
+          "time_s": 0.21476412830883945,
+          "RMS_over_amplitude": 0.17570682310647445,
+          "shell_RMS_over_amplitude": 0.22903142616813457,
+          "link_RMS_over_amplitude": 0.21672192012016,
+          "interior_RMS_over_amplitude": 0.15699415486327942,
+          "max_over_amplitude": 0.5079153551670919,
+          "liquid_sd_kg_m3": 0.03115002825057668,
+          "reference_sd_at_cells_kg_m3": 0.04332270148607828
+        }
+      }
+    },
+    "shear64": {
+      "raw": {
+        "solver": "OpenLB 1.9r0",
+        "collision": "stock CombinedAdvectionDiffusionRLBdynamics + AdvectionDiffusionTRTdynamics",
+        "descriptor": "stock D3Q27 VELOCITY",
+        "kind": "stationary_disk",
+        "n": 64,
+        "nz": 4,
+        "steps": 11293,
+        "side_m": 0.0013891725543141453,
+        "dx_m": 2.170582116115852e-05,
+        "dt_s": 1.9017455796408345e-05,
+        "duration_s": 0.21476412830883945,
+        "radius_m": 0.0004,
+        "speed_m_s": 0.012937295182166382,
+        "diffusivity_m2_s": 1e-09,
+        "amplitude_kg_m3": 0.25,
+        "flow_law": "stationary circular wall, quadratic angular speed",
+        "tau_odd": 0.5001210936108018,
+        "tau_even": 2477.9222026543493,
+        "magic": 0.3,
+        "active_wall_links": 4272,
+        "peak_step": 5359,
+        "maximum_excursion_kg_m3": 0.06819810470213483,
+        "wall_s": 10.57561
+      },
+      "range_kg_m3": [
+        0.18180189529786517,
+        0.7967846229328172
+      ],
+      "maximum_excursion_kg_m3": 0.06819810470213483,
+      "peak_time_s": 0.10191454561295232,
+      "peak_point": {
+        "ijk": [
+          26,
+          49,
+          0
+        ],
+        "concentration_kg_m3": 0.18180189529786517,
+        "smooth_wall_gap_m": 1.8297986761361441e-06,
+        "touches_wall_link": true
+      },
+      "closed_inventory_relative_drift": 6.190603585309873e-13,
+      "liquid_inventory_relative_drift": 0.00022082866885397845,
+      "initial_liquid_volume_m3": 4.336052360423412e-11,
+      "continuum_liquid_volume_m3": 4.3642142912018867e-11,
+      "initial_maximum_error_kg_m3": 8.881784197001252e-16,
+      "velocity_maximum_error_m_s": 7.806255641895632e-18,
+      "reconstructed_diffusivity_m2_s": 1.0000000000000003e-09,
+      "continuum_maximum_wall_speed_m_s": 1.4926761538821478e-17,
+      "max_lattice_speed": 0.01133478906322468,
+      "axial_invariance_maximum_error": 0.0,
+      "maximum_adjacent_speed_m_s": 0.0043264022457996315,
+      "RMS_link_normal_speed_m_s": 0.000918517478686648,
+      "maximum_absolute_link_normal_speed_m_s": 0.0022627059960760258,
+      "checks": {
+        "engineering_bounds": false,
+        "physical_bounds": false,
+        "middle_profile": false,
+        "middle_shell": false,
+        "final_profile": false,
+        "final_shell": false
+      },
+      "fields": {
+        "middle": {
+          "time_s": 0.10737255542652152,
+          "RMS_over_amplitude": 0.2999441761991201,
+          "shell_RMS_over_amplitude": 0.3329940331223086,
+          "link_RMS_over_amplitude": 0.3378912024235543,
+          "interior_RMS_over_amplitude": 0.28909791089979425,
+          "max_over_amplitude": 0.7447862151896478,
+          "liquid_sd_kg_m3": 0.06161936180109491,
+          "reference_sd_at_cells_kg_m3": 0.1114099674272972
+        },
+        "final": {
+          "time_s": 0.21476412830883945,
+          "RMS_over_amplitude": 0.17012779910932316,
+          "shell_RMS_over_amplitude": 0.19937569636705293,
+          "link_RMS_over_amplitude": 0.21925023604032268,
+          "interior_RMS_over_amplitude": 0.16013352792098987,
+          "max_over_amplitude": 0.38901187367356505,
+          "liquid_sd_kg_m3": 0.027320717260744237,
+          "reference_sd_at_cells_kg_m3": 0.0456990241491076
+        }
+      }
+    },
+    "constant64": {
+      "raw": {
+        "solver": "OpenLB 1.9r0",
+        "collision": "stock CombinedAdvectionDiffusionRLBdynamics + AdvectionDiffusionTRTdynamics",
+        "descriptor": "stock D3Q27 VELOCITY",
+        "kind": "stationary_disk",
+        "n": 64,
+        "nz": 4,
+        "steps": 11293,
+        "side_m": 0.0013891725543141453,
+        "dx_m": 2.170582116115852e-05,
+        "dt_s": 1.9017455796408345e-05,
+        "duration_s": 0.21476412830883945,
+        "radius_m": 0.0004,
+        "speed_m_s": 0.012937295182166382,
+        "diffusivity_m2_s": 1e-09,
+        "amplitude_kg_m3": 0,
+        "flow_law": "stationary circular wall, quadratic angular speed",
+        "tau_odd": 0.5001210936108018,
+        "tau_even": 2477.9222026543493,
+        "magic": 0.3,
+        "active_wall_links": 4272,
+        "peak_step": 7414,
+        "maximum_excursion_kg_m3": 0.06156255868160265,
+        "wall_s": 11.231711
+      },
+      "range_kg_m3": [
+        0.4582523811915351,
+        0.5615625586816027
+      ],
+      "maximum_excursion_kg_m3": 0.06156255868160265,
+      "peak_time_s": 0.14099541727457146,
+      "peak_point": {
+        "ijk": [
+          44,
+          18,
+          0
+        ],
+        "concentration_kg_m3": 0.5615625586816027,
+        "smooth_wall_gap_m": 6.482821285894906e-07,
+        "touches_wall_link": true
+      },
+      "closed_inventory_relative_drift": 6.210587599753126e-13,
+      "liquid_inventory_relative_drift": 0.00022082866885198005,
+      "initial_liquid_volume_m3": 4.336052360423412e-11,
+      "continuum_liquid_volume_m3": 4.3642142912018867e-11,
+      "initial_maximum_error_kg_m3": 4.440892098500626e-16,
+      "velocity_maximum_error_m_s": 7.806255641895632e-18,
+      "reconstructed_diffusivity_m2_s": 1.0000000000000003e-09,
+      "continuum_maximum_wall_speed_m_s": 1.4926761538821478e-17,
+      "max_lattice_speed": 0.01133478906322468,
+      "axial_invariance_maximum_error": 0.0,
+      "maximum_adjacent_speed_m_s": 0.0043264022457996315,
+      "RMS_link_normal_speed_m_s": 0.000918517478686648,
+      "maximum_absolute_link_normal_speed_m_s": 0.0022627059960760258,
+      "checks": {
+        "engineering_bounds": false,
+        "physical_bounds": false,
+        "constant": false
+      }
+    }
+  },
+  "new_native_runs": 7,
+  "depth_comparison": {
+    "field_max_abs_differences_kg_m3": {
+      "initial": 0.0,
+      "middle": 0.0,
+      "peak": 0.0,
+      "final": 0.0
+    },
+    "mass_scaling_relative_errors": {
+      "fluid_inventory_kg": 3.4416913763379853e-15,
+      "active_wall_population_kg": 1.283417816466681e-13,
+      "kinetic_inventory_kg": 6.772360450213455e-15
+    },
+    "depth_ratio": 8.0,
+    "passed": true
+  },
+  "background": {
+    "fields": {
+      "middle": {
+        "liquid": {
+          "original_RMS_over_amplitude": 0.04712983684652256,
+          "background_RMS_over_amplitude": 0.018357727728505517,
+          "diagnostic_wave_only_RMS_over_amplitude": 0.04340754950265998
+        },
+        "outer_shell": {
+          "original_RMS_over_amplitude": 0.07811978193593783,
+          "background_RMS_over_amplitude": 0.03768253507944623,
+          "diagnostic_wave_only_RMS_over_amplitude": 0.06843045286789157
+        }
+      },
+      "final": {
+        "liquid": {
+          "original_RMS_over_amplitude": 0.12287079050387432,
+          "background_RMS_over_amplitude": 0.01835583837966751,
+          "diagnostic_wave_only_RMS_over_amplitude": 0.12149195181750296
+        },
+        "outer_shell": {
+          "original_RMS_over_amplitude": 0.1310398495794521,
+          "background_RMS_over_amplitude": 0.037681342440002374,
+          "diagnostic_wave_only_RMS_over_amplitude": 0.12550521347627167
+        }
+      }
+    },
+    "production_correction_applied": false
+  },
+  "new_bed_runs": 0,
+  "new_DWSIM_runs": 0,
+  "application_transport_qualified": false,
+  "rigid_comparison": {
+    "parent_summary": "results/adsorption/transport_verification/curved/20261111T011153Z-1a03a0b9/summary.json",
+    "parent_summary_sha256": "763cdcf65bd677f7092db8262170057fdddd60514343eb2525808ed70412be55",
+    "rotating_constant_range_kg_m3": [
+      0.10311219461422128,
+      0.979615113113621
+    ],
+    "stationary_constant_range_kg_m3": [
+      0.46385883488610613,
+      0.5657609547317692
+    ],
+    "rotating_maximum_constant_departure_kg_m3": 0.47961511311362104,
+    "stationary_maximum_constant_departure_kg_m3": 0.06576095473176924,
+    "rotating_link_velocities": {
+      "maximum_adjacent_speed_m_s": 0.012928246371497991,
+      "RMS_link_normal_speed_m_s": 0.006427664656876292,
+      "maximum_absolute_link_normal_speed_m_s": 0.012906784728489206
+    },
+    "stationary_link_velocities": {
+      "maximum_adjacent_speed_m_s": 0.002287633218713733,
+      "RMS_link_normal_speed_m_s": 0.0003925484192340482,
+      "maximum_absolute_link_normal_speed_m_s": 0.0011463989769753984
+    },
+    "changed_velocity_role": "Equal peak speed, different velocity distribution and wall speed. Compare uniform preservation only."
+  },
+  "summary": "results/adsorption/stationary_curved_wall/runs/20261111T122659Z-56628d90/summary.json",
+  "summary_sha256": "4c63619355b7072e6263c3c9f72d7b063754181e421392fb1f3a40b06322ecb6"
+}

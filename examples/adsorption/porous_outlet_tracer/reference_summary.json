@@ -1,0 +1,151 @@
+{
+  "summary": "results/adsorption/porous_outlet_tracer/runs/20261111T194841Z-0489ef5c/summary.json",
+  "summary_sha256": "186f2899c43dcbb371701814412304199a090dbc2e667c2c00276acc7ac831e2",
+  "nominal_transits": 8,
+  "meshes": {
+    "96": {
+      "n": 96,
+      "cells": 531040,
+      "interior_faces": 1559744,
+      "inlet_faces": 4384,
+      "outlet_faces": 4384,
+      "dx_m": 1.4470547440772347e-05,
+      "volume_m3": 1.60909660760255e-09,
+      "flow_m3_s": 1.48238167294761e-08,
+      "source_flow_m3_s": 1.4823816729477076e-08,
+      "minimum_boundary_flow_m3_s": 2.806317973493111e-13,
+      "max_local_imbalance_relative": 3.3070403439423858e-15,
+      "stability_cap_s": 0.00033385580602200574,
+      "transit_s": 0.10854806403555815,
+      "saved_face_flow_sha256": "ce073a531dd7f2cc8811683782fa2072f681ebfafef22560bf1c4ed20c69170e"
+    },
+    "192": {
+      "n": 192,
+      "cells": 4248320,
+      "interior_faces": 12611456,
+      "inlet_faces": 17536,
+      "outlet_faces": 17536,
+      "dx_m": 7.235273720386174e-06,
+      "volume_m3": 1.60909660760255e-09,
+      "flow_m3_s": 1.4823816729476098e-08,
+      "source_flow_m3_s": 1.4823816729477076e-08,
+      "minimum_boundary_flow_m3_s": 7.015794933732778e-14,
+      "max_local_imbalance_relative": 1.6641880440484264e-15,
+      "stability_cap_s": 0.00016360396840498105,
+      "transit_s": 0.10854806403555817,
+      "saved_face_flow_sha256": "7e9c51c4f563334fe82007e02ac87e7f022e6705d07547f47a41359b918d9bcd"
+    },
+    "288": {
+      "n": 288,
+      "cells": 14338080,
+      "interior_faces": 42713856,
+      "inlet_faces": 39456,
+      "outlet_faces": 39456,
+      "dx_m": 4.823515813590783e-06,
+      "volume_m3": 1.6090966076025503e-09,
+      "flow_m3_s": 1.4823816729476098e-08,
+      "source_flow_m3_s": 1.4823816729477076e-08,
+      "minimum_boundary_flow_m3_s": 3.118131081659012e-14,
+      "max_local_imbalance_relative": 1.1281274721674428e-15,
+      "stability_cap_s": 0.00010751564931273256,
+      "transit_s": 0.1085480640355582,
+      "saved_face_flow_sha256": "4699014428cd82d595634a602901d83295322f88066a2fdb9c94db8e12df4608"
+    }
+  },
+  "analysis": {
+    "cases": {
+      "96": {
+        "time_s": 1.0856000000000001,
+        "recovery": 0.9999994487330179,
+        "mean_exit_s": 0.10646347365948734,
+        "variance_s2": 0.0025473109101053736,
+        "early_arrival_s": {
+          "0.05": 0.07662263484114235,
+          "0.1": 0.07808500997079787
+        },
+        "last_transit_raw_moment_fractions": [
+          2.0978929653060016e-05,
+          0.00016387307940172958
+        ],
+        "tail_passed": true,
+        "injected_kg": 5.929526691790441e-11,
+        "recovered_kg": 5.929523423038157e-11,
+        "remaining_kg": 3.268752282290129e-17,
+        "mass_balance_relative": 4.577408157547335e-15,
+        "range_kg_m3": [
+          -4.76038176786125e-18,
+          0.9999999966884567
+        ],
+        "mass_passed": true,
+        "bounds_passed": true
+      },
+      "192": {
+        "time_s": 0.8684000000000001,
+        "recovery": 0.9999887343726263,
+        "mean_exit_s": 0.10910396904176109,
+        "variance_s2": 0.0030785963713851894,
+        "early_arrival_s": {
+          "0.05": 0.07688383093275959,
+          "0.1": 0.0781077373689911
+        },
+        "last_transit_raw_moment_fractions": [
+          0.0003639014180892811,
+          0.002123531187205396
+        ],
+        "tail_passed": true,
+        "injected_kg": 5.929526691790436e-11,
+        "recovered_kg": 5.929459891952224e-11,
+        "remaining_kg": 6.679983825995969e-16,
+        "mass_balance_relative": 1.1116562668329241e-14,
+        "range_kg_m3": [
+          -6.8266454869526794e-18,
+          1.0000000000000002
+        ],
+        "mass_passed": true,
+        "bounds_passed": true
+      },
+      "288": {
+        "time_s": 0.8684000000000001,
+        "recovery": 0.9999758924526043,
+        "mean_exit_s": 0.11004379838543456,
+        "variance_s2": 0.003477167687511277,
+        "early_arrival_s": {
+          "0.05": 0.07694442568421593,
+          "0.1": 0.07812294909393236
+        },
+        "last_transit_raw_moment_fractions": [
+          0.0007250855838427134,
+          0.004104973015368209
+        ],
+        "tail_passed": true,
+        "injected_kg": 5.929526691790436e-11,
+        "recovered_kg": 5.92938374544468e-11,
+        "remaining_kg": 1.4294634579334228e-15,
+        "mass_balance_relative": 6.75712632780797e-15,
+        "range_kg_m3": [
+          -3.3244744544900894e-18,
+          1.0
+        ],
+        "mass_passed": true,
+        "bounds_passed": true
+      }
+    },
+    "mean_relative_difference": 0.008540502576816378,
+    "variance_relative_difference": 0.11462527894688856,
+    "N192_minus_N288_early_arrival_s": {
+      "0.05": -6.059475145633875e-05,
+      "0.1": -1.5211724941260885e-05
+    },
+    "checks": {
+      "mass": true,
+      "bounds": true,
+      "recovery_and_tail": true,
+      "mean": true,
+      "variance": false
+    },
+    "short_segment_qualified": false
+  },
+  "new_openlb_runs": 0,
+  "new_bed_runs": 0,
+  "new_DWSIM_runs": 0
+}

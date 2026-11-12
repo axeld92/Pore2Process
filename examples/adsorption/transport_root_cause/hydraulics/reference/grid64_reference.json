@@ -1,0 +1,75 @@
+{
+  "schema": "pore2process.hydraulic-refinement-reference.v1",
+  "run_summary": "results/adsorption/transport_root_cause/hydraulics/omp_runs/20261110T210317Z-fdf047ba/summary.json",
+  "run_summary_sha256": "8692829b62c867de286717250c558e922a6cd4b4a44187fb63d3a2649f5cc2a6",
+  "parent_hydraulic_summary": "results/adsorption/column_transport/hydraulics/runs/20261110T154704Z-d14d13ed/summary.json",
+  "parent_hydraulic_sha256": "57ce925bd15d8bb11e0949d61f362691e9e80481ff6fb8e5fdc7d4d014e9f287",
+  "rows": {
+    "32": {
+      "fluid_nodes": 19456,
+      "dx_m": 4.341164232231704e-05,
+      "voxel_porosity": 0.59375,
+      "native_gradient_Pa_m": 2422.925842483939,
+      "native_superficial_velocity_m_s": 0.008030402577783678,
+      "native_operating_point_resistance_Pa_s_m2": 301719.1005077414,
+      "apparent_operating_point_permeability_m2": 3.3143410487343093e-09,
+      "plane_mass_relative_spread": 4.626786261819885e-11,
+      "stationarity": {
+        "superficial_velocity_m_s": 4.6362121134476265e-08,
+        "mean_lattice_energy": 9.536933068325547e-08
+      }
+    },
+    "48": {
+      "fluid_nodes": 65984,
+      "dx_m": 2.8941094881544695e-05,
+      "voxel_porosity": 0.5966435185185185,
+      "native_gradient_Pa_m": 2361.260940517869,
+      "native_superficial_velocity_m_s": 0.008030399045252726,
+      "native_operating_point_resistance_Pa_s_m2": 294040.2995183358,
+      "apparent_operating_point_permeability_m2": 3.400894372771655e-09,
+      "plane_mass_relative_spread": 2.144764376205295e-12,
+      "stationarity": {
+        "superficial_velocity_m_s": 4.322125185512519e-08,
+        "mean_lattice_energy": 8.873464982988112e-08
+      }
+    },
+    "64": {
+      "fluid_nodes": 157344,
+      "dx_m": 2.170582116115852e-05,
+      "voxel_porosity": 0.6002197265625,
+      "native_gradient_Pa_m": 2289.699428764696,
+      "native_superficial_velocity_m_s": 0.008030398285571224,
+      "native_operating_point_resistance_Pa_s_m2": 285128.999501651,
+      "apparent_operating_point_permeability_m2": 3.507184473511295e-09,
+      "plane_mass_relative_spread": 1.5417818807225146e-12,
+      "stationarity": {
+        "superficial_velocity_m_s": 4.694590000527611e-08,
+        "mean_lattice_energy": 9.623585861241273e-08
+      }
+    }
+  },
+  "source_point": {
+    "field": "/Users/dula/Documents/ChatGPT/Pore2Process/results/adsorption/transport_root_cause/hydraulics/omp_runs/20261110T210317Z-fdf047ba/native_flow/d800_grid64/iteration3/field.csv",
+    "velocity_scale": 0.9565546608662455,
+    "n": 64,
+    "actual_superficial_velocity_m_s": 0.007681514908675462,
+    "actual_flow_m3_s": 7.299987718674428e-07,
+    "side_m": 0.0013891725543141453,
+    "speed_m_s": 0.0127978381394894,
+    "max_speed_m_s": 0.02257474260680374,
+    "voxel_porosity": 0.6002197265625,
+    "field_sha256": "e3d977f854ab4aa423beed47d6afa589f5bf7af840aba6a4760f484572ebbc0a",
+    "raw_sha256": "a388eb8cd4af64be8c7154ede6fb0f3d90ddb927ba5ef5755600b5afa30c2a0e"
+  },
+  "checks_passed": true,
+  "native_runs": 3,
+  "new_DWSIM_runs": 0,
+  "new_adsorption_predictions": 0,
+  "scope": "Independently converged synthetic FCC native water flow at matched physical Q. No scalar convergence or new process acceptance is inferred.",
+  "units": {
+    "dx_m": "m",
+    "native_gradient_Pa_m": "Pa/m",
+    "native_superficial_velocity_m_s": "m/s",
+    "apparent_operating_point_permeability_m2": "m2"
+  }
+}

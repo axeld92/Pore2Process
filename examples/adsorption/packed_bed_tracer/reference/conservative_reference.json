@@ -1,0 +1,150 @@
+{
+  "schema": "pore2process.conservative-tracer.v1",
+  "run_id": "20261110T132745Z-1528e655",
+  "native_run_id": "20261110T131217Z-7d3c3c65",
+  "native_summary": "results/adsorption/packed_bed_tracer/runs/20261110T131217Z-7d3c3c65/summary.json",
+  "derived": {
+    "effective_dispersion_m2_s": 1.4503480713059164e-06,
+    "calibration_case": "bed32",
+    "holdout_case": "length32",
+    "physical_velocity_m_s": 0.0004707865197900858,
+    "physical_fluid_area_m2": 9.53120866115105e-06,
+    "flow_m3_s": 4.4871645549764255e-09,
+    "fluid_volume_m3": 3.687684317311826e-08,
+    "fitted_quantities": [
+      "effective dispersion from short inert-tracer mean only"
+    ],
+    "velocity_fitted": false,
+    "inventory_fitted": false,
+    "adsorption_data_used": false
+  },
+  "metrics": {
+    "bed32": {
+      "normalized_profile_RMSE": 0.00036547877508289373,
+      "mean_relative_error": 4.440892098500626e-16,
+      "variance_relative_error": 0.005836472369803447,
+      "steady_exit_flux_relative_error": 0.016556335698013402,
+      "passed": true
+    },
+    "length32": {
+      "normalized_profile_RMSE": 0.00033925955959325017,
+      "mean_relative_error": 0.0006681115931536086,
+      "variance_relative_error": 0.009792371386442289,
+      "steady_exit_flux_relative_error": 0.00512107001458495,
+      "passed": true
+    }
+  },
+  "refinement": {
+    "bed32": {
+      "space": {
+        "maximum_normalized_profile_change": 7.029133698432943e-07,
+        "mean_relative_change": 7.470536652620652e-07,
+        "variance_relative_change": 3.3514080552965453e-06,
+        "passed": true
+      },
+      "time": {
+        "maximum_normalized_profile_change": 0.0003639063887853969,
+        "mean_relative_change": 0.0002980353765734689,
+        "variance_relative_change": 0.0015192207244438816,
+        "passed": true
+      }
+    },
+    "length32": {
+      "space": {
+        "maximum_normalized_profile_change": 1.0674547333833218e-06,
+        "mean_relative_change": 1.1712672199903906e-06,
+        "variance_relative_change": 4.4733215087688905e-06,
+        "passed": true
+      },
+      "time": {
+        "maximum_normalized_profile_change": 9.860469133203542e-05,
+        "mean_relative_change": 7.771443769699626e-05,
+        "variance_relative_change": 0.0004240311214922521,
+        "passed": true
+      }
+    }
+  },
+  "numerical_refinement_passed": true,
+  "comparison_passed": true,
+  "physical_inventory_substitution": false,
+  "new_native_runs": 0,
+  "new_DWSIM_runs": 0,
+  "predictions": {
+    "bed32": {
+      "inputs": {
+        "length_m": 0.003869062621976506,
+        "velocity_m_s": 0.00047078651979008576,
+        "dispersion_m2_s": 1.4503480713059164e-06,
+        "t_end_s": 34.999919246961944,
+        "dt_s": 0.002,
+        "cells": 800
+      },
+      "physical_fluid_area_m2": 9.53120866115105e-06,
+      "physical_fluid_volume_m3": 3.687684317311826e-08,
+      "flow_m3_s": 4.4871645549764255e-09,
+      "numerical_moments": {
+        "mean_s": 1.677649335854327,
+        "variance_s2": 1.103128505308562,
+        "steady_exit_flux_kg_s": 0.0006582744638857373,
+        "final_fraction": 1.0000000000000029,
+        "tail_area_fraction": 3.46763667335113e-08,
+        "tail_second_moment_fraction": 5.496146861140963e-07,
+        "equivalent_sections": 2.5513866068624558,
+        "minimum_fraction": 0.0,
+        "maximum_fraction": 1.0000000000000029
+      },
+      "predicted_steady_exit_flux_kg_s": 6.2741519161190346e-09,
+      "analytical_moments": {
+        "mean_s": 1.676647667150403,
+        "variance_s2": 1.0997712887611955,
+        "Peclet": 1.255907159589707,
+        "steady_flux_per_area_m_s": 0.0006582745315074581
+      },
+      "metrics": {
+        "normalized_profile_RMSE": 0.00036547877508289373,
+        "mean_relative_error": 4.440892098500626e-16,
+        "variance_relative_error": 0.005836472369803447,
+        "steady_exit_flux_relative_error": 0.016556335698013402,
+        "passed": true
+      }
+    },
+    "length32": {
+      "inputs": {
+        "length_m": 0.007862933715629673,
+        "velocity_m_s": 0.00047230423588922205,
+        "dispersion_m2_s": 1.4503480713059164e-06,
+        "t_end_s": 70.00048754203232,
+        "dt_s": 0.002,
+        "cells": 800
+      },
+      "physical_fluid_area_m2": 9.5005807688452e-06,
+      "physical_fluid_volume_m3": 7.47024368454158e-08,
+      "flow_m3_s": 4.48716454053327e-09,
+      "numerical_moments": {
+        "mean_s": 6.43349773872782,
+        "variance_s2": 15.166588346905328,
+        "steady_exit_flux_kg_s": 0.0005118506313957673,
+        "final_fraction": 1.0000000273301937,
+        "tail_area_fraction": 0.00010083596267698703,
+        "tail_second_moment_fraction": 0.0008871888138511811,
+        "equivalent_sections": 2.7290180367202614,
+        "minimum_fraction": 0.0,
+        "maximum_fraction": 1.0000000273301937
+      },
+      "predicted_steady_exit_flux_kg_s": 4.862879355414631e-09,
+      "analytical_moments": {
+        "mean_s": 6.43249038275975,
+        "variance_s2": 15.153806895170595,
+        "Peclet": 2.560555616876301,
+        "steady_flux_per_area_m_s": 0.0005118507461524077
+      },
+      "metrics": {
+        "normalized_profile_RMSE": 0.00033925955959325017,
+        "mean_relative_error": 0.0006681115931536086,
+        "variance_relative_error": 0.009792371386442289,
+        "steady_exit_flux_relative_error": 0.00512107001458495,
+        "passed": true
+      }
+    }
+  }
+}

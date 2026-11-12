@@ -1,0 +1,55 @@
+{
+  "run_id": "20261110T153541Z-923381eb",
+  "source_summary": "results/adsorption/column_transport/sensitivity/runs/20261110T153541Z-923381eb/summary.json",
+  "source_summary_sha256": "2f9dba79e23baed781d67c42f00949cc616354d7fb8e6715ffdb7e056ddffb69",
+  "original_departure": 0.01098727230267138,
+  "preserved": false,
+  "native_runs": 3,
+  "cases": {
+    "half_dt": {
+      "uniform_maximum_departure": 0.005633253346257416,
+      "minimum_concentration_kg_m3": 0.9943667466537426,
+      "maximum_concentration_kg_m3": 1.0038286259323854,
+      "normalized_mass_residual": 5.254681670853622e-13,
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "positive": true,
+        "bounded": false,
+        "uniform_preservation": false
+      }
+    },
+    "tenth_dt": {
+      "uniform_maximum_departure": 0.002846792792201791,
+      "minimum_concentration_kg_m3": 0.9972424495043415,
+      "maximum_concentration_kg_m3": 1.0028467927922018,
+      "normalized_mass_residual": 5.305593149167823e-13,
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "positive": true,
+        "bounded": false,
+        "uniform_preservation": false
+      }
+    },
+    "grid48": {
+      "uniform_maximum_departure": 0.012671743710738759,
+      "minimum_concentration_kg_m3": 0.9873282562892612,
+      "maximum_concentration_kg_m3": 1.0050550724908351,
+      "normalized_mass_residual": 1.6796159527456899e-12,
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "positive": true,
+        "bounded": false,
+        "uniform_preservation": false
+      }
+    }
+  },
+  "verified": {
+    "source_files": 24,
+    "artifacts": 432
+  },
+  "new_native_runs_in_check": 0,
+  "new_DWSIM_runs_in_check": 0
+}

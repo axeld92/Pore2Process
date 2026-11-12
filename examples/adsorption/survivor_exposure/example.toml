@@ -1,0 +1,18 @@
+schema_version = 1
+id = "adsorption/survivor_exposure"
+title = "Wall exposure among first-cell survivors"
+area = "adsorption"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["adsorption/wall_uptake"]
+run_module = "examples.adsorption.survivor_exposure.column"
+check_module = "examples.adsorption.survivor_exposure.column"
+reference_files = ["reference_summary.json"]
+protocol_files = ["protocol.md", "column_protocol.md"]
+
+[validation]
+two_cell_wall_uptake = "passed"
+numerical = "passed"
+literature = "failed"
+scope = "Held-out perfect-sink uptake on the synthetic TRT field and frozen phenol breakthrough comparisons at fixed carbon mass and aggregate Péclet exchange."

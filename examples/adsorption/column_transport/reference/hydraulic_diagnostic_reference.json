@@ -1,0 +1,105 @@
+{
+  "run_id": "20261110T163145Z-691455f4",
+  "source_summary": "results/adsorption/column_transport/hydraulic_diagnostics/runs/20261110T163145Z-691455f4/summary.json",
+  "source_summary_sha256": "941a1c322d66a9d0e9f9252a5b77186a0175ae8ac867db79691290381386ffa0",
+  "checks_passed": true,
+  "native_runs": 2,
+  "cases": {
+    "cold": {
+      "raw": {
+        "solver": "OpenLB 1.9r0",
+        "collision": "TRT",
+        "descriptor": "D3Q27",
+        "forcing": "stock Kupershtokh",
+        "magic": 0.1875,
+        "resolution": 32,
+        "domain_cells_x": 1,
+        "initial_relative_velocity_perturbation": 0,
+        "periodicity_relative_error": 0,
+        "particle_diameter_m": 0.0008,
+        "unit_cell_side_m": 0.0013891725543141453,
+        "declared_porosity": 0.6,
+        "fluid_nodes": 19456,
+        "gradient_Pa_m": 2422.925842483939,
+        "viscosity_Pa_s": 0.001,
+        "density_kg_m3": 1000,
+        "dt_s": 6.030626205186554e-06,
+        "dx_m": 4.341164232231704e-05,
+        "tau_even": 0.5096,
+        "max_Mach": 0.005741968793336983,
+        "max_density_departure": 5.829425213543793e-05,
+        "steps": 20096,
+        "wall_s": 95.497647,
+        "converged": true
+      },
+      "checks": {
+        "converged": true,
+        "mean_velocity": true,
+        "domain_periodicity": true,
+        "mass": true,
+        "stationarity": true,
+        "Mach": true,
+        "density": true,
+        "geometry": true
+      },
+      "superficial_velocity_m_s": 0.00803040253716713,
+      "mean_velocity_relative_difference": 5.057847141110017e-09,
+      "plane_mass_relative_spread": 3.7549759693364615e-12,
+      "stationarity": {
+        "superficial_velocity_m_s": 4.758189506645494e-08,
+        "mean_lattice_energy": 9.787460060925739e-08
+      }
+    },
+    "domain": {
+      "raw": {
+        "solver": "OpenLB 1.9r0",
+        "collision": "TRT",
+        "descriptor": "D3Q27",
+        "forcing": "stock Kupershtokh",
+        "magic": 0.1875,
+        "resolution": 32,
+        "domain_cells_x": 2,
+        "initial_relative_velocity_perturbation": 0.05,
+        "periodicity_relative_error": 7.032954972875916e-09,
+        "particle_diameter_m": 0.0008,
+        "unit_cell_side_m": 0.0013891725543141453,
+        "declared_porosity": 0.6,
+        "fluid_nodes": 38912,
+        "gradient_Pa_m": 2422.925842483939,
+        "viscosity_Pa_s": 0.001,
+        "density_kg_m3": 1000,
+        "dt_s": 6.030626205186554e-06,
+        "dx_m": 4.341164232231704e-05,
+        "tau_even": 0.5096,
+        "max_Mach": 0.005741968843140153,
+        "max_density_departure": 5.829439241145096e-05,
+        "steps": 14720,
+        "wall_s": 142.604379,
+        "converged": true
+      },
+      "checks": {
+        "converged": true,
+        "mean_velocity": true,
+        "domain_periodicity": true,
+        "mass": true,
+        "stationarity": true,
+        "Mach": true,
+        "density": true,
+        "geometry": true
+      },
+      "superficial_velocity_m_s": 0.008030402574360468,
+      "mean_velocity_relative_difference": 4.262812325350751e-10,
+      "plane_mass_relative_spread": 9.38719282758733e-09,
+      "stationarity": {
+        "superficial_velocity_m_s": 4.6464642038149826e-08,
+        "mean_lattice_energy": 9.558026648443594e-08
+      }
+    }
+  },
+  "verified": {
+    "source_files": 23,
+    "artifacts": 362
+  },
+  "new_native_runs_in_check": 0,
+  "new_DWSIM_runs_in_check": 0
+}

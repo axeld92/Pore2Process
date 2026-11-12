@@ -64,6 +64,37 @@ For shared guides, architecture and dated verification records, see the
 [documentation index](docs/README.md). New examples follow the
 [contribution guide](docs/guides/adding_examples.md).
 
+The new [packed-bed tracer benchmark](examples/adsorption/packed_bed_tracer/REPORT.md)
+now transfers actual OpenLB transport information into Julia. With physical flow
+and pore volume fixed, one coefficient derived from a short synthetic segment
+predicts a longer segment's mean, variance and absolute exit flux within
+0.067%, 0.98% and 0.52%. This qualifies a bounded diffusive-tracer case with
+absorbing ends; realistic-Peclet adsorption and new DWSIM service calculations
+remain separate next steps.
+
+The subsequent [column-transport audit](examples/adsorption/column_transport/REPORT.md)
+passes stock convective-outlet controls, but its application packed-bed tests
+fail uniform-concentration preservation. That failed coefficient is blocked from
+adsorption. The frozen particle component and a separate fixed-flow hydraulic
+process branch remain independently testable; no new qualified adsorption
+service prediction is claimed.
+
+A separate [engineering-accuracy study](examples/adsorption/transport_accuracy/REPORT.md)
+accepts the small uniform drift under its declared engineering screen over
+sixteen void times for both particle sizes. Fourteen new native controls reveal
+larger errors when concentration varies: even a smooth periodic porous profile
+violates its physical bounds, while the paired free-flow analytical controls
+pass. This isolates a porous transport limitation; it does not establish the
+proposed 5% accuracy in adsorption service time or energy per on-spec volume.
+
+A [bounded follow-up](examples/adsorption/transport_accuracy/DIAGNOSIS.md) confirms
+that stationary diffusion behaves correctly, while smaller time steps and a
+matched finer-grid case retain the flow-driven error. The data handoff and
+parameter audit found no simple setup defect. That bounded study stopped at its
+declared limit. The [expanded diagnosis](examples/adsorption/transport_root_cause/REPORT.md)
+tests additional mesh and wall effects while the verified hydraulics and batch
+particle component remain available separately.
+
 ## How results stay traceable
 
 - **Explicit contracts:** SI units, coordinate systems, node indexing, array
@@ -103,6 +134,17 @@ question is how particle size changes usable treatment capacity and pumping
 energy at fixed adsorbent inventory and required outlet quality. That work is
 in progress; its current source and comparison reports are in
 [examples/adsorption/](examples/adsorption/README.md).
+
+The [transport investigation](examples/adsorption/transport_root_cause/REPORT.md)
+is complete. Refinement fixes the simple verification cases, but the finest
+packed-bed case still exceeds its concentration bounds. The existing hydraulic
+process results and batch-qualified adsorption component remain available;
+the application transport closure is unqualified.
+
+The [independent follow-up](examples/adsorption/transport_verification/REPORT.md)
+demonstrates late concentration errors in a wall-free three-dimensional
+stretching flow and a separate error during rotation at one curved wall.
+Both are verification controls; neither qualifies a new bed calculation.
 
 The filtration example remains available for regression and comparison.
 Reacting and non-isothermal chemical and bioprocess applications remain

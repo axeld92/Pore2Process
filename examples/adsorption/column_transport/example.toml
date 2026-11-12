@@ -1,0 +1,21 @@
+schema_version = 1
+id = "adsorption/column_transport"
+title = "Column transport qualification and fixed-flow pump duties"
+area = "adsorption"
+status = "in_progress"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["adsorption/packed_bed_tracer", "adsorption/film_particle"]
+run_module = "examples.adsorption.column_transport.run"
+check_module = "examples.adsorption.column_transport.check"
+reference_files = ["reference/transport_reference.json", "reference/hydraulic_reference.json"]
+protocol_files = ["protocol.md"]
+
+[validation]
+numerical = "mixed"
+literature = "not_assessed"
+scope = "Stock outlet controls pass; application packed-bed scalar fails uniform preservation. No qualified new adsorption/service prediction."
+convective_outlet = "passed"
+porous_transport = "failed"
+particle_component = "passed"
+process_hydraulics = "conditional"

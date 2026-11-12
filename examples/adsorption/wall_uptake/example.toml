@@ -1,0 +1,18 @@
+schema_version = 1
+id = "adsorption/wall_uptake"
+title = "Path-specific films from absorbing-wall tracer"
+area = "adsorption"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["adsorption/packed_bed_tracer", "adsorption/film_particle"]
+run_module = "examples.adsorption.wall_uptake.run"
+check_module = "examples.adsorption.wall_uptake.run"
+reference_files = ["reference_summary.json"]
+protocol_files = ["protocol.md"]
+
+[validation]
+numerical = "passed"
+two_period_transfer = "failed"
+literature = "failed"
+scope = "Synthetic perfect-sink film estimate on saved TRT flow, followed by unfitted Figure 7 checks for both sizes."

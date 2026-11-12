@@ -1,0 +1,1152 @@
+{
+  "summary": "results/adsorption/transport_root_cause/grid_phase/runs/20261110T213713Z-06d80a4b/summary.json",
+  "summary_sha256": "b87269aade6e463ce0510cb9919ba4b861313291d22b90cc6b91f9c4cc43d883",
+  "run_id": "20261110T213713Z-06d80a4b",
+  "source_files_checked": 39,
+  "artifacts_checked": 735,
+  "actual_native_flow_runs": 3,
+  "actual_native_scalar_runs": 2,
+  "new_native_runs_in_check": 0,
+  "new_DWSIM_runs_in_check": 0,
+  "vendor": {
+    "archive_sha256": "e4d2421b50643482036917c4416145f7d6b495492f3afac64e048212361c8b3e",
+    "original_files_checked": 2070,
+    "preexisting_vendor_config_ignored": true
+  },
+  "comparison": {
+    "excursion_reduction_fraction": 0.088688688615021,
+    "unshifted_voxel_porosity": 0.59375,
+    "shifted_voxel_porosity": 0.60009765625,
+    "voxel_porosity_difference": 0.00634765625,
+    "pressure_gradient_relative_change": -0.04586098796255744,
+    "apparent_operating_point_permeability_relative_change": 0.048062363895025495,
+    "superficial_velocity_relative_change": -2.8115595737121524e-06,
+    "final_liquid_SD_relative_change": -0.13129314133119774,
+    "final_first_mode_amplitude_relative_change": -0.14994077943585815,
+    "interpretation": "Alignment sensitivity of translated continuum problem; discrete voxel geometry changes. Not material improvement or a universal fix."
+  },
+  "prefix_reproduction": {
+    "maximum_peak_field_difference": 0.0,
+    "maximum_inventory_prefix_difference": 0.0,
+    "passed": true
+  },
+  "unshifted": {
+    "result": {
+      "checks": {
+        "finite": true,
+        "kinetic_mass": true,
+        "lower_bound": false,
+        "upper_bound": false
+      },
+      "passed": false,
+      "minimum_concentration_kg_m3": 0.11769613951736513,
+      "maximum_concentration_kg_m3": 0.882506914143073,
+      "normalized_kinetic_mass_residual": 5.645003004599552e-13,
+      "exact_final_profile_RMS_over_initial_amplitude": null,
+      "actual_duration_s": 0.21476412830883945,
+      "void_transits": 2.000087688058722,
+      "maximum_relative_physical_liquid_inventory_change": 5.6205554114008294e-05,
+      "raw": {
+        "solver": "OpenLB 1.9r0",
+        "collision": "stock model selected by model_number (0 TRT27, 1 regularized TRT27, 2 MRT7, 3 TRT7)",
+        "descriptor": "stock D3Q27 or MRT D3Q7, see model_number",
+        "boundary": "stock TRT Dirichlet inlet; selected stock outlet; periodic ends when periodic=true",
+        "model_number": 1,
+        "outlet_setting": "zero",
+        "initial_inventory_kg": 1.3404128655314306e-09,
+        "n": 32,
+        "initial_profile": "mean+0.25*sin(2*pi*x/domain_length)",
+        "initial_concentration": 0.5,
+        "velocity_scale": 0.9565546608662455,
+        "periodic": true,
+        "cells": 1,
+        "nx": 32,
+        "uniform": false,
+        "side_m": 0.0013891725543141453,
+        "length_m": 0.0013891725543141453,
+        "area_m2": 1.9298003856596868e-06,
+        "dx_m": 4.341164232231704e-05,
+        "dt_s": 1.9017455796408345e-05,
+        "diffusivity_m2_s": 1e-09,
+        "tau_odd": 0.5000302734027005,
+        "tau_even": 9910.188810617397,
+        "magic": 0.3,
+        "steps": 11293,
+        "fluid_volume_m3": 1.5917402778184248e-09,
+        "flow_m3_s": 1.4823798356463085e-08,
+        "max_lattice_speed": 0.009999999999982264,
+        "wall_s": 70.371592
+      },
+      "transport_closure_qualified": false,
+      "new_service_prediction": false,
+      "peak": {
+        "step": 4145,
+        "time_s": 0.0788273542761126,
+        "maximum_excursion_kg_m3": 0.13250691414307303,
+        "initial_amplitude_kg_m3": 0.25,
+        "minimum": {
+          "ijk": [
+            25,
+            15,
+            0
+          ],
+          "xyz_m": [
+            0.0011069968792190845,
+            0.0006728804559959141,
+            2.170582116115852e-05
+          ],
+          "concentration_kg_m3": 0.11769968041757939,
+          "touches_solid_link": true
+        },
+        "maximum": {
+          "ijk": [
+            9,
+            0,
+            31
+          ],
+          "xyz_m": [
+            0.0004124106020620119,
+            2.170582116115852e-05,
+            0.0013674667331529868
+          ],
+          "concentration_kg_m3": 0.882506914143073,
+          "touches_solid_link": true
+        },
+        "fraction_fluid_touching_solid_link": 0.37664473684210525,
+        "fraction_fluid_outside_engineering_bounds": 0.03453947368421053,
+        "fraction_violators_touching_solid_link": 0.09523809523809523
+      },
+      "constant_maximum_relative_departure": null,
+      "periodic_wave_final": {
+        "step": 11293.0,
+        "time_s": 0.21476412830883945,
+        "mean_C_kg_m3": 0.5000141420617908,
+        "sd_C_kg_m3": 0.07293964406245781,
+        "sin_coefficient_kg_m3": -0.06402806603503215,
+        "cos_coefficient_kg_m3": 0.006689836566633594
+      }
+    },
+    "phase_x_m": 0.0,
+    "fluid_nodes": 19456,
+    "voxel_porosity": 0.59375,
+    "analytical_mask_matches": true,
+    "minimum_fluid_gap_m": 4.334647638844181e-06,
+    "extrema": {
+      "minimum": {
+        "ijk": [
+          25,
+          15,
+          0
+        ],
+        "xyz_m": [
+          0.0011069968792190845,
+          0.0006728804559959141,
+          2.170582116115852e-05
+        ],
+        "concentration_kg_m3": 0.11769968041757939,
+        "gap_to_analytical_surface_m": 1.3551435782432647e-05,
+        "gap_over_dx": 0.3121613248772699,
+        "nearest_sphere_centre_image_m": [
+          0.0006945862771570726,
+          0.0006945862771570726,
+          0.0
+        ],
+        "outward_normal": [
+          0.9972413740548081,
+          -0.052486388108147757,
+          0.0524863881081478
+        ],
+        "downstream_pole_cosine": 0.9972413740548081
+      },
+      "maximum": {
+        "ijk": [
+          9,
+          0,
+          31
+        ],
+        "xyz_m": [
+          0.0004124106020620119,
+          2.170582116115852e-05,
+          0.0013674667331529868
+        ],
+        "concentration_kg_m3": 0.882506914143073,
+        "gap_to_analytical_surface_m": 1.3551435782432647e-05,
+        "gap_over_dx": 0.3121613248772699,
+        "nearest_sphere_centre_image_m": [
+          0.0,
+          0.0,
+          0.0013891725543141453
+        ],
+        "outward_normal": [
+          0.9972413740548081,
+          0.0524863881081478,
+          -0.052486388108147757
+        ],
+        "downstream_pole_cosine": 0.9972413740548081
+      }
+    },
+    "exact_population_audits": {
+      "audit_1": {
+        "schema": "pore2process.exact_population_audit.v1",
+        "step": 1,
+        "dx_m": 4.341164232231704e-05,
+        "dt_s": 1.9017455796408345e-05,
+        "density_scale_kg_m3": 1.0,
+        "all": {
+          "nodes": 32768,
+          "min_density_after_native": 0.25275378996537445,
+          "max_density_after_native": 0.7472942065155764,
+          "max_abs_density_change_native": 0.0016954105701683098,
+          "max_abs_collision_change_native": 4.440892098500626e-16,
+          "max_abs_stream_residual_native": 8.326672684688674e-16,
+          "max_abs_link_balance_residual_native": 7.595920420433444e-16,
+          "negative_post_population_nodes": 0,
+          "negative_post_populations": 0,
+          "min_unshifted_post_population_native": 0.001113174111816407,
+          "inventory_change_kg": 3.0809505065742914e-26
+        },
+        "fluid": {
+          "nodes": 19456,
+          "min_density_after_native": 0.25275378996537445,
+          "max_density_after_native": 0.7472718489945789,
+          "max_abs_density_change_native": 0.0016954105701683098,
+          "max_abs_collision_change_native": 4.440892098500626e-16,
+          "max_abs_stream_residual_native": 8.326672684688674e-16,
+          "max_abs_link_balance_residual_native": 7.149229125369416e-16,
+          "negative_post_population_nodes": 0,
+          "negative_post_populations": 0,
+          "min_unshifted_post_population_native": 0.001113174111816407,
+          "inventory_change_kg": 1.8949307794155701e-16
+        },
+        "wall_adjacent_fluid": {
+          "nodes": 7328,
+          "min_density_after_native": 0.25275949577938883,
+          "max_density_after_native": 0.7472718489945789,
+          "max_abs_density_change_native": 0.0016954105701683098,
+          "max_abs_collision_change_native": 4.440892098500626e-16,
+          "max_abs_stream_residual_native": 8.326672684688674e-16,
+          "max_abs_link_balance_residual_native": 6.466046231431988e-16,
+          "negative_post_population_nodes": 0,
+          "negative_post_populations": 0,
+          "min_unshifted_post_population_native": 0.0011215950063246643,
+          "inventory_change_kg": 9.520779942660028e-16
+        },
+        "bulk_fluid": {
+          "nodes": 12128,
+          "min_density_after_native": 0.25275378996537445,
+          "max_density_after_native": 0.7472571128380338,
+          "max_abs_density_change_native": 0.0016681865160018683,
+          "max_abs_collision_change_native": 4.440892098500626e-16,
+          "max_abs_stream_residual_native": 7.771561172376096e-16,
+          "max_abs_link_balance_residual_native": 7.149229125369416e-16,
+          "negative_post_population_nodes": 0,
+          "negative_post_populations": 0,
+          "min_unshifted_post_population_native": 0.001113174111816407,
+          "inventory_change_kg": -7.625849163243731e-16
+        },
+        "wall": {
+          "nodes": 13312,
+          "min_density_after_native": 0.2527727174487264,
+          "max_density_after_native": 0.7472942065155764,
+          "max_abs_density_change_native": 0.001666895924922196,
+          "max_abs_collision_change_native": 0.0,
+          "max_abs_stream_residual_native": 8.326672684688674e-16,
+          "max_abs_link_balance_residual_native": 7.595920420433444e-16,
+          "negative_post_population_nodes": 0,
+          "negative_post_populations": 0,
+          "min_unshifted_post_population_native": 0.0011629806404256978,
+          "inventory_change_kg": -1.8949307791125615e-16
+        },
+        "fluid_to_wall_net_kg_s": -9.964165550705087e-12,
+        "wall_to_fluid_net_kg_s": 9.964165550708396e-12,
+        "interface_antisymmetry_residual_kg_s": 3.308722450212111e-24,
+        "global_net_link_outflow_kg_s": 0.0,
+        "max_abs_collision_mass_change_native": 4.440892098500626e-16,
+        "max_abs_stream_residual_native": 8.326672684688674e-16,
+        "max_abs_link_balance_residual_native": 7.595920420433444e-16,
+        "density_tolerance_native": 1e-11,
+        "checks": {
+          "collision_preserves_local_density": true,
+          "streaming_matches_actual_population_links": true,
+          "local_link_balance_closes": true,
+          "wall_interface_flux_is_antisymmetric": true,
+          "global_periodic_link_flux_cancels": true
+        },
+        "interpretation": "These are exact population balances, not centred div(u). Local density changes and instantaneous fluid-wall exchange are allowed by full-way BounceBack numerical storage. Passing conservation does not establish concentration boundedness or transport accuracy. Negative individual populations are a diagnostic, not by themselves an acceptance criterion."
+      },
+      "audit_2": {
+        "schema": "pore2process.exact_population_audit.v1",
+        "step": 2,
+        "dx_m": 4.341164232231704e-05,
+        "dt_s": 1.9017455796408345e-05,
+        "density_scale_kg_m3": 1.0,
+        "all": {
+          "nodes": 32768,
+          "min_density_after_native": 0.2506327576467302,
+          "max_density_after_native": 0.749391214427306,
+          "max_abs_density_change_native": 0.002231594835498507,
+          "max_abs_collision_change_native": 8.881784197001252e-16,
+          "max_abs_stream_residual_native": 8.326672684688674e-16,
+          "max_abs_link_balance_residual_native": 7.572067972638763e-16,
+          "negative_post_population_nodes": 0,
+          "negative_post_populations": 0,
+          "min_unshifted_post_population_native": 0.0010977972317857553,
+          "inventory_change_kg": 4.8830158972120844e-26
+        },
+        "fluid": {
+          "nodes": 19456,
+          "min_density_after_native": 0.25113973834709247,
+          "max_density_after_native": 0.7488963655766976,
+          "max_abs_density_change_native": 0.0016985177628130455,
+          "max_abs_collision_change_native": 4.440892098500626e-16,
+          "max_abs_stream_residual_native": 8.326672684688674e-16,
+          "max_abs_link_balance_residual_native": 6.696032617270475e-16,
+          "negative_post_population_nodes": 0,
+          "negative_post_populations": 0,
+          "min_unshifted_post_population_native": 0.0010977972317857553,
+          "inventory_change_kg": 3.523261084460695e-16
+        },
+        "wall_adjacent_fluid": {
+          "nodes": 7328,
+          "min_density_after_native": 0.2511732917874038,
+          "max_density_after_native": 0.7488963655766976,
+          "max_abs_density_change_native": 0.0016985177628130455,
+          "max_abs_collision_change_native": 4.440892098500626e-16,
+          "max_abs_stream_residual_native": 7.771561172376096e-16,
+          "max_abs_link_balance_residual_native": 6.395708615491991e-16,
+          "negative_post_population_nodes": 0,
+          "negative_post_populations": 0,
+          "min_unshifted_post_population_native": 0.001104160265757861,
+          "inventory_change_kg": 1.592284242258704e-15
+        },
+        "bulk_fluid": {
+          "nodes": 12128,
+          "min_density_after_native": 0.25113973834709247,
+          "max_density_after_native": 0.7488950478250707,
+          "max_abs_density_change_native": 0.001645660882095501,
+          "max_abs_collision_change_native": 4.440892098500626e-16,
+          "max_abs_stream_residual_native": 8.326672684688674e-16,
+          "max_abs_link_balance_residual_native": 6.696032617270475e-16,
+          "negative_post_population_nodes": 0,
+          "negative_post_populations": 0,
+          "min_unshifted_post_population_native": 0.0010977972317857553,
+          "inventory_change_kg": -1.239958133812671e-15
+        },
+        "wall": {
+          "nodes": 13312,
+          "min_density_after_native": 0.2506327576467302,
+          "max_density_after_native": 0.749391214427306,
+          "max_abs_density_change_native": 0.002231594835498507,
+          "max_abs_collision_change_native": 8.881784197001252e-16,
+          "max_abs_stream_residual_native": 6.661338147750939e-16,
+          "max_abs_link_balance_residual_native": 7.572067972638763e-16,
+          "negative_post_population_nodes": 0,
+          "negative_post_populations": 0,
+          "min_unshifted_post_population_native": 0.0011543208650489113,
+          "inventory_change_kg": -3.5232610839753e-16
+        },
+        "fluid_to_wall_net_kg_s": -1.8526458647902447e-11,
+        "wall_to_fluid_net_kg_s": 1.8526458647902447e-11,
+        "interface_antisymmetry_residual_kg_s": 0.0,
+        "global_net_link_outflow_kg_s": 1.3234889800848443e-23,
+        "max_abs_collision_mass_change_native": 8.881784197001252e-16,
+        "max_abs_stream_residual_native": 8.326672684688674e-16,
+        "max_abs_link_balance_residual_native": 7.572067972638763e-16,
+        "density_tolerance_native": 1e-11,
+        "checks": {
+          "collision_preserves_local_density": true,
+          "streaming_matches_actual_population_links": true,
+          "local_link_balance_closes": true,
+          "wall_interface_flux_is_antisymmetric": true,
+          "global_periodic_link_flux_cancels": true
+        },
+        "interpretation": "These are exact population balances, not centred div(u). Local density changes and instantaneous fluid-wall exchange are allowed by full-way BounceBack numerical storage. Passing conservation does not establish concentration boundedness or transport accuracy. Negative individual populations are a diagnostic, not by themselves an acceptance criterion."
+      }
+    },
+    "uniform_stencil": {
+      "fluid_nodes": 19456,
+      "max_abs_one_step_relative_constant_change": 0.0001191224893694054,
+      "rms_one_step_relative_constant_change": 2.7089496581853336e-05,
+      "max_abs_scalar_equilibrium_divergence_per_s": 6.263849941057993,
+      "rms_scalar_equilibrium_divergence_per_s": 1.4244542946154493,
+      "first_step_comparison": null,
+      "interpretation": "A read-only exact first-order-equilibrium streaming stencil. This predicts the first step of an initially uniform scalar, not the evolved long-time scalar flux and not the carrier's population flux. A nonzero value demonstrates that exported cell velocities are not exactly divergence-free under this scalar equilibrium stencil."
+    }
+  },
+  "shifted": {
+    "shifted_sine": {
+      "result": {
+        "checks": {
+          "finite": true,
+          "kinetic_mass": true,
+          "lower_bound": false,
+          "upper_bound": false
+        },
+        "passed": false,
+        "minimum_concentration_kg_m3": 0.13138874392330535,
+        "maximum_concentration_kg_m3": 0.8707550496953007,
+        "normalized_kinetic_mass_residual": 6.110920169778667e-13,
+        "exact_final_profile_RMS_over_initial_amplitude": null,
+        "actual_duration_s": 0.21476412830883945,
+        "void_transits": 1.9789257857336833,
+        "maximum_relative_physical_liquid_inventory_change": 6.151919014873997e-05,
+        "raw": {
+          "solver": "OpenLB 1.9r0",
+          "collision": "stock model selected by model_number (0 TRT27, 1 regularized TRT27, 2 MRT7, 3 TRT7)",
+          "descriptor": "stock D3Q27 or MRT D3Q7, see model_number",
+          "boundary": "stock TRT Dirichlet inlet; selected stock outlet; periodic ends when periodic=true",
+          "model_number": 1,
+          "outlet_setting": "zero",
+          "initial_inventory_kg": 1.3404128655313514e-09,
+          "n": 32,
+          "initial_profile": "mean+0.25*sin(2*pi*(x-dx/2)/domain_length)",
+          "initial_concentration": 0.5,
+          "velocity_scale": 0.9565546608662455,
+          "periodic": true,
+          "cells": 1,
+          "nx": 32,
+          "uniform": false,
+          "side_m": 0.0013891725543141453,
+          "length_m": 0.0013891725543141453,
+          "area_m2": 1.9298003856596868e-06,
+          "dx_m": 4.341164232231704e-05,
+          "dt_s": 1.9017455796408345e-05,
+          "diffusivity_m2_s": 1e-09,
+          "tau_odd": 0.5000302734027005,
+          "tau_even": 9910.188810617397,
+          "magic": 0.3,
+          "steps": 11293,
+          "fluid_volume_m3": 1.6087572380253644e-09,
+          "flow_m3_s": 1.4823756678470688e-08,
+          "max_lattice_speed": 0.009967142551055932,
+          "wall_s": 72.543354
+        },
+        "transport_closure_qualified": false,
+        "new_service_prediction": false,
+        "peak": {
+          "step": 3668,
+          "time_s": 0.06975602786122581,
+          "maximum_excursion_kg_m3": 0.12075504969530071,
+          "initial_amplitude_kg_m3": 0.25,
+          "minimum": {
+            "ijk": [
+              25,
+              14,
+              30
+            ],
+            "xyz_m": [
+              0.0011069968792190845,
+              0.0006294688136735971,
+              0.0013240550908306698
+            ],
+            "concentration_kg_m3": 0.13139306213865076,
+            "touches_solid_link": true
+          },
+          "maximum": {
+            "ijk": [
+              9,
+              1,
+              30
+            ],
+            "xyz_m": [
+              0.0004124106020620119,
+              6.511746348347556e-05,
+              0.0013240550908306698
+            ],
+            "concentration_kg_m3": 0.8707550496953007,
+            "touches_solid_link": true
+          },
+          "fraction_fluid_touching_solid_link": 0.37510170870626525,
+          "fraction_fluid_outside_engineering_bounds": 0.045565500406834825,
+          "fraction_violators_touching_solid_link": 0.125
+        },
+        "constant_maximum_relative_departure": null,
+        "periodic_wave_final": {
+          "step": 11293.0,
+          "time_s": 0.21476412830883945,
+          "mean_C_kg_m3": 0.5000200822012738,
+          "sd_C_kg_m3": 0.06336316906591828,
+          "sin_coefficient_kg_m3": -0.0503384684895388,
+          "cos_coefficient_kg_m3": 0.021465010016947325
+        }
+      },
+      "phase_x_m": 2.170582116115852e-05,
+      "fluid_nodes": 19664,
+      "voxel_porosity": 0.60009765625,
+      "analytical_mask_matches": true,
+      "minimum_fluid_gap_m": 1.4110037353576082e-06,
+      "extrema": {
+        "minimum": {
+          "ijk": [
+            25,
+            14,
+            30
+          ],
+          "xyz_m": [
+            0.0011069968792190845,
+            0.0006294688136735971,
+            0.0013240550908306698
+          ],
+          "concentration_kg_m3": 0.13139306213865076,
+          "gap_to_analytical_surface_m": 1.4110037353577166e-06,
+          "gap_over_dx": 0.032502887701909136,
+          "nearest_sphere_centre_image_m": [
+            0.0007162920983182312,
+            0.0006945862771570726,
+            0.0013891725543141453
+          ],
+          "outward_normal": [
+            0.9733285267845753,
+            -0.1622214211307624,
+            -0.1622214211307624
+          ],
+          "downstream_pole_cosine": 0.9733285267845753
+        },
+        "maximum": {
+          "ijk": [
+            9,
+            1,
+            30
+          ],
+          "xyz_m": [
+            0.0004124106020620119,
+            6.511746348347556e-05,
+            0.0013240550908306698
+          ],
+          "concentration_kg_m3": 0.8707550496953007,
+          "gap_to_analytical_surface_m": 1.4110037353577166e-06,
+          "gap_over_dx": 0.032502887701909136,
+          "nearest_sphere_centre_image_m": [
+            2.1705821161158503e-05,
+            0.0,
+            0.0013891725543141453
+          ],
+          "outward_normal": [
+            0.9733285267845753,
+            0.16222142113076254,
+            -0.1622214211307624
+          ],
+          "downstream_pole_cosine": 0.9733285267845753
+        }
+      },
+      "exact_population_audits": {
+        "audit_1": {
+          "schema": "pore2process.exact_population_audit.v1",
+          "step": 1,
+          "dx_m": 4.341164232231704e-05,
+          "dt_s": 1.9017455796408345e-05,
+          "density_scale_kg_m3": 1.0,
+          "all": {
+            "nodes": 32768,
+            "min_density_after_native": 0.2515780274478254,
+            "max_density_after_native": 0.7484931004016864,
+            "max_abs_density_change_native": 0.001687265445554531,
+            "max_abs_collision_change_native": 4.440892098500626e-16,
+            "max_abs_stream_residual_native": 7.771561172376096e-16,
+            "max_abs_link_balance_residual_native": 7.50051062925472e-16,
+            "negative_post_population_nodes": 0,
+            "negative_post_populations": 0,
+            "min_unshifted_post_population_native": 0.001109755030327112,
+            "inventory_change_kg": 1.9764588155382246e-26
+          },
+          "fluid": {
+            "nodes": 19664,
+            "min_density_after_native": 0.25158121322971516,
+            "max_density_after_native": 0.7484597986120589,
+            "max_abs_density_change_native": 0.001687265445554531,
+            "max_abs_collision_change_native": 4.440892098500626e-16,
+            "max_abs_stream_residual_native": 7.771561172376096e-16,
+            "max_abs_link_balance_residual_native": 7.303456884405479e-16,
+            "negative_post_population_nodes": 0,
+            "negative_post_populations": 0,
+            "min_unshifted_post_population_native": 0.001109755030327112,
+            "inventory_change_kg": 1.2503033985435887e-16
+          },
+          "wall_adjacent_fluid": {
+            "nodes": 7376,
+            "min_density_after_native": 0.25158121322971516,
+            "max_density_after_native": 0.7484597986120589,
+            "max_abs_density_change_native": 0.001687265445554531,
+            "max_abs_collision_change_native": 4.440892098500626e-16,
+            "max_abs_stream_residual_native": 7.216449660063518e-16,
+            "max_abs_link_balance_residual_native": 6.802284430174055e-16,
+            "negative_post_population_nodes": 0,
+            "negative_post_populations": 0,
+            "min_unshifted_post_population_native": 0.0011150110501328362,
+            "inventory_change_kg": 8.190969018092158e-16
+          },
+          "bulk_fluid": {
+            "nodes": 12288,
+            "min_density_after_native": 0.2515914588952973,
+            "max_density_after_native": 0.7484043122080567,
+            "max_abs_density_change_native": 0.0016457435990868685,
+            "max_abs_collision_change_native": 4.440892098500626e-16,
+            "max_abs_stream_residual_native": 7.771561172376096e-16,
+            "max_abs_link_balance_residual_native": 7.303456884405479e-16,
+            "negative_post_population_nodes": 0,
+            "negative_post_populations": 0,
+            "min_unshifted_post_population_native": 0.001109755030327112,
+            "inventory_change_kg": -6.940665619550023e-16
+          },
+          "wall": {
+            "nodes": 13104,
+            "min_density_after_native": 0.2515780274478254,
+            "max_density_after_native": 0.7484931004016864,
+            "max_abs_density_change_native": 0.0016677629112760162,
+            "max_abs_collision_change_native": 0.0,
+            "max_abs_stream_residual_native": 6.661338147750939e-16,
+            "max_abs_link_balance_residual_native": 7.50051062925472e-16,
+            "negative_post_population_nodes": 0,
+            "negative_post_populations": 0,
+            "min_unshifted_post_population_native": 0.0011574074074074073,
+            "inventory_change_kg": -1.2503033983466695e-16
+          },
+          "fluid_to_wall_net_kg_s": -6.574504032223931e-12,
+          "wall_to_fluid_net_kg_s": 6.574504032223931e-12,
+          "interface_antisymmetry_residual_kg_s": 0.0,
+          "global_net_link_outflow_kg_s": -1.3234889800848443e-23,
+          "max_abs_collision_mass_change_native": 4.440892098500626e-16,
+          "max_abs_stream_residual_native": 7.771561172376096e-16,
+          "max_abs_link_balance_residual_native": 7.50051062925472e-16,
+          "density_tolerance_native": 1e-11,
+          "checks": {
+            "collision_preserves_local_density": true,
+            "streaming_matches_actual_population_links": true,
+            "local_link_balance_closes": true,
+            "wall_interface_flux_is_antisymmetric": true,
+            "global_periodic_link_flux_cancels": true
+          },
+          "interpretation": "These are exact population balances, not centred div(u). Local density changes and instantaneous fluid-wall exchange are allowed by full-way BounceBack numerical storage. Passing conservation does not establish concentration boundedness or transport accuracy. Negative individual populations are a diagnostic, not by themselves an acceptance criterion."
+        },
+        "audit_2": {
+          "schema": "pore2process.exact_population_audit.v1",
+          "step": 2,
+          "dx_m": 4.341164232231704e-05,
+          "dt_s": 1.9017455796408345e-05,
+          "density_scale_kg_m3": 1.0,
+          "all": {
+            "nodes": 32768,
+            "min_density_after_native": 0.24944654530553023,
+            "max_density_after_native": 0.750578672739301,
+            "max_abs_density_change_native": 0.0022329359960751027,
+            "max_abs_collision_change_native": 5.551115123125783e-16,
+            "max_abs_stream_residual_native": 9.992007221626409e-16,
+            "max_abs_link_balance_residual_native": 9.923702484759822e-16,
+            "negative_post_population_nodes": 0,
+            "negative_post_populations": 0,
+            "min_unshifted_post_population_native": 0.0010954635525025815,
+            "inventory_change_kg": 6.597884575399662e-26
+          },
+          "fluid": {
+            "nodes": 19664,
+            "min_density_after_native": 0.25000725672639657,
+            "max_density_after_native": 0.7500394560925882,
+            "max_abs_density_change_native": 0.0016392789603685287,
+            "max_abs_collision_change_native": 5.551115123125783e-16,
+            "max_abs_stream_residual_native": 7.216449660063518e-16,
+            "max_abs_link_balance_residual_native": 6.664590754268396e-16,
+            "negative_post_population_nodes": 0,
+            "negative_post_populations": 0,
+            "min_unshifted_post_population_native": 0.0010954635525025815,
+            "inventory_change_kg": 3.4046923296345675e-16
+          },
+          "wall_adjacent_fluid": {
+            "nodes": 7376,
+            "min_density_after_native": 0.250008608918893,
+            "max_density_after_native": 0.7500394560925882,
+            "max_abs_density_change_native": 0.0016190799490675145,
+            "max_abs_collision_change_native": 5.551115123125783e-16,
+            "max_abs_stream_residual_native": 6.661338147750939e-16,
+            "max_abs_link_balance_residual_native": 6.310395457044538e-16,
+            "negative_post_population_nodes": 0,
+            "negative_post_populations": 0,
+            "min_unshifted_post_population_native": 0.0011022585015337681,
+            "inventory_change_kg": 1.5702567928471952e-15
+          },
+          "bulk_fluid": {
+            "nodes": 12288,
+            "min_density_after_native": 0.25000725672639657,
+            "max_density_after_native": 0.7499976969000801,
+            "max_abs_density_change_native": 0.0016392789603685287,
+            "max_abs_collision_change_native": 5.551115123125783e-16,
+            "max_abs_stream_residual_native": 7.216449660063518e-16,
+            "max_abs_link_balance_residual_native": 6.664590754268396e-16,
+            "negative_post_population_nodes": 0,
+            "negative_post_populations": 0,
+            "min_unshifted_post_population_native": 0.0010954635525025815,
+            "inventory_change_kg": -1.2297875598837748e-15
+          },
+          "wall": {
+            "nodes": 13104,
+            "min_density_after_native": 0.24944654530553023,
+            "max_density_after_native": 0.750578672739301,
+            "max_abs_density_change_native": 0.0022329359960751027,
+            "max_abs_collision_change_native": 5.551115123125783e-16,
+            "max_abs_stream_residual_native": 9.992007221626409e-16,
+            "max_abs_link_balance_residual_native": 9.923702484759822e-16,
+            "negative_post_population_nodes": 0,
+            "negative_post_populations": 0,
+            "min_unshifted_post_population_native": 0.0011510661223564948,
+            "inventory_change_kg": -3.4046923289762325e-16
+          },
+          "fluid_to_wall_net_kg_s": -1.7902985370860297e-11,
+          "wall_to_fluid_net_kg_s": 1.7902985370860297e-11,
+          "interface_antisymmetry_residual_kg_s": 0.0,
+          "global_net_link_outflow_kg_s": 1.3234889800848443e-23,
+          "max_abs_collision_mass_change_native": 5.551115123125783e-16,
+          "max_abs_stream_residual_native": 9.992007221626409e-16,
+          "max_abs_link_balance_residual_native": 9.923702484759822e-16,
+          "density_tolerance_native": 1e-11,
+          "checks": {
+            "collision_preserves_local_density": true,
+            "streaming_matches_actual_population_links": true,
+            "local_link_balance_closes": true,
+            "wall_interface_flux_is_antisymmetric": true,
+            "global_periodic_link_flux_cancels": true
+          },
+          "interpretation": "These are exact population balances, not centred div(u). Local density changes and instantaneous fluid-wall exchange are allowed by full-way BounceBack numerical storage. Passing conservation does not establish concentration boundedness or transport accuracy. Negative individual populations are a diagnostic, not by themselves an acceptance criterion."
+        }
+      },
+      "uniform_stencil": {
+        "fluid_nodes": 19664,
+        "max_abs_one_step_relative_constant_change": 0.00013611887692333013,
+        "rms_one_step_relative_constant_change": 2.7596830065306733e-05,
+        "max_abs_scalar_equilibrium_divergence_per_s": 7.157575565341273,
+        "rms_scalar_equilibrium_divergence_per_s": 1.4511315478129676,
+        "first_step_comparison": null,
+        "interpretation": "A read-only exact first-order-equilibrium streaming stencil. This predicts the first step of an initially uniform scalar, not the evolved long-time scalar flux and not the carrier's population flux. A nonzero value demonstrates that exported cell velocities are not exactly divergence-free under this scalar equilibrium stencil."
+      }
+    },
+    "shifted_peak_audit": {
+      "result": {
+        "checks": {
+          "finite": true,
+          "kinetic_mass": true,
+          "lower_bound": false,
+          "upper_bound": false
+        },
+        "passed": false,
+        "minimum_concentration_kg_m3": 0.13138874392330535,
+        "maximum_concentration_kg_m3": 0.8707550496953007,
+        "normalized_kinetic_mass_residual": 3.5128920036824103e-13,
+        "exact_final_profile_RMS_over_initial_amplitude": null,
+        "actual_duration_s": 0.06975602786122581,
+        "void_transits": 0.6427609830931684,
+        "maximum_relative_physical_liquid_inventory_change": 5.7726911736333264e-05,
+        "raw": {
+          "solver": "OpenLB 1.9r0",
+          "collision": "stock model selected by model_number (0 TRT27, 1 regularized TRT27, 2 MRT7, 3 TRT7)",
+          "descriptor": "stock D3Q27 or MRT D3Q7, see model_number",
+          "boundary": "stock TRT Dirichlet inlet; selected stock outlet; periodic ends when periodic=true",
+          "model_number": 1,
+          "outlet_setting": "zero",
+          "initial_inventory_kg": 1.3404128655313514e-09,
+          "n": 32,
+          "initial_profile": "mean+0.25*sin(2*pi*(x-dx/2)/domain_length)",
+          "initial_concentration": 0.5,
+          "velocity_scale": 0.9565546608662455,
+          "periodic": true,
+          "cells": 1,
+          "nx": 32,
+          "uniform": false,
+          "side_m": 0.0013891725543141453,
+          "length_m": 0.0013891725543141453,
+          "area_m2": 1.9298003856596868e-06,
+          "dx_m": 4.341164232231704e-05,
+          "dt_s": 1.9017455796408345e-05,
+          "diffusivity_m2_s": 1e-09,
+          "tau_odd": 0.5000302734027005,
+          "tau_even": 9910.188810617397,
+          "magic": 0.3,
+          "steps": 3668,
+          "fluid_volume_m3": 1.6087572380253644e-09,
+          "flow_m3_s": 1.4823756678470688e-08,
+          "max_lattice_speed": 0.009967142551055932,
+          "wall_s": 25.440185
+        },
+        "transport_closure_qualified": false,
+        "new_service_prediction": false,
+        "peak": {
+          "step": 3668,
+          "time_s": 0.06975602786122581,
+          "maximum_excursion_kg_m3": 0.12075504969530071,
+          "initial_amplitude_kg_m3": 0.25,
+          "minimum": {
+            "ijk": [
+              25,
+              14,
+              30
+            ],
+            "xyz_m": [
+              0.0011069968792190845,
+              0.0006294688136735971,
+              0.0013240550908306698
+            ],
+            "concentration_kg_m3": 0.13139306213865076,
+            "touches_solid_link": true
+          },
+          "maximum": {
+            "ijk": [
+              9,
+              1,
+              30
+            ],
+            "xyz_m": [
+              0.0004124106020620119,
+              6.511746348347556e-05,
+              0.0013240550908306698
+            ],
+            "concentration_kg_m3": 0.8707550496953007,
+            "touches_solid_link": true
+          },
+          "fraction_fluid_touching_solid_link": 0.37510170870626525,
+          "fraction_fluid_outside_engineering_bounds": 0.045565500406834825,
+          "fraction_violators_touching_solid_link": 0.125
+        },
+        "constant_maximum_relative_departure": null,
+        "periodic_wave_final": {
+          "step": 3668.0,
+          "time_s": 0.06975602786122581,
+          "mean_C_kg_m3": 0.5000288634558955,
+          "sd_C_kg_m3": 0.1478689796118735,
+          "sin_coefficient_kg_m3": 0.001424878600098958,
+          "cos_coefficient_kg_m3": 0.10502065649281134
+        }
+      },
+      "phase_x_m": 2.170582116115852e-05,
+      "fluid_nodes": 19664,
+      "voxel_porosity": 0.60009765625,
+      "analytical_mask_matches": true,
+      "minimum_fluid_gap_m": 1.4110037353576082e-06,
+      "extrema": {
+        "minimum": {
+          "ijk": [
+            25,
+            14,
+            30
+          ],
+          "xyz_m": [
+            0.0011069968792190845,
+            0.0006294688136735971,
+            0.0013240550908306698
+          ],
+          "concentration_kg_m3": 0.13139306213865076,
+          "gap_to_analytical_surface_m": 1.4110037353577166e-06,
+          "gap_over_dx": 0.032502887701909136,
+          "nearest_sphere_centre_image_m": [
+            0.0007162920983182312,
+            0.0006945862771570726,
+            0.0013891725543141453
+          ],
+          "outward_normal": [
+            0.9733285267845753,
+            -0.1622214211307624,
+            -0.1622214211307624
+          ],
+          "downstream_pole_cosine": 0.9733285267845753
+        },
+        "maximum": {
+          "ijk": [
+            9,
+            1,
+            30
+          ],
+          "xyz_m": [
+            0.0004124106020620119,
+            6.511746348347556e-05,
+            0.0013240550908306698
+          ],
+          "concentration_kg_m3": 0.8707550496953007,
+          "gap_to_analytical_surface_m": 1.4110037353577166e-06,
+          "gap_over_dx": 0.032502887701909136,
+          "nearest_sphere_centre_image_m": [
+            2.1705821161158503e-05,
+            0.0,
+            0.0013891725543141453
+          ],
+          "outward_normal": [
+            0.9733285267845753,
+            0.16222142113076254,
+            -0.1622214211307624
+          ],
+          "downstream_pole_cosine": 0.9733285267845753
+        }
+      },
+      "exact_population_audits": {
+        "audit_1": {
+          "schema": "pore2process.exact_population_audit.v1",
+          "step": 1,
+          "dx_m": 4.341164232231704e-05,
+          "dt_s": 1.9017455796408345e-05,
+          "density_scale_kg_m3": 1.0,
+          "all": {
+            "nodes": 32768,
+            "min_density_after_native": 0.2515780274478254,
+            "max_density_after_native": 0.7484931004016864,
+            "max_abs_density_change_native": 0.001687265445554531,
+            "max_abs_collision_change_native": 4.440892098500626e-16,
+            "max_abs_stream_residual_native": 7.771561172376096e-16,
+            "max_abs_link_balance_residual_native": 7.50051062925472e-16,
+            "negative_post_population_nodes": 0,
+            "negative_post_populations": 0,
+            "min_unshifted_post_population_native": 0.001109755030327112,
+            "inventory_change_kg": 1.9764588155382246e-26
+          },
+          "fluid": {
+            "nodes": 19664,
+            "min_density_after_native": 0.25158121322971516,
+            "max_density_after_native": 0.7484597986120589,
+            "max_abs_density_change_native": 0.001687265445554531,
+            "max_abs_collision_change_native": 4.440892098500626e-16,
+            "max_abs_stream_residual_native": 7.771561172376096e-16,
+            "max_abs_link_balance_residual_native": 7.303456884405479e-16,
+            "negative_post_population_nodes": 0,
+            "negative_post_populations": 0,
+            "min_unshifted_post_population_native": 0.001109755030327112,
+            "inventory_change_kg": 1.2503033985435887e-16
+          },
+          "wall_adjacent_fluid": {
+            "nodes": 7376,
+            "min_density_after_native": 0.25158121322971516,
+            "max_density_after_native": 0.7484597986120589,
+            "max_abs_density_change_native": 0.001687265445554531,
+            "max_abs_collision_change_native": 4.440892098500626e-16,
+            "max_abs_stream_residual_native": 7.216449660063518e-16,
+            "max_abs_link_balance_residual_native": 6.802284430174055e-16,
+            "negative_post_population_nodes": 0,
+            "negative_post_populations": 0,
+            "min_unshifted_post_population_native": 0.0011150110501328362,
+            "inventory_change_kg": 8.190969018092158e-16
+          },
+          "bulk_fluid": {
+            "nodes": 12288,
+            "min_density_after_native": 0.2515914588952973,
+            "max_density_after_native": 0.7484043122080567,
+            "max_abs_density_change_native": 0.0016457435990868685,
+            "max_abs_collision_change_native": 4.440892098500626e-16,
+            "max_abs_stream_residual_native": 7.771561172376096e-16,
+            "max_abs_link_balance_residual_native": 7.303456884405479e-16,
+            "negative_post_population_nodes": 0,
+            "negative_post_populations": 0,
+            "min_unshifted_post_population_native": 0.001109755030327112,
+            "inventory_change_kg": -6.940665619550023e-16
+          },
+          "wall": {
+            "nodes": 13104,
+            "min_density_after_native": 0.2515780274478254,
+            "max_density_after_native": 0.7484931004016864,
+            "max_abs_density_change_native": 0.0016677629112760162,
+            "max_abs_collision_change_native": 0.0,
+            "max_abs_stream_residual_native": 6.661338147750939e-16,
+            "max_abs_link_balance_residual_native": 7.50051062925472e-16,
+            "negative_post_population_nodes": 0,
+            "negative_post_populations": 0,
+            "min_unshifted_post_population_native": 0.0011574074074074073,
+            "inventory_change_kg": -1.2503033983466695e-16
+          },
+          "fluid_to_wall_net_kg_s": -6.574504032223931e-12,
+          "wall_to_fluid_net_kg_s": 6.574504032223931e-12,
+          "interface_antisymmetry_residual_kg_s": 0.0,
+          "global_net_link_outflow_kg_s": -1.3234889800848443e-23,
+          "max_abs_collision_mass_change_native": 4.440892098500626e-16,
+          "max_abs_stream_residual_native": 7.771561172376096e-16,
+          "max_abs_link_balance_residual_native": 7.50051062925472e-16,
+          "density_tolerance_native": 1e-11,
+          "checks": {
+            "collision_preserves_local_density": true,
+            "streaming_matches_actual_population_links": true,
+            "local_link_balance_closes": true,
+            "wall_interface_flux_is_antisymmetric": true,
+            "global_periodic_link_flux_cancels": true
+          },
+          "interpretation": "These are exact population balances, not centred div(u). Local density changes and instantaneous fluid-wall exchange are allowed by full-way BounceBack numerical storage. Passing conservation does not establish concentration boundedness or transport accuracy. Negative individual populations are a diagnostic, not by themselves an acceptance criterion."
+        },
+        "audit_2": {
+          "schema": "pore2process.exact_population_audit.v1",
+          "step": 2,
+          "dx_m": 4.341164232231704e-05,
+          "dt_s": 1.9017455796408345e-05,
+          "density_scale_kg_m3": 1.0,
+          "all": {
+            "nodes": 32768,
+            "min_density_after_native": 0.24944654530553023,
+            "max_density_after_native": 0.750578672739301,
+            "max_abs_density_change_native": 0.0022329359960751027,
+            "max_abs_collision_change_native": 5.551115123125783e-16,
+            "max_abs_stream_residual_native": 9.992007221626409e-16,
+            "max_abs_link_balance_residual_native": 9.923702484759822e-16,
+            "negative_post_population_nodes": 0,
+            "negative_post_populations": 0,
+            "min_unshifted_post_population_native": 0.0010954635525025815,
+            "inventory_change_kg": 6.597884575399662e-26
+          },
+          "fluid": {
+            "nodes": 19664,
+            "min_density_after_native": 0.25000725672639657,
+            "max_density_after_native": 0.7500394560925882,
+            "max_abs_density_change_native": 0.0016392789603685287,
+            "max_abs_collision_change_native": 5.551115123125783e-16,
+            "max_abs_stream_residual_native": 7.216449660063518e-16,
+            "max_abs_link_balance_residual_native": 6.664590754268396e-16,
+            "negative_post_population_nodes": 0,
+            "negative_post_populations": 0,
+            "min_unshifted_post_population_native": 0.0010954635525025815,
+            "inventory_change_kg": 3.4046923296345675e-16
+          },
+          "wall_adjacent_fluid": {
+            "nodes": 7376,
+            "min_density_after_native": 0.250008608918893,
+            "max_density_after_native": 0.7500394560925882,
+            "max_abs_density_change_native": 0.0016190799490675145,
+            "max_abs_collision_change_native": 5.551115123125783e-16,
+            "max_abs_stream_residual_native": 6.661338147750939e-16,
+            "max_abs_link_balance_residual_native": 6.310395457044538e-16,
+            "negative_post_population_nodes": 0,
+            "negative_post_populations": 0,
+            "min_unshifted_post_population_native": 0.0011022585015337681,
+            "inventory_change_kg": 1.5702567928471952e-15
+          },
+          "bulk_fluid": {
+            "nodes": 12288,
+            "min_density_after_native": 0.25000725672639657,
+            "max_density_after_native": 0.7499976969000801,
+            "max_abs_density_change_native": 0.0016392789603685287,
+            "max_abs_collision_change_native": 5.551115123125783e-16,
+            "max_abs_stream_residual_native": 7.216449660063518e-16,
+            "max_abs_link_balance_residual_native": 6.664590754268396e-16,
+            "negative_post_population_nodes": 0,
+            "negative_post_populations": 0,
+            "min_unshifted_post_population_native": 0.0010954635525025815,
+            "inventory_change_kg": -1.2297875598837748e-15
+          },
+          "wall": {
+            "nodes": 13104,
+            "min_density_after_native": 0.24944654530553023,
+            "max_density_after_native": 0.750578672739301,
+            "max_abs_density_change_native": 0.0022329359960751027,
+            "max_abs_collision_change_native": 5.551115123125783e-16,
+            "max_abs_stream_residual_native": 9.992007221626409e-16,
+            "max_abs_link_balance_residual_native": 9.923702484759822e-16,
+            "negative_post_population_nodes": 0,
+            "negative_post_populations": 0,
+            "min_unshifted_post_population_native": 0.0011510661223564948,
+            "inventory_change_kg": -3.4046923289762325e-16
+          },
+          "fluid_to_wall_net_kg_s": -1.7902985370860297e-11,
+          "wall_to_fluid_net_kg_s": 1.7902985370860297e-11,
+          "interface_antisymmetry_residual_kg_s": 0.0,
+          "global_net_link_outflow_kg_s": 1.3234889800848443e-23,
+          "max_abs_collision_mass_change_native": 5.551115123125783e-16,
+          "max_abs_stream_residual_native": 9.992007221626409e-16,
+          "max_abs_link_balance_residual_native": 9.923702484759822e-16,
+          "density_tolerance_native": 1e-11,
+          "checks": {
+            "collision_preserves_local_density": true,
+            "streaming_matches_actual_population_links": true,
+            "local_link_balance_closes": true,
+            "wall_interface_flux_is_antisymmetric": true,
+            "global_periodic_link_flux_cancels": true
+          },
+          "interpretation": "These are exact population balances, not centred div(u). Local density changes and instantaneous fluid-wall exchange are allowed by full-way BounceBack numerical storage. Passing conservation does not establish concentration boundedness or transport accuracy. Negative individual populations are a diagnostic, not by themselves an acceptance criterion."
+        },
+        "audit_3668": {
+          "schema": "pore2process.exact_population_audit.v1",
+          "step": 3668,
+          "dx_m": 4.341164232231704e-05,
+          "dt_s": 1.9017455796408345e-05,
+          "density_scale_kg_m3": 1.0,
+          "all": {
+            "nodes": 32768,
+            "min_density_after_native": 0.13139306213865076,
+            "max_density_after_native": 0.8707550496953007,
+            "max_abs_density_change_native": 0.00494807813402709,
+            "max_abs_collision_change_native": 5.551115123125783e-16,
+            "max_abs_stream_residual_native": 9.992007221626409e-16,
+            "max_abs_link_balance_residual_native": 9.805524447958902e-16,
+            "negative_post_population_nodes": 16,
+            "negative_post_populations": 16,
+            "min_unshifted_post_population_native": -0.00012720702802594772,
+            "inventory_change_kg": 6.307228867232276e-26
+          },
+          "fluid": {
+            "nodes": 19664,
+            "min_density_after_native": 0.13139306213865076,
+            "max_density_after_native": 0.8707550496953007,
+            "max_abs_density_change_native": 0.0004961776313562316,
+            "max_abs_collision_change_native": 4.440892098500626e-16,
+            "max_abs_stream_residual_native": 7.216449660063518e-16,
+            "max_abs_link_balance_residual_native": 6.821800069278794e-16,
+            "negative_post_population_nodes": 8,
+            "negative_post_populations": 8,
+            "min_unshifted_post_population_native": -0.00012720702802594772,
+            "inventory_change_kg": 5.147397181709003e-18
+          },
+          "wall_adjacent_fluid": {
+            "nodes": 7376,
+            "min_density_after_native": 0.13139306213865076,
+            "max_density_after_native": 0.8707550496953007,
+            "max_abs_density_change_native": 0.0003386155375590949,
+            "max_abs_collision_change_native": 4.440892098500626e-16,
+            "max_abs_stream_residual_native": 6.661338147750939e-16,
+            "max_abs_link_balance_residual_native": 6.787241125030818e-16,
+            "negative_post_population_nodes": 8,
+            "negative_post_populations": 8,
+            "min_unshifted_post_population_native": -0.00012720702802594772,
+            "inventory_change_kg": -1.1929974689648384e-18
+          },
+          "bulk_fluid": {
+            "nodes": 12288,
+            "min_density_after_native": 0.17097230772309902,
+            "max_density_after_native": 0.8287739086598909,
+            "max_abs_density_change_native": 0.0004961776313562316,
+            "max_abs_collision_change_native": 4.440892098500626e-16,
+            "max_abs_stream_residual_native": 7.216449660063518e-16,
+            "max_abs_link_balance_residual_native": 6.821800069278794e-16,
+            "negative_post_population_nodes": 0,
+            "negative_post_populations": 0,
+            "min_unshifted_post_population_native": 0.0005990527411270522,
+            "inventory_change_kg": 6.340394650673841e-18
+          },
+          "wall": {
+            "nodes": 13104,
+            "min_density_after_native": 0.2183228129149679,
+            "max_density_after_native": 0.7820687116408892,
+            "max_abs_density_change_native": 0.00494807813402709,
+            "max_abs_collision_change_native": 5.551115123125783e-16,
+            "max_abs_stream_residual_native": 9.992007221626409e-16,
+            "max_abs_link_balance_residual_native": 9.805524447958902e-16,
+            "negative_post_population_nodes": 8,
+            "negative_post_populations": 8,
+            "min_unshifted_post_population_native": -0.0001270555025608775,
+            "inventory_change_kg": -5.147397118491386e-18
+          },
+          "fluid_to_wall_net_kg_s": -2.706669701443569e-13,
+          "wall_to_fluid_net_kg_s": 2.706669701443827e-13,
+          "interface_antisymmetry_residual_kg_s": 2.5849394142282115e-26,
+          "global_net_link_outflow_kg_s": 6.617444900424222e-24,
+          "max_abs_collision_mass_change_native": 5.551115123125783e-16,
+          "max_abs_stream_residual_native": 9.992007221626409e-16,
+          "max_abs_link_balance_residual_native": 9.805524447958902e-16,
+          "density_tolerance_native": 1e-11,
+          "checks": {
+            "collision_preserves_local_density": true,
+            "streaming_matches_actual_population_links": true,
+            "local_link_balance_closes": true,
+            "wall_interface_flux_is_antisymmetric": true,
+            "global_periodic_link_flux_cancels": true
+          },
+          "interpretation": "These are exact population balances, not centred div(u). Local density changes and instantaneous fluid-wall exchange are allowed by full-way BounceBack numerical storage. Passing conservation does not establish concentration boundedness or transport accuracy. Negative individual populations are a diagnostic, not by themselves an acceptance criterion."
+        }
+      },
+      "uniform_stencil": {
+        "fluid_nodes": 19664,
+        "max_abs_one_step_relative_constant_change": 0.00013611887692333013,
+        "rms_one_step_relative_constant_change": 2.7596830065306733e-05,
+        "max_abs_scalar_equilibrium_divergence_per_s": 7.157575565341273,
+        "rms_scalar_equilibrium_divergence_per_s": 1.4511315478129676,
+        "first_step_comparison": null,
+        "interpretation": "A read-only exact first-order-equilibrium streaming stencil. This predicts the first step of an initially uniform scalar, not the evolved long-time scalar flux and not the carrier's population flux. A nonzero value demonstrates that exported cell velocities are not exactly divergence-free under this scalar equilibrium stencil."
+      }
+    }
+  }
+}

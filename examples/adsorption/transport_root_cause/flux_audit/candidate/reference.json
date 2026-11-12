@@ -1,0 +1,82 @@
+{
+  "run_id": "20261110T210039Z-4ac42cbc",
+  "summary": "results/adsorption/transport_root_cause/second_order_candidate/runs/20261110T210039Z-4ac42cbc/summary.json",
+  "summary_sha256": "1c5943b2a1d20e4df19620ac8bc411c2ba508608c61018ae5393cadab2a9ee1c",
+  "actual_native_runs": 5,
+  "accepted_correction": false,
+  "cases": {
+    "porous_sine": {
+      "minimum_concentration_kg_m3": 0.11800880117701218,
+      "maximum_concentration_kg_m3": 0.8826809929593168,
+      "maximum_bound_excursion_kg_m3": 0.1326809929593168,
+      "RMS_error_over_amplitude": null,
+      "relative_inventory_drift": 5.641917460459295e-13,
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "engineering_bounds": false,
+        "exact_population_balances": true
+      }
+    },
+    "porous_constant": {
+      "minimum_concentration_kg_m3": 0.49721739835067946,
+      "maximum_concentration_kg_m3": 0.5018312249585776,
+      "maximum_bound_excursion_kg_m3": 0.0027826016493205374,
+      "RMS_error_over_amplitude": null,
+      "relative_inventory_drift": 5.165200890786238e-13,
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "engineering_bounds": true,
+        "exact_population_balances": true,
+        "constant_preservation": false
+      }
+    },
+    "shear_sine": {
+      "minimum_concentration_kg_m3": 0.2027851531020406,
+      "maximum_concentration_kg_m3": 0.7972148468989192,
+      "maximum_bound_excursion_kg_m3": 0.047214846898919194,
+      "RMS_error_over_amplitude": 0.3858612222451357,
+      "relative_inventory_drift": 6.694644838489694e-13,
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "z_invariance": true,
+        "strict_bounds": false,
+        "engineering_bounds": false,
+        "profile": false
+      }
+    },
+    "shear_constant": {
+      "minimum_concentration_kg_m3": 0.49999999999999556,
+      "maximum_concentration_kg_m3": 0.500000000000121,
+      "maximum_bound_excursion_kg_m3": 1.2101430968414206e-13,
+      "RMS_error_over_amplitude": null,
+      "relative_inventory_drift": 7.771561172376096e-15,
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "z_invariance": true,
+        "strict_bounds": true,
+        "engineering_bounds": true,
+        "constant_preservation": true
+      }
+    },
+    "uniform_sine": {
+      "minimum_concentration_kg_m3": 0.25054136689769735,
+      "maximum_concentration_kg_m3": 0.7494586331023061,
+      "maximum_bound_excursion_kg_m3": 0.0,
+      "RMS_error_over_amplitude": 0.002248798310818456,
+      "relative_inventory_drift": 9.539036227579345e-13,
+      "checks": {
+        "finite": true,
+        "mass": true,
+        "z_invariance": true,
+        "strict_bounds": true,
+        "engineering_bounds": true,
+        "profile": true,
+        "uniform_oracle": true
+      }
+    }
+  }
+}
