@@ -269,6 +269,13 @@ N64-to-N96 tracer changes were 3.93 and 3.21 percentage points at
 The refined disordered geometry still showed more wall contact
 than the archived ordered N96 field.
 
+The [N128 disordered refinement](examples/adsorption/disordered_n128/REPORT.md)
+preserved the carbon inventory and Péclet numbers. The N96-to-N128
+changes meet the 2-point grid limit for 0.80 mm at 80 µs. The
+0.80 mm comparison at 40 µs and both 0.45 mm comparisons exceed
+the limit. The refined disordered field still shows more wall
+contact than the ordered control.
+
 ## 7. Select a reacting or non-isothermal showcase
 
 **Research direction; application and physical model not yet selected.**

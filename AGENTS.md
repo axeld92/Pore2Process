@@ -37,3 +37,10 @@ Preserve completed examples and unrelated files.
 - Never modify original OpenLB files. Keep project simulation code, headers,
   configuration, build products and results in separate project folders.
 - Revalidate numerical results after changing a simulation case or discretization.
+
+## Version control
+
+- Commit substantial project code changes to Git and push the commits to the
+  configured GitHub repository.
+- Keep source, tests, protocols and compact verification records traceable.
+  Leave unrelated workspace files and bulk generated run data out of commits.

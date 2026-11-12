@@ -35,3 +35,4 @@ explanations are in the [example catalogue](../../../examples/README.md).
 - [eight-cell tracer holdout and fast-path bypass](repeated_geometry.md)
 - [ordered and disordered packing at matched carbon and Péclet numbers](disordered_packing.md)
 - [N96 disordered-packing tracer refinement](disordered_refinement.md)
+- [N128 disordered-packing tracer refinement](disordered_n128.md)

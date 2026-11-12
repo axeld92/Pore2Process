@@ -1,0 +1,20 @@
+schema_version = 1
+id = "adsorption/disordered_n128"
+title = "N128 refinement of the disordered packing"
+area = "adsorption"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["adsorption/disordered_refinement"]
+run_module = "examples.adsorption.disordered_n128.native"
+check_module = "examples.adsorption.disordered_n128.run"
+reference_files = ["reference_summary.json"]
+protocol_files = ["protocol.md"]
+
+[validation]
+native_hydraulics = "passed"
+inert_recovery = "passed"
+time_step = "passed"
+grid = "failed"
+literature = "not_assessed"
+scope = "The 0.80 mm comparison passes the 2-point screen at 80 µs only. The 0.45 mm comparison exceeds it at both matched time steps."
