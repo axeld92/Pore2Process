@@ -40,6 +40,7 @@ Preserve completed examples and unrelated files.
 
 ## Version control
 
+- Use `main` for local work and GitHub pushes unless the user asks for a separate branch.
 - Commit substantial project code changes to Git and push the commits to the
   configured GitHub repository.
 - Keep source, tests, protocols and compact verification records traceable.
