@@ -282,6 +282,13 @@ conditions at 80 and 40 µs. The largest change across the four
 comparisons was 0.98 percentage points. Both conditions passed the
 time-step checks. The milestone covers tracer transport and wall contact.
 
+The [two-section disordered exchange holdout](examples/adsorption/disordered_exchange/REPORT.md)
+estimates path exchange and wall contact from the first two saved N160
+sections and scores the frozen Julia model on sections 3–8. Wall
+contact passes in three of four cases and mean arrival passes in all
+four. The repeated exchange model exceeds the variance limit in all
+four. This leaves reduced-model transport qualification open.
+
 ## 7. Select a reacting or non-isothermal showcase
 
 **Research direction; application and physical model not yet selected.**

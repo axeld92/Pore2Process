@@ -1,0 +1,20 @@
+schema_version = 1
+id = "adsorption/disordered_exchange"
+title = "Disordered path exchange trained on two sections"
+area = "adsorption"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["adsorption/disordered_n160"]
+run_module = "examples.adsorption.disordered_exchange.run"
+check_module = "examples.adsorption.disordered_exchange.run"
+reference_files = ["reference_summary.json"]
+protocol_files = ["protocol.md"]
+
+[validation]
+numerical = "passed"
+wall_contact = "mixed"
+mean_arrival = "passed"
+variance = "failed"
+literature = "not_assessed"
+scope = "Sections 3–8 of the same synthetic N160 disordered packing, predicted using sections 1–2. Wall contact passes in three of four cases and the variance screen fails in all four."

@@ -40,6 +40,7 @@ specific earlier measurements or assumptions.
 | Adsorption | [N96 disordered packing](adsorption/disordered_refinement/REPORT.md) | The direction of the geometry effect holds and the 2-point disordered grid screen remains unmet | [Commands](adsorption/disordered_refinement/README.md) |
 | Adsorption | [N128 disordered packing](adsorption/disordered_n128/REPORT.md) | Both time-step checks pass. The 2-point grid screen still fails across the matched comparisons | [Commands](adsorption/disordered_n128/README.md) |
 | Adsorption | [N160 disordered packing](adsorption/disordered_n160/REPORT.md) | Both particle-matched cases meet the 2-point grid limit against N128 at both time steps | [Commands](adsorption/disordered_n160/README.md) |
+| Adsorption | [Two-section disordered exchange](adsorption/disordered_exchange/REPORT.md) | Frozen Julia wall predictions pass in three of four cases and inert variance exceeds its limit | [Commands](adsorption/disordered_exchange/README.md) |
 
 Filtration hydraulics is closed for now; adsorption remains research in
 progress. Earlier BGK numbers and later TRT results retain separate identities.

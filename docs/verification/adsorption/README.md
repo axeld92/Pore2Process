@@ -37,3 +37,4 @@ explanations are in the [example catalogue](../../../examples/README.md).
 - [N96 disordered-packing tracer refinement](disordered_refinement.md)
 - [N128 disordered-packing tracer refinement](disordered_n128.md)
 - [N160 disordered-packing tracer refinement](disordered_n160.md)
+- [two-section disordered path-exchange holdout](disordered_exchange.md)
