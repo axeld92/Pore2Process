@@ -294,6 +294,13 @@ shows that changing exchange and local transit times explain most of
 the peak variance error. Travel-time memory offsets part of that
 effect at the outlet. The original Julia prediction stays frozen.
 
+The [section-specific exchange test](examples/adsorption/disordered_section_exchange/REPORT.md)
+uses fresh probes of the saved N160 flow and the original sections 1–2
+for initialization. The 0.80 mm case passes the 10% variance limit at
+both time steps. The 0.45 mm case exceeds the limit in the bed interior
+at both time steps even though the outlet passes. Reduced-model
+qualification remains open for inert transport.
+
 ## 7. Select a reacting or non-isothermal showcase
 
 **Research direction; application and physical model not yet selected.**

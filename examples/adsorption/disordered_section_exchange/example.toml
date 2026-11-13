@@ -1,0 +1,17 @@
+schema_version = 1
+id = "adsorption/disordered_section_exchange"
+title = "Section-specific inert tracer exchange in the N160 packing"
+area = "adsorption"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["adsorption/disordered_exchange"]
+run_module = "examples.adsorption.disordered_section_exchange.run"
+check_module = "examples.adsorption.disordered_section_exchange.run"
+reference_files = ["reference_summary.json"]
+protocol_files = ["protocol.md"]
+
+[validation]
+numerical = "passed"
+literature = "not_assessed"
+scope = "Original N160 sections 1–2 initialize the model. Independent probes of the same geometry supply adjacent-section rules. See the report for the variance gate on the archived sections 3–8."
