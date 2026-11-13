@@ -1,0 +1,20 @@
+schema_version = 1
+id = "adsorption/disordered_n160"
+title = "N160 refinement of the disordered packing"
+area = "adsorption"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["adsorption/disordered_n128"]
+run_module = "examples.adsorption.disordered_n160.native"
+check_module = "examples.adsorption.disordered_n160.run"
+reference_files = ["reference_summary.json"]
+protocol_files = ["protocol.md"]
+
+[validation]
+native_hydraulics = "passed"
+inert_recovery = "passed"
+time_step = "passed"
+grid = "passed"
+literature = "not_assessed"
+scope = "N128-to-N160 comparison for the same eight-section packing and particle-matched Péclet numbers. Both sizes meet the 2-point limit at 80 and 40 µs."

@@ -36,3 +36,4 @@ explanations are in the [example catalogue](../../../examples/README.md).
 - [ordered and disordered packing at matched carbon and Péclet numbers](disordered_packing.md)
 - [N96 disordered-packing tracer refinement](disordered_refinement.md)
 - [N128 disordered-packing tracer refinement](disordered_n128.md)
+- [N160 disordered-packing tracer refinement](disordered_n160.md)

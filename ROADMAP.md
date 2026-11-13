@@ -276,6 +276,12 @@ changes meet the 2-point grid limit for 0.80 mm at 80 µs. The
 the limit. The refined disordered field still shows more wall
 contact than the ordered control.
 
+The [N160 disordered refinement](examples/adsorption/disordered_n160/REPORT.md)
+met the 2-point grid limit against N128 for both particle-matched
+conditions at 80 and 40 µs. The largest change across the four
+comparisons was 0.98 percentage points. Both conditions passed the
+time-step checks. The milestone covers tracer transport and wall contact.
+
 ## 7. Select a reacting or non-isothermal showcase
 
 **Research direction; application and physical model not yet selected.**

@@ -39,6 +39,7 @@ specific earlier measurements or assumptions.
 | Adsorption | [Ordered and disordered packing](adsorption/disordered_packing/REPORT.md) | Stock TRT comparison at fixed carbon and Péclet numbers; disorder reduces fast bypass in the tested packing | [Commands](adsorption/disordered_packing/README.md) |
 | Adsorption | [N96 disordered packing](adsorption/disordered_refinement/REPORT.md) | The direction of the geometry effect holds and the 2-point disordered grid screen remains unmet | [Commands](adsorption/disordered_refinement/README.md) |
 | Adsorption | [N128 disordered packing](adsorption/disordered_n128/REPORT.md) | Both time-step checks pass. The 2-point grid screen still fails across the matched comparisons | [Commands](adsorption/disordered_n128/README.md) |
+| Adsorption | [N160 disordered packing](adsorption/disordered_n160/REPORT.md) | Both particle-matched cases meet the 2-point grid limit against N128 at both time steps | [Commands](adsorption/disordered_n160/README.md) |
 
 Filtration hydraulics is closed for now; adsorption remains research in
 progress. Earlier BGK numbers and later TRT results retain separate identities.
