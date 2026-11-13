@@ -4,6 +4,10 @@ Use the saved [N160 cohort](../disordered_n160/REPORT.md). The
 [protocol](protocol.md) specifies the split and the acceptance limits.
 [Results](REPORT.md)
 
+The [variance audit](VARIANCE_AUDIT.md) uses the original frozen prediction
+to distinguish changes in path exchange and local transit times from
+missing travel-time memory.
+
 ```sh
 source scripts/env.sh
 export OPENBLAS_NUM_THREADS=1

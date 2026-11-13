@@ -289,6 +289,11 @@ contact passes in three of four cases and mean arrival passes in all
 four. The repeated exchange model exceeds the variance limit in all
 four. This leaves reduced-model transport qualification open.
 
+The [held-out variance audit](examples/adsorption/disordered_exchange/VARIANCE_AUDIT.md)
+shows that changing exchange and local transit times explain most of
+the peak variance error. Travel-time memory offsets part of that
+effect at the outlet. The original Julia prediction stays frozen.
+
 ## 7. Select a reacting or non-isothermal showcase
 
 **Research direction; application and physical model not yet selected.**

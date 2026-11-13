@@ -1,0 +1,913 @@
+{
+  "holdout_sha256": "e5c81163a8224473cb61c96ac661529730cdddc32e0933463fc44e6695808484",
+  "frozen_prediction_sha256": "6944c16ec01f86f5e0415c4d637cc96c1c37f794503ace1e088ba24f47ada2b8",
+  "parent_sha256": "c352eae8ef39f34c9bf5fdccb3185a029a522d584decf2b1ab03e305b6e59755",
+  "cases": {
+    "d800_primary": [
+      {
+        "section": 3,
+        "increment_s2": {
+          "exchange": -0.0006199331192508874,
+          "local_delay": 0.00035645291676596885,
+          "memory": 0.0012002286835460494,
+          "propagation": -9.540979117872439e-18,
+          "memory_sort": 0.0006792929334811484,
+          "memory_within_pair": 0.0005209357500649012,
+          "measured_gain": 0.008029089617796071,
+          "frozen_gain": 0.0070923411367349535,
+          "training_gap_probability": 0.0,
+          "observed_gap_probability": 0.01123046875
+        },
+        "cumulative_s2": {
+          "exchange": -0.0006199331192508874,
+          "local_delay": 0.00035645291676596885,
+          "memory": 0.0012002286835460494,
+          "propagation": -9.540979117872439e-18,
+          "memory_sort": 0.0006792929334811484,
+          "memory_within_pair": 0.0005209357500649012
+        },
+        "measured_variance_s2": 0.020645078298603462,
+        "frozen_variance_s2": 0.01970832981754228,
+        "signed_error_s2": 0.0009367484810611816
+      },
+      {
+        "section": 4,
+        "increment_s2": {
+          "exchange": -0.00026235401101202486,
+          "local_delay": 3.0141139151769122e-05,
+          "memory": 0.0006904576897713827,
+          "propagation": -2.5170321313845896e-05,
+          "memory_sort": 0.0010236091437741137,
+          "memory_within_pair": -0.000333151454002731,
+          "measured_gain": 0.007562191121747379,
+          "frozen_gain": 0.007129116625150089,
+          "training_gap_probability": 0.0035400390625,
+          "observed_gap_probability": 0.0245361328125
+        },
+        "cumulative_s2": {
+          "exchange": -0.0008822871302629123,
+          "local_delay": 0.000386594055917738,
+          "memory": 0.001890686373317432,
+          "propagation": -2.5170321313855437e-05,
+          "memory_sort": 0.0017029020772552621,
+          "memory_within_pair": 0.0001877842960621702
+        },
+        "measured_variance_s2": 0.02820726942035099,
+        "frozen_variance_s2": 0.02683744644269237,
+        "signed_error_s2": 0.0013698229776586204
+      },
+      {
+        "section": 5,
+        "increment_s2": {
+          "exchange": -0.0027359889587354343,
+          "local_delay": 0.00030953439840571183,
+          "memory": 0.0009017216242521781,
+          "propagation": -0.0004841383601969411,
+          "memory_sort": 0.0007345944428058753,
+          "memory_within_pair": 0.00016712718144630285,
+          "measured_gain": 0.0051304156327894035,
+          "frozen_gain": 0.007139286929063848,
+          "training_gap_probability": 0.0,
+          "observed_gap_probability": 0.0050048828125
+        },
+        "cumulative_s2": {
+          "exchange": -0.0036182760889983466,
+          "local_delay": 0.0006961284543234498,
+          "memory": 0.00279240799756961,
+          "propagation": -0.0005093086815107966,
+          "memory_sort": 0.0024374965200611373,
+          "memory_within_pair": 0.00035491147750847305
+        },
+        "measured_variance_s2": 0.03333768505314018,
+        "frozen_variance_s2": 0.03397673337175622,
+        "signed_error_s2": -0.0006390483186160395
+      },
+      {
+        "section": 6,
+        "increment_s2": {
+          "exchange": -0.0002805595202144476,
+          "local_delay": -0.0013439014530778112,
+          "memory": -0.0004889226882664288,
+          "propagation": -0.0004404538507560094,
+          "memory_sort": -0.0005060173182482983,
+          "memory_within_pair": 1.7094629981869483e-05,
+          "measured_gain": 0.004588205942168043,
+          "frozen_gain": 0.0071420434544827716,
+          "training_gap_probability": 0.03369140625,
+          "observed_gap_probability": 0.0
+        },
+        "cumulative_s2": {
+          "exchange": -0.003898835609212794,
+          "local_delay": -0.0006477729987543614,
+          "memory": 0.0023034853093031812,
+          "propagation": -0.000949762532266806,
+          "memory_sort": 0.001931479201812839,
+          "memory_within_pair": 0.0003720061074903425
+        },
+        "measured_variance_s2": 0.037925890995308145,
+        "frozen_variance_s2": 0.04111877682623899,
+        "signed_error_s2": -0.0031928858309308444
+      },
+      {
+        "section": 7,
+        "increment_s2": {
+          "exchange": -0.0009766821394499347,
+          "local_delay": -0.00039105141726796834,
+          "memory": -0.002763408973437189,
+          "propagation": -0.000713266604600046,
+          "memory_sort": -0.0026381354474699506,
+          "memory_within_pair": -0.00012527352596723842,
+          "measured_gain": 0.002298124745552056,
+          "frozen_gain": 0.007142533880307167,
+          "training_gap_probability": 0.0069580078125,
+          "observed_gap_probability": 0.0
+        },
+        "cumulative_s2": {
+          "exchange": -0.004875517748662728,
+          "local_delay": -0.0010388244160223297,
+          "memory": -0.0004599236641340079,
+          "propagation": -0.001663029136866852,
+          "memory_sort": -0.0007066562456571116,
+          "memory_within_pair": 0.0002467325815231041
+        },
+        "measured_variance_s2": 0.04022401574086024,
+        "frozen_variance_s2": 0.04826131070654616,
+        "signed_error_s2": -0.008037294965685914
+      },
+      {
+        "section": 8,
+        "increment_s2": {
+          "exchange": -0.000609145250911913,
+          "local_delay": 0.001769194562346598,
+          "memory": 0.0028644127413890138,
+          "propagation": -0.00020206124822699095,
+          "memory_sort": 0.0028645369684221446,
+          "memory_within_pair": -1.2422703313101115e-07,
+          "measured_gain": 0.01096505916385171,
+          "frozen_gain": 0.007142658359254983,
+          "training_gap_probability": 0.0,
+          "observed_gap_probability": 0.0
+        },
+        "cumulative_s2": {
+          "exchange": -0.005484662999574641,
+          "local_delay": 0.0007303701463242684,
+          "memory": 0.002404489077255006,
+          "propagation": -0.001865090385093843,
+          "memory_sort": 0.0021578807227650328,
+          "memory_within_pair": 0.00024660835448997307
+        },
+        "measured_variance_s2": 0.05118907490471202,
+        "frozen_variance_s2": 0.05540396906580114,
+        "signed_error_s2": -0.004214894161089118
+      }
+    ],
+    "d800_half_step": [
+      {
+        "section": 3,
+        "increment_s2": {
+          "exchange": -0.000719650615808459,
+          "local_delay": -0.00030024218895222934,
+          "memory": 0.0009963563495019037,
+          "propagation": 3.642919299551295e-17,
+          "memory_sort": 0.0008481592701982151,
+          "memory_within_pair": 0.0001481970793036885,
+          "measured_gain": 0.007546521547354169,
+          "frozen_gain": 0.00757005800261294,
+          "training_gap_probability": 0.0,
+          "observed_gap_probability": 0.018798828125
+        },
+        "cumulative_s2": {
+          "exchange": -0.000719650615808459,
+          "local_delay": -0.00030024218895222934,
+          "memory": 0.0009963563495019037,
+          "propagation": 3.642919299551295e-17,
+          "memory_sort": 0.0008481592701982151,
+          "memory_within_pair": 0.0001481970793036885
+        },
+        "measured_variance_s2": 0.020646272982709133,
+        "frozen_variance_s2": 0.020669809437967923,
+        "signed_error_s2": -2.3536455258790084e-05
+      },
+      {
+        "section": 4,
+        "increment_s2": {
+          "exchange": -2.3261224177174335e-06,
+          "local_delay": -0.0011437970104821115,
+          "memory": 0.000816676168962737,
+          "propagation": -3.868269701999202e-06,
+          "memory_sort": 0.00102563093417328,
+          "memory_within_pair": -0.00020895476521054298,
+          "measured_gain": 0.00726632369817869,
+          "frozen_gain": 0.0075996389318177815,
+          "training_gap_probability": 0.00439453125,
+          "observed_gap_probability": 0.02490234375
+        },
+        "cumulative_s2": {
+          "exchange": -0.0007219767382261764,
+          "local_delay": -0.0014440391994343408,
+          "memory": 0.0018130325184646406,
+          "propagation": -3.868269701962773e-06,
+          "memory_sort": 0.0018737902043714952,
+          "memory_within_pair": -6.075768590685447e-05
+        },
+        "measured_variance_s2": 0.027912596680887847,
+        "frozen_variance_s2": 0.028269448369785705,
+        "signed_error_s2": -0.0003568516888978572
+      },
+      {
+        "section": 5,
+        "increment_s2": {
+          "exchange": -0.0024010758783852225,
+          "local_delay": 0.0005225200134902166,
+          "memory": 0.0010563079348079698,
+          "propagation": -0.0005619832807980552,
+          "memory_sort": 0.001069036849720821,
+          "memory_within_pair": -1.2728914912851213e-05,
+          "measured_gain": 0.006223827187913773,
+          "frozen_gain": 0.007608058398798828,
+          "training_gap_probability": 0.0,
+          "observed_gap_probability": 0.00537109375
+        },
+        "cumulative_s2": {
+          "exchange": -0.003123052616611399,
+          "local_delay": -0.0009215191859441242,
+          "memory": 0.00286934045327261,
+          "propagation": -0.000565851550500018,
+          "memory_sort": 0.002942827054092316,
+          "memory_within_pair": -7.348660081970568e-05
+        },
+        "measured_variance_s2": 0.03413642386880158,
+        "frozen_variance_s2": 0.03587750676858453,
+        "signed_error_s2": -0.0017410828997829544
+      },
+      {
+        "section": 6,
+        "increment_s2": {
+          "exchange": 0.0002261538314809841,
+          "local_delay": -0.0022476836476172566,
+          "memory": -0.00035593107531310805,
+          "propagation": -0.0003059822811708919,
+          "memory_sort": -0.0002847302893539117,
+          "memory_within_pair": -7.12007859591964e-05,
+          "measured_gain": 0.004926510847938562,
+          "frozen_gain": 0.007609954020558807,
+          "training_gap_probability": 0.03515625,
+          "observed_gap_probability": 0.0
+        },
+        "cumulative_s2": {
+          "exchange": -0.002896898785130415,
+          "local_delay": -0.003169202833561381,
+          "memory": 0.002513409377959502,
+          "propagation": -0.0008718338316709099,
+          "memory_sort": 0.002658096764738404,
+          "memory_within_pair": -0.0001446873867789021
+        },
+        "measured_variance_s2": 0.039062934716740334,
+        "frozen_variance_s2": 0.04348746078914334,
+        "signed_error_s2": -0.004424526072403005
+      },
+      {
+        "section": 7,
+        "increment_s2": {
+          "exchange": -0.0007922145870393358,
+          "local_delay": -0.0007258661176294092,
+          "memory": -0.002602195708943924,
+          "propagation": -0.0006906172666521432,
+          "memory_sort": -0.002334888542418338,
+          "memory_within_pair": -0.0002673071665255859,
+          "measured_gain": 0.002799356550637039,
+          "frozen_gain": 0.007610250230901894,
+          "training_gap_probability": 0.00634765625,
+          "observed_gap_probability": 0.0
+        },
+        "cumulative_s2": {
+          "exchange": -0.0036891133721697507,
+          "local_delay": -0.00389506895119079,
+          "memory": -8.878633098442171e-05,
+          "propagation": -0.0015624510983230531,
+          "memory_sort": 0.0003232082223200662,
+          "memory_within_pair": -0.000411994553304488
+        },
+        "measured_variance_s2": 0.041862291267377005,
+        "frozen_variance_s2": 0.05109771102004523,
+        "signed_error_s2": -0.009235419752668228
+      },
+      {
+        "section": 8,
+        "increment_s2": {
+          "exchange": -0.0005784822832887774,
+          "local_delay": 0.0011370683035546113,
+          "memory": 0.0025527585776208518,
+          "propagation": -0.00018384937789667558,
+          "memory_sort": 0.003081809009986714,
+          "memory_within_pair": -0.0005290504323658626,
+          "measured_gain": 0.010537826497991717,
+          "frozen_gain": 0.007610331278001703,
+          "training_gap_probability": 0.0,
+          "observed_gap_probability": 0.0
+        },
+        "cumulative_s2": {
+          "exchange": -0.0042675956554585285,
+          "local_delay": -0.0027580006476361787,
+          "memory": 0.00246397224663643,
+          "propagation": -0.0017463004762197287,
+          "memory_sort": 0.0034050172323067803,
+          "memory_within_pair": -0.0009410449856703506
+        },
+        "measured_variance_s2": 0.05240011776536888,
+        "frozen_variance_s2": 0.058708042298046936,
+        "signed_error_s2": -0.006307924532678054
+      }
+    ],
+    "d450_primary": [
+      {
+        "section": 3,
+        "increment_s2": {
+          "exchange": -0.0006624378024265359,
+          "local_delay": 0.0006027086911505721,
+          "memory": 0.0010185820488310203,
+          "propagation": -5.377642775528102e-17,
+          "memory_sort": 0.0007003657186814044,
+          "memory_within_pair": 0.00031821633014961583,
+          "measured_gain": 0.0077660237379516255,
+          "frozen_gain": 0.006807170800396637,
+          "training_gap_probability": 0.0,
+          "observed_gap_probability": 0.0118408203125
+        },
+        "cumulative_s2": {
+          "exchange": -0.0006624378024265359,
+          "local_delay": 0.0006027086911505721,
+          "memory": 0.0010185820488310203,
+          "propagation": -5.377642775528102e-17,
+          "memory_sort": 0.0007003657186814044,
+          "memory_within_pair": 0.00031821633014961583
+        },
+        "measured_variance_s2": 0.019308228480348834,
+        "frozen_variance_s2": 0.01834937554279381,
+        "signed_error_s2": 0.0009588529375550228
+      },
+      {
+        "section": 4,
+        "increment_s2": {
+          "exchange": -0.000387707122977669,
+          "local_delay": 0.00010811827727282355,
+          "memory": 0.0010807899336056652,
+          "propagation": 3.705390329126687e-05,
+          "memory_sort": 0.001222257569157231,
+          "memory_within_pair": -0.00014146763555156566,
+          "measured_gain": 0.007675528904528599,
+          "frozen_gain": 0.006837273913336522,
+          "training_gap_probability": 0.0,
+          "observed_gap_probability": 0.0145263671875
+        },
+        "cumulative_s2": {
+          "exchange": -0.001050144925404205,
+          "local_delay": 0.0007108269684233956,
+          "memory": 0.0020993719824366854,
+          "propagation": 3.7053903291213094e-05,
+          "memory_sort": 0.0019226232878386353,
+          "memory_within_pair": 0.00017674869459805017
+        },
+        "measured_variance_s2": 0.026983757384877443,
+        "frozen_variance_s2": 0.025186649456130333,
+        "signed_error_s2": 0.0017971079287471096
+      },
+      {
+        "section": 5,
+        "increment_s2": {
+          "exchange": -0.0023523016617287137,
+          "local_delay": 0.0002881340920922919,
+          "memory": 0.0011278267174035473,
+          "propagation": -0.00048551507337301226,
+          "memory_sort": 0.0009298700281207377,
+          "memory_within_pair": 0.00019795668928280976,
+          "measured_gain": 0.005425001768132917,
+          "frozen_gain": 0.0068468576937388,
+          "training_gap_probability": 0.0,
+          "observed_gap_probability": 0.0050048828125
+        },
+        "cumulative_s2": {
+          "exchange": -0.0034024465871329186,
+          "local_delay": 0.0009989610605156875,
+          "memory": 0.0032271986998402328,
+          "propagation": -0.00044846117008179916,
+          "memory_sort": 0.002852493315959373,
+          "memory_within_pair": 0.00037470538388085996
+        },
+        "measured_variance_s2": 0.032408759153010364,
+        "frozen_variance_s2": 0.032033507149869134,
+        "signed_error_s2": 0.00037525200314122986
+      },
+      {
+        "section": 6,
+        "increment_s2": {
+          "exchange": -0.0001389449786563736,
+          "local_delay": -0.0020519848975894595,
+          "memory": -0.0002687164657258569,
+          "propagation": -0.0002889193228474123,
+          "memory_sort": -0.00032777887671082214,
+          "memory_within_pair": 5.9062410984965215e-05,
+          "measured_gain": 0.004099832766293311,
+          "frozen_gain": 0.006848398431112401,
+          "training_gap_probability": 0.0,
+          "observed_gap_probability": 0.0
+        },
+        "cumulative_s2": {
+          "exchange": -0.0035413915657892922,
+          "local_delay": -0.001053023837073772,
+          "memory": 0.002958482234114376,
+          "propagation": -0.0007373804929292115,
+          "memory_sort": 0.0025247144392485507,
+          "memory_within_pair": 0.0004337677948658252
+        },
+        "measured_variance_s2": 0.03650859191930354,
+        "frozen_variance_s2": 0.038881905580981535,
+        "signed_error_s2": -0.002373313661677992
+      },
+      {
+        "section": 7,
+        "increment_s2": {
+          "exchange": -0.0008131209092461346,
+          "local_delay": -0.0005371985060010718,
+          "memory": -0.0030033911232712498,
+          "propagation": -0.0005990956275846787,
+          "memory_sort": -0.002701907485565863,
+          "memory_within_pair": -0.0003014836377053867,
+          "measured_gain": 0.001895968332271153,
+          "frozen_gain": 0.006848774498374344,
+          "training_gap_probability": 0.0,
+          "observed_gap_probability": 0.0
+        },
+        "cumulative_s2": {
+          "exchange": -0.004354512475035427,
+          "local_delay": -0.0015902223430748438,
+          "memory": -4.490888915687375e-05,
+          "propagation": -0.0013364761205138902,
+          "memory_sort": -0.00017719304631731237,
+          "memory_within_pair": 0.00013228415716043845
+        },
+        "measured_variance_s2": 0.0384045602515747,
+        "frozen_variance_s2": 0.04573068007935588,
+        "signed_error_s2": -0.007326119827781176
+      },
+      {
+        "section": 8,
+        "increment_s2": {
+          "exchange": -0.0004991598154878768,
+          "local_delay": 0.0015116147199923735,
+          "memory": 0.0030371989813659005,
+          "propagation": -5.754802957192058e-05,
+          "memory_sort": 0.003124801094223233,
+          "memory_within_pair": -8.76021128573322e-05,
+          "measured_gain": 0.010840948769530075,
+          "frozen_gain": 0.006848842913231512,
+          "training_gap_probability": 0.0,
+          "observed_gap_probability": 0.0001220703125
+        },
+        "cumulative_s2": {
+          "exchange": -0.004853672290523304,
+          "local_delay": -7.860762308247024e-05,
+          "memory": 0.0029922900922090268,
+          "propagation": -0.0013940241500858108,
+          "memory_sort": 0.0029476080479059205,
+          "memory_within_pair": 4.468204430310626e-05
+        },
+        "measured_variance_s2": 0.04924550902110488,
+        "frozen_variance_s2": 0.05257952299258739,
+        "signed_error_s2": -0.0033340139714825093
+      }
+    ],
+    "d450_half_step": [
+      {
+        "section": 3,
+        "increment_s2": {
+          "exchange": -0.0006621720452947588,
+          "local_delay": 0.0007975761490098435,
+          "memory": 0.0010943528659494149,
+          "propagation": 2.949029909160572e-17,
+          "memory_sort": 0.0009190179353945272,
+          "memory_within_pair": 0.00017533493055488762,
+          "measured_gain": 0.007546465163304674,
+          "frozen_gain": 0.006316708193640138,
+          "training_gap_probability": 0.0,
+          "observed_gap_probability": 0.0057373046875
+        },
+        "cumulative_s2": {
+          "exchange": -0.0006621720452947588,
+          "local_delay": 0.0007975761490098435,
+          "memory": 0.0010943528659494149,
+          "propagation": 2.949029909160572e-17,
+          "memory_sort": 0.0009190179353945272,
+          "memory_within_pair": 0.00017533493055488762
+        },
+        "measured_variance_s2": 0.018763448371188863,
+        "frozen_variance_s2": 0.017533691401524304,
+        "signed_error_s2": 0.001229756969664559
+      },
+      {
+        "section": 4,
+        "increment_s2": {
+          "exchange": 0.0001568521386208963,
+          "local_delay": -0.0006033752617085196,
+          "memory": 0.0009079257747689473,
+          "propagation": 5.799778079630842e-05,
+          "memory_sort": 0.0010588113364160428,
+          "memory_within_pair": -0.0001508855616470955,
+          "measured_gain": 0.006857329320055835,
+          "frozen_gain": 0.006337928887578198,
+          "training_gap_probability": 0.0,
+          "observed_gap_probability": 0.01513671875
+        },
+        "cumulative_s2": {
+          "exchange": -0.0005053199066738625,
+          "local_delay": 0.00019420088730132384,
+          "memory": 0.002002278640718362,
+          "propagation": 5.799778079633791e-05,
+          "memory_sort": 0.00197782927181057,
+          "memory_within_pair": 2.4449368907792127e-05
+        },
+        "measured_variance_s2": 0.025620777691244732,
+        "frozen_variance_s2": 0.023871620289102502,
+        "signed_error_s2": 0.0017491574021422304
+      },
+      {
+        "section": 5,
+        "increment_s2": {
+          "exchange": -0.0020882938237402754,
+          "local_delay": 0.0014191464731976933,
+          "memory": 0.0015547874437883368,
+          "propagation": -0.0004426702188564287,
+          "memory_sort": 0.0013307493144513007,
+          "memory_within_pair": 0.00022403812933703606,
+          "measured_gain": 0.006789445174175863,
+          "frozen_gain": 0.0063464752997866025,
+          "training_gap_probability": 0.0,
+          "observed_gap_probability": 0.0057373046875
+        },
+        "cumulative_s2": {
+          "exchange": -0.002593613730414138,
+          "local_delay": 0.0016133473604990171,
+          "memory": 0.0035570660845066987,
+          "propagation": -0.00038467243806009077,
+          "memory_sort": 0.003308578586261871,
+          "memory_within_pair": 0.0002484874982448282
+        },
+        "measured_variance_s2": 0.032410222865420564,
+        "frozen_variance_s2": 0.030218095588889105,
+        "signed_error_s2": 0.0021921272765314595
+      },
+      {
+        "section": 6,
+        "increment_s2": {
+          "exchange": 0.00025666562374799,
+          "local_delay": -0.0015693161993738116,
+          "memory": -0.0003640259832837153,
+          "propagation": -0.00015387221907740313,
+          "memory_sort": -0.00043153748037092366,
+          "memory_within_pair": 6.751149708720833e-05,
+          "measured_gain": 0.004517049998117667,
+          "frozen_gain": 0.006347598776104579,
+          "training_gap_probability": 0.0,
+          "observed_gap_probability": 0.0
+        },
+        "cumulative_s2": {
+          "exchange": -0.002336948106666148,
+          "local_delay": 4.403116112520556e-05,
+          "memory": 0.0031930401012229834,
+          "propagation": -0.0005385446571374939,
+          "memory_sort": 0.0028770411058909474,
+          "memory_within_pair": 0.0003159989953320365
+        },
+        "measured_variance_s2": 0.03692727286353831,
+        "frozen_variance_s2": 0.036565694364993684,
+        "signed_error_s2": 0.00036157849854462354
+      },
+      {
+        "section": 7,
+        "increment_s2": {
+          "exchange": -0.0007120011436538899,
+          "local_delay": -0.0004966632546942519,
+          "memory": -0.002699660159637248,
+          "propagation": -0.000519248726798433,
+          "memory_sort": -0.0025352876790055746,
+          "memory_within_pair": -0.00016437248063167333,
+          "measured_gain": 0.0019203110604198229,
+          "frozen_gain": 0.006347884345203614,
+          "training_gap_probability": 0.0,
+          "observed_gap_probability": 0.0
+        },
+        "cumulative_s2": {
+          "exchange": -0.0030489492503200377,
+          "local_delay": -0.0004526320935690463,
+          "memory": 0.0004933799415857355,
+          "propagation": -0.001057793383935927,
+          "memory_sort": 0.00034175342688537273,
+          "memory_within_pair": 0.0001516265147003632
+        },
+        "measured_variance_s2": 0.03884758392395812,
+        "frozen_variance_s2": 0.0429135787101973,
+        "signed_error_s2": -0.004065994786239174
+      },
+      {
+        "section": 8,
+        "increment_s2": {
+          "exchange": -0.0006599204180590362,
+          "local_delay": 0.0011708595598533193,
+          "memory": 0.003038758869300178,
+          "propagation": -0.00020922787760099901,
+          "memory_sort": 0.0030911935977081554,
+          "memory_within_pair": -5.2434728407977164e-05,
+          "measured_gain": 0.009688411110094684,
+          "frozen_gain": 0.006347940976601185,
+          "training_gap_probability": 0.0,
+          "observed_gap_probability": 0.0001220703125
+        },
+        "cumulative_s2": {
+          "exchange": -0.003708869668379074,
+          "local_delay": 0.000718227466284273,
+          "memory": 0.0035321388108859137,
+          "propagation": -0.001267021261536926,
+          "memory_sort": 0.003432947024593528,
+          "memory_within_pair": 9.919178629238604e-05
+        },
+        "measured_variance_s2": 0.04853599503405261,
+        "frozen_variance_s2": 0.04926151968679848,
+        "signed_error_s2": -0.0007255246527458695
+      }
+    ]
+  },
+  "nearest_donor_sensitivity": {
+    "d800_primary": [
+      {
+        "section": 3,
+        "cumulative_s2": {
+          "exchange": -0.0006190338893152496,
+          "local_delay": 0.0003555536868303311,
+          "memory": 0.0012002286835460494,
+          "propagation": -9.540979117872439e-18,
+          "memory_sort": 0.0006792929334811484,
+          "memory_within_pair": 0.0005209357500649012
+        }
+      },
+      {
+        "section": 4,
+        "cumulative_s2": {
+          "exchange": -0.0007222033541006857,
+          "local_delay": 0.00022651027975551137,
+          "memory": 0.001890686373317432,
+          "propagation": -2.5170321313855437e-05,
+          "memory_sort": 0.0017029020772552621,
+          "memory_within_pair": 0.0001877842960621702
+        }
+      },
+      {
+        "section": 5,
+        "cumulative_s2": {
+          "exchange": -0.0034564822159734083,
+          "local_delay": 0.0005343345812985115,
+          "memory": 0.00279240799756961,
+          "propagation": -0.0005093086815107966,
+          "memory_sort": 0.0024374965200611373,
+          "memory_within_pair": 0.00035491147750847305
+        }
+      },
+      {
+        "section": 6,
+        "cumulative_s2": {
+          "exchange": -0.0037465965051322113,
+          "local_delay": -0.0008000121028349442,
+          "memory": 0.0023034853093031812,
+          "propagation": -0.000949762532266806,
+          "memory_sort": 0.001931479201812839,
+          "memory_within_pair": 0.0003720061074903425
+        }
+      },
+      {
+        "section": 7,
+        "cumulative_s2": {
+          "exchange": -0.004725441782924027,
+          "local_delay": -0.0011889003817610313,
+          "memory": -0.0004599236641340079,
+          "propagation": -0.001663029136866852,
+          "memory_sort": -0.0007066562456571116,
+          "memory_within_pair": 0.0002467325815231041
+        }
+      },
+      {
+        "section": 8,
+        "cumulative_s2": {
+          "exchange": -0.00533458703383594,
+          "local_delay": 0.0005802941805855668,
+          "memory": 0.002404489077255006,
+          "propagation": -0.001865090385093843,
+          "memory_sort": 0.0021578807227650328,
+          "memory_within_pair": 0.00024660835448997307
+        }
+      }
+    ],
+    "d800_half_step": [
+      {
+        "section": 3,
+        "cumulative_s2": {
+          "exchange": -0.0007166518882033069,
+          "local_delay": -0.0003032409165573814,
+          "memory": 0.0009963563495019037,
+          "propagation": 3.642919299551295e-17,
+          "memory_sort": 0.0008481592701982151,
+          "memory_within_pair": 0.0001481970793036885
+        }
+      },
+      {
+        "section": 4,
+        "cumulative_s2": {
+          "exchange": -0.0006148272644771026,
+          "local_delay": -0.0015511886731834146,
+          "memory": 0.0018130325184646406,
+          "propagation": -3.868269701962773e-06,
+          "memory_sort": 0.0018737902043714952,
+          "memory_within_pair": -6.075768590685447e-05
+        }
+      },
+      {
+        "section": 5,
+        "cumulative_s2": {
+          "exchange": -0.0030144308242161756,
+          "local_delay": -0.0010301409783393476,
+          "memory": 0.00286934045327261,
+          "propagation": -0.000565851550500018,
+          "memory_sort": 0.002942827054092316,
+          "memory_within_pair": -7.348660081970568e-05
+        }
+      },
+      {
+        "section": 6,
+        "cumulative_s2": {
+          "exchange": -0.0028030909989675452,
+          "local_delay": -0.0032630106197242504,
+          "memory": 0.002513409377959502,
+          "propagation": -0.0008718338316709099,
+          "memory_sort": 0.002658096764738404,
+          "memory_within_pair": -0.0001446873867789021
+        }
+      },
+      {
+        "section": 7,
+        "cumulative_s2": {
+          "exchange": -0.0035983283720261764,
+          "local_delay": -0.003985853951334365,
+          "memory": -8.878633098442171e-05,
+          "propagation": -0.0015624510983230531,
+          "memory_sort": 0.0003232082223200662,
+          "memory_within_pair": -0.000411994553304488
+        }
+      },
+      {
+        "section": 8,
+        "cumulative_s2": {
+          "exchange": -0.004176810655314954,
+          "local_delay": -0.0028487856477797534,
+          "memory": 0.00246397224663643,
+          "propagation": -0.0017463004762197287,
+          "memory_sort": 0.0034050172323067803,
+          "memory_within_pair": -0.0009410449856703506
+        }
+      }
+    ],
+    "d450_primary": [
+      {
+        "section": 3,
+        "cumulative_s2": {
+          "exchange": -0.0006614322674576975,
+          "local_delay": 0.0006017031561817337,
+          "memory": 0.0010185820488310203,
+          "propagation": -5.377642775528102e-17,
+          "memory_sort": 0.0007003657186814044,
+          "memory_within_pair": 0.00031821633014961583
+        }
+      },
+      {
+        "section": 4,
+        "cumulative_s2": {
+          "exchange": -0.0009220445944254996,
+          "local_delay": 0.0005827266374446903,
+          "memory": 0.0020993719824366854,
+          "propagation": 3.7053903291213094e-05,
+          "memory_sort": 0.0019226232878386353,
+          "memory_within_pair": 0.00017674869459805017
+        }
+      },
+      {
+        "section": 5,
+        "cumulative_s2": {
+          "exchange": -0.0032729692810860283,
+          "local_delay": 0.0008694837544687972,
+          "memory": 0.0032271986998402328,
+          "propagation": -0.00044846117008179916,
+          "memory_sort": 0.002852493315959373,
+          "memory_within_pair": 0.00037470538388085996
+        }
+      },
+      {
+        "section": 6,
+        "cumulative_s2": {
+          "exchange": -0.003411914259742402,
+          "local_delay": -0.0011825011431206623,
+          "memory": 0.002958482234114376,
+          "propagation": -0.0007373804929292115,
+          "memory_sort": 0.0025247144392485507,
+          "memory_within_pair": 0.0004337677948658252
+        }
+      },
+      {
+        "section": 7,
+        "cumulative_s2": {
+          "exchange": -0.004225035168988537,
+          "local_delay": -0.0017196996491217341,
+          "memory": -4.490888915687375e-05,
+          "propagation": -0.0013364761205138902,
+          "memory_sort": -0.00017719304631731237,
+          "memory_within_pair": 0.00013228415716043845
+        }
+      },
+      {
+        "section": 8,
+        "cumulative_s2": {
+          "exchange": -0.004724190395062819,
+          "local_delay": -0.00020808951854295538,
+          "memory": 0.0029922900922090268,
+          "propagation": -0.0013940241500858108,
+          "memory_sort": 0.0029476080479059205,
+          "memory_within_pair": 4.468204430310626e-05
+        }
+      }
+    ],
+    "d450_half_step": [
+      {
+        "section": 3,
+        "cumulative_s2": {
+          "exchange": -0.0006601743810710388,
+          "local_delay": 0.0007955784847861235,
+          "memory": 0.0010943528659494149,
+          "propagation": 2.949029909160572e-17,
+          "memory_sort": 0.0009190179353945272,
+          "memory_within_pair": 0.00017533493055488762
+        }
+      },
+      {
+        "section": 4,
+        "cumulative_s2": {
+          "exchange": -0.00044729305807066685,
+          "local_delay": 0.00013617403869812823,
+          "memory": 0.002002278640718362,
+          "propagation": 5.799778079633791e-05,
+          "memory_sort": 0.00197782927181057,
+          "memory_within_pair": 2.4449368907792127e-05
+        }
+      },
+      {
+        "section": 5,
+        "cumulative_s2": {
+          "exchange": -0.002533846462955711,
+          "local_delay": 0.0015535800930405901,
+          "memory": 0.0035570660845066987,
+          "propagation": -0.00038467243806009077,
+          "memory_sort": 0.003308578586261871,
+          "memory_within_pair": 0.0002484874982448282
+        }
+      },
+      {
+        "section": 6,
+        "cumulative_s2": {
+          "exchange": -0.002277180839207721,
+          "local_delay": -1.5736106333221443e-05,
+          "memory": 0.0031930401012229834,
+          "propagation": -0.0005385446571374939,
+          "memory_sort": 0.0028770411058909474,
+          "memory_within_pair": 0.0003159989953320365
+        }
+      },
+      {
+        "section": 7,
+        "cumulative_s2": {
+          "exchange": -0.0029891819828616107,
+          "local_delay": -0.0005123993610274733,
+          "memory": 0.0004933799415857355,
+          "propagation": -0.001057793383935927,
+          "memory_sort": 0.00034175342688537273,
+          "memory_within_pair": 0.0001516265147003632
+        }
+      },
+      {
+        "section": 8,
+        "cumulative_s2": {
+          "exchange": -0.003649101119454657,
+          "local_delay": 0.0006584589173598563,
+          "memory": 0.0035321388108859137,
+          "propagation": -0.001267021261536926,
+          "memory_sort": 0.003432947024593528,
+          "memory_within_pair": 9.919178629238604e-05
+        }
+      }
+    ]
+  }
+}
