@@ -1,0 +1,325 @@
+{
+  "schema": "pore2process.figure7_retention.v1",
+  "source": {
+    "doi": "10.1016/j.jhazmat.2009.05.002",
+    "figure": "Figure 7, p768 / PDF p6",
+    "pdf_sha256": "c0d9eb61560f643b5b890b1926f1b0f2bc279386dc6bd882cb640ae3f0061b22",
+    "pixel_sha256": "a0bdb92af70489fd05b5ce5ad2649c272db7a00da03319c5ae7638398d21af63",
+    "source_parameters_sha256": "14e362ceda76349c80fbdad1f1a8ebb4298a1adf7d6d4d56e798afae3df3fc5c",
+    "reading_sensitivity_pixels": 2.0,
+    "pointwise_uncertainty": null,
+    "per_fraction_weighed_carbon_mass_kg": null
+  },
+  "model": {
+    "summary": "results/adsorption/disordered_repeat_join/runs/20261116T160738Z-2328c4c8/summary.json",
+    "summary_sha256": "5898c180e06eeebb2d00e32836bc91ccecf49b6d0679c95419476fa620cb0dae",
+    "frozen_prediction_sha256": "b2e503b447145039b539fca4f7bbc9531081564776db4c69286802c28a274246",
+    "new_fitted_parameters": 0
+  },
+  "basis": {
+    "flow_m3_s": 7.3e-07,
+    "inlet_concentration_kg_m3": 0.15,
+    "feed_rate_kg_s": 1.095e-07,
+    "dry_mass_kg": 0.007032455155060752,
+    "liquid_volume_m3": 4.057916690825596e-06,
+    "porosity": 0.427,
+    "bulk_density_kg_m3": 740.0,
+    "bed_length_m": 0.1,
+    "bed_area_m2": 9.503317777109123e-05,
+    "temperature_range_K": [
+      294.15,
+      296.15
+    ],
+    "capacity_kg_kg": 0.1115,
+    "affinity_m3_kg": 139.0,
+    "equilibrium_loading_at_feed_kg_kg": 0.10639702517162472,
+    "equilibrium_adsorbed_inventory_kg": 0.0007482323081513209,
+    "full_void_liquid_capacity_kg": 6.086875036238394e-07,
+    "equilibrium_total_inventory_kg": 0.0007488409956549447
+  },
+  "common_window_end_s": 14455.066921606118,
+  "cases": {
+    "d800": {
+      "particle_diameter_m": 0.0008,
+      "point_count": 24,
+      "experimental_midpoint": {
+        "time_s": 1844.7418738049712,
+        "figure7_retained_kg": 0.00014483007126716495,
+        "figure7_outlet_fraction": 0.5,
+        "figure7_net_retention_rate_kg_s": 5.475e-08,
+        "figure7_solid_bound_kg": [
+          0.00014422138376354111,
+          0.00014483007126716495
+        ],
+        "figure7_loading_bound_kg_kg": [
+          0.020507970628117742,
+          0.020594524682171794
+        ],
+        "model": {
+          "mixed": {
+            "retained_kg": 0.00015786371151143026,
+            "liquid_kg": 3.5123201678409793e-07,
+            "adsorbed_kg": 0.00015751247949464617,
+            "outlet_fraction": 0.2547134764982838,
+            "net_retention_rate_kg_s": 8.160887432343792e-08
+          },
+          "preserved": {
+            "retained_kg": 0.0001542107126734662,
+            "liquid_kg": 3.5446844536030706e-07,
+            "adsorbed_kg": 0.00015385624422810588,
+            "outlet_fraction": 0.2710471547605871,
+            "net_retention_rate_kg_s": 7.982033655371572e-08
+          }
+        }
+      },
+      "common_window_end": {
+        "time_s": 14455.066921606118,
+        "figure7_retained_kg": 0.0004105851517362275,
+        "figure7_outlet_fraction": 0.9094196942298208,
+        "figure7_net_retention_rate_kg_s": 9.918543481834619e-09,
+        "figure7_solid_bound_kg": [
+          0.0004099764642326037,
+          0.0004105851517362275
+        ],
+        "figure7_loading_bound_kg_kg": [
+          0.058297771573782894,
+          0.05838432562783694
+        ],
+        "model": {
+          "mixed": {
+            "retained_kg": 0.0006322428437637366,
+            "liquid_kg": 5.749236187976928e-07,
+            "adsorbed_kg": 0.0006316679201449389,
+            "outlet_fraction": 0.8799401726439099,
+            "net_retention_rate_kg_s": 1.3146551095491867e-08
+          },
+          "preserved": {
+            "retained_kg": 0.0006306012269069961,
+            "liquid_kg": 5.74054728523943e-07,
+            "adsorbed_kg": 0.0006300271721784721,
+            "outlet_fraction": 0.8782496409771688,
+            "net_retention_rate_kg_s": 1.333166431300001e-08
+          }
+        }
+      },
+      "last_marker": {
+        "time_s": 16841.300191204587,
+        "figure7_retained_kg": 0.000432442204067443,
+        "figure7_outlet_fraction": 0.9242424242424242,
+        "figure7_net_retention_rate_kg_s": 8.29545454545455e-09,
+        "figure7_solid_bound_kg": [
+          0.0004318335165638192,
+          0.000432442204067443
+        ],
+        "figure7_loading_bound_kg_kg": [
+          0.061405797412452695,
+          0.06149235146650675
+        ],
+        "model": {
+          "mixed": {
+            "retained_kg": 0.0006596417420286229,
+            "liquid_kg": 5.830134967579883e-07,
+            "adsorbed_kg": 0.000659058728531865,
+            "outlet_fraction": 0.9088702752879446,
+            "net_retention_rate_kg_s": 9.978704855970064e-09
+          },
+          "preserved": {
+            "retained_kg": 0.0006583793100735356,
+            "liquid_kg": 5.823591629441721e-07,
+            "adsorbed_kg": 0.0006577969509105915,
+            "outlet_fraction": 0.9076254006159779,
+            "net_retention_rate_kg_s": 1.0115018632550425e-08
+          }
+        }
+      },
+      "model_diagnostics": {
+        "mixed": {
+          "excess_at_last_marker_kg": 0.00022719953796117987,
+          "excess_built_after_observed_midpoint_fraction": 0.9426335090237187,
+          "model_at_fig7_end_retention": {
+            "time_s": 6129.58153820655,
+            "retained_kg": 0.000432442204067443,
+            "liquid_kg": 5.030913851177317e-07,
+            "adsorbed_kg": 0.0004319391126823253,
+            "outlet_fraction": 0.5999990996569163,
+            "net_retention_rate_kg_s": 4.380009858756766e-08
+          }
+        },
+        "preserved": {
+          "excess_at_last_marker_kg": 0.00022593710600609258,
+          "excess_built_after_observed_midpoint_fraction": 0.9584811827852292,
+          "model_at_fig7_end_retention": {
+            "time_s": 6254.254161535304,
+            "retained_kg": 0.000432442204067443,
+            "liquid_kg": 5.018101960523204e-07,
+            "adsorbed_kg": 0.0004319403938713907,
+            "outlet_fraction": 0.6016047350814958,
+            "net_retention_rate_kg_s": 4.3624281508576205e-08
+          }
+        }
+      },
+      "reading_scenarios_retention_kg": [
+        0.0004147627573191626,
+        0.0004503337389188249
+      ],
+      "reading_scenarios_model_excess_kg": {
+        "mixed": [
+          0.00021021913040928145,
+          0.00024395827449844737
+        ],
+        "preserved": [
+          0.00020896914144018588,
+          0.00024268326146143718
+        ]
+      },
+      "monotone_interpolation_retention_kg": [
+        0.0004047076059695562,
+        0.00046017680216532984
+      ],
+      "figure7_fraction_of_equilibrium_total": 0.5774820109697977,
+      "unobserved_retention_to_reach_equilibrium_kg": 0.0003163987915875017,
+      "minimum_monotone_tail_to_equilibrium_s": 38141.224191370056
+    },
+    "d450": {
+      "particle_diameter_m": 0.00045000000000000004,
+      "point_count": 24,
+      "experimental_midpoint": {
+        "time_s": 3321.561129231807,
+        "figure7_retained_kg": 0.0003062525018003029,
+        "figure7_outlet_fraction": 0.5,
+        "figure7_net_retention_rate_kg_s": 5.475e-08,
+        "figure7_solid_bound_kg": [
+          0.00030564381429667905,
+          0.0003062525018003029
+        ],
+        "figure7_loading_bound_kg_kg": [
+          0.043461893116620756,
+          0.043548447170674805
+        ],
+        "model": {
+          "mixed": {
+            "retained_kg": 0.0003445464286535901,
+            "liquid_kg": 3.379425757840701e-07,
+            "adsorbed_kg": 0.000344208486077806,
+            "outlet_fraction": 0.10842200825457066,
+            "net_retention_rate_kg_s": 9.762779009612451e-08
+          },
+          "preserved": {
+            "retained_kg": 0.00034193275808594014,
+            "liquid_kg": 3.362930798180244e-07,
+            "adsorbed_kg": 0.0003415964650061221,
+            "outlet_fraction": 0.1169140679787186,
+            "net_retention_rate_kg_s": 9.669790955633031e-08
+          }
+        }
+      },
+      "common_window_end": {
+        "time_s": 14455.066921606118,
+        "figure7_retained_kg": 0.000473777631546274,
+        "figure7_outlet_fraction": 0.9393939393939394,
+        "figure7_net_retention_rate_kg_s": 6.63636363636363e-09,
+        "figure7_solid_bound_kg": [
+          0.00047316894404265014,
+          0.000473777631546274
+        ],
+        "figure7_loading_bound_kg_kg": [
+          0.06728360630954675,
+          0.0673701603636008
+        ],
+        "model": {
+          "mixed": {
+            "retained_kg": 0.0007398116934438467,
+            "liquid_kg": 6.028469636845336e-07,
+            "adsorbed_kg": 0.0007392088464801621,
+            "outlet_fraction": 0.9715575609975101,
+            "net_retention_rate_kg_s": 3.1144470707726422e-09
+          },
+          "preserved": {
+            "retained_kg": 0.0007395739016569546,
+            "liquid_kg": 6.026423586428916e-07,
+            "adsorbed_kg": 0.0007389712592983117,
+            "outlet_fraction": 0.9708461726566531,
+            "net_retention_rate_kg_s": 3.1923440940964883e-09
+          }
+        }
+      },
+      "last_marker": {
+        "time_s": 14455.066921606118,
+        "figure7_retained_kg": 0.000473777631546274,
+        "figure7_outlet_fraction": 0.9393939393939394,
+        "figure7_net_retention_rate_kg_s": 6.63636363636363e-09,
+        "figure7_solid_bound_kg": [
+          0.00047316894404265014,
+          0.000473777631546274
+        ],
+        "figure7_loading_bound_kg_kg": [
+          0.06728360630954675,
+          0.0673701603636008
+        ],
+        "model": {
+          "mixed": {
+            "retained_kg": 0.0007398116934438467,
+            "liquid_kg": 6.028469636845336e-07,
+            "adsorbed_kg": 0.0007392088464801621,
+            "outlet_fraction": 0.9715575609975101,
+            "net_retention_rate_kg_s": 3.1144470707726422e-09
+          },
+          "preserved": {
+            "retained_kg": 0.0007395739016569546,
+            "liquid_kg": 6.026423586428916e-07,
+            "adsorbed_kg": 0.0007389712592983117,
+            "outlet_fraction": 0.9708461726566531,
+            "net_retention_rate_kg_s": 3.1923440940964883e-09
+          }
+        }
+      },
+      "model_diagnostics": {
+        "mixed": {
+          "excess_at_last_marker_kg": 0.0002660340618975727,
+          "excess_built_after_observed_midpoint_fraction": 0.8560563012865963,
+          "model_at_fig7_end_retention": {
+            "time_s": 4721.4664802232055,
+            "retained_kg": 0.000473777631546274,
+            "liquid_kg": 4.238589141899426e-07,
+            "adsorbed_kg": 0.00047335377263208405,
+            "outlet_fraction": 0.21758452974950784,
+            "net_retention_rate_kg_s": 8.567449399242888e-08
+          }
+        },
+        "preserved": {
+          "excess_at_last_marker_kg": 0.0002657962701106806,
+          "excess_built_after_observed_midpoint_fraction": 0.8657608841885569,
+          "model_at_fig7_end_retention": {
+            "time_s": 4766.402766130917,
+            "retained_kg": 0.000473777631546274,
+            "liquid_kg": 4.2309810833120237e-07,
+            "adsorbed_kg": 0.0004733545334379428,
+            "outlet_fraction": 0.2282592330659698,
+            "net_retention_rate_kg_s": 8.45056139792763e-08
+          }
+        }
+      },
+      "reading_scenarios_retention_kg": [
+        0.0004573870278860719,
+        0.0004902117404583943
+      ],
+      "reading_scenarios_model_excess_kg": {
+        "mixed": [
+          0.0002498812125052727,
+          0.00028213436367381325
+        ],
+        "preserved": [
+          0.00024965046136856154,
+          0.0002818893168894397
+        ]
+      },
+      "monotone_interpolation_retention_kg": [
+        0.00045168240172829073,
+        0.000495872861364257
+      ],
+      "figure7_fraction_of_equilibrium_total": 0.6326812157658419,
+      "unobserved_retention_to_reach_equilibrium_kg": 0.00027506336410867076,
+      "minimum_monotone_tail_to_equilibrium_s": 41447.90418075865
+    }
+  }
+}

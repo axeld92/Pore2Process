@@ -1,0 +1,17 @@
+schema_version = 1
+id = "adsorption/figure7_retention"
+title = "Retained-phenol balance on Alhamed Figure 7"
+area = "adsorption"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["adsorption/disordered_repeat_join"]
+run_module = "examples.adsorption.figure7_retention.run"
+check_module = "examples.adsorption.figure7_retention.run"
+reference_files = ["reference_summary.json"]
+protocol_files = ["protocol.md"]
+
+[validation]
+numerical = "passed"
+literature = "failed"
+scope = "Finite-window balance of the digitized experimental markers and frozen fixed-carbon model histories. The source leaves equilibrium retention beyond the last points unresolved."

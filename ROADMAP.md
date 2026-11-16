@@ -321,6 +321,12 @@ path and age rank raises inert variance by 34–36% and improves the
 0.45 mm early crossing. Both phenol midpoints move less than a minute
 later and both unfitted Figure 7 curves remain outside qualification.
 
+The [Figure 7 retained-phenol balance](examples/adsorption/figure7_retention/REPORT.md)
+finds that the frozen models retain 226–266 mg more than the digitized
+curves over matched windows. Most of the excess builds after the
+experimental midpoints. The available curves leave the balance between
+accessible inventory and slow tail uptake unresolved.
+
 ## 7. Select a reacting or non-isothermal showcase
 
 **Research direction; application and physical model not yet selected.**

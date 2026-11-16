@@ -45,6 +45,7 @@ specific earlier measurements or assumptions.
 | Adsorption | [Within-path travel-time memory](adsorption/disordered_travel_memory/REPORT.md) | Both sizes pass the 10% variance limit at every held-out section for both tracer time steps | [Commands](adsorption/disordered_travel_memory/README.md) |
 | Adsorption | [Memory model coupled to the phenol column](adsorption/disordered_memory_column/REPORT.md) | Conservative, fixed-carbon predictions for both sizes fail the unfitted Figure 7 comparison | [Commands](adsorption/disordered_memory_column/README.md) |
 | Adsorption | [Mixing between repeats](adsorption/disordered_repeat_join/REPORT.md) | Path preservation improves the 0.45 mm early crossing and delays both midpoints by less than one minute | [Commands](adsorption/disordered_repeat_join/README.md) |
+| Adsorption | [Figure 7 retained-phenol balance](adsorption/figure7_retention/REPORT.md) | Frozen predictions retain 226–266 mg more than the observed windows, with most of the excess accruing after the experimental midpoints | [Commands](adsorption/figure7_retention/README.md) |
 
 Filtration hydraulics is closed for now; adsorption remains research in
 progress. Earlier BGK numbers and later TRT results retain separate identities.
