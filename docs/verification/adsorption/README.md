@@ -39,3 +39,4 @@ explanations are in the [example catalogue](../../../examples/README.md).
 - [N160 disordered-packing tracer refinement](disordered_n160.md)
 - [two-section disordered path-exchange holdout](disordered_exchange.md)
 - [section-specific exchange and transit times on N160](disordered_section_exchange.md)
+- [within-path travel-time memory on N160](disordered_travel_memory.md)

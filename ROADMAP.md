@@ -301,6 +301,12 @@ both time steps. The 0.45 mm case exceeds the limit in the bed interior
 at both time steps even though the outlet passes. Reduced-model
 qualification remains open for inert transport.
 
+The [within-path travel-time memory test](examples/adsorption/disordered_travel_memory/REPORT.md)
+keeps the section-specific rules and separates tracer by elapsed time
+within each path. The N160 inert tracer variance screen now passes both
+particle-matched conditions at both time steps across sections 3–8.
+This qualifies the arrival moments on this fully probed packing.
+
 ## 7. Select a reacting or non-isothermal showcase
 
 **Research direction; application and physical model not yet selected.**
