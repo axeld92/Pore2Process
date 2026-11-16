@@ -315,6 +315,12 @@ early crossing moves closer with travel-time memory, and the two
 midpoints remain about 53–54 minutes late. Experimental adsorption
 service remains unqualified for the tested packing and contact assumptions.
 
+The [independent join sensitivity](examples/adsorption/disordered_repeat_join/REPORT.md)
+changes only routing between repeats at fixed carbon mass. Preserving
+path and age rank raises inert variance by 34–36% and improves the
+0.45 mm early crossing. Both phenol midpoints move less than a minute
+later and both unfitted Figure 7 curves remain outside qualification.
+
 ## 7. Select a reacting or non-isothermal showcase
 
 **Research direction; application and physical model not yet selected.**

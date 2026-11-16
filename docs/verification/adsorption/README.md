@@ -41,3 +41,4 @@ explanations are in the [example catalogue](../../../examples/README.md).
 - [section-specific exchange and transit times on N160](disordered_section_exchange.md)
 - [within-path travel-time memory on N160](disordered_travel_memory.md)
 - [frozen Figure 7 predictions with N160 travel-time memory](disordered_memory_column.md)
+- [fully mixed and path-preserving joins at fixed carbon mass](disordered_repeat_join.md)

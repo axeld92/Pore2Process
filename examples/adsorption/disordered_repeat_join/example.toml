@@ -1,0 +1,17 @@
+schema_version = 1
+id = "adsorption/disordered_repeat_join"
+title = "Inter-repeat mixing sensitivity in the N160 phenol column"
+area = "adsorption"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["adsorption/disordered_memory_column"]
+run_module = "examples.adsorption.disordered_repeat_join.run"
+check_module = "examples.adsorption.disordered_repeat_join.run"
+reference_files = ["reference_summary.json"]
+protocol_files = ["protocol.md"]
+
+[validation]
+numerical = "passed"
+literature = "failed"
+scope = "Fixed-mass column predictions scored against Alhamed Figure 7. The join mapping is a sensitivity case for the synthetic packing."

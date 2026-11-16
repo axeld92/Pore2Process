@@ -44,6 +44,7 @@ specific earlier measurements or assumptions.
 | Adsorption | [Section-specific disordered exchange](adsorption/disordered_section_exchange/REPORT.md) | Independent probes of the saved N160 flow bring the 0.80 mm case within the variance limit. The 0.45 mm case still exceeds it around sections 4–5 | [Commands](adsorption/disordered_section_exchange/README.md) |
 | Adsorption | [Within-path travel-time memory](adsorption/disordered_travel_memory/REPORT.md) | Both sizes pass the 10% variance limit at every held-out section for both tracer time steps | [Commands](adsorption/disordered_travel_memory/README.md) |
 | Adsorption | [Memory model coupled to the phenol column](adsorption/disordered_memory_column/REPORT.md) | Conservative, fixed-carbon predictions for both sizes fail the unfitted Figure 7 comparison | [Commands](adsorption/disordered_memory_column/README.md) |
+| Adsorption | [Mixing between repeats](adsorption/disordered_repeat_join/REPORT.md) | Path preservation improves the 0.45 mm early crossing and delays both midpoints by less than one minute | [Commands](adsorption/disordered_repeat_join/README.md) |
 
 Filtration hydraulics is closed for now; adsorption remains research in
 progress. Earlier BGK numbers and later TRT results retain separate identities.
