@@ -1,0 +1,18 @@
+schema_version = 1
+id = "adsorption/disordered_memory_column"
+title = "N160 travel-time memory and shared-carbon phenol breakthrough"
+area = "adsorption"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["adsorption/disordered_travel_memory", "adsorption/film_particle"]
+run_module = "examples.adsorption.disordered_memory_column.run"
+check_module = "examples.adsorption.disordered_memory_column.run"
+reference_files = ["reference_summary.json"]
+protocol_files = ["protocol.md"]
+
+[validation]
+numerical = "passed"
+inert_transport = "passed"
+literature = "failed"
+scope = "Fixed synthetic packing, dry inventory and batch particle physics. Independent comparison against the open Alhamed Figure 7 markers for both sizes."

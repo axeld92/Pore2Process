@@ -307,6 +307,14 @@ within each path. The N160 inert tracer variance screen now passes both
 particle-matched conditions at both time steps across sections 3–8.
 This qualifies the arrival moments on this fully probed packing.
 
+The [fixed-carbon adsorption transfer](examples/adsorption/disordered_memory_column/REPORT.md)
+uses the qualified tracer rules and the batch-qualified particle model.
+The coupled solver preserves the inert tracer variance screen and
+conserves phenol. Both unfitted Figure 7 predictions fail. The 0.45 mm
+early crossing moves closer with travel-time memory, and the two
+midpoints remain about 53–54 minutes late. Experimental adsorption
+service remains unqualified for the tested packing and contact assumptions.
+
 ## 7. Select a reacting or non-isothermal showcase
 
 **Research direction; application and physical model not yet selected.**
