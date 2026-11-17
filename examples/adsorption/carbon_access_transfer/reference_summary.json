@@ -1,0 +1,2337 @@
+{
+  "path": "results/adsorption/carbon_access_transfer/runs/20261117T092847Z-6bf8a9d8/summary.json",
+  "sha256": "8a22cc4817aed778218b7d794c5150c5ae0e6b55c5fc27bbce1acf0a9378c32a",
+  "frozen_sha256": "0b4aa9608bd7f3f329b59e7531dc51e158b7257bce7d2ad5dac22ffb4271361c",
+  "fitted_parameters": 0,
+  "plan": {
+    "cases": {
+      "q233_l10": {
+        "bed_cm": 10,
+        "flow_mL_min": 23.3,
+        "table5_row": 10,
+        "parameters": {
+          "blocks": 9,
+          "liquid_volume_m3": 4.057916690825595e-06,
+          "dry_mass_kg": 0.007032455155060752,
+          "flow_m3_s": 3.8833333333333336e-07,
+          "inlet_concentration_kg_m3": 0.15,
+          "particle_diameter_m": 0.0008,
+          "particle_density_kg_m3": 1291.4485165794067,
+          "diffusivity_m2_s": 1.846035489738998e-12,
+          "film_m_s": 3.188118722845837e-05,
+          "capacity_kg_kg": 0.1115,
+          "affinity_m3_kg": 139.0,
+          "t_end_s": 36000.0,
+          "startup_s": 24.0,
+          "terminal_sections": 0
+        },
+        "sections": 72,
+        "Pe": 13291.348564923817,
+        "scenarios": {
+          "full": {
+            "inputs": {
+              "direct_fraction": 1.0,
+              "slow_ratio": 0.0
+            },
+            "added_resistance_s_m": null,
+            "reference_slow_ratio": 0.0
+          },
+          "f50_isolated": {
+            "inputs": {
+              "direct_fraction": 0.5,
+              "slow_ratio": 0.0
+            },
+            "added_resistance_s_m": null,
+            "reference_slow_ratio": 0.0
+          },
+          "f50_slow01": {
+            "inputs": {
+              "direct_fraction": 0.5,
+              "slow_ratio": 0.014182767136198546
+            },
+            "added_resistance_s_m": 2180223.153998044,
+            "reference_slow_ratio": 0.01
+          },
+          "f50_slow10": {
+            "inputs": {
+              "direct_fraction": 0.5,
+              "slow_ratio": 0.13663221028099007
+            },
+            "added_resistance_s_m": 198202.10490891308,
+            "reference_slow_ratio": 0.1
+          },
+          "f75_isolated": {
+            "inputs": {
+              "direct_fraction": 0.75,
+              "slow_ratio": 0.0
+            },
+            "added_resistance_s_m": null,
+            "reference_slow_ratio": 0.0
+          },
+          "f75_slow01": {
+            "inputs": {
+              "direct_fraction": 0.75,
+              "slow_ratio": 0.014182767136198546
+            },
+            "added_resistance_s_m": 2180223.153998044,
+            "reference_slow_ratio": 0.01
+          },
+          "f75_slow10": {
+            "inputs": {
+              "direct_fraction": 0.75,
+              "slow_ratio": 0.13663221028099007
+            },
+            "added_resistance_s_m": 198202.10490891308,
+            "reference_slow_ratio": 0.1
+          }
+        }
+      },
+      "q233_l15": {
+        "bed_cm": 15,
+        "flow_mL_min": 23.3,
+        "table5_row": 16,
+        "parameters": {
+          "blocks": 13,
+          "liquid_volume_m3": 6.086875036238393e-06,
+          "dry_mass_kg": 0.010548682732591127,
+          "flow_m3_s": 3.8833333333333336e-07,
+          "inlet_concentration_kg_m3": 0.15,
+          "particle_diameter_m": 0.0008,
+          "particle_density_kg_m3": 1291.4485165794067,
+          "diffusivity_m2_s": 1.846035489738998e-12,
+          "film_m_s": 3.188118722845837e-05,
+          "capacity_kg_kg": 0.1115,
+          "affinity_m3_kg": 139.0,
+          "t_end_s": 36000.0,
+          "startup_s": 24.0,
+          "terminal_sections": 4
+        },
+        "sections": 108,
+        "Pe": 13291.348564923817,
+        "scenarios": {
+          "full": {
+            "inputs": {
+              "direct_fraction": 1.0,
+              "slow_ratio": 0.0
+            },
+            "added_resistance_s_m": null,
+            "reference_slow_ratio": 0.0
+          },
+          "f50_isolated": {
+            "inputs": {
+              "direct_fraction": 0.5,
+              "slow_ratio": 0.0
+            },
+            "added_resistance_s_m": null,
+            "reference_slow_ratio": 0.0
+          },
+          "f50_slow01": {
+            "inputs": {
+              "direct_fraction": 0.5,
+              "slow_ratio": 0.014182767136198546
+            },
+            "added_resistance_s_m": 2180223.153998044,
+            "reference_slow_ratio": 0.01
+          },
+          "f50_slow10": {
+            "inputs": {
+              "direct_fraction": 0.5,
+              "slow_ratio": 0.13663221028099007
+            },
+            "added_resistance_s_m": 198202.10490891308,
+            "reference_slow_ratio": 0.1
+          },
+          "f75_isolated": {
+            "inputs": {
+              "direct_fraction": 0.75,
+              "slow_ratio": 0.0
+            },
+            "added_resistance_s_m": null,
+            "reference_slow_ratio": 0.0
+          },
+          "f75_slow01": {
+            "inputs": {
+              "direct_fraction": 0.75,
+              "slow_ratio": 0.014182767136198546
+            },
+            "added_resistance_s_m": 2180223.153998044,
+            "reference_slow_ratio": 0.01
+          },
+          "f75_slow10": {
+            "inputs": {
+              "direct_fraction": 0.75,
+              "slow_ratio": 0.13663221028099007
+            },
+            "added_resistance_s_m": 198202.10490891308,
+            "reference_slow_ratio": 0.1
+          }
+        }
+      },
+      "q233_l20": {
+        "bed_cm": 20,
+        "flow_mL_min": 23.3,
+        "table5_row": 17,
+        "parameters": {
+          "blocks": 18,
+          "liquid_volume_m3": 8.11583338165119e-06,
+          "dry_mass_kg": 0.014064910310121505,
+          "flow_m3_s": 3.8833333333333336e-07,
+          "inlet_concentration_kg_m3": 0.15,
+          "particle_diameter_m": 0.0008,
+          "particle_density_kg_m3": 1291.4485165794067,
+          "diffusivity_m2_s": 1.846035489738998e-12,
+          "film_m_s": 3.188118722845837e-05,
+          "capacity_kg_kg": 0.1115,
+          "affinity_m3_kg": 139.0,
+          "t_end_s": 36000.0,
+          "startup_s": 24.0,
+          "terminal_sections": 0
+        },
+        "sections": 144,
+        "Pe": 13291.348564923817,
+        "scenarios": {
+          "full": {
+            "inputs": {
+              "direct_fraction": 1.0,
+              "slow_ratio": 0.0
+            },
+            "added_resistance_s_m": null,
+            "reference_slow_ratio": 0.0
+          },
+          "f50_isolated": {
+            "inputs": {
+              "direct_fraction": 0.5,
+              "slow_ratio": 0.0
+            },
+            "added_resistance_s_m": null,
+            "reference_slow_ratio": 0.0
+          },
+          "f50_slow01": {
+            "inputs": {
+              "direct_fraction": 0.5,
+              "slow_ratio": 0.014182767136198546
+            },
+            "added_resistance_s_m": 2180223.153998044,
+            "reference_slow_ratio": 0.01
+          },
+          "f50_slow10": {
+            "inputs": {
+              "direct_fraction": 0.5,
+              "slow_ratio": 0.13663221028099007
+            },
+            "added_resistance_s_m": 198202.10490891308,
+            "reference_slow_ratio": 0.1
+          },
+          "f75_isolated": {
+            "inputs": {
+              "direct_fraction": 0.75,
+              "slow_ratio": 0.0
+            },
+            "added_resistance_s_m": null,
+            "reference_slow_ratio": 0.0
+          },
+          "f75_slow01": {
+            "inputs": {
+              "direct_fraction": 0.75,
+              "slow_ratio": 0.014182767136198546
+            },
+            "added_resistance_s_m": 2180223.153998044,
+            "reference_slow_ratio": 0.01
+          },
+          "f75_slow10": {
+            "inputs": {
+              "direct_fraction": 0.75,
+              "slow_ratio": 0.13663221028099007
+            },
+            "added_resistance_s_m": 198202.10490891308,
+            "reference_slow_ratio": 0.1
+          }
+        }
+      },
+      "q233_l25": {
+        "bed_cm": 25,
+        "flow_mL_min": 23.3,
+        "table5_row": 18,
+        "parameters": {
+          "blocks": 22,
+          "liquid_volume_m3": 1.0144791727063988e-05,
+          "dry_mass_kg": 0.01758113788765188,
+          "flow_m3_s": 3.8833333333333336e-07,
+          "inlet_concentration_kg_m3": 0.15,
+          "particle_diameter_m": 0.0008,
+          "particle_density_kg_m3": 1291.4485165794067,
+          "diffusivity_m2_s": 1.846035489738998e-12,
+          "film_m_s": 3.188118722845837e-05,
+          "capacity_kg_kg": 0.1115,
+          "affinity_m3_kg": 139.0,
+          "t_end_s": 36000.0,
+          "startup_s": 24.0,
+          "terminal_sections": 4
+        },
+        "sections": 180,
+        "Pe": 13291.348564923817,
+        "scenarios": {
+          "full": {
+            "inputs": {
+              "direct_fraction": 1.0,
+              "slow_ratio": 0.0
+            },
+            "added_resistance_s_m": null,
+            "reference_slow_ratio": 0.0
+          },
+          "f50_isolated": {
+            "inputs": {
+              "direct_fraction": 0.5,
+              "slow_ratio": 0.0
+            },
+            "added_resistance_s_m": null,
+            "reference_slow_ratio": 0.0
+          },
+          "f50_slow01": {
+            "inputs": {
+              "direct_fraction": 0.5,
+              "slow_ratio": 0.014182767136198546
+            },
+            "added_resistance_s_m": 2180223.153998044,
+            "reference_slow_ratio": 0.01
+          },
+          "f50_slow10": {
+            "inputs": {
+              "direct_fraction": 0.5,
+              "slow_ratio": 0.13663221028099007
+            },
+            "added_resistance_s_m": 198202.10490891308,
+            "reference_slow_ratio": 0.1
+          },
+          "f75_isolated": {
+            "inputs": {
+              "direct_fraction": 0.75,
+              "slow_ratio": 0.0
+            },
+            "added_resistance_s_m": null,
+            "reference_slow_ratio": 0.0
+          },
+          "f75_slow01": {
+            "inputs": {
+              "direct_fraction": 0.75,
+              "slow_ratio": 0.014182767136198546
+            },
+            "added_resistance_s_m": 2180223.153998044,
+            "reference_slow_ratio": 0.01
+          },
+          "f75_slow10": {
+            "inputs": {
+              "direct_fraction": 0.75,
+              "slow_ratio": 0.13663221028099007
+            },
+            "added_resistance_s_m": 198202.10490891308,
+            "reference_slow_ratio": 0.1
+          }
+        }
+      },
+      "q438_l25": {
+        "bed_cm": 25,
+        "flow_mL_min": 43.8,
+        "table5_row": 15,
+        "parameters": {
+          "blocks": 22,
+          "liquid_volume_m3": 1.0144791727063988e-05,
+          "dry_mass_kg": 0.01758113788765188,
+          "flow_m3_s": 7.299999999999999e-07,
+          "inlet_concentration_kg_m3": 0.15,
+          "particle_diameter_m": 0.0008,
+          "particle_density_kg_m3": 1291.4485165794067,
+          "diffusivity_m2_s": 1.846035489738998e-12,
+          "film_m_s": 4.540819586217862e-05,
+          "capacity_kg_kg": 0.1115,
+          "affinity_m3_kg": 139.0,
+          "t_end_s": 36000.0,
+          "startup_s": 24.0,
+          "terminal_sections": 4
+        },
+        "sections": 180,
+        "Pe": 24985.4535254791,
+        "scenarios": {
+          "full": {
+            "inputs": {
+              "direct_fraction": 1.0,
+              "slow_ratio": 0.0
+            },
+            "added_resistance_s_m": null,
+            "reference_slow_ratio": 0.0
+          },
+          "f50_isolated": {
+            "inputs": {
+              "direct_fraction": 0.5,
+              "slow_ratio": 0.0
+            },
+            "added_resistance_s_m": null,
+            "reference_slow_ratio": 0.0
+          },
+          "f50_slow01": {
+            "inputs": {
+              "direct_fraction": 0.5,
+              "slow_ratio": 0.010000000000000002
+            },
+            "added_resistance_s_m": 2180223.153998044,
+            "reference_slow_ratio": 0.01
+          },
+          "f50_slow10": {
+            "inputs": {
+              "direct_fraction": 0.5,
+              "slow_ratio": 0.1
+            },
+            "added_resistance_s_m": 198202.10490891308,
+            "reference_slow_ratio": 0.1
+          },
+          "f75_isolated": {
+            "inputs": {
+              "direct_fraction": 0.75,
+              "slow_ratio": 0.0
+            },
+            "added_resistance_s_m": null,
+            "reference_slow_ratio": 0.0
+          },
+          "f75_slow01": {
+            "inputs": {
+              "direct_fraction": 0.75,
+              "slow_ratio": 0.010000000000000002
+            },
+            "added_resistance_s_m": 2180223.153998044,
+            "reference_slow_ratio": 0.01
+          },
+          "f75_slow10": {
+            "inputs": {
+              "direct_fraction": 0.75,
+              "slow_ratio": 0.1
+            },
+            "added_resistance_s_m": 198202.10490891308,
+            "reference_slow_ratio": 0.1
+          }
+        }
+      },
+      "q625_l25": {
+        "bed_cm": 25,
+        "flow_mL_min": 62.5,
+        "table5_row": 12,
+        "parameters": {
+          "blocks": 22,
+          "liquid_volume_m3": 1.0144791727063988e-05,
+          "dry_mass_kg": 0.01758113788765188,
+          "flow_m3_s": 1.0416666666666667e-06,
+          "inlet_concentration_kg_m3": 0.15,
+          "particle_diameter_m": 0.0008,
+          "particle_density_kg_m3": 1291.4485165794067,
+          "diffusivity_m2_s": 1.846035489738998e-12,
+          "film_m_s": 5.561091682497927e-05,
+          "capacity_kg_kg": 0.1115,
+          "affinity_m3_kg": 139.0,
+          "t_end_s": 36000.0,
+          "startup_s": 24.0,
+          "terminal_sections": 4
+        },
+        "sections": 180,
+        "Pe": 35652.75902608321,
+        "scenarios": {
+          "full": {
+            "inputs": {
+              "direct_fraction": 1.0,
+              "slow_ratio": 0.0
+            },
+            "added_resistance_s_m": null,
+            "reference_slow_ratio": 0.0
+          },
+          "f50_isolated": {
+            "inputs": {
+              "direct_fraction": 0.5,
+              "slow_ratio": 0.0
+            },
+            "added_resistance_s_m": null,
+            "reference_slow_ratio": 0.0
+          },
+          "f50_slow01": {
+            "inputs": {
+              "direct_fraction": 0.5,
+              "slow_ratio": 0.008180346639400395
+            },
+            "added_resistance_s_m": 2180223.153998044,
+            "reference_slow_ratio": 0.01
+          },
+          "f50_slow10": {
+            "inputs": {
+              "direct_fraction": 0.5,
+              "slow_ratio": 0.08317944601652008
+            },
+            "added_resistance_s_m": 198202.10490891308,
+            "reference_slow_ratio": 0.1
+          },
+          "f75_isolated": {
+            "inputs": {
+              "direct_fraction": 0.75,
+              "slow_ratio": 0.0
+            },
+            "added_resistance_s_m": null,
+            "reference_slow_ratio": 0.0
+          },
+          "f75_slow01": {
+            "inputs": {
+              "direct_fraction": 0.75,
+              "slow_ratio": 0.008180346639400395
+            },
+            "added_resistance_s_m": 2180223.153998044,
+            "reference_slow_ratio": 0.01
+          },
+          "f75_slow10": {
+            "inputs": {
+              "direct_fraction": 0.75,
+              "slow_ratio": 0.08317944601652008
+            },
+            "added_resistance_s_m": 198202.10490891308,
+            "reference_slow_ratio": 0.1
+          }
+        }
+      }
+    },
+    "probe_summary": "results/adsorption/carbon_access_transfer/probes/20261117T092224Z-301b10b3/summary.json",
+    "probe_sha256": "9a3fe478bcd839c0ba0210a998dcd62bb335978a2b4c71dd886b8479b4bb5167",
+    "tracer_holdout": {
+      "q233": {
+        "mean_relative_error": [
+          0.0004059281329968975,
+          0.002559160525710409,
+          0.0013844449517148706,
+          -0.00022669480007351077,
+          0.001913340102615457,
+          0.001256168925994013
+        ],
+        "variance_relative_error": [
+          -0.00761415759657522,
+          -7.331289675352202e-05,
+          0.02162024603400559,
+          0.014558269056982445,
+          0.07154671017394014,
+          0.031273848570376475
+        ],
+        "maximum_mean_error": 0.002559160525710409,
+        "maximum_variance_error": 0.07154671017394014,
+        "variance_peak_section": 7,
+        "mean_passed": true,
+        "variance_passed": true
+      },
+      "q625": {
+        "mean_relative_error": [
+          -0.00043470621891793877,
+          0.0022516533712753787,
+          0.0027360251628408367,
+          0.0020618585783548633,
+          0.001902527368805337,
+          0.0027807130109359715
+        ],
+        "variance_relative_error": [
+          -0.024435512362041927,
+          -0.012052031739127373,
+          0.01922515189987904,
+          0.033616139520231576,
+          0.06093624002467335,
+          0.06720414482014472
+        ],
+        "maximum_mean_error": 0.0027807130109359715,
+        "maximum_variance_error": 0.06720414482014472,
+        "variance_peak_section": 8,
+        "mean_passed": true,
+        "variance_passed": true
+      }
+    },
+    "parent_access_sha256": "37480ecb42f74a66a02785ac2221f5099822a2fdfea8ca86fa4202fd1223ca5f"
+  },
+  "score": {
+    "source": {
+      "source_id": "Alhamed2009",
+      "doi": "10.1016/j.jhazmat.2009.05.002",
+      "location": "Figures 4 and 5 and Table 5, journal p767 / PDF p5",
+      "material": "ZnCl2-activated date-stone carbon, 0.80 mm",
+      "feed_kg_m3": 0.15,
+      "pixel_csv_sha256": "ee892302185179bd0d4a750309ef6c619df60306790f363ad1f336accf75975c",
+      "digitization": "Manual centres of visible open experimental markers, visually checked by overlay. Baseline clusters with obscured symbols and the fitted lines were excluded.",
+      "pixel_origin": "zero-based, x right and y down in the embedded JPEG",
+      "figures": {
+        "4": {
+          "raster": "Im6.jpg",
+          "sha256": "e5173016ed057a0cb73bd7f7a2a62a49aa142f66bc08f6de97b4c2ff25f86fc2",
+          "dimensions": [
+            676,
+            562
+          ],
+          "x0": 81.5,
+          "x400min": 605.5,
+          "y0": 499.5,
+          "y1": 9.5
+        },
+        "5": {
+          "raster": "Im7.jpg",
+          "sha256": "7adad8de729877287d49654c0000b801a8207725261679c5acc66d8ed739d0c8",
+          "dimensions": [
+            680,
+            497
+          ],
+          "x0": 85.5,
+          "x400min": 608.5,
+          "y0": 432.0,
+          "y1": 9.0
+        }
+      },
+      "reading_sensitivity_pixels": 2.0,
+      "pointwise_experimental_uncertainty": null,
+      "per_case_weighed_carbon_mass_kg": null,
+      "exclusions": {
+        "figure5_5cm": "Captioned 5 cm series lacks matching 0.80 mm / 23.3 mL/min Table 5 row.",
+        "figure4_88.1_141.5": "These two rates are outside the selected archived flow-shape transfer window."
+      }
+    },
+    "common_dose_kg_kg": {
+      "5": 0.08947567217045586,
+      "4": 0.08930491707089393
+    },
+    "shared_condition_digitization": {
+      "midpoint_difference_s": 13.724715434611426,
+      "last_marker_loading_difference_kg_kg": 4.6748893194309415e-05
+    },
+    "comparisons": {
+      "f5_q233_l10": {
+        "operating_case": "q233_l10",
+        "figure": 5,
+        "last_dose_kg_kg": 0.19176073326251053,
+        "observed": {
+          "marker_count": 24,
+          "end_s": 23151.051625239004,
+          "last_outlet_fraction": 0.9030732860520094,
+          "t05_s": 877.1075960368503,
+          "t50_s": 5275.9719566602935,
+          "retained_kg_kg": 0.06404582137938455,
+          "reading_retention_kg_kg": [
+            0.062403661152222206,
+            0.06569157593809745
+          ],
+          "reading_t05_s": [
+            743.612028506866,
+            1015.0316222973967
+          ],
+          "reading_t50_s": [
+            5117.9094964945825,
+            5434.034416826004
+          ],
+          "common_dose_retained_kg_kg": 0.04898206408038174
+        },
+        "scenarios": {
+          "full": {
+            "t05_s": {
+              "predicted_s": 9.639371446182977,
+              "relative_error": 0.9890100467836126,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 11731.474150644477,
+              "relative_error": 1.223566434206473,
+              "passed": false
+            },
+            "rmse": 0.22909364736738536,
+            "retained_kg_kg": 0.09750443721737595,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.06906503581263573,
+            "normalized_mass_residual": 2.1921875113679252e-13,
+            "passed": false
+          },
+          "f50_isolated": {
+            "t05_s": {
+              "predicted_s": 9.337445761064112,
+              "relative_error": 0.9893542755720567,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 4689.775148130232,
+              "relative_error": 0.11110688482527986,
+              "passed": true
+            },
+            "rmse": 0.11609836406065403,
+            "retained_kg_kg": 0.050084010621823216,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.040466010007804566,
+            "normalized_mass_residual": 3.2986217741809815e-13,
+            "passed": false
+          },
+          "f50_slow01": {
+            "t05_s": {
+              "predicted_s": 9.340833830310107,
+              "relative_error": 0.9893504127971118,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 4885.285220883624,
+              "relative_error": 0.07405019188615547,
+              "passed": true
+            },
+            "rmse": 0.10796421980053703,
+            "retained_kg_kg": 0.05372205647166991,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.041806903255313464,
+            "normalized_mass_residual": 3.7556721892869357e-13,
+            "passed": false
+          },
+          "f50_slow10": {
+            "t05_s": {
+              "predicted_s": 9.370788374700998,
+              "relative_error": 0.989316261292181,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 6990.410887010522,
+              "relative_error": 0.3249522447112234,
+              "passed": false
+            },
+            "rmse": 0.11648159444509613,
+            "retained_kg_kg": 0.07939261563093528,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.0513979179473933,
+            "normalized_mass_residual": 1.1260812263583351e-13,
+            "passed": false
+          },
+          "f75_isolated": {
+            "t05_s": {
+              "predicted_s": 9.468939787580316,
+              "relative_error": 0.9892043577887536,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 8200.628016990333,
+              "relative_error": 0.5543350276223522,
+              "passed": false
+            },
+            "rmse": 0.12043970485791715,
+            "retained_kg_kg": 0.07427032278636357,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.05716729876679485,
+            "normalized_mass_residual": 2.789868823429558e-13,
+            "passed": false
+          },
+          "f75_slow01": {
+            "t05_s": {
+              "predicted_s": 9.471036929214394,
+              "relative_error": 0.9892019668145521,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 8332.302044868773,
+              "relative_error": 0.5792923300796211,
+              "passed": false
+            },
+            "rmse": 0.12440186683150622,
+            "retained_kg_kg": 0.07589298387884146,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.05763282659749421,
+            "normalized_mass_residual": 2.9118868075528666e-13,
+            "passed": false
+          },
+          "f75_slow10": {
+            "t05_s": {
+              "predicted_s": 9.489457504013188,
+              "relative_error": 0.9891809653149846,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 9555.407313277356,
+              "relative_error": 0.8111179118787353,
+              "passed": false
+            },
+            "rmse": 0.1604161030674502,
+            "retained_kg_kg": 0.08818365203712741,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.06117109023694347,
+            "normalized_mass_residual": 1.1229790742196069e-13,
+            "passed": false
+          }
+        }
+      },
+      "f5_q233_l15": {
+        "operating_case": "q233_l15",
+        "figure": 5,
+        "last_dose_kg_kg": 0.132401695579335,
+        "observed": {
+          "marker_count": 33,
+          "end_s": 23977.055449330783,
+          "last_outlet_fraction": 0.900709219858156,
+          "t05_s": 3072.45183115164,
+          "t50_s": 8813.406815881228,
+          "retained_kg_kg": 0.0603161782223269,
+          "reading_retention_kg_kg": [
+            0.059221404737552,
+            0.06141334792813549
+          ],
+          "reading_t05_s": [
+            2938.314458008531,
+            3206.589204294749
+          ],
+          "reading_t50_s": [
+            8651.445281745586,
+            8975.36835001687
+          ],
+          "common_dose_retained_kg_kg": 0.05337035500710754
+        },
+        "scenarios": {
+          "full": {
+            "t05_s": {
+              "predicted_s": 2873.0130022917183,
+              "relative_error": 0.06491194649101018,
+              "passed": true
+            },
+            "t50_s": {
+              "predicted_s": 18366.881108306006,
+              "relative_error": 1.083970647447023,
+              "passed": false
+            },
+            "rmse": 0.31142643200514175,
+            "retained_kg_kg": 0.09450991684589292,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.07680443405618256,
+            "normalized_mass_residual": 2.0350118030056964e-13,
+            "passed": false
+          },
+          "f50_isolated": {
+            "t05_s": {
+              "predicted_s": 14.654845666757604,
+              "relative_error": 0.9952302439640642,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 8080.99449358744,
+              "relative_error": 0.08310206683912802,
+              "passed": true
+            },
+            "rmse": 0.08966275776224517,
+            "retained_kg_kg": 0.04995410243828184,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.04537927802494326,
+            "normalized_mass_residual": 3.261395948516243e-13,
+            "passed": false
+          },
+          "f50_slow01": {
+            "t05_s": {
+              "predicted_s": 14.6682278112343,
+              "relative_error": 0.9952258884378551,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 8486.739052678617,
+              "relative_error": 0.03706486833377254,
+              "passed": true
+            },
+            "rmse": 0.07366402267214905,
+            "retained_kg_kg": 0.05339863552491886,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.04736857717965626,
+            "normalized_mass_residual": 3.786693710674218e-13,
+            "passed": false
+          },
+          "f50_slow10": {
+            "t05_s": {
+              "predicted_s": 14.794470417792219,
+              "relative_error": 0.9951847998826895,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 13266.436632074125,
+              "relative_error": 0.5052563565055008,
+              "passed": false
+            },
+            "rmse": 0.15387502465541314,
+            "retained_kg_kg": 0.07628895729805239,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.06055987819587947,
+            "normalized_mass_residual": 1.4931692294411716e-13,
+            "passed": false
+          },
+          "f75_isolated": {
+            "t05_s": {
+              "predicted_s": 15.386956133698567,
+              "relative_error": 0.9949919618014219,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 13246.457732871213,
+              "relative_error": 0.5029894806400965,
+              "passed": false
+            },
+            "rmse": 0.15471757213768142,
+            "retained_kg_kg": 0.07335319537827376,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.06424683162801577,
+            "normalized_mass_residual": 2.83743515622339e-13,
+            "passed": false
+          },
+          "f75_slow01": {
+            "t05_s": {
+              "predicted_s": 15.405480093937527,
+              "relative_error": 0.9949859327532035,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 13507.499294939491,
+              "relative_error": 0.532608170384214,
+              "passed": false
+            },
+            "rmse": 0.16308660873077943,
+            "retained_kg_kg": 0.07478918348116798,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.06492236510321366,
+            "normalized_mass_residual": 3.0132237774179877e-13,
+            "passed": false
+          },
+          "f75_slow10": {
+            "t05_s": {
+              "predicted_s": 15.591318178070392,
+              "relative_error": 0.9949254474813927,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 15971.142964017004,
+              "relative_error": 0.8121418082322001,
+              "passed": false
+            },
+            "rmse": 0.22988283373599158,
+            "retained_kg_kg": 0.08526402695898613,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.06972628503823604,
+            "normalized_mass_residual": 1.815793051868904e-13,
+            "passed": false
+          }
+        }
+      },
+      "f5_q233_l20": {
+        "operating_case": "q233_l20",
+        "figure": 5,
+        "last_dose_kg_kg": 0.10937393656350328,
+        "observed": {
+          "marker_count": 19,
+          "end_s": 26409.177820267683,
+          "last_outlet_fraction": 0.8439716312056738,
+          "t05_s": 3830.822179732313,
+          "t50_s": 11555.449330783938,
+          "retained_kg_kg": 0.056371586550354985,
+          "reading_retention_kg_kg": [
+            0.05550962091538617,
+            0.05723534935109905
+          ],
+          "reading_t05_s": [
+            3628.910133843212,
+            4032.7342256214147
+          ],
+          "reading_t50_s": [
+            11360.420650095602,
+            11750.478011472274
+          ],
+          "common_dose_retained_kg_kg": 0.052662925620531785
+        },
+        "scenarios": {
+          "full": {
+            "t05_s": {
+              "predicted_s": 9554.10659289962,
+              "relative_error": 1.4940094174685061,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 24867.743248661947,
+              "relative_error": 1.1520360253247621,
+              "passed": false
+            },
+            "rmse": 0.39227866523001365,
+            "retained_kg_kg": 0.09202128558697557,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.08110158386223285,
+            "normalized_mass_residual": 2.1466892799999116e-13,
+            "passed": false
+          },
+          "f50_isolated": {
+            "t05_s": {
+              "predicted_s": 20.58159976758756,
+              "relative_error": 0.9946273674939864,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 11417.898946960006,
+              "relative_error": 0.011903508023482612,
+              "passed": true
+            },
+            "rmse": 0.06426487747555419,
+            "retained_kg_kg": 0.050310554608007325,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.04822702334489936,
+            "normalized_mass_residual": 3.1807399929093104e-13,
+            "passed": false
+          },
+          "f50_slow01": {
+            "t05_s": {
+              "predicted_s": 20.643317937485605,
+              "relative_error": 0.9946112565478233,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 12081.912386048707,
+              "relative_error": 0.045559721668482434,
+              "passed": true
+            },
+            "rmse": 0.04187904443392207,
+            "retained_kg_kg": 0.053855014453115184,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.05086188040923414,
+            "normalized_mass_residual": 3.805306623506587e-13,
+            "passed": false
+          },
+          "f50_slow10": {
+            "t05_s": {
+              "predicted_s": 21.58488988279268,
+              "relative_error": 0.9943654680718432,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 20497.20854932655,
+              "relative_error": 0.7738131995197794,
+              "passed": false
+            },
+            "rmse": 0.2232137193467179,
+            "retained_kg_kg": 0.07578434621795382,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.06704548837980238,
+            "normalized_mass_residual": 3.472342293949761e-13,
+            "passed": false
+          },
+          "f75_isolated": {
+            "t05_s": {
+              "predicted_s": 4135.794385484554,
+              "relative_error": 0.07961011799653717,
+              "passed": true
+            },
+            "t50_s": {
+              "predicted_s": 18180.224249676878,
+              "relative_error": 0.5733030996245565,
+              "passed": false
+            },
+            "rmse": 0.21300577438658455,
+            "retained_kg_kg": 0.07321773360717913,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.0684705720341136,
+            "normalized_mass_residual": 2.4651768995760063e-13,
+            "passed": false
+          },
+          "f75_slow01": {
+            "t05_s": {
+              "predicted_s": 4235.159149235241,
+              "relative_error": 0.10554835242474803,
+              "passed": true
+            },
+            "t50_s": {
+              "predicted_s": 18595.982936187404,
+              "relative_error": 0.609282547468522,
+              "passed": false
+            },
+            "rmse": 0.22400251349155242,
+            "retained_kg_kg": 0.07459977024114386,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.06935322378694594,
+            "normalized_mass_residual": 2.787800722003739e-13,
+            "passed": false
+          },
+          "f75_slow10": {
+            "t05_s": {
+              "predicted_s": 5142.452778641694,
+              "relative_error": 0.34238879733149963,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 22533.98299747228,
+              "relative_error": 0.9500741470469105,
+              "passed": false
+            },
+            "rmse": 0.31037999470782374,
+            "retained_kg_kg": 0.08410939630505321,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.07517640186997844,
+            "normalized_mass_residual": 2.8126179391135644e-13,
+            "passed": false
+          }
+        }
+      },
+      "f5_q233_l25": {
+        "operating_case": "q233_l25",
+        "figure": 5,
+        "last_dose_kg_kg": 0.08947567217045586,
+        "observed": {
+          "marker_count": 32,
+          "end_s": 27005.736137667303,
+          "last_outlet_fraction": 0.8605200945626478,
+          "t05_s": 7502.613129381772,
+          "t50_s": 16477.465173449877,
+          "retained_kg_kg": 0.05717395367530104,
+          "reading_retention_kg_kg": [
+            0.05646676894272825,
+            0.05787790350947833
+          ],
+          "reading_t05_s": [
+            7278.266411727214,
+            7726.959847036329
+          ],
+          "reading_t50_s": [
+            16272.056815077847,
+            16682.873531821904
+          ],
+          "common_dose_retained_kg_kg": 0.05717395367530104
+        },
+        "scenarios": {
+          "full": {
+            "t05_s": {
+              "predicted_s": 16015.366376196016,
+              "relative_error": 1.1346384386363408,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 31318.37021397065,
+              "relative_error": 0.900678889883737,
+              "passed": false
+            },
+            "rmse": 0.34335367498722197,
+            "retained_kg_kg": 0.08367651899778392,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.08367651899778392,
+            "normalized_mass_residual": 5.817569310828277e-13,
+            "passed": false
+          },
+          "f50_isolated": {
+            "t05_s": {
+              "predicted_s": 2041.7388771652475,
+              "relative_error": 0.727862966948225,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 14716.10466609353,
+              "relative_error": 0.10689511334512936,
+              "passed": true
+            },
+            "rmse": 0.08354941736749688,
+            "retained_kg_kg": 0.04995789047692808,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.04995789047692808,
+            "normalized_mass_residual": 3.0132237774179877e-13,
+            "passed": false
+          },
+          "f50_slow01": {
+            "t05_s": {
+              "predicted_s": 2283.9859964914463,
+              "relative_error": 0.6955746008618132,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 15677.092531079983,
+              "relative_error": 0.048573772357870526,
+              "passed": true
+            },
+            "rmse": 0.05606127282118742,
+            "retained_kg_kg": 0.05323979808704489,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.05323979808704489,
+            "normalized_mass_residual": 3.61090508947962e-13,
+            "passed": false
+          },
+          "f50_slow10": {
+            "t05_s": {
+              "predicted_s": 4566.431683710659,
+              "relative_error": 0.3913545047621373,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 28203.12566423696,
+              "relative_error": 0.7116179805180609,
+              "passed": false
+            },
+            "rmse": 0.21013839895783626,
+            "retained_kg_kg": 0.07187041748161117,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.07187041748161117,
+            "normalized_mass_residual": 5.923042483545035e-13,
+            "passed": false
+          },
+          "f75_isolated": {
+            "t05_s": {
+              "predicted_s": 8922.68564554672,
+              "relative_error": 0.1892770547642466,
+              "passed": true
+            },
+            "t50_s": {
+              "predicted_s": 23051.99197251272,
+              "relative_error": 0.39900110422666035,
+              "passed": false
+            },
+            "rmse": 0.18800013617507003,
+            "retained_kg_kg": 0.07118271796907674,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.07118271796907674,
+            "normalized_mass_residual": 2.469313102427644e-13,
+            "passed": false
+          },
+          "f75_slow01": {
+            "t05_s": {
+              "predicted_s": 9105.751922508623,
+              "relative_error": 0.21367739019470844,
+              "passed": true
+            },
+            "t50_s": {
+              "predicted_s": 23648.98976422714,
+              "relative_error": 0.4352322711828718,
+              "passed": false
+            },
+            "rmse": 0.2003373989905214,
+            "retained_kg_kg": 0.07227381005694364,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.07227381005694364,
+            "normalized_mass_residual": 2.9304997203852355e-13,
+            "passed": false
+          },
+          "f75_slow10": {
+            "t05_s": {
+              "predicted_s": 10808.642000521859,
+              "relative_error": 0.44065031931248066,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 29164.39107951651,
+              "relative_error": 0.7699561657401688,
+              "passed": false
+            },
+            "rmse": 0.28387523636908246,
+            "retained_kg_kg": 0.07888462165980298,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.07888462165980298,
+            "normalized_mass_residual": 4.1796329815797894e-13,
+            "passed": false
+          }
+        }
+      },
+      "f4_q233_l25": {
+        "operating_case": "q233_l25",
+        "figure": 4,
+        "last_dose_kg_kg": 0.08930491707089393,
+        "observed": {
+          "marker_count": 34,
+          "end_s": 26954.198473282442,
+          "last_outlet_fraction": 0.8581632653061225,
+          "t05_s": 7544.529262086514,
+          "t50_s": 16463.740458015265,
+          "retained_kg_kg": 0.05712720478210673,
+          "reading_retention_kg_kg": [
+            0.05647622794482404,
+            0.057768077851874496
+          ],
+          "reading_t05_s": [
+            7320.6106870229005,
+            7768.447837150127
+          ],
+          "reading_t50_s": [
+            16272.900763358777,
+            16654.580152671755
+          ],
+          "common_dose_retained_kg_kg": 0.05712720478210673
+        },
+        "scenarios": {
+          "full": {
+            "t05_s": {
+              "predicted_s": 16015.366376196016,
+              "relative_error": 1.122778747333907,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 31318.37021397065,
+              "relative_error": 0.9022633583077111,
+              "passed": false
+            },
+            "rmse": 0.3328918354994299,
+            "retained_kg_kg": 0.08355251686618057,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.08355251686618057,
+            "normalized_mass_residual": 5.817569310828277e-13,
+            "passed": false
+          },
+          "f50_isolated": {
+            "t05_s": {
+              "predicted_s": 2041.7388771652475,
+              "relative_error": 0.7293749144263264,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 14716.10466609353,
+              "relative_error": 0.10615059174301489,
+              "passed": true
+            },
+            "rmse": 0.08368803088850428,
+            "retained_kg_kg": 0.049938951750348015,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.049938951750348015,
+            "normalized_mass_residual": 3.0132237774179877e-13,
+            "passed": false
+          },
+          "f50_slow01": {
+            "t05_s": {
+              "predicted_s": 2283.9859964914463,
+              "relative_error": 0.697265937058638,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 15677.092531079983,
+              "relative_error": 0.047780632168087145,
+              "passed": true
+            },
+            "rmse": 0.057912600012012136,
+            "retained_kg_kg": 0.05321098145306774,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.05321098145306774,
+            "normalized_mass_residual": 3.61090508947962e-13,
+            "passed": false
+          },
+          "f50_slow10": {
+            "t05_s": {
+              "predicted_s": 4566.431683710659,
+              "relative_error": 0.3947360365267153,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 28203.12566423696,
+              "relative_error": 0.7130448415509643,
+              "passed": false
+            },
+            "rmse": 0.20409722115289575,
+            "retained_kg_kg": 0.07178123255923932,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.07178123255923932,
+            "normalized_mass_residual": 5.923042483545035e-13,
+            "passed": false
+          },
+          "f75_isolated": {
+            "t05_s": {
+              "predicted_s": 8922.68564554672,
+              "relative_error": 0.1826696319392449,
+              "passed": true
+            },
+            "t50_s": {
+              "predicted_s": 23051.99197251272,
+              "relative_error": 0.40016735755148547,
+              "passed": false
+            },
+            "rmse": 0.18280820422104352,
+            "retained_kg_kg": 0.0711318735146487,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.0711318735146487,
+            "normalized_mass_residual": 2.469313102427644e-13,
+            "passed": false
+          },
+          "f75_slow01": {
+            "t05_s": {
+              "predicted_s": 9105.751922508623,
+              "relative_error": 0.20693440321952417,
+              "passed": true
+            },
+            "t50_s": {
+              "predicted_s": 23648.98976422714,
+              "relative_error": 0.43642872799988663,
+              "passed": false
+            },
+            "rmse": 0.19476218685722124,
+            "retained_kg_kg": 0.07221700144753478,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.07221700144753478,
+            "normalized_mass_residual": 2.9304997203852355e-13,
+            "passed": false
+          },
+          "f75_slow10": {
+            "t05_s": {
+              "predicted_s": 10808.642000521859,
+              "relative_error": 0.4326463090067758,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 29164.39107951651,
+              "relative_error": 0.7714316594026491,
+              "passed": false
+            },
+            "rmse": 0.27542152588015895,
+            "retained_kg_kg": 0.07878415494718281,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.07878415494718281,
+            "normalized_mass_residual": 4.1796329815797894e-13,
+            "passed": false
+          }
+        }
+      },
+      "f4_q438_l25": {
+        "operating_case": "q438_l25",
+        "figure": 4,
+        "last_dose_kg_kg": 0.1570378776274654,
+        "observed": {
+          "marker_count": 21,
+          "end_s": 25213.74045801527,
+          "last_outlet_fraction": 0.9051020408163266,
+          "t05_s": 2566.967383761277,
+          "t50_s": 7493.456924754634,
+          "retained_kg_kg": 0.061313512186112515,
+          "reading_retention_kg_kg": [
+            0.06011947823918509,
+            0.06249219135715
+          ],
+          "reading_t05_s": [
+            2421.235253296322,
+            2712.6995142262317
+          ],
+          "reading_t50_s": [
+            7342.966194111232,
+            7643.947655398037
+          ],
+          "common_dose_retained_kg_kg": 0.05179957235599476
+        },
+        "scenarios": {
+          "full": {
+            "t05_s": {
+              "predicted_s": 4652.279506976739,
+              "relative_error": 0.8123640901739608,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 15434.26338722401,
+              "relative_error": 1.0596986867619034,
+              "passed": false
+            },
+            "rmse": 0.2775987568772932,
+            "retained_kg_kg": 0.09819987264990544,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.07751691576201968,
+            "normalized_mass_residual": 3.8945466165384945e-13,
+            "passed": false
+          },
+          "f50_isolated": {
+            "t05_s": {
+              "predicted_s": 13.507355937239677,
+              "relative_error": 0.9947380102985773,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 6551.073237009328,
+              "relative_error": 0.12576087341373,
+              "passed": true
+            },
+            "rmse": 0.07859745975297165,
+            "retained_kg_kg": 0.050701923982899334,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.044580502803015405,
+            "normalized_mass_residual": 5.291742719081966e-13,
+            "passed": false
+          },
+          "f50_slow01": {
+            "t05_s": {
+              "predicted_s": 13.524222931150764,
+              "relative_error": 0.9947314395123579,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 6847.20164127851,
+              "relative_error": 0.08624261004840372,
+              "passed": true
+            },
+            "rmse": 0.06303250339830169,
+            "retained_kg_kg": 0.05457672696455767,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.04641529099145326,
+            "normalized_mass_residual": 5.441363719039377e-13,
+            "passed": false
+          },
+          "f50_slow10": {
+            "t05_s": {
+              "predicted_s": 13.706031164144207,
+              "relative_error": 0.9946606134340277,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 10586.512377086818,
+              "relative_error": 0.41276749614911035,
+              "passed": false
+            },
+            "rmse": 0.14895450385764272,
+            "retained_kg_kg": 0.08170397188914004,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.059467535201862425,
+            "normalized_mass_residual": 1.6392300730628126e-13,
+            "passed": false
+          },
+          "f75_isolated": {
+            "t05_s": {
+              "predicted_s": 1562.5733903569062,
+              "relative_error": 0.3912764921588803,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 10966.126866136452,
+              "relative_error": 0.4634269571777818,
+              "passed": false
+            },
+            "rmse": 0.13187874534537988,
+            "retained_kg_kg": 0.07507610517743196,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.06363106199536486,
+            "normalized_mass_residual": 4.532636175180395e-13,
+            "passed": false
+          },
+          "f75_slow01": {
+            "t05_s": {
+              "predicted_s": 1598.937606019412,
+              "relative_error": 0.3771102756761361,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 11165.170541167781,
+              "relative_error": 0.48998928709173484,
+              "passed": false
+            },
+            "rmse": 0.13870659645613248,
+            "retained_kg_kg": 0.07677510714562547,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.06429313146342314,
+            "normalized_mass_residual": 4.680056866314903e-13,
+            "passed": false
+          },
+          "f75_slow10": {
+            "t05_s": {
+              "predicted_s": 1933.5819577818531,
+              "relative_error": 0.24674463337019448,
+              "passed": true
+            },
+            "t50_s": {
+              "predicted_s": 13148.788986917762,
+              "relative_error": 0.7547026851493253,
+              "passed": false
+            },
+            "rmse": 0.20368781214762413,
+            "retained_kg_kg": 0.08973393692439087,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.06936102465572351,
+            "normalized_mass_residual": 2.5919637933798567e-13,
+            "passed": false
+          }
+        }
+      },
+      "f4_q625_l25": {
+        "operating_case": "q625_l25",
+        "figure": 4,
+        "last_dose_kg_kg": 0.14959268045055954,
+        "observed": {
+          "marker_count": 22,
+          "end_s": 16832.06106870229,
+          "last_outlet_fraction": 0.8785714285714287,
+          "t05_s": 969.4656488549618,
+          "t50_s": 4297.709923664122,
+          "retained_kg_kg": 0.05566652461328238,
+          "reading_retention_kg_kg": [
+            0.054275061390987846,
+            0.05706131073282419
+          ],
+          "reading_t05_s": [
+            829.0076335877862,
+            1109.9236641221373
+          ],
+          "reading_t50_s": [
+            4158.608990670059,
+            4436.810856658185
+          ],
+          "common_dose_retained_kg_kg": 0.04616110946879257
+        },
+        "scenarios": {
+          "full": {
+            "t05_s": {
+              "predicted_s": 1649.6012175741726,
+              "relative_error": 0.7015571614347764,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 9962.313606428217,
+              "relative_error": 1.318051656202658,
+              "passed": false
+            },
+            "rmse": 0.27695885985650737,
+            "retained_kg_kg": 0.09114030958408681,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.07242128741144693,
+            "normalized_mass_residual": 5.174872875891701e-13,
+            "passed": false
+          },
+          "f50_isolated": {
+            "t05_s": {
+              "predicted_s": 9.262337283876832,
+              "relative_error": 0.9904459355575759,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 3932.5216245682423,
+              "relative_error": 0.08497276586422775,
+              "passed": true
+            },
+            "rmse": 0.060038569583441274,
+            "retained_kg_kg": 0.04745087359394298,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.04066725214025915,
+            "normalized_mass_residual": 4.545746495270779e-13,
+            "passed": false
+          },
+          "f50_slow01": {
+            "t05_s": {
+              "predicted_s": 9.267170972841708,
+              "relative_error": 0.9904409496264389,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 4072.6778701799044,
+              "relative_error": 0.05236092185867225,
+              "passed": true
+            },
+            "rmse": 0.04946619404705474,
+            "retained_kg_kg": 0.05004087242087623,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.04200320194489619,
+            "normalized_mass_residual": 4.729241689618548e-13,
+            "passed": false
+          },
+          "f50_slow10": {
+            "t05_s": {
+              "predicted_s": 9.31431045510293,
+              "relative_error": 0.9903923254360749,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 5750.267848937725,
+              "relative_error": 0.3379841708895952,
+              "passed": false
+            },
+            "rmse": 0.10225335026122097,
+            "retained_kg_kg": 0.0699227263739149,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.052322216072799854,
+            "normalized_mass_residual": 1.5651060694368523e-13,
+            "passed": false
+          },
+          "f75_isolated": {
+            "t05_s": {
+              "predicted_s": 9.808278867900851,
+              "relative_error": 0.9898827989630314,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 6874.4587394518,
+              "relative_error": 0.5995632235669377,
+              "passed": false
+            },
+            "rmse": 0.15497162667876854,
+            "retained_kg_kg": 0.0699766692215786,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.05834284213130382,
+            "normalized_mass_residual": 5.339864353162384e-13,
+            "passed": false
+          },
+          "f75_slow01": {
+            "t05_s": {
+              "predicted_s": 9.81919370767773,
+              "relative_error": 0.9898715403487733,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 6975.722447253936,
+              "relative_error": 0.623125471741147,
+              "passed": false
+            },
+            "rmse": 0.15890983403308725,
+            "retained_kg_kg": 0.07110428822220391,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.05884754591011241,
+            "normalized_mass_residual": 5.602000345087769e-13,
+            "passed": false
+          },
+          "f75_slow10": {
+            "t05_s": {
+              "predicted_s": 9.942073969071,
+              "relative_error": 0.9897447898429268,
+              "passed": false
+            },
+            "t50_s": {
+              "predicted_s": 7993.826265732974,
+              "relative_error": 0.8600199659165537,
+              "passed": false
+            },
+            "rmse": 0.19602309514901817,
+            "retained_kg_kg": 0.08035025118729232,
+            "retained_in_reading_range": false,
+            "common_dose_retained_kg_kg": 0.0629910516918164,
+            "normalized_mass_residual": 2.760137797331986e-13,
+            "passed": false
+          }
+        }
+      }
+    }
+  },
+  "refinements": {
+    "q233_l10": {
+      "full": [
+        {
+          "errors": {
+            "max_after_startup": 0.00048251774097417266,
+            "max_startup": 0.0006013859219811124,
+            "t50_relative": 0.00014312374781089154
+          },
+          "passed": true,
+          "startup": {
+            "relative": {
+              "t05": 0.00022777417718278237
+            },
+            "passed": true
+          }
+        }
+      ],
+      "f50_isolated": [
+        {
+          "errors": {
+            "max_after_startup": 0.0008496210070503274,
+            "max_startup": 0.001046403910431759,
+            "t50_relative": 0.0001908149226252931
+          },
+          "passed": true,
+          "startup": {
+            "relative": {
+              "t05": 0.00023410420159608591
+            },
+            "passed": true
+          }
+        }
+      ],
+      "f50_slow01": [
+        {
+          "errors": {
+            "max_after_startup": 0.0008317347179383483,
+            "max_startup": 0.0010246548091707441,
+            "t50_relative": 0.0001733744788265934
+          },
+          "passed": true,
+          "startup": {
+            "relative": {
+              "t05": 0.00023347858618105732
+            },
+            "passed": true
+          }
+        }
+      ],
+      "f50_slow10": [
+        {
+          "errors": {
+            "max_after_startup": 0.0007063609898249334,
+            "max_startup": 0.0008723737113447705,
+            "t50_relative": 0.00020788873467592062
+          },
+          "passed": true,
+          "startup": {
+            "relative": {
+              "t05": 0.00025151964948744165
+            },
+            "passed": true
+          }
+        }
+      ],
+      "f75_isolated": [
+        {
+          "errors": {
+            "max_after_startup": 0.0006431610446541169,
+            "max_startup": 0.0007984774119962901,
+            "t50_relative": 0.00011154224464027251
+          },
+          "passed": true,
+          "startup": {
+            "relative": {
+              "t05": 0.0002558903749310115
+            },
+            "passed": true
+          }
+        }
+      ],
+      "f75_slow01": [
+        {
+          "errors": {
+            "max_after_startup": 0.00063750194002965,
+            "max_startup": 0.0007915076073723715,
+            "t50_relative": 0.00011888886278177413
+          },
+          "passed": true,
+          "startup": {
+            "relative": {
+              "t05": 0.0002570566650779149
+            },
+            "passed": true
+          }
+        }
+      ],
+      "f75_slow10": [
+        {
+          "errors": {
+            "max_after_startup": 0.0005942896176551471,
+            "max_startup": 0.0007383517592112199,
+            "t50_relative": 0.00020390804088643577
+          },
+          "passed": true,
+          "startup": {
+            "relative": {
+              "t05": 0.00026350605839486896
+            },
+            "passed": true
+          }
+        }
+      ]
+    },
+    "q233_l15": {
+      "full": [
+        {
+          "errors": {
+            "max_after_startup": 0.0003557637526250268,
+            "max_startup": 0.0002911639023039439,
+            "t05_relative": 0.005957367145280612,
+            "t50_relative": 4.891902042281071e-05
+          },
+          "passed": true,
+          "startup": {
+            "relative": {},
+            "passed": true
+          }
+        }
+      ],
+      "f50_isolated": [
+        {
+          "errors": {
+            "max_after_startup": 0.0007057332949149397,
+            "max_startup": 0.0007865581408586786,
+            "t05_relative": 5.955749235453389e-05,
+            "t50_relative": 7.215626770840089e-05
+          },
+          "passed": true,
+          "startup": {
+            "relative": {},
+            "passed": true
+          }
+        }
+      ],
+      "f50_slow01": [
+        {
+          "errors": {
+            "max_after_startup": 0.000685766994730469,
+            "max_startup": 0.00076450602810052,
+            "t05_relative": 5.9607292773877774e-05,
+            "t50_relative": 7.197891653398791e-05
+          },
+          "passed": true,
+          "startup": {
+            "relative": {},
+            "passed": true
+          }
+        }
+      ],
+      "f50_slow10": [
+        {
+          "errors": {
+            "max_after_startup": 0.0005474182542205414,
+            "max_startup": 0.0006116949866058624,
+            "t05_relative": 5.2099191156562696e-05,
+            "t50_relative": 0.00010155251801569065
+          },
+          "passed": true,
+          "startup": {
+            "relative": {},
+            "passed": true
+          }
+        }
+      ],
+      "f75_isolated": [
+        {
+          "errors": {
+            "max_after_startup": 0.0004205527423323391,
+            "max_startup": 0.00047302882531712054,
+            "t05_relative": 0.00045444915352399473,
+            "t50_relative": 6.330151748223933e-06
+          },
+          "passed": true,
+          "startup": {
+            "relative": {},
+            "passed": true
+          }
+        }
+      ],
+      "f75_slow01": [
+        {
+          "errors": {
+            "max_after_startup": 0.0004155533992280941,
+            "max_startup": 0.0004674459864283803,
+            "t05_relative": 0.000474807023553514,
+            "t50_relative": 1.155609509462252e-05
+          },
+          "passed": true,
+          "startup": {
+            "relative": {},
+            "passed": true
+          }
+        }
+      ],
+      "f75_slow10": [
+        {
+          "errors": {
+            "max_after_startup": 0.00037725686905305117,
+            "max_startup": 0.0004246918384894077,
+            "t05_relative": 0.0007393398616114544,
+            "t50_relative": 7.708080566359854e-05
+          },
+          "passed": true,
+          "startup": {
+            "relative": {},
+            "passed": true
+          }
+        }
+      ]
+    },
+    "q233_l20": {
+      "full": [
+        {
+          "errors": {
+            "max_after_startup": 0.00036613224992965154,
+            "max_startup": 0.0001263525623665402,
+            "t05_relative": 0.0012161130808232556,
+            "t50_relative": 2.494419547227622e-05
+          },
+          "passed": true,
+          "startup": {
+            "relative": {},
+            "passed": true
+          }
+        }
+      ],
+      "f50_isolated": [
+        {
+          "errors": {
+            "max_after_startup": 0.0005294451257847055,
+            "max_startup": 0.0005302547425315163,
+            "t05_relative": 0.00040735957706472536,
+            "t50_relative": 8.3221466903316e-05
+          },
+          "passed": true,
+          "startup": {
+            "relative": {},
+            "passed": true
+          }
+        }
+      ],
+      "f50_slow01": [
+        {
+          "errors": {
+            "max_after_startup": 0.0005107489635543944,
+            "max_startup": 0.0005115851680468075,
+            "t05_relative": 0.0004528724475024726,
+            "t50_relative": 8.516966899518863e-05
+          },
+          "passed": true,
+          "startup": {
+            "relative": {},
+            "passed": true
+          }
+        }
+      ],
+      "f50_slow10": [
+        {
+          "errors": {
+            "max_after_startup": 0.00038365244048089303,
+            "max_startup": 0.0003847051205279617,
+            "t05_relative": 0.0021070235805625837,
+            "t50_relative": 0.0001223442925295526
+          },
+          "passed": true,
+          "startup": {
+            "relative": {},
+            "passed": true
+          }
+        }
+      ],
+      "f75_isolated": [
+        {
+          "errors": {
+            "max_after_startup": 0.0003066478291233743,
+            "max_startup": 0.00025135046465226893,
+            "t05_relative": 0.0024128962868048554,
+            "t50_relative": 1.0283344599626432e-05
+          },
+          "passed": true,
+          "startup": {
+            "relative": {},
+            "passed": true
+          }
+        }
+      ],
+      "f75_slow01": [
+        {
+          "errors": {
+            "max_after_startup": 0.0002784613007549286,
+            "max_startup": 0.00024761220722341326,
+            "t05_relative": 0.002359936441673982,
+            "t50_relative": 8.470353330958247e-06
+          },
+          "passed": true,
+          "startup": {
+            "relative": {},
+            "passed": true
+          }
+        }
+      ],
+      "f75_slow10": [
+        {
+          "errors": {
+            "max_after_startup": 0.00030176158862987856,
+            "max_startup": 0.00021908342628274707,
+            "t05_relative": 0.002058034722521085,
+            "t50_relative": 3.144738251281698e-05
+          },
+          "passed": true,
+          "startup": {
+            "relative": {},
+            "passed": true
+          }
+        }
+      ]
+    },
+    "q233_l25": {
+      "full": [
+        {
+          "errors": {
+            "max_after_startup": 0.00036781209082992206,
+            "max_startup": 9.339670798864507e-06,
+            "t05_relative": 0.0007501911894615132,
+            "t50_relative": 1.4510102095854904e-05
+          },
+          "passed": true,
+          "startup": {
+            "relative": {},
+            "passed": true
+          }
+        }
+      ],
+      "f50_isolated": [
+        {
+          "errors": {
+            "max_after_startup": 0.002770940721648414,
+            "max_startup": 2.8097241428720263e-05,
+            "t05_relative": 0.005357787091665567,
+            "t50_relative": 7.313463730662662e-05
+          },
+          "passed": true,
+          "startup": {
+            "relative": {},
+            "passed": true
+          }
+        }
+      ],
+      "f50_slow01": [
+        {
+          "errors": {
+            "max_after_startup": 0.0026545425395859412,
+            "max_startup": 2.7033852896267592e-05,
+            "t05_relative": 0.004425897601797013,
+            "t50_relative": 7.992255490840705e-05
+          },
+          "passed": true,
+          "startup": {
+            "relative": {},
+            "passed": true
+          }
+        }
+      ],
+      "f50_slow10": [
+        {
+          "errors": {
+            "max_after_startup": 0.0018436516871716928,
+            "max_startup": 1.9984343821280275e-05,
+            "t05_relative": 0.0019066376757799208,
+            "t50_relative": 8.298650302773769e-05
+          },
+          "passed": true,
+          "startup": {
+            "relative": {},
+            "passed": true
+          }
+        }
+      ],
+      "f75_isolated": [
+        {
+          "errors": {
+            "max_after_startup": 0.0006434826959778005,
+            "max_startup": 1.6034639201429907e-05,
+            "t05_relative": 0.0010231342521634934,
+            "t50_relative": 1.6148167887308773e-05
+          },
+          "passed": true,
+          "startup": {
+            "relative": {},
+            "passed": true
+          }
+        }
+      ],
+      "f75_slow01": [
+        {
+          "errors": {
+            "max_after_startup": 0.0006315099331135991,
+            "max_startup": 1.5788081416617892e-05,
+            "t05_relative": 0.0010260110288150548,
+            "t50_relative": 1.6242185746584425e-05
+          },
+          "passed": true,
+          "startup": {
+            "relative": {},
+            "passed": true
+          }
+        }
+      ],
+      "f75_slow10": [
+        {
+          "errors": {
+            "max_after_startup": 0.0005372784890829482,
+            "max_startup": 1.3951232688066625e-05,
+            "t05_relative": 0.0010791660834271743,
+            "t50_relative": 3.872457607578816e-06
+          },
+          "passed": true,
+          "startup": {
+            "relative": {},
+            "passed": true
+          }
+        }
+      ]
+    },
+    "q438_l25": {
+      "full": [
+        {
+          "errors": {
+            "max_after_startup": 0.0004016180233550326,
+            "max_startup": 0.00023498687025627282,
+            "t05_relative": 0.0023821189832591294,
+            "t50_relative": 0.0001320018432924286
+          },
+          "passed": true,
+          "startup": {
+            "relative": {},
+            "passed": true
+          }
+        }
+      ],
+      "f50_isolated": [
+        {
+          "errors": {
+            "max_after_startup": 0.0007543831619562513,
+            "max_startup": 0.0008830354296721493,
+            "t05_relative": 0.00013836299604164104,
+            "t50_relative": 0.000418583194629063
+          },
+          "passed": true,
+          "startup": {
+            "relative": {},
+            "passed": true
+          }
+        }
+      ],
+      "f50_slow01": [
+        {
+          "errors": {
+            "max_after_startup": 0.000736143501213829,
+            "max_startup": 0.0008618810974670987,
+            "t05_relative": 0.00014580648723849787,
+            "t50_relative": 0.000425160199691188
+          },
+          "passed": true,
+          "startup": {
+            "relative": {},
+            "passed": true
+          }
+        }
+      ],
+      "f50_slow10": [
+        {
+          "errors": {
+            "max_after_startup": 0.0005983789547686635,
+            "max_startup": 0.0007020144945172752,
+            "t05_relative": 0.0002884653501962209,
+            "t50_relative": 0.00014165073439564857
+          },
+          "passed": true,
+          "startup": {
+            "relative": {},
+            "passed": true
+          }
+        }
+      ],
+      "f75_isolated": [
+        {
+          "errors": {
+            "max_after_startup": 0.00038697450574420866,
+            "max_startup": 0.0004428305797279375,
+            "t05_relative": 0.007729130589548605,
+            "t50_relative": 0.0002342942330033626
+          },
+          "passed": true,
+          "startup": {
+            "relative": {},
+            "passed": true
+          }
+        }
+      ],
+      "f75_slow01": [
+        {
+          "errors": {
+            "max_after_startup": 0.0003714352058619072,
+            "max_startup": 0.0004384050253178548,
+            "t05_relative": 0.007469072958161904,
+            "t50_relative": 0.00023097754683787386
+          },
+          "passed": true,
+          "startup": {
+            "relative": {},
+            "passed": true
+          }
+        }
+      ],
+      "f75_slow10": [
+        {
+          "errors": {
+            "max_after_startup": 0.0003403983487189413,
+            "max_startup": 0.0004020022999704567,
+            "t05_relative": 0.005761112661738288,
+            "t50_relative": 0.00015398565479851634
+          },
+          "passed": true,
+          "startup": {
+            "relative": {},
+            "passed": true
+          }
+        }
+      ]
+    },
+    "q625_l25": {
+      "full": [
+        {
+          "errors": {
+            "max_after_startup": 0.0004909607335455979,
+            "max_startup": 0.00047013289383119466,
+            "t05_relative": 0.007750488921078436,
+            "t50_relative": 0.00035217947779031533
+          },
+          "passed": true,
+          "startup": {
+            "relative": {},
+            "passed": true
+          }
+        }
+      ],
+      "f50_isolated": [
+        {
+          "errors": {
+            "max_after_startup": 0.0011050339199707854,
+            "max_startup": 0.0013903219280526624,
+            "t50_relative": 0.0007364976257882017
+          },
+          "passed": true,
+          "startup": {
+            "relative": {
+              "t05": 1.1865629632068497e-05
+            },
+            "passed": true
+          }
+        }
+      ],
+      "f50_slow01": [
+        {
+          "errors": {
+            "max_after_startup": 0.0010853874155672683,
+            "max_startup": 0.001365986305990996,
+            "t50_relative": 0.0007569282151667078
+          },
+          "passed": true,
+          "startup": {
+            "relative": {
+              "t05": 2.5638349981926822e-06
+            },
+            "passed": true
+          }
+        }
+      ],
+      "f50_slow10": [
+        {
+          "errors": {
+            "max_after_startup": 0.0009288345016828931,
+            "max_startup": 0.0011719380275081875,
+            "t50_relative": 0.0006601769654159817
+          },
+          "passed": true,
+          "startup": {
+            "relative": {
+              "t05": 8.282962931183135e-05
+            },
+            "passed": true
+          }
+        }
+      ],
+      "f75_isolated": [
+        {
+          "errors": {
+            "max_after_startup": 0.0006231719603590549,
+            "max_startup": 0.0007916677413521284,
+            "t50_relative": 0.0005174058090009481
+          },
+          "passed": true,
+          "startup": {
+            "relative": {
+              "t05": 0.0010510098611038465
+            },
+            "passed": true
+          }
+        }
+      ],
+      "f75_slow01": [
+        {
+          "errors": {
+            "max_after_startup": 0.000618628224988288,
+            "max_startup": 0.0007859495026642377,
+            "t50_relative": 0.0005153745715544833
+          },
+          "passed": true,
+          "startup": {
+            "relative": {
+              "t05": 0.0011107835093189244
+            },
+            "passed": true
+          }
+        }
+      ],
+      "f75_slow10": [
+        {
+          "errors": {
+            "max_after_startup": 0.0005799116331946935,
+            "max_startup": 0.0007372308329132299,
+            "t50_relative": 0.00044545869651679837
+          },
+          "passed": true,
+          "startup": {
+            "relative": {
+              "t05": 0.002124423844254819
+            },
+            "passed": true
+          }
+        }
+      ]
+    }
+  }
+}

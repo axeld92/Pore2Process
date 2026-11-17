@@ -334,6 +334,14 @@ and 1% slow cases pass both midpoint screens and underpredict retention.
 The 10% cases overpredict it. The tested scenarios leave the finite
 window uptake and Figure 7 breakthrough jointly unqualified.
 
+The [carbon-access transfer](examples/adsorption/carbon_access_transfer/REPORT.md)
+keeps those scenarios fixed across six Figure 4–5 conditions. Both
+50%-direct cases with isolation and weak slow access pass the midpoint
+screen throughout. The weak-access model captures the change in
+fixed-dose retention with flow and underpredicts retention at each
+condition. Early leakage still fails, so the column has partial
+operating-trend verification and remains unqualified for service time.
+
 ## 7. Select a reacting or non-isothermal showcase
 
 **Research direction; application and physical model not yet selected.**

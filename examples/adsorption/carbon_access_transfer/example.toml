@@ -1,0 +1,18 @@
+schema_version = 1
+id = "adsorption/carbon_access_transfer"
+title = "Transfer of frozen carbon access across bed height and flow"
+area = "adsorption"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["adsorption/carbon_access"]
+run_module = "examples.adsorption.carbon_access_transfer.run"
+check_module = "examples.adsorption.carbon_access_transfer.run"
+reference_files = ["reference_summary.json"]
+protocol_files = ["protocol.md"]
+
+[validation]
+numerical = "passed"
+inert_transport = "passed"
+literature = "failed"
+scope = "Six Figure 4–5 operating points for 0.80 mm carbon with each scenario frozen across conditions. New Péclet-number checks reuse the archived TRT flow shape."

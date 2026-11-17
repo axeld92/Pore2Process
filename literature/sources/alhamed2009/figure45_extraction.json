@@ -1,0 +1,23 @@
+{
+  "source_id": "Alhamed2009",
+  "doi": "10.1016/j.jhazmat.2009.05.002",
+  "location": "Figures 4 and 5 and Table 5, journal p767 / PDF p5",
+  "material": "ZnCl2-activated date-stone carbon, 0.80 mm",
+  "feed_kg_m3": 0.15,
+  "pixel_csv_sha256": "ee892302185179bd0d4a750309ef6c619df60306790f363ad1f336accf75975c",
+  "digitization": "Manual centres of visible open experimental markers, visually checked by overlay. Baseline clusters with obscured symbols and the fitted lines were excluded.",
+  "pixel_origin": "zero-based, x right and y down in the embedded JPEG",
+  "figures": {
+    "4": {"raster": "Im6.jpg", "sha256": "e5173016ed057a0cb73bd7f7a2a62a49aa142f66bc08f6de97b4c2ff25f86fc2",
+      "dimensions": [676, 562], "x0": 81.5, "x400min": 605.5, "y0": 499.5, "y1": 9.5},
+    "5": {"raster": "Im7.jpg", "sha256": "7adad8de729877287d49654c0000b801a8207725261679c5acc66d8ed739d0c8",
+      "dimensions": [680, 497], "x0": 85.5, "x400min": 608.5, "y0": 432.0, "y1": 9.0}
+  },
+  "reading_sensitivity_pixels": 2.0,
+  "pointwise_experimental_uncertainty": null,
+  "per_case_weighed_carbon_mass_kg": null,
+  "exclusions": {
+    "figure5_5cm": "Captioned 5 cm series lacks matching 0.80 mm / 23.3 mL/min Table 5 row.",
+    "figure4_88.1_141.5": "These two rates are outside the selected archived flow-shape transfer window."
+  }
+}

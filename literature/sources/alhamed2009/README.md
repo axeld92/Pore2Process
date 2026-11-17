@@ -10,6 +10,7 @@ Audited date-stone carbon source; batch qualification and separate failed column
 - [film_particle_extraction.json](film_particle_extraction.json)
 - [figure2_pixels.csv](figure2_pixels.csv)
 - [figure7_pixels.csv](figure7_pixels.csv)
+- [figure45_pixels.csv](figure45_pixels.csv) and [Figure 4–5 extraction](figure45_extraction.json)
 
 [Metadata](metadata.json) records navigation and scope. Original source files remain
 in the private literature inbox. Shared multi-paper records are linked rather
