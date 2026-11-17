@@ -356,6 +356,13 @@ increase at 62.5 mL/min. Scaling by liquid volume falls short. The two
 packings have different void fractions, so the estimate identifies which
 scale-up assumption needs testing before choosing a replacement film coefficient.
 
+The [porosity-matched clean-wall check](examples/adsorption/porosity_matched_film/REPORT.md)
+uses a 42.7%-void synthetic packing and separate stock TRT flows at the
+two operating points. Both scale-up conventions give about 0.11% clean
+escape at 62.5 mL/min on N60. All checked cases stay below 5%, while the
+14.4% grid change in film conductance exceeds the 3% quantitative limit.
+Adsorption service time remains outside this clean-bed check.
+
 ## 7. Select a reacting or non-isothermal showcase
 
 **Research direction; application and physical model not yet selected.**

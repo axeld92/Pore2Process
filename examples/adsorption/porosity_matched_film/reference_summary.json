@@ -1,0 +1,548 @@
+{
+  "schema": "pore2process.porosity-matched-film.reference.v1",
+  "run": {
+    "path": "results/adsorption/porosity_matched_film/runs/20261117T122127Z-88cd4746/summary.json",
+    "sha256": "8dda79ca4ae150be1b708d30ed35840298929b45b4ecbad3a6f357d5de160597"
+  },
+  "frozen_plan": {
+    "path": "results/adsorption/porosity_matched_film/runs/20261117T122127Z-88cd4746/plan.json",
+    "sha256": "80f26d28ebf936419f33e465a62fcde82a9f9b76b127679cdfc3fc2de03e879b"
+  },
+  "centres": {
+    "path": "results/adsorption/porosity_matched_film/runs/20261117T122127Z-88cd4746/centres_m.txt",
+    "sha256": "03d0e66285af4af13d4e11cf2e530074762683b0f488837fad9567ff0e18d4b5"
+  },
+  "prior_film_study": {
+    "path": "results/adsorption/disordered_film_conductance/runs/20261117T105941Z-b26cae25/summary.json",
+    "sha256": "da07153f255e69963312ffe64faa87075ee77e44526fd975ebdf229a62285b7e"
+  },
+  "previous_column": {
+    "path": "results/adsorption/carbon_access_transfer/runs/20261117T092847Z-6bf8a9d8/summary.json",
+    "sha256": "8a22cc4817aed778218b7d794c5150c5ae0e6b55c5fc27bbce1acf0a9378c32a"
+  },
+  "geometry": {
+    "side_m": 0.0011596606003761187,
+    "extent_m": [
+      0.011132741763610739,
+      0.0011596606003761187,
+      0.0011596606003761187
+    ],
+    "porosity": 0.427,
+    "solid_volume_m3": 8.57864233940253e-09,
+    "centres_sha256": "03d0e66285af4af13d4e11cf2e530074762683b0f488837fad9567ff0e18d4b5",
+    "seed": 731907,
+    "packing_acceptance": 0.1312375,
+    "minimum_sphere_gap_m": 8.15059891111445e-06,
+    "viscosity_Pa_s": 0.0008333333333333334,
+    "cases": {
+      "q233": {
+        "flow_mL_min": 23.3,
+        "flow_m3_s": 3.8833333333333336e-07,
+        "interstitial_m_s": 0.00956977096674515,
+        "column_length_m": 0.25,
+        "column_liquid_m3": 1.0144791727063988e-05,
+        "dry_carbon_mass_kg": 0.01758113788765188,
+        "particle_density_kg_m3": 1291.4485165794067,
+        "baseline_film_m_s": 3.188118722845837e-05,
+        "Pe": 13291.348564923817,
+        "sections": 180,
+        "access": {
+          "inputs": {
+            "direct_fraction": 0.5,
+            "slow_ratio": 0.014182767136198546
+          },
+          "added_resistance_s_m": 2180223.153998044,
+          "reference_slow_ratio": 0.01
+        }
+      },
+      "q625": {
+        "flow_mL_min": 62.5,
+        "flow_m3_s": 1.0416666666666667e-06,
+        "interstitial_m_s": 0.02566998649877991,
+        "column_length_m": 0.25,
+        "column_liquid_m3": 1.0144791727063988e-05,
+        "dry_carbon_mass_kg": 0.01758113788765188,
+        "particle_density_kg_m3": 1291.4485165794067,
+        "baseline_film_m_s": 5.561091682497927e-05,
+        "Pe": 35652.75902608321,
+        "sections": 180,
+        "access": {
+          "inputs": {
+            "direct_fraction": 0.5,
+            "slow_ratio": 0.008180346639400395
+          },
+          "added_resistance_s_m": 2180223.153998044,
+          "reference_slow_ratio": 0.01
+        }
+      }
+    },
+    "column_sha256": "8a22cc4817aed778218b7d794c5150c5ae0e6b55c5fc27bbce1acf0a9378c32a"
+  },
+  "shared_inlet_cut": {
+    "index": 0,
+    "width": 144,
+    "folders": [
+      "q233_N45",
+      "q625_N45",
+      "q233_N60",
+      "q625_N60"
+    ]
+  },
+  "cases": {
+    "q233": {
+      "N45_20us": {
+        "markers": 6144,
+        "captured": 4280,
+        "capture_fraction": 0.6966145833333334,
+        "inert_residence_relative_error": 0.005707815026173568,
+        "film_coefficient_m_s": [
+          0.00013988696015636214,
+          9.83173196097072e-05,
+          0.00012726268277083778
+        ],
+        "film_coefficient_sampling_95pct_m_s": [
+          0.00012303448982501985,
+          0.0001314783567955904
+        ],
+        "full_carbon_perfect_sink_escape": 1.972456912626002e-12,
+        "balanced_faces": {
+          "max_cell_imbalance_relative": 1.1127428473449774e-14,
+          "max_plane_error_relative": 1.8945172328718253e-14,
+          "face_rms_correction_relative": 0.027467705259012556
+        },
+        "clean_film": {
+          "carbon_area": {
+            "effective_conductance_m3_s": 6.520172027995027e-06,
+            "sampling_95pct_conductance_m3_s": [
+              6.304317213391232e-06,
+              6.735387551491549e-06
+            ],
+            "optimal_escape": 1.0677010180602773e-07,
+            "wall_weighted_escape": 4.0745110241786925e-06,
+            "sampling_95pct_wall_weighted_escape": [
+              2.996065686532026e-06,
+              5.5720183982917785e-06
+            ]
+          },
+          "liquid_volume": {
+            "effective_conductance_m3_s": 6.532116008697224e-06,
+            "sampling_95pct_conductance_m3_s": [
+              6.315864375982134e-06,
+              6.747727175731267e-06
+            ],
+            "optimal_escape": 1.0380844224382833e-07,
+            "wall_weighted_escape": 4.005097804289669e-06,
+            "sampling_95pct_wall_weighted_escape": [
+              2.944118150635451e-06,
+              5.478838558488874e-06
+            ]
+          }
+        },
+        "native": {
+          "max_Mach": 0.020368060072224484,
+          "max_density_departure": 0.0014795391109672096,
+          "steps": 5656,
+          "gradient_Pa_m": [
+            4908.7414200965995,
+            84.30010348030628,
+            -83.05376211144167
+          ],
+          "dt_s": 7.172334443011739e-06
+        },
+        "porosity": 0.4270461819844536,
+        "archive_diffusivity_m2_s": 1.0029488503609415e-09,
+        "required_effective_conductance_m3_s": 1.1730773604014166e-06
+      },
+      "N60_20us": {
+        "markers": 8190,
+        "captured": 5267,
+        "capture_fraction": 0.6431013431013431,
+        "inert_residence_relative_error": 0.0005784036875781107,
+        "film_coefficient_m_s": [
+          0.00011795020643263954,
+          8.703997428945116e-05,
+          0.00010777993055062215
+        ],
+        "film_coefficient_sampling_95pct_m_s": [
+          0.00010473560066076866,
+          0.00011074718900713833
+        ],
+        "full_carbon_perfect_sink_escape": 7.877691924166014e-11,
+        "balanced_faces": {
+          "max_cell_imbalance_relative": 6.012515652048759e-14,
+          "max_plane_error_relative": 1.8677042199876422e-14,
+          "face_rms_correction_relative": 0.016108626085800815
+        },
+        "clean_film": {
+          "carbon_area": {
+            "effective_conductance_m3_s": 5.525550016274129e-06,
+            "sampling_95pct_conductance_m3_s": [
+              5.370132170135505e-06,
+              5.6770330927879645e-06
+            ],
+            "optimal_escape": 1.1286627408963513e-06,
+            "wall_weighted_escape": 2.9272107964021353e-05,
+            "sampling_95pct_wall_weighted_escape": [
+              2.3659554636666803e-05,
+              3.652151615275437e-05
+            ]
+          },
+          "liquid_volume": {
+            "effective_conductance_m3_s": 5.536848321556752e-06,
+            "sampling_95pct_conductance_m3_s": [
+              5.381111357348901e-06,
+              5.688642437529414e-06
+            ],
+            "optimal_escape": 1.0986394944946648e-06,
+            "wall_weighted_escape": 2.8808313293355586e-05,
+            "sampling_95pct_wall_weighted_escape": [
+              2.327931654457648e-05,
+              3.5951605534234614e-05
+            ]
+          }
+        },
+        "native": {
+          "max_Mach": 0.020448540178556726,
+          "max_density_departure": 0.0014795804375633548,
+          "steps": 8460,
+          "gradient_Pa_m": [
+            4872.253650305378,
+            84.40671099245694,
+            -78.67168674136727
+          ],
+          "dt_s": 5.379250832258805e-06
+        },
+        "porosity": 0.42695457175925927,
+        "archive_diffusivity_m2_s": 1.0014137726911467e-09,
+        "required_effective_conductance_m3_s": 1.1730773604014166e-06
+      },
+      "N60_40us": {
+        "markers": 8190,
+        "captured": 5206,
+        "capture_fraction": 0.6356532356532356,
+        "inert_residence_relative_error": 0.002937300204404192,
+        "film_coefficient_m_s": [
+          0.00011760827474431058,
+          8.481569257947151e-05,
+          0.00010661160007553458
+        ],
+        "film_coefficient_sampling_95pct_m_s": [
+          0.00010383436473312786,
+          0.00010966048595558398
+        ],
+        "full_carbon_perfect_sink_escape": 1.2494455051103687e-10,
+        "balanced_faces": {
+          "max_cell_imbalance_relative": 6.012515652048759e-14,
+          "max_plane_error_relative": 1.8677042199876422e-14,
+          "face_rms_correction_relative": 0.016108626085800815
+        },
+        "clean_film": {
+          "carbon_area": {
+            "effective_conductance_m3_s": 5.465904920701811e-06,
+            "sampling_95pct_conductance_m3_s": [
+              5.324122621331517e-06,
+              5.621555258691214e-06
+            ],
+            "optimal_escape": 1.3013867353793776e-06,
+            "wall_weighted_escape": 3.0457518275398404e-05,
+            "sampling_95pct_wall_weighted_escape": [
+              2.4397439122364254e-05,
+              3.737347570252188e-05
+            ]
+          },
+          "liquid_volume": {
+            "effective_conductance_m3_s": 5.477080757166067e-06,
+            "sampling_95pct_conductance_m3_s": [
+              5.335007337682184e-06,
+              5.6330506910002154e-06
+            ],
+            "optimal_escape": 1.2671123973966485e-06,
+            "wall_weighted_escape": 2.997330084918737e-05,
+            "sampling_95pct_wall_weighted_escape": [
+              2.4003680193044684e-05,
+              3.678774122099381e-05
+            ]
+          }
+        },
+        "native": {
+          "max_Mach": 0.020448540178556726,
+          "max_density_departure": 0.0014795804375633548,
+          "steps": 8460,
+          "gradient_Pa_m": [
+            4872.253650305378,
+            84.40671099245694,
+            -78.67168674136727
+          ],
+          "dt_s": 5.379250832258805e-06
+        },
+        "porosity": 0.42695457175925927,
+        "archive_diffusivity_m2_s": 1.0014137726911467e-09,
+        "required_effective_conductance_m3_s": 1.1730773604014166e-06
+      }
+    },
+    "q625": {
+      "N45_20us": {
+        "markers": 6144,
+        "captured": 3311,
+        "capture_fraction": 0.5388997395833334,
+        "inert_residence_relative_error": 0.005843802242461504,
+        "film_coefficient_m_s": [
+          0.0002393777943113649,
+          0.00016490864746503408,
+          0.00021167732558455531
+        ],
+        "film_coefficient_sampling_95pct_m_s": [
+          0.00020454722907586683,
+          0.00021904044201916272
+        ],
+        "full_carbon_perfect_sink_escape": 2.523968878879341e-08,
+        "balanced_faces": {
+          "max_cell_imbalance_relative": 1.1783172067818231e-13,
+          "max_plane_error_relative": 2.019907072869211e-14,
+          "face_rms_correction_relative": 0.029004821320374383
+        },
+        "clean_film": {
+          "carbon_area": {
+            "effective_conductance_m3_s": 1.0829626623477845e-05,
+            "sampling_95pct_conductance_m3_s": [
+              1.0465628906970862e-05,
+              1.120552009269522e-05
+            ],
+            "optimal_escape": 4.07813878891379e-05,
+            "wall_weighted_escape": 0.0003155438059163008,
+            "sampling_95pct_wall_weighted_escape": [
+              0.0002534149769075866,
+              0.0003913111879569145
+            ]
+          },
+          "liquid_volume": {
+            "effective_conductance_m3_s": 1.0849493006054618e-05,
+            "sampling_95pct_conductance_m3_s": [
+              1.0484826120647632e-05,
+              1.1226077513616266e-05
+            ],
+            "optimal_escape": 4.0052711330848224e-05,
+            "wall_weighted_escape": 0.0003118848549440202,
+            "sampling_95pct_wall_weighted_escape": [
+              0.00025041564852812035,
+              0.0003868671329475245
+            ]
+          }
+        },
+        "native": {
+          "max_Mach": 0.03170846555812216,
+          "max_density_departure": 0.0016173205185019413,
+          "steps": 9494,
+          "gradient_Pa_m": [
+            14127.673837575529,
+            241.1483988964812,
+            -234.20287299478113
+          ],
+          "dt_s": 4.250272262525475e-06
+        },
+        "porosity": 0.4270461819844536,
+        "archive_diffusivity_m2_s": 1.001967914038679e-09,
+        "required_effective_conductance_m3_s": 3.1466667392741863e-06
+      },
+      "N60_20us": {
+        "markers": 8190,
+        "captured": 4008,
+        "capture_fraction": 0.48937728937728936,
+        "inert_residence_relative_error": 0.0010747124026959654,
+        "film_coefficient_m_s": [
+          0.00020233133023476565,
+          0.00014703701554760791,
+          0.00018110539132573433
+        ],
+        "film_coefficient_sampling_95pct_m_s": [
+          0.0001749058275291225,
+          0.00018655205081404117
+        ],
+        "full_carbon_perfect_sink_escape": 2.552328871972334e-07,
+        "balanced_faces": {
+          "max_cell_imbalance_relative": 4.9800644071696094e-14,
+          "max_plane_error_relative": 2.4022675079981903e-14,
+          "face_rms_correction_relative": 0.01702358127932698
+        },
+        "clean_film": {
+          "carbon_area": {
+            "effective_conductance_m3_s": 9.268901436087548e-06,
+            "sampling_95pct_conductance_m3_s": [
+              8.952407675239804e-06,
+              9.546958585389053e-06
+            ],
+            "optimal_escape": 0.00016906978465343152,
+            "wall_weighted_escape": 0.0011010787743009115,
+            "sampling_95pct_wall_weighted_escape": [
+              0.0009401018722922545,
+              0.0013212984315197059
+            ]
+          },
+          "liquid_volume": {
+            "effective_conductance_m3_s": 9.287886049945125e-06,
+            "sampling_95pct_conductance_m3_s": [
+              8.970742419967267e-06,
+              9.566514145432888e-06
+            ],
+            "optimal_escape": 0.0001661590851922509,
+            "wall_weighted_escape": 0.001089192145858794,
+            "sampling_95pct_wall_weighted_escape": [
+              0.0009297778528156607,
+              0.0013073226837348154
+            ]
+          }
+        },
+        "native": {
+          "max_Mach": 0.03221637427959464,
+          "max_density_departure": 0.001622276749551288,
+          "steps": 12780,
+          "gradient_Pa_m": [
+            14051.572374524654,
+            245.86952444755048,
+            -221.01454777224802
+          ],
+          "dt_s": 3.1877041968941013e-06
+        },
+        "porosity": 0.42695457175925927,
+        "archive_diffusivity_m2_s": 1.0018397988950826e-09,
+        "required_effective_conductance_m3_s": 3.1466667392741863e-06
+      },
+      "N60_40us": {
+        "markers": 8190,
+        "captured": 3951,
+        "capture_fraction": 0.4824175824175824,
+        "inert_residence_relative_error": 0.0016209800963415955,
+        "film_coefficient_m_s": [
+          0.00019572118794681194,
+          0.00014558624148631994,
+          0.00017646909330387532
+        ],
+        "film_coefficient_sampling_95pct_m_s": [
+          0.0001712640889987052,
+          0.00018162050538479113
+        ],
+        "full_carbon_perfect_sink_escape": 3.4776718620203e-07,
+        "balanced_faces": {
+          "max_cell_imbalance_relative": 4.9800644071696094e-14,
+          "max_plane_error_relative": 2.4022675079981903e-14,
+          "face_rms_correction_relative": 0.01702358127932698
+        },
+        "clean_film": {
+          "carbon_area": {
+            "effective_conductance_m3_s": 9.032213927123236e-06,
+            "sampling_95pct_conductance_m3_s": [
+              8.766493311299622e-06,
+              9.295198503339466e-06
+            ],
+            "optimal_escape": 0.00020996872138899768,
+            "wall_weighted_escape": 0.0012662810360121878,
+            "sampling_95pct_wall_weighted_escape": [
+              0.0010885689968235742,
+              0.0014780152650253255
+            ]
+          },
+          "liquid_volume": {
+            "effective_conductance_m3_s": 9.050712541120914e-06,
+            "sampling_95pct_conductance_m3_s": [
+              8.784446311013867e-06,
+              9.314237114029275e-06
+            ],
+            "optimal_escape": 0.00020644145337403384,
+            "wall_weighted_escape": 0.001252810099213497,
+            "sampling_95pct_wall_weighted_escape": [
+              0.0010767906941716878,
+              0.001462570075459628
+            ]
+          }
+        },
+        "native": {
+          "max_Mach": 0.03221637427959464,
+          "max_density_departure": 0.001622276749551288,
+          "steps": 12780,
+          "gradient_Pa_m": [
+            14051.572374524654,
+            245.86952444755048,
+            -221.01454777224802
+          ],
+          "dt_s": 3.1877041968941013e-06
+        },
+        "porosity": 0.42695457175925927,
+        "archive_diffusivity_m2_s": 1.0018397988950826e-09,
+        "required_effective_conductance_m3_s": 3.1466667392741863e-06
+      }
+    }
+  },
+  "refinement": {
+    "q233": {
+      "time": {
+        "relative_conductance_change": 0.010912208762800635,
+        "absolute_escape_change": 1.1854103113770511e-06,
+        "passed": true
+      },
+      "grid": {
+        "relative_conductance_change": 0.15254536344292546,
+        "absolute_escape_change": 2.519759693984266e-05,
+        "passed": false
+      }
+    },
+    "q625": {
+      "time": {
+        "relative_conductance_change": 0.02620481654598028,
+        "absolute_escape_change": 0.00016520226171127628,
+        "passed": true
+      },
+      "grid": {
+        "relative_conductance_change": 0.14411625087856283,
+        "absolute_escape_change": 0.0007855349683846106,
+        "passed": false
+      }
+    }
+  },
+  "screening": {
+    "target": 0.05,
+    "high_flow_point_below": {
+      "carbon_area": true,
+      "liquid_volume": true
+    },
+    "high_flow_intervals": {
+      "carbon_area": "below",
+      "liquid_volume": "below"
+    },
+    "high_flow_numerically_qualified": false,
+    "high_flow_comparison_envelope": {
+      "carbon_area": [
+        0.0002534149769075866,
+        0.0014780152650253255
+      ],
+      "liquid_volume": [
+        0.00025041564852812035,
+        0.001462570075459628
+      ]
+    },
+    "high_flow_below_across_checked_runs": true,
+    "high_flow_above_across_checked_runs": false,
+    "high_flow_qualified_below": false,
+    "high_flow_qualified_above": false
+  },
+  "verification_files": {
+    "sources": 34,
+    "artifacts": 1137
+  },
+  "vendor": {
+    "archive_sha256": "e4d2421b50643482036917c4416145f7d6b495492f3afac64e048212361c8b3e",
+    "original_files_checked": 2070,
+    "preexisting_vendor_config_ignored": true
+  },
+  "versions": {
+    "python": "3.12.9",
+    "julia": "1.11.6",
+    "numpy": "2.5.4",
+    "panel": "1.10.0",
+    "pyvista": "0.49.2",
+    "vtk": "9.7.2",
+    "matplotlib": "3.11.2",
+    "juliacall": "0.9.37",
+    "PythonCall": "0.9.37"
+  },
+  "figure7_fits": 0
+}

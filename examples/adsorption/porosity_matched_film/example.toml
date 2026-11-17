@@ -1,0 +1,18 @@
+schema_version = 1
+id = "adsorption/porosity_matched_film"
+title = "Clean-wall phenol transfer with matched void fraction"
+area = "adsorption"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["adsorption/disordered_film_conductance"]
+run_module = "examples.adsorption.porosity_matched_film.run"
+check_module = "examples.adsorption.porosity_matched_film.run"
+reference_files = ["reference_summary.json"]
+protocol_files = ["protocol.md"]
+
+[validation]
+numerical = "mixed"
+inert_transport = "passed"
+literature = "not_assessed"
+scope = "One synthetic packing at 42.7% void fraction at two operating conditions. Liquid-film and fixed-mass clean-bed estimates exclude carbon loading."
