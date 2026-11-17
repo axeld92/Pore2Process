@@ -1,0 +1,83 @@
+{
+  "schema": "pore2process.early-bypass.reference.v1",
+  "run": {
+    "path": "results/adsorption/disordered_early_bypass/runs/20261117T103314Z-b73ee872/summary.json",
+    "sha256": "0598a627603283b728e4dfba4c2928fe1c5cb0dec60e630c96be2381db4d4172"
+  },
+  "column": {
+    "path": "results/adsorption/carbon_access_transfer/runs/20261117T092847Z-6bf8a9d8/summary.json",
+    "sha256": "8a22cc4817aed778218b7d794c5150c5ae0e6b55c5fc27bbce1acf0a9378c32a"
+  },
+  "probes": {
+    "path": "results/adsorption/carbon_access_transfer/probes/20261117T092224Z-301b10b3/summary.json",
+    "sha256": "9a3fe478bcd839c0ba0210a998dcd62bb335978a2b4c71dd886b8479b4bb5167"
+  },
+  "frozen_predictions_sha256": "26e60cf55b56af01bbadf1beefcd3edd80b520d3d995aa7bbcc7728a93c66d88",
+  "bed_length_m": 0.25,
+  "sections": 180,
+  "fully_mixed_joins": true,
+  "heldout_cdf_error_limit": 0.02,
+  "initial_effluent_fraction_target": 0.05,
+  "flows": {
+    "q233": {
+      "flow_mL_min": 23.3,
+      "eight_section_wall_free_fraction": 0.7076416015625,
+      "maximum_cdf_error": {
+        "receiver": 0.014186358301135127,
+        "pair": 0.014301707962699806,
+        "joint": 0.013386712187669847
+      },
+      "maximum_early_error": {
+        "receiver": 0.010432554471823452,
+        "pair": 0.010480127213578758,
+        "joint": 0.010439979754002057
+      },
+      "time_binning_check_maximum_cdf_change": 0.004026268301888028,
+      "projected_perfect_sink_fraction": 0.00041823072236841987,
+      "projected_joint_model_perfect_sink_fraction": 0.0003454383475707262,
+      "clean_film_conductance_m3_s": 1.6506380899883972e-06,
+      "clean_film_ntu": 4.250570188811323,
+      "projected_wall_weighted_film_escape_fraction": 0.03544804225184702,
+      "projected_best_allocation_escape_fraction": 0.014978200005493611,
+      "minimum_ntu_for_target": 3.0208000697032187,
+      "minimum_relative_conductance_increase_for_target": 0.0
+    },
+    "q625": {
+      "flow_mL_min": 62.5,
+      "eight_section_wall_free_fraction": 0.8321533203125,
+      "maximum_cdf_error": {
+        "receiver": 0.0148242310746034,
+        "pair": 0.015389712230986619,
+        "joint": 0.014560500980139293
+      },
+      "maximum_early_error": {
+        "receiver": 0.014227030416033501,
+        "pair": 0.014248323121377832,
+        "joint": 0.014228549122766512
+      },
+      "time_binning_check_maximum_cdf_change": 0.003920495171870236,
+      "projected_perfect_sink_fraction": 0.016016910421716726,
+      "projected_joint_model_perfect_sink_fraction": 0.012258655381018306,
+      "clean_film_conductance_m3_s": 2.8621964072639114e-06,
+      "clean_film_ntu": 2.7477085509733548,
+      "projected_wall_weighted_film_escape_fraction": 0.119898006255707,
+      "projected_best_allocation_escape_fraction": 0.06541866841937104,
+      "minimum_ntu_for_target": 3.0208000697032187,
+      "minimum_relative_conductance_increase_for_target": 0.0993888229641835
+    }
+  },
+  "adsorption_rerun_gate_passed": false,
+  "new_adsorption_runs": 0,
+  "figure7_fits": 0,
+  "versions": {
+    "python": "3.12.9",
+    "julia": "1.11.6",
+    "numpy": "2.5.4",
+    "panel": "1.10.0",
+    "pyvista": "0.49.2",
+    "vtk": "9.7.2",
+    "matplotlib": "3.11.2",
+    "juliacall": "0.9.37",
+    "PythonCall": "0.9.37"
+  }
+}

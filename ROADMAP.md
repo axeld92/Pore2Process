@@ -342,6 +342,13 @@ fixed-dose retention with flow and underpredicts retention at each
 condition. Early leakage still fails, so the column has partial
 operating-trend verification and remains unqualified for service time.
 
+The [early wall contact and film transfer check](examples/adsorption/disordered_early_bypass/REPORT.md)
+passes the two eight-section wall-contact holdouts. Perfect first-contact
+capture projects less than 5% escape at both flow rates. At 62.5 mL/min, the
+best allocation of the existing film conductance still leaves 6.54% escape.
+The adsorption rerun was therefore held. A film conductance estimate derived
+independently of the breakthrough curves would test the limiting assumption.
+
 ## 7. Select a reacting or non-isothermal showcase
 
 **Research direction; application and physical model not yet selected.**

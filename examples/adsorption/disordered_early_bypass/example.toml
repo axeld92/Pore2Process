@@ -1,0 +1,18 @@
+schema_version = 1
+id = "adsorption/disordered_early_bypass"
+title = "Early phenol escape and the clean-film conductance limit"
+area = "adsorption"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["adsorption/carbon_access_transfer"]
+run_module = "examples.adsorption.disordered_early_bypass.run"
+check_module = "examples.adsorption.disordered_early_bypass.run"
+reference_files = ["reference_summary.json"]
+protocol_files = ["protocol.md"]
+
+[validation]
+numerical = "passed"
+inert_transport = "passed"
+literature = "not_assessed"
+scope = "Two saved N160 tracer cohorts. The held-out wall-contact screen passes. At 62.5 mL/min the fixed-conductance film screen fails in the repeated 25 cm synthetic bed."
