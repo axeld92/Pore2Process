@@ -327,6 +327,13 @@ curves over matched windows. Most of the excess builds after the
 experimental midpoints. The available curves leave the balance between
 accessible inventory and slow tail uptake unresolved.
 
+The [carbon access sensitivity](examples/adsorption/carbon_access/REPORT.md)
+compares permanent isolation and finite access resistance with the
+full dry mass and particle equations fixed. The 50%-direct isolated
+and 1% slow cases pass both midpoint screens and underpredict retention.
+The 10% cases overpredict it. The tested scenarios leave the finite
+window uptake and Figure 7 breakthrough jointly unqualified.
+
 ## 7. Select a reacting or non-isothermal showcase
 
 **Research direction; application and physical model not yet selected.**

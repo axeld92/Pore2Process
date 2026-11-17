@@ -1,0 +1,411 @@
+{
+  "path": "results/adsorption/carbon_access/runs/20261117T090234Z-234da0ca/summary.json",
+  "sha256": "37480ecb42f74a66a02785ac2221f5099822a2fdfea8ca86fa4202fd1223ca5f",
+  "parent_sha256": "f9759fa3232d8b44a81e55e3f3f80afa8c480205d3d17c308d2d38d805ba31ff",
+  "retention_audit_sha256": "10f222846d6b683bf2f28a591653d09cb5198ff2217a2bf6d64baf028884b226",
+  "frozen_predictions_sha256": "fe5f8f05a7a38b5101afb5230c38336315f46c7efe8899077eb0954031eeed6d",
+  "scenario_plan_sha256": "45fe1d47e7f4f9cad664afdca136338a7fe1a19e01c044c1683f72087139832b",
+  "figure7_fitted_parameters": 0,
+  "figure7": {
+    "d800": {
+      "figure7_midpoint_s": 1844.7418738049712,
+      "figure7_retained_kg": 0.000432442204067443,
+      "nominal_window_s": 16841.300191204587,
+      "reading_scenarios_kg": [
+        0.0004147627573191626,
+        0.0004503337389188249
+      ],
+      "cases": {
+        "full": {
+          "scenario": {
+            "direct_fraction": 1.0,
+            "slow_ratio": 0.0
+          },
+          "midpoint_s": 5013.959662628576,
+          "midpoint_passed": false,
+          "early_crossing_s": 4.969350863260986,
+          "rmse": 0.18161138653459297,
+          "full_figure7_screen_passed": false,
+          "numerical_screen_passed": true,
+          "snapshot": {
+            "retained_kg": 0.0006596417420286229,
+            "liquid_kg": 5.830134967579883e-07,
+            "adsorbed_kg": 0.000659058728531865,
+            "outlet_fraction": 0.9088702752879446,
+            "net_retention_rate_kg_s": 9.978704855970064e-09
+          },
+          "solid_ceiling_kg": 0.0007482323081513209,
+          "slow_adsorbed_kg": 0.0,
+          "excess_retention_kg": 0.00022719953796117987,
+          "within_marker_reading_range": false,
+          "total_dry_mass_kg": 0.007032455155060752,
+          "mass_residual": 1.1023547202744549e-13,
+          "film_flux_residual": 1.781126739085214e-12,
+          "clean_feed_minimum_slow_loading_time_s": null
+        },
+        "f50_isolated": {
+          "scenario": {
+            "direct_fraction": 0.5,
+            "slow_ratio": 0.0
+          },
+          "midpoint_s": 1617.889163521337,
+          "midpoint_passed": true,
+          "early_crossing_s": 4.900931550649676,
+          "rmse": 0.14196073265649917,
+          "full_figure7_screen_passed": false,
+          "numerical_screen_passed": true,
+          "snapshot": {
+            "retained_kg": 0.00033582717514835174,
+            "liquid_kg": 5.969281979655499e-07,
+            "adsorbed_kg": 0.0003352302469503862,
+            "outlet_fraction": 0.9600790075965687,
+            "net_retention_rate_kg_s": 4.371348668175725e-09
+          },
+          "solid_ceiling_kg": 0.00037411615407566045,
+          "slow_adsorbed_kg": 0.0,
+          "excess_retention_kg": -9.661502891909128e-05,
+          "within_marker_reading_range": false,
+          "total_dry_mass_kg": 0.007032455155060752,
+          "mass_residual": 1.0253439114728464e-13,
+          "film_flux_residual": 1.7869216658864925e-12,
+          "clean_feed_minimum_slow_loading_time_s": null
+        },
+        "f50_slow01": {
+          "scenario": {
+            "direct_fraction": 0.5,
+            "slow_ratio": 0.01
+          },
+          "midpoint_s": 1667.167315525826,
+          "midpoint_passed": true,
+          "early_crossing_s": 4.901563104290262,
+          "rmse": 0.13854530273291038,
+          "full_figure7_screen_passed": false,
+          "numerical_screen_passed": true,
+          "snapshot": {
+            "retained_kg": 0.00035568779366163623,
+            "liquid_kg": 5.932075552679029e-07,
+            "adsorbed_kg": 0.0003550945861063683,
+            "outlet_fraction": 0.9478500850188947,
+            "net_retention_rate_kg_s": 5.710415690431033e-09
+          },
+          "solid_ceiling_kg": 0.0007482323081513209,
+          "slow_adsorbed_kg": 2.008258668724018e-05,
+          "excess_retention_kg": -7.675441040580678e-05,
+          "within_marker_reading_range": false,
+          "total_dry_mass_kg": 0.007032455155060752,
+          "mass_residual": 7.040988233289932e-14,
+          "film_flux_residual": 1.7865041912210452e-12,
+          "clean_feed_minimum_slow_loading_time_s": 268979.8912433387
+        },
+        "f50_slow10": {
+          "scenario": {
+            "direct_fraction": 0.5,
+            "slow_ratio": 0.1
+          },
+          "midpoint_s": 2169.7756318217585,
+          "midpoint_passed": true,
+          "early_crossing_s": 4.907328803628177,
+          "rmse": 0.1305464453470356,
+          "full_figure7_screen_passed": false,
+          "numerical_screen_passed": true,
+          "snapshot": {
+            "retained_kg": 0.000512513349202705,
+            "liquid_kg": 5.650548445420464e-07,
+            "adsorbed_kg": 0.0005119482943581629,
+            "outlet_fraction": 0.8560723840063655,
+            "net_retention_rate_kg_s": 1.576007395130297e-08
+          },
+          "solid_ceiling_kg": 0.0007482323081513209,
+          "slow_adsorbed_kg": 0.0001788540048648336,
+          "excess_retention_kg": 8.007114513526196e-05,
+          "within_marker_reading_range": false,
+          "total_dry_mass_kg": 0.007032455155060752,
+          "mass_residual": 1.1485612055554202e-13,
+          "film_flux_residual": 1.7847423295232868e-12,
+          "clean_feed_minimum_slow_loading_time_s": 26897.98912433387
+        },
+        "f75_isolated": {
+          "scenario": {
+            "direct_fraction": 0.75,
+            "slow_ratio": 0.0
+          },
+          "midpoint_s": 3270.3155778885216,
+          "midpoint_passed": false,
+          "early_crossing_s": 4.933720159968488,
+          "rmse": 0.11704110002073091,
+          "full_figure7_screen_passed": false,
+          "numerical_screen_passed": true,
+          "snapshot": {
+            "retained_kg": 0.0004996056765855946,
+            "liquid_kg": 5.903126325964507e-07,
+            "adsorbed_kg": 0.0004990153639529982,
+            "outlet_fraction": 0.9363598799074593,
+            "net_retention_rate_kg_s": 6.968593150133209e-09
+          },
+          "solid_ceiling_kg": 0.0005611742311134907,
+          "slow_adsorbed_kg": 0.0,
+          "excess_retention_kg": 6.716347251815158e-05,
+          "within_marker_reading_range": false,
+          "total_dry_mass_kg": 0.007032455155060752,
+          "mass_residual": 9.74736808546075e-14,
+          "film_flux_residual": 1.7785171296802488e-12,
+          "clean_feed_minimum_slow_loading_time_s": null
+        },
+        "f75_slow01": {
+          "scenario": {
+            "direct_fraction": 0.75,
+            "slow_ratio": 0.01
+          },
+          "midpoint_s": 3305.7669555096404,
+          "midpoint_passed": false,
+          "early_crossing_s": 4.934061805596906,
+          "rmse": 0.11837225426839733,
+          "full_figure7_screen_passed": false,
+          "numerical_screen_passed": true,
+          "snapshot": {
+            "retained_kg": 0.0005087675079364888,
+            "liquid_kg": 5.884632917803395e-07,
+            "adsorbed_kg": 0.0005081790446447085,
+            "outlet_fraction": 0.9302879402892378,
+            "net_retention_rate_kg_s": 7.633470538328463e-09
+          },
+          "solid_ceiling_kg": 0.0007482323081513209,
+          "slow_adsorbed_kg": 9.345688882854431e-06,
+          "excess_retention_kg": 7.632530386904578e-05,
+          "within_marker_reading_range": false,
+          "total_dry_mass_kg": 0.007032455155060752,
+          "mass_residual": 9.175287791505943e-14,
+          "film_flux_residual": 1.7800488041040944e-12,
+          "clean_feed_minimum_slow_loading_time_s": 268979.8912433387
+        },
+        "f75_slow10": {
+          "scenario": {
+            "direct_fraction": 0.75,
+            "slow_ratio": 0.1
+          },
+          "midpoint_s": 3642.1766879954193,
+          "midpoint_passed": false,
+          "early_crossing_s": 4.9371583438759465,
+          "rmse": 0.1334109271548055,
+          "full_figure7_screen_passed": false,
+          "numerical_screen_passed": true,
+          "snapshot": {
+            "retained_kg": 0.0005844218901584862,
+            "liquid_kg": 5.739398933768159e-07,
+            "adsorbed_kg": 0.0005838479502651094,
+            "outlet_fraction": 0.8824899048115011,
+            "net_retention_rate_kg_s": 1.2867355423140625e-08
+          },
+          "solid_ceiling_kg": 0.0007482323081513209,
+          "slow_adsorbed_kg": 8.659908441954885e-05,
+          "excess_retention_kg": 0.0001519796860910432,
+          "within_marker_reading_range": false,
+          "total_dry_mass_kg": 0.007032455155060752,
+          "mass_residual": 1.1551621320241294e-13,
+          "film_flux_residual": 1.7818277078627655e-12,
+          "clean_feed_minimum_slow_loading_time_s": 26897.98912433387
+        }
+      }
+    },
+    "d450": {
+      "figure7_midpoint_s": 3321.561129231807,
+      "figure7_retained_kg": 0.000473777631546274,
+      "nominal_window_s": 14455.066921606118,
+      "reading_scenarios_kg": [
+        0.0004573870278860719,
+        0.0004902117404583943
+      ],
+      "cases": {
+        "full": {
+          "scenario": {
+            "direct_fraction": 1.0,
+            "slow_ratio": 0.0
+          },
+          "midpoint_s": 6543.61478213601,
+          "midpoint_passed": false,
+          "early_crossing_s": 1806.3970436303227,
+          "rmse": 0.3067604919822243,
+          "full_figure7_screen_passed": false,
+          "numerical_screen_passed": true,
+          "snapshot": {
+            "retained_kg": 0.0007398116934438467,
+            "liquid_kg": 6.028469636845336e-07,
+            "adsorbed_kg": 0.0007392088464801621,
+            "outlet_fraction": 0.9715575609975101,
+            "net_retention_rate_kg_s": 3.1144470707726422e-09
+          },
+          "solid_ceiling_kg": 0.0007482323081513209,
+          "slow_adsorbed_kg": 0.0,
+          "excess_retention_kg": 0.0002660340618975727,
+          "within_marker_reading_range": false,
+          "total_dry_mass_kg": 0.007032455155060752,
+          "mass_residual": 4.044167616495905e-13,
+          "film_flux_residual": 2.4709521807083053e-12,
+          "clean_feed_minimum_slow_loading_time_s": null
+        },
+        "f50_isolated": {
+          "scenario": {
+            "direct_fraction": 0.5,
+            "slow_ratio": 0.0
+          },
+          "midpoint_s": 2929.865352942781,
+          "midpoint_passed": true,
+          "early_crossing_s": 5.310091424785734,
+          "rmse": 0.08952430757372362,
+          "full_figure7_screen_passed": false,
+          "numerical_screen_passed": true,
+          "snapshot": {
+            "retained_kg": 0.0003724888589872907,
+            "liquid_kg": 6.068273980069697e-07,
+            "adsorbed_kg": 0.0003718820315892838,
+            "outlet_fraction": 0.9928724427604573,
+            "net_retention_rate_kg_s": 7.804675177299284e-10
+          },
+          "solid_ceiling_kg": 0.00037411615407566045,
+          "slow_adsorbed_kg": 0.0,
+          "excess_retention_kg": -0.00010128877255898325,
+          "within_marker_reading_range": false,
+          "total_dry_mass_kg": 0.007032455155060752,
+          "mass_residual": 4.2311938664426683e-13,
+          "film_flux_residual": 2.472362309795138e-12,
+          "clean_feed_minimum_slow_loading_time_s": null
+        },
+        "f50_slow01": {
+          "scenario": {
+            "direct_fraction": 0.5,
+            "slow_ratio": 0.01
+          },
+          "midpoint_s": 3041.6325056836554,
+          "midpoint_passed": true,
+          "early_crossing_s": 5.315351149036599,
+          "rmse": 0.07555511586569207,
+          "full_figure7_screen_passed": false,
+          "numerical_screen_passed": true,
+          "snapshot": {
+            "retained_kg": 0.00041087936066107594,
+            "liquid_kg": 5.98197982351377e-07,
+            "adsorbed_kg": 0.0004102811626787245,
+            "outlet_fraction": 0.9644971847211822,
+            "net_retention_rate_kg_s": 3.887558273030552e-09
+          },
+          "solid_ceiling_kg": 0.0007482323081513209,
+          "slow_adsorbed_kg": 3.8726447730505796e-05,
+          "excess_retention_kg": -6.289827088519804e-05,
+          "within_marker_reading_range": false,
+          "total_dry_mass_kg": 0.007032455155060752,
+          "mass_residual": 1.0304046217655234e-12,
+          "film_flux_residual": 2.4711695300136346e-12,
+          "clean_feed_minimum_slow_loading_time_s": 117528.52382593762
+        },
+        "f50_slow10": {
+          "scenario": {
+            "direct_fraction": 0.5,
+            "slow_ratio": 0.1
+          },
+          "midpoint_s": 4339.910521383056,
+          "midpoint_passed": false,
+          "early_crossing_s": 5.36825066146254,
+          "rmse": 0.15284214606390123,
+          "full_figure7_screen_passed": false,
+          "numerical_screen_passed": true,
+          "snapshot": {
+            "retained_kg": 0.000670781709145713,
+            "liquid_kg": 5.657781263196376e-07,
+            "adsorbed_kg": 0.0006702159310193934,
+            "outlet_fraction": 0.8322023963468494,
+            "net_retention_rate_kg_s": 1.8373837600019985e-08
+          },
+          "solid_ceiling_kg": 0.0007482323081513209,
+          "slow_adsorbed_kg": 0.0003007272950229009,
+          "excess_retention_kg": 0.00019700407759943905,
+          "within_marker_reading_range": false,
+          "total_dry_mass_kg": 0.007032455155060752,
+          "mass_residual": 4.4776284546078163e-14,
+          "film_flux_residual": 2.4701367434707762e-12,
+          "clean_feed_minimum_slow_loading_time_s": 11752.85238259376
+        },
+        "f75_isolated": {
+          "scenario": {
+            "direct_fraction": 0.75,
+            "slow_ratio": 0.0
+          },
+          "midpoint_s": 4745.382962119804,
+          "midpoint_passed": false,
+          "early_crossing_s": 242.07660010776468,
+          "rmse": 0.15390104634996857,
+          "full_figure7_screen_passed": false,
+          "numerical_screen_passed": true,
+          "snapshot": {
+            "retained_kg": 0.0005571320270571709,
+            "liquid_kg": 6.052583841620052e-07,
+            "adsorbed_kg": 0.0005565267686730088,
+            "outlet_fraction": 0.9852738021926718,
+            "net_retention_rate_kg_s": 1.612518659902438e-09
+          },
+          "solid_ceiling_kg": 0.0005611742311134907,
+          "slow_adsorbed_kg": 0.0,
+          "excess_retention_kg": 8.335439551089688e-05,
+          "within_marker_reading_range": false,
+          "total_dry_mass_kg": 0.007032455155060752,
+          "mass_residual": 4.4996315428368474e-13,
+          "film_flux_residual": 2.471311410810169e-12,
+          "clean_feed_minimum_slow_loading_time_s": null
+        },
+        "f75_slow01": {
+          "scenario": {
+            "direct_fraction": 0.75,
+            "slow_ratio": 0.01
+          },
+          "midpoint_s": 4816.943402853222,
+          "midpoint_passed": false,
+          "early_crossing_s": 266.3600296238593,
+          "rmse": 0.16019755691388757,
+          "full_figure7_screen_passed": false,
+          "numerical_screen_passed": true,
+          "snapshot": {
+            "retained_kg": 0.0005748289743219473,
+            "liquid_kg": 6.009131260328657e-07,
+            "adsorbed_kg": 0.0005742280611959144,
+            "outlet_fraction": 0.9709202350350667,
+            "net_retention_rate_kg_s": 3.184234263660191e-09
+          },
+          "solid_ceiling_kg": 0.0007482323081513209,
+          "slow_adsorbed_kg": 1.7966815772147445e-05,
+          "excess_retention_kg": 0.00010105134277567336,
+          "within_marker_reading_range": false,
+          "total_dry_mass_kg": 0.007032455155060752,
+          "mass_residual": 7.302824983215401e-13,
+          "film_flux_residual": 2.4721566581086717e-12,
+          "clean_feed_minimum_slow_loading_time_s": 117528.52382593762
+        },
+        "f75_slow10": {
+          "scenario": {
+            "direct_fraction": 0.75,
+            "slow_ratio": 0.1
+          },
+          "midpoint_s": 5513.567582419872,
+          "midpoint_passed": false,
+          "early_crossing_s": 479.640024738854,
+          "rmse": 0.22040477593258864,
+          "full_figure7_screen_passed": false,
+          "numerical_screen_passed": true,
+          "snapshot": {
+            "retained_kg": 0.0007041040727499432,
+            "liquid_kg": 5.836158680728646e-07,
+            "adsorbed_kg": 0.0007035204568818703,
+            "outlet_fraction": 0.8984973451893907,
+            "net_retention_rate_kg_s": 1.1114540701761714e-08
+          },
+          "solid_ceiling_kg": 0.0007482323081513209,
+          "slow_adsorbed_kg": 0.00014896769225207423,
+          "excess_retention_kg": 0.00023032644120366924,
+          "within_marker_reading_range": false,
+          "total_dry_mass_kg": 0.007032455155060752,
+          "mass_residual": 6.974978968602839e-14,
+          "film_flux_residual": 2.472049492826183e-12,
+          "clean_feed_minimum_slow_loading_time_s": 11752.85238259376
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+schema_version = 1
+id = "adsorption/carbon_access"
+title = "Isolated and slowly accessible carbon in the N160 phenol column"
+area = "adsorption"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["adsorption/disordered_repeat_join", "adsorption/figure7_retention"]
+run_module = "examples.adsorption.carbon_access.run"
+check_module = "examples.adsorption.carbon_access.run"
+reference_files = ["reference_summary.json"]
+protocol_files = ["protocol.md"]
+
+[validation]
+numerical = "passed"
+literature = "failed"
+scope = "Fixed-total-mass scenarios with the same batch particles and N160 transfer, compared against the two digitized Figure 7 windows."

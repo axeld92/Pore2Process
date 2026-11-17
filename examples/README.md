@@ -46,6 +46,7 @@ specific earlier measurements or assumptions.
 | Adsorption | [Memory model coupled to the phenol column](adsorption/disordered_memory_column/REPORT.md) | Conservative, fixed-carbon predictions for both sizes fail the unfitted Figure 7 comparison | [Commands](adsorption/disordered_memory_column/README.md) |
 | Adsorption | [Mixing between repeats](adsorption/disordered_repeat_join/REPORT.md) | Path preservation improves the 0.45 mm early crossing and delays both midpoints by less than one minute | [Commands](adsorption/disordered_repeat_join/README.md) |
 | Adsorption | [Figure 7 retained-phenol balance](adsorption/figure7_retention/REPORT.md) | Frozen predictions retain 226–266 mg more than the observed windows, with most of the excess accruing after the experimental midpoints | [Commands](adsorption/figure7_retention/README.md) |
+| Adsorption | [Isolated versus slowly accessible carbon](adsorption/carbon_access/REPORT.md) | Some fixed-mass scenarios match the midpoints, and all miss the retained-mass comparison | [Commands](adsorption/carbon_access/README.md) |
 
 Filtration hydraulics is closed for now; adsorption remains research in
 progress. Earlier BGK numbers and later TRT results retain separate identities.
