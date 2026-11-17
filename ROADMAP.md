@@ -363,6 +363,13 @@ escape at 62.5 mL/min on N60. All checked cases stay below 5%, while the
 14.4% grid change in film conductance exceeds the 3% quantitative limit.
 Adsorption service time remains outside this clean-bed check.
 
+The [25 cm adsorption reruns](examples/adsorption/porosity_matched_column/REPORT.md)
+use that film estimate with the frozen particle model and carbon mass.
+Both flow rates show reduced initial leakage. At 62.5 mL/min, the
+predicted 5% crossing is about 7 minutes late. Both rates retain too
+little phenol, and crossing the N45 and N60 film and flow inputs does
+not change the comparison outcomes.
+
 ## 7. Select a reacting or non-isothermal showcase
 
 **Research direction; application and physical model not yet selected.**

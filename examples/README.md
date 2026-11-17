@@ -51,6 +51,7 @@ specific earlier measurements or assumptions.
 | Adsorption | [Early wall contact and film transfer](adsorption/disordered_early_bypass/REPORT.md) | Both wall-contact holdouts pass. The best possible allocation of the existing film conductance exceeds 5% escape at 62.5 mL/min | [Commands](adsorption/disordered_early_bypass/README.md) |
 | Adsorption | [Film conductance from the saved TRT flow](adsorption/disordered_film_conductance/REPORT.md) | The high-flow result meets the conductance threshold when transferred by carbon area and misses it when transferred by liquid volume | [Commands](adsorption/disordered_film_conductance/README.md) |
 | Adsorption | [Clean-wall transfer at 42.7% void fraction](adsorption/porosity_matched_film/REPORT.md) | Both scale-ups put high-flow clean-bed escape below 5% on both checked grids. Film conductance exceeds its grid-change limit | [Commands](adsorption/porosity_matched_film/README.md) |
+| Adsorption | [25 cm reruns with porosity-matched film](adsorption/porosity_matched_column/REPORT.md) | Less initial leakage at both flows. The high-flow 5% crossing and retained mass still miss the published comparison across the N45–N60 range | [Commands](adsorption/porosity_matched_column/README.md) |
 
 Filtration hydraulics is closed for now; adsorption remains research in
 progress. Earlier BGK numbers and later TRT results retain separate identities.

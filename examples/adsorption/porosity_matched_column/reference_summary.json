@@ -1,0 +1,973 @@
+{
+  "schema": "pore2process.porosity-matched-column.reference.v1",
+  "run": {
+    "path": "results/adsorption/porosity_matched_column/runs/20261117T135000Z-bdf612c5/summary.json",
+    "sha256": "c3cac5ebc8d10ddf2a59c1d7fe32da8cca923297041d5725ccbb0f82894468f2"
+  },
+  "frozen_predictions": {
+    "path": "results/adsorption/porosity_matched_column/runs/20261117T135000Z-bdf612c5/frozen.json",
+    "sha256": "0b07b3d30c7429ab823c541878e54346b73afebad7f1f34f445249543968681e"
+  },
+  "column_inputs": {
+    "path": "results/adsorption/porosity_matched_column/runs/20261117T135000Z-bdf612c5/plan.json",
+    "sha256": "b6d9d2d5ec8c801a04fa986881276ac4d434262f5213d5ccbf45561c8fb97a13"
+  },
+  "dense_packing": {
+    "path": "results/adsorption/porosity_matched_film/runs/20261117T122127Z-88cd4746/summary.json",
+    "sha256": "8dda79ca4ae150be1b708d30ed35840298929b45b4ecbad3a6f357d5de160597"
+  },
+  "archived_correlation_sha256": "8a22cc4817aed778218b7d794c5150c5ae0e6b55c5fc27bbce1acf0a9378c32a",
+  "primary": "film60_path60",
+  "cases": {
+    "q233": {
+      "parameters": {
+        "blocks": 22,
+        "liquid_volume_m3": 1.0144791727063988e-05,
+        "dry_mass_kg": 0.01758113788765188,
+        "flow_m3_s": 3.8833333333333336e-07,
+        "inlet_concentration_kg_m3": 0.15,
+        "particle_diameter_m": 0.0008,
+        "particle_density_kg_m3": 1291.4485165794067,
+        "diffusivity_m2_s": 1.846035489738998e-12,
+        "film_m_s": 3.188118722845837e-05,
+        "capacity_kg_kg": 0.1115,
+        "affinity_m3_kg": 139.0,
+        "t_end_s": 36000.0,
+        "startup_s": 24.0,
+        "terminal_sections": 4
+      },
+      "flow_mL_min": 23.3,
+      "sections": 180,
+      "Pe": 13291.348564923817,
+      "added_resistance_s_m": 2180223.153998044,
+      "variants": {
+        "film45_path45": {
+          "film_grid": 45,
+          "transport_grid": 45,
+          "film_m_s": 0.00012726268277083778,
+          "film_matched_clean_bed_conductance_m3_s": 6.520172027995027e-06,
+          "probe_directory": "results/adsorption/porosity_matched_film/runs/20261117T122127Z-88cd4746/tracer_N45_20us",
+          "access": {
+            "direct_fraction": 0.5,
+            "slow_ratio": 0.003591166551150154
+          }
+        },
+        "film45_path60": {
+          "film_grid": 45,
+          "transport_grid": 60,
+          "film_m_s": 0.00012726268277083778,
+          "film_matched_clean_bed_conductance_m3_s": 6.520172027995027e-06,
+          "probe_directory": "results/adsorption/porosity_matched_film/runs/20261117T122127Z-88cd4746/tracer_N60_20us",
+          "access": {
+            "direct_fraction": 0.5,
+            "slow_ratio": 0.003591166551150154
+          }
+        },
+        "film60_path45": {
+          "film_grid": 60,
+          "transport_grid": 45,
+          "film_m_s": 0.00010777993055062215,
+          "film_matched_clean_bed_conductance_m3_s": 5.525550016274129e-06,
+          "probe_directory": "results/adsorption/porosity_matched_film/runs/20261117T122127Z-88cd4746/tracer_N45_20us",
+          "access": {
+            "direct_fraction": 0.5,
+            "slow_ratio": 0.00423757003953129
+          }
+        },
+        "film60_path60": {
+          "film_grid": 60,
+          "transport_grid": 60,
+          "film_m_s": 0.00010777993055062215,
+          "film_matched_clean_bed_conductance_m3_s": 5.525550016274129e-06,
+          "probe_directory": "results/adsorption/porosity_matched_film/runs/20261117T122127Z-88cd4746/tracer_N60_20us",
+          "access": {
+            "direct_fraction": 0.5,
+            "slow_ratio": 0.00423757003953129
+          }
+        }
+      },
+      "baseline": {
+        "path": "results/adsorption/carbon_access_transfer/runs/20261117T092847Z-6bf8a9d8/q233_l25_f50_slow01_1.json",
+        "sha256": "0a68163335aa3716b1aca19c9a157dd6e2640af7dee71f796cdeaa40d65d104e"
+      }
+    },
+    "q625": {
+      "parameters": {
+        "blocks": 22,
+        "liquid_volume_m3": 1.0144791727063988e-05,
+        "dry_mass_kg": 0.01758113788765188,
+        "flow_m3_s": 1.0416666666666667e-06,
+        "inlet_concentration_kg_m3": 0.15,
+        "particle_diameter_m": 0.0008,
+        "particle_density_kg_m3": 1291.4485165794067,
+        "diffusivity_m2_s": 1.846035489738998e-12,
+        "film_m_s": 5.561091682497927e-05,
+        "capacity_kg_kg": 0.1115,
+        "affinity_m3_kg": 139.0,
+        "t_end_s": 36000.0,
+        "startup_s": 24.0,
+        "terminal_sections": 4
+      },
+      "flow_mL_min": 62.5,
+      "sections": 180,
+      "Pe": 35652.75902608321,
+      "added_resistance_s_m": 2180223.153998044,
+      "variants": {
+        "film45_path45": {
+          "film_grid": 45,
+          "transport_grid": 45,
+          "film_m_s": 0.00021167732558455531,
+          "film_matched_clean_bed_conductance_m3_s": 1.0829626623477845e-05,
+          "probe_directory": "results/adsorption/porosity_matched_film/runs/20261117T122127Z-88cd4746/tracer_N45_20us",
+          "access": {
+            "direct_fraction": 0.5,
+            "slow_ratio": 0.002162144367523141
+          }
+        },
+        "film45_path60": {
+          "film_grid": 45,
+          "transport_grid": 60,
+          "film_m_s": 0.00021167732558455531,
+          "film_matched_clean_bed_conductance_m3_s": 1.0829626623477845e-05,
+          "probe_directory": "results/adsorption/porosity_matched_film/runs/20261117T122127Z-88cd4746/tracer_N60_20us",
+          "access": {
+            "direct_fraction": 0.5,
+            "slow_ratio": 0.002162144367523141
+          }
+        },
+        "film60_path45": {
+          "film_grid": 60,
+          "transport_grid": 45,
+          "film_m_s": 0.00018110539132573433,
+          "film_matched_clean_bed_conductance_m3_s": 9.268901436087548e-06,
+          "probe_directory": "results/adsorption/porosity_matched_film/runs/20261117T122127Z-88cd4746/tracer_N45_20us",
+          "access": {
+            "direct_fraction": 0.5,
+            "slow_ratio": 0.00252620835393447
+          }
+        },
+        "film60_path60": {
+          "film_grid": 60,
+          "transport_grid": 60,
+          "film_m_s": 0.00018110539132573433,
+          "film_matched_clean_bed_conductance_m3_s": 9.268901436087548e-06,
+          "probe_directory": "results/adsorption/porosity_matched_film/runs/20261117T122127Z-88cd4746/tracer_N60_20us",
+          "access": {
+            "direct_fraction": 0.5,
+            "slow_ratio": 0.00252620835393447
+          }
+        }
+      },
+      "baseline": {
+        "path": "results/adsorption/carbon_access_transfer/runs/20261117T092847Z-6bf8a9d8/q625_l25_f50_slow01_1.json",
+        "sha256": "7fe2dd095af6cd6110f9cab4cdb92b1088688ba10b19a4f0393d3918d7bddb77"
+      }
+    }
+  },
+  "comparisons": {
+    "f4_q233_l25": {
+      "flow": "q233",
+      "figure": 4,
+      "observed": {
+        "marker_count": 34,
+        "end_s": 26954.198473282442,
+        "last_outlet_fraction": 0.8581632653061225,
+        "t05_s": 7544.529262086514,
+        "t50_s": 16463.740458015265,
+        "retained_kg_kg": 0.05712720478210673,
+        "reading_retention_kg_kg": [
+          0.05647622794482404,
+          0.057768077851874496
+        ],
+        "reading_t05_s": [
+          7320.6106870229005,
+          7768.447837150127
+        ],
+        "reading_t50_s": [
+          16272.900763358777,
+          16654.580152671755
+        ],
+        "common_dose_retained_kg_kg": 0.05712720478210673
+      },
+      "variants": {
+        "film45_path45": {
+          "t05_s": {
+            "predicted_s": 8994.416566425458,
+            "relative_error": 0.19217730543177236,
+            "passed": true
+          },
+          "t50_s": {
+            "predicted_s": 14108.640071415544,
+            "relative_error": 0.14304771097464397,
+            "passed": true
+          },
+          "rmse": 0.06284608414246318,
+          "retained_kg_kg": 0.05392214689689683,
+          "retained_in_reading_range": false,
+          "common_dose_retained_kg_kg": 0.05392214689689683,
+          "slow_adsorbed_kg_kg": 0.0036276098364765507,
+          "outlet_after_three_liquid_residence_times": 6.000266916477903e-06,
+          "curve_screen_passed": true,
+          "normalized_mass_residual": 1.052663625741768e-12,
+          "normalized_interface_flux_mismatch": 1.716379751158436e-12
+        },
+        "film45_path60": {
+          "t05_s": {
+            "predicted_s": 8885.493111946627,
+            "relative_error": 0.1777398964570065,
+            "passed": true
+          },
+          "t50_s": {
+            "predicted_s": 14127.471977179366,
+            "relative_error": 0.14190386970650415,
+            "passed": true
+          },
+          "rmse": 0.06197199470452505,
+          "retained_kg_kg": 0.05390173179229406,
+          "retained_in_reading_range": false,
+          "common_dose_retained_kg_kg": 0.05390173179229406,
+          "slow_adsorbed_kg_kg": 0.003614249727630259,
+          "outlet_after_three_liquid_residence_times": 1.0774921090847423e-05,
+          "curve_screen_passed": true,
+          "normalized_mass_residual": 9.651829354296328e-13,
+          "normalized_interface_flux_mismatch": 2.077468174398502e-12
+        },
+        "film60_path45": {
+          "t05_s": {
+            "predicted_s": 8722.326486623075,
+            "relative_error": 0.15611275185256934,
+            "passed": true
+          },
+          "t50_s": {
+            "predicted_s": 14169.91219051013,
+            "relative_error": 0.1393260707282591,
+            "passed": true
+          },
+          "rmse": 0.06034657631387334,
+          "retained_kg_kg": 0.05390181952588601,
+          "retained_in_reading_range": false,
+          "common_dose_retained_kg_kg": 0.05390181952588601,
+          "slow_adsorbed_kg_kg": 0.003625552995669371,
+          "outlet_after_three_liquid_residence_times": 2.4229344707638713e-05,
+          "curve_screen_passed": true,
+          "normalized_mass_residual": 1.0117152175105556e-12,
+          "normalized_interface_flux_mismatch": 1.7576509021439718e-12
+        },
+        "film60_path60": {
+          "t05_s": {
+            "predicted_s": 8609.949172590634,
+            "relative_error": 0.1412175463163976,
+            "passed": true
+          },
+          "t50_s": {
+            "predicted_s": 14190.428011037768,
+            "relative_error": 0.13807994925422618,
+            "passed": true
+          },
+          "rmse": 0.05950043986530674,
+          "retained_kg_kg": 0.05388093493913061,
+          "retained_in_reading_range": false,
+          "common_dose_retained_kg_kg": 0.05388093493913061,
+          "slow_adsorbed_kg_kg": 0.0036121756856859325,
+          "outlet_after_three_liquid_residence_times": 3.851526837068589e-05,
+          "curve_screen_passed": true,
+          "normalized_mass_residual": 9.207187547745285e-13,
+          "normalized_interface_flux_mismatch": 2.0719963148474723e-12
+        },
+        "archived_correlation": {
+          "t05_s": {
+            "predicted_s": 2283.9859964914463,
+            "relative_error": 0.697265937058638,
+            "passed": false
+          },
+          "t50_s": {
+            "predicted_s": 15677.092531079983,
+            "relative_error": 0.047780632168087145,
+            "passed": true
+          },
+          "rmse": 0.057912600012012136,
+          "retained_kg_kg": 0.05321098145306774,
+          "retained_in_reading_range": false,
+          "common_dose_retained_kg_kg": 0.05321098145306774,
+          "slow_adsorbed_kg_kg": 0.0034713926386145556,
+          "outlet_after_three_liquid_residence_times": 0.036443799283796416,
+          "curve_screen_passed": false,
+          "normalized_mass_residual": 3.61090508947962e-13,
+          "normalized_interface_flux_mismatch": 2.549324835392579e-12
+        }
+      },
+      "grid_sensitivity": {
+        "t05_s": {
+          "paired_N45_minus_N60": 384.4673938348242,
+          "film_N45_minus_N60_fixed_transport": {
+            "45": 272.0900798023831,
+            "60": 275.54393935599364
+          },
+          "transport_N45_minus_N60_fixed_film": {
+            "45": 108.92345447883054,
+            "60": 112.37731403244106
+          },
+          "range_across_four_variants": [
+            8609.949172590634,
+            8994.416566425458
+          ]
+        },
+        "t50_s": {
+          "paired_N45_minus_N60": -81.78793962222335,
+          "film_N45_minus_N60_fixed_transport": {
+            "45": -61.27211909458492,
+            "60": -62.9560338584015
+          },
+          "transport_N45_minus_N60_fixed_film": {
+            "45": -18.83190576382185,
+            "60": -20.515820527638425
+          },
+          "range_across_four_variants": [
+            14108.640071415544,
+            14190.428011037768
+          ]
+        },
+        "retained_kg_kg": {
+          "paired_N45_minus_N60": 4.121195776621983e-05,
+          "film_N45_minus_N60_fixed_transport": {
+            "45": 2.0327371010819828e-05,
+            "60": 2.079685316344615e-05
+          },
+          "transport_N45_minus_N60_fixed_film": {
+            "45": 2.041510460277368e-05,
+            "60": 2.0884586755400003e-05
+          },
+          "range_across_four_variants": [
+            0.05388093493913061,
+            0.05392214689689683
+          ]
+        },
+        "common_dose_retained_kg_kg": {
+          "paired_N45_minus_N60": 4.121195776621983e-05,
+          "film_N45_minus_N60_fixed_transport": {
+            "45": 2.0327371010819828e-05,
+            "60": 2.079685316344615e-05
+          },
+          "transport_N45_minus_N60_fixed_film": {
+            "45": 2.041510460277368e-05,
+            "60": 2.0884586755400003e-05
+          },
+          "range_across_four_variants": [
+            0.05388093493913061,
+            0.05392214689689683
+          ]
+        },
+        "rmse": {
+          "paired_N45_minus_N60": 0.0033456442771564385,
+          "film_N45_minus_N60_fixed_transport": {
+            "45": 0.0024995078285898337,
+            "60": 0.0024715548392183137
+          },
+          "transport_N45_minus_N60_fixed_film": {
+            "45": 0.0008740894379381248,
+            "60": 0.0008461364485666048
+          },
+          "range_across_four_variants": [
+            0.05950043986530674,
+            0.06284608414246318
+          ]
+        }
+      }
+    },
+    "f4_q625_l25": {
+      "flow": "q625",
+      "figure": 4,
+      "observed": {
+        "marker_count": 22,
+        "end_s": 16832.06106870229,
+        "last_outlet_fraction": 0.8785714285714287,
+        "t05_s": 969.4656488549618,
+        "t50_s": 4297.709923664122,
+        "retained_kg_kg": 0.05566652461328238,
+        "reading_retention_kg_kg": [
+          0.054275061390987846,
+          0.05706131073282419
+        ],
+        "reading_t05_s": [
+          829.0076335877862,
+          1109.9236641221373
+        ],
+        "reading_t50_s": [
+          4158.608990670059,
+          4436.810856658185
+        ],
+        "common_dose_retained_kg_kg": 0.04616110946879257
+      },
+      "variants": {
+        "film45_path45": {
+          "t05_s": {
+            "predicted_s": 1523.169281753169,
+            "relative_error": 0.5711431173989381,
+            "passed": false
+          },
+          "t50_s": {
+            "predicted_s": 3526.1834334262135,
+            "relative_error": 0.1795203733946109,
+            "passed": true
+          },
+          "rmse": 0.06048983267270405,
+          "retained_kg_kg": 0.050537936911304655,
+          "retained_in_reading_range": false,
+          "common_dose_retained_kg_kg": 0.042899382202260486,
+          "slow_adsorbed_kg_kg": 0.0027439287437902794,
+          "outlet_after_three_liquid_residence_times": 0.0004299870887599263,
+          "curve_screen_passed": false,
+          "normalized_mass_residual": 5.461680490586533e-13,
+          "normalized_interface_flux_mismatch": 2.04383760163644e-12
+        },
+        "film45_path60": {
+          "t05_s": {
+            "predicted_s": 1486.4613788048746,
+            "relative_error": 0.5332790600270754,
+            "passed": false
+          },
+          "t50_s": {
+            "predicted_s": 3532.893370100507,
+            "relative_error": 0.1779590915041448,
+            "passed": true
+          },
+          "rmse": 0.05942204311105476,
+          "retained_kg_kg": 0.05052524587451911,
+          "retained_in_reading_range": false,
+          "common_dose_retained_kg_kg": 0.042882828808469636,
+          "slow_adsorbed_kg_kg": 0.002736648261129829,
+          "outlet_after_three_liquid_residence_times": 0.0006155037728218997,
+          "curve_screen_passed": false,
+          "normalized_mass_residual": 5.060766620583005e-13,
+          "normalized_interface_flux_mismatch": 1.8109925916433784e-12
+        },
+        "film60_path45": {
+          "t05_s": {
+            "predicted_s": 1427.535597090283,
+            "relative_error": 0.47249734817974076,
+            "passed": false
+          },
+          "t50_s": {
+            "predicted_s": 3546.438030858988,
+            "relative_error": 0.17480749193156753,
+            "passed": true
+          },
+          "rmse": 0.057629224915600435,
+          "retained_kg_kg": 0.05052371658278658,
+          "retained_in_reading_range": false,
+          "common_dose_retained_kg_kg": 0.04287212185166452,
+          "slow_adsorbed_kg_kg": 0.0027430453433597035,
+          "outlet_after_three_liquid_residence_times": 0.0010296540477218495,
+          "curve_screen_passed": false,
+          "normalized_mass_residual": 5.534153382471787e-13,
+          "normalized_interface_flux_mismatch": 2.0527236475799977e-12
+        },
+        "film60_path60": {
+          "t05_s": {
+            "predicted_s": 1389.6621949242844,
+            "relative_error": 0.43343108295339583,
+            "passed": false
+          },
+          "t50_s": {
+            "predicted_s": 3553.6947276553046,
+            "relative_error": 0.1731189887693695,
+            "passed": true
+          },
+          "rmse": 0.05660164762198447,
+          "retained_kg_kg": 0.05051076770798668,
+          "retained_in_reading_range": false,
+          "common_dose_retained_kg_kg": 0.04285499597720092,
+          "slow_adsorbed_kg_kg": 0.002735761809634582,
+          "outlet_after_three_liquid_residence_times": 0.0013712877905606173,
+          "curve_screen_passed": false,
+          "normalized_mass_residual": 4.855683756311969e-13,
+          "normalized_interface_flux_mismatch": 1.847666425592119e-12
+        },
+        "archived_correlation": {
+          "t05_s": {
+            "predicted_s": 9.267170972841708,
+            "relative_error": 0.9904409496264389,
+            "passed": false
+          },
+          "t50_s": {
+            "predicted_s": 4072.6778701799044,
+            "relative_error": 0.05236092185867225,
+            "passed": true
+          },
+          "rmse": 0.04946619404705474,
+          "retained_kg_kg": 0.05004087242087623,
+          "retained_in_reading_range": false,
+          "common_dose_retained_kg_kg": 0.04200320194489619,
+          "slow_adsorbed_kg_kg": 0.0026426443441732337,
+          "outlet_after_three_liquid_residence_times": 0.12239382328099072,
+          "curve_screen_passed": false,
+          "normalized_mass_residual": 4.729241689618548e-13,
+          "normalized_interface_flux_mismatch": 1.461812832760834e-12
+        }
+      },
+      "grid_sensitivity": {
+        "t05_s": {
+          "paired_N45_minus_N60": 133.50708682888444,
+          "film_N45_minus_N60_fixed_transport": {
+            "45": 95.6336846628858,
+            "60": 96.79918388059014
+          },
+          "transport_N45_minus_N60_fixed_film": {
+            "45": 36.707902948294304,
+            "60": 37.87340216599864
+          },
+          "range_across_four_variants": [
+            1389.6621949242844,
+            1523.169281753169
+          ]
+        },
+        "t50_s": {
+          "paired_N45_minus_N60": -27.511294229091163,
+          "film_N45_minus_N60_fixed_transport": {
+            "45": -20.254597432774517,
+            "60": -20.801357554797505
+          },
+          "transport_N45_minus_N60_fixed_film": {
+            "45": -6.709936674293658,
+            "60": -7.256696796316646
+          },
+          "range_across_four_variants": [
+            3526.1834334262135,
+            3553.6947276553046
+          ]
+        },
+        "retained_kg_kg": {
+          "paired_N45_minus_N60": 2.7169203317974067e-05,
+          "film_N45_minus_N60_fixed_transport": {
+            "45": 1.4220328518076142e-05,
+            "60": 1.4478166532432002e-05
+          },
+          "transport_N45_minus_N60_fixed_film": {
+            "45": 1.2691036785542065e-05,
+            "60": 1.2948874799897925e-05
+          },
+          "range_across_four_variants": [
+            0.05051076770798668,
+            0.050537936911304655
+          ]
+        },
+        "common_dose_retained_kg_kg": {
+          "paired_N45_minus_N60": 4.438622505956863e-05,
+          "film_N45_minus_N60_fixed_transport": {
+            "45": 2.7260350595963156e-05,
+            "60": 2.7832831268718994e-05
+          },
+          "transport_N45_minus_N60_fixed_film": {
+            "45": 1.6553393790849635e-05,
+            "60": 1.7125874463605473e-05
+          },
+          "range_across_four_variants": [
+            0.04285499597720092,
+            0.042899382202260486
+          ]
+        },
+        "rmse": {
+          "paired_N45_minus_N60": 0.0038881850507195836,
+          "film_N45_minus_N60_fixed_transport": {
+            "45": 0.002860607757103617,
+            "60": 0.0028203954890702945
+          },
+          "transport_N45_minus_N60_fixed_film": {
+            "45": 0.0010677895616492891,
+            "60": 0.0010275772936159666
+          },
+          "range_across_four_variants": [
+            0.05660164762198447,
+            0.06048983267270405
+          ]
+        }
+      }
+    },
+    "f5_q233_l25": {
+      "flow": "q233",
+      "figure": 5,
+      "observed": {
+        "marker_count": 32,
+        "end_s": 27005.736137667303,
+        "last_outlet_fraction": 0.8605200945626478,
+        "t05_s": 7502.613129381772,
+        "t50_s": 16477.465173449877,
+        "retained_kg_kg": 0.05717395367530104,
+        "reading_retention_kg_kg": [
+          0.05646676894272825,
+          0.05787790350947833
+        ],
+        "reading_t05_s": [
+          7278.266411727214,
+          7726.959847036329
+        ],
+        "reading_t50_s": [
+          16272.056815077847,
+          16682.873531821904
+        ],
+        "common_dose_retained_kg_kg": 0.05715001471021124
+      },
+      "variants": {
+        "film45_path45": {
+          "t05_s": {
+            "predicted_s": 8994.416566425458,
+            "relative_error": 0.1988378464033389,
+            "passed": true
+          },
+          "t50_s": {
+            "predicted_s": 14108.640071415544,
+            "relative_error": 0.1437614995449189,
+            "passed": true
+          },
+          "rmse": 0.06464638268925141,
+          "retained_kg_kg": 0.05394826180849273,
+          "retained_in_reading_range": false,
+          "common_dose_retained_kg_kg": 0.05392214689689683,
+          "slow_adsorbed_kg_kg": 0.0036371096984362423,
+          "outlet_after_three_liquid_residence_times": 6.000266916477903e-06,
+          "curve_screen_passed": true,
+          "normalized_mass_residual": 1.052663625741768e-12,
+          "normalized_interface_flux_mismatch": 1.716379751158436e-12
+        },
+        "film45_path60": {
+          "t05_s": {
+            "predicted_s": 8885.493111946627,
+            "relative_error": 0.1843197774851557,
+            "passed": true
+          },
+          "t50_s": {
+            "predicted_s": 14127.471977179366,
+            "relative_error": 0.14261861102623064,
+            "passed": true
+          },
+          "rmse": 0.06375200810047554,
+          "retained_kg_kg": 0.053927871975583484,
+          "retained_in_reading_range": false,
+          "common_dose_retained_kg_kg": 0.05390173179229406,
+          "slow_adsorbed_kg_kg": 0.003623742133709647,
+          "outlet_after_three_liquid_residence_times": 1.0774921090847423e-05,
+          "curve_screen_passed": true,
+          "normalized_mass_residual": 9.651829354296328e-13,
+          "normalized_interface_flux_mismatch": 2.077468174398502e-12
+        },
+        "film60_path45": {
+          "t05_s": {
+            "predicted_s": 8722.326486623075,
+            "relative_error": 0.1625718048108673,
+            "passed": true
+          },
+          "t50_s": {
+            "predicted_s": 14169.91219051013,
+            "relative_error": 0.14004295919604826,
+            "passed": true
+          },
+          "rmse": 0.062072850464949446,
+          "retained_kg_kg": 0.05392802170703563,
+          "retained_in_reading_range": false,
+          "common_dose_retained_kg_kg": 0.05390181952588601,
+          "slow_adsorbed_kg_kg": 0.0036350446606265795,
+          "outlet_after_three_liquid_residence_times": 2.4229344707638713e-05,
+          "curve_screen_passed": true,
+          "normalized_mass_residual": 1.0117152175105556e-12,
+          "normalized_interface_flux_mismatch": 1.7576509021439718e-12
+        },
+        "film60_path60": {
+          "t05_s": {
+            "predicted_s": 8609.949172590634,
+            "relative_error": 0.14759338168088498,
+            "passed": true
+          },
+          "t50_s": {
+            "predicted_s": 14190.428011037768,
+            "relative_error": 0.13879787566459012,
+            "passed": true
+          },
+          "rmse": 0.06120667782149213,
+          "retained_kg_kg": 0.053907164880867504,
+          "retained_in_reading_range": false,
+          "common_dose_retained_kg_kg": 0.05388093493913061,
+          "slow_adsorbed_kg_kg": 0.003621659817974634,
+          "outlet_after_three_liquid_residence_times": 3.851526837068589e-05,
+          "curve_screen_passed": true,
+          "normalized_mass_residual": 9.207187547745285e-13,
+          "normalized_interface_flux_mismatch": 2.0719963148474723e-12
+        },
+        "archived_correlation": {
+          "t05_s": {
+            "predicted_s": 2283.9859964914463,
+            "relative_error": 0.6955746008618132,
+            "passed": false
+          },
+          "t50_s": {
+            "predicted_s": 15677.092531079983,
+            "relative_error": 0.048573772357870526,
+            "passed": true
+          },
+          "rmse": 0.05606127282118742,
+          "retained_kg_kg": 0.05323979808704489,
+          "retained_in_reading_range": false,
+          "common_dose_retained_kg_kg": 0.05321098145306774,
+          "slow_adsorbed_kg_kg": 0.003480656855002076,
+          "outlet_after_three_liquid_residence_times": 0.036443799283796416,
+          "curve_screen_passed": false,
+          "normalized_mass_residual": 3.61090508947962e-13,
+          "normalized_interface_flux_mismatch": 2.549324835392579e-12
+        }
+      },
+      "grid_sensitivity": {
+        "t05_s": {
+          "paired_N45_minus_N60": 384.4673938348242,
+          "film_N45_minus_N60_fixed_transport": {
+            "45": 272.0900798023831,
+            "60": 275.54393935599364
+          },
+          "transport_N45_minus_N60_fixed_film": {
+            "45": 108.92345447883054,
+            "60": 112.37731403244106
+          },
+          "range_across_four_variants": [
+            8609.949172590634,
+            8994.416566425458
+          ]
+        },
+        "t50_s": {
+          "paired_N45_minus_N60": -81.78793962222335,
+          "film_N45_minus_N60_fixed_transport": {
+            "45": -61.27211909458492,
+            "60": -62.9560338584015
+          },
+          "transport_N45_minus_N60_fixed_film": {
+            "45": -18.83190576382185,
+            "60": -20.515820527638425
+          },
+          "range_across_four_variants": [
+            14108.640071415544,
+            14190.428011037768
+          ]
+        },
+        "retained_kg_kg": {
+          "paired_N45_minus_N60": 4.1096927625224045e-05,
+          "film_N45_minus_N60_fixed_transport": {
+            "45": 2.0240101457097426e-05,
+            "60": 2.0707094715979868e-05
+          },
+          "transport_N45_minus_N60_fixed_film": {
+            "45": 2.0389832909244177e-05,
+            "60": 2.085682616812662e-05
+          },
+          "range_across_four_variants": [
+            0.053907164880867504,
+            0.05394826180849273
+          ]
+        },
+        "common_dose_retained_kg_kg": {
+          "paired_N45_minus_N60": 4.121195776621983e-05,
+          "film_N45_minus_N60_fixed_transport": {
+            "45": 2.0327371010819828e-05,
+            "60": 2.079685316344615e-05
+          },
+          "transport_N45_minus_N60_fixed_film": {
+            "45": 2.041510460277368e-05,
+            "60": 2.0884586755400003e-05
+          },
+          "range_across_four_variants": [
+            0.05388093493913061,
+            0.05392214689689683
+          ]
+        },
+        "rmse": {
+          "paired_N45_minus_N60": 0.003439704867759276,
+          "film_N45_minus_N60_fixed_transport": {
+            "45": 0.0025735322243019623,
+            "60": 0.002545330278983411
+          },
+          "transport_N45_minus_N60_fixed_film": {
+            "45": 0.0008943745887758647,
+            "60": 0.0008661726434573136
+          },
+          "range_across_four_variants": [
+            0.06120667782149213,
+            0.06464638268925141
+          ]
+        }
+      }
+    }
+  },
+  "common_dose_kg_kg": 0.08930491707089393,
+  "observed_source": {
+    "experimental_pixels": "ee892302185179bd0d4a750309ef6c619df60306790f363ad1f336accf75975c",
+    "extraction": "62547703394a2b194eed11470422487e16c006365a3cb7d895a397657b689388"
+  },
+  "numerical_qualification": {
+    "q233": {
+      "film45_path45": {
+        "selected": "q233_film45_path45_1.json",
+        "refinement": [
+          {
+            "errors": {
+              "max_after_startup": 0.0005345493158464276,
+              "max_startup": 2.419354405697529e-07,
+              "t05_relative": 0.0011095166222921948,
+              "t50_relative": 0.0003166796812417161
+            },
+            "passed": true,
+            "startup": {
+              "relative": {},
+              "passed": true
+            }
+          }
+        ],
+        "passed": true
+      },
+      "film45_path60": {
+        "selected": "q233_film45_path60_1.json",
+        "refinement": [
+          {
+            "errors": {
+              "max_after_startup": 0.0005483380968626661,
+              "max_startup": 4.431463245216782e-07,
+              "t05_relative": 0.00116966863157697,
+              "t50_relative": 0.00033518248193242783
+            },
+            "passed": true,
+            "startup": {
+              "relative": {},
+              "passed": true
+            }
+          }
+        ],
+        "passed": true
+      },
+      "film60_path45": {
+        "selected": "q233_film60_path45_1.json",
+        "refinement": [
+          {
+            "errors": {
+              "max_after_startup": 0.00047183438281711565,
+              "max_startup": 6.165055398472589e-07,
+              "t05_relative": 0.0010442320960150075,
+              "t50_relative": 0.00031774900056813493
+            },
+            "passed": true,
+            "startup": {
+              "relative": {},
+              "passed": true
+            }
+          }
+        ],
+        "passed": true
+      },
+      "film60_path60": {
+        "selected": "q233_film60_path60_1.json",
+        "refinement": [
+          {
+            "errors": {
+              "max_after_startup": 0.00046950334775308633,
+              "max_startup": 1.0128142414388844e-06,
+              "t05_relative": 0.00109503943894107,
+              "t50_relative": 0.0003331300281612659
+            },
+            "passed": true,
+            "startup": {
+              "relative": {},
+              "passed": true
+            }
+          }
+        ],
+        "passed": true
+      }
+    },
+    "q625": {
+      "film45_path45": {
+        "selected": "q625_film45_path45_1.json",
+        "refinement": [
+          {
+            "errors": {
+              "max_after_startup": 0.0016323338140308286,
+              "max_startup": 7.37098820433768e-05,
+              "t05_relative": 0.005116528649266927,
+              "t50_relative": 0.0017356743973750977
+            },
+            "passed": true,
+            "startup": {
+              "relative": {},
+              "passed": true
+            }
+          }
+        ],
+        "passed": true
+      },
+      "film45_path60": {
+        "selected": "q625_film45_path60_1.json",
+        "refinement": [
+          {
+            "errors": {
+              "max_after_startup": 0.0016136263269838635,
+              "max_startup": 9.652674899222663e-05,
+              "t05_relative": 0.005361013610094778,
+              "t50_relative": 0.0017853771452489564
+            },
+            "passed": true,
+            "startup": {
+              "relative": {},
+              "passed": true
+            }
+          }
+        ],
+        "passed": true
+      },
+      "film60_path45": {
+        "selected": "q625_film60_path45_1.json",
+        "refinement": [
+          {
+            "errors": {
+              "max_after_startup": 0.0015083734386311942,
+              "max_startup": 0.00013525783464566168,
+              "t05_relative": 0.005122324603090034,
+              "t50_relative": 0.001759344861129275
+            },
+            "passed": true,
+            "startup": {
+              "relative": {},
+              "passed": true
+            }
+          }
+        ],
+        "passed": true
+      },
+      "film60_path60": {
+        "selected": "q625_film60_path60_1.json",
+        "refinement": [
+          {
+            "errors": {
+              "max_after_startup": 0.0014900382948426771,
+              "max_startup": 0.00016628099780441308,
+              "t05_relative": 0.005361947068200701,
+              "t50_relative": 0.0018019085142721991
+            },
+            "passed": true,
+            "startup": {
+              "relative": {},
+              "passed": true
+            }
+          }
+        ],
+        "passed": true
+      }
+    }
+  },
+  "verified_sources": 30,
+  "verified_artifacts": 35,
+  "figure_parameters_fitted": 0,
+  "versions": {
+    "python": "3.12.9",
+    "julia": "1.11.6",
+    "numpy": "2.5.4",
+    "panel": "1.10.0",
+    "pyvista": "0.49.2",
+    "vtk": "9.7.2",
+    "matplotlib": "3.11.2",
+    "juliacall": "0.9.37",
+    "PythonCall": "0.9.37"
+  }
+}

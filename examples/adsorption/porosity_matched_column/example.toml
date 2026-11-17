@@ -1,0 +1,17 @@
+schema_version = 1
+id = "adsorption/porosity_matched_column"
+title = "Unfitted 25 cm phenol column with porosity-matched film transfer"
+area = "adsorption"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["adsorption/porosity_matched_film", "adsorption/carbon_access_transfer"]
+run_module = "examples.adsorption.porosity_matched_column.run"
+check_module = "examples.adsorption.porosity_matched_column.run"
+reference_files = ["reference_summary.json"]
+protocol_files = ["protocol.md"]
+
+[validation]
+numerical = "passed"
+literature = "mixed"
+scope = "All column discretizations pass. N45 and N60 are a sensitivity range for the pore-scale inputs. The low-flow curve passes the timing and shape screen, the high-flow early crossing fails, and retention remains low at both flows."
