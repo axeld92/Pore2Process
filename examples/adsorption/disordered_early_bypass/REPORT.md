@@ -53,13 +53,13 @@ trajectory comparison extends through eight sections.
 ![Cumulative percentage of inlet dose escaping the two synthetic beds](figures/early_escape.png)
 
 For a liquid path through the staged model, a section with conductance-to-flow
-ratio (a) transmits a fraction (1/(1+a)). The overall escape averages the
+ratio $a$ transmits a fraction $1/(1+a)$. The overall escape averages the
 product of these fractions over liquid paths. Jensen's inequality for the
-exponential and then for (log(1+a)) gives the minimum escape
-((1+G/(NQ))^{-N}), where (G) is total film conductance, (Q) is liquid
-flow, and (N=180) is the number of sections. The flow-proportional numerical
-allocation attains this bound. At 62.5 mL/min, (G/Q=2.748) and the 5%
-target requires (G/Q=3.021). This means at least **9.94% more conductance**
+exponential and then for $\log(1+a)$ gives the minimum escape
+$(1+G/(NQ))^{-N}$, where $G$ is total film conductance, $Q$ is liquid
+flow, and $N=180$ is the number of sections. The flow-proportional numerical
+allocation attains this bound. At 62.5 mL/min, $G/Q=2.748$ and the 5%
+target requires $G/Q=3.021$. This means at least **9.94% more conductance**
 under the favorable allocation in the current staged model. It is a necessary
 change for that model, even before carbon loading or uneven allocation reduces
 uptake.

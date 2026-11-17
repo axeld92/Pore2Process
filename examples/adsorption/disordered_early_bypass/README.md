@@ -20,6 +20,6 @@ uv run pytest -q tests/adsorption/test_disordered_early_bypass.py
 
 Set `bypass_summary` to the final path printed by the runner. Replay checks
 hashes, recalculates the held-out scores and compares the archived film pulses
-with the analytical lower bound. The run writes weights and pulse data to
+with the analytical lower bound. The run writes frozen pulse data to
 `results/adsorption/disordered_early_bypass/`. The plot command reproduces
 the report figure in the example's `figures/` directory.
