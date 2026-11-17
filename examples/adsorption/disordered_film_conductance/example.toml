@@ -1,0 +1,18 @@
+schema_version = 1
+id = "adsorption/disordered_film_conductance"
+title = "Independent liquid-film conductance from the N160 flow"
+area = "adsorption"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["adsorption/disordered_early_bypass"]
+run_module = "examples.adsorption.disordered_film_conductance.run"
+check_module = "examples.adsorption.disordered_film_conductance.run"
+reference_files = ["reference_summary.json"]
+protocol_files = ["protocol.md"]
+
+[validation]
+numerical = "passed"
+inert_transport = "passed"
+literature = "not_assessed"
+scope = "Clean liquid-film coefficients on synthetic N160 geometry. Scale-up to the fixed 25 cm inventory compares exposed carbon area and liquid volume transfers."

@@ -349,6 +349,13 @@ best allocation of the existing film conductance still leaves 6.54% escape.
 The adsorption rerun was therefore held. A film conductance estimate derived
 independently of the breakthrough curves would test the limiting assumption.
 
+The [independent liquid-film estimate](examples/adsorption/disordered_film_conductance/REPORT.md)
+uses wall uptake and liquid exposure time in the saved N160 TRT flow.
+Scaling by fixed carbon area supports more than the required conductance
+increase at 62.5 mL/min. Scaling by liquid volume falls short. The two
+packings have different void fractions, so the estimate identifies which
+scale-up assumption needs testing before choosing a replacement film coefficient.
+
 ## 7. Select a reacting or non-isothermal showcase
 
 **Research direction; application and physical model not yet selected.**
