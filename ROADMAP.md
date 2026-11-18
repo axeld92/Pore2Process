@@ -379,7 +379,19 @@ weight selected on the two shortest beds passes the timing and curve-shape
 screens at all three held-out conditions. High-flow retention passes.
 Low-flow retention remains too high, and the confined handoff remains
 grid-sensitive. The original isotherm measurements near the column liquid
-concentration would help constrain the next independent check.
+concentration would constrain the balance between capacity and uptake rate.
+
+The [Figure 7 equilibrium transfer](examples/adsorption/figure7_equilibrium/REPORT.md)
+applies four batch-supported cases to both particle sizes with the same
+carbon mass and common access assumption. All predict first breakthrough
+in about five seconds despite the different later uptake. With full
+access, the clean-bed model for 0.80 mm still predicts 8.2% escape even
+when the film conductance is allocated in proportion to flow. An
+independent clean-bed film and contact check at the Figure 7 conditions
+is needed for a predictive service-time comparison. Combining the
+published crossings with the existing synthetic DWSIM pump calculations
+gives about 14 times as much usable water and 3.10 times the bed-friction
+energy per volume for the smaller particles at the tested flow.
 
 ## 7. Select a reacting or non-isothermal showcase
 

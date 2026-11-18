@@ -50,6 +50,64 @@ unavailable in the sources inspected. The 2009 reference prints volume
 41 and the journal indexes the title under volume 40. Neither equation
 was refitted for the column. [Journal author index](https://bcc.bas.bg/BCC_Volumes/Volume_40_Number_4_2008/Volume_40_Number_4_2008_PDF/Index-vol40.pdf)
 
+### Capacity sensitivity using the reported GAC4 plateau
+
+Pasupulety et al. (2019, DOI 10.34049/bcc.51.3.5070) report sample GAC4
+with a ZnCl₂-to-dry-stone mass ratio of 0.5 and carbonization at 700 °C
+for 3 h. Its BET area of 951 m²/g, total pore volume of 0.456 cm³/g and
+micropore volume of 0.355 cm³/g match Alhamed (2009) Table 1. Both papers
+cite Alhamed (2008) for the preparation or characterization. The
+independence of the carbon batches is unconfirmed.
+[Pasupulety et al., experimental section and Table 1](https://bcc.bas.bg/BCC_Volumes/Volume_51_Number_3_2019/BCC-51-3-2019.pdf)
+
+Table 2 gives a fitted Langmuir phenol capacity of **103 mg/g** for GAC4.
+The 1.50 mm phenol baths used 0.1 g of carbon in 25 mL with initial
+concentrations of 10–150 mg/L. This supplies at most 37.5 mg phenol per g
+carbon. The 103 mg/g plateau is therefore an extrapolation of the fit.
+The paper reports 25 °C and 24 and 48 h of shaking for the control.
+The published tables supply the capacity. The paired equilibrium
+concentrations and loadings, phenol affinity coefficient, and fit
+uncertainty for GAC4 remain unavailable. The individual article and
+full-issue indexed texts agree on the capacity.
+[Pasupulety et al., adsorption measurements and Table 2](https://bcc.bas.bg/BCC_Volumes/Volume_51_Number_3_2019/BCC-51-3-2019.pdf)
+
+Fixing the plateau at 103 mg/g, the original Langmuir maximum relative
+Table 3 endpoint difference of 2.032% gives a common affinity interval
+of 0.13409–0.21347 L/mg. For each endpoint, the two loading limits give
+residual concentrations by the finite-bath mass balance, then affinity
+limits through `b = q/[C_end(q_max - q)]`. This interval is a
+consistency check against the 2009 fitted endpoint values. Its midpoint,
+0.173782 L/mg, gives a maximum endpoint difference of 0.492% and a loading
+of 99.19 mg/g at 150 mg/L. With the original diffusivity and stirred film
+coefficient, Figure 2 loading RMSEs are 2.34, 1.56, 1.40 and 0.51 mg/g
+from largest to smallest particle size. The largest change with shell
+or time refinement is 0.031 mg/g.
+
+The capacity sensitivity used the saved fine confined flows, separate
+wall/core carbon histories, and original carbon inventories and column
+film coefficients. All three forecasts passed the numerical refinement
+checks at 48 shells and a 4 s main step. They were sealed before scoring
+Figures 4–5. The two low-flow cases passed timing and shape and retained
+too little phenol. The high-flow 5% arrival remained close to the paper
+and its midpoint arrived too early. All three final retention checks
+missed. The capacity sensitivity yields another batch-consistent
+equilibrium curve with a different column prediction.
+
+| Held-out bed and flow | 5% crossing (min) | 50% crossing (min) | Calculated retention (mg/g) | Published retention (mg/g) |
+| --- | ---: | ---: | ---: | ---: |
+| 20 cm, 23.3 mL/min | 58.00 | 169.19 | 51.03 | 56.37 |
+| 25 cm, 23.3 mL/min | 102.06 | 223.21 | 50.56 | 57.13 |
+| 25 cm, 62.5 mL/min | 16.00 | 54.26 | 47.34 | 55.67 |
+
+Replay the saved sensitivity from the checkout root. Its summary SHA-256
+is `ee6b40fc9c2217892f9b88589bcbc887476c36b5bb7b120b82c313b14db68756`.
+
+```sh
+source scripts/env.sh
+uv run python -m examples.adsorption.breakthrough_hypotheses.run --check \
+  results/adsorption/breakthrough_hypotheses/gac4_sensitivity/20261118T010430Z-60cb2086
+```
+
 ## Langmuir batch check
 
 The Figure 2 bath started at 200 mg/L, with 1 g carbon in 250 mL liquid,

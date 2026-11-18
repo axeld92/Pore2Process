@@ -1,0 +1,363 @@
+{
+  "schema": "pore2process.figure7-equilibrium.reference.v1",
+  "run": {
+    "path": "results/adsorption/figure7_equilibrium/runs/20261118T012054Z-51b2f6c6/summary.json",
+    "sha256": "7846b906a60c769f5707c747f48720dc8fb1f610a6885f3228d15fa047baab52"
+  },
+  "frozen_predictions": {
+    "path": "results/adsorption/figure7_equilibrium/runs/20261118T012054Z-51b2f6c6/frozen.json",
+    "sha256": "10b3213976e1e1bd8e52ca6c18aaf6490226e7d4cb345ba931c32c98a2c8168b"
+  },
+  "planned_inputs": {
+    "path": "results/adsorption/figure7_equilibrium/runs/20261118T012054Z-51b2f6c6/plan.json",
+    "sha256": "ab87f2077817d95c3be50446a8c401f52442145bfb9bb656803349f6106b588b"
+  },
+  "clean_film": {
+    "path": "results/adsorption/figure7_equilibrium/runs/20261118T012054Z-51b2f6c6/clean_limit.json",
+    "sha256": "85874f7ea32911a3b24c2a5e154a3b5e72ee0556b3615a9abd9c22d404980409",
+    "implementation": {
+      "path": "examples/adsorption/figure7_equilibrium/clean_limit.py",
+      "sha256": "54a88d5c724171ed0480e2026e52a0778ab89b4fbd3793569168214f190b6089"
+    }
+  },
+  "inputs": {
+    "dry_mass_kg": 0.007032455155060752,
+    "flow_m3_s": 7.3e-07,
+    "feed_kg_m3": 0.15,
+    "adsorption_length_m": 0.1,
+    "adsorption_voidage": 0.427,
+    "access_resistance_s_m": 2180223.153998044,
+    "sources": {
+      "archived_access": {
+        "path": "results/adsorption/carbon_access/runs/20261117T090234Z-234da0ca/summary.json",
+        "sha256": "37480ecb42f74a66a02785ac2221f5099822a2fdfea8ca86fa4202fd1223ca5f"
+      },
+      "archived_tracer": {
+        "path": "results/adsorption/disordered_travel_memory/runs/20261116T153803Z-b1f18981/summary.json",
+        "sha256": "5050b9b8a58682cf2902c1a3208d3cad3d2acff693d7f423fb6ac2619abfc734"
+      },
+      "archived_pumps": {
+        "path": "results/adsorption/column_transport/process/runs/20261110T163606Z-3e5ef256/summary.json",
+        "sha256": "91aee6c1cb59200514f7173752b5fa97e1cfa9a2b01fee9bb329a7c5832c75e9"
+      },
+      "archived_hydraulic_geometry": {
+        "path": "results/adsorption/column_transport/hydraulics/runs/20261110T154704Z-d14d13ed/summary.json",
+        "sha256": "57ce925bd15d8bb11e0949d61f362691e9e80481ff6fb8e5fdc7d4d014e9f287"
+      },
+      "archived_blend": {
+        "path": "results/adsorption/breakthrough_hypotheses/batch/conditional/20261118T000130Z-e9054190/summary.json",
+        "sha256": "d5d5690ceabda535bf8379bb85166ba668f63d8b6dc3244981810383adf30966"
+      }
+    },
+    "pumps": {
+      "d800": {
+        "source": {
+          "path": "results/adsorption/column_transport/process/runs/20261110T163606Z-3e5ef256/d800/dwsim/summary.json",
+          "sha256": "75f482b87f78b4aa6afdc14abb502208db2c6d9f2af6afb6f5c02efb2509a808"
+        },
+        "flow_m3_s": 7.3e-07,
+        "bed_length_m": 0.14325000000000002,
+        "shaft_power_W": 0.0003005743577626148,
+        "pressure_drop_Pa": 308.8092716739164,
+        "dry_mass_kg": 0.007032455155060752,
+        "nominal_porosity": 0.6
+      },
+      "d450": {
+        "source": {
+          "path": "results/adsorption/column_transport/process/runs/20261110T163606Z-3e5ef256/d450/dwsim/summary.json",
+          "sha256": "53fe2473535998a25ee012157b2a5ac8358715663bcdcc42a91586bc5712f508"
+        },
+        "flow_m3_s": 7.3e-07,
+        "bed_length_m": 0.14325000000000002,
+        "shaft_power_W": 0.0009326361432957332,
+        "pressure_drop_Pa": 958.1878184545149,
+        "dry_mass_kg": 0.007032455155060752,
+        "nominal_porosity": 0.6
+      }
+    }
+  },
+  "material_profiles": {
+    "gac4": {
+      "weight": 0.0,
+      "diffusivity_m2_s": 1.846035489738998e-12,
+      "batch_film_ref_m_s": 7.732246026461306e-05,
+      "capacity_kg_kg": 0.103,
+      "affinity_m3_kg": 173.7820329925531,
+      "loading_at_feed_kg_kg": 0.09919467101750554
+    },
+    "langmuir": {
+      "weight": 0.0,
+      "diffusivity_m2_s": 1.846035489738998e-12,
+      "batch_film_ref_m_s": 7.732246026461306e-05,
+      "capacity_kg_kg": 0.1115,
+      "affinity_m3_kg": 139.0,
+      "loading_at_feed_kg_kg": 0.10639702517162472
+    },
+    "blend": {
+      "weight": 0.5,
+      "diffusivity_m2_s": 1.5115058150757535e-12,
+      "batch_film_ref_m_s": 0.00027806916453395735,
+      "capacity_kg_kg": 0.1115,
+      "affinity_m3_kg": 139.0,
+      "loading_at_feed_kg_kg": 0.12977562777759477
+    },
+    "freundlich": {
+      "weight": 1.0,
+      "diffusivity_m2_s": 1.2375979994462825e-12,
+      "batch_film_ref_m_s": 0.001,
+      "capacity_kg_kg": 0.1115,
+      "affinity_m3_kg": 139.0,
+      "loading_at_feed_kg_kg": 0.15315423038356482
+    }
+  },
+  "figure7_fitted_parameters": 0,
+  "passed_both_sizes": {
+    "gac4": false,
+    "langmuir": false,
+    "blend": false,
+    "freundlich": false
+  },
+  "cases": {
+    "d800": {
+      "observed": {
+        "t05_s": 101.5678776290631,
+        "t50_s": 1844.7418738049712,
+        "retained_kg": 0.000432442204067443,
+        "retention_reading_kg": [
+          0.0004147627573191626,
+          0.0004503337389188249
+        ],
+        "post_midpoint_retained_kg": 0.00028761213280027807,
+        "window_end_s": 16841.300191204587,
+        "service": {
+          "time_s": 101.5678776290631,
+          "volume_m3": 7.414455066921606e-05,
+          "shaft_energy_J": 0.030528699587667494
+        },
+        "service_readings": [
+          {
+            "time_s": 21.720841300191196,
+            "volume_m3": 1.5856214149139572e-05,
+            "shaft_energy_J": 0.006528727923868648
+          },
+          {
+            "time_s": 205.5831739961759,
+            "volume_m3": 0.0001500757170172084,
+            "shaft_energy_J": 0.061793030490700465
+          }
+        ]
+      },
+      "clean_film": {
+        "fixed_access": {
+          "transfer_number": 1.2829032404014904,
+          "wall_allocated_escape": 0.368383205648521,
+          "flow_proportional_escape": 0.28038047204280686,
+          "minimum_extra_conductance_fraction": 1.384379354739948
+        },
+        "full_access": {
+          "transfer_number": 2.540402456240575,
+          "wall_allocated_escape": 0.1916695817286635,
+          "flow_proportional_escape": 0.08236352945454874,
+          "minimum_extra_conductance_fraction": 0.20411157414367387
+        }
+      },
+      "shaft_energy_per_volume_Wh_m3": 0.11437380432367382,
+      "variants": {
+        "gac4": {
+          "t05_s": 4.901606873684893,
+          "t50_s": 1526.3661032457446,
+          "rmse": 0.14195948571979544,
+          "retention_kg": 0.00033418579485017366,
+          "post_midpoint_retention_kg": 0.0002202149322562265,
+          "t05_passed": false,
+          "t50_passed": true,
+          "retention_passed": false,
+          "passed": false,
+          "numerically_qualified": true,
+          "service": {
+            "time_s": 4.901606873684893,
+            "volume_m3": 3.5781730177899715e-06,
+            "shaft_energy_J": 0.0014732973380626546
+          }
+        },
+        "langmuir": {
+          "t05_s": 4.901563104290262,
+          "t50_s": 1667.167315525826,
+          "rmse": 0.13854530273291038,
+          "retention_kg": 0.00035568779366163623,
+          "post_midpoint_retention_kg": 0.0002403266320522924,
+          "t05_passed": false,
+          "t50_passed": true,
+          "retention_passed": false,
+          "passed": false,
+          "numerically_qualified": true,
+          "service": {
+            "time_s": 4.901563104290262,
+            "volume_m3": 3.5781410661318913e-06,
+            "shaft_energy_J": 0.001473284182104974
+          }
+        },
+        "blend": {
+          "t05_s": 4.901847530214243,
+          "t50_s": 1480.010941023269,
+          "rmse": 0.1408877332470729,
+          "retention_kg": 0.0003969659630547593,
+          "post_midpoint_retention_kg": 0.00028457457523685,
+          "t05_passed": false,
+          "t50_passed": true,
+          "retention_passed": false,
+          "passed": false,
+          "numerically_qualified": true,
+          "service": {
+            "time_s": 4.901847530214243,
+            "volume_m3": 3.5783486970563976e-06,
+            "shaft_energy_J": 0.0014733696732444057
+          }
+        },
+        "freundlich": {
+          "t05_s": 4.90187385176117,
+          "t50_s": 1264.607310638948,
+          "rmse": 0.1475737884854863,
+          "retention_kg": 0.0004253132177965145,
+          "post_midpoint_retention_kg": 0.0003162791456425724,
+          "t05_passed": false,
+          "t50_passed": false,
+          "retention_passed": true,
+          "passed": false,
+          "numerically_qualified": true,
+          "service": {
+            "time_s": 4.90187385176117,
+            "volume_m3": 3.578367911785654e-06,
+            "shaft_energy_J": 0.0014733775848264686
+          }
+        }
+      }
+    },
+    "d450": {
+      "observed": {
+        "t05_s": 1412.2370936902485,
+        "t50_s": 3321.561129231807,
+        "retained_kg": 0.000473777631546274,
+        "retention_reading_kg": [
+          0.0004573870278860719,
+          0.0004902117404583943
+        ],
+        "post_midpoint_retained_kg": 0.0001675251297459711,
+        "window_end_s": 14455.066921606118,
+        "service": {
+          "time_s": 1412.2370936902485,
+          "volume_m3": 0.0010309330783938814,
+          "shaft_energy_J": 1.3171033564784482
+        },
+        "service_readings": [
+          {
+            "time_s": 1297.514340344168,
+            "volume_m3": 0.0009471854684512427,
+            "shaft_energy_J": 1.2101087702494921
+          },
+          {
+            "time_s": 1526.959847036329,
+            "volume_m3": 0.0011146806883365202,
+            "shaft_energy_J": 1.4240979427074045
+          }
+        ]
+      },
+      "clean_film": {
+        "fixed_access": {
+          "transfer_number": 2.9296588402248838,
+          "wall_allocated_escape": 0.10096416146511202,
+          "flow_proportional_escape": 0.05520869415155435,
+          "minimum_extra_conductance_fraction": 0.03461318555434434
+        },
+        "full_access": {
+          "transfer_number": 5.814053934735951,
+          "wall_allocated_escape": 0.022200881705494595,
+          "flow_proportional_escape": 0.0033935553277552933,
+          "minimum_extra_conductance_fraction": 0.0
+        }
+      },
+      "shaft_energy_per_volume_Wh_m3": 0.3548843772053779,
+      "variants": {
+        "gac4": {
+          "t05_s": 5.3144498279787875,
+          "t50_s": 2748.6644434342793,
+          "rmse": 0.1030768291522317,
+          "retention_kg": 0.00037793064417258404,
+          "post_midpoint_retention_kg": 0.00012350206278699923,
+          "t05_passed": false,
+          "t50_passed": true,
+          "retention_passed": false,
+          "passed": false,
+          "numerically_qualified": true,
+          "service": {
+            "time_s": 5.3144498279787875,
+            "volume_m3": 3.8795483744245145e-06,
+            "shaft_energy_J": 0.004956447991304809
+          }
+        },
+        "langmuir": {
+          "t05_s": 5.314177765304409,
+          "t50_s": 3016.424378071144,
+          "rmse": 0.0781432780385348,
+          "retention_kg": 0.00040251942468872917,
+          "post_midpoint_retention_kg": 0.00013836356627541048,
+          "t05_passed": false,
+          "t50_passed": true,
+          "retention_passed": false,
+          "passed": false,
+          "numerically_qualified": true,
+          "service": {
+            "time_s": 5.314177765304409,
+            "volume_m3": 3.8793497686722184e-06,
+            "shaft_energy_J": 0.004956194255821442
+          }
+        },
+        "blend": {
+          "t05_s": 5.316024646635562,
+          "t50_s": 3306.2053722342985,
+          "rmse": 0.08456212377490593,
+          "retention_kg": 0.0004734889569035719,
+          "post_midpoint_retention_kg": 0.00020691246859400704,
+          "t05_passed": false,
+          "t50_passed": true,
+          "retention_passed": true,
+          "passed": false,
+          "numerically_qualified": true,
+          "service": {
+            "time_s": 5.316024646635562,
+            "volume_m3": 3.88069799204396e-06,
+            "shaft_energy_J": 0.004957916724103253
+          }
+        },
+        "freundlich": {
+          "t05_s": 5.31616242855314,
+          "t50_s": 3533.1961069439612,
+          "rmse": 0.11407536316828405,
+          "retention_kg": 0.0005323034545473136,
+          "post_midpoint_retention_kg": 0.00026791099725566347,
+          "t05_passed": false,
+          "t50_passed": true,
+          "retention_passed": false,
+          "passed": false,
+          "numerically_qualified": true,
+          "service": {
+            "time_s": 5.31616242855314,
+            "volume_m3": 3.880798572843792e-06,
+            "shaft_energy_J": 0.004958045224499479
+          }
+        }
+      }
+    }
+  },
+  "versions": {
+    "python": "3.12.9",
+    "julia": "1.11.6",
+    "numpy": "2.5.4",
+    "panel": "1.10.0",
+    "pyvista": "0.49.2",
+    "vtk": "9.7.2",
+    "matplotlib": "3.11.2",
+    "juliacall": "0.9.37",
+    "PythonCall": "0.9.37"
+  }
+}

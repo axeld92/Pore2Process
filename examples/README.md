@@ -53,6 +53,7 @@ specific earlier measurements or assumptions.
 | Adsorption | [Clean-wall transfer at 42.7% void fraction](adsorption/porosity_matched_film/REPORT.md) | Both scale-ups put high-flow clean-bed escape below 5% on both checked grids. Film conductance exceeds its grid-change limit | [Commands](adsorption/porosity_matched_film/README.md) |
 | Adsorption | [25 cm reruns with porosity-matched film](adsorption/porosity_matched_column/REPORT.md) | Less initial leakage at both flows. The high-flow 5% crossing and retained mass still miss the published comparison across the N45–N60 range | [Commands](adsorption/porosity_matched_column/README.md) |
 | Adsorption | [Phenol breakthrough hypotheses](adsorption/breakthrough_hypotheses/REPORT.md) | Fixed-carbon tests of radial flow, carbon loading histories, and batch-qualified equilibrium and kinetics | [Commands](adsorption/breakthrough_hypotheses/README.md) |
+| Adsorption | [Figure 7 particle-size transfer](adsorption/figure7_equilibrium/REPORT.md) | Four frozen equilibrium cases miss first breakthrough. Clean-film limits and a fixed-mass pumping comparison quantify the remaining gap | [Commands](adsorption/figure7_equilibrium/README.md) |
 
 Filtration hydraulics is closed for now; adsorption remains research in
 progress. Earlier BGK numbers and later TRT results retain separate identities.

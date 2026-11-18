@@ -225,14 +225,20 @@ through the reported window, conditional on the synthetic flow field
 and one shared low-flow calibration. A single common change in
 equilibrium did not transfer the retained inventory across all depths
 and flows. The confined tracer variance and local-flow checks also
-remain open. Figure 7 stays reserved for a size-transfer test when the
-column and transport inputs meet these checks.
+remain open. The [Figure 7 follow-up](../figure7_equilibrium/REPORT.md)
+tests the equilibrium range with the separately qualified size-specific
+N160 tracer inputs. It identifies an early clean-film and contact
+limitation under that transfer scenario.
 
-The highest-value independent material check is the original isotherm
-data for the same carbon near 75–150 mg/L residual liquid phenol.
-Those data would constrain equilibrium before a further column
-calibration. The reported outlet histories already distinguish a
+Paired equilibrium concentrations and loadings for the same carbon near
+75–150 mg/L residual liquid phenol would constrain the equilibrium
+before further column calibration. A later study reports a 103 mg/g
+fitted saturation capacity for a sample with the same preparation and
+reported pore properties. That capacity gives a batch-consistent
+Langmuir sensitivity and underpredicts retention at all three held-out
+column conditions. The reported outlet histories already distinguish a
 timing problem from a retained-mass problem.
+[2019 evidence and sensitivity replay](batch/REPORT.md#capacity-sensitivity-using-the-reported-gac4-plateau)
 
 ### Numerical verification
 

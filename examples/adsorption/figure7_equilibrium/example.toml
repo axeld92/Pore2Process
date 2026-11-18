@@ -1,0 +1,17 @@
+schema_version = 1
+id = "adsorption/figure7_equilibrium"
+title = "Figure 7 particle-size transfer under equilibrium uncertainty"
+area = "adsorption"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["adsorption/breakthrough_hypotheses", "adsorption/carbon_access", "adsorption/column_transport"]
+run_module = "examples.adsorption.figure7_equilibrium.run"
+check_module = "examples.adsorption.figure7_equilibrium.run"
+reference_files = ["reference_summary.json"]
+protocol_files = ["protocol.md"]
+
+[validation]
+numerical = "passed"
+literature = "conditional"
+scope = "Fixed-inventory equilibrium sensitivity using size-specific N160 tracer rules and actual archived DWSIM pump calculations. Process estimates using measured crossings combine experiment with synthetic pressure loss."
