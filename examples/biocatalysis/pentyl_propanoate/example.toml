@@ -1,0 +1,19 @@
+schema_version = 1
+id = "biocatalysis/pentyl_propanoate"
+title = "Batch-to-bed prediction for immobilised lipase esterification"
+area = "biocatalysis"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["adsorption/disordered_packing"]
+run_module = "examples.biocatalysis.pentyl_propanoate.run"
+check_module = "examples.biocatalysis.pentyl_propanoate.check"
+reference_files = ["reference/summary.json", "reference/bed_comparison.csv", "mixing/reference.json"]
+protocol_files = ["protocol.json"]
+
+[validation]
+numerical = "passed"
+batch = "conditional"
+water_mixing = "failed"
+held_out_conversion = "failed"
+scope = "Independent jacketed bench reactor check. The batch rate is apparent. OpenLB water-based dispersion enters the conversion calculation as a sensitivity."

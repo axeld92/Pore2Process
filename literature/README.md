@@ -16,6 +16,8 @@ their examples.
 | [garcia2008](sources/garcia2008/README.md) | Matched critical-flux/circulation-energy benchmark lead |
 | [iheanacho2021](sources/iheanacho2021/README.md) | Alternative source candidate only; no extracted numerical dataset is used in the selected models. |
 | [jan2025](sources/jan2025/README.md) | Whole-membrane experimental permeance and coating/interface context; not a separated-resistance calibration or fixed-selective-layer support comparison. |
+| [lorenzo2025](sources/lorenzo2025/README.md) | Water-tracer curves and held-out, temperature-controlled pentyl propanoate conversion measurements. |
+| [lorenzo2026](sources/lorenzo2026/README.md) | Batch kinetics and apparent equilibrium for the 2:1 pentyl propanoate feed. |
 | [meneghini2017](sources/meneghini2017/README.md) | Author dissertation; fitted coconut-shell parameters transferred to a synthetic scenario. |
 | [meneghini2021](sources/meneghini2021/README.md) | Related publication; not independent validation of the dissertation parameters. |
 | [mo2022](sources/mo2022/README.md) | Fixed-top-layer support plateau and explicit intermediate-layer resistance. Author-model values retained separately from experiment; no production parameter replacement. |

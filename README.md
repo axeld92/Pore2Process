@@ -15,11 +15,10 @@ The aim is a reproducible chain of calculations in which a change in pore
 geometry produces an explainable change in a process result, with the
 assumptions and intermediate evidence available for inspection.
 
-> **Project status — 10 November 2026.** The filtration hydraulic example is
-> complete and closed for now, with source, tests, dependency locks and curated
-> references preserved as a regression benchmark. **Isothermal adsorption** is
-> the next case in development. The verified native setup targets Apple Silicon
-> macOS.
+> **Project status, 18 November 2026.** The filtration hydraulic example is
+> closed as a regression benchmark. Phenol adsorption is paused pending a
+> better documented breakthrough reference. The first reacting study tests
+> **immobilised lipase esterification** on Apple Silicon macOS.
 
 ## The connected workflow
 
@@ -54,6 +53,7 @@ commands remain in the corresponding `README.md`.
 | **Hydraulics** | [Capillary network](examples/hydraulics/capillary_network/REPORT.md), [3D capillary verification](examples/hydraulics/capillary_benchmark/REPORT.md), [measured permeability to pump duty](examples/hydraulics/darcy_pump/REPORT.md) |
 | **Filtration** | [Study stages](examples/filtration/README.md), [fixed-opening support design](examples/filtration/graded_support/REPORT.md), [final operating map and conclusions](examples/filtration/operating_map/REPORT.md) |
 | **Adsorption** | [Synthetic bed](examples/adsorption/REPORT.md), [literature LDF comparison](examples/adsorption/alhamed/REPORT.md), [film/particle transport](examples/adsorption/film_particle/REPORT.md), [column contact and inventory](examples/adsorption/column_contact/REPORT.md) |
+| **Biocatalysis** | [Pentyl propanoate batch fit, tracer check and continuous reactor prediction](examples/biocatalysis/pentyl_propanoate/REPORT.md) |
 
 The [complete example catalogue](examples/README.md) links all scientific
 reports and run guides. Reports distinguish numerical verification,

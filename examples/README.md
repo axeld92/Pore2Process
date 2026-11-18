@@ -54,10 +54,12 @@ specific earlier measurements or assumptions.
 | Adsorption | [25 cm reruns with porosity-matched film](adsorption/porosity_matched_column/REPORT.md) | Less initial leakage at both flows. The high-flow 5% crossing and retained mass still miss the published comparison across the N45–N60 range | [Commands](adsorption/porosity_matched_column/README.md) |
 | Adsorption | [Phenol breakthrough hypotheses](adsorption/breakthrough_hypotheses/REPORT.md) | Fixed-carbon tests of radial flow, carbon loading histories, and batch-qualified equilibrium and kinetics | [Commands](adsorption/breakthrough_hypotheses/README.md) |
 | Adsorption | [Figure 7 particle-size transfer](adsorption/figure7_equilibrium/REPORT.md) | Four frozen equilibrium cases miss first breakthrough. Clean-film limits and a fixed-mass pumping comparison quantify the remaining gap | [Commands](adsorption/figure7_equilibrium/README.md) |
+| Biocatalysis | [Pentyl propanoate](biocatalysis/pentyl_propanoate/REPORT.md) | Batch-derived rates overpredict held-out conversion. The synthetic OpenLB TRT water bed underpredicts tracer spreading | [Commands](biocatalysis/pentyl_propanoate/README.md) |
 
-Filtration hydraulics is closed for now; adsorption remains research in
-progress. Earlier BGK numbers and later TRT results retain separate identities.
-The reports give their own experimental/scenario and operating-range limits.
+Filtration hydraulics is closed for now. Phenol adsorption is paused pending a
+published dataset with enough detail to check breakthrough independently.
+Earlier BGK numbers and later TRT results retain separate identities.
+The reports give their own experimental and operating-range limits.
 
 Shared numerical models remain in `julia/`; shared Python runtime and interface
 code remains in `src/pore2process_demo/`. Existing run folders, literature

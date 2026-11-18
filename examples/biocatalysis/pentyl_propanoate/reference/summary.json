@@ -1,0 +1,221 @@
+{
+  "julia_version": "1.11.6",
+  "model_sha256": "ccaf578bf4e6364aa4418aa8da768d9c74da085da9af8d6655be119ca40149e3",
+  "runner_sha256": "232acd5316f2024bffdccfecf32462edc5e986faefda67709af3507e3369d21b",
+  "held_out_conversion_source": "literature/sources/lorenzo2025/conversion_2to1.csv",
+  "held_out_conversion_sha256": "8736cc8a57ba341089ae66df91df4a0067dc71f0ce8cfb52a6904317f466a79d",
+  "bed_comparison_sha256": "0104b447cbab301feb329f833567ca5fe1b61b1f90dca632d120e40f1d5182ab",
+  "batch": {
+    "sources": {
+      "examples/biocatalysis/pentyl_propanoate/protocol.json": "a95058e12876ff613054df10d8054de34dc8e5be1f8121ffb2695d21440d108a",
+      "literature/sources/lorenzo2026/batch_2to1.csv": "737cad65867c4f106eb5cbab5171009ec2c71abf677857e4acde4309a1a5d938",
+      "literature/sources/lorenzo2026/apparent_equilibrium_2to1.csv": "bac1131c5b47f84175e2852d79f29468236a52c6c382f899287c54c2f9553942"
+    },
+    "primary_fit_by_temperature": {
+      "40": {
+        "coefficients": [
+          -2.042731067844216,
+          0.0,
+          1.5107219394949427,
+          0.0
+        ],
+        "mass_specific_k_mol_kg_s": 0.12967407813079362,
+        "apparent_Kx": 4.53,
+        "equilibrium_conversion": 0.8577927747402394,
+        "iterations": 10,
+        "gradient_inf": 1.1474558085293012e-10
+      },
+      "50": {
+        "coefficients": [
+          -1.8081015324084504,
+          0.0,
+          1.7191887763932197,
+          0.0
+        ],
+        "mass_specific_k_mol_kg_s": 0.1639651239837849,
+        "apparent_Kx": 5.58,
+        "equilibrium_conversion": 0.8771873252164515,
+        "iterations": 7,
+        "gradient_inf": 8.968726155707547e-10
+      },
+      "60": {
+        "coefficients": [
+          -1.5281688124549866,
+          0.0,
+          1.7934247485471162,
+          0.0
+        ],
+        "mass_specific_k_mol_kg_s": 0.21693254800363004,
+        "apparent_Kx": 6.01,
+        "equilibrium_conversion": 0.8836266221031733,
+        "iterations": 8,
+        "gradient_inf": 1.2798984145357673e-10
+      },
+      "70": {
+        "coefficients": [
+          -1.8839218869645784,
+          0.0,
+          1.8373699804801074,
+          0.0
+        ],
+        "mass_specific_k_mol_kg_s": 0.15199283658683788,
+        "apparent_Kx": 6.28,
+        "equilibrium_conversion": 0.8873231057477317,
+        "iterations": 7,
+        "gradient_inf": 3.0462879590252924e-10
+      },
+      "80": {
+        "coefficients": [
+          -1.2440296692867634,
+          0.0,
+          1.9878743481543455,
+          0.0
+        ],
+        "mass_specific_k_mol_kg_s": 0.28822044163556665,
+        "apparent_Kx": 7.300000000000001,
+        "equilibrium_conversion": 0.8993373831519744,
+        "iterations": 7,
+        "gradient_inf": 3.275874653385836e-11
+      }
+    },
+    "primary_fit": {
+      "count": 113,
+      "rmse_percentage_points": 2.456179472566932,
+      "mae_percentage_points": 2.0603140107518723,
+      "bias_percentage_points": -0.09834524831828637,
+      "max_absolute_error_percentage_points": 6.72753976618371
+    },
+    "primary_fit_by_assay": {
+      "1": {
+        "count": 10,
+        "rmse_percentage_points": 3.1556613638248785,
+        "mae_percentage_points": 2.4898557094039884,
+        "bias_percentage_points": 2.3155019441244375,
+        "max_absolute_error_percentage_points": 5.465825704071536
+      },
+      "2": {
+        "count": 10,
+        "rmse_percentage_points": 2.8711260226816147,
+        "mae_percentage_points": 2.5110653647733487,
+        "bias_percentage_points": 1.2713963455948811,
+        "max_absolute_error_percentage_points": 4.650932698922472
+      },
+      "3": {
+        "count": 15,
+        "rmse_percentage_points": 2.9302305334873258,
+        "mae_percentage_points": 2.5337484866537543,
+        "bias_percentage_points": -1.6076141831636415,
+        "max_absolute_error_percentage_points": 6.72753976618371
+      },
+      "4": {
+        "count": 18,
+        "rmse_percentage_points": 2.5316746667645242,
+        "mae_percentage_points": 2.003379210924498,
+        "bias_percentage_points": -0.7330739165319369,
+        "max_absolute_error_percentage_points": 4.3616090508688865
+      },
+      "9": {
+        "count": 14,
+        "rmse_percentage_points": 2.5657146748451427,
+        "mae_percentage_points": 2.2741211587983736,
+        "bias_percentage_points": 0.09511571540701773,
+        "max_absolute_error_percentage_points": 3.841920420611314
+      },
+      "10": {
+        "count": 16,
+        "rmse_percentage_points": 2.1430059540562723,
+        "mae_percentage_points": 1.921157571935545,
+        "bias_percentage_points": -0.09361351449156362,
+        "max_absolute_error_percentage_points": 3.224784890628998
+      },
+      "11": {
+        "count": 14,
+        "rmse_percentage_points": 2.0767607470016918,
+        "mae_percentage_points": 1.9321199666117794,
+        "bias_percentage_points": -0.3077558550996677,
+        "max_absolute_error_percentage_points": 3.2567945701460985
+      },
+      "12": {
+        "count": 16,
+        "rmse_percentage_points": 1.3580556441922622,
+        "mae_percentage_points": 1.1945826543768754,
+        "bias_percentage_points": -0.3248546577854965,
+        "max_absolute_error_percentage_points": 2.589491505580349
+      }
+    },
+    "pooled_fit_at_60_C": {
+      "coefficients": [
+        -1.6896531626697304,
+        0.33759352794123854,
+        1.931317783341751,
+        0.13082106678881825
+      ],
+      "mass_specific_k_mol_kg_s": 0.18458353335184952,
+      "apparent_Kx": 6.898595108038616,
+      "equilibrium_conversion": 0.8949392855256096,
+      "iterations": 9,
+      "gradient_inf": 5.424494081154004e-10
+    },
+    "pooled_fit": {
+      "count": 113,
+      "rmse_percentage_points": 3.7767290474623203,
+      "mae_percentage_points": 2.8852528626123344,
+      "bias_percentage_points": 0.21715169319471087,
+      "max_absolute_error_percentage_points": 13.460182138092392
+    }
+  },
+  "bed": {
+    "mixing_source": "examples/biocatalysis/pentyl_propanoate/mixing/reference.json",
+    "mixing_source_sha256": "2380f860fcab8beef553aba68bdc4509901971dcfe63f7fe6e5175c97242aa51",
+    "water_tracer_pulse_free_relative_variance": 0.008184279761251082,
+    "aqueous_mixing_check": {
+      "mean_relative_error": -0.02876695633849291,
+      "variance_relative_error": -0.7869185119415774,
+      "mean_passed": true,
+      "variance_passed": false,
+      "recovery_passed": true,
+      "passed": false,
+      "reported_mean_min": 19.07,
+      "reported_variance_min2": 27.83,
+      "mean_relative_error_limit": 0.05,
+      "variance_relative_error_limit": 0.1,
+      "variance_upper_bound_min2_if_pulse_support_is_7min": 14.096724479332568,
+      "measured_trace_sha256": "3ad54d379e0d4da081bcaf50a48fe398181e9ede6835ae746dc39b1fa624a334",
+      "measured_marker_count": 41,
+      "measured_concentration_auc_mg_min_ml": 5.6030705,
+      "measured_digitized_mass_mg": 6.7236846,
+      "printed_blue_dextran_pulse_dose_mg": 8.4,
+      "largest_absolute_cdf_difference": 0.1827643628621961,
+      "digitized_mean_min": 19.090630473951737,
+      "digitized_variance_min2": 27.779926964830054,
+      "predicted_concentration_rmse_mg_ml": 0.2141120829923971
+    },
+    "aqueous_mixing_benchmark_passed": false,
+    "scenario_axial_peclet": 243.36679710206943,
+    "max_grid_change_absolute_conversion": 1.836339650229668e-06,
+    "max_stoichiometric_balance_error": 1.3144929589259391e-11,
+    "comparison": {
+      "plug_flow_conversion": {
+        "count": 20,
+        "rmse_percentage_points": 13.347414739138491,
+        "mae_percentage_points": 11.860280998622585,
+        "bias_percentage_points": 11.860280998622585,
+        "max_absolute_error_percentage_points": 22.564019642174788
+      },
+      "water_mixing_scenario_conversion": {
+        "count": 20,
+        "rmse_percentage_points": 13.211161583184339,
+        "mae_percentage_points": 11.72385273796955,
+        "bias_percentage_points": 11.72385273796955,
+        "max_absolute_error_percentage_points": 22.387236984083398
+      },
+      "pooled_kinetics_plug_flow_conversion": {
+        "count": 20,
+        "rmse_percentage_points": 13.494283218465759,
+        "mae_percentage_points": 12.748452094573642,
+        "bias_percentage_points": 12.748452094573642,
+        "max_absolute_error_percentage_points": 21.184860443809388
+      }
+    }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "source": {
+    "publication": "Lorenzo, Ortega, González Garcinuño, and Martín-del Valle (2025), Industrial & Engineering Chemistry Research 64, 15311–15319",
+    "doi": "10.1021/acs.iecr.5c02780",
+    "university_record": "https://hdl.handle.net/10553/143346",
+    "main_pdf_url": "https://accedacris.ulpgc.es/server/api/core/bitstreams/f28615f9-fcf8-4bf7-b607-aa29f22530d9/content",
+    "main_pdf_sha256": "6bf0e24e242aa4f7511ef13c602f152fb77d3dfc4b69c6fa1c82e10164ca6d06",
+    "supporting_information_doi": "10.1021/acs.iecr.5c02780.s001",
+    "supporting_information_url": "https://acs.figshare.com/articles/journal_contribution/_/29631736",
+    "supporting_information_sha256": "8eedaca05d74a981e545fc87fd8b46e66d2b540f073afc986805beb201721fbc"
+  },
+  "reactor": {
+    "location": "Sections 2.1–2.3; Figures 1 and 2",
+    "column_inner_diameter_m": 0.016,
+    "column_length_m": 0.14,
+    "catalyst": "Lipozyme435, Candida antarctica lipase B on Lewatit VP OC 1600",
+    "catalyst_mass_g": 6.0,
+    "printed_approximate_catalyst_volume_cm3": 2.0,
+    "particle_mean_diameter_um": 593.0,
+    "particle_size_uniformity": 0.3,
+    "particle_size_span": 0.976,
+    "dry_particle_porosity_fraction": 0.22,
+    "dry_bet_surface_area_m2_per_g": 64.2,
+    "dry_pore_volume_cm3_per_g": 0.19,
+    "dry_pore_mean_diameter_nm": 11.6,
+    "jacket_water_flow_l_min": 12.0,
+    "reaction_temperature_control_half_range_C": 0.1,
+    "operating_pressure_measured_Pa": null,
+    "measured_bed_pressure_drop_Pa": null
+  },
+  "reaction_2to1": {
+    "location": "Section 2.3 and Figure 3c, Supporting Information Table S2 runs 65–84 and Figure S1",
+    "acid": "propanoic acid",
+    "alcohol": "pentan-1-ol",
+    "ester": "pentyl propanoate",
+    "added_solvent": "none",
+    "inlet_alcohol_acid_molar_ratio": 2.0,
+    "inlet_acid_mol_l": 3.3,
+    "inlet_alcohol_mol_l": 6.6,
+    "inlet_water_mol_l": null,
+    "temperature_C": [40, 50, 60, 70, 80],
+    "flow_ml_min": [0.7, 1.0, 2.0, 3.0],
+    "reported_nominal_residence_time_min": [26, 18, 9, 6],
+    "reported_concentration_estimated_error_less_than_fraction": 0.05,
+    "individual_conversion_uncertainty": null,
+    "conversion_csv": "conversion_2to1.csv",
+    "pure_feed_component_properties_measured_at_25_C": {
+      "source": "Supporting Information Table S1",
+      "pentan_1_ol_density_kg_m3": 810.92,
+      "propanoic_acid_density_kg_m3": 988.07
+    }
+  },
+  "water_tracer": {
+    "location": "Section 2.2 and Appendix A Figure A1 and Table A1",
+    "water_flow_ml_min": 1.2,
+    "pulse_volume_ml": 8.4,
+    "pulse_duration_min_if_injected_at_water_flow": 7.0,
+    "pulse_duration_and_shape_measured": null,
+    "aliquot_ml": 1.0,
+    "water_temperature_C": null,
+    "reported_space_time_min": 23.46,
+    "reported_pulse_concentration_mg_ml": {
+      "blue_dextran": 1.0,
+      "sodium_azide": 0.1
+    },
+    "detection_wavelength_nm": {
+      "blue_dextran": 618,
+      "sodium_azide": 236
+    },
+    "reported_rtd_moments": {
+      "blue_dextran": {
+        "mean_min": 19.07,
+        "variance_min2": 27.83,
+        "dimensionless_variance": 0.0765
+      },
+      "sodium_azide": {
+        "mean_min": 24.27,
+        "variance_min2": 56.84,
+        "dimensionless_variance": 0.0965
+      }
+    },
+    "reported_correlation_derived": {
+      "blue_dextran_peclet": 29.67,
+      "sodium_azide_peclet": 24.15,
+      "blue_dextran_axial_dispersion_cm2_min": 0.282,
+      "sodium_azide_axial_dispersion_cm2_min": 0.346,
+      "wet_total_porosity_fraction": 0.78,
+      "wet_bed_extraparticle_porosity_fraction": 0.64,
+      "wet_particle_porosity_fraction": 0.40
+    },
+    "observed_concentration_csv": "water_tracer.csv"
+  },
+  "digitization": {
+    "pixel_origin": "Top-left of the native image embedded in the specified page, zero-based",
+    "conversion": {
+      "main_figure_pdf_page": 3,
+      "main_figure_image_dimensions_px": [998, 975],
+      "figure_3c_y0_y100_px": [905.5, 502.0],
+      "supplemental_figure_pdf_page": 7,
+      "supplemental_figure_image_dimensions_px": [1299, 1327],
+      "figure_s1a_b_y0_y100_px": [561.0, 20.5],
+      "figure_s1c_d_y0_y100_px": [1237.5, 697.0],
+      "marker_count": 20,
+      "main_figure_marker_count": 15,
+      "supplemental_figure_marker_count": 5
+    },
+    "tracer": {
+      "figure_pdf_page": 6,
+      "figure_image_dimensions_px": [1667, 2859],
+      "figure_a1a_x0_px": 196.7,
+      "figure_a1a_px_per_min": 20.93,
+      "figure_a1a_y0_y0p6_px": [904.3, 25.4],
+      "digitized_concentration_moments_using_trapezoids": {
+        "blue_dextran": {
+          "marker_count": 41,
+          "mean_min": 19.091,
+          "variance_min2": 27.780,
+          "area_mg_min_ml": 5.603,
+          "recovered_mass_at_reported_flow_mg": 6.724,
+          "dose_from_printed_inlet_concentration_and_volume_mg": 8.4
+        },
+        "sodium_azide": {
+          "marker_count": 29,
+          "mean_min": 24.295,
+          "variance_min2": 55.820,
+          "area_mg_min_ml": 2.063,
+          "recovered_mass_at_reported_flow_mg": 2.476,
+          "dose_from_printed_inlet_concentration_and_volume_mg": 0.84
+        }
+      }
+    }
+  }
+}

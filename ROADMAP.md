@@ -2,7 +2,7 @@
 
 This roadmap separates locally demonstrated capabilities from work still to be
 published or investigated. Status reflects the development workspace on
-**10 November 2026**.
+**18 November 2026**.
 
 ## 1. Establish the numerical and software reference
 
@@ -393,19 +393,16 @@ published crossings with the existing synthetic DWSIM pump calculations
 gives about 14 times as much usable water and 3.10 times the bed-friction
 energy per volume for the smaller particles at the tested flow.
 
-## 7. Select a reacting or non-isothermal showcase
+## 7. Test a temperature-controlled reacting bed
 
-**Research direction; application and physical model not yet selected.**
+**Pentyl propanoate production with immobilised lipase.**
 
-Choose the material, reaction or biological system and process metric together.
-Identify the quantities that must pass between scales and the published kinetic,
-transport and thermal information needed to close the model. Supporting tools
-such as Cantera can be evaluated when appropriate; they do not replace OpenLB
-or DWSIM.
-
-Build and validate the smallest connected case before adding parameter sweeps,
-sensitivity analysis or optimization. Candidate areas include catalytic porous
-media, bioprocess separations and electrochemical flow systems.
+The [first reacting benchmark](examples/biocatalysis/pentyl_propanoate/REPORT.md)
+uses batch-only kinetics, a stock OpenLB TRT water-tracer comparison and
+twenty held-out packed-bed conversion measurements. The conversion and
+tracer-spread comparisons retain their observed discrepancies. Ester
+production rate is the process metric for a later DWSIM case after the
+reactor prediction is qualified.
 
 ## Acceptance criterion for every end-to-end showcase
 

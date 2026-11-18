@@ -1,0 +1,21 @@
+{
+  "reaction": "propanoic acid + pentan-1-ol <=> pentyl propanoate + water",
+  "catalyst": "Lipozyme 435 immobilised lipase",
+  "feed_alcohol_to_acid_molar_ratio": 2,
+  "batch_assays": [1, 2, 3, 4, 9, 10, 11, 12],
+  "batch_response": "Printed acid conversion from Lorenzo and Ortega (2026) SI Table S2",
+  "primary_kinetics": "Fit a mass-specific reversible rate at each setpoint. Fix apparent Kx to the matching 2:1 batch result in 2026 main Table 2. Share one mass-specific rate across all four loadings at 40 C.",
+  "batch_sensitivity": "Fit a pooled smooth temperature dependence of both the mass-specific rate and apparent Kx using only the batch observations.",
+  "fit_weighting": "Each printed observation with t > 0 has unit weight. Time-zero values specify the initial condition.",
+  "bed_catalyst_mass_kg": 0.006,
+  "bed_feed_acid_mol_L": 3.3,
+  "bed_feed_alcohol_mol_L": 6.6,
+  "bed_controlled_temperatures_C": [40, 50, 60, 70, 80],
+  "bed_total_feed_flow_ml_min": [0.7, 1.0, 2.0, 3.0],
+  "bed_response": "Experimental acid conversion markers from Lorenzo et al. (2025) Figure 3c and Supporting Information Figure S1. Hold out every marker from parameter estimation.",
+  "bed_reference_model": "Exact steady plug flow, 6 g uniform catalyst inventory and the same apparent mass-specific bead kinetics as in batch.",
+  "bed_mixing_sensitivity": "Moment-match the independently simulated aqueous blue-dextran pulse-free relative variance to a Danckwerts axial Peclet number. Apply this same dimensionless number at all reaction flow rates as a scenario.",
+  "axial_dispersion_cell_counts": [2048, 4096],
+  "max_grid_change_absolute_conversion": 0.0001,
+  "max_stoichiometric_balance_error": 1e-9
+}
