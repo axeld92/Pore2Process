@@ -1,0 +1,100 @@
+{
+  "scope": "Independent observations and source-derived estimates for sensitivity analyses of Lipozyme 435 in the pentyl propanoate example.",
+  "lorenzo_2025": {
+    "article": "https://doi.org/10.1021/acs.iecr.5c02780",
+    "specimen": "Lipozyme 435, Candida antarctica lipase B immobilized on Lewatit VP OC 1600",
+    "particle_mean_diameter_um": 593,
+    "particle_mean_diameter_locator": "Section 2.2 and Figure 2. The measurement protocol uses distilled water and Figure 2 is labelled wet. The text describes the reported diameter on a dry basis. A paired dry and wet distribution was unavailable.",
+    "particle_porosity": {
+      "dry_nitrogen_sorption": {
+        "value": 0.22,
+        "pore_volume_cm3_g": 0.19,
+        "average_pore_diameter_nm": 11.6,
+        "specific_surface_m2_g": 64.2,
+        "material_density_kg_m3": 1170,
+        "source": "Section 2.2. Author-derived particle porosity using the measured nitrogen-sorption pore volume and adopted density for PMMA. Degassed at 110 °C for 2 h before sorption at −196 °C."
+      },
+      "aqueous_tracers": {
+        "value": 0.40,
+        "bed_void_fraction": 0.64,
+        "flow_mL_min": 1.2,
+        "pulse_volume_mL": 8.4,
+        "temperature_C": null,
+        "source": "Appendix A, Eq. A.5 and Table A1. Author-derived particle porosity from separate blue-dextran and sodium-azide residence-time experiments."
+      },
+      "comparison": "These estimates differ in measurement method and fluid. Their ratio supports a porosity-only scenario at fixed molecular diffusivity, tortuosity and constrictivity. Reactive-liquid connected porosity and its change from stirred batch to packed bed were unreported."
+    },
+    "effectiveness_factor": {
+      "locator": "Appendix B, Table B1",
+      "temperature_C": [40, 50, 60, 70, 80],
+      "value": [0.852, 0.861, 0.869, 0.878, 0.884],
+      "adopted_tortuosity": 5.3,
+      "tortuosity_reference": "https://doi.org/10.1002/btpr.2165",
+      "provenance": "Analytical estimates with tortuosity adopted from a study of waste-cooking-oil free fatty acids and octanol. The estimates provide a source model baseline. Effective diffusivity and effectiveness in the reactive beads were unmeasured."
+    }
+  },
+  "chaussard_2024": {
+    "article": "https://doi.org/10.1021/acsengineeringau.4c00030",
+    "supporting_information": "https://doi.org/10.1021/acsengineeringau.4c00030.s001",
+    "supporting_pdf": "https://ndownloader.figshare.com/files/50055696",
+    "supporting_pdf_sha256": "f29ee8dfc9d2deee1f64f7fc65ba48d6550ebd6be35ead26a7bc24047283a337",
+    "specimen": "Commercial Novozym 435 from Strem, made by Novozymes, Candida antarctica lipase B on Lewatit VP OC 1600",
+    "diameter_measurement": {
+      "locator": "Supporting Information Section 1, Figures S1–S8, Tables S1–S2",
+      "method": "Manual diameter measurements from optical micrographs with 100 µm scale bars. Dry and wet distributions were measured on separate bead samples within each nominal sieve category.",
+      "wetting_liquid": "Equimolar ethyl butyrate and racemic 2-pentanol",
+      "wetting_duration_h": 1,
+      "agitation_rpm": 400,
+      "wetting_temperature_C": null,
+      "dispersion_statistic": "Sample standard deviation of individual bead diameters. The source supplied no uncertainty interval for the wet-to-dry ratio or diffusivity."
+    },
+    "diameter_distributions": [
+      {
+        "fraction": "200–300 µm",
+        "dry": {"mean_diameter_um": 256.2, "sd_diameter_um": 24.9, "count": 342},
+        "wet": {"mean_diameter_um": 309.5, "sd_diameter_um": 31.8, "count": 205},
+        "wet_to_dry_mean_ratio": 1.208040593286495
+      },
+      {
+        "fraction": "300–450 µm",
+        "main_article_fraction": "350–450 µm",
+        "dry": {"mean_diameter_um": 368.8, "sd_diameter_um": 35.7, "count": 400},
+        "wet": {"mean_diameter_um": 431.1, "sd_diameter_um": 44.1, "count": 296},
+        "wet_to_dry_mean_ratio": 1.1689262472885034
+      },
+      {
+        "fraction": "500+ µm",
+        "main_article_fraction": "500–1000 µm",
+        "dry": {"mean_diameter_um": 734.3, "sd_diameter_um": 114.7, "count": 189},
+        "wet": {"mean_diameter_um": 801.3, "sd_diameter_um": 122.4, "count": 289},
+        "wet_to_dry_mean_ratio": 1.0912433610241046
+      },
+      {
+        "fraction": "unsieved",
+        "dry": {"mean_diameter_um": 386.5, "sd_diameter_um": 138.7, "count": 377},
+        "wet": {"mean_diameter_um": 541.6, "sd_diameter_um": 161.9, "count": 270},
+        "wet_to_dry_mean_ratio": 1.4012936610608022
+      }
+    ],
+    "reaction_size_comparison": {
+      "locator": "Main article Section 4.3, Table 1 experiments 16–18, Figure 6",
+      "temperature_C": 60,
+      "agitation_rpm": 400,
+      "catalyst_mass_percent": 1,
+      "observation": "At less than 5% conversion, the observed initial reaction rates differed by up to a factor of two across catalyst sieve fractions in the equimolar ethyl-butyrate and racemic 2-pentanol transesterification.",
+      "inference": "The size sensitivity supports testing internal transport. Figure 14 estimates initial effectiveness from 0.70 to 0.37 using assumed porosity 0.50, tortuosity 6 and constrictivity 1. These are model outputs. The study used a different reaction and supplied no measured diffusivity or change from stirred batch to packed bed in the pentyl propanoate system."
+    },
+    "transfer": "Dry-to-wet differences in these analogue liquids support diameter scenarios only. The unsieved wet and dry means come from broad unmatched populations and should serve only as a stress case."
+  },
+  "mei_2003": {
+    "article": "https://doi.org/10.1021/bm025611t",
+    "specimen": "Commercial Novozyme 435, Candida antarctica lipase B on polymethylmethacrylate resin",
+    "method": "Synchrotron infrared microspectroscopy of bead cross-sections",
+    "locator": "Article abstract and Methods, pp. 70–74",
+    "section_thickness_um": 12,
+    "spatial_resolution_um": 10,
+    "shell_depth_um": [80, 100],
+    "observation": "Protein was found heterogeneously in an exterior shell of the beads.",
+    "transfer": "This is a geometric sensitivity for the location of a fixed protein inventory. Active-enzyme distribution, shell wetting and batch-to-bed changes for the target specimens were unmeasured."
+  }
+}

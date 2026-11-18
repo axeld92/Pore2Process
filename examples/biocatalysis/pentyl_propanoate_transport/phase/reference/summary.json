@@ -1,0 +1,143 @@
+{
+  "nominal_catalyst_mass_g": 6.0,
+  "fixed_6g_rate_law": "Original Eq. S1, mass-consistent 6 g per void liquid basis, printed Table B1 internal effectiveness",
+  "forecast_type": "Readout postprocessing under specified liquid scenarios",
+  "pure_volumes_and_binary_excess_reference_K": 298.15,
+  "max_volume_ratio_change_by_scenario": {
+    "whole_liquid_additive_volume_ratio": 0.0017496660539653153,
+    "whole_liquid_binary_excess_volume_ratio": 0.003787596439986274,
+    "omit_generated_water_volume_ratio": 0.05566148199060861
+  },
+  "comparison": {
+    "fixed_6g_molar_conversion": {
+      "count": 20,
+      "rmse_percentage_points": 10.464357511126295,
+      "mae_percentage_points": 10.341980542347953,
+      "bias_percentage_points": 10.341980542347953,
+      "max_absolute_error_percentage_points": 13.882090134021768,
+      "overpredicted_cases": 20,
+      "baseline_rmse_on_same_cases_pp": 10.464357511126295,
+      "min_shift_from_molar_conversion_pp": 0.0,
+      "max_shift_from_molar_conversion_pp": 0.0
+    },
+    "whole_liquid_additive": {
+      "count": 20,
+      "rmse_percentage_points": 10.494084231596833,
+      "mae_percentage_points": 10.371609976765079,
+      "bias_percentage_points": 10.371609976765079,
+      "max_absolute_error_percentage_points": 13.928660756790407,
+      "overpredicted_cases": 20,
+      "baseline_rmse_on_same_cases_pp": 10.464357511126295,
+      "min_shift_from_molar_conversion_pp": 0.012406732613179372,
+      "max_shift_from_molar_conversion_pp": 0.04703668140547679
+    },
+    "whole_liquid_binary_excess": {
+      "count": 20,
+      "rmse_percentage_points": 10.47510239655761,
+      "mae_percentage_points": 10.354817550428725,
+      "bias_percentage_points": 10.354817550428725,
+      "max_absolute_error_percentage_points": 13.844604561734803,
+      "overpredicted_cases": 20,
+      "baseline_rmse_on_same_cases_pp": 10.464357511126295,
+      "min_shift_from_molar_conversion_pp": -0.055172585458296286,
+      "max_shift_from_molar_conversion_pp": 0.03389406265527084
+    },
+    "omit_generated_water": {
+      "count": 20,
+      "rmse_percentage_points": 9.483910007320523,
+      "mae_percentage_points": 9.35557376142726,
+      "bias_percentage_points": 9.35557376142726,
+      "max_absolute_error_percentage_points": 12.348499278896302,
+      "overpredicted_cases": 20,
+      "baseline_rmse_on_same_cases_pp": 10.464357511126295,
+      "min_shift_from_molar_conversion_pp": -1.5434788748274753,
+      "max_shift_from_molar_conversion_pp": -0.4186860816876692
+    },
+    "omit_water_printed_inlet_basis": {
+      "count": 20,
+      "rmse_percentage_points": 8.636972340599785,
+      "mae_percentage_points": 8.492128663680205,
+      "bias_percentage_points": 8.492128663680205,
+      "max_absolute_error_percentage_points": 10.694576243185605,
+      "overpredicted_cases": 20,
+      "baseline_rmse_on_same_cases_pp": 10.464357511126295,
+      "min_shift_from_molar_conversion_pp": -3.4420987270367576,
+      "max_shift_from_molar_conversion_pp": -0.6927944472754466
+    },
+    "pentanol_rich_303_15_K": {
+      "count": 20,
+      "rmse_percentage_points": 10.3794362467981,
+      "mae_percentage_points": 10.251628751453081,
+      "bias_percentage_points": 10.251628751453081,
+      "max_absolute_error_percentage_points": 13.768814779194011,
+      "overpredicted_cases": 20,
+      "baseline_rmse_on_same_cases_pp": 10.464357511126295,
+      "min_shift_from_molar_conversion_pp": -0.26165024465965026,
+      "max_shift_from_molar_conversion_pp": 0.12051382560847035
+    },
+    "water_rich_303_15_K": {
+      "count": 20,
+      "rmse_percentage_points": 19.361237481223156,
+      "mae_percentage_points": 17.566258994599213,
+      "bias_percentage_points": 17.566258994599213,
+      "max_absolute_error_percentage_points": 33.65855172975185,
+      "overpredicted_cases": 20,
+      "baseline_rmse_on_same_cases_pp": 10.464357511126295,
+      "min_shift_from_molar_conversion_pp": -2.506121348634327,
+      "max_shift_from_molar_conversion_pp": 19.916484005030455
+    },
+    "pentanol_rich_323_15_K": {
+      "count": 19,
+      "rmse_percentage_points": 10.157561001842218,
+      "mae_percentage_points": 10.051828436026067,
+      "bias_percentage_points": 10.051828436026067,
+      "max_absolute_error_percentage_points": 13.887162933063408,
+      "overpredicted_cases": 19,
+      "baseline_rmse_on_same_cases_pp": 10.262889551712846,
+      "min_shift_from_molar_conversion_pp": -0.20266148002815454,
+      "max_shift_from_molar_conversion_pp": 0.00507279904163882
+    },
+    "water_rich_323_15_K": {
+      "count": 19,
+      "rmse_percentage_points": 19.99371740886111,
+      "mae_percentage_points": 18.755847307044814,
+      "bias_percentage_points": 18.755847307044814,
+      "max_absolute_error_percentage_points": 35.21912143165778,
+      "overpredicted_cases": 19,
+      "baseline_rmse_on_same_cases_pp": 10.262889551712846,
+      "min_shift_from_molar_conversion_pp": 0.37631815711315353,
+      "max_shift_from_molar_conversion_pp": 21.33703129763601
+    }
+  },
+  "sixty_C_three_ml_min": {
+    "temperature_C": 60,
+    "flow_ml_min": 3.0,
+    "fixed_6g_molar_conversion": 0.6023368005310035,
+    "whole_liquid_additive": 0.602787427690125,
+    "whole_liquid_binary_excess": 0.602132769168549,
+    "omit_generated_water": 0.5874475390016651,
+    "omit_water_printed_inlet_basis": 0.5724137755154406,
+    "whole_liquid_additive_volume_ratio": 1.0011344735553083,
+    "whole_liquid_binary_excess_volume_ratio": 0.9994871873161604,
+    "omit_generated_water_volume_ratio": 0.9639094104703487,
+    "pentanol_rich_303_15_K": 0.6004707755092464,
+    "water_rich_303_15_K": 0.7744268920620526,
+    "pentanol_rich_323_15_K": 0.6014969563885026,
+    "water_rich_323_15_K": 0.7846476767653945,
+    "observed_acid_conversion": 0.497,
+    "volume_ratio_needed_if_all_unreacted_acid_is_sampled": 0.7905829015288202
+  },
+  "required_volume_ratio_if_no_acid_removed_min_max": [
+    0.394628964383513,
+    0.8170441547595153
+  ],
+  "source_sha256": {
+    "examples/biocatalysis/pentyl_propanoate_transport/phase/run.py": "4de61efe9e44141274cbdfe04e3e2e875bc718d683d12c7fbc47fb739160759e",
+    "examples/biocatalysis/pentyl_propanoate_transport/phase/properties.json": "d2b3c1016531b01781aa41641e15162f73abe36e8df579f64f66eb853f954876",
+    "literature/sources/lorenzo2025/author_model.json": "d128ace125cdff8069ae5ba27fea14ab08a35d9ef661016a23d9f394cfe13c16",
+    "examples/biocatalysis/pentyl_propanoate_transfer/published/model.jl": "c2fb5b15d3d70361f086947eb5e73f66bd92bfade987f22815c29032275a33ad",
+    "examples/biocatalysis/pentyl_propanoate_transfer/published/run.py": "2195cac1a57be7e695d10469384e527b7e8799b44784bfac6b8fd7ae209e6c03",
+    "literature/sources/lorenzo2025/conversion_2to1.csv": "8736cc8a57ba341089ae66df91df4a0067dc71f0ce8cfb52a6904317f466a79d"
+  },
+  "comparison_sha256": "11b18ee34b98235ddd68d600bce330495ecd8532503c2438f3a9d21b4ce8c0f1"
+}

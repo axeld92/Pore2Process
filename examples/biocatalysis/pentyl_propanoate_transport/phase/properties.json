@@ -1,0 +1,83 @@
+{
+  "pure_liquids": {
+    "components": ["propanoic_acid", "pentan_1_ol", "water", "pentyl_propanoate"],
+    "molar_mass_g_mol": [74.0785, 88.1482, 18.01528, 144.21172],
+    "density_kg_m3": [988.07, 810.92, 997.019, 867.93],
+    "reference_temperature_K": 298.15,
+    "organics_source": {
+      "doi": "10.1021/acs.iecr.6c02375",
+      "location": "Lorenzo and Ortega (2026), Supporting Information Table S1, experimental column",
+      "si_url": "https://api.figshare.com/v2/file/download/67271163",
+      "density_instrument_accuracy_kg_m3": 0.02
+    },
+    "water_source": {
+      "doi": "10.1021/je030102f",
+      "location": "Estrada-Baltazar et al. (2003), Table 2, pure water endpoint at 298.146 K",
+      "density_instrument_accuracy_kg_m3": 0.005
+    }
+  },
+  "binary_excess_volume": {
+    "equation": "x_acid*(1-x_acid) * sum(A_i*(2*x_acid-1)^i)",
+    "reference_temperature_K": 298.15,
+    "acid_pentanol": {
+      "doi": "10.33224/rrch.2020.65.3.06",
+      "url": "https://revroum.lew.ro/wp-content/uploads/2020/03/Art%2006.pdf",
+      "location": "Georgescu, Meltzer and Pincu (2020), Table 5, fitted from measured densities in Table 4",
+      "coefficients_cm3_mol": [-1.5267, 0.1067, -0.2143, 0.3878],
+      "density_uncertainty_less_than_kg_m3": 0.02
+    },
+    "acid_water": {
+      "doi": "10.1021/je030102f",
+      "location": "Estrada-Baltazar et al. (2003), Table 5, fit at 298.15 K from Table 2 densities",
+      "coefficients_cm3_mol": [-4.0900, 0.5824, -0.7430, 0.0],
+      "fit_standard_deviation_cm3_mol": 0.0097
+    }
+  },
+  "ternary_liquid_liquid": {
+    "doi": "10.12962/j2964710X.v5i1.19035",
+    "url": "https://iptek.its.ac.id/index.php/ekstrak/article/download/19035/8731",
+    "location": "Amamehi et al. (2024), Tables 1 and 2, direct phase composition measurements",
+    "columns": ["pentanol_rich_phase_acid", "pentanol_rich_phase_pentanol", "pentanol_rich_phase_water", "water_rich_phase_acid", "water_rich_phase_pentanol", "water_rich_phase_water"],
+    "pressure_kPa": 101.3,
+    "reported_standard_uncertainty": {"temperature_K": 0.1, "mole_fraction": 0.0003, "pressure_kPa": 1},
+    "mole_fraction_endpoints_by_temperature_K": {
+      "303.15": [
+        [0.0333, 0.7531, 0.2136, 0.0060, 0.0061, 0.9879],
+        [0.0720, 0.7237, 0.2044, 0.0067, 0.0066, 0.9867],
+        [0.1209, 0.6881, 0.1910, 0.0098, 0.0062, 0.9840],
+        [0.1530, 0.6626, 0.1844, 0.0113, 0.0059, 0.9828],
+        [0.1778, 0.6371, 0.1851, 0.0146, 0.0057, 0.9798],
+        [0.2086, 0.6117, 0.1798, 0.0214, 0.0064, 0.9722],
+        [0.2428, 0.5814, 0.1759, 0.0276, 0.0065, 0.9658],
+        [0.2826, 0.5413, 0.1761, 0.0367, 0.0067, 0.9566]
+      ],
+      "323.15": [
+        [0.0422, 0.7263, 0.2315, 0.0043, 0.0061, 0.9896],
+        [0.0742, 0.6995, 0.2263, 0.0046, 0.0052, 0.9902],
+        [0.1080, 0.6709, 0.2211, 0.0091, 0.0060, 0.9849],
+        [0.1443, 0.6319, 0.2233, 0.0100, 0.0065, 0.9835],
+        [0.1826, 0.6019, 0.2155, 0.0158, 0.0061, 0.9781],
+        [0.2141, 0.5722, 0.2137, 0.0159, 0.0059, 0.9782],
+        [0.2443, 0.5421, 0.2135, 0.0284, 0.0070, 0.9646],
+        [0.2895, 0.4956, 0.2149, 0.0391, 0.0075, 0.9534]
+      ]
+    }
+  },
+  "ester_water_binary": {
+    "doi": "10.1021/acs.iecr.6c02375",
+    "location": "Lorenzo and Ortega (2026), Section 5 and Figure 9, 298.15 and 323.15 K, binary miscibility regions inferred from calorimetry",
+    "role": "Qualitative evidence for a water-ester miscibility gap"
+  },
+  "sampling": {
+    "doi": "10.1021/acs.iecr.5c02780",
+    "location": "Lorenzo et al. (2025), Section 2.3, article PDF page 3",
+    "method": "Titration of unreacted acid in effluent samples with standard NaOH and phenolphthalein, with gas chromatographic check and a check of ester hydrolysis interference",
+    "estimated_relative_concentration_error_less_than": 0.05,
+    "sample_temperature_K": null,
+    "sample_phase_handling": null,
+    "inlet_reference_sampling_temperature_K": null,
+    "outlet_volumetric_flow_measurements": null,
+    "quaternary_mixture_density_measurements": null,
+    "quaternary_phase_composition_measurements": null
+  }
+}

@@ -56,6 +56,7 @@ specific earlier measurements or assumptions.
 | Adsorption | [Figure 7 particle-size transfer](adsorption/figure7_equilibrium/REPORT.md) | Four frozen equilibrium cases miss first breakthrough. Clean-film limits and a fixed-mass pumping comparison quantify the remaining gap | [Commands](adsorption/figure7_equilibrium/README.md) |
 | Biocatalysis | [Pentyl propanoate](biocatalysis/pentyl_propanoate/REPORT.md) | Batch-derived rates overpredict held-out conversion. The synthetic OpenLB TRT water bed underpredicts tracer spreading | [Commands](biocatalysis/pentyl_propanoate/README.md) |
 | Biocatalysis | [Pentyl propanoate rate transfer](biocatalysis/pentyl_propanoate_transfer/REPORT.md) | Measured mixing has a small effect, an inferred exposure convention closely reproduces the published curves, and direct batch transfer remains high | [Commands](biocatalysis/pentyl_propanoate_transfer/README.md) |
+| Biocatalysis | [Pentyl propanoate liquid and bead transport](biocatalysis/pentyl_propanoate_transport/REPORT.md) | Small concentration-readout shifts and a residual conversion gap with bead transport anchored to published estimates | [Commands](biocatalysis/pentyl_propanoate_transport/README.md) |
 
 Filtration hydraulics is closed for now. Phenol adsorption is paused pending a
 published dataset with enough detail to check breakthrough independently.

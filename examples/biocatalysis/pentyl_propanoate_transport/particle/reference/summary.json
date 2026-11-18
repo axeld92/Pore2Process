@@ -1,0 +1,298 @@
+{
+  "julia": "1.11.6",
+  "catalyst_mass_kg": 0.006,
+  "source_sha256": {
+    "examples/biocatalysis/pentyl_propanoate_transport/particle/evidence.json": "8e84733da9bea0874354db04f0087b17f1b2439e99683983d7a8d12e6e662c2a",
+    "examples/biocatalysis/pentyl_propanoate/protocol.json": "a95058e12876ff613054df10d8054de34dc8e5be1f8121ffb2695d21440d108a",
+    "examples/biocatalysis/pentyl_propanoate/reference/summary.json": "87493a7b432f3a07c7134191fd9edbdbbc5a86328a98437aff40598a3e08c648",
+    "examples/biocatalysis/pentyl_propanoate/model.jl": "ccaf578bf4e6364aa4418aa8da768d9c74da085da9af8d6655be119ca40149e3",
+    "literature/sources/lorenzo2025/author_model.json": "d128ace125cdff8069ae5ba27fea14ab08a35d9ef661016a23d9f394cfe13c16",
+    "examples/biocatalysis/pentyl_propanoate_transfer/published/model.jl": "c2fb5b15d3d70361f086947eb5e73f66bd92bfade987f22815c29032275a33ad",
+    "examples/biocatalysis/pentyl_propanoate_transfer/published/reference_summary.json": "0315776c3b40d0c5e739af9dda162826d6235e1790f70af76fc457de255329fb",
+    "examples/biocatalysis/pentyl_propanoate_transfer/mixing/reference/summary.json": "7d96d833b60250fff8796db05f534d9ca72527ff9266c32682144d9a90d36184",
+    "literature/sources/lorenzo2025/conversion_2to1.csv": "8736cc8a57ba341089ae66df91df4a0067dc71f0ce8cfb52a6904317f466a79d",
+    "examples/biocatalysis/pentyl_propanoate_transport/phase/properties.json": "d2b3c1016531b01781aa41641e15162f73abe36e8df579f64f66eb853f954876",
+    "examples/biocatalysis/pentyl_propanoate_transport/phase/run.py": "4de61efe9e44141274cbdfe04e3e2e875bc718d683d12c7fbc47fb739160759e",
+    "examples/biocatalysis/pentyl_propanoate_transport/particle/model.jl": "f8b0a07676fb73d5766a7e7f5b76c529727039c67eaa0e6336553c496b84fed4",
+    "examples/biocatalysis/pentyl_propanoate_transport/particle/run.py": "23737d05c04fe9fb652b413c70f363e6bcef3c9dacfb5e251531480937fcd01f"
+  },
+  "bead_geometry_and_mobility": {
+    "reference": {
+      "D_ratio": 1.0,
+      "diameter_ratio": 1.0,
+      "inactive_core_ratio": 0.0
+    },
+    "porosity_contrast": {
+      "D_ratio": 0.5499999999999999,
+      "diameter_ratio": 1.0,
+      "inactive_core_ratio": 0.0
+    },
+    "porosity_and_diameter": {
+      "D_ratio": 0.5499999999999999,
+      "diameter_ratio": 0.8277867528271404,
+      "inactive_core_ratio": 0.0
+    },
+    "skeletal_porosity_and_diameter": {
+      "D_ratio": 0.4546756115519921,
+      "diameter_ratio": 0.8277867528271404,
+      "inactive_core_ratio": 0.0
+    },
+    "shell_80_um": {
+      "D_ratio": 0.5499999999999999,
+      "diameter_ratio": 0.8277867528271404,
+      "inactive_core_ratio": 0.7301854974704891
+    },
+    "shell_100_um": {
+      "D_ratio": 0.5499999999999999,
+      "diameter_ratio": 0.8277867528271404,
+      "inactive_core_ratio": 0.6627318718381112
+    }
+  },
+  "largest_sieved_diameter_contrast_group": "200\u2013300 \u00b5m",
+  "dry_particle_porosity_if_density_is_skeletal": 0.18187024462079684,
+  "uniform_sphere_limit_rate_multiplier": 0.6747464072189842,
+  "volume_convention_rate_multiplier_for_scale_comparison": 0.64,
+  "temperature_cases": {
+    "40": {
+      "reference_eta_from_Table_B1": 0.852,
+      "reference_modulus": 1.6750653676505673,
+      "relative_rate_multipliers": {
+        "reference": 1.0,
+        "porosity_contrast": 0.9031551498427951,
+        "porosity_and_diameter": 0.8669602684323429,
+        "skeletal_porosity_and_diameter": 0.8283021170398558,
+        "shell_80_um": 0.9215665035005413,
+        "shell_100_um": 0.9082695444364325,
+        "strong_diffusion_limit": 0.6747464072189842
+      },
+      "D_ratio_for_volume_convention_at_fixed_diameter": 0.1596875774803035
+    },
+    "50": {
+      "reference_eta_from_Table_B1": 0.861,
+      "reference_modulus": 1.610640302920948,
+      "relative_rate_multipliers": {
+        "reference": 1.0,
+        "porosity_contrast": 0.9078598596355325,
+        "porosity_and_diameter": 0.8730473977323195,
+        "skeletal_porosity_and_diameter": 0.835648305196085,
+        "shell_80_um": 0.9263499798960401,
+        "shell_100_um": 0.9135940298164099,
+        "strong_diffusion_limit": 0.6747464072189842
+      },
+      "D_ratio_for_volume_convention_at_fixed_diameter": 0.15221248079811742
+    },
+    "60": {
+      "reference_eta_from_Table_B1": 0.869,
+      "reference_modulus": 1.5528675042172453,
+      "relative_rate_multipliers": {
+        "reference": 1.0,
+        "porosity_contrast": 0.9121529215965573,
+        "porosity_and_diameter": 0.8786336761644264,
+        "skeletal_porosity_and_diameter": 0.8424299437933601,
+        "shell_80_um": 0.9306035199936826,
+        "shell_100_um": 0.9183576779830667,
+        "strong_diffusion_limit": 0.6747464072189842
+      },
+      "D_ratio_for_volume_convention_at_fixed_diameter": 0.14536921135999817
+    },
+    "70": {
+      "reference_eta_from_Table_B1": 0.878,
+      "reference_modulus": 1.4871490679541624,
+      "relative_rate_multipliers": {
+        "reference": 1.0,
+        "porosity_contrast": 0.9171110424043482,
+        "porosity_and_diameter": 0.8851233982401573,
+        "skeletal_porosity_and_diameter": 0.8503568837051805,
+        "shell_80_um": 0.935389715865853,
+        "shell_100_um": 0.9237506122123769,
+        "strong_diffusion_limit": 0.6747464072189842
+      },
+      "D_ratio_for_volume_convention_at_fixed_diameter": 0.1374387867238238
+    },
+    "80": {
+      "reference_eta_from_Table_B1": 0.884,
+      "reference_modulus": 1.4428189925421742,
+      "relative_rate_multipliers": {
+        "reference": 1.0,
+        "porosity_contrast": 0.9204938507937881,
+        "porosity_and_diameter": 0.8895747721687203,
+        "skeletal_porosity_and_diameter": 0.8558245519577208,
+        "shell_80_um": 0.9385806833061812,
+        "shell_100_um": 0.927365402447789,
+        "strong_diffusion_limit": 0.6747464072189842
+      },
+      "D_ratio_for_volume_convention_at_fixed_diameter": 0.13201107246507812
+    }
+  },
+  "maximum_grid_change_absolute_conversion": 1.1737828724323052e-05,
+  "maximum_normalized_flux_balance_error": 4.3720049802686844e-10,
+  "comparison": {
+    "batch_2026": {
+      "reference": {
+        "count": 20,
+        "rmse_percentage_points": 11.843092006794215,
+        "mae_percentage_points": 10.320464175387398,
+        "bias_percentage_points": 10.320464175387398,
+        "max_absolute_error_percentage_points": 20.614758310857646,
+        "overpredicted_count": 20,
+        "maximum_reduction_from_reference_percentage_points": 0.0
+      },
+      "porosity_contrast": {
+        "count": 20,
+        "rmse_percentage_points": 10.369627454229443,
+        "mae_percentage_points": 8.871696561703256,
+        "bias_percentage_points": 8.871696561703256,
+        "max_absolute_error_percentage_points": 17.974894674310132,
+        "overpredicted_count": 20,
+        "maximum_reduction_from_reference_percentage_points": 2.820597622930965
+      },
+      "porosity_and_diameter": {
+        "count": 20,
+        "rmse_percentage_points": 9.767676767318543,
+        "mae_percentage_points": 8.34731187885263,
+        "bias_percentage_points": 8.253158831285154,
+        "max_absolute_error_percentage_points": 16.893455052754376,
+        "overpredicted_count": 18,
+        "maximum_reduction_from_reference_percentage_points": 3.955400583223445
+      },
+      "skeletal_porosity_and_diameter": {
+        "count": 20,
+        "rmse_percentage_points": 9.095202863507348,
+        "mae_percentage_points": 7.848709608265829,
+        "bias_percentage_points": 7.538475495988921,
+        "max_absolute_error_percentage_points": 15.675518367754664,
+        "overpredicted_count": 18,
+        "maximum_reduction_from_reference_percentage_points": 5.219998265047149
+      },
+      "shell_80_um": {
+        "count": 20,
+        "rmse_percentage_points": 10.684226148596633,
+        "mae_percentage_points": 9.191650892676257,
+        "bias_percentage_points": 9.191650892676257,
+        "max_absolute_error_percentage_points": 18.529797063116042,
+        "overpredicted_count": 20,
+        "maximum_reduction_from_reference_percentage_points": 2.26081335934305
+      },
+      "shell_100_um": {
+        "count": 20,
+        "rmse_percentage_points": 10.471320401053465,
+        "mae_percentage_points": 8.977925067288076,
+        "bias_percentage_points": 8.977925067288076,
+        "max_absolute_error_percentage_points": 18.148395894397744,
+        "overpredicted_count": 20,
+        "maximum_reduction_from_reference_percentage_points": 2.663940267707987
+      },
+      "strong_diffusion_limit": {
+        "count": 20,
+        "rmse_percentage_points": 6.056099773286893,
+        "mae_percentage_points": 5.353346231445285,
+        "bias_percentage_points": 3.474780161236362,
+        "max_absolute_error_percentage_points": 9.676449293374572,
+        "overpredicted_count": 17,
+        "maximum_reduction_from_reference_percentage_points": 11.070990197837077
+      },
+      "porosity_diameter_and_omit_water": {
+        "count": 20,
+        "rmse_percentage_points": 8.813658784752885,
+        "mae_percentage_points": 7.551228997273314,
+        "bias_percentage_points": 7.167329936235242,
+        "max_absolute_error_percentage_points": 15.381252563275233,
+        "overpredicted_count": 18,
+        "maximum_reduction_from_reference_percentage_points": 5.499921601511248
+      },
+      "skeletal_porosity_diameter_and_omit_water": {
+        "count": 20,
+        "rmse_percentage_points": 8.15916231023241,
+        "mae_percentage_points": 7.03899204011362,
+        "bias_percentage_points": 6.436223153340963,
+        "max_absolute_error_percentage_points": 14.153300940581365,
+        "overpredicted_count": 18,
+        "maximum_reduction_from_reference_percentage_points": 6.763977938720234
+      }
+    },
+    "published_2025": {
+      "reference": {
+        "count": 20,
+        "rmse_percentage_points": 10.464357511126295,
+        "mae_percentage_points": 10.341980542347953,
+        "bias_percentage_points": 10.341980542347953,
+        "max_absolute_error_percentage_points": 13.882090134021768,
+        "overpredicted_count": 20,
+        "maximum_reduction_from_reference_percentage_points": 0.0
+      },
+      "porosity_contrast": {
+        "count": 20,
+        "rmse_percentage_points": 8.583659727177393,
+        "mae_percentage_points": 8.413932702264926,
+        "bias_percentage_points": 8.413932702264926,
+        "max_absolute_error_percentage_points": 10.938406854058897,
+        "overpredicted_count": 20,
+        "maximum_reduction_from_reference_percentage_points": 3.1227216415078973
+      },
+      "porosity_and_diameter": {
+        "count": 20,
+        "rmse_percentage_points": 7.827176807153637,
+        "mae_percentage_points": 7.601460465270811,
+        "bias_percentage_points": 7.601460465270811,
+        "max_absolute_error_percentage_points": 10.482225765214704,
+        "overpredicted_count": 20,
+        "maximum_reduction_from_reference_percentage_points": 4.379102953202462
+      },
+      "skeletal_porosity_and_diameter": {
+        "count": 20,
+        "rmse_percentage_points": 6.994159389762909,
+        "mae_percentage_points": 6.670141525723189,
+        "bias_percentage_points": 6.670141525723189,
+        "max_absolute_error_percentage_points": 10.307132607027135,
+        "overpredicted_count": 20,
+        "maximum_reduction_from_reference_percentage_points": 5.779172067917882
+      },
+      "shell_80_um": {
+        "count": 20,
+        "rmse_percentage_points": 8.985517270651446,
+        "mae_percentage_points": 8.836405311280249,
+        "bias_percentage_points": 8.836405311280249,
+        "max_absolute_error_percentage_points": 11.549814458682134,
+        "overpredicted_count": 20,
+        "maximum_reduction_from_reference_percentage_points": 2.5029637618980694
+      },
+      "shell_100_um": {
+        "count": 20,
+        "rmse_percentage_points": 8.715732067357038,
+        "mae_percentage_points": 8.553876101335597,
+        "bias_percentage_points": 8.553876101335597,
+        "max_absolute_error_percentage_points": 11.129168225232283,
+        "overpredicted_count": 20,
+        "maximum_reduction_from_reference_percentage_points": 2.949280361038009
+      },
+      "strong_diffusion_limit": {
+        "count": 20,
+        "rmse_percentage_points": 3.80758767189464,
+        "mae_percentage_points": 3.1219475356818025,
+        "bias_percentage_points": 1.5055416068673713,
+        "max_absolute_error_percentage_points": 8.708197658153438,
+        "overpredicted_count": 13,
+        "maximum_reduction_from_reference_percentage_points": 12.006283824166491
+      },
+      "porosity_diameter_and_omit_water": {
+        "count": 20,
+        "rmse_percentage_points": 6.8734261847995155,
+        "mae_percentage_points": 6.547720681501465,
+        "bias_percentage_points": 6.547720681501465,
+        "max_absolute_error_percentage_points": 10.04120378328709,
+        "overpredicted_count": 20,
+        "maximum_reduction_from_reference_percentage_points": 5.896173141603144
+      },
+      "skeletal_porosity_diameter_and_omit_water": {
+        "count": 20,
+        "rmse_percentage_points": 6.076045059074806,
+        "mae_percentage_points": 5.595140210452147,
+        "bias_percentage_points": 5.595140210452147,
+        "max_absolute_error_percentage_points": 9.856743417425196,
+        "overpredicted_count": 20,
+        "maximum_reduction_from_reference_percentage_points": 7.306608218708066
+      }
+    }
+  },
+  "bed_comparison_sha256": "b3813ac1d1542fee430fd268c22e83f4076cb2963801ef81e3b595321f86af80"
+}

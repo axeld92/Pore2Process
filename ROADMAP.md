@@ -410,6 +410,11 @@ It reproduces the published curves closely with a conditional catalyst
 concentration basis. Direct transfer of the measured batch progress
 still overpredicts conversion at full catalyst exposure.
 
+The [liquid and bead audit](examples/biocatalysis/pentyl_propanoate_transport/REPORT.md)
+finds small changes from the volume and phase readout calculations.
+Bead transport sensitivities reduce the discrepancy at fixed mass.
+The reacting-liquid transport change remains unmeasured.
+
 ## Acceptance criterion for every end-to-end showcase
 
 An output actually derived from OpenLB must influence an actual DWSIM process

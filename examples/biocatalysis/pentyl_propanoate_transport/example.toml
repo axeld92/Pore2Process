@@ -1,0 +1,23 @@
+schema_version = 1
+id = "biocatalysis/pentyl_propanoate_transport"
+title = "Liquid readout and internal bead transport at fixed catalyst inventory"
+area = "biocatalysis"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["biocatalysis/pentyl_propanoate_transfer"]
+run_module = "examples.biocatalysis.pentyl_propanoate_transport.particle.run"
+check_module = "examples.biocatalysis.pentyl_propanoate_transport.check"
+reference_files = [
+  "phase/reference/summary.json",
+  "phase/reference/comparison.csv",
+  "particle/reference/summary.json",
+  "particle/reference/bed_comparison.csv",
+]
+protocol_files = ["protocol.md"]
+
+[validation]
+numerical = "passed"
+liquid_readout = "scenario_only"
+particle_transport = "conditional"
+scope = "Both forward comparisons use the frozen reactor conditions. Anchored bead alternatives retain a conversion discrepancy. Exact reactive-liquid transport is unresolved."
