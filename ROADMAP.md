@@ -404,6 +404,12 @@ tracer-spread comparisons retain their observed discrepancies. Ester
 production rate is the process metric for a later DWSIM case after the
 reactor prediction is qualified.
 
+The [rate transfer audit](examples/biocatalysis/pentyl_propanoate_transfer/REPORT.md)
+finds a small effect from transferring the observed water-tracer spread.
+It reproduces the published curves closely with a conditional catalyst
+concentration basis. Direct transfer of the measured batch progress
+still overpredicts conversion at full catalyst exposure.
+
 ## Acceptance criterion for every end-to-end showcase
 
 An output actually derived from OpenLB must influence an actual DWSIM process

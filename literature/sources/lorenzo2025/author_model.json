@@ -1,0 +1,87 @@
+{
+  "source": {
+    "doi": "10.1021/acs.iecr.5c02780",
+    "supporting_information_doi": "10.1021/acs.iecr.5c02780.s001",
+    "main_pdf_sha256": "6bf0e24e242aa4f7511ef13c602f152fb77d3dfc4b69c6fa1c82e10164ca6d06",
+    "supporting_information_sha256": "8eedaca05d74a981e545fc87fd8b46e66d2b540f073afc986805beb201721fbc",
+    "rate_location": "Supporting Information Equation S1 and Table S3, pentyl propanoate",
+    "reactor_location": "Sections 2.2, 2.3 and 4, Equations 2–4",
+    "effectiveness_location": "Appendix B, Table B1, propanoic acid with inlet alcohol-to-acid concentration ratio 2",
+    "predicted_conversion_location": "Figure 6c, solid lines only"
+  },
+  "rate_parameters": {
+    "k1_ref": 3520.6,
+    "k1_exp": 1746.6,
+    "k2_ref": 260.76,
+    "k2_exp": 1913.3,
+    "k3": 42250,
+    "k4": 0.0000012764,
+    "k5": 103740,
+    "k6": 776560,
+    "k7": 848920,
+    "k8": 0.0000044007,
+    "k9": 16898,
+    "k10": 12813,
+    "Kd_ref": 0.0000066093,
+    "Kd1": 12.292,
+    "Kd2": 3.3629,
+    "Kd_exp": -28091,
+    "T_ref_K": 313.15,
+    "reported_RMSE": 0.228
+  },
+  "rate_basis": {
+    "Table_S3_parameter_unit_labels": null,
+    "batch_figure_S3_species_concentration_axis_mol_per_L": true,
+    "batch_figure_S3_time_axis": "h",
+    "batch_figure_S3_catalyst_mass_fraction_relative_to_initial_acid": 0.1,
+    "Eq_S1_rate_definition": "Positive acid disappearance rate, negative acid concentration derivative with time",
+    "Eq_S1_fit_time_unit_used_for_Table_S3_constants": null,
+    "Eq_S1_catalyst_concentration_unit": null,
+    "Eq_S1_catalyst_concentration_value_or_rule_for_packed_bed": null,
+    "Eq_S1_temperature_rule_for_unadorned_k1_and_k2_in_single_ester_term": null
+  },
+  "effectiveness_by_temperature": {
+    "40": {"eta_internal": 0.852, "eta_external": 0.999},
+    "50": {"eta_internal": 0.861, "eta_external": 0.999},
+    "60": {"eta_internal": 0.869, "eta_external": 0.999},
+    "70": {"eta_internal": 0.878, "eta_external": 0.999},
+    "80": {"eta_internal": 0.884, "eta_external": 0.999}
+  },
+  "bed": {
+    "length_m": 0.14,
+    "diameter_m": 0.016,
+    "bead_mean_diameter_m": 0.000593,
+    "bed_porosity": 0.64,
+    "particle_porosity_wet": 0.40,
+    "catalyst_mass_kg": 0.006,
+    "catalyst_volume_approx_cm3_as_printed": 2,
+    "feed_acid_mol_per_L": 3.3,
+    "feed_alcohol_mol_per_L": 6.6,
+    "inlet_water_concentration": null,
+    "feed_flow_ml_per_min": [0.7, 1.0, 2.0, 3.0],
+    "nominal_residence_time_min_as_printed": [26, 18, 9, 6],
+    "reaction_temperature_C": [40, 50, 60, 70, 80]
+  },
+  "dispersion_and_transport": {
+    "Eq_2": "D_ax * C'' - (u / epsilon_b) * C' + eta_I * r_obs = 0",
+    "Eq_3": "epsilon_b * u * d_p / D_ax = 0.20 + 0.011 * Re^0.48",
+    "Eq_4": "C_acid(0) = C_0_acid and C_acid'(L) = 0",
+    "Eq_B_2_particle_Re_definition": "d_p * u * rho / mu",
+    "Eq_B_2_Sc_as_printed": "mu * D / rho",
+    "reaction_mixture_density_at_setpoints": null,
+    "reaction_mixture_viscosity_at_setpoints": null,
+    "reaction_mixture_molecular_diffusivity_at_setpoints": null,
+    "particle_tortuosity_used": 5.3
+  },
+  "digitized_model_output": {
+    "file": "author_conversion_2to1.csv",
+    "image": "Page 5 render at 720 dpi with a 1228 px x 1220 px crop at (4380, 2440) on the unrotated page",
+    "coordinates": "Zero-based cropped image, x right, y down",
+    "flow_tick_x_px": {"1": 398.25, "2": 732.5, "3": 1066.5},
+    "conversion_tick_y_px": {"0": 1014.5, "1": 45},
+    "extractor_settings_max_difference_percentage_points": 0.0572,
+    "interior_corner_extrapolation_max_side_difference_percentage_points": 0.0710,
+    "working_reading_half_range_percentage_points": 0.5,
+    "experimental_uncertainty": null
+  }
+}

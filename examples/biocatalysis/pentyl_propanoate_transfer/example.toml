@@ -1,0 +1,26 @@
+schema_version = 1
+id = "biocatalysis/pentyl_propanoate_transfer"
+title = "Audit of measured mixing and catalyst exposure in pentyl propanoate production"
+area = "biocatalysis"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["biocatalysis/pentyl_propanoate"]
+run_module = "examples.biocatalysis.pentyl_propanoate_transfer.run"
+check_module = "examples.biocatalysis.pentyl_propanoate_transfer.check"
+reference_files = [
+  "mixing/reference/summary.json",
+  "mixing/reference/bed_comparison.csv",
+  "published/reference_summary.json",
+  "published/reference_comparison.csv",
+  "reference/summary.json",
+  "reference/bed_comparison.csv",
+]
+protocol_files = ["protocol.md"]
+
+[validation]
+numerical = "passed"
+water_dispersion_transfer = "scenario_only"
+published_model_reconstruction = "conditional"
+direct_batch_transfer = "failed"
+scope = "Frozen 20-run evaluation. Published curve reconstruction supports an exposure basis inference. The measured batch-to-bed prediction discrepancy remains."

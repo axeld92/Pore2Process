@@ -1,0 +1,161 @@
+{
+  "scope": "Conditional acid-sink reconstruction. Eq. 2 with the Eq. S1 disappearance sign generates acid.",
+  "rate_units_assumed": "mol/L/min with concentrations mol/L and catalyst g/L",
+  "source_sha256": {
+    "literature/sources/lorenzo2025/author_model.json": "d128ace125cdff8069ae5ba27fea14ab08a35d9ef661016a23d9f394cfe13c16",
+    "literature/sources/lorenzo2025/author_conversion_2to1.csv": "b36e50402d186fd171d27141e14db9dc16aa962f0ee99d185b38d921f4452fed",
+    "literature/sources/lorenzo2025/conversion_2to1.csv": "8736cc8a57ba341089ae66df91df4a0067dc71f0ce8cfb52a6904317f466a79d",
+    "literature/sources/lorenzo2025/batch_2to1_markers.csv": "73ad2ec44f16895e95155af77d6bd32aa31784679f63c5a6c31282f7c50d17fd",
+    "examples/biocatalysis/pentyl_propanoate_transfer/published/model.jl": "c2fb5b15d3d70361f086947eb5e73f66bd92bfade987f22815c29032275a33ad",
+    "examples/biocatalysis/pentyl_propanoate_transfer/published/run.py": "2195cac1a57be7e695d10469384e527b7e8799b44784bfac6b8fd7ae209e6c03"
+  },
+  "numerics": {
+    "julia": "1.11.6",
+    "nominal_catalyst_mass_g": 6.0,
+    "bed_volume_ml": 28.148670176164547,
+    "void_liquid_volume_ml": 18.01514891274531,
+    "bulk_volume_catalyst_concentration_g_L": 213.15394164093127,
+    "void_liquid_catalyst_concentration_g_L": 333.0530338139551,
+    "bulk_volume_effective_mass_on_liquid_basis_g": 3.84,
+    "inlet_acid_disappearance_at_40C_25_3g_per_L_mol_L_min": 0.040555788918732294,
+    "low_re_limit_peclet": 115.27719224283305,
+    "re_one_peclet": 121.61743781618888,
+    "finite_volume_refinement": [
+      512,
+      1024
+    ],
+    "max_grid_change_absolute_conversion": 1.4956081796357878e-05,
+    "max_normalized_stoichiometric_balance_error": 4.673060827187214e-10
+  },
+  "batch_basis_check_on_2025_kinetic_data": {
+    "minute_basis_printed_dose": {
+      "catalyst_g_L": 25.3,
+      "count": 68,
+      "rmse_percentage_points": 4.3895459424542,
+      "mae_percentage_points": 3.929688612234774,
+      "bias_percentage_points": -0.1646746784859695,
+      "max_absolute_error_percentage_points": 7.724706548734139
+    },
+    "hour_basis_printed_dose": {
+      "catalyst_g_L": 25.3,
+      "count": 68,
+      "rmse_percentage_points": 62.42727043423979,
+      "mae_percentage_points": 57.81707255755346,
+      "bias_percentage_points": -57.81707255755346,
+      "max_absolute_error_percentage_points": 82.58189275594447
+    },
+    "minute_basis_nominal_mass_fraction": {
+      "catalyst_g_L": 24.445905000000003,
+      "count": 68,
+      "rmse_percentage_points": 4.684159320770734,
+      "mae_percentage_points": 4.159821006418694,
+      "bias_percentage_points": -0.8485705529411027,
+      "max_absolute_error_percentage_points": 8.784707999572838
+    }
+  },
+  "comparison": {
+    "scenario_against_author_figure_6c": {
+      "bulk_volume_eq4": {
+        "count": 20,
+        "rmse_percentage_points": 1.046579990183377,
+        "mae_percentage_points": 1.0141820008561406,
+        "bias_percentage_points": 1.0141820008561406,
+        "max_absolute_error_percentage_points": 1.6645616371338656
+      },
+      "void_liquid_eq4": {
+        "count": 20,
+        "rmse_percentage_points": 11.7672765684557,
+        "mae_percentage_points": 11.156980542347954,
+        "bias_percentage_points": 11.156980542347954,
+        "max_absolute_error_percentage_points": 15.118530039290057
+      },
+      "void_liquid_unity_effectiveness_eq4": {
+        "count": 20,
+        "rmse_percentage_points": 14.830711372144723,
+        "mae_percentage_points": 13.907257903960538,
+        "bias_percentage_points": 13.907257903960538,
+        "max_absolute_error_percentage_points": 19.45044559047
+      },
+      "bulk_volume_flux_inlet": {
+        "count": 20,
+        "rmse_percentage_points": 1.268022233907709,
+        "mae_percentage_points": 1.2315499131924625,
+        "bias_percentage_points": 1.2315499131924625,
+        "max_absolute_error_percentage_points": 1.9320323637100012
+      },
+      "bulk_volume_re_one": {
+        "count": 20,
+        "rmse_percentage_points": 1.0755356513020335,
+        "mae_percentage_points": 1.0434739501681625,
+        "bias_percentage_points": 1.0434739501681625,
+        "max_absolute_error_percentage_points": 1.694611361643783
+      },
+      "bulk_volume_temperature_ester_term": {
+        "count": 20,
+        "rmse_percentage_points": 1.046558496397964,
+        "mae_percentage_points": 1.0141608767273973,
+        "bias_percentage_points": 1.0141608767273973,
+        "max_absolute_error_percentage_points": 1.6645214786540796
+      }
+    },
+    "scenario_against_held_out_measurements": {
+      "bulk_volume_eq4": {
+        "count": 20,
+        "rmse_percentage_points": 3.8139941358872007,
+        "mae_percentage_points": 3.109707932488042,
+        "bias_percentage_points": 0.19918200085614068,
+        "max_absolute_error_percentage_points": 8.21156327012087
+      },
+      "void_liquid_eq4": {
+        "count": 20,
+        "rmse_percentage_points": 10.464357511126295,
+        "mae_percentage_points": 10.341980542347953,
+        "bias_percentage_points": 10.341980542347953,
+        "max_absolute_error_percentage_points": 13.882090134021768
+      },
+      "void_liquid_unity_effectiveness_eq4": {
+        "count": 20,
+        "rmse_percentage_points": 13.309614781079352,
+        "mae_percentage_points": 13.092257903960537,
+        "bias_percentage_points": 13.092257903960537,
+        "max_absolute_error_percentage_points": 18.587095666784514
+      },
+      "bulk_volume_flux_inlet": {
+        "count": 20,
+        "rmse_percentage_points": 3.781641531119685,
+        "mae_percentage_points": 3.0937320626071303,
+        "bias_percentage_points": 0.4165499131924627,
+        "max_absolute_error_percentage_points": 8.297463754264701
+      },
+      "bulk_volume_re_one": {
+        "count": 20,
+        "rmse_percentage_points": 3.8143765916554018,
+        "mae_percentage_points": 3.1117813008208794,
+        "bias_percentage_points": 0.22847395016816263,
+        "max_absolute_error_percentage_points": 8.231951652684266
+      },
+      "bulk_volume_temperature_ester_term": {
+        "count": 20,
+        "rmse_percentage_points": 3.813990218999397,
+        "mae_percentage_points": 3.1097034053728083,
+        "bias_percentage_points": 0.1991608767273975,
+        "max_absolute_error_percentage_points": 8.21153481794581
+      }
+    },
+    "author_figure_6c_against_held_out_measurements": {
+      "count": 20,
+      "rmse_percentage_points": 4.070073709406255,
+      "mae_percentage_points": 3.2449999999999988,
+      "bias_percentage_points": -0.815,
+      "max_absolute_error_percentage_points": 7.700000000000006
+    }
+  },
+  "max_shift_from_bulk_eq4_percentage_points": {
+    "void_liquid_eq4": 13.605899720652593,
+    "void_liquid_unity_effectiveness_eq4": 18.423069902088628,
+    "bulk_volume_flux_inlet": 0.2679132383833771,
+    "bulk_volume_re_one": 0.034940261751492674,
+    "bulk_volume_temperature_ester_term": 4.9982055161379435e-05
+  },
+  "comparison_sha256": "e887fe521db2cf2c0662ca397b8ab608908126b0e7cac995223927ef949b8c80"
+}

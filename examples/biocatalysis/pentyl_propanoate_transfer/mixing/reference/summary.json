@@ -1,0 +1,109 @@
+{
+  "julia_version": "1.11.6",
+  "source_hashes": {
+    "literature/sources/lorenzo2025/water_tracer.csv": "3ad54d379e0d4da081bcaf50a48fe398181e9ede6835ae746dc39b1fa624a334",
+    "literature/sources/lorenzo2025/extraction.json": "47f54b31d538cb5b34bc09e586289e86fbdd64ca9459ada9ffd9330acb218d2b",
+    "examples/biocatalysis/pentyl_propanoate/model.jl": "ccaf578bf4e6364aa4418aa8da768d9c74da085da9af8d6655be119ca40149e3",
+    "examples/biocatalysis/pentyl_propanoate/reference/summary.json": "87493a7b432f3a07c7134191fd9edbdbbc5a86328a98437aff40598a3e08c648",
+    "examples/biocatalysis/pentyl_propanoate/protocol.json": "a95058e12876ff613054df10d8054de34dc8e5be1f8121ffb2695d21440d108a",
+    "literature/sources/lorenzo2025/conversion_2to1.csv": "8736cc8a57ba341089ae66df91df4a0067dc71f0ce8cfb52a6904317f466a79d"
+  },
+  "bed_comparison_sha256": "cbfa34c977bcc707a34d51d72a4e1d01e92e923fbe5617be53f4c62b7208b044",
+  "fixed_catalyst_kg": 0.006,
+  "fixed_inlet_acid_mol_l": 3.3,
+  "water_flow_ml_min": 1.2,
+  "nominal_pulse_duration_min": 7.000000000000001,
+  "figure_a1a_blue_dextran": {
+    "marker_count": 41,
+    "area_mg_min_ml": 5.6030705,
+    "mean_min": 19.090630473951737,
+    "variance_min2": 27.77992696483009
+  },
+  "table_a1_blue_dextran": {
+    "mean_min": 19.07,
+    "variance_min2": 27.83,
+    "dimensionless_variance": 0.0765
+  },
+  "table_a1_rectangular_pulse_check": {
+    "inlet_mean_min": 3.5000000000000004,
+    "inlet_variance_min2": 4.083333333333335,
+    "bed_mean_min": 15.57,
+    "bed_variance_min2": 23.746666666666663,
+    "bed_relative_variance": 0.0979547342977832,
+    "danckwerts_peclet": 19.36313712660005
+  },
+  "conditional_danckwerts_transfer": {
+    "nominal_rectangular_pulse": {
+      "inlet_mean_min": 3.5000000000000004,
+      "inlet_variance_min2": 4.083333333333335,
+      "bed_mean_min": 15.590630473951737,
+      "bed_variance_min2": 23.696593631496754,
+      "bed_relative_variance": 0.09748966202012578,
+      "danckwerts_peclet": 19.460826979034508
+    },
+    "impulse_at_start": {
+      "inlet_mean_min": 0.0,
+      "inlet_variance_min2": 0.0,
+      "bed_mean_min": 19.090630473951737,
+      "bed_variance_min2": 27.77992696483009,
+      "bed_relative_variance": 0.07622379315381872,
+      "danckwerts_peclet": 25.197199185183393
+    },
+    "maximum_spreading_bound": {
+      "inlet_mean_min": 7.000000000000001,
+      "inlet_variance_min2": 0.0,
+      "bed_mean_min": 12.090630473951737,
+      "bed_variance_min2": 27.77992696483009,
+      "bed_relative_variance": 0.19003482863158958,
+      "danckwerts_peclet": 9.405520149006463
+    }
+  },
+  "grid_cells": [
+    2048,
+    4096
+  ],
+  "max_grid_change_absolute_conversion": 1.9843714271772228e-07,
+  "max_stoichiometric_balance_error": 6.674993890953829e-12,
+  "comparison": {
+    "plug_flow": {
+      "count": 20,
+      "rmse_percentage_points": 13.347414739138491,
+      "mae_percentage_points": 11.860280998622585,
+      "bias_percentage_points": 11.860280998622585,
+      "max_absolute_error_percentage_points": 22.564019642174788,
+      "overpredicted_count": 20,
+      "minimum_signed_error_percentage_points": 4.569301159974593,
+      "maximum_reduction_from_plug_flow_percentage_points": 0.0
+    },
+    "nominal_rectangular_pulse": {
+      "count": 20,
+      "rmse_percentage_points": 11.843092006794215,
+      "mae_percentage_points": 10.320464175387398,
+      "bias_percentage_points": 10.320464175387398,
+      "max_absolute_error_percentage_points": 20.614758310857646,
+      "overpredicted_count": 20,
+      "minimum_signed_error_percentage_points": 2.6930204627432452,
+      "maximum_reduction_from_plug_flow_percentage_points": 2.239164387184489
+    },
+    "impulse_at_start": {
+      "count": 20,
+      "rmse_percentage_points": 12.151363314894233,
+      "mae_percentage_points": 10.642243472414084,
+      "bias_percentage_points": 10.642243472414084,
+      "max_absolute_error_percentage_points": 21.01367168213994,
+      "overpredicted_count": 20,
+      "minimum_signed_error_percentage_points": 3.0776611575741186,
+      "maximum_reduction_from_plug_flow_percentage_points": 1.7826074003529646
+    },
+    "maximum_spreading_bound": {
+      "count": 20,
+      "rmse_percentage_points": 10.602603812194152,
+      "mae_percentage_points": 8.9881162846936,
+      "bias_percentage_points": 8.9881162846936,
+      "max_absolute_error_percentage_points": 19.009717051253634,
+      "overpredicted_count": 20,
+      "minimum_signed_error_percentage_points": 1.0109892886773442,
+      "maximum_reduction_from_plug_flow_percentage_points": 4.076988550233718
+    }
+  }
+}

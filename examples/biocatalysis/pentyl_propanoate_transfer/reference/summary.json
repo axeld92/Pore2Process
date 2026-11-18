@@ -1,0 +1,113 @@
+{
+  "model": "Interpolated measured batch progress at fixed catalyst exposure. No kinetic fit.",
+  "inputs_sha256": {
+    "literature/sources/lorenzo2026/batch_2to1.csv": "737cad65867c4f106eb5cbab5171009ec2c71abf677857e4acde4309a1a5d938",
+    "literature/sources/lorenzo2025/batch_2to1_markers.csv": "73ad2ec44f16895e95155af77d6bd32aa31784679f63c5a6c31282f7c50d17fd",
+    "examples/biocatalysis/pentyl_propanoate/protocol.json": "a95058e12876ff613054df10d8054de34dc8e5be1f8121ffb2695d21440d108a",
+    "literature/sources/lorenzo2025/conversion_2to1.csv": "8736cc8a57ba341089ae66df91df4a0067dc71f0ce8cfb52a6904317f466a79d",
+    "examples/biocatalysis/pentyl_propanoate/reference/bed_comparison.csv": "0104b447cbab301feb329f833567ca5fe1b61b1f90dca632d120e40f1d5182ab",
+    "examples/biocatalysis/pentyl_propanoate_transfer/run.py": "c8f0d8f2d70fc667b79d275bfbd7bcc75ac3d4c73e9734007017d2e8a01cb38f"
+  },
+  "catalyst_kg_per_batch_mol_acid": {
+    "2025": 0.007666666666666667,
+    "2026": 0.0074078500000000005
+  },
+  "all_available_cases": {
+    "predicted_from_2025_batch": {
+      "count": 18,
+      "rmse_percentage_points": 14.496863376802821,
+      "mae_percentage_points": 13.60019264887665,
+      "bias_percentage_points": 13.60019264887665,
+      "max_absolute_error_percentage_points": 21.472627140974964,
+      "overpredicted_cases": 18
+    },
+    "predicted_from_2026_batch": {
+      "count": 15,
+      "rmse_percentage_points": 16.918297342549447,
+      "mae_percentage_points": 15.364630845559537,
+      "bias_percentage_points": 15.364630845559537,
+      "max_absolute_error_percentage_points": 27.139284454168955,
+      "overpredicted_cases": 15
+    },
+    "predicted_from_2026_acid_depletion": {
+      "count": 15,
+      "rmse_percentage_points": 18.40350061336742,
+      "mae_percentage_points": 16.97457601038929,
+      "bias_percentage_points": 16.97457601038929,
+      "max_absolute_error_percentage_points": 27.385167979215563,
+      "overpredicted_cases": 15
+    }
+  },
+  "common_cases": {
+    "predicted_from_2025_batch": {
+      "count": 15,
+      "rmse_percentage_points": 15.588171630715935,
+      "mae_percentage_points": 14.974902473002585,
+      "bias_percentage_points": 14.974902473002585,
+      "max_absolute_error_percentage_points": 21.472627140974964,
+      "overpredicted_cases": 15
+    },
+    "predicted_from_2026_batch": {
+      "count": 15,
+      "rmse_percentage_points": 16.918297342549447,
+      "mae_percentage_points": 15.364630845559537,
+      "bias_percentage_points": 15.364630845559537,
+      "max_absolute_error_percentage_points": 27.139284454168955,
+      "overpredicted_cases": 15
+    },
+    "predicted_from_2026_acid_depletion": {
+      "count": 15,
+      "rmse_percentage_points": 18.40350061336742,
+      "mae_percentage_points": 16.97457601038929,
+      "bias_percentage_points": 16.97457601038929,
+      "max_absolute_error_percentage_points": 27.385167979215563,
+      "overpredicted_cases": 15
+    },
+    "original_plug_flow_prediction": {
+      "count": 15,
+      "rmse_percentage_points": 14.934053532498236,
+      "mae_percentage_points": 13.635534111667905,
+      "bias_percentage_points": 13.635534111667905,
+      "max_absolute_error_percentage_points": 22.564019642174788,
+      "overpredicted_cases": 15
+    }
+  },
+  "unavailable": [
+    {
+      "temperature_C": 40,
+      "flow_ml_min": 0.7,
+      "batch_series": "2026"
+    },
+    {
+      "temperature_C": 50,
+      "flow_ml_min": 0.7,
+      "batch_series": "2026"
+    },
+    {
+      "temperature_C": 60,
+      "flow_ml_min": 0.7,
+      "batch_series": "2026"
+    },
+    {
+      "temperature_C": 70,
+      "flow_ml_min": 0.7,
+      "batch_series": "2025"
+    },
+    {
+      "temperature_C": 70,
+      "flow_ml_min": 0.7,
+      "batch_series": "2026"
+    },
+    {
+      "temperature_C": 80,
+      "flow_ml_min": 0.7,
+      "batch_series": "2025"
+    },
+    {
+      "temperature_C": 80,
+      "flow_ml_min": 0.7,
+      "batch_series": "2026"
+    }
+  ],
+  "bed_comparison_sha256": "9ca35544af9b34cdc379d0e15ccb979447c185954b3da7ed16062fa7bb47ee84"
+}
