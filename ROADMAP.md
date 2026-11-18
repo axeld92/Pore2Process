@@ -422,6 +422,14 @@ changes with water activity. A bed-specific water effect needs a constraint
 on how the catalyst's water activity or hydration history differs from the
 calibration batch at the same conversion.
 
+The [matched-conversion water balance](examples/biocatalysis/pentyl_propanoate_water_balance/REPORT.md)
+shows that both bulk liquids share their equilibrium water activity at
+equal retained inventories. The nominal batch headspace holds little of
+the produced water. Published phase and activity data support a small
+water-film increment at 50% conversion, with larger conditional
+increments early in the reaction. Catalyst conditioning and local
+liquid activity in the reacting beads remain unresolved.
+
 ## Acceptance criterion for every end-to-end showcase
 
 An output actually derived from OpenLB must influence an actual DWSIM process

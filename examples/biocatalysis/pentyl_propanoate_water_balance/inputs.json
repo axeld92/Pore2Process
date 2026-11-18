@@ -1,0 +1,59 @@
+{
+  "scope": "Matched nominal 2:1 feed at equal temperature and molar conversion. Water transport and activity are screened independently of the packed-bed conversion measurements.",
+  "batch_charge": {
+    "doi": "10.1021/acs.iecr.6c02375",
+    "location": "Lorenzo and Ortega (2026), Section 2, Figure 1, Table 1 and SI Table S1",
+    "vessel_volume_ml": 50.0,
+    "initial_liquid_charge_ml": 40.0,
+    "initial_acid_volume_ml": 10.3,
+    "acid_density_at_25_C_g_ml": 0.98807,
+    "catalyst_mass_fraction_of_acid": 0.10,
+    "condenser": true,
+    "condenser_water_holdup_ml": null,
+    "net_vented_water_mol": null,
+    "initial_feed_moisture_mol": null
+  },
+  "water_in_pentanol_diffusivity": {
+    "source": "Su et al. (2010), Journal of Chemical Physics 132, 044506",
+    "doi": "10.1063/1.3298857",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2826382/",
+    "location": "Section 2 and Table 1, water microdroplet dissolution into n-pentanol",
+    "temperature_C": 22,
+    "ambient_temperature_variation_C_as_reported": 1,
+    "diffusivity_m2_s": 5.2e-10,
+    "reported_plus_minus_m2_s": 8.0e-11,
+    "temperature_scaling": "T divided by measured pure-pentanol dynamic viscosity relative to the measurement temperature."
+  },
+  "pentanol_water_vle": {
+    "source": "Smith (2017), Measurement and modelling of the vapour-liquid equilibria of binary mixtures of water and alkanols",
+    "url": "https://core.ac.uk/download/pdf/188223613.pdf",
+    "location": "Appendix B, Table B.3, printed page 167, four pentanol-rich homogeneous measurements",
+    "pressure_kPa": 101.3,
+    "maximum_repeat_difference_for_sensitivity": 0.03,
+    "columns": ["temperature_K", "x_pentanol_average", "y_pentanol_average", "water_activity_coefficient", "difference_between_liquid_replicate_mole_fractions"],
+    "observations": [
+      [388.58, 0.9181, 0.3807, 4.533, 0.0250],
+      [383.42, 0.8871, 0.2931, 4.448, 0.0742],
+      [380.20, 0.8284, 0.2488, 3.465, 0.0059],
+      [378.42, 0.8148, 0.2372, 3.466, 0.1828]
+    ],
+    "scope": "Measured composition and reported water activity coefficient on the hotter, neat-pentanol branch. Replicate differences limit use to a screening curve."
+  },
+  "fresh_catalyst_moisture": {
+    "source": "Melgosa et al. (2015), Journal of Supercritical Fluids",
+    "doi": "10.1016/j.supflu.2014.11.003",
+    "url": "https://riubu.ubu.es/bitstream/10259/4339/1/Melgosa-JSF_2015.pdf",
+    "location": "Section 2.1, untreated Lipozyme 435, dry methanol extraction and Karl Fischer titration",
+    "water_mass_fraction_as_received": 0.007,
+    "reported_plus_minus_mass_fraction": 0.002,
+    "use": "Complete release scenario for a published separate catalyst lot. Equilibrium water uptake in the reacting liquid remains unavailable."
+  },
+  "pure_water_vapor_pressure": {
+    "source": "IAPWS SR1-86 (1992), Eq. 1",
+    "url": "https://www.iapws.org/relguide/Supp-sat.html",
+    "critical_temperature_K": 647.096,
+    "critical_pressure_Pa": 22064000.0,
+    "factors": [-7.85951783, 1.84408259, -11.7866497, 22.6807411, -15.9618719, 1.80122502],
+    "exponents": [1, 1.5, 3, 3.5, 4, 7.5]
+  }
+}

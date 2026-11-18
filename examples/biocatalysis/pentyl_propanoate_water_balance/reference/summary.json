@@ -1,0 +1,249 @@
+{
+  "batch_acid_initial_mol": 0.137382924870239,
+  "batch_catalyst_g": 1.0177121000000002,
+  "bed_catalyst_g": 6.0,
+  "batch_nominal_headspace_ml": 10.0,
+  "bed_liquid_volume_ml": 18.01514891274531,
+  "batch_high_analogue_moisture_mg": 9.1594089,
+  "bed_high_analogue_moisture_mg": 54.00000000000001,
+  "batch_high_analogue_moisture_mol_per_initial_acid_mol": 0.003700783446052463,
+  "bed_high_analogue_moisture_mol_per_initial_acid_mol_in_one_void_volume": 0.050419780089803835,
+  "water_rate_analogue_segment_log_slopes": [
+    -1.5643050808192185,
+    -3.8505411084803685,
+    -1.5753345012726032
+  ],
+  "water_rate_analogue_interval": [
+    0.12,
+    0.97
+  ],
+  "binary_activity_data": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.08189999999999997,
+      0.3712526999999999
+    ],
+    [
+      0.1129,
+      0.5021792
+    ],
+    [
+      0.17159999999999997,
+      0.5945939999999998
+    ],
+    [
+      0.18520000000000003,
+      0.6419032000000001
+    ]
+  ],
+  "binary_activity_data_lower_repeat_spread": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.08189999999999997,
+      0.3712526999999999
+    ],
+    [
+      0.17159999999999997,
+      0.5945939999999998
+    ]
+  ],
+  "binary_reported_aw_max_difference_from_ideal_vapor_estimate": 0.008720005685166399,
+  "phase_source_endpoints": [
+    {
+      "temperature_C": 30,
+      "organic_water_mole_fraction": [
+        0.17588241175882413,
+        0.2136
+      ],
+      "aqueous_water_mole_fraction": [
+        0.9566,
+        0.9879
+      ]
+    },
+    {
+      "temperature_C": 50,
+      "organic_water_mole_fraction": [
+        0.2135213521352135,
+        0.2315
+      ],
+      "aqueous_water_mole_fraction": [
+        0.9534,
+        0.9902
+      ]
+    }
+  ],
+  "kinetic_scope": "Water production uses the frozen batch rate law and internal effectiveness. A film-free bead flux screens the water concentration rise; no new conversion is fitted or solved.",
+  "observed_reactor_conversions_read": 0,
+  "published_batch_composition_check": {
+    "post_start_records": 75,
+    "equal_water_and_ester_at_printed_precision": 75,
+    "largest_absolute_water_ester_difference": 0.0,
+    "source_method": "Water estimated by the authors' mass balance. These values provide no independent water activity or water retention measurement."
+  },
+  "conditional_ranges": {
+    "packed_bed": {
+      "all_conversions": {
+        "headspace_delta_aw": [
+          -4.936443032121929e-09,
+          0.0017738096572166044
+        ],
+        "bead_moisture_delta_aw": [
+          -5.459366259064069e-08,
+          0.008016908181432969
+        ],
+        "water_film_delta_aw": [
+          -2.1738340494348307e-07,
+          0.09873012982177887
+        ],
+        "film_plus_headspace_delta_aw": [
+          -2.2213383732427872e-07,
+          0.09873012982177887
+        ],
+        "conditional_rate_relative_to_batch": [
+          0.7409684058884484,
+          0.9967978608353342
+        ]
+      },
+      "conversion_at_least_0_20": {
+        "headspace_delta_aw": [
+          -4.936443032121929e-09,
+          0.001658319545978837
+        ],
+        "bead_moisture_delta_aw": [
+          -5.459366259064069e-08,
+          0.008013242611120963
+        ],
+        "water_film_delta_aw": [
+          -2.1738340494348307e-07,
+          0.06899208513254562
+        ],
+        "film_plus_headspace_delta_aw": [
+          -2.2213383732427872e-07,
+          0.0694397550503521
+        ],
+        "conditional_rate_relative_to_batch": [
+          0.7744008536432371,
+          0.9967978608353342
+        ]
+      }
+    },
+    "packed_bed_slow_water": {
+      "all_conversions": {
+        "headspace_delta_aw": [
+          -4.936443032121929e-09,
+          0.0017738096572166044
+        ],
+        "bead_moisture_delta_aw": [
+          -5.459366259064069e-08,
+          0.008016908181432969
+        ],
+        "water_film_delta_aw": [
+          -2.4299709455721796e-07,
+          0.11016397171091738
+        ],
+        "film_plus_headspace_delta_aw": [
+          -2.477475269380136e-07,
+          0.11016397171091738
+        ],
+        "conditional_rate_relative_to_batch": [
+          0.7157512208587803,
+          0.9964325086245281
+        ]
+      },
+      "conversion_at_least_0_20": {
+        "headspace_delta_aw": [
+          -4.936443032121929e-09,
+          0.001658319545978837
+        ],
+        "bead_moisture_delta_aw": [
+          -5.459366259064069e-08,
+          0.008013242611120963
+        ],
+        "water_film_delta_aw": [
+          -2.4299709455721796e-07,
+          0.07683385521986696
+        ],
+        "film_plus_headspace_delta_aw": [
+          -2.477475269380136e-07,
+          0.07728152513767345
+        ],
+        "conditional_rate_relative_to_batch": [
+          0.7518384516693383,
+          0.9964325086245281
+        ]
+      }
+    },
+    "quiescent_sphere": {
+      "all_conversions": {
+        "headspace_delta_aw": [
+          -4.936443032121929e-09,
+          0.0017738096572166044
+        ],
+        "bead_moisture_delta_aw": [
+          -5.459366259064069e-08,
+          0.008016908181432969
+        ],
+        "water_film_delta_aw": [
+          -5.694166068659356e-07,
+          0.2753058555887366
+        ],
+        "film_plus_headspace_delta_aw": [
+          -5.741670392467313e-07,
+          0.2753058555887366
+        ],
+        "conditional_rate_relative_to_batch": [
+          0.44998911986622186,
+          0.9842661055512625
+        ]
+      },
+      "conversion_at_least_0_20": {
+        "headspace_delta_aw": [
+          -4.936443032121929e-09,
+          0.001658319545978837
+        ],
+        "bead_moisture_delta_aw": [
+          -5.459366259064069e-08,
+          0.008013242611120963
+        ],
+        "water_film_delta_aw": [
+          -5.694166068659356e-07,
+          0.18942437559533265
+        ],
+        "film_plus_headspace_delta_aw": [
+          -5.741670392467313e-07,
+          0.18987204551313913
+        ],
+        "conditional_rate_relative_to_batch": [
+          0.5597365179799987,
+          0.9842661055512625
+        ]
+      }
+    }
+  },
+  "julia": "1.11.6",
+  "source_sha256": {
+    "examples/biocatalysis/pentyl_propanoate_water_balance/inputs.json": "7d4e4dd084183320ecb8734dd1eb5e4d64091960a6bead236ae46ba497b1a98e",
+    "literature/sources/lorenzo2026/batch_2to1.csv": "737cad65867c4f106eb5cbab5171009ec2c71abf677857e4acde4309a1a5d938",
+    "examples/biocatalysis/pentyl_propanoate_transport/phase/properties.json": "d2b3c1016531b01781aa41641e15162f73abe36e8df579f64f66eb853f954876",
+    "examples/biocatalysis/pentyl_propanoate_transport/phase/run.py": "4de61efe9e44141274cbdfe04e3e2e875bc718d683d12c7fbc47fb739160759e",
+    "examples/biocatalysis/pentyl_propanoate_film_water/film/properties.json": "5bf073298e4916a185639decff259db90de51726b91b02ea652ca07ebd85d08a",
+    "examples/biocatalysis/pentyl_propanoate_film_water/film/model.jl": "5c4c51ed23cbb569cb2d44d2193e58f6a8ab40880f82c4dcc548c69b8020330b",
+    "literature/sources/lorenzo2025/author_model.json": "d128ace125cdff8069ae5ba27fea14ab08a35d9ef661016a23d9f394cfe13c16",
+    "examples/biocatalysis/pentyl_propanoate_transfer/published/model.jl": "c2fb5b15d3d70361f086947eb5e73f66bd92bfade987f22815c29032275a33ad",
+    "examples/biocatalysis/pentyl_propanoate_film_water/water_activity/batch_initial_rates.csv": "a617e4586ab588122cdb6019b3ac70e422713c6a75f8a35b57ac353e32fa45b4",
+    "examples/biocatalysis/pentyl_propanoate_film_water/water_activity/run.py": "877d702fffd79337e80c8a3ffcddf8c40e22b331cfe9f42c9ae6aaa09406e330",
+    "examples/biocatalysis/pentyl_propanoate_water_balance/run.py": "c1a5f09c61f4c7ee298185468b6972dd03d10b0c9a4d00fbfe61ea0283f6b259",
+    "examples/biocatalysis/pentyl_propanoate_water_balance/activity.py": "19eabadfe55c2223d0a4dfe5151d6985dedfc137218dd145db8522a99a864b59"
+  },
+  "output_sha256": {
+    "headspace.csv": "e0aeee540b394870aaabc404e217c0d0ee7adf169b5924ca3aa75e4172df0319",
+    "matched_activity.csv": "7660619ee8df84e15b2def25b81c1159de4b301531bd83c0006a11baba2675b8",
+    "representative.csv": "6c53d138ba8dc614b0a7992ff292ccbce4c8bc6ab0fa757494efb1f13c839837"
+  }
+}

@@ -1,0 +1,22 @@
+schema_version = 1
+id = "biocatalysis/pentyl_propanoate_water_balance"
+title = "Matched-conversion water activity in stirred batch and packed bed"
+area = "biocatalysis"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["biocatalysis/pentyl_propanoate_film_water"]
+run_module = "examples.biocatalysis.pentyl_propanoate_water_balance.run"
+check_module = "examples.biocatalysis.pentyl_propanoate_water_balance.check"
+reference_files = [
+  "reference/summary.json",
+  "reference/headspace.csv",
+  "reference/representative.csv",
+]
+protocol_files = ["protocol.md"]
+
+[validation]
+numerical = "passed"
+batch_headspace = "conditional"
+bead_liquid_activity = "scenario_only"
+scope = "Equal bulk inventories give equal equilibrium activity. Published phase and activity data constrain transport scenarios. Actual reacting-liquid and intrabead activities remain unavailable."
