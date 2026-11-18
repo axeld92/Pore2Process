@@ -370,6 +370,17 @@ predicted 5% crossing is about 7 minutes late. Both rates retain too
 little phenol, and crossing the N45 and N60 film and flow inputs does
 not change the comparison outcomes.
 
+The [breakthrough hypothesis tests](examples/adsorption/breakthrough_hypotheses/REPORT.md)
+separate first arrival from late uptake. The wall-flow screen moves early
+breakthrough but leaves the retained-mass shortfall. The two printed
+equilibrium laws bracket late uptake at both 25 cm flow rates after
+independent batch checks. Combining confined TRT flow with the equilibrium
+weight selected on the two shortest beds passes the timing and curve-shape
+screens at all three held-out conditions. High-flow retention passes.
+Low-flow retention remains too high, and the confined handoff remains
+grid-sensitive. The original isotherm measurements near the column liquid
+concentration would help constrain the next independent check.
+
 ## 7. Select a reacting or non-isothermal showcase
 
 **Research direction; application and physical model not yet selected.**

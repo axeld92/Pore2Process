@@ -1,0 +1,17 @@
+schema_version = 1
+id = "adsorption/breakthrough_hypotheses"
+title = "Fixed-carbon tests of the phenol breakthrough discrepancy"
+area = "adsorption"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["adsorption/porosity_matched_column", "adsorption/figure7_retention"]
+run_module = "examples.adsorption.breakthrough_hypotheses.run"
+check_module = "examples.adsorption.breakthrough_hypotheses.run"
+reference_files = ["reference_summary.json", "batch/reference_summary.json"]
+protocol_files = ["protocol.md", "batch/protocol.md", "batch/freundlich_protocol.md", "batch/conditional/protocol.md", "coupled_protocol.md"]
+
+[validation]
+numerical = "mixed"
+literature = "mixed"
+scope = "Conservative column forecasts and the independent radial benchmark pass their numerical checks. The confined tracer handoff has unresolved local velocity and mesh sensitivity. Breakthrough qualification is reported separately from scenario results."

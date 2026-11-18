@@ -1,0 +1,233 @@
+{
+  "schema": "pore2process.breakthrough-hypotheses.reference.v1",
+  "dry_carbon_25cm_kg": 0.01758113788765188,
+  "voidage": 0.427,
+  "feed_kg_m3": 0.15,
+  "particle_diameter_m": 0.0008,
+  "figure7_parameters_fitted": 0,
+  "runs": {
+    "parallel_screen": {
+      "path": "results/adsorption/breakthrough_hypotheses/screen/20261117T233951Z-1f0dd131/summary.json",
+      "sha256": "20fa5213564d2681d26adc9810274e9943c5d543f856f77aaab5ffa94972d8c5"
+    },
+    "periodic": {
+      "path": "results/adsorption/breakthrough_hypotheses/column/20261117T234713Z-3e6d71b6/summary.json",
+      "sha256": "14253e4a6d96048efbc0c8cff69520f4cca9fbccdcc64cd9ec3fa8e570accb6a"
+    },
+    "confined_q233": {
+      "path": "results/adsorption/breakthrough_hypotheses/column/20261117T235927Z-a4af8911/summary.json",
+      "sha256": "e2d881aa5526f8069353c05db7831a2b4c48f181e9cabb0a28ec3c0085d6155a"
+    },
+    "freundlich_column": {
+      "path": "results/adsorption/breakthrough_hypotheses/batch/freundlich_transfer/20261117T235324Z-835f21b3/summary.json",
+      "sha256": "dc4293b125c47932550abbd26ec01ee327226476a92f020f9e8d050fed9bfe36"
+    },
+    "particle_reference": {
+      "path": "examples/adsorption/breakthrough_hypotheses/batch/reference_summary.json",
+      "sha256": "bcca3dd0827f127a72a2b0a19b93a82a45627100c0db1f630eeb3b86f8f68c10"
+    },
+    "confined_q625": {
+      "path": "results/adsorption/breakthrough_hypotheses/column/20261118T001020Z-e37d8bc9/summary.json",
+      "sha256": "1a7d004c35c166a08cbecb9bfb1e1e8b3ed96807c13d73ad1194d0a71a10b9fd"
+    },
+    "confined_q625_coarse": {
+      "path": "results/adsorption/breakthrough_hypotheses/column/20261118T000327Z-30832686/summary.json",
+      "sha256": "6305e4c52f8fb537e0758e093ac1c66a4afa66383ac61aab5496a7d06584b820"
+    },
+    "confined_handoff": {
+      "path": "results/adsorption/breakthrough_hypotheses/hydrodynamics/runs/20261117T234259Z-759eb473/column_handoff.json",
+      "sha256": "4bf80c0eda6767288ac95339c8472d06e31b19cdd097ad8330a5b7c10f03f6d2"
+    },
+    "confined_verification": {
+      "path": "results/adsorption/breakthrough_hypotheses/hydrodynamics/runs/20261117T234259Z-759eb473/verification_report.json",
+      "sha256": "3f8cbdb7d9b50e61e4ca3ea46fd93d6fbb7f861da47f21bdd235144a9494247a"
+    },
+    "conditional_equilibrium": {
+      "path": "results/adsorption/breakthrough_hypotheses/batch/conditional/20261118T000130Z-e9054190/summary.json",
+      "sha256": "d5d5690ceabda535bf8379bb85166ba668f63d8b6dc3244981810383adf30966"
+    },
+    "joint": {
+      "path": "results/adsorption/breakthrough_hypotheses/column/20261118T001117Z-34e9b859/summary.json",
+      "sha256": "8a1877c2884f0446421ec45dfbaf6b7c699dce459dfe5772eea8dd560d4f4bcf"
+    },
+    "conditional_reference": {
+      "path": "examples/adsorption/breakthrough_hypotheses/batch/conditional/reference_summary.json",
+      "sha256": "25b471b60cdaae45db96f83333852bd90bc4fd4ccfe9ef70413d7bb3765f72fa"
+    },
+    "hydrodynamic_reference": {
+      "path": "examples/adsorption/breakthrough_hypotheses/hydrodynamics/reference_summary.json",
+      "sha256": "40cfd5069ab74b5b69703715adca7ec4d6281de350366d8249b6659a4ae595d8"
+    }
+  },
+  "benchmark_outputs": {
+    "benchmark_checks.csv": "a54c5412c0b3cabf014adcd7112513076f35213c54c30e21e9e99045ec6d2a8e",
+    "near_wall_scenarios.csv": "54326a490be59ded6dcd3ce9359de28728a761596137ce8bd6069b268a86edac",
+    "radial_benchmark.csv": "9582689ab73072653bd824c91203c16c92150c1b4723010629c3b5b6e528b257"
+  },
+  "shared_fitted_parameters": 1,
+  "wall_handoff_qualified": false,
+  "fitted_freundlich_weight": 0.5,
+  "qualified_for_size_transfer": false,
+  "joint_comparisons": {
+    "q233_l20": {
+      "observed": {
+        "marker_count": 19,
+        "end_s": 26409.177820267683,
+        "last_outlet_fraction": 0.8439716312056738,
+        "t05_s": 3830.822179732313,
+        "t50_s": 11555.449330783938,
+        "retained_kg_kg": 0.056371586550354985,
+        "reading_retention_kg_kg": [
+          0.05550962091538617,
+          0.05723534935109905
+        ],
+        "reading_t05_s": [
+          3628.910133843212,
+          4032.7342256214147
+        ],
+        "reading_t50_s": [
+          11360.420650095602,
+          11750.478011472274
+        ],
+        "common_dose_retained_kg_kg": 0.056371586550354985
+      },
+      "prediction": {
+        "t05_s": {
+          "predicted_s": 3782.9288715075268,
+          "relative_error": 0.012502096411098118,
+          "passed": true
+        },
+        "t50_s": {
+          "predicted_s": 12905.100533269087,
+          "relative_error": 0.11679781234379627,
+          "passed": true
+        },
+        "rmse": 0.05518444028314658,
+        "retained_kg_kg": 0.06087976337859395,
+        "retained_in_reading_range": false,
+        "common_dose_retained_kg_kg": 0.06087976337859395,
+        "slow_adsorbed_kg_kg": 0.003442689237998652,
+        "outlet_after_three_liquid_residence_times": 0.005474215877895928,
+        "curve_screen_passed": true,
+        "normalized_mass_residual": 5.226092303044101e-13,
+        "normalized_interface_flux_mismatch": 1.984795960106448e-12,
+        "post_midpoint_retained_kg_kg": 0.020044152688927598,
+        "observed_post_midpoint_retained_kg_kg": 0.017620599671066522,
+        "rise_s": 9122.17166176156,
+        "qualified": true
+      }
+    },
+    "q233_l25": {
+      "observed": {
+        "marker_count": 34,
+        "end_s": 26954.198473282442,
+        "last_outlet_fraction": 0.8581632653061225,
+        "t05_s": 7544.529262086514,
+        "t50_s": 16463.740458015265,
+        "retained_kg_kg": 0.05712720478210673,
+        "reading_retention_kg_kg": [
+          0.05647622794482404,
+          0.057768077851874496
+        ],
+        "reading_t05_s": [
+          7320.6106870229005,
+          7768.447837150127
+        ],
+        "reading_t50_s": [
+          16272.900763358777,
+          16654.580152671755
+        ],
+        "common_dose_retained_kg_kg": 0.05712720478210673
+      },
+      "prediction": {
+        "t05_s": {
+          "predicted_s": 6867.047866716989,
+          "relative_error": 0.08979770265774811,
+          "passed": true
+        },
+        "t50_s": {
+          "predicted_s": 17150.192546185343,
+          "relative_error": 0.041694783146067005,
+          "passed": true
+        },
+        "rmse": 0.04200101862094061,
+        "retained_kg_kg": 0.05958279081302968,
+        "retained_in_reading_range": false,
+        "common_dose_retained_kg_kg": 0.05958279081302968,
+        "slow_adsorbed_kg_kg": 0.003196528310708217,
+        "outlet_after_three_liquid_residence_times": 0.0015496483009968798,
+        "curve_screen_passed": true,
+        "normalized_mass_residual": 5.69141512385333e-13,
+        "normalized_interface_flux_mismatch": 1.9734038128221507e-12,
+        "post_midpoint_retained_kg_kg": 0.012664063482496511,
+        "observed_post_midpoint_retained_kg_kg": 0.010706222395876548,
+        "rise_s": 10283.144679468354,
+        "qualified": true
+      }
+    },
+    "q625_l25": {
+      "observed": {
+        "marker_count": 22,
+        "end_s": 16832.06106870229,
+        "last_outlet_fraction": 0.8785714285714287,
+        "t05_s": 969.4656488549618,
+        "t50_s": 4297.709923664122,
+        "retained_kg_kg": 0.05566652461328238,
+        "reading_retention_kg_kg": [
+          0.054275061390987846,
+          0.05706131073282419
+        ],
+        "reading_t05_s": [
+          829.0076335877862,
+          1109.9236641221373
+        ],
+        "reading_t50_s": [
+          4158.608990670059,
+          4436.810856658185
+        ],
+        "common_dose_retained_kg_kg": 0.05566652461328238
+      },
+      "prediction": {
+        "t05_s": {
+          "predicted_s": 1007.9306097719181,
+          "relative_error": 0.03967645574898637,
+          "passed": true
+        },
+        "t50_s": {
+          "predicted_s": 4142.74457997655,
+          "relative_error": 0.03605765545838702,
+          "passed": true
+        },
+        "rmse": 0.015389748180286622,
+        "retained_kg_kg": 0.05661839964361278,
+        "retained_in_reading_range": true,
+        "common_dose_retained_kg_kg": 0.05661839964361278,
+        "slow_adsorbed_kg_kg": 0.002594520849018944,
+        "outlet_after_three_liquid_residence_times": 0.00670701866531742,
+        "curve_screen_passed": true,
+        "normalized_mass_residual": 6.081555012668913e-13,
+        "normalized_interface_flux_mismatch": 1.3421669047089132e-12,
+        "post_midpoint_retained_kg_kg": 0.02685927730001546,
+        "observed_post_midpoint_retained_kg_kg": 0.026081489720852263,
+        "rise_s": 3134.813970204632,
+        "qualified": true
+      }
+    }
+  },
+  "verification": {
+    "pytest_passed": 255,
+    "numeric_environments": {
+      "python": "3.12.9",
+      "julia": "1.11.6",
+      "numpy": "2.5.4",
+      "panel": "1.10.0",
+      "pyvista": "0.49.2",
+      "vtk": "9.7.2",
+      "matplotlib": "3.11.2",
+      "juliacall": "0.9.37",
+      "PythonCall": "0.9.37"
+    },
+    "openlb": "1.9r0",
+    "frozen_joint_sha256": "2e830ca2631cce5a134acad465c813695b2f84772817433acf2ff27289d5e81a"
+  }
+}

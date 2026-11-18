@@ -1,0 +1,323 @@
+{
+  "qualification": "exploratory synthetic scenario; see correction, reflux and grid gates",
+  "passes_all_gates": false,
+  "wall_zone_dp": 0.5,
+  "full_column_dry_carbon_kg": 0.01758113788765188,
+  "mesh_sensitivity": {
+    "q233": {
+      "coarse": "q233_N8_lowMa",
+      "fine": "q233_N11",
+      "radial_flow_share_absolute_differences": [
+        0.018175722790296334,
+        0.01694796154514505,
+        0.017826110751407165,
+        0.01803075188254366,
+        0.01573620795411501
+      ],
+      "max_radial_flow_share_absolute_difference": 0.018175722790296334,
+      "transition_max_absolute_difference": 0.008366679545101674,
+      "clean_carbon_escape_absolute_difference": 0.0035400390625,
+      "mean_residence_relative_difference": 0.0047261860379886125,
+      "variance_relative_difference": 0.13962604131812387,
+      "gates": {
+        "radial_shares": true,
+        "transition": true,
+        "carbon_escape": true,
+        "average_residence": true,
+        "residence_variance": false
+      }
+    },
+    "q625": {
+      "coarse": "q625_N8_m04l",
+      "fine": "q625_N11_m04l",
+      "radial_flow_share_absolute_differences": [
+        0.014610341703346408,
+        0.020761829552313427,
+        0.02315887416310014,
+        0.022941394370095458,
+        0.020034349587686462
+      ],
+      "max_radial_flow_share_absolute_difference": 0.02315887416310014,
+      "transition_max_absolute_difference": 0.008716306091823084,
+      "clean_carbon_escape_absolute_difference": 0.00213623046875,
+      "mean_residence_relative_difference": 0.015922974251739507,
+      "variance_relative_difference": 0.1740843838486656,
+      "gates": {
+        "radial_shares": false,
+        "transition": true,
+        "carbon_escape": true,
+        "average_residence": true,
+        "residence_variance": false
+      }
+    }
+  },
+  "cases": {
+    "q233_N8_lowMa": {
+      "flow": 0.4751789087792041,
+      "native_cell_averaged_wall_flow_fraction": 0.44104576700505715,
+      "liquid": 0.22588654152320475,
+      "carbon": 0.0762857522265096,
+      "carbon_surface": 0.08239616187945195,
+      "length_m": 0.003677556142096839,
+      "transition": [
+        [
+          0.9203729368779136,
+          0.07962706312208644
+        ],
+        [
+          0.08176324209029506,
+          0.9182367579097049
+        ]
+      ],
+      "grid_cells_per_dp": 8.048823418674695,
+      "face_checks": {
+        "max_cell_imbalance_relative": 2.2085642448923244e-14,
+        "max_plane_error_relative": 8.99528725282337e-15,
+        "face_rms_correction_relative": 0.1981410005591525,
+        "raw_Q_over_native_Q": 0.8996433136244731,
+        "face_rms_after_global_rescale_relative": 0.14859637267934322,
+        "qualifies_local_correction": false
+      },
+      "tracer_gates": {
+        "reflux": true,
+        "inert_recovery": true,
+        "mean_residence": true,
+        "time_step_escape": true,
+        "time_step_transition": true,
+        "time_step_mean_residence": true
+      },
+      "integrated_wall_occupation_fraction": 0.2281195085501961,
+      "flow_mL_min": 23.3,
+      "stock_TRT_magic": 0.1875,
+      "max_Mach": 0.033078083679277816,
+      "max_density_departure": 0.00026266400858476757,
+      "marker_count": 16384,
+      "inert_outlet_fraction": 0.99951171875,
+      "inert_return_fraction": 0.0,
+      "inert_censored_fraction": 0.00048828125,
+      "mean_transit_s": 0.3838135161721516,
+      "residence_variance_s2": 0.0926123449758229,
+      "clean_escape_fraction": 0.65472412109375,
+      "clean_escape_by_entry_region": [
+        0.8769056318508253,
+        0.4459571445483604
+      ],
+      "radial_summary": {
+        "path": "results/adsorption/breakthrough_hypotheses/hydrodynamics/runs/20261117T234259Z-759eb473/q233_N8_lowMa/radial.json",
+        "sha256": "5e2c5a9d50f832af9878da9fe78f0d276e888cad95aebf96b3c022147829d684"
+      },
+      "tracer_summary": {
+        "path": "results/adsorption/breakthrough_hypotheses/hydrodynamics/runs/20261117T234259Z-759eb473/q233_N8_lowMa/tracer/summary.json",
+        "sha256": "148107884b8add53121bdd4038691b15670f1376728778e0900ba67f562e6240"
+      }
+    },
+    "q233_N11": {
+      "flow": 0.45823094723405905,
+      "native_cell_averaged_wall_flow_fraction": 0.44107418468387377,
+      "liquid": 0.22588654152320475,
+      "carbon": 0.0762857522265096,
+      "carbon_surface": 0.08239616187945195,
+      "length_m": 0.003677556142096839,
+      "transition": [
+        [
+          0.9120062573328119,
+          0.08799374266718811
+        ],
+        [
+          0.0791920119361873,
+          0.9208079880638127
+        ]
+      ],
+      "grid_cells_per_dp": 11.094324171686742,
+      "face_checks": {
+        "max_cell_imbalance_relative": 3.8577869141020003e-14,
+        "max_plane_error_relative": 8.991652140672594e-15,
+        "face_rms_correction_relative": 0.111781322127534,
+        "raw_Q_over_native_Q": 0.9383785170952925,
+        "face_rms_after_global_rescale_relative": 0.09048413179650852,
+        "qualifies_local_correction": false
+      },
+      "tracer_gates": {
+        "reflux": true,
+        "inert_recovery": true,
+        "mean_residence": true,
+        "time_step_escape": true,
+        "time_step_transition": true,
+        "time_step_mean_residence": true,
+        "local_face_correction": false
+      },
+      "integrated_wall_occupation_fraction": 0.2262686490646942,
+      "flow_mL_min": 23.3,
+      "stock_TRT_magic": 0.1875,
+      "max_Mach": 0.03148501714372707,
+      "max_density_departure": 0.0002710121808831012,
+      "marker_count": 16384,
+      "inert_outlet_fraction": 1.0,
+      "inert_return_fraction": 0.0,
+      "inert_censored_fraction": 0.0,
+      "mean_transit_s": 0.382008074941962,
+      "residence_variance_s2": 0.08126555696174231,
+      "clean_escape_fraction": 0.65826416015625,
+      "clean_escape_by_entry_region": [
+        0.8771998435666797,
+        0.46551130494663145
+      ],
+      "radial_summary": {
+        "path": "results/adsorption/breakthrough_hypotheses/hydrodynamics/runs/20261117T234259Z-759eb473/q233_N11/radial.json",
+        "sha256": "695a57c4880879ca3ba0d6a67f7c2f27b8e6b70056255b441ff9f1387145fe9e"
+      },
+      "tracer_summary": {
+        "path": "results/adsorption/breakthrough_hypotheses/hydrodynamics/runs/20261117T234259Z-759eb473/q233_N11/tracer/summary.json",
+        "sha256": "01688b81254c92ebd0ae90df43319ff6f3922fcb743dceef26c4075cea22722f"
+      }
+    },
+    "q625_N8_m04l": {
+      "flow": 0.49185796703415574,
+      "native_cell_averaged_wall_flow_fraction": 0.46106654580794965,
+      "liquid": 0.22588654152320475,
+      "carbon": 0.0762857522265096,
+      "carbon_surface": 0.08239616187945195,
+      "length_m": 0.003677556142096839,
+      "transition": [
+        [
+          0.8832,
+          0.1168
+        ],
+        [
+          0.10816375968992248,
+          0.8918362403100775
+        ]
+      ],
+      "grid_cells_per_dp": 8.048823418674695,
+      "face_checks": {
+        "max_cell_imbalance_relative": 9.68322062296975e-15,
+        "max_plane_error_relative": 2.6436615427842962e-14,
+        "face_rms_correction_relative": 0.17835883404027808,
+        "raw_Q_over_native_Q": 0.9047351430181613,
+        "face_rms_after_global_rescale_relative": 0.14110076697015636,
+        "qualifies_local_correction": false
+      },
+      "tracer_gates": {
+        "reflux": true,
+        "inert_recovery": true,
+        "mean_residence": true,
+        "time_step_escape": true,
+        "time_step_transition": true,
+        "time_step_mean_residence": true,
+        "local_face_correction": false
+      },
+      "integrated_wall_occupation_fraction": 0.22555552253048414,
+      "flow_mL_min": 62.5,
+      "stock_TRT_magic": 0.04,
+      "max_Mach": 0.03611015455492623,
+      "max_density_departure": 0.00022798414201585793,
+      "marker_count": 16384,
+      "inert_outlet_fraction": 0.99981689453125,
+      "inert_return_fraction": 0.0,
+      "inert_censored_fraction": 0.00018310546875,
+      "mean_transit_s": 0.14503016699589216,
+      "residence_variance_s2": 0.01449668655166984,
+      "clean_escape_fraction": 0.7574462890625,
+      "clean_escape_by_entry_region": [
+        0.9126261383214374,
+        0.6047469120852507
+      ],
+      "radial_summary": {
+        "path": "results/adsorption/breakthrough_hypotheses/hydrodynamics/runs/20261117T234259Z-759eb473/q625_N8_m04l/radial.json",
+        "sha256": "455751b4a8c07006ec2e1a5978674e744c2441c5f30bff956685865308e9e8e5"
+      },
+      "tracer_summary": {
+        "path": "results/adsorption/breakthrough_hypotheses/hydrodynamics/runs/20261117T234259Z-759eb473/q625_N8_m04l/tracer/summary.json",
+        "sha256": "f0ad7fc9c759051ac278c82db84fc666384a2596aa475ad786dfef8cc0670cf2"
+      }
+    },
+    "q625_N11_m04l": {
+      "flow": 0.4710961374818423,
+      "native_cell_averaged_wall_flow_fraction": 0.45516978609501313,
+      "liquid": 0.22588654152320475,
+      "carbon": 0.0762857522265096,
+      "carbon_surface": 0.08239616187945195,
+      "length_m": 0.003677556142096839,
+      "transition": [
+        [
+          0.8840727087835262,
+          0.11592729121647388
+        ],
+        [
+          0.11688006578174556,
+          0.8831199342182544
+        ]
+      ],
+      "grid_cells_per_dp": 11.094324171686742,
+      "face_checks": {
+        "max_cell_imbalance_relative": 1.935384478432739e-14,
+        "max_plane_error_relative": 6.713643367485692e-15,
+        "face_rms_correction_relative": 0.10302047774072462,
+        "raw_Q_over_native_Q": 0.9419360226032164,
+        "face_rms_after_global_rescale_relative": 0.08719992022152301,
+        "qualifies_local_correction": false
+      },
+      "tracer_gates": {
+        "reflux": true,
+        "inert_recovery": true,
+        "mean_residence": true,
+        "time_step_escape": true,
+        "time_step_transition": true,
+        "time_step_mean_residence": true,
+        "local_face_correction": false
+      },
+      "integrated_wall_occupation_fraction": 0.2315288033554977,
+      "flow_mL_min": 62.5,
+      "stock_TRT_magic": 0.04,
+      "max_Mach": 0.034509499309992274,
+      "max_density_departure": 0.00024173347980638304,
+      "marker_count": 16384,
+      "inert_outlet_fraction": 0.999755859375,
+      "inert_return_fraction": 0.00018310546875,
+      "inert_censored_fraction": 6.103515625e-05,
+      "mean_transit_s": 0.1427570501619098,
+      "residence_variance_s2": 0.012347227125319129,
+      "clean_escape_fraction": 0.75958251953125,
+      "clean_escape_by_entry_region": [
+        0.9128446194892644,
+        0.6178785387055092
+      ],
+      "radial_summary": {
+        "path": "results/adsorption/breakthrough_hypotheses/hydrodynamics/runs/20261117T234259Z-759eb473/q625_N11_m04l/radial.json",
+        "sha256": "ea41f6d46f1caf035fa7700e5d30a10c0b85adbc4b64e903be4631b38ee71e7c"
+      },
+      "tracer_summary": {
+        "path": "results/adsorption/breakthrough_hypotheses/hydrodynamics/runs/20261117T234259Z-759eb473/q625_N11_m04l/tracer/summary.json",
+        "sha256": "3b1a561502138a7735ea09d2df0db2f78ac2456bf1637236cc41f752cdbd33dd"
+      }
+    }
+  },
+  "TRT_magic_sensitivity": {
+    "flow_mL_min": 23.3,
+    "stock_TRT_magic": 0.04,
+    "tau_even": 0.504,
+    "max_Mach": 0.03741945052536254,
+    "max_density_departure": 0.0003415242755380188,
+    "wall_face_flow_fraction": 0.505547230364525,
+    "wall_cell_flow_fraction": 0.47746559412663003,
+    "radial_summary": {
+      "path": "results/adsorption/breakthrough_hypotheses/hydrodynamics/runs/20261117T234259Z-759eb473/q233_N8_m04control_lowMa/radial.json",
+      "sha256": "9257a89e79b1d16696726104556364e46efb5a3ba942645ab6e2e8b8ee5669fa"
+    },
+    "verified_field": {
+      "path": "results/adsorption/breakthrough_hypotheses/hydrodynamics/runs/20261117T234259Z-759eb473/q233_N8_m04control_lowMa/verified_field.json",
+      "sha256": "79a0de175ac21731c78b149c950486bae7da94db5ab9947012a7d97a8e97c2c0"
+    }
+  },
+  "sources": {
+    "plan": {
+      "path": "results/adsorption/breakthrough_hypotheses/hydrodynamics/runs/20261117T234259Z-759eb473/plan.json",
+      "sha256": "b5a2b704c8ec107d9c34f494b0f7a413ff37efeccb23ae6d618b861f39ac6342"
+    },
+    "centres": {
+      "path": "results/adsorption/breakthrough_hypotheses/hydrodynamics/runs/20261117T234259Z-759eb473/centres_m.txt",
+      "sha256": "49be587c4026a60c374c2d2173cf4e2e789892c2e115e74cc4c850b85547de4c"
+    }
+  },
+  "limitations": "Material and flow inputs are literature matched, while sphere positions are synthetic. A 3.68 mm axial period cannot reproduce the 25 cm specimen or its end distributors. Tracer exchange is conditional on downstream exit. Carbon absorption is only the ideal first-hit limit."
+}

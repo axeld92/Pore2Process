@@ -1,0 +1,337 @@
+{
+  "schema": "pore2process.breakthrough-particle-reference.v1",
+  "source": {
+    "doi": "10.1016/j.jhazmat.2009.05.002",
+    "pdf_sha256": "c0d9eb61560f643b5b890b1926f1b0f2bc279386dc6bd882cb640ae3f0061b22",
+    "figure2_pixels_sha256": "d79c29b0462262e5303be1ac68bace3dd878fce3afbdce691ce15ae4f15814dc",
+    "figures45_pixels_sha256": "ee892302185179bd0d4a750309ef6c619df60306790f363ad1f336accf75975c",
+    "dry_bed_mass_basis": "Table 1 packed bulk density times nominal bed volume",
+    "dry_bed_mass_kg_by_height_cm": {
+      "10": 0.0070324551550607515,
+      "15": 0.010548682732591129,
+      "20": 0.014064910310121503,
+      "25": 0.01758113788765188
+    },
+    "measured_dry_run_mass_kg": null,
+    "loading_at_feed_mg_g": {
+      "Langmuir": 106.3970251716247,
+      "Freundlich": 153.15423038356482
+    },
+    "maximum_batch_endpoint_relative_error": {
+      "Langmuir": 0.020322031229039972,
+      "Freundlich": 0.011176248901096919
+    },
+    "saved_N60_tracer_inputs_sha256": {
+      "results/adsorption/porosity_matched_film/runs/20261117T122127Z-88cd4746/tracer_N60_20us/q233/training.f64": "66ca7c5427d29a16fc9d128ea31d91c59aae47f48812c2e7f6a86b62c32a56a7",
+      "results/adsorption/porosity_matched_film/runs/20261117T122127Z-88cd4746/tracer_N60_20us/q233/operator.f64": "47bccc9f80240a87b41b03a5b66ef0f0b4487b6fb332a4f84bd09cd1d686321d",
+      "results/adsorption/porosity_matched_film/runs/20261117T122127Z-88cd4746/tracer_N60_20us/q233/rules.f64": "e001d5616f8905bbfb536e1669e917bbcef19519155d6bfc70ed0a526de2fac4",
+      "results/adsorption/porosity_matched_film/runs/20261117T122127Z-88cd4746/tracer_N60_20us/q625/training.f64": "67e4ebd4ab3969fd22d54d013c5cd4e9ca5dd6885d3e87263ba0710cacc0572d",
+      "results/adsorption/porosity_matched_film/runs/20261117T122127Z-88cd4746/tracer_N60_20us/q625/operator.f64": "56fbdc70f67bf3eae2b504c0031386fc185f46bd866265eac1e464af62dd590e",
+      "results/adsorption/porosity_matched_film/runs/20261117T122127Z-88cd4746/tracer_N60_20us/q625/rules.f64": "9e3504fa177da57ee4429a2351087f9d63729258dbe10ec80bc5dad3cc095f48"
+    }
+  },
+  "runs": {
+    "langmuir_batch": {
+      "path": "results/adsorption/breakthrough_hypotheses/batch/runs/20261117T234340Z-2095512d/summary.json",
+      "sha256": "e752a9766f9f2378c19e4ec11843e0882de896b091fed1d0c87c734848ff3a11",
+      "frozen_sha256": "0d5bdee26631b7cdba1cd57054adfbf431ecee1077c7369b5d4d7282d852be30"
+    },
+    "langmuir_transfer": {
+      "path": "results/adsorption/breakthrough_hypotheses/batch/transfer/20261117T234456Z-82ae7115/summary.json",
+      "sha256": "566e55caae69058eae58b82fd927f14f40ae15fc76f7fb17d5a2a5e1042fd22e",
+      "frozen_sha256": "af2627e5af7a86b7e22acaf950681adc092581ffd0b4dac2ad4551ca2531dc64"
+    },
+    "freundlich_batch": {
+      "path": "results/adsorption/breakthrough_hypotheses/batch/freundlich_batch/20261117T235228Z-c703c8e5/summary.json",
+      "sha256": "fe58db39cbfdafd9a544c32480f90cb265b8978e8a42096fa4dda559bbb88a60",
+      "frozen_sha256": "54e4f9bc9efa4689e2c1dceb32cfbde50e6fa787f980032bfff1d564dae1ddd9"
+    },
+    "freundlich_transfer": {
+      "path": "results/adsorption/breakthrough_hypotheses/batch/freundlich_transfer/20261117T235324Z-835f21b3/summary.json",
+      "sha256": "dc4293b125c47932550abbd26ec01ee327226476a92f020f9e8d050fed9bfe36",
+      "frozen_sha256": "9952ce70c54464535288fafc45d24158f7b987f4b5ef53ede1244d4828e9960f"
+    }
+  },
+  "bath_calibration_diameters_m": [
+    0.0015,
+    0.0008
+  ],
+  "withheld_bath_diameters_m": [
+    0.00045,
+    0.000225
+  ],
+  "batch_qualification": {
+    "primary": {
+      "qualified": true,
+      "diffusivity_m2_s": 1.846035489738998e-12,
+      "batch_film_ref_m_s": 7.732246026461306e-05,
+      "training_RMSE_mg_g": 1.9498175133308815,
+      "figure2_RMSE_mg_g": {
+        "d1500": 2.1002966783401553,
+        "d800": 1.6206009953996479,
+        "d450": 1.326644785495647,
+        "d225": 0.42011294106791314
+      },
+      "maximum_numerical_refinement_relative_change": 0.0005947152481299837
+    },
+    "slow": {
+      "qualified": true,
+      "diffusivity_m2_s": 1.5823640925870914e-12,
+      "batch_film_ref_m_s": 0.001,
+      "training_RMSE_mg_g": 2.0962404311526837,
+      "figure2_RMSE_mg_g": {
+        "d1500": 2.188022176518704,
+        "d800": 1.6928751435468337,
+        "d450": 1.3134845279695238,
+        "d225": 0.4201012339801357
+      },
+      "maximum_numerical_refinement_relative_change": 0.003862737865492607
+    },
+    "fast": {
+      "qualified": true,
+      "diffusivity_m2_s": 2.4576990677991502e-12,
+      "batch_film_ref_m_s": 4.5e-05,
+      "training_RMSE_mg_g": 2.2508769887726117,
+      "figure2_RMSE_mg_g": {
+        "d1500": 2.6997571717712705,
+        "d800": 1.571689656786875,
+        "d450": 1.3466843107094801,
+        "d225": 0.42011618018914465
+      },
+      "maximum_numerical_refinement_relative_change": 0.0007327024174522118
+    },
+    "edge": {
+      "qualified": false,
+      "diffusivity_m2_s": 2.9193341308908336e-12,
+      "batch_film_ref_m_s": 4e-05,
+      "training_RMSE_mg_g": 2.4785652577252586,
+      "figure2_RMSE_mg_g": {
+        "d1500": 3.0829982107488676,
+        "d800": 1.5632707968956725,
+        "d450": 1.3547801775995862,
+        "d225": 0.4201162770371078
+      },
+      "maximum_numerical_refinement_relative_change": 0.000847232000898759
+    },
+    "freundlich": {
+      "qualified": true,
+      "diffusivity_m2_s": 1.2375979994462825e-12,
+      "batch_film_ref_m_s": 0.001,
+      "training_RMSE_mg_g": 0.8734548262338993,
+      "figure2_RMSE_mg_g": {
+        "d1500": 0.7654316532620822,
+        "d800": 0.7731482517015102,
+        "d450": 1.0361582418670505,
+        "d225": 0.241446130681917
+      },
+      "maximum_numerical_refinement_relative_change": 0.0015180361095471632,
+      "batch_film_at_upper_search_bound": true
+    }
+  },
+  "column_predictions": {
+    "f4_q233_l25": {
+      "measured": {
+        "t05_s": 7544.529262086514,
+        "t50_s": 16463.740458015265,
+        "retained_kg_kg": 0.05712720478210673,
+        "late_retained_kg_kg": 0.010706222395876548,
+        "reading_retention_kg_kg": [
+          0.05647622794482404,
+          0.057768077851874496
+        ]
+      },
+      "predicted": {
+        "primary": {
+          "t05_s": 8609.949172590634,
+          "t50_s": 14190.428011037768,
+          "t05_passed": true,
+          "t50_passed": true,
+          "outlet_fraction_rmse": 0.05950043986530674,
+          "retained_kg_kg": 0.05388093493913061,
+          "late_retained_kg_kg": 0.008432640777675625,
+          "retained_in_reading_range": false,
+          "normalized_mass_residual": 9.207187547745285e-13,
+          "normalized_interface_flux_mismatch": 2.0719963148474723e-12
+        },
+        "slow": {
+          "t05_s": 7969.586224188537,
+          "t50_s": 13693.50255395452,
+          "t05_passed": true,
+          "t50_passed": true,
+          "outlet_fraction_rmse": 0.07055713225758847,
+          "retained_kg_kg": 0.052930555002291976,
+          "late_retained_kg_kg": 0.008709134661720649,
+          "retained_in_reading_range": false,
+          "normalized_mass_residual": 9.364363256107514e-13,
+          "normalized_interface_flux_mismatch": 2.066662897230542e-12
+        },
+        "fast": {
+          "t05_s": 9720.173384939922,
+          "t50_s": 14944.889642595705,
+          "t05_passed": false,
+          "t50_passed": true,
+          "outlet_fraction_rmse": 0.06624153228627572,
+          "retained_kg_kg": 0.05520028936554661,
+          "late_retained_kg_kg": 0.0077742600150109715,
+          "retained_in_reading_range": false,
+          "normalized_mass_residual": 1.2309339686473482e-12,
+          "normalized_interface_flux_mismatch": 2.0872268446108763e-12
+        },
+        "freundlich": {
+          "t05_s": 9112.477237069863,
+          "t50_s": 19399.549439610488,
+          "t05_passed": true,
+          "t50_passed": true,
+          "outlet_fraction_rmse": 0.0906675457012503,
+          "retained_kg_kg": 0.06439687674771669,
+          "late_retained_kg_kg": 0.015481585543911469,
+          "retained_in_reading_range": false,
+          "normalized_mass_residual": 3.840464347745507e-13,
+          "normalized_interface_flux_mismatch": 1.970242238173404e-12
+        }
+      }
+    },
+    "f4_q625_l25": {
+      "measured": {
+        "t05_s": 969.4656488549618,
+        "t50_s": 4297.709923664122,
+        "retained_kg_kg": 0.05566652461328238,
+        "late_retained_kg_kg": 0.026081489720852263,
+        "reading_retention_kg_kg": [
+          0.054275061390987846,
+          0.05706131073282419
+        ]
+      },
+      "predicted": {
+        "primary": {
+          "t05_s": 1389.6621949242844,
+          "t50_s": 3553.6947276553046,
+          "t05_passed": false,
+          "t50_passed": true,
+          "outlet_fraction_rmse": 0.05660164762198447,
+          "retained_kg_kg": 0.05051076770798668,
+          "late_retained_kg_kg": 0.021179183166103198,
+          "retained_in_reading_range": false,
+          "normalized_mass_residual": 4.855683756311969e-13,
+          "normalized_interface_flux_mismatch": 1.847666425592119e-12
+        },
+        "slow": {
+          "t05_s": 1231.4436123552457,
+          "t50_s": 3261.0360871448324,
+          "t05_passed": false,
+          "t50_passed": false,
+          "outlet_fraction_rmse": 0.0730464161358679,
+          "retained_kg_kg": 0.04902466518266039,
+          "late_retained_kg_kg": 0.021002209067299694,
+          "retained_in_reading_range": false,
+          "normalized_mass_residual": 5.023759186428832e-13,
+          "normalized_interface_flux_mismatch": 1.8471236967743765e-12
+        },
+        "fast": {
+          "t05_s": 1717.1884649444933,
+          "t50_s": 4091.6111667999803,
+          "t05_passed": false,
+          "t50_passed": true,
+          "outlet_fraction_rmse": 0.06715737551103296,
+          "retained_kg_kg": 0.0527943661142104,
+          "late_retained_kg_kg": 0.02112445263914788,
+          "retained_in_reading_range": false,
+          "normalized_mass_residual": 5.629755920703398e-13,
+          "normalized_interface_flux_mismatch": 1.8508604382753492e-12
+        },
+        "freundlich": {
+          "t05_s": 1298.3509089920105,
+          "t50_s": 4563.893743194263,
+          "t05_passed": false,
+          "t50_passed": true,
+          "outlet_fraction_rmse": 0.036880229339615385,
+          "retained_kg_kg": 0.061592463933101894,
+          "late_retained_kg_kg": 0.03107915499079542,
+          "retained_in_reading_range": false,
+          "normalized_mass_residual": 4.164878318767427e-13,
+          "normalized_interface_flux_mismatch": 1.8213925532613902e-12
+        }
+      }
+    },
+    "f5_q233_l25": {
+      "measured": {
+        "t05_s": 7502.613129381772,
+        "t50_s": 16477.465173449877,
+        "retained_kg_kg": 0.05717395367530104,
+        "late_retained_kg_kg": 0.010726422440455415,
+        "reading_retention_kg_kg": [
+          0.05646676894272825,
+          0.05787790350947833
+        ]
+      },
+      "predicted": {
+        "primary": {
+          "t05_s": 8609.949172590634,
+          "t50_s": 14190.428011037768,
+          "t05_passed": true,
+          "t50_passed": true,
+          "outlet_fraction_rmse": 0.06120667782149213,
+          "retained_kg_kg": 0.053907164880867504,
+          "late_retained_kg_kg": 0.008441563600135456,
+          "retained_in_reading_range": false,
+          "normalized_mass_residual": 9.207187547745285e-13,
+          "normalized_interface_flux_mismatch": 2.0719963148474723e-12
+        },
+        "slow": {
+          "t05_s": 7969.586224188537,
+          "t50_s": 13693.50255395452,
+          "t05_passed": true,
+          "t50_passed": true,
+          "outlet_fraction_rmse": 0.07327208907974087,
+          "retained_kg_kg": 0.05295916969814296,
+          "late_retained_kg_kg": 0.008720775850292808,
+          "retained_in_reading_range": false,
+          "normalized_mass_residual": 9.364363256107514e-13,
+          "normalized_interface_flux_mismatch": 2.066662897230542e-12
+        },
+        "fast": {
+          "t05_s": 9720.173384939922,
+          "t50_s": 14944.889642595705,
+          "t05_passed": false,
+          "t50_passed": true,
+          "outlet_fraction_rmse": 0.0675282621523245,
+          "retained_kg_kg": 0.05522184527091847,
+          "late_retained_kg_kg": 0.0077779123286051115,
+          "retained_in_reading_range": false,
+          "normalized_mass_residual": 1.2309339686473482e-12,
+          "normalized_interface_flux_mismatch": 2.0872268446108763e-12
+        },
+        "freundlich": {
+          "t05_s": 9112.477237069863,
+          "t50_s": 19399.549439610488,
+          "t05_passed": true,
+          "t50_passed": true,
+          "outlet_fraction_rmse": 0.09322461686414178,
+          "retained_kg_kg": 0.06445264537323582,
+          "late_retained_kg_kg": 0.015509949629544066,
+          "retained_in_reading_range": false,
+          "normalized_mass_residual": 3.840464347745507e-13,
+          "normalized_interface_flux_mismatch": 1.970242238173404e-12
+        }
+      }
+    }
+  },
+  "column_resolution": {
+    "selected_radial_shells": 48,
+    "selected_time_step_s": 4,
+    "selected_startup_step_s": 0.01
+  },
+  "fitted_column_parameters": 0,
+  "figure7_curves_refit": 0,
+  "versions": {
+    "python": "3.12.9",
+    "julia": "1.11.6",
+    "numpy": "2.5.4",
+    "panel": "1.10.0",
+    "pyvista": "0.49.2",
+    "vtk": "9.7.2",
+    "matplotlib": "3.11.2",
+    "juliacall": "0.9.37",
+    "PythonCall": "0.9.37"
+  }
+}
