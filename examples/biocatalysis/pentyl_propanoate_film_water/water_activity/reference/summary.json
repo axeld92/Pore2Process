@@ -1,0 +1,132 @@
+{
+  "within_study": [
+    {
+      "series": [
+        "Tjornelund2023",
+        "MTBE",
+        "nominal"
+      ],
+      "low_water_activity": 0.12,
+      "high_water_activity": 0.97,
+      "high_rate_relative_to_low": 0.16666666666666666,
+      "slope_per_unit_water_activity": -2.107952316738888,
+      "scored_count": 2,
+      "max_absolute_error_in_relative_rate": 0.08802972319962132
+    },
+    {
+      "series": [
+        "Tjornelund2023",
+        "hexane",
+        "nominal"
+      ],
+      "low_water_activity": 0.12,
+      "high_water_activity": 0.97,
+      "high_rate_relative_to_low": 0.38461538461538464,
+      "slope_per_unit_water_activity": -1.1241311117969839,
+      "scored_count": 2,
+      "max_absolute_error_in_relative_rate": 0.0974196467908065
+    },
+    {
+      "series": [
+        "Tjornelund2023",
+        "acetonitrile",
+        "nominal"
+      ],
+      "low_water_activity": 0.12,
+      "high_water_activity": 0.97,
+      "high_rate_relative_to_low": 0.5,
+      "slope_per_unit_water_activity": -0.8154672712469945,
+      "scored_count": 2,
+      "max_absolute_error_in_relative_rate": 0.07729421479791299
+    },
+    {
+      "series": [
+        "DuttaBanik2017",
+        "MTBE",
+        "nominal"
+      ],
+      "low_water_activity": 0.12,
+      "high_water_activity": 0.97,
+      "high_rate_relative_to_low": 0.42392633348616837,
+      "slope_per_unit_water_activity": -1.0096418595563943,
+      "scored_count": 3,
+      "max_absolute_error_in_relative_rate": 0.11770316339653353
+    },
+    {
+      "series": [
+        "DuttaBanik2017",
+        "MTBE",
+        "figure_approximate"
+      ],
+      "low_water_activity": 0.11,
+      "high_water_activity": 0.97,
+      "high_rate_relative_to_low": 0.42392633348616837,
+      "slope_per_unit_water_activity": -0.9979018379336456,
+      "scored_count": 3,
+      "max_absolute_error_in_relative_rate": 0.11429733482802684
+    }
+  ],
+  "between_studies": [
+    {
+      "donor_series": [
+        "Tjornelund2023",
+        "MTBE",
+        "nominal"
+      ],
+      "recipient_series": [
+        "DuttaBanik2017",
+        "MTBE",
+        "nominal"
+      ],
+      "recipient_anchor_water_activity": 0.23,
+      "slope_per_unit_water_activity": -2.107952316738888,
+      "scored_count": 3,
+      "max_absolute_error_in_relative_rate": 0.2824691307396704,
+      "highest_activity_comparison": {
+        "comparison": "separate_MTBE_study",
+        "source_id": "DuttaBanik2017",
+        "solvent": "MTBE",
+        "activity_basis": "nominal",
+        "anchor_water_activity": 0.23,
+        "test_water_activity": 0.97,
+        "observed_relative_rate": 0.4926294290027528,
+        "predicted_relative_rate": 0.2101602982630824,
+        "signed_error_in_relative_rate": -0.2824691307396704
+      }
+    },
+    {
+      "donor_series": [
+        "Tjornelund2023",
+        "MTBE",
+        "nominal"
+      ],
+      "recipient_series": [
+        "DuttaBanik2017",
+        "MTBE",
+        "figure_approximate"
+      ],
+      "recipient_anchor_water_activity": 0.23,
+      "slope_per_unit_water_activity": -2.107952316738888,
+      "scored_count": 3,
+      "max_absolute_error_in_relative_rate": 0.2824691307396704,
+      "highest_activity_comparison": {
+        "comparison": "separate_MTBE_study",
+        "source_id": "DuttaBanik2017",
+        "solvent": "MTBE",
+        "activity_basis": "figure_approximate",
+        "anchor_water_activity": 0.23,
+        "test_water_activity": 0.97,
+        "observed_relative_rate": 0.4926294290027528,
+        "predicted_relative_rate": 0.2101602982630824,
+        "signed_error_in_relative_rate": -0.2824691307396704
+      }
+    }
+  ],
+  "fit_scope": "Published batch initial rates only. Endpoints supply the slope. No reactor data enter the analysis.",
+  "target_reaction_water_activity": null,
+  "source_sha256": {
+    "examples/biocatalysis/pentyl_propanoate_film_water/water_activity/batch_initial_rates.csv": "a617e4586ab588122cdb6019b3ac70e422713c6a75f8a35b57ac353e32fa45b4",
+    "examples/biocatalysis/pentyl_propanoate_film_water/water_activity/run.py": "877d702fffd79337e80c8a3ffcddf8c40e22b331cfe9f42c9ae6aaa09406e330"
+  },
+  "comparison_sha256": "e0d48fe98fda090ed3f5d6a2c01a06448e33985f4d93ca2cc24d6ed2733e207c"
+}

@@ -1,0 +1,5 @@
+source_id,water_axis_label_M_as_printed,water_added_mL_as_reported,initial_rate_value,rate_unit_as_printed,relative_rate,source_locator,extraction_method
+Kuperkar2014,0,0,0.063,mol/min/g enzyme,1,Section 3.1.4 and Figure 4B,printed rate
+Kuperkar2014,0.1,1.8,0.043,mol/min/g enzyme,0.6825396825396826,Section 3.1.4 and Figure 4B,printed rate
+Kuperkar2014,0.2,,0.027,mol/min/g enzyme,0.4285714285714286,Figure 4B,approximate plotted rate
+Kuperkar2014,0.3,5.4,0.012,mol/min/g enzyme,0.1904761904761905,Section 3.1.4 and Figure 4B,printed rate

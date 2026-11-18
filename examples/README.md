@@ -57,6 +57,7 @@ specific earlier measurements or assumptions.
 | Biocatalysis | [Pentyl propanoate](biocatalysis/pentyl_propanoate/REPORT.md) | Batch-derived rates overpredict held-out conversion. The synthetic OpenLB TRT water bed underpredicts tracer spreading | [Commands](biocatalysis/pentyl_propanoate/README.md) |
 | Biocatalysis | [Pentyl propanoate rate transfer](biocatalysis/pentyl_propanoate_transfer/REPORT.md) | Measured mixing has a small effect, an inferred exposure convention closely reproduces the published curves, and direct batch transfer remains high | [Commands](biocatalysis/pentyl_propanoate_transfer/README.md) |
 | Biocatalysis | [Pentyl propanoate liquid and bead transport](biocatalysis/pentyl_propanoate_transport/REPORT.md) | Small concentration-readout shifts and a residual conversion gap with bead transport anchored to published estimates | [Commands](biocatalysis/pentyl_propanoate_transport/README.md) |
+| Biocatalysis | [Pentyl propanoate film and water activity](biocatalysis/pentyl_propanoate_film_water/REPORT.md) | A small packed-bed film penalty and a substantial water-activity response in independent batch data | [Commands](biocatalysis/pentyl_propanoate_film_water/README.md) |
 
 Filtration hydraulics is closed for now. Phenol adsorption is paused pending a
 published dataset with enough detail to check breakthrough independently.

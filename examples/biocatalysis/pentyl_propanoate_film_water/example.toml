@@ -1,0 +1,24 @@
+schema_version = 1
+id = "biocatalysis/pentyl_propanoate_film_water"
+title = "Liquid-film resistance and batch water activity at fixed catalyst inventory"
+area = "biocatalysis"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["biocatalysis/pentyl_propanoate_transport"]
+run_module = "examples.biocatalysis.pentyl_propanoate_film_water.film.run"
+check_module = "examples.biocatalysis.pentyl_propanoate_film_water.check"
+reference_files = [
+  "film/reference/summary.json",
+  "film/reference/bed_comparison.csv",
+  "water_activity/reference/summary.json",
+  "water_activity/reference/comparison.csv",
+]
+protocol_files = ["protocol.md"]
+
+[validation]
+numerical = "passed"
+reactor_conversion = "failed"
+film_transport = "conditional"
+water_activity_transfer = "failed"
+scope = "A low-Reynolds film marginally improves the 20 held-out reactor predictions. Controlled batch rates show a water-activity effect and poor transfer of its magnitude across studies."

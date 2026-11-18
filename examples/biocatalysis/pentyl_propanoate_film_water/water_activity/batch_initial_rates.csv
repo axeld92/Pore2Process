@@ -1,0 +1,18 @@
+source_id,solvent,initial_water_activity,specific_activity_as_printed,uncertainty_as_printed,relative_activity,activity_unit_as_printed,source_locator,figure_initial_water_activity_approx
+Tjornelund2023,MTBE,0.12,1.5,0.2,1,mmol/min/mg protein,Table 1 and Figure 4a,
+Tjornelund2023,MTBE,0.33,1.08,0.02,0.72,mmol/min/mg protein,Table 1 and Figure 4a,
+Tjornelund2023,MTBE,0.53,0.5,0.1,0.3333333333333333,mmol/min/mg protein,Table 1 and Figure 4a,
+Tjornelund2023,MTBE,0.97,0.25,0.06,0.1666666666666667,mmol/min/mg protein,Table 1 and Figure 4a,
+Tjornelund2023,hexane,0.12,26,2,1,mmol/min/mg protein,Table 1 and Figure 4a,
+Tjornelund2023,hexane,0.33,18,2,0.6923076923076923,mmol/min/mg protein,Table 1 and Figure 4a,
+Tjornelund2023,hexane,0.53,14,3,0.5384615384615384,mmol/min/mg protein,Table 1 and Figure 4a,
+Tjornelund2023,hexane,0.97,10,2,0.3846153846153846,mmol/min/mg protein,Table 1 and Figure 4a,
+Tjornelund2023,acetonitrile,0.12,0.58,0.09,1,mmol/min/mg protein,Table 1 and Figure 4a,
+Tjornelund2023,acetonitrile,0.33,0.50,0.07,0.8620689655172414,mmol/min/mg protein,Table 1 and Figure 4a,
+Tjornelund2023,acetonitrile,0.53,0.46,0.03,0.7931034482758621,mmol/min/mg protein,Table 1 and Figure 4a,
+Tjornelund2023,acetonitrile,0.97,0.29,0.09,0.5,mmol/min/mg protein,Table 1 and Figure 4a,
+DuttaBanik2017,MTBE,0.12,0.26172,,1,mM/min/mg catalyst,Table 1 and Figure 1 and Section 3.1.2,0.11
+DuttaBanik2017,MTBE,0.23,0.22522,,0.8605379795200978,mM/min/mg catalyst,Table 1 and Figure 1 and Section 3.1.2,0.23
+DuttaBanik2017,MTBE,0.33,0.20815,,0.7953156044627846,mM/min/mg catalyst,Table 1 and Figure 1 and Section 3.1.2,0.38
+DuttaBanik2017,MTBE,0.53,0.1422,,0.5433287482806052,mM/min/mg catalyst,Table 1 and Figure 1 and Section 3.1.2,0.53
+DuttaBanik2017,MTBE,0.97,0.11095,,0.4239263334861684,mM/min/mg catalyst,Table 1 and Figure 1 and Section 3.1.2,0.97

@@ -1,0 +1,119 @@
+{
+  "scope": "Independent property scenarios for the external liquid film. Values for the reacting four-component mixture remain unavailable. No reactor conversion measurements were used.",
+  "viscosity_density": {
+    "source": {
+      "citation": "Moreau et al. (2021), Journal of Molecular Liquids 344, 117744",
+      "doi": "10.1016/j.molliq.2021.117744",
+      "url": "https://uvadoc.uva.es/server/api/core/bitstreams/1dbed714-67ce-4929-a858-2ef042e4aba1/content",
+      "location": "Tables 4 and 9, PDF pages 3 and 6, 0.100 MPa rows",
+      "specimen": "Pure pentan-1-ol",
+      "pressure_Pa": 100000,
+      "method": "Vibrating-tube densimetry and vibrating-wire viscometry",
+      "reported_expanded_uncertainty": {
+        "coverage_factor": 2,
+        "temperature_K": 0.02,
+        "relative_pressure": 0.0002,
+        "density_kg_m3": 0.70,
+        "relative_dynamic_viscosity": 0.015
+      }
+    },
+    "measurements": [
+      {"temperature_K": 293.15, "density_kg_m3": 814.80, "viscosity_Pa_s": 0.004046},
+      {"temperature_K": 313.15, "density_kg_m3": 800.07, "viscosity_Pa_s": 0.002346},
+      {"temperature_K": 333.15, "density_kg_m3": 784.39, "viscosity_Pa_s": 0.001449},
+      {"temperature_K": 353.15, "density_kg_m3": 768.24, "viscosity_Pa_s": 0.000941},
+      {"temperature_K": 363.15, "density_kg_m3": 759.67, "viscosity_Pa_s": 0.000778},
+      {"temperature_K": 373.15, "density_kg_m3": 750.66, "viscosity_Pa_s": 0.000718}
+    ],
+    "interpolation": "Piecewise linear density and log(dynamic viscosity) in absolute temperature",
+    "mixture_viscosity_context": {
+      "citation": "Lilja et al. (2005), Chemical Engineering Journal 115, 1–12",
+      "doi": "10.1016/j.cej.2005.08.012",
+      "location": "Table 2, initial 1:1 propanoic-acid/1-butanol mixture at 60 °C",
+      "density_kg_m3": 869.9,
+      "kinematic_viscosity_m2_s": 1.070e-6,
+      "dynamic_viscosity_Pa_s": 0.000931,
+      "reported_uncertainty": null,
+      "use": "Context for the homologous medium only. Values are not inputs to model cases."
+    }
+  },
+  "diffusivity": {
+    "low": {
+      "citation": "Harris, Ganbold and Price (2015), Journal of Chemical & Engineering Data 60, 3506–3517",
+      "doi": "10.1021/acs.jced.5b00246",
+      "data_url": "https://trc.nist.gov/ThermoML/10.1021/acs.jced.5b00246.html",
+      "location": "Eq. 9 and Figure 5, liquid pentan-1-ol self-diffusion",
+      "method": "NMR spin echo",
+      "equation_m2_s": "1e-12 * exp(intercept - activation_temperature_K / temperature_K)",
+      "temperature_range_K": [253.15, 364.15],
+      "intercept": 15.5821,
+      "intercept_standard_uncertainty": 0.013,
+      "activation_temperature_K": 2943.72,
+      "activation_temperature_standard_uncertainty_K": 4.0,
+      "relative_standard_uncertainty_of_fit": 0.009,
+      "use": "Neat-solvent self-diffusion as a slower analogue for bulk acid transport. Its fit uncertainty applies to the self-diffusion experiment."
+    },
+    "central": {
+      "citation": "Wilke and Chang (1955), AIChE Journal 1, 264–270",
+      "doi": "10.1002/aic.690010222",
+      "equation_m2_s": "7.4e-12 * temperature_K * sqrt(solvent_association_factor * solvent_molar_mass_g_mol) / (viscosity_mPa_s * solute_boiling_molar_volume_cm3_mol^0.6)",
+      "solvent": "Pentan-1-ol, with Moreau et al. viscosity",
+      "solute": "Propanoic acid",
+      "solvent_molar_mass_g_mol": 88.148,
+      "solute_boiling_molar_volume_cm3_mol": 90.6,
+      "solute_volume_reference": {
+        "doi": "10.1016/j.theochem.2005.05.030",
+        "location": "La-Scalea, Menezes and Ferreira (2005), Appendix Table A1, Le Bas volume for propionic acid"
+      },
+      "solvent_association_factor": 1.0,
+      "use": "Dilute molecular-diffusion estimate. Association factor is a scenario assumption and the actual acid feed is 3.3 mol/L."
+    },
+    "high": {
+      "method": "Same Wilke–Chang calculation as central with a larger solvent association factor",
+      "solvent_association_factor": 1.5,
+      "use": "Sensitivity assumption. The scenario is not an upper confidence limit."
+    },
+    "same_acid_analogue_source": {
+      "citation": "Liu et al. (2004), Chemical Engineering and Processing 43, 43–47",
+      "doi": "10.1016/S0255-2701(02)00182-4",
+      "location": "Diaphragm-cell measurements of propanoic acid in both water-rich and 1-butanol-rich mutually saturated phases at 298.15 K",
+      "diffusivity_m2_s": null,
+      "use": "Abstract confirms the measurements. Numerical table was unavailable in the accessible copy and was not used."
+    }
+  },
+  "correlations": {
+    "reynolds": "density_kg_m3 * superficial_velocity_m_s * bead_diameter_m / viscosity_Pa_s",
+    "schmidt": "viscosity_Pa_s / (density_kg_m3 * diffusivity_m2_s)",
+    "sherwood": "film_coefficient_m_s * bead_diameter_m / diffusivity_m2_s",
+    "wilson_geankoplis": {
+      "citation": "Wilson and Geankoplis (1966), Industrial & Engineering Chemistry Fundamentals 5, 9–14",
+      "doi": "10.1021/i160017a002",
+      "location": "Equation 8, Figure 6 and nomenclature",
+      "equation": "Sh = (1.09 / bed_void_fraction) * (Re * Sc)^(1/3)",
+      "superficial_velocity": "Volumetric flow divided by empty-bed cross-sectional area",
+      "particle_reynolds_range": [0.0016, 55],
+      "bed_void_fraction_range": [0.35, 0.75],
+      "own_experiment_schmidt_range": [950, 70600],
+      "combined_data_schmidt_range": [165, 70600],
+      "specimen": "Spherical packing. New low-Re liquid experiments used benzoic acid spheres and aqueous propylene glycol."
+    },
+    "lorenzo_b2": {
+      "doi": "10.1021/acs.iecr.5c02780",
+      "location": "Appendix B, Equation B.2 with the dimensionless Schmidt number",
+      "equation": "Sh = 1.17 * Re^0.585 * Sc^(1/3)",
+      "velocity_basis": "Superficial, consistent with the source reactor residence-time calculation and the correlation convention",
+      "use": "Source-equation comparison at the case conditions"
+    },
+    "isolated_sphere_diffusion": {
+      "equation": "Sh = 2",
+      "use": "Quiescent unbounded liquid around an isolated sphere at steady state. The solution follows from the 1/r concentration field with a fixed surface concentration."
+    }
+  },
+  "conditions": [
+    {"temperature_K": 313.15, "density_kg_m3": 800.07, "viscosity_Pa_s": 0.002346, "diffusivity_m2_s": {"low": 4.838373181254497e-10, "central": 6.208482208027830e-10, "high": 7.603806743408013e-10}},
+    {"temperature_K": 323.15, "density_kg_m3": 792.23, "viscosity_Pa_s": 0.0018437337117924596, "diffusivity_m2_s": {"low": 6.471940588849538e-10, "central": 8.152053032111726e-10, "high": 9.984185142391089e-10}},
+    {"temperature_K": 333.15, "density_kg_m3": 784.39, "viscosity_Pa_s": 0.001449, "diffusivity_m2_s": {"low": 8.507175663895941e-10, "central": 1.0693810028444003e-9, "high": 1.3097188987972736e-9}},
+    {"temperature_K": 343.15, "density_kg_m3": 776.315, "viscosity_Pa_s": 0.001167693881117821, "diffusivity_m2_s": {"low": 1.1005633763320683e-9, "central": 1.3668348121793389e-9, "high": 1.674023926256131e-9}},
+    {"temperature_K": 353.15, "density_kg_m3": 768.24, "viscosity_Pa_s": 0.000941, "diffusivity_m2_s": {"low": 1.4031737321178993e-9, "central": 1.7455432733684842e-9, "high": 2.1378451718501373e-9}}
+  ]
+}

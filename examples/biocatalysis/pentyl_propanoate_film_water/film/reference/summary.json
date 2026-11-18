@@ -1,0 +1,258 @@
+{
+  "catalyst_mass_kg": 0.006,
+  "total_external_area_m2": 0.10253141244606312,
+  "area_per_liquid_volume_m_inv": 5691.399662731873,
+  "catalyst_g_L_void_liquid": 333.0530338139551,
+  "maximum_mesh_change_absolute_conversion": 1.1678209009269302e-05,
+  "maximum_normalized_axial_balance_error": 3.7102221295270965e-10,
+  "maximum_inlet_film_balance_error_mol_L_min": 4.2676973066591017e-13,
+  "comparison": {
+    "no_film": {
+      "count": 20,
+      "rmse_percentage_points": 10.464357511126295,
+      "mae_percentage_points": 10.341980542347953,
+      "bias_percentage_points": 10.341980542347953,
+      "max_absolute_error_percentage_points": 13.882090134021768,
+      "overpredicted_count": 20,
+      "max_conversion_decrease_from_no_film_percentage_points": 0.0
+    },
+    "wilson_geankoplis_central": {
+      "count": 20,
+      "rmse_percentage_points": 9.584766943379119,
+      "mae_percentage_points": 9.451171578140013,
+      "bias_percentage_points": 9.451171578140013,
+      "max_absolute_error_percentage_points": 12.598828029016767,
+      "overpredicted_count": 20,
+      "max_conversion_decrease_from_no_film_percentage_points": 1.402573572114607
+    },
+    "wilson_geankoplis_slow": {
+      "count": 20,
+      "rmse_percentage_points": 9.440716547189544,
+      "mae_percentage_points": 9.303965667334499,
+      "bias_percentage_points": 9.303965667334499,
+      "max_absolute_error_percentage_points": 12.391483321878777,
+      "overpredicted_count": 20,
+      "max_conversion_decrease_from_no_film_percentage_points": 1.6495901627987086
+    },
+    "wilson_geankoplis_fast": {
+      "count": 20,
+      "rmse_percentage_points": 9.694318547260911,
+      "mae_percentage_points": 9.563133696637953,
+      "bias_percentage_points": 9.563133696637953,
+      "max_absolute_error_percentage_points": 12.757556973295342,
+      "overpredicted_count": 20,
+      "max_conversion_decrease_from_no_film_percentage_points": 1.2287099614587293
+    },
+    "corrected_printed_B2_central": {
+      "count": 20,
+      "rmse_percentage_points": 7.696892319891019,
+      "mae_percentage_points": 7.457913083974514,
+      "bias_percentage_points": 7.457913083974514,
+      "max_absolute_error_percentage_points": 10.30956667709179,
+      "overpredicted_count": 20,
+      "max_conversion_decrease_from_no_film_percentage_points": 4.623706445745146
+    },
+    "corrected_printed_B2_slow": {
+      "count": 20,
+      "rmse_percentage_points": 7.266262577392485,
+      "mae_percentage_points": 6.983609864395015,
+      "bias_percentage_points": 6.983609864395015,
+      "max_absolute_error_percentage_points": 10.184337354352502,
+      "overpredicted_count": 20,
+      "max_conversion_decrease_from_no_film_percentage_points": 5.436826932484884
+    },
+    "isolated_sphere_central": {
+      "count": 20,
+      "rmse_percentage_points": 7.340040710802078,
+      "mae_percentage_points": 7.031716653427349,
+      "bias_percentage_points": 7.031716653427349,
+      "max_absolute_error_percentage_points": 10.536876970878684,
+      "overpredicted_count": 20,
+      "max_conversion_decrease_from_no_film_percentage_points": 6.071811210055489
+    }
+  },
+  "liquid_cases": {
+    "wilson_geankoplis_central": [
+      "wilson_geankoplis",
+      "central"
+    ],
+    "wilson_geankoplis_slow": [
+      "wilson_geankoplis",
+      "low"
+    ],
+    "wilson_geankoplis_fast": [
+      "wilson_geankoplis",
+      "high"
+    ],
+    "corrected_printed_B2_central": [
+      "corrected_printed_B2",
+      "central"
+    ],
+    "corrected_printed_B2_slow": [
+      "corrected_printed_B2",
+      "low"
+    ],
+    "isolated_sphere_central": [
+      "isolated_sphere",
+      "central"
+    ]
+  },
+  "film_ranges": {
+    "wilson_geankoplis_central": {
+      "Re": [
+        0.011734689823799825,
+        0.12039325141834516
+      ],
+      "Sc": [
+        701.7171450809651,
+        4722.963407881677
+      ],
+      "Sh": [
+        4.60073122824954,
+        10.547503075101659
+      ],
+      "k_f_m_s": [
+        6.798388878509749e-06,
+        2.1997695906602742e-05
+      ],
+      "inlet_rate_relative_to_no_film": [
+        0.9133960085765752,
+        0.9453725108391001
+      ]
+    },
+    "wilson_geankoplis_slow": {
+      "Re": [
+        0.011734689823799825,
+        0.12039325141834516
+      ],
+      "Sc": [
+        872.9337033373835,
+        6060.391207649085
+      ],
+      "Sh": [
+        4.948040595457707,
+        11.461593991739187
+      ],
+      "k_f_m_s": [
+        5.757252594697026e-06,
+        1.9017981104859495e-05
+      ],
+      "inlet_rate_relative_to_no_film": [
+        0.8999096750571743,
+        0.9375190777357877
+      ]
+    },
+    "wilson_geankoplis_fast": {
+      "Re": [
+        0.011734689823799825,
+        0.12039325141834516
+      ],
+      "Sc": [
+        572.9496497369732,
+        3856.2834743821513
+      ],
+      "Sh": [
+        4.300097666180193,
+        9.858279283688905
+      ],
+      "k_f_m_s": [
+        7.782212575646282e-06,
+        2.518107580764529e-05
+      ],
+      "inlet_rate_relative_to_no_film": [
+        0.9232482619041827,
+        0.9518380696211153
+      ]
+    },
+    "corrected_printed_B2_central": {
+      "Re": [
+        0.011734689823799825,
+        0.12039325141834516
+      ],
+      "Sc": [
+        701.7171450809651,
+        4722.963407881677
+      ],
+      "Sh": [
+        1.2862495356713342,
+        3.4142752549414066
+      ],
+      "k_f_m_s": [
+        1.5257932786203242e-06,
+        8.870227079820208e-06
+      ],
+      "inlet_rate_relative_to_no_film": [
+        0.7187424767795965,
+        0.8774016965569473
+      ]
+    },
+    "corrected_printed_B2_slow": {
+      "Re": [
+        0.011734689823799825,
+        0.12039325141834516
+      ],
+      "Sc": [
+        872.9337033373835,
+        6060.391207649085
+      ],
+      "Sh": [
+        1.3833485597488129,
+        3.710170688696674
+      ],
+      "k_f_m_s": [
+        1.292126336002382e-06,
+        7.668703654967759e-06
+      ],
+      "inlet_rate_relative_to_no_film": [
+        0.6867258669711634,
+        0.8615784748979679
+      ]
+    },
+    "isolated_sphere_central": {
+      "Re": [
+        0.011734689823799825,
+        0.12039325141834516
+      ],
+      "Sc": [
+        701.7171450809651,
+        4722.963407881677
+      ],
+      "Sh": [
+        2.0,
+        2.0
+      ],
+      "k_f_m_s": [
+        2.093923173027936e-06,
+        5.887161124345646e-06
+      ],
+      "inlet_rate_relative_to_no_film": [
+        0.7743102344608752,
+        0.8287195546285167
+      ]
+    }
+  },
+  "sixty_C_three_ml_min": {
+    "temperature_C": 60,
+    "flow_ml_min": 3.0,
+    "catalyst_mass_kg": 0.006,
+    "no_film": 0.6023368005310035,
+    "wilson_geankoplis_central": 0.5899876537763031,
+    "wilson_geankoplis_slow": 0.5880014842515267,
+    "wilson_geankoplis_fast": 0.5915208524260903,
+    "corrected_printed_B2_central": 0.5695483384111039,
+    "corrected_printed_B2_slow": 0.5644850011040641,
+    "isolated_sphere_central": 0.5515374433366504,
+    "observed_acid_conversion": 0.497
+  },
+  "julia": "1.11.6",
+  "source_sha256": {
+    "examples/biocatalysis/pentyl_propanoate_film_water/film/properties.json": "5bf073298e4916a185639decff259db90de51726b91b02ea652ca07ebd85d08a",
+    "literature/sources/lorenzo2025/author_model.json": "d128ace125cdff8069ae5ba27fea14ab08a35d9ef661016a23d9f394cfe13c16",
+    "examples/biocatalysis/pentyl_propanoate_transfer/published/model.jl": "c2fb5b15d3d70361f086947eb5e73f66bd92bfade987f22815c29032275a33ad",
+    "literature/sources/lorenzo2025/conversion_2to1.csv": "8736cc8a57ba341089ae66df91df4a0067dc71f0ce8cfb52a6904317f466a79d",
+    "examples/biocatalysis/pentyl_propanoate_film_water/film/model.jl": "5c4c51ed23cbb569cb2d44d2193e58f6a8ab40880f82c4dcc548c69b8020330b",
+    "examples/biocatalysis/pentyl_propanoate_film_water/film/run.py": "e7bbe66c9eab83411f2c62763cb5ae3ef56d106311f8b1e6022efedd3bd4efd7"
+  },
+  "predictions_before_comparison_sha256": "41afac92b0544fcaeb7c9f46d7b6531423357858209f90ac6c30e59268fd40d7",
+  "bed_comparison_sha256": "18bde1476449a1aadeba307a1c9dff22dd26da20773826575f4e3c206d6ace0d"
+}

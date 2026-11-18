@@ -415,6 +415,13 @@ finds small changes from the volume and phase readout calculations.
 Bead transport sensitivities reduce the discrepancy at fixed mass.
 The reacting-liquid transport change remains unmeasured.
 
+The [film and water-activity audit](examples/biocatalysis/pentyl_propanoate_film_water/REPORT.md)
+finds a small conversion drop from the independently sourced packed-bed film.
+Controlled batch studies show substantial and solvent-dependent lipase rate
+changes with water activity. A bed-specific water effect needs a constraint
+on how the catalyst's water activity or hydration history differs from the
+calibration batch at the same conversion.
+
 ## Acceptance criterion for every end-to-end showcase
 
 An output actually derived from OpenLB must influence an actual DWSIM process
