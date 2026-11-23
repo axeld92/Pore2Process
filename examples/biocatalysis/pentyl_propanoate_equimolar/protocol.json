@@ -1,0 +1,40 @@
+{
+  "question": "Does the same batch-qualified calibration boundary predict the effect of increasing the initial acid concentration from the 2:1 alcohol-rich feed to the 1:1 equimolar feed in the same packed bed, including its high-temperature loss of conversion?",
+  "frozen_inputs": {
+    "batch_parameters": "pentyl_propanoate_composition/reference/summary.json: all_data and hot_acid_challenge training records only. No call to a fitting routine in this campaign. All existing paired batch qualification results remain in force.",
+    "cases": "Reuse the entire preceding set: prior Table S3 printed rate (conditional g/L and minute basis), all 13 full-batch laws with clock laws fully active, six active-domain static laws, and two hypothesized residual-activity floors. Predict both ratios using the proper feed-specific empirical coefficient for the ratio-reference model and the shared parameters otherwise.",
+    "equilibrium": "Use the original feed-specific training-only apparent Kx(T) regressions. 1:1 at 70/80 C is an extrapolated fully active thermodynamic scenario; no measured Kx at these two temperatures. The source Table S3 replay retains its own reversible coefficients.",
+    "reactor_holdouts": {"1to1": [45,64], "2to1": [65,84]},
+    "comparison": "All 40 measurements are held out of calibration, not selected individually. Save central, clock and transport predictions before joining measured conversions. The 20 2:1 cases have already been scored in the previous example; 1:1 is a new transfer check at the same weighed catalyst mass. Do not select a best model by reactor RMSE or infer a catalyst multiplier from these curves."
+  },
+  "bed": {
+    "catalyst_mass_kg": 0.006,
+    "concentration_basis": "Measured mass divided by interbead liquid volume using the authors' aqueous-tracer-derived bed porosity. Identical geometry, bed and bead inventory for both feeds. Actual reacting-liquid porosity is not measured.",
+    "liquid_model": "Dry feed and constant volume flow, single equimolar ester/water production; compare predicted concentration conversion to reported concentration conversion. Product molar flow is an inferred outlet-flow scenario, not an additional measured datum.",
+    "axial_model": "Same low-Re limit Pe of printed Eq 3, Eq 4 fixed inlet (not a zero-product-flux Danckwerts inlet), zero outlet gradient. Report inlet backdiffusion and net source balance. No new OpenLB flow calculation; preserve the previously verified mixing boundary.",
+    "film": "Reuse BeadFilm and Wilson–Geankoplis with Sc=mu/(rho*D), superficial velocity and interbead area per liquid volume. 2:1 exactly reproduces former property scenarios. For 1:1 use 5.3 mol/L acid for film capacity, dry nominal feed density computed from reported feed concentrations and molar masses for Re/Sc bookkeeping, and the prior neat-pentanol viscosity/dilute acid diffusivity proxy. WG Re*Sc cancels rho and mu. These are scenarios, not measured reacting mixture properties. No experimental binary transport data covering the target temperature range were located.",
+    "internal_factor": "Use the ratio-specific calculated factors from the 2025 paper Table B1, not independent measurements of pore-scale utilization. Apply eta_I once to the rate in both film and axial balances; do not multiply by printed eta_E."
+  },
+  "age": {
+    "ages_min": [30,180],
+    "laws": ["acid_decay","acid_activation","acid_both","protected_decay","protected_both","residual_decay","protected_residual_decay"],
+    "method": "Reuse the frozen all-batch parameters and catalyst-age bounds at unreacted inlet and fully active equilibrium composition. Compute both spatially uniform activity limits at each age for each ratio and flow. Catalyst age is time on stream, NOT fluid residence time. Do not pick an age or activity to match measurements. These steady endpoint scenarios are not a time-dependent, spatially resolved catalyst-history calculation and do not establish the experiment's actual age."
+  },
+  "transport_sensitivities": {
+    "cases": ["prior_central_film_reference","all_batch_ratio_reference","all_batch_reversible_shared","active_batch_reversible_shared","all_batch_protected_residual_decay_fully_active"],
+    "scenarios": ["half_diffusivity","double_diffusivity","no_liquid_film","no_additional_internal_factor"],
+    "interpretation": "Factor-two diffusivity variations are transparent stress cases, not confidence limits. Check no liquid film and no additional intraparticle effectiveness correction separately; the latter tests whether the batch-fitted apparent rates already embody some particle limitation. Never alter catalyst mass."
+  },
+  "numerical_acceptance": {
+    "cells": [512,1024],
+    "max_absolute_grid_difference": 0.0001,
+    "max_normalized_reaction_flux_balance_error": 1e-9,
+    "max_film_root_error_mol_L_min": 1e-10,
+    "max_sampled_positive_slope_over_film_capacity": 0.99,
+    "prior_2to1_replay_tolerance_absolute_conversion": 1e-10
+  },
+  "report": {
+    "groups": "Per feed (20), per feed 40–60 C (12), per feed 70–80 C (8), joint all 40; paired difference in acid conversion (2:1 minus 1:1) and hot 80 minus 60 C changes at fixed Q. Retain signed bias and RMSE in percentage points, measured and predicted conversion, and nominal effluent ester productivity. For age envelopes report observed coverage and actual activity endpoints at both prespecified ages. Report sensitivity magnitudes and direction, no post-hoc parameter adjustment.",
+    "qualification": "This is a diagnostic transfer test, not a new calibration or model selection. No previously unqualified batch law becomes validated just because it happens to describe reactor points. The old batch holdout failures and unreported catalyst-state history remain explicit."
+  }
+}

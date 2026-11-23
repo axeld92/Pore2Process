@@ -1,0 +1,32 @@
+{
+  "question": "The 1:1 curve from a literal replay increases with temperature, unlike the authors' Figure 6b calculations. Is this partly a sign-convention ambiguity in the published denaturation term?",
+  "primary_source": {
+    "doi": "10.1021/acs.iecr.5c02780",
+    "supporting_information_doi": "10.1021/acs.iecr.5c02780.s001",
+    "main_location": "Section 4 and Figure 6b,c, PDF p5. Authors' lines are calculated values, not experimental markers.",
+    "si_location": "SI Eq S1 p5 (minus before Kd,exp in the exponent) and Table S3 p6 (both esters have negative Kd,exp). Both pages visually verified against the PDF with the frozen SI hash.",
+    "printed_Kd_exp": -28091,
+    "equation": "Kd(T) = Kd_ref * C0acid^Kd1 / (C0alcohol/C0acid)^Kd2 * exp[-Kd_exp*(1/T-1/Tref)], T in kelvins.",
+    "interpretation": "Eq S1 with the negative number in Table S3 makes Kd decrease when T rises, whereas the 1:1 calculated conversion in Figure 6b collapses at 70–80 C. Test just those two exact sign conventions as a source-consistency diagnosis, no parameter fit. Other transcription/normalization ambiguities remain. A better replay cannot establish the intended convention without clarification from the source."
+  },
+  "author_model_digitization": {
+    "source_file": "literature/sources/lorenzo2025/author_conversion_1to1.csv",
+    "main_pdf_sha256": "6bf0e24e242aa4f7511ef13c602f152fb77d3dfc4b69c6fa1c82e10164ca6d06",
+    "pdf_page": 5,
+    "native_raster_dimensions_px": [998,981],
+    "pixel_origin": "Top left of the native raster, x right and y down; centers in px.",
+    "flow_tick_x_px": {"0.7":87.7,"1":129.5,"2":268.8,"3":408.2},
+    "conversion_y0_y100_px": [907.5,504.0],
+    "method": "Visually identify each solid line color; sample the mean colored-pixel y per x in a ±7 px corridor around the line; omit 8 px from segment endpoints to avoid symbols. Regress center y on x for each of the three straight segments, evaluate endpoints and average two extrapolations at interior corners. Black, red, blue, green, yellow represent 40, 50, 60, 70, 80 C. Checking 6/10 px exclusions and tighter/looser RGB thresholds changed the centers by at most 0.05 pp. The largest adjacent-segment endpoint mismatch was 0.08 pp. Allow ±0.5 pp graph-reading resolution; not experimental uncertainty.",
+    "two_to_one": "Reuse prior independent Figure 6c solid-line extraction, author_conversion_2to1.csv; acid_conversion column is calculated by authors, not observed."
+  },
+  "predictions": {
+    "literal_printed": "All Table S3 numbers exactly as printed, including Kd_exp=-28091 (identical to preceding central film model).",
+    "opposite_exponent_sign": "Change only Kd_exp to +28091; equivalent to using a plus rather than minus in the printed exponent with its printed coefficient. This is a sign interpretation scenario motivated by the source equation/model output contradiction. No new fitted parameter.",
+    "basis": "Retain the previous conditional g/L and minute basis for Table S3. All 40 bed cases with the full 6 g, same interbead liquid volume, same film and ratio-specific eta. Do not apply the historical bulk-volume mass proxy. For 16 batch curves use the 2026 reported nominal 40 mL charges (1:1 acid volume 16.3 mL; 2:1 10.3 mL) and pure acid density measured at 25 C, 0.98807 g/mL, times the printed catalyst/initial-acid mass percentage. Use the previously published nominal starting molar concentrations (5.3/5.3 and 3.3/6.6 mol/L), constant volume and minute basis. This is a conditional replay of potentially overlapping batch experiments, not an independent validation of the original Table S3 fit.",
+    "batch_refinement_max_absolute_conversion": 0.00001,
+    "batch_time_steps_min": [0.05,0.025],
+    "bed_refinement": "Use main dual-feed protocol numerical criteria; 512 and 1024 cells.",
+    "comparison": "Compare both sign conventions against the same 16 batch curves, authors' calculated versus measured reactor curves separately, and the prior 6 g predictions. Neither authors' plotted predictions nor the measured conversion data are used to change coefficient magnitude or mass. This tests source consistency, not the predictive qualification of the earlier frozen composition fits."
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "source": {
+    "publication": "Lorenzo, Ortega, González Garcinuño, and Martín-del Valle (2025), Industrial & Engineering Chemistry Research 64, 15311–15319",
+    "doi": "10.1021/acs.iecr.5c02780",
+    "main_pdf_url": "https://accedacris.ulpgc.es/server/api/core/bitstreams/f28615f9-fcf8-4bf7-b607-aa29f22530d9/content",
+    "main_pdf_sha256": "6bf0e24e242aa4f7511ef13c602f152fb77d3dfc4b69c6fa1c82e10164ca6d06",
+    "supporting_information_doi": "10.1021/acs.iecr.5c02780.s001",
+    "supporting_information_pdf_url": "https://ndownloader.figshare.com/files/56501839",
+    "supporting_information_sha256": "8eedaca05d74a981e545fc87fd8b46e66d2b540f073afc986805beb201721fbc"
+  },
+  "reaction_1to1": {
+    "location": "Main Section 2.3, Figure 3b; SI Table S2 page 4, assays 45–64, and Figure S1 page 7",
+    "acid": "propanoic acid",
+    "alcohol": "pentan-1-ol",
+    "ester": "pentyl propanoate",
+    "added_solvent": "none",
+    "initial_ratio_alcohol_to_acid_mol_mol": 1,
+    "inlet_acid_mol_L": 5.3,
+    "inlet_alcohol_mol_L": 5.3,
+    "inlet_water_mol_L": null,
+    "temperature_C": [40,50,60,70,80],
+    "flow_ml_min": [0.7,1,2,3],
+    "reported_nominal_residence_time_min": [26,18,9,6],
+    "catalyst_mass_kg": 0.006,
+    "column_bore_m": 0.016,
+    "column_length_m": 0.14,
+    "nominal_cycle_min": 180,
+    "reported_time_until_steady_min_approximately": 30,
+    "first_sample_min": 10,
+    "subsequent_sampling_interval_min": 30,
+    "age_corresponding_to_each_plotted_conversion_min": null,
+    "bead_initial_activity_and_reuse_order_by_assay": null,
+    "liquid_properties_at_reaction_temperatures": null,
+    "reported_effluent_concentration_error_less_than_fraction": 0.05,
+    "individual_conversion_uncertainty": null,
+    "conversion_definition": "X=(C0,acid-Cout,acid)/C0,acid; concentration-based, not an independent molar-flow or mass-balance measurement.",
+    "conversion_csv": "conversion_1to1.csv"
+  },
+  "effectiveness": {
+    "location": "Main Appendix B, Table B1, PDF page 7, propanoic acid, alcohol/acid ratio 1",
+    "interpretation": "Authors' calculated values, not measured pore diffusivities or independently measured catalyst utilization. Fixed input scenario for comparison. Eq B.2 prints a dimensionally incorrect Schmidt relation; external factors are retained for evidence, not applied with a separate liquid-film model.",
+    "by_temperature_C": {
+      "40": {"eta_internal": 0.893, "eta_external": 0.999},
+      "50": {"eta_internal": 0.903, "eta_external": 0.999},
+      "60": {"eta_internal": 0.943, "eta_external": 0.999},
+      "70": {"eta_internal": 0.990, "eta_external": 0.999},
+      "80": {"eta_internal": 0.998, "eta_external": 0.999}
+    }
+  },
+  "digitization": {
+    "primary": "All twenty open circles (propanoic acid, 1:1) in SI Figure S1; panels a, b, c, d fix Q=0.7, 1, 2, 3 mL/min respectively. Read marker centers at fixed temperature ticks, taking the vertical midpoint of the upper and lower ring pixels in a central 5-px stripe (dark threshold 180/255).",
+    "pixel_origin": "Top-left of native embedded raster, zero-based; x right, y down.",
+    "si_page": 7,
+    "si_native_image_size_px": [1299,1327],
+    "si_y0_y100_px": {"S1a":[561.0,20.5],"S1b":[561.0,20.5],"S1c":[1237.5,697.0],"S1d":[1237.5,697.0]},
+    "main_crosscheck": "Figure 3b, colored markers at fixed flow, center of colored vertical pixels. At 50 C and 2 mL/min the red marker is partly covered by nearby green; use the unobscured open circle in S1c, not the partial red reading. The 19 other independent figure readings differ by less than 0.5 percentage points. Figures reproduce the same runs, not separate experiments.",
+    "main_page": 3,
+    "main_native_image_size_px": [998,975],
+    "main_figure_3b_y0_y100_px": [907.5,504.0],
+    "maximum_crosscheck_difference_including_occluded_marker_pp": 0.76,
+    "primary_digitization_working_half_range_pp": 0.5,
+    "precision_of_primary_conversion_fraction": 0.001,
+    "note": "The graph-reading allowance is not experimental uncertainty. The paper estimates an error of less than 5% in sampled concentration, not a CI for the plotted conversion. Neither raw replicates nor point-specific uncertainty is reported."
+  }
+}

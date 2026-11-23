@@ -482,13 +482,24 @@ loss; the state-only and clock-dependent shared laws do not
 qualify against the target 2:1 batch series. Even though a
 compromised all-batch shared-rate prediction produces a lower
 reactor error, its independent 2:1 batch prediction worsens.
-For the next executable step extract the separate equimolar
-packed-bed results from the 2025 article Figure 3b and SI
-Figure S1; compare 1:1 and 2:1 under independently frozen
-batch kinetics and composition-specific material/transport
-properties. All original reactor observations stay outside
-calibration. Seek direct activity-time or controlled catalyst
-inventory/contact evidence if neither feed is captured.
+The [equimolar packed-bed audit](examples/biocatalysis/pentyl_propanoate_equimolar/REPORT.md)
+then compares the additional twenty 1:1 reactor measurements
+with the original twenty 2:1 observations, using frozen batch
+parameters and the same 6 g bed. Neither film sensitivity nor
+the uniform catalyst-age bounds qualifies a common predictive
+law. Reversing only the sign of the published algebraic
+denaturation term improves the consistency with its own batch
+and Figure 6b curves, but the 1:1 fixed-inventory reactor RMSE is
+still 23.58 conversion points: too high at moderate temperature
+and too low at high temperature. The sign interpretation is
+conditional and is not an adopted correction. A single reduced
+catalyst inventory would worsen the hot equimolar prediction.
+Next test the spatial, time-dependent catalyst exposure with
+the frozen batch activity laws, actual fixed catalyst inventory
+and both reactor datasets held out. Seek independent catalyst
+inventory/contact or activity-time measurements in the literature
+if the low-temperature rate discrepancy remains. Do not progress
+to a new reacting OpenLB/DWSIM validation claim on these failed rates.
 
 ## Acceptance criterion for every end-to-end showcase
 

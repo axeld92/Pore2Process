@@ -1,0 +1,360 @@
+{
+  "scope": "Conditional sign consistency, not a new fit or a proven typo correction.",
+  "julia": "1.11.6",
+  "batch_count": 450,
+  "bed_count": 80,
+  "catalyst_mass_kg": 0.006,
+  "prior_literal_replay_absolute_conversion_difference": 0.0,
+  "max_batch_step_refinement": 1.176836406102666e-14,
+  "max_bed_grid_change": 1.1601630120039452e-05,
+  "max_balance_error": 2.787088337896648e-10,
+  "max_film_root_error_mol_L_min": 8.29558643999917e-13,
+  "author_curves_vs_observations": {
+    "joint_40": {
+      "count": 40,
+      "rmse_percentage_points": 16.045653617101426,
+      "mae_percentage_points": 10.669999999999998,
+      "bias_percentage_points": -3.345,
+      "max_absolute_error_percentage_points": 52.0
+    },
+    "1to1": {
+      "count": 20,
+      "rmse_percentage_points": 22.32398933882562,
+      "mae_percentage_points": 18.095,
+      "bias_percentage_points": -5.875000000000001,
+      "max_absolute_error_percentage_points": 52.0
+    },
+    "1to1_40to60C": {
+      "count": 12,
+      "rmse_percentage_points": 11.531189588820979,
+      "mae_percentage_points": 10.183333333333334,
+      "bias_percentage_points": 10.183333333333334,
+      "max_absolute_error_percentage_points": 17.0
+    },
+    "1to1_70to80C": {
+      "count": 8,
+      "rmse_percentage_points": 32.348860103564704,
+      "mae_percentage_points": 29.962500000000002,
+      "bias_percentage_points": -29.962500000000002,
+      "max_absolute_error_percentage_points": 52.0
+    },
+    "2to1": {
+      "count": 20,
+      "rmse_percentage_points": 4.070073709406255,
+      "mae_percentage_points": 3.2449999999999988,
+      "bias_percentage_points": -0.815,
+      "max_absolute_error_percentage_points": 7.700000000000006
+    },
+    "2to1_40to60C": {
+      "count": 12,
+      "rmse_percentage_points": 3.300378766141848,
+      "mae_percentage_points": 2.4083333333333323,
+      "bias_percentage_points": -1.4916666666666667,
+      "max_absolute_error_percentage_points": 7.399999999999995
+    },
+    "2to1_70to80C": {
+      "count": 8,
+      "rmse_percentage_points": 5.0074943834217125,
+      "mae_percentage_points": 4.499999999999998,
+      "bias_percentage_points": 0.20000000000000018,
+      "max_absolute_error_percentage_points": 7.700000000000006
+    }
+  },
+  "scores": {
+    "literal_printed": {
+      "batch": {
+        "1to1": {
+          "count": 96,
+          "rmse_percentage_points": 19.786831482830863,
+          "mae_percentage_points": 11.436989184465912,
+          "bias_percentage_points": 11.033670824582519,
+          "max_absolute_error_percentage_points": 64.6032732188024
+        },
+        "1to1_70to80C": {
+          "count": 17,
+          "rmse_percentage_points": 44.8092830051413,
+          "mae_percentage_points": 42.20181759529883,
+          "bias_percentage_points": 42.20181759529883,
+          "max_absolute_error_percentage_points": 64.6032732188024
+        },
+        "2to1": {
+          "count": 113,
+          "rmse_percentage_points": 4.204475317281286,
+          "mae_percentage_points": 3.4572459507008833,
+          "bias_percentage_points": 0.5420145499314875,
+          "max_absolute_error_percentage_points": 11.30465439707179
+        },
+        "2to1_70to80C": {
+          "count": 30,
+          "rmse_percentage_points": 5.7486310043683675,
+          "mae_percentage_points": 5.056723470979978,
+          "bias_percentage_points": 1.6996447834740378,
+          "max_absolute_error_percentage_points": 11.30465439707179
+        }
+      },
+      "bed": {
+        "joint_40": {
+          "count": 40,
+          "rmse_percentage_points": 21.79381304089631,
+          "mae_percentage_points": 18.431703639905678,
+          "bias_percentage_points": 18.431703639905678,
+          "max_absolute_error_percentage_points": 46.68822941056452
+        },
+        "1to1": {
+          "count": 20,
+          "rmse_percentage_points": 29.292879960225683,
+          "mae_percentage_points": 27.41223570167135,
+          "bias_percentage_points": 27.41223570167135,
+          "max_absolute_error_percentage_points": 46.68822941056452
+        },
+        "1to1_40to60C": {
+          "count": 12,
+          "rmse_percentage_points": 24.690504061215393,
+          "mae_percentage_points": 23.721384700310736,
+          "bias_percentage_points": 23.721384700310736,
+          "max_absolute_error_percentage_points": 32.299306169507474
+        },
+        "1to1_70to80C": {
+          "count": 8,
+          "rmse_percentage_points": 35.08205459654747,
+          "mae_percentage_points": 32.948512203712276,
+          "bias_percentage_points": 32.948512203712276,
+          "max_absolute_error_percentage_points": 46.68822941056452
+        },
+        "2to1": {
+          "count": 20,
+          "rmse_percentage_points": 9.584766943379105,
+          "mae_percentage_points": 9.45117157814,
+          "bias_percentage_points": 9.45117157814,
+          "max_absolute_error_percentage_points": 12.598828029016767
+        },
+        "2to1_40to60C": {
+          "count": 12,
+          "rmse_percentage_points": 9.610046565983247,
+          "mae_percentage_points": 9.456263119651158,
+          "bias_percentage_points": 9.456263119651158,
+          "max_absolute_error_percentage_points": 12.598828029016767
+        },
+        "2to1_70to80C": {
+          "count": 8,
+          "rmse_percentage_points": 9.546721997454544,
+          "mae_percentage_points": 9.443534265873263,
+          "bias_percentage_points": 9.443534265873263,
+          "max_absolute_error_percentage_points": 11.533782967435535
+        }
+      },
+      "author_curve": {
+        "joint_40": {
+          "count": 40,
+          "rmse_percentage_points": 30.548865690002273,
+          "mae_percentage_points": 21.776703639905676,
+          "bias_percentage_points": 21.776703639905676,
+          "max_absolute_error_percentage_points": 75.11475009115543
+        },
+        "1to1": {
+          "count": 20,
+          "rmse_percentage_points": 41.82955171795668,
+          "mae_percentage_points": 33.28723570167135,
+          "bias_percentage_points": 33.28723570167135,
+          "max_absolute_error_percentage_points": 75.11475009115543
+        },
+        "1to1_40to60C": {
+          "count": 12,
+          "rmse_percentage_points": 15.057398153619053,
+          "mae_percentage_points": 13.538051366977404,
+          "bias_percentage_points": 13.538051366977404,
+          "max_absolute_error_percentage_points": 26.899306169507476
+        },
+        "1to1_70to80C": {
+          "count": 8,
+          "rmse_percentage_points": 63.51527874124553,
+          "mae_percentage_points": 62.91101220371228,
+          "bias_percentage_points": 62.91101220371228,
+          "max_absolute_error_percentage_points": 75.11475009115543
+        },
+        "2to1": {
+          "count": 20,
+          "rmse_percentage_points": 10.805322436946673,
+          "mae_percentage_points": 10.266171578139998,
+          "bias_percentage_points": 10.266171578139998,
+          "max_absolute_error_percentage_points": 14.034268314941812
+        },
+        "2to1_40to60C": {
+          "count": 12,
+          "rmse_percentage_points": 11.230978058282325,
+          "mae_percentage_points": 10.947929786317822,
+          "bias_percentage_points": 10.947929786317822,
+          "max_absolute_error_percentage_points": 13.401753319131359
+        },
+        "2to1_70to80C": {
+          "count": 8,
+          "rmse_percentage_points": 10.133369636874463,
+          "mae_percentage_points": 9.243534265873263,
+          "bias_percentage_points": 9.243534265873263,
+          "max_absolute_error_percentage_points": 14.034268314941812
+        }
+      }
+    },
+    "opposite_exponent_sign": {
+      "batch": {
+        "1to1": {
+          "count": 96,
+          "rmse_percentage_points": 6.02154094855253,
+          "mae_percentage_points": 4.517693334785192,
+          "bias_percentage_points": 1.675237668284762,
+          "max_absolute_error_percentage_points": 16.97069632720491
+        },
+        "1to1_70to80C": {
+          "count": 17,
+          "rmse_percentage_points": 7.876559388077291,
+          "mae_percentage_points": 7.363385648883221,
+          "bias_percentage_points": -5.094643686439324,
+          "max_absolute_error_percentage_points": 12.047773368116678
+        },
+        "2to1": {
+          "count": 113,
+          "rmse_percentage_points": 4.2328026043135,
+          "mae_percentage_points": 3.48316947105253,
+          "bias_percentage_points": 0.5097684190500139,
+          "max_absolute_error_percentage_points": 11.267458515587798
+        },
+        "2to1_70to80C": {
+          "count": 30,
+          "rmse_percentage_points": 5.825761511496662,
+          "mae_percentage_points": 5.153546767117689,
+          "bias_percentage_points": 1.5792144728437425,
+          "max_absolute_error_percentage_points": 11.267458515587798
+        }
+      },
+      "bed": {
+        "joint_40": {
+          "count": 40,
+          "rmse_percentage_points": 17.99038101662792,
+          "mae_percentage_points": 15.607821850393902,
+          "bias_percentage_points": 6.397556328069934,
+          "max_absolute_error_percentage_points": 48.34172500792901
+        },
+        "1to1": {
+          "count": 20,
+          "rmse_percentage_points": 23.579623435391465,
+          "mae_percentage_points": 21.793159298142733,
+          "bias_percentage_points": 3.3726282534948098,
+          "max_absolute_error_percentage_points": 48.34172500792901
+        },
+        "1to1_40to60C": {
+          "count": 12,
+          "rmse_percentage_points": 21.902758029159816,
+          "mae_percentage_points": 20.971489626364626,
+          "bias_percentage_points": 20.971489626364626,
+          "max_absolute_error_percentage_points": 28.52954265034004
+        },
+        "1to1_70to80C": {
+          "count": 8,
+          "rmse_percentage_points": 25.89209125314656,
+          "mae_percentage_points": 23.025663805809916,
+          "bias_percentage_points": -23.025663805809916,
+          "max_absolute_error_percentage_points": 48.34172500792901
+        },
+        "2to1": {
+          "count": 20,
+          "rmse_percentage_points": 9.555573080251655,
+          "mae_percentage_points": 9.42248440264506,
+          "bias_percentage_points": 9.42248440264506,
+          "max_absolute_error_percentage_points": 12.598617474218571
+        },
+        "2to1_40to60C": {
+          "count": 12,
+          "rmse_percentage_points": 9.609535079987623,
+          "mae_percentage_points": 9.455722108500874,
+          "bias_percentage_points": 9.455722108500874,
+          "max_absolute_error_percentage_points": 12.598617474218571
+        },
+        "2to1_70to80C": {
+          "count": 8,
+          "rmse_percentage_points": 9.474053807626712,
+          "mae_percentage_points": 9.372627843861341,
+          "bias_percentage_points": 9.372627843861341,
+          "max_absolute_error_percentage_points": 11.353916981604828
+        }
+      },
+      "author_curve": {
+        "joint_40": {
+          "count": 40,
+          "rmse_percentage_points": 10.586907972922655,
+          "mae_percentage_points": 9.742556328069934,
+          "bias_percentage_points": 9.742556328069934,
+          "max_absolute_error_percentage_points": 17.749477519063245
+        },
+        "1to1": {
+          "count": 20,
+          "rmse_percentage_points": 10.398201426150997,
+          "mae_percentage_points": 9.24762825349481,
+          "bias_percentage_points": 9.24762825349481,
+          "max_absolute_error_percentage_points": 17.749477519063245
+        },
+        "1to1_40to60C": {
+          "count": 12,
+          "rmse_percentage_points": 11.188722177369646,
+          "mae_percentage_points": 10.788156293031292,
+          "bias_percentage_points": 10.788156293031292,
+          "max_absolute_error_percentage_points": 15.513101323214219
+        },
+        "1to1_70to80C": {
+          "count": 8,
+          "rmse_percentage_points": 9.084339618457502,
+          "mae_percentage_points": 6.936836194190087,
+          "bias_percentage_points": 6.936836194190087,
+          "max_absolute_error_percentage_points": 17.749477519063245
+        },
+        "2to1": {
+          "count": 20,
+          "rmse_percentage_points": 10.77230931395204,
+          "mae_percentage_points": 10.23748440264506,
+          "bias_percentage_points": 10.23748440264506,
+          "max_absolute_error_percentage_points": 13.761882665356062
+        },
+        "2to1_40to60C": {
+          "count": 12,
+          "rmse_percentage_points": 11.230385924558785,
+          "mae_percentage_points": 10.94738877516754,
+          "bias_percentage_points": 10.94738877516754,
+          "max_absolute_error_percentage_points": 13.401576104590063
+        },
+        "2to1_70to80C": {
+          "count": 8,
+          "rmse_percentage_points": 10.046107100108612,
+          "mae_percentage_points": 9.17262784386134,
+          "bias_percentage_points": 9.17262784386134,
+          "max_absolute_error_percentage_points": 13.761882665356062
+        }
+      }
+    }
+  },
+  "source_sha256": {
+    "examples/biocatalysis/pentyl_propanoate_equimolar/source_sign_protocol.json": "93a63ce0b858e3210160ebe70418d456957998ac81c1ba3c4fdc25f55741443f",
+    "examples/biocatalysis/pentyl_propanoate_equimolar/source_sign_audit.py": "9691d3feedbe431df3c2b06f93e22d20924566c05cda6ab0a05cc9d17cbe2db0",
+    "examples/biocatalysis/pentyl_propanoate_equimolar/run.py": "3c35b5ba3f0f6008eaf03dd29dcc6cb9ba2aadee970eeddaaefb0d2483fbcf72",
+    "examples/biocatalysis/pentyl_propanoate_equimolar/model.jl": "48d42eddaa3d3d53b0fcb8517510aad1e372492e428e9a16ec0232fab52305f5",
+    "examples/biocatalysis/pentyl_propanoate_equimolar/protocol.json": "cc06438a1b1ad6ad14fcf2b3bd1ca4b812c3c472a4ae524aa17fed391341ea5f",
+    "literature/sources/lorenzo2025/author_model.json": "d128ace125cdff8069ae5ba27fea14ab08a35d9ef661016a23d9f394cfe13c16",
+    "examples/biocatalysis/pentyl_propanoate_transfer/published/model.jl": "c2fb5b15d3d70361f086947eb5e73f66bd92bfade987f22815c29032275a33ad",
+    "literature/sources/lorenzo2025/equimolar_extraction.json": "a3acb8af8668ca051892ab10f77dfbb071ef7bc521abc9279053421e9bbea5d2",
+    "examples/biocatalysis/pentyl_propanoate_film_water/film/properties.json": "5bf073298e4916a185639decff259db90de51726b91b02ea652ca07ebd85d08a",
+    "examples/biocatalysis/pentyl_propanoate_composition/run.py": "22c86da7c820b04182532a621dd96c9c168e7ee8d7d470c5ce0de729781b74b9",
+    "examples/biocatalysis/pentyl_propanoate_composition/protocol.json": "4adacea17687fc3a69da87f0b45a11120f9ce73d875bef4c2293c88b1261bfdf",
+    "examples/biocatalysis/pentyl_propanoate_film_water/film/model.jl": "5c4c51ed23cbb569cb2d44d2193e58f6a8ab40880f82c4dcc548c69b8020330b",
+    "literature/sources/lorenzo2026/batch_2to1.csv": "737cad65867c4f106eb5cbab5171009ec2c71abf677857e4acde4309a1a5d938",
+    "literature/sources/lorenzo2026/batch_1to1.csv": "82e6d25305d959cc40c796bda1e14ce9d9815ae11ec30d5bd82797f00aedbf36",
+    "literature/sources/lorenzo2026/batch_1to1_temperature.csv": "8c7671755e45e0679a5caec6918cb206b62652d2e2750c968ee327fce12d7fee",
+    "literature/sources/lorenzo2025/author_conversion_1to1.csv": "5f2cc0fc772e0f0dbb4aef973cd57e838d61c38783e4af0e5014d650b7ce273b",
+    "literature/sources/lorenzo2025/author_conversion_2to1.csv": "b36e50402d186fd171d27141e14db9dc16aa962f0ee99d185b38d921f4452fed",
+    "literature/sources/lorenzo2025/conversion_1to1.csv": "03847b29dd5f73d083f6ec22d253a13bd053d266a08d3fc42bc7142af339faa1",
+    "literature/sources/lorenzo2025/conversion_2to1.csv": "8736cc8a57ba341089ae66df91df4a0067dc71f0ce8cfb52a6904317f466a79d"
+  },
+  "previous_bed_comparison_sha256": "8c8506d6bc72142902df661044056ab2dba3a52008b503791b119fc5dfce5954",
+  "output_sha256": {
+    "sign_batch_comparison.csv": "20a18337a3f6fb924be45e75222f025df424a411190eefcaef1b9c63dd388cb2",
+    "sign_bed_before_comparison.csv": "94a1c1e7b04a0e24f8db33bd18f99aa6b234a7d38e0e277554510938cdc97dcd",
+    "sign_bed_comparison.csv": "571e323476628163f7770875474da0496e9444e61c2e2684fcd25c16df047a57"
+  }
+}

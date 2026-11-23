@@ -77,3 +77,26 @@ plotted intervals. The reported pulse volumes and concentrations imply
 input doses of 8.4 and 0.84 mg, respectively. The concentration plot
 therefore supports a normalized shape and timing comparison, with an
 unresolved absolute-dose discrepancy.
+
+## Equimolar packed-bed measurements and calculated curves
+
+The [new 1:1 experimental conversions](conversion_1to1.csv) retain all twenty
+open-circle markers from Supporting Figure S1a–d and the cross-read marker
+positions in main Figure 3b (SI Table S2 assays 45–64). The two figures
+represent the same experiments. The nominal equimolar inlet concentrations
+are both 5.3 mol/L, with the same 6 g catalyst mass, four flow rates and
+five temperatures as the 2:1 experiments. The equimolar-specific Table B1
+calculated internal and external effectiveness factors, sampling conditions,
+unknowns, PDF checksums and coordinate calibrations are separately retained
+in [equimolar_extraction.json](equimolar_extraction.json).
+
+The [calculated Figure 6b lines](author_conversion_1to1.csv) are not
+measurements. They are read separately from the experiment markers using
+the same colored-stroke center procedure as the 2:1 model output. The
+[sign audit protocol](../../../examples/biocatalysis/pentyl_propanoate_equimolar/source_sign_protocol.json)
+records its coordinate calibration and the source inconsistency that emerges
+at elevated temperature: SI Eq S1 prints a negative sign before the
+coefficient in the denaturation exponent, while Table S3 gives a negative
+coefficient. Both exact sign conventions are tested without fitted values,
+and both originally printed inputs and historical 2:1 references remain
+unchanged. See the [engineering audit](../../../examples/biocatalysis/pentyl_propanoate_equimolar/REPORT.md).

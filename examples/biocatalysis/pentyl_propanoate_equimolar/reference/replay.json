@@ -1,0 +1,23 @@
+{
+  "all_ledgers_byte_identical": true,
+  "sign_ledgers_byte_identical": true,
+  "central_predictions_repeated": 880,
+  "clock_intervals_repeated": 560,
+  "transport_predictions_repeated": 800,
+  "sign_batch_points_repeated": 450,
+  "sign_bed_points_repeated": 80,
+  "output_sha256": {
+    "bed_comparison.csv": "8c8506d6bc72142902df661044056ab2dba3a52008b503791b119fc5dfce5954",
+    "clock_before_comparison.csv": "76c972bb86a04e858a07f4eed630dfdb75517e0965e389711e14335309a3e777",
+    "clock_comparison.csv": "048d2d869740a0dd8d7ea73d442c1b12b98024a4624af9c579d7f66f6d0af7de",
+    "paired_feed_comparison.csv": "ce3df7223a79af5fee05f41ba6d590127ec10c2a2823d03b75c7b06ccf5a82e0",
+    "predictions_before_comparison.csv": "f6b2ea9e60ed01f1dfd2fc235f7c42e67ee6e34856a4dc0b19fee9164d22175b",
+    "transport_before_comparison.csv": "ee43d6168add4a4227b62edc1a8fe6d88cceef0a126ddf52c24806f051100a11",
+    "transport_comparison.csv": "a812a686fa1050495540d5fcbaa1d828b7ca2d02914e2383b38a9c675a5f7be9"
+  },
+  "sign_output_sha256": {
+    "sign_batch_comparison.csv": "20a18337a3f6fb924be45e75222f025df424a411190eefcaef1b9c63dd388cb2",
+    "sign_bed_before_comparison.csv": "94a1c1e7b04a0e24f8db33bd18f99aa6b234a7d38e0e277554510938cdc97dcd",
+    "sign_bed_comparison.csv": "571e323476628163f7770875474da0496e9444e61c2e2684fcd25c16df047a57"
+  }
+}

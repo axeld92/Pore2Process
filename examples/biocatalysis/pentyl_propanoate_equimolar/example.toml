@@ -1,0 +1,30 @@
+schema_version = 1
+id = "biocatalysis/pentyl_propanoate_equimolar"
+title = "Independent equimolar packed-bed holdout and published denaturation sign audit"
+area = "biocatalysis"
+status = "complete"
+readme = "README.md"
+report = "REPORT.md"
+prerequisites = ["biocatalysis/pentyl_propanoate_composition"]
+run_module = "examples.biocatalysis.pentyl_propanoate_equimolar.run"
+check_module = "examples.biocatalysis.pentyl_propanoate_equimolar.check"
+reference_files = [
+  "reference/summary.json",
+  "reference/bed_comparison.csv",
+  "reference/clock_comparison.csv",
+  "reference/transport_comparison.csv",
+  "reference/sign_summary.json",
+  "reference/sign_batch_comparison.csv",
+  "reference/sign_bed_comparison.csv",
+  "reference/replay.json",
+  "figures/dual_feed.png",
+  "figures/source_and_age.png",
+]
+protocol_files = ["protocol.json", "source_sign_protocol.json"]
+
+[validation]
+numerical = "passed"
+previous_dual_feed_batch_transfer = "failed"
+activity_age_envelope = "scenario_only"
+published_denaturation_sign = "conditional"
+scope = "All 40 reactor observations at fixed 6 g retained outside calibration. Reversing the printed Kd exponent sign improves the source consistency but does not predict the observed bed conversions. No new kinetic or catalytic process qualification."

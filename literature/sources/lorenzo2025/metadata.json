@@ -3,7 +3,7 @@
   "id": "lorenzo2025",
   "title": "Study of the Solvent-Free Process of Enzymatic Synthesis of Pentyl Esters in a Packed Bed Reactor (PBR) Using the Lipozyme435 Heterogeneous Biocatalyst",
   "doi": "10.1021/acs.iecr.5c02780",
-  "role": "Independent water-tracer experiment and 20 held-out 2:1 packed-bed conversion observations.",
+  "role": "Independent water-tracer experiment and 40 held-out packed-bed conversion observations at 1:1 and 2:1. Calculated model curves are stored separately.",
   "files": [
     "extraction.json",
     "conversion_2to1.csv",
@@ -12,6 +12,9 @@
     "batch_2to1_markers.md",
     "author_model.json",
     "author_model.md",
-    "author_conversion_2to1.csv"
+    "author_conversion_2to1.csv",
+    "conversion_1to1.csv",
+    "equimolar_extraction.json",
+    "author_conversion_1to1.csv"
   ]
 }

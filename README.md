@@ -15,10 +15,12 @@ The aim is a reproducible chain of calculations in which a change in pore
 geometry produces an explainable change in a process result, with the
 assumptions and intermediate evidence available for inspection.
 
-> **Project status, 18 November 2026.** The filtration hydraulic example is
+> **Project status, 23 November 2026.** The filtration hydraulic example is
 > closed as a regression benchmark. Phenol adsorption is paused pending a
 > better documented breakthrough reference. The first reacting study tests
-> **immobilised lipase esterification** on Apple Silicon macOS.
+> **immobilised lipase esterification** on Apple Silicon macOS; both feed
+> ratios now have a held-out packed-bed comparison, with kinetic transfer
+> still unresolved.
 
 ## The connected workflow
 
@@ -53,7 +55,7 @@ commands remain in the corresponding `README.md`.
 | **Hydraulics** | [Capillary network](examples/hydraulics/capillary_network/REPORT.md), [3D capillary verification](examples/hydraulics/capillary_benchmark/REPORT.md), [measured permeability to pump duty](examples/hydraulics/darcy_pump/REPORT.md) |
 | **Filtration** | [Study stages](examples/filtration/README.md), [fixed-opening support design](examples/filtration/graded_support/REPORT.md), [final operating map and conclusions](examples/filtration/operating_map/REPORT.md) |
 | **Adsorption** | [Synthetic bed](examples/adsorption/REPORT.md), [literature LDF comparison](examples/adsorption/alhamed/REPORT.md), [film/particle transport](examples/adsorption/film_particle/REPORT.md), [column contact and inventory](examples/adsorption/column_contact/REPORT.md) |
-| **Biocatalysis** | [Pentyl propanoate batch fit, tracer check and continuous reactor prediction](examples/biocatalysis/pentyl_propanoate/REPORT.md), [measured mixing and catalyst exposure audit](examples/biocatalysis/pentyl_propanoate_transfer/REPORT.md), [liquid readout and bead transport](examples/biocatalysis/pentyl_propanoate_transport/REPORT.md), [film resistance and batch water activity](examples/biocatalysis/pentyl_propanoate_film_water/REPORT.md), [matched-conversion water balance](examples/biocatalysis/pentyl_propanoate_water_balance/REPORT.md), [catalyst conditioning and reuse](examples/biocatalysis/pentyl_propanoate_conditioning/REPORT.md), [catalyst-mass scaling](examples/biocatalysis/pentyl_propanoate_loading/REPORT.md), [independent high-loading evidence](examples/biocatalysis/pentyl_propanoate_loading_evidence/REPORT.md), [composition and catalyst activity](examples/biocatalysis/pentyl_propanoate_composition/REPORT.md) |
+| **Biocatalysis** | [Pentyl propanoate batch fit, tracer check and continuous reactor prediction](examples/biocatalysis/pentyl_propanoate/REPORT.md), [measured mixing and catalyst exposure audit](examples/biocatalysis/pentyl_propanoate_transfer/REPORT.md), [liquid readout and bead transport](examples/biocatalysis/pentyl_propanoate_transport/REPORT.md), [film resistance and batch water activity](examples/biocatalysis/pentyl_propanoate_film_water/REPORT.md), [matched-conversion water balance](examples/biocatalysis/pentyl_propanoate_water_balance/REPORT.md), [catalyst conditioning and reuse](examples/biocatalysis/pentyl_propanoate_conditioning/REPORT.md), [catalyst-mass scaling](examples/biocatalysis/pentyl_propanoate_loading/REPORT.md), [independent high-loading evidence](examples/biocatalysis/pentyl_propanoate_loading_evidence/REPORT.md), [composition and catalyst activity](examples/biocatalysis/pentyl_propanoate_composition/REPORT.md), [equimolar reactor holdout and source sign audit](examples/biocatalysis/pentyl_propanoate_equimolar/REPORT.md) |
 
 The [complete example catalogue](examples/README.md) links all scientific
 reports and run guides. Reports distinguish numerical verification,
