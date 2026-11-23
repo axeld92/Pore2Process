@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "id": "paroul2010",
+  "title": "Production of geranyl propionate by enzymatic esterification of geraniol and propionic acid in solvent-free system",
+  "doi": "10.1002/jctb.2475",
+  "role": "Independent same-acid loading series and repeated-nominal-condition comparison.",
+  "files": ["loading_progress.csv", "initial_rates.csv", "README.md"],
+  "pdf_sha256": "f6cf6501a54a08af5f65b4dcedc309d41582093da5184409ad609ec6772bd0fe"
+}

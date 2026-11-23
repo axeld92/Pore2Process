@@ -1,0 +1,29 @@
+schema_version = 1
+id = "biocatalysis/pentyl_propanoate_loading_evidence"
+title = "Test independent high-solids loading evidence and the equimolar pentyl series"
+area = "biocatalysis"
+status = "complete"
+readme = "README.md"
+report = "REPORT.md"
+prerequisites = ["biocatalysis/pentyl_propanoate_loading"]
+run_module = "examples.biocatalysis.pentyl_propanoate_loading_evidence.run"
+check_module = "examples.biocatalysis.pentyl_propanoate_loading_evidence.check"
+reference_files = [
+  "reference/summary.json",
+  "reference/matched_progress.csv",
+  "reference/external_fold_scores.csv",
+  "reference/external_progress_predictions.csv",
+  "reference/batch_fits.csv",
+  "reference/predictions_before_comparison.csv",
+  "reference/bed_comparison.csv",
+  "figures/loading_evidence.png",
+]
+protocol_files = ["protocol.json"]
+
+[validation]
+numerical = "passed"
+external_cross_paper_progress = "conditional"
+external_law_pentyl_transfer = "failed"
+same_chemistry_loading_prediction = "mixed"
+new_fixed_inventory_bed_rate_law = "scenario_only"
+scope = "Independent esterifications support loading-dependent apparent rates, but the common external law fails transfer to both pentyl propanoate feed ratios. The same-chemistry eight-loading fit also fails predictive screening. No new packed-bed law chosen by reactor comparison."

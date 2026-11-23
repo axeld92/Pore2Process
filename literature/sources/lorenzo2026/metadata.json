@@ -3,6 +3,6 @@
   "id": "lorenzo2026",
   "title": "Influence of Temperature, Initial Reactant Ratio, and Catalyst Type and Concentration on a More Sustainable Synthesis of Pentyl Propanoate in a BSTR",
   "doi": "10.1021/acs.iecr.6c02375",
-  "role": "2:1 batch kinetic observations and separately transcribed apparent Kx results.",
-  "files": ["batch_2to1.csv", "apparent_equilibrium_2to1.csv"]
+  "role": "2:1 and equimolar 40 °C batch kinetic observations and separately transcribed 2:1 apparent Kx results.",
+  "files": ["batch_2to1.csv", "apparent_equilibrium_2to1.csv", "batch_1to1.csv"]
 }

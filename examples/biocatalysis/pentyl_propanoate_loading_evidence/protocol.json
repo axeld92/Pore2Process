@@ -1,0 +1,61 @@
+{
+  "question": "Can independently published high-loading batch experiments qualify a common loss of effectiveness per gram of immobilised 435 lipase, and does extending the same chemistry to 80.53 g/L support transferring that law to the 6 g packed bed?",
+  "same_chemistry": {
+    "source": "Lorenzo and Ortega (2026), main Tables 1–2 and SI Table S2",
+    "nominal_liquid_charge_ml": 40,
+    "nominal_acid_charge_ml_by_alcohol_acid_ratio": {"2": 10.3, "1": 16.3},
+    "nominal_alcohol_charge_ml_by_alcohol_acid_ratio": {"2": 29.7, "1": 23.7},
+    "pure_liquid_densities_at_25_C_g_ml": {"acid": 0.98807, "alcohol": 0.81092},
+    "temperature_C": 40,
+    "assays_by_ratio": {"2": [1, 2, 3, 4], "1": [5, 6, 7, 8]},
+    "loadings_pct_of_initial_acid_mass": [2.5, 5, 10, 20],
+    "reference_pct_of_initial_acid_mass": 10,
+    "matched_conversion_levels": [0.1, 0.2, 0.3, 0.4],
+    "reported_conversion_absolute_uncertainty": 0.002,
+    "reported_mole_fraction_absolute_uncertainty": 0.001,
+    "reference_concentration": "10% acid mass at 2:1, per nominal starting liquid volume",
+    "primary_response": "printed acid conversion",
+    "primary_weights": "equal total weight per batch curve",
+    "alternative_full_and_highest_holdout_fits": ["point_weights", "printed_initial_ratio", "rederived_acid", "rederived_ester", "fixed published Kx only when the originating 10%-loading assay is in training"],
+    "holdouts": "Each complete loading within each ratio and in the joint model. For ratio transfer train the shape on one ratio alone, fix it and fit only the other ratio's 10% anchor; predict its remaining three curves. In every fold learn each ratio's own apparent Kx and k from training observations only.",
+    "equilibrium_limit": "If training fails to identify a finite common Kx and the wide prior numerical ceiling is active, compare Kx=1e6 and 1e9 at independently profiled k. Retain the converged near-irreversible limit only as a flagged mathematical diagnostic, not a measured equilibrium. Also test published Kx (1:1 11.15, 2:1 4.53) when its 10% source curves are in training. An alternative with an unidentified equilibrium in any joint fold cannot pass.",
+    "qualification": {
+      "minimum_relative_RMSE_improvement": 0.1,
+      "maximum_worsening_any_fold_pp": 0.2,
+      "require_highest_1to1_improvement": true,
+      "require_both_ratio_transfer_improvement": true,
+      "note": "Same engineering criterion as preceding audit; also require no reversal against response and weighting sensitivities. This is a model screen, not statistical significance, and cannot by itself validate a packed-bed extrapolation."
+    }
+  },
+  "external": {
+    "basis": "Catalyst mass / combined nominal starting substrate mass. Where unreported, do not impute mixture volume or density. Kuperkar denominator unresolved: separate relative-loading analysis only, excluded from absolute-basis pool. Meneses fed-batch excluded from fixed-charge calibration.",
+    "common_reference_pct_of_total_substrates": 10,
+    "series": {
+      "richetti2010": {"loadings": ["1", "5", "10", "15", "20"], "anchor": "10", "levels": [0.55, 0.6, 0.7], "reported_overall_conversion_deviation_pp": 5, "harmonised": true},
+      "paroul2010": {"loadings": ["1", "5.5", "10"], "anchor": "5.5", "levels": [0.6, 0.7, 0.8], "reported_overall_conversion_deviation_pp": 5, "harmonised": true},
+      "kuperkar2014": {"loadings": ["2.5", "5", "7.5", "10"], "anchor": "5", "levels": [0.2, 0.35, 0.5], "reported_overall_conversion_deviation_pp": null, "harmonised": false},
+      "sbardelotto2018": {"loadings": ["5", "10", "15"], "anchor": "10", "levels": [0.7, 0.75, 0.8], "reported_overall_conversion_deviation_pp": 5, "harmonised": true}
+    },
+    "crossing": "First crossing interpolated only between positive-time observed markers, excluding plateau-only comparisons. Interpolation is a progress-time proxy, not an instantaneous rate. Shift curve values by the digitization margins for an earliest/latest crossing scenario; separately add reported approximate overall deviations where available, without interpreting them as confidence intervals.",
+    "holdout": "Fit separate laws in each study with complete loading holdouts; fit a common shape across the three harmonised external sources with independent intercepts per study and target conversion, equal total study weight. Hold out one entire publication and use only its designated anchor to set the intercept at each conversion level. Also transfer external shape unchanged to each Lorenzo ratio using only its 10%-acid-mass anchor at each conversion level. No fit to any remaining test loading.",
+    "sensitivities": ["Paroul Fig. 3 same nominal condition instead of Fig. 4 at 10%", "Paroul Fig. 5 same nominal condition instead of Fig. 4 at 10%", "Shift matched times to directionally increase or decrease apparent high-loading effectiveness using the conservative marker-reading margins, with anchor times unchanged. These are scenarios, not confidence intervals."],
+    "direct_exposure_checks": [
+      {"series": "richetti2010", "anchor_loading": "10", "anchor_time_min": 30, "higher_loading": "20", "higher_time_min": 15},
+      {"series": "sbardelotto2018", "anchor_loading": "10", "anchor_time_min": 15, "higher_loading": "15", "higher_time_min": 10.2}
+    ],
+    "direct_exposure_note": "Compare actual marked conversions at equal or greater catalyst-mass × time. If the high-loading reaction has no smaller exposure but markedly lower conversion, proportional scaling cannot account for the pair even without interpolation.",
+    "qualification": "Require at least 10% lower aggregate log-time RMSE than proportional scaling in whole-paper transfers and no held-out paper's log-time RMSE worsening greater than 0.05 (engineering tolerance approximately a 5% multiplicative time factor). Also require transfer to both pentyl ratios to improve before considering a common law; do not choose the loading law using bed error."
+  },
+  "models": {
+    "proportional": "Total rate proportional to catalyst mass.",
+    "power": "Total rate relative to anchor concentration u is u^alpha, 0 <= alpha <= 3.",
+    "crowding": "Rate per mass relative to the reference: 1/(1+s*(u-1)), 0 <= s <= 1; total rate factor u/(1+s*(u-1)). Algebraic model, not evidence for actual particle aggregates.",
+    "profile_points": [25, 49],
+    "maximum_primary_refinement_absolute_conversion": 0.00001
+  },
+  "packed_bed": {
+    "actual_mass_kg": 0.006,
+    "holdout": "All 20 reactor measurements opened for comparison only after fits, transfer factors and all predictions are saved. No parameter adjustment based on the bed error.",
+    "scenarios": "Prior proportional reference; jointly fitted same-chemistry power and crowding shapes at bed void concentration, and crowding with total-volume concentration proxy; separately external-only pooled power and crowding shapes mapped via the nominal 2:1 charge density (scenario). Retain actual inventory, film coefficient, mixing and independently anchored temperature kinetics unchanged. No transfer accepted as validated without comparable concentration and contact evidence."
+  }
+}

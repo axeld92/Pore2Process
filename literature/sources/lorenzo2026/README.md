@@ -79,3 +79,18 @@ S.2.4 and Figure S5. It belongs to a separate calorimetric experiment and is
 outside the selected kinetic series. Temperature-dependent apparent
 mole-fraction equilibrium constants and the measured calorimetric enthalpy
 therefore have distinct evidence and meanings.
+
+## Additional equimolar loading series (40 °C)
+
+[`batch_1to1.csv`](batch_1to1.csv) transcribes every point in SI Table S2,
+assays 5–8 (printed pages 3–4), from the same verified supplement. The four
+assays have respectively 11, 11, 17 and 15 rows including zero time. Main
+Table 1 specifies 23.7 mL of pentanol and 16.3 mL of acid, a nominal 40 mL
+charge and 2.5, 5, 10, 20% catalyst **relative to initial acid mass**.
+Nominal concentrations from the pure-liquid acid density at 25 °C are
+10.07, 20.13, 40.26 and 80.53 g/L. These are calculated from the charge,
+not measured operating-temperature mixture concentrations. Use the same
+reported conversion uncertainty and printing/closure checks as above.
+Main Table 2 gives apparent Kx = 11.15 from assay 7 (40 °C, 10%); it is not
+an independent equilibrium determination for prediction of that assay.
+SI SHA-256: `b08bd59fb16a005584a6a48104f289b3a55f70165897a037cc5e9823d9f38285`.

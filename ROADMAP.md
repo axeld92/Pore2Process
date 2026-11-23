@@ -457,6 +457,21 @@ the tested batch range. Seek separately published high-solids
 activity measurements or an independently constrained contact
 model before selecting a loading law for process prediction.
 
+The [independent high-loading audit](examples/biocatalysis/pentyl_propanoate_loading_evidence/REPORT.md)
+adds the 1:1 pentyl propanoate series to 80.53 g/L and four
+independent esterification loading comparisons. The external
+high-solids data show substantial apparent rate suppression
+before equilibrium, but the common external law worsens
+the predictive test on both pentyl feed ratios and grossly
+underpredicts the fixed-inventory reactor. The higher pentyl
+loading is slower per gram early and faster later; neither
+shared separable law qualifies in the whole-loading tests.
+Keep the full 6 g inventory and all 20 reactor observations
+outside calibration. Test conversion- and feed-composition-
+dependent kinetics against withheld batch curves; seek
+fixed-feed continuous catalyst-inventory/contact comparisons
+if available before adopting a bed-specific suppression law.
+
 ## Acceptance criterion for every end-to-end showcase
 
 An output actually derived from OpenLB must influence an actual DWSIM process

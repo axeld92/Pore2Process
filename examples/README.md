@@ -61,6 +61,7 @@ specific earlier measurements or assumptions.
 | Biocatalysis | [Pentyl propanoate matched-conversion water activity](biocatalysis/pentyl_propanoate_water_balance/REPORT.md) | Equal bulk activity at matched inventories, limited headspace water, and a conditional estimate of water buildup around a bead | [Commands](biocatalysis/pentyl_propanoate_water_balance/README.md) |
 | Biocatalysis | [Pentyl propanoate catalyst conditioning](biocatalysis/pentyl_propanoate_conditioning/REPORT.md) | Independently sourced wetting, water storage and reuse; startup memory and fixed-mass rate sensitivities against all 20 held-out runs | [Commands](biocatalysis/pentyl_propanoate_conditioning/README.md) |
 | Biocatalysis | [Pentyl propanoate catalyst-mass scaling](biocatalysis/pentyl_propanoate_loading/REPORT.md) | Whole-loading batch holdouts and unqualified high-solids extrapolations at the fixed 6 g reactor inventory | [Commands](biocatalysis/pentyl_propanoate_loading/README.md) |
+| Biocatalysis | [Independent high-loading evidence](biocatalysis/pentyl_propanoate_loading_evidence/REPORT.md) | Additional equimolar pentyl series to 80.53 g/L; other esters support diminishing returns but common loading laws fail pentyl and reactor transfer | [Commands](biocatalysis/pentyl_propanoate_loading_evidence/README.md) |
 
 Filtration hydraulics is closed for now. Phenol adsorption is paused pending a
 published dataset with enough detail to check breakthrough independently.

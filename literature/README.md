@@ -17,7 +17,12 @@ their examples.
 | [iheanacho2021](sources/iheanacho2021/README.md) | Alternative source candidate only; no extracted numerical dataset is used in the selected models. |
 | [jan2025](sources/jan2025/README.md) | Whole-membrane experimental permeance and coating/interface context; not a separated-resistance calibration or fixed-selective-layer support comparison. |
 | [lorenzo2025](sources/lorenzo2025/README.md) | Water-tracer and held-out pentyl propanoate conversion measurements, [batch markers](sources/lorenzo2025/batch_2to1_markers.md) and [published reactor model](sources/lorenzo2025/author_model.md). |
-| [lorenzo2026](sources/lorenzo2026/README.md) | Batch kinetics and apparent equilibrium for the 2:1 pentyl propanoate feed. |
+| [lorenzo2026](sources/lorenzo2026/README.md) | Batch kinetics and apparent equilibrium for the 2:1 pentyl propanoate feed; separate 40 °C equimolar loading series. |
+| [kuperkar2014](sources/kuperkar2014/README.md) | Same-acid isobutyl propionate loading curves, denominator unresolved. |
+| [paroul2010](sources/paroul2010/README.md) | Geranyl propionate loading series and discordant nominally identical curve checks. |
+| [richetti2010](sources/richetti2010/README.md) | High-loading palmitate early progress and caption rates. |
+| [sbardelotto2018](sources/sbardelotto2018/README.md) | Geranyl butanoate loading series and uncatalysed control. |
+| [meneses2019](sources/meneses2019/README.md) | Fed-batch loading context; different acid exposure, not a fixed-charge rate test. |
 | [meneghini2017](sources/meneghini2017/README.md) | Author dissertation; fitted coconut-shell parameters transferred to a synthetic scenario. |
 | [meneghini2021](sources/meneghini2021/README.md) | Related publication; not independent validation of the dissertation parameters. |
 | [mo2022](sources/mo2022/README.md) | Fixed-top-layer support plateau and explicit intermediate-layer resistance. Author-model values retained separately from experiment; no production parameter replacement. |

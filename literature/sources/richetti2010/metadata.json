@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "id": "richetti2010",
+  "title": "Assessment of process variables on 2-ethylhexyl palmitate production using Novozym 435 as catalyst in a solvent-free system",
+  "doi": "10.1007/s00449-009-0328-7",
+  "role": "Independent high-loading batch progress and reported apparent initial rates.",
+  "files": ["loading_progress.csv", "initial_rates.csv", "README.md"],
+  "pdf_sha256": "534773d8359a0d0a9e8baf50609f985f39dae94c0540465c5656de9425dc4da1"
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "id": "kuperkar2014",
+  "title": "Synthesis of isobutyl propionate using immobilized lipase in a solvent free system: Optimization and kinetic studies",
+  "doi": "10.1016/j.molcatb.2013.10.024",
+  "role": "Same-acid relative-loading comparison with nonmonotonic late conversion.",
+  "files": ["loading_progress.csv", "README.md"],
+  "pdf_sha256": "b0b40daff9cd498242ccf5c0c27cb9e7b32364cc1a29ccb38a73c6b1d865566c"
+}
