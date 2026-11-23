@@ -472,6 +472,24 @@ dependent kinetics against withheld batch curves; seek
 fixed-feed continuous catalyst-inventory/contact comparisons
 if available before adopting a bed-specific suppression law.
 
+The [composition and catalyst-state audit](examples/biocatalysis/pentyl_propanoate_composition/REPORT.md)
+adds all remaining equimolar temperature experiments. It tests
+reversible acid/alcohol/product effects, independent same-acid
+inhibition shape, irreversible exposure, alcohol protection,
+recovery and residual activity on paired whole-condition
+holdouts. The hot equimolar data show strong apparent kinetic
+loss; the state-only and clock-dependent shared laws do not
+qualify against the target 2:1 batch series. Even though a
+compromised all-batch shared-rate prediction produces a lower
+reactor error, its independent 2:1 batch prediction worsens.
+For the next executable step extract the separate equimolar
+packed-bed results from the 2025 article Figure 3b and SI
+Figure S1; compare 1:1 and 2:1 under independently frozen
+batch kinetics and composition-specific material/transport
+properties. All original reactor observations stay outside
+calibration. Seek direct activity-time or controlled catalyst
+inventory/contact evidence if neither feed is captured.
+
 ## Acceptance criterion for every end-to-end showcase
 
 An output actually derived from OpenLB must influence an actual DWSIM process

@@ -1,0 +1,70 @@
+{
+  "question": "Can a shared composition-dependent reversible rate and a separately tested clock-time activity state explain pentyl propanoate progress across feed ratio, temperature and catalyst loading, and qualify a transfer to the fixed 6 g bed?",
+  "source": {
+    "doi": "10.1021/acs.iecr.6c02375",
+    "assays": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+    "hot_equimolar_activity_loss_challenge": [15, 16],
+    "acid_molar_mass_kg_mol": 0.0740785,
+    "pentanol_molar_mass_kg_mol": 0.088148,
+    "nominal_feed_ratio": "mol starting alcohol/mol starting acid",
+    "loading_basis": "mass of immobilised preparation divided by initial acid mass",
+    "assumptions": "Dry product-free feed, conserved liquid moles and mass, one reversible esterification. Same sampled liquid composition as the reacting bulk. No independent blank or assay-specific catalyst history; do not infer an autocatalytic term or fit per-assay activity.",
+    "primary_observation": "printed acid conversion, equal total weight per complete curve",
+    "sensitivities": ["equal point weights", "printed starting mole-fraction ratio", "acid-derived conversion", "ester-derived conversion"],
+    "equilibrium": "Separate log-linear apparent Kx vs inverse absolute temperature fits for 1:1 and 2:1 using ONLY main Table 2 constants whose originating assays are in training (never final conversion of 15/16). All model candidates in a fold share these constants. Above 60 C the 1:1 Kx is an explicitly extrapolated counterfactual active equilibrium, not an observed plateau."
+  },
+  "model": {
+    "driving_term": "F=((1-X)*(R-X)-X^2/Kx)/(1+R)^2",
+    "reference_temperature_C": 60,
+    "temperature_coordinate": "Same inverse-temperature coordinate as preceding PentylPropanoate module, with a 20 K scale around 333.15 K.",
+    "reference_acid_molality_mol_kg": "1/(M_acid+2*M_pentanol), 2:1 dry feed",
+    "relative_liquid_compositions": "z_A=c_A/c_ref, z_B=c_B/(2*c_ref), z_P=c_water/c_ref=c_ester/c_ref, using moles per kg conserved liquid mass, not true solution activities.",
+    "rate": "dX/dt_min=(60*M_acid*w/100)*k(T)*F*(1+b_A(T)+b_B)/(1+b_A(T)*z_A^n+b_B*z_B^2)*exp(g_P*z_P)*a(t). k_ref is the fully active apparent per-mass coefficient at 60 °C, 2:1 unreacted reference composition. All terms multiply the same reversible driving force; equilibrium is unchanged. At fixed catalyst state there is no other mass multiplier.",
+    "acid_inhibition_source": "Van Hecke et al. 2024, same acid with geraniol; n=3.5, KI=1.70 mol/kg external sensitivity. Fit a target inhibition coefficient at fixed n in other cases. No transfer of their absolute rate. The reduced positive denominator is inspired by acid inhibition and dual-substrate Ping-Pong models, not a replay of all author's fitted coefficients.",
+    "clock": "For irreversible damage H=-log(activity) with dH/dt_min=h_ref*exp(h_slope*theta)*z_A^m, H(0)=0. The exponent m=3.5 is a scenario proxy for acid exposure, not a measured damage exponent. Reversible/startup recovery g(t)=1-deficit*exp(-t/tau), g(0) common. Activity a=g(t)*exp(-H) when both mechanisms used. Temperatures independent of elapsed time; actual catalyst mass stays fixed.",
+    "candidates": {
+      "ratio_reference": "Independent empirical k_ref and signed Arrhenius slopes for each nominal feed ratio; no state or clock term. Flexible empirical reference, not a local inhibition mechanism.",
+      "reversible_shared": "One shared k and nonnegative active-rate temperature slope, no inhibition.",
+      "acid_analogue": "Same as reversible_shared with fixed external KI and n; new k and slope from target batch.",
+      "acid": "Shared k, slope, fitted nonnegative acid-inhibition coefficient, n fixed.",
+      "composition": "Acid plus nonnegative alcohol-inhibition coefficient and one signed lumped water/ester state parameter. Cannot distinguish water from ester because they are produced 1:1; not a measured water-activity response.",
+      "acid_thermal": "Acid with coefficient increasing with temperature; no elapsed clock dependence.",
+      "acid_decay": "Acid plus irreversible acid-exposure clock with shared scale and positive thermal slope.",
+      "acid_activation": "Acid plus one shared initial activity deficit and recovery time.",
+      "acid_both": "Acid plus both clocks, testing sign change of mass-specific progress without imposing a concentration factor. No individual-run parameters.",
+      "protected_decay": "Targeted extension after the acid-only temperature holdout failed: multiply the acid hazard by (2*A/B)^p, with A/B the current molar acid/alcohol ratio and one shared p in [0,10]. The extra term is one at initial 2:1; excess alcohol is a proposed protective influence. This form is motivated by the published initial-ratio-dependent Kd and same-acid exposure evidence, not a transfer of an author-fit damage constant.",
+      "protected_both": "Protected acid hazard plus shared recovery. All parameters fit only the training curves as with other candidates.",
+      "residual_decay": "One shared residual active fraction f in [0,1], giving a=f+(1-f)*exp(-H) instead of all-active-population damage to zero. Motivated by independent N435 solvent stability observations (https://doi.org/10.3390/molecules24183227) and the continuing measured hot-batch late tail that the damage-to-zero model misses. No independent fraction for this chemistry: fit only the training data.",
+      "protected_residual_decay": "Same residual active fraction plus the local alcohol protection term; intentionally omit extra recovery parameters to keep the diagnostic small."
+    },
+    "integration": "Adaptive step-doubled RK4 for progress and cumulative hazard (analytic reversible noninhibited solution when applicable); absolute/relative tolerance refinement, physical rate and equilibrium guards. Exact zero-activity-loss or zero-inhibition boundaries included.",
+    "optimizer": "Bounded projected damped least-squares in scaled coordinates; deterministic multiple training-only starts, central or one-sided Jacobian, projected stationarity and bound/conditioning diagnostics. No reactor data or withheld curves used in starts or objective."
+  },
+  "holdouts": {
+    "paired_folds": {
+      "loading_2p5_40C": [1, 5],
+      "loading_5_40C": [2, 6],
+      "loading_10_40C": [3, 7],
+      "loading_20_40C": [4, 8],
+      "temperature_50C": [9, 13],
+      "temperature_60C": [10, 14],
+      "temperature_70C": [11, 15],
+      "temperature_80C": [12, 16]
+    },
+    "challenge": "Train on assays 1–14 only and predict both 15 and 16 without high-temperature equimolar calibration. Compare all-data fits separately. Use this to test extrapolation, not as an extra data-dependent choice of fit.",
+    "critical_sensitivities": ["all_data", "loading_20_40C", "temperature_80C"],
+    "additional_exponent_sensitivity": "For clock models and acid terms test lower/upper fixed shape powers 2 and 5 on full data and critical folds. For the targeted protection extension also fix p at 2, 4 or 8 in the same full and 80 C holdout, and check both p=4 and p=8 across every paired holdout for protected decay with/without residual activity. These are explicit scenarios; the protection and residual-population model classes were motivated by initial batch diagnostics, not a newly blind external validation. Do not tune to reactor score.",
+    "criterion": "For a new common global model against ratio_reference: at least 10% reduction in equal-assay held-out RMSE, at least 10% improvement on 2:1 held-outs, no 2:1 fold worsened by >0.2 conversion points, highest 1:1 loading improved, both hot 1:1 predictions improved, no material critical-sensitivity reversal, identified parameters and successful numerical checks. Separate clock-free model may improve the stable 2:1 domain but cannot establish a mass-loading law outside measured concentrations. Report per-assay and hot challenge results even when screen fails."
+  },
+  "reactor": {
+    "catalyst_mass_kg": 0.006,
+    "holdout_count": 20,
+    "boundary": "Retain prior central Wilson-Geankoplis film correlation, fixed tabulated internal effectiveness, prior Eq 4 inlet and axial Pe as controlled comparisons. A changed kinetic law may warrant new effectiveness calculation; do not imply that fixed eta is independently qualified for each new rate.",
+    "conditional_predictions": "Freeze the complete all-batch and active-domain ratio-reference/static candidates, and fully active limits of clock candidates, before reading observed reactor conversions. Use their independently fitted 2:1 rate and Kx, full actual mass, and surface composition. No tuning or model selection against reactor scores.",
+    "clock_transfer": "Stationary catalyst age is not liquid residence time. For dynamic candidates report independent acid-exposure activity bounds at 30 and 180 min using inlet composition and counterfactual equilibrium composition; evaluate frozen uniform-age activity endpoints as steady scenarios, not a transient bed prediction. For residual models also check a long-time uniform activity equal to f, but no claim that the measured bed reaches it. Do not set a(t) using axial liquid travel time. The measured bed startup trace is a separate check with unknown temperature/flow, not a calibration or matched-condition validation.",
+    "cells": [512, 1024],
+    "maximum_grid_conversion_difference": 0.0001,
+    "maximum_normalized_reaction_flux_balance_error": 1e-9,
+    "maximum_film_balance_error_mol_L_min": 1e-10
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "id": "vanhecke2024",
+  "title": "Unraveling Lipase’s Promiscuous Behavior: Insights into Organic Acid Inhibition during Solventless Ester Production",
+  "doi": "10.1021/acs.oprd.4c00274",
+  "role": "Independent propionic-acid inhibition shape and scale; different alcohol and conditioning.",
+  "files": ["acid_inhibition.json", "README.md"]
+}

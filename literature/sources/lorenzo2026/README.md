@@ -94,3 +94,8 @@ reported conversion uncertainty and printing/closure checks as above.
 Main Table 2 gives apparent Kx = 11.15 from assay 7 (40 °C, 10%); it is not
 an independent equilibrium determination for prediction of that assay.
 SI SHA-256: `b08bd59fb16a005584a6a48104f289b3a55f70165897a037cc5e9823d9f38285`.
+
+The subsequent [temperature-series extraction](temperature_series.md)
+retains assays 13–16 and the three reported equimolar apparent equilibrium
+constants separately. It completes the enzyme experiment matrix without
+treating the high-temperature inactive runs as equilibrium measurements.

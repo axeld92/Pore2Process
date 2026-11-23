@@ -17,7 +17,9 @@ their examples.
 | [iheanacho2021](sources/iheanacho2021/README.md) | Alternative source candidate only; no extracted numerical dataset is used in the selected models. |
 | [jan2025](sources/jan2025/README.md) | Whole-membrane experimental permeance and coating/interface context; not a separated-resistance calibration or fixed-selective-layer support comparison. |
 | [lorenzo2025](sources/lorenzo2025/README.md) | Water-tracer and held-out pentyl propanoate conversion measurements, [batch markers](sources/lorenzo2025/batch_2to1_markers.md) and [published reactor model](sources/lorenzo2025/author_model.md). |
-| [lorenzo2026](sources/lorenzo2026/README.md) | Batch kinetics and apparent equilibrium for the 2:1 pentyl propanoate feed; separate 40 °C equimolar loading series. |
+| [lorenzo2026](sources/lorenzo2026/README.md) | Complete 2:1 and 1:1 pentyl propanoate enzyme batch kinetics and separately reported apparent equilibrium; hot equimolar activity-loss challenge. |
+| [vanhecke2024](sources/vanhecke2024/README.md) | Independent same-acid nonlinear inhibition shape and concentration scale, not a measured pentyl rate or deactivation constant. |
+| [ascorbyl2019](sources/ascorbyl2019/README.md) | Qualitative Novozym 435 partial inactivation/retained activity evidence in different solvents. |
 | [kuperkar2014](sources/kuperkar2014/README.md) | Same-acid isobutyl propionate loading curves, denominator unresolved. |
 | [paroul2010](sources/paroul2010/README.md) | Geranyl propionate loading series and discordant nominally identical curve checks. |
 | [richetti2010](sources/richetti2010/README.md) | High-loading palmitate early progress and caption rates. |

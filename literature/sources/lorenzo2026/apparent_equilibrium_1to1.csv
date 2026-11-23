@@ -1,0 +1,4 @@
+assay_id,temperature_C,temperature_K,catalyst_mass_pct_of_initial_acid,apparent_equilibrium_constant_Kx
+7,40,313.15,10,11.15
+13,50,323.15,10,12.52
+14,60,333.15,10,17.46

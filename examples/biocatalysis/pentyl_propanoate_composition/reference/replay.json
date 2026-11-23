@@ -1,0 +1,13 @@
+{
+  "primary_cases_repeated": 10,
+  "models_per_case": 13,
+  "selected_batch_points_compared": 3915,
+  "bed_points_compared": 440,
+  "clock_points_compared": 280,
+  "max_relative_parameter_change": 0.0,
+  "max_equal_curve_score_change_pp": 0.0,
+  "max_batch_conversion_change": 0.0,
+  "max_batch_activity_change": 0.0,
+  "max_bed_conversion_change": 0.0,
+  "max_frozen_clock_conversion_change": 0.0
+}

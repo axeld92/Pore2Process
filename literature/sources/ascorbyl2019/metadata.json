@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "id": "ascorbyl2019",
+  "title": "Synthesis with Immobilized Lipases and Downstream Processing of Ascorbyl Palmitate",
+  "doi": "10.3390/molecules24183227",
+  "role": "Independent qualitative evidence that partial inactivation followed by retained activity can occur with Novozym 435; no target parameter transfer.",
+  "files": ["README.md"]
+}

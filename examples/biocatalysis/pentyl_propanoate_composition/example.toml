@@ -1,0 +1,27 @@
+schema_version = 1
+id = "biocatalysis/pentyl_propanoate_composition"
+title = "Test composition-dependent rate and stationary catalyst activity hypotheses"
+area = "biocatalysis"
+status = "complete"
+readme = "README.md"
+report = "REPORT.md"
+prerequisites = ["biocatalysis/pentyl_propanoate_loading_evidence"]
+run_module = "examples.biocatalysis.pentyl_propanoate_composition.run"
+check_module = "examples.biocatalysis.pentyl_propanoate_composition.check"
+reference_files = [
+  "reference/summary.json",
+  "reference/selected_batch_predictions.csv",
+  "reference/predictions_before_comparison.csv",
+  "reference/bed_comparison.csv",
+  "reference/stationary_clock_screen.csv",
+  "reference/replay.json",
+  "figures/composition_audit.png",
+]
+protocol_files = ["protocol.json"]
+
+[validation]
+numerical = "passed"
+shared_composition_and_activity_kinetics = "failed"
+protected_residual_activity_hypothesis = "scenario_only"
+clock_to_steady_bed_transfer = "scenario_only"
+scope = "Complete same-chemistry batch data support strong acid/temperature activity effects but do not qualify shared new kinetics in paired holdouts. Fixed protection and residual activity remain diagnostic. Frozen 6 g reactor scenarios do not establish a validated correction."

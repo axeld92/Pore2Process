@@ -1,0 +1,22 @@
+{
+  "source": "Van Hecke et al., Org. Process Res. Dev. 28 (11), 3989–4002 (2024), Table 8 and Sections 3.3, 3.5",
+  "doi": "10.1021/acs.oprd.4c00274",
+  "acid": "propionic acid",
+  "alcohol": "geraniol",
+  "preparation": "Novozym 435",
+  "temperature_C": 60,
+  "inhibition_exponent": 3.5,
+  "recalculated_inhibition_concentration_mol_per_kg_liquid_substrates": 1.70,
+  "forward_experiments": {
+    "acid_alcohol_molar_ratio": [2.13, 0.54, 0.41, 0.34],
+    "enzyme_loading_pct_of_substrates": [0.6, 0.5, 0.4, 0.4],
+    "water_removed_with_molecular_sieves": true
+  },
+  "equilibrium_experiments": {
+    "acid_alcohol_molar_ratio": [0.51, 0.34, 2.02],
+    "enzyme_loading_pct_of_substrates": [0.4, 0.5, 0.5],
+    "water_removed_with_molecular_sieves": false
+  },
+  "independent_transfer_scope": "Use exponent as a candidate shape for pentyl propanoate; the published inhibition concentration is a fixed analogue sensitivity, not a target measurement. Do not transfer absolute k, denaturation time or water-response coefficients.",
+  "target_reduced_rate_form": "Multiply the reversible driving term by 1/(1+(c_A/K_I)^n), where c_A is moles acid per kg liquid. Preserve the separately fitted target equilibrium. This is an inspired constrained model, not an exact replay of the published kinetic fits."
+}
