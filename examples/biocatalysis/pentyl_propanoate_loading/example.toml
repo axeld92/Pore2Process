@@ -1,0 +1,29 @@
+schema_version = 1
+id = "biocatalysis/pentyl_propanoate_loading"
+title = "Test batch catalyst mass scaling and high-solids transfer"
+area = "biocatalysis"
+status = "complete"
+readme = "README.md"
+report = "REPORT.md"
+prerequisites = ["biocatalysis/pentyl_propanoate_conditioning"]
+run_module = "examples.biocatalysis.pentyl_propanoate_loading.run"
+check_module = "examples.biocatalysis.pentyl_propanoate_loading.check"
+reference_files = [
+  "reference/summary.json",
+  "reference/matched_conversion.csv",
+  "reference/shape_free_holdout.csv",
+  "reference/batch_fits.csv",
+  "reference/batch_fold_scores.csv",
+  "reference/predictions_before_comparison.csv",
+  "reference/bed_comparison.csv",
+  "figures/curve_collapse.png",
+  "figures/loading_extrapolation.png",
+]
+protocol_files = ["protocol.md", "protocol.json"]
+
+[validation]
+numerical = "passed"
+whole_loading_batch_prediction = "mixed"
+high_pair_crowding = "scenario_only"
+packed_bed_loading_law = "not_assessed"
+scope = "Batch proportionality is approximate and separable loading models show conflicting evidence depending on reaction progress. The full batch fit favors mildly superproportional scaling; the closest high pair allows divergent extrapolations that are not identified at bed concentrations."

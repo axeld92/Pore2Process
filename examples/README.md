@@ -60,6 +60,7 @@ specific earlier measurements or assumptions.
 | Biocatalysis | [Pentyl propanoate film and water activity](biocatalysis/pentyl_propanoate_film_water/REPORT.md) | A small packed-bed film penalty and a substantial water-activity response in independent batch data | [Commands](biocatalysis/pentyl_propanoate_film_water/README.md) |
 | Biocatalysis | [Pentyl propanoate matched-conversion water activity](biocatalysis/pentyl_propanoate_water_balance/REPORT.md) | Equal bulk activity at matched inventories, limited headspace water, and a conditional estimate of water buildup around a bead | [Commands](biocatalysis/pentyl_propanoate_water_balance/README.md) |
 | Biocatalysis | [Pentyl propanoate catalyst conditioning](biocatalysis/pentyl_propanoate_conditioning/REPORT.md) | Independently sourced wetting, water storage and reuse; startup memory and fixed-mass rate sensitivities against all 20 held-out runs | [Commands](biocatalysis/pentyl_propanoate_conditioning/README.md) |
+| Biocatalysis | [Pentyl propanoate catalyst-mass scaling](biocatalysis/pentyl_propanoate_loading/REPORT.md) | Whole-loading batch holdouts and unqualified high-solids extrapolations at the fixed 6 g reactor inventory | [Commands](biocatalysis/pentyl_propanoate_loading/README.md) |
 
 Filtration hydraulics is closed for now. Phenol adsorption is paused pending a
 published dataset with enough detail to check breakthrough independently.

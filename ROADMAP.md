@@ -443,6 +443,20 @@ unknown. Next, test the mass-proportionality assumption independently
 on the four published 40 °C batch loadings, retaining the 20 bed
 measurements for scoring.
 
+The [catalyst-mass audit](examples/biocatalysis/pentyl_propanoate_loading/REPORT.md)
+tests four independent 40 °C loading curves. Shared power scaling
+improves held-out whole-batch predictions but implies increasing
+specific activity over the full tested concentration range. In
+contrast, the two highest loadings show modest diminishing
+returns. Power and saturating extrapolations from those two
+curves are indistinguishable on their training concentrations;
+the saturating diagnostic gives 3.79 points RMSE against the
+20 reactor observations at fixed inventory, but worsens the
+omitted lower loadings. The bed concentration is well beyond
+the tested batch range. Seek separately published high-solids
+activity measurements or an independently constrained contact
+model before selecting a loading law for process prediction.
+
 ## Acceptance criterion for every end-to-end showcase
 
 An output actually derived from OpenLB must influence an actual DWSIM process

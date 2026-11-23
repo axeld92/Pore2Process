@@ -1,0 +1,58 @@
+{
+  "question": "Does the apparent reaction rate scale proportionally with the mass of Lipozyme 435 at fixed reaction progress, feed composition and temperature?",
+  "batch_source": {
+    "doi": "10.1021/acs.iecr.6c02375",
+    "supporting_information": "https://acs.figshare.com/articles/journal_contribution/Influence_of_Temperature_Initial_Reactant_Ratio_and_Catalyst_Type_and_Concentration_on_a_More_Sustainable_Synthesis_of_Pentyl_Propanoate_in_a_BSTR/33164325",
+    "location": "Main Table 1, Table 2 and Sections 2–4; Supporting Information Table S2 assays 1–4.",
+    "temperature_C": 40,
+    "nominal_alcohol_acid_molar_ratio": 2,
+    "assays": [1, 2, 3, 4],
+    "catalyst_loadings_pct_of_initial_acid_mass": [2.5, 5, 10, 20],
+    "reference_loading_pct": 10,
+    "nominal_liquid_volume_ml": 40,
+    "nominal_acid_volume_ml": 10.3,
+    "acid_density_at_25_C_g_ml": 0.98807,
+    "acid_molar_mass_kg_mol": 0.0740785,
+    "reported_conversion_absolute_uncertainty": 0.002,
+    "reported_mole_fraction_absolute_uncertainty": 0.001,
+    "reported_sample_volume_ml": 0.1,
+    "individual_duplicate_time_series": null,
+    "assay_specific_catalyst_reuse_history": null
+  },
+  "matched_conversion_levels": [0.1, 0.2, 0.3, 0.4],
+  "reference_common_apparent_Kx_for_sensitivity": 4.53,
+  "candidate_laws": {
+    "proportional": "k_mass(C)/k_mass(C_ref) = 1, total rate proportional to amount at fixed liquid charge.",
+    "power": "k_mass(C)/k_mass(C_ref) = (C/C_ref)^(alpha-1), alpha is the total-rate mass exponent at fixed charge; 0 <= alpha <= 3.",
+    "crowding": "k_mass(C)/k_mass(C_ref) = 1/(1+s*(C/C_ref-1)), 0 <= s <= 1. This is a normalized saturating total rate, including proportional at s=0 and constant total rate at s=1."
+  },
+  "cross_validation": {
+    "unit": "an entire batch loading (all post-start observations), not random time points",
+    "equilibrium": "Estimate a common apparent Kx from training curves only, independently in every fold. The paper's 40 C value comes from assay 3 and cannot be imposed in a strict fold holding out assay 3.",
+    "primary_response": "printed conversion",
+    "primary_ratio": "nominal 2:1",
+    "primary_weight": "one weight per post-start observation",
+    "sensitivities": ["equal weight per batch curve", "printed initial alcohol-to-acid mole ratio", "re-derived acid-mole-fraction conversion", "re-derived ester-derived conversion"],
+    "high_loading_pair_diagnostic": "Fit the closest two measured concentrations (10% and 20%) alone using shared training-only Kx. Predict the two lower loadings without refitting. Extrapolate both two-point loading laws only as unqualified reactor sensitivity scenarios. Never choose between them using a reactor score.",
+    "sampling_sensitivity": "If each stated post-start aliquot removed only representative liquid and all catalyst remained, compute the maximum liquid-volume loss before the last sample and the time-integrated mass exposure increase for a proportional rate. No information about catalyst removal or liquid replenishment is available.",
+    "numerical_profile": "Shape scan (25 points, refine to 49 for full primary fits); exact proportional boundary retained. Wide nuisance bounds k_ref=[1e-4,10] mol/(kg s), Kx=[1e-3,1e3] for difficult trial shapes. Require selected fits in the interior with converged least squares.",
+    "qualification_rule": {
+      "relative_improvement_in_equal_loading_rmse_min": 0.10,
+      "maximum_worsening_of_any_fold_rmse_pp": 0.2,
+      "interpretation": "Conservative engineering screen: require both meaningful improvement over the proportional model and no loading fold made materially worse. The 0.2 pp margin is the reported conversion reading uncertainty, not a hypothesis-test threshold. Also inspect consistency under the response and weighting sensitivities. No row-based statistical significance or fabricated replicate uncertainty."
+    }
+  },
+  "transfer": {
+    "bed_catalyst_mass_kg": 0.006,
+    "concentration_basis": "Compare batch loading per nominal original liquid volume with catalyst mass per interbead void liquid volume. Use mass per total cartridge volume as a separate concentration-proxy sensitivity, without changing actual mass, void volume or reaction balance.",
+    "temperature_dependence": "Only 40 C has a loading series. Hold the independently determined relative loading response fixed across 50–80 C only as an explicitly unvalidated transfer scenario.",
+    "relative_rate_anchor": "Reference 10% batch input (approximately 25.44 g/L). Keep measured 10%-only batch kinetics per temperature; independently also retain the previous 2025 published-rate central film model as a continuity check.",
+    "measured_water_peclet": "Previous digitized blue-dextran nominal rectangular-pulse sensitivity; no new flow field",
+    "bed_grid_batch_model": [2048, 4096],
+    "bed_grid_film_model": [512, 1024],
+    "maximum_axial_grid_conversion_difference": 0.0001,
+    "maximum_normalized_balance_error": 1e-9,
+    "maximum_film_balance_error_mol_L_min": 1e-10,
+    "holdout": "All 20 experimental acid conversion markers from Lorenzo et al. 2025, reserved for scoring after saving all predictions and batch fit settings."
+  }
+}
