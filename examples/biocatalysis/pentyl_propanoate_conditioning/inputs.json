@@ -1,0 +1,121 @@
+{
+  "scope": "Independent startup-conditioning hypotheses for the 6 g pentyl propanoate bed. No reactor conversion is used to select properties, exposure factors or model settings.",
+  "procedures": {
+    "batch": {
+      "doi": "10.1021/acs.iecr.6c02375",
+      "location": "Lorenzo and Ortega (2026), experimental procedure and Table 1",
+      "sequence": "29.7 mL 1-pentanol and the immobilised lipase are heated together before addition of 10.3 mL propanoic acid.",
+      "preheat_contact_duration_min": null
+    },
+    "packed_bed": {
+      "doi": "10.1021/acs.iecr.5c02780",
+      "location": "Lorenzo et al. (2025), Sections 2.2–2.3",
+      "sequence": "The jacketed cartridge receives the premixed pentanol and acid feed after it reaches the setpoint.",
+      "prewet_liquid_and_duration": null,
+      "catalyst_lot_and_conditioning_history_across_both_studies": null,
+      "first_sample_min": 10,
+      "reported_steady_state_min": 30,
+      "run_duration_min": 180
+    }
+  },
+  "moisture_isotherms": {
+    "citation": "Kuroiwa et al. (2015), Journal of Food Research 4(5), 133–143",
+    "doi": "10.5539/jfr.v4n5p133",
+    "pdf_sha256": "560ba0819d1ba42cafb79d0f66d33ad011e6a56dbad1dc7b34ffeccf9c61541d",
+    "specimen": "Novozym 435 immobilised CALB",
+    "location": "Section 2.5, Eq. 4, Figure 6 and Table 1 (printed p. 139), enzyme rows",
+    "temperature_C": 40,
+    "incubation_h": 100,
+    "method": "Closed-vial water equilibration; liquid Karl Fischer titration and water inventory balance, accounting for initial solid moisture. Acetone data from Kuroiwa et al. (2007), reproduced and fitted in this article.",
+    "interpretation": "The sorbed water q in kg/kg preparation follows q_max*c/(K+c) with c in kg/m3 (numerically g/L). The measurement is an equilibrium endpoint, not a time constant. No fitted parameter uncertainty is printed. The reacting pentanol/propanoic acid/ester mixture has no measured isotherm here.",
+    "cases": {
+      "tert_amyl_alcohol": {"solvent": "2-methyl-2-butanol", "qmax_kg_kg": 0.025, "K_kg_m3": 0.42},
+      "acetone": {"solvent": "acetone", "qmax_kg_kg": 0.045, "K_kg_m3": 0.42}
+    },
+    "common_test_concentrations_kg_m3": [0.42, 1.0],
+    "common_test_concentration_max_kg_m3": 1.0
+  },
+  "same_alcohol_reuse": {
+    "citation": "Lorenzo et al. (2023), Processes 11, 1640",
+    "doi": "10.3390/pr11061640",
+    "open_pdf": "https://psecommunity.org/wp-content/plugins/wpor/includes/file/2307/LAPSE-2023.36184-1v1.pdf",
+    "pdf_sha256": "219de886b48706873c11bf59b7a364cd89d49020477b038315927dba545579ca",
+    "location": "Section 2.3, Figure 2 (lower panel) and Table 1",
+    "specimen": "Lipozyme 435 and neat pentanol/acetic acid",
+    "conditions": {"temperature_C": 40, "charge_ml": 40, "alcohol_to_acid_molar_ratio": 2, "acid_mol_L": 3.6, "catalyst_mass_fraction_relative_to_acid": 0.10, "agitation_rpm": 100},
+    "cycles": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    "final_conversion_pct": [85, 84, 85, 85, 85, 86, 85, 87, 85, 85],
+    "reported_time_to_final_conversion_h_each_cycle": 7.8,
+    "time_proxy_digitization": {
+      "target_conversion_pct": 70,
+      "pdf_page": 5,
+      "render_dpi": 360,
+      "crop_origin_xy_px": [830, 2970],
+      "crop_width_height_px": [1060, 800],
+      "x_ticks_0_20_h_px": [217, 979],
+      "y_ticks_0_100_pct_px": [684, 76],
+      "bracketing_marker_xy_px": {"1": [[375, 276], [412, 232]], "5": [[373, 292], [408, 254]], "10": [[370, 302], [427, 233]]},
+      "reading_half_range_px": 2,
+      "interpretation": "Linear interpolation between plotted markers at equal conversion; use the smaller of the two fresh-time/reuse-time ratios as a mild apparent time-scale sensitivity. This is not a measured intrinsic activity ratio or a confidence interval."
+    },
+    "transfer": "Same alcohol and commercial preparation, different carboxylic acid. Stable conversion times under this reuse procedure do not ensure stability under propanoic acid."
+  },
+  "propanoic_acid_contact": {
+    "citation": "Meneses et al. (2019), Bioprocess and Biosystems Engineering",
+    "doi": "10.1007/s00449-019-02159-w",
+    "open_author_thesis": "https://repositorio.ufsc.br/xmlui/bitstream/handle/123456789/219184/PENQ0862-T.pdf?isAllowed=y&sequence=-1",
+    "thesis_pdf_sha256": "37b10433581fb0610f4c497bac36db8d74d4f55a2f30c3aadfb10d20bc05a3a7",
+    "location": "Article Table 1; equivalent author thesis Chapter 3 Table 7, printed p. 53, PDF p. 54",
+    "specimen": "Novozym 435, propanoic acid and benzyl alcohol",
+    "activity_assay": "Lauric acid and n-propanol 1:1, 5% enzyme, 60 °C, 40 min, triplicate. Activities in U/g immobilised catalyst; the statistic of the quoted plus/minus values is not identified in the table.",
+    "individual_solvent_contact_duration_h": null,
+    "individual_solvent_contact_temperature_C": null,
+    "activities_U_g": {
+      "fresh": {"mean": 54.6, "reported_plus_minus": 0.7},
+      "after_benzyl_alcohol": {"mean": 46.2, "reported_plus_minus": 0.4},
+      "after_propanoic_acid": {"mean": 1.7, "reported_plus_minus": 0.7},
+      "after_second_cycle_acid_alcohol_1_1": {"mean": 1.0, "reported_plus_minus": 0.2},
+      "after_second_cycle_acid_alcohol_1_3": {"mean": 1.1, "reported_plus_minus": 0.4},
+      "after_second_cycle_acid_alcohol_1_5": {"mean": 18.5, "reported_plus_minus": 1.2}
+    },
+    "reuse_conditions": "Two 24 h fed-batch cycles at 50 °C, 150 rpm, 10 wt% immobilised enzyme relative to substrates, molecular sieves; acid added over the first 5 h. Acetone washing three times and overnight drying at 50 °C between cycles.",
+    "transfer": "Independent residual-activity endpoints in a different alcohol and on a different reaction assay, with separate neat-solvent contacts. The actual bed receives a premixed 2:1 feed. No deactivation constant or conditioned fraction for that bed can be inferred."
+  },
+  "bed_time_trace": {
+    "doi": "10.1021/acs.iecr.5c02780.s001",
+    "pdf": "https://ndownloader.figshare.com/files/56501839",
+    "pdf_sha256": "8eedaca05d74a981e545fc87fd8b46e66d2b540f073afc986805beb201721fbc",
+    "location": "Figure S2, filled circles (pentyl propanoate, alcohol:acid 2)",
+    "temperature_C": null,
+    "flow_ml_min": null,
+    "digitization": {
+      "pdf_page": 8,
+      "render_dpi": 240,
+      "crop_origin_xy_px": [550, 560],
+      "crop_width_height_px": [970, 960],
+      "y_ticks_0_100_pct_px": [869, 46],
+      "times_h": [0.16666666666666666, 0.5, 1, 1.5, 2, 2.5, 3],
+      "marker_y_px": [258, 232, 224, 234, 233, 224, 234],
+      "reading_half_range_px": 2
+    },
+    "use": "Independent check of startup drift in the plotted run, not a calibration series. No assignment to a specific member of the 20-run grid. The marker reading spread is not experimental uncertainty."
+  },
+  "transient_screen": {
+    "description": "Conditional spherical water storage calculation using the reported geometry and aqueous wet porosity, then the nitrogen-based dry porosity as a sensitivity. Instantaneous reversible equilibrium with the local water concentration; no intrabead water-activity history or actual enzyme deactivation law is inferred.",
+    "temperature_C": 40,
+    "water_diffusivity_uncertainty_units": 0,
+    "film": "wilson_geankoplis",
+    "film_flow_ml_min": 0.7,
+    "outer_shell_depth_m": 0.00008,
+    "grid_cells": [64, 128],
+    "step_s": [2, 1],
+    "sample_step_s": 60,
+    "duration_s": 10800,
+    "max_grid_difference_fraction": 0.005,
+    "max_mass_balance_relative_error": 1e-7
+  },
+  "scenario_notes": {
+    "bed_activity_scaling": "Uniform apparent relative activity sensitivities applied once in the previous central film model, constant per run. The reported 6 g mass and internal effectiveness convention are retained; no rate factor is fitted to the reactor.",
+    "nominal_exposure_scale": "Use the prior concentration-basis audit's void fraction (0.64) only as a magnitude illustration. It comes from the bulk-volume versus void-volume rate convention, not a fitted activity. A permanent loss, a continuing first-order loss, and a recovering initial deficit at 30 min are different unvalidated histories."
+  }
+}

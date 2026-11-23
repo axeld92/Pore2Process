@@ -430,6 +430,19 @@ water-film increment at 50% conversion, with larger conditional
 increments early in the reaction. Catalyst conditioning and local
 liquid activity in the reacting beads remain unresolved.
 
+The [catalyst-conditioning audit](examples/biocatalysis/pentyl_propanoate_conditioning/REPORT.md)
+compares alcohol-first batch preparation with mixed-feed bed startup,
+published bead swelling and reversible moisture storage, and independent
+reuse and acid-contact results. Sorption can prolong moisture memory;
+simple large gradual changes of catalytic activity over the three-hour
+run are not supported by the reported conversion stability. Mild
+independent activity sensitivities narrow the full-inventory prediction
+gap, and severe acid-contact scenarios overcorrect it. The actual
+first-contact history and transferable conditioned activity remain
+unknown. Next, test the mass-proportionality assumption independently
+on the four published 40 °C batch loadings, retaining the 20 bed
+measurements for scoring.
+
 ## Acceptance criterion for every end-to-end showcase
 
 An output actually derived from OpenLB must influence an actual DWSIM process

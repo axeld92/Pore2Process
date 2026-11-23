@@ -1,0 +1,27 @@
+schema_version = 1
+id = "biocatalysis/pentyl_propanoate_conditioning"
+title = "Catalyst first-contact conditioning, moisture storage and reuse"
+area = "biocatalysis"
+status = "complete"
+report = "REPORT.md"
+readme = "README.md"
+prerequisites = ["biocatalysis/pentyl_propanoate_water_balance"]
+run_module = "examples.biocatalysis.pentyl_propanoate_conditioning.run"
+check_module = "examples.biocatalysis.pentyl_propanoate_conditioning.check"
+reference_files = [
+  "reference/summary.json",
+  "reference/batch_activity.csv",
+  "reference/batch_storage.csv",
+  "reference/hydration_summary.csv",
+  "reference/predictions_before_comparison.csv",
+  "reference/bed_comparison.csv",
+]
+protocol_files = ["protocol.md", "evidence.md"]
+
+[validation]
+numerical = "passed"
+aqueous_exchange = "conditional"
+moisture_history = "scenario_only"
+rate_sensitivities = "scenario_only"
+actual_bed_conditioning = "not_assessed"
+scope = "Independent conditioning evidence and conservative moisture transport with verified numerical limits. Reactor observations remain held out; target-liquid moisture and conditioned activity remain unmeasured."

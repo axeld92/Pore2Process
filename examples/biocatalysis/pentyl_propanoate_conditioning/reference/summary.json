@@ -1,0 +1,369 @@
+{
+  "water_tracer": {
+    "normalized_moments": {
+      "blue_dextran": {
+        "area_mg_min_ml": 5.6030705,
+        "mean_min": 19.090630473951737,
+        "variance_min2": 27.77992696483009,
+        "reported_injected_dose_mg": 8.4,
+        "integrated_output_dose_mg": 6.7236846
+      },
+      "sodium_azide": {
+        "area_mg_min_ml": 2.0631505,
+        "mean_min": 24.295073224178267,
+        "variance_min2": 55.82012785334873,
+        "reported_injected_dose_mg": 0.8400000000000001,
+        "integrated_output_dose_mg": 2.4757805999999998
+      }
+    },
+    "pulse_duration_scenario_min": 7.0,
+    "exchange": {
+      "digitized": {
+        "shared_rectangular_pulse": {
+          "immobile_to_mobile_storage_ratio": 0.33381862003091695,
+          "return_time_min": 0.9202566077566029,
+          "physical_nonnegative_return_time": true
+        },
+        "conditional_return_time_upper_min": 1.7695022696288922,
+        "mean_extra_storage_ml": 6.245331300271836
+      },
+      "printed": {
+        "shared_rectangular_pulse": {
+          "immobile_to_mobile_storage_ratio": 0.333975594091201,
+          "return_time_min": 1.009585554732356,
+          "physical_nonnegative_return_time": true
+        },
+        "conditional_return_time_upper_min": 1.8610447814098177,
+        "mean_extra_storage_ml": 6.239999999999999
+      }
+    },
+    "scope": "Shared pulse and mobile hydrodynamic clock, Poisson entry and exponential exit from immobile storage. The recovered tracer masses disagree with doses. Return time is a conditional aqueous estimate, not reactive-liquid wetting time."
+  },
+  "reuse_proxies": {
+    "acetate_time_to_70pct_h": {
+      "1": 4.535433070866142,
+      "5": 4.906755076668049,
+      "10": 4.961086385940888
+    },
+    "acetate_marker_reading_range_h": {
+      "1": [
+        4.438797423049392,
+        4.632068718682892
+      ],
+      "5": [
+        4.805912418842382,
+        5.007597734493714
+      ],
+      "10": [
+        4.865228802921375,
+        5.056943968960402
+      ]
+    },
+    "acetate_mild_time_scale": 0.914201591755992,
+    "acetate_mild_time_scale_marker_reading_range": [
+      0.8777628247998785,
+      0.9520762345034052
+    ],
+    "propanoic_assay_activity_relative_to_fresh": {
+      "fresh": 1.0,
+      "after_benzyl_alcohol": 0.8461538461538461,
+      "after_propanoic_acid": 0.031135531135531132,
+      "after_second_cycle_acid_alcohol_1_1": 0.018315018315018316,
+      "after_second_cycle_acid_alcohol_1_3": 0.020146520146520148,
+      "after_second_cycle_acid_alcohol_1_5": 0.33882783882783885
+    },
+    "propanoic_acid_vs_benzyl_alcohol_activity_ratio": 0.03679653679653679
+  },
+  "bed_time_trace": {
+    "times_h": [
+      0.16666666666666666,
+      0.5,
+      1,
+      1.5,
+      2,
+      2.5,
+      3
+    ],
+    "conversion": [
+      0.7424058323207776,
+      0.7739975698663426,
+      0.7837181044957473,
+      0.7715674362089915,
+      0.772782503037667,
+      0.7837181044957473,
+      0.7715674362089915
+    ],
+    "observed_30_to_180min_span_pp": 1.2150668286755817,
+    "observed_30_to_180min_change_pp": -0.2430133657351119,
+    "reading_half_range_pp": 0.24301336573511542
+  },
+  "batch_water_capacity": {
+    "batch_acid_mol": 0.137382924870239,
+    "batch_catalyst_g": 1.0177121000000002,
+    "initial_water_mass_fraction_sensitivity": 0.009000000000000001,
+    "analogue_saturation_capacity": {
+      "tert_amyl_alcohol": {
+        "batch_water_capacity_mg": 25.442802500000006,
+        "bed_water_capacity_mg": 150.0
+      },
+      "acetone": {
+        "batch_water_capacity_mg": 45.797044500000005,
+        "bed_water_capacity_mg": 270.0
+      }
+    },
+    "activity_sensitivity_summary": {
+      "0.01": {
+        "max_bed_minus_batch_aw_scenario": 0.021723234001377205,
+        "min_conditional_analogue_bed_batch_rate_ratio": null,
+        "activity_scenarios_inside_composition_range": 36,
+        "rate_scenarios_inside_controlled_aw_range": 0
+      },
+      "0.02": {
+        "max_bed_minus_batch_aw_scenario": 0.04032310092014591,
+        "min_conditional_analogue_bed_batch_rate_ratio": null,
+        "activity_scenarios_inside_composition_range": 36,
+        "rate_scenarios_inside_controlled_aw_range": 0
+      },
+      "0.04": {
+        "max_bed_minus_batch_aw_scenario": 0.040343948853355405,
+        "min_conditional_analogue_bed_batch_rate_ratio": null,
+        "activity_scenarios_inside_composition_range": 36,
+        "rate_scenarios_inside_controlled_aw_range": 0
+      },
+      "0.1": {
+        "max_bed_minus_batch_aw_scenario": 0.0403868959726138,
+        "min_conditional_analogue_bed_batch_rate_ratio": 0.9387768949487868,
+        "activity_scenarios_inside_composition_range": 36,
+        "rate_scenarios_inside_controlled_aw_range": 36
+      },
+      "0.2": {
+        "max_bed_minus_batch_aw_scenario": 0.040386061885752056,
+        "min_conditional_analogue_bed_batch_rate_ratio": 0.8559800651388904,
+        "activity_scenarios_inside_composition_range": 36,
+        "rate_scenarios_inside_controlled_aw_range": 36
+      },
+      "0.5": {
+        "max_bed_minus_batch_aw_scenario": 0.027175552275612636,
+        "min_conditional_analogue_bed_batch_rate_ratio": 0.9580928499509579,
+        "activity_scenarios_inside_composition_range": 36,
+        "rate_scenarios_inside_controlled_aw_range": 36
+      },
+      "0.65": {
+        "max_bed_minus_batch_aw_scenario": 0.021678733614869605,
+        "min_conditional_analogue_bed_batch_rate_ratio": 0.9664253149806585,
+        "activity_scenarios_inside_composition_range": 16,
+        "rate_scenarios_inside_controlled_aw_range": 4
+      },
+      "0.75": {
+        "max_bed_minus_batch_aw_scenario": 5.020184802972949e-06,
+        "min_conditional_analogue_bed_batch_rate_ratio": null,
+        "activity_scenarios_inside_composition_range": 16,
+        "rate_scenarios_inside_controlled_aw_range": 0
+      }
+    },
+    "use": "Initially dry, nominal constant liquid volume. At finite conversion, compare a batch retaining up to the analogue saturation capacity with a steady bed having no net storage. This is a deliberately large conditional inventory change, not a bound for the actual unmeasured mixture."
+  },
+  "bead_moisture": {
+    "radius_m": 0.0002965,
+    "catalyst_per_envelope_volume_kg_m3": 592.0942823359202,
+    "tortuosity": 5.3,
+    "water_diffusivity_m2_s": 9.010337439060124e-10,
+    "water_film_coefficient_m_s": 8.71451215184021e-06,
+    "maximum_grid_difference_fraction": 0.0025290897273886337,
+    "maximum_mass_balance_relative_error": 3.9023800981667916e-08,
+    "film_flow_ml_min": 0.7,
+    "slowest_flow_water_memory_ranges": {
+      "wet_aqueous_basis_wetting_30min": {
+        "plug_age_average_remaining": [
+          0.2829078184826223,
+          0.569271071316177
+        ],
+        "plug_age_average_remaining_shell": [
+          0.10941787289343262,
+          0.3492103298715287
+        ]
+      },
+      "wet_aqueous_basis_wetting_180min": {
+        "plug_age_average_remaining": [
+          1.155656478860452e-08,
+          0.02323804502117726
+        ],
+        "plug_age_average_remaining_shell": [
+          5.852635923271217e-09,
+          0.011301825285896646
+        ]
+      },
+      "wet_aqueous_basis_drying_30min": {
+        "plug_age_average_remaining": [
+          0.48807994621884243,
+          0.651604956742574
+        ],
+        "plug_age_average_remaining_shell": [
+          0.3596051657413809,
+          0.5014086581786023
+        ]
+      },
+      "wet_aqueous_basis_drying_180min": {
+        "plug_age_average_remaining": [
+          0.041971493723505136,
+          0.14169953036048238
+        ],
+        "plug_age_average_remaining_shell": [
+          0.02225446588722904,
+          0.07935143182869436
+        ]
+      },
+      "dry_nitrogen_basis_wetting_30min": {
+        "plug_age_average_remaining": [
+          0.4114913816602141,
+          0.6579315013941618
+        ],
+        "plug_age_average_remaining_shell": [
+          0.17709835671975596,
+          0.4537876013700367
+        ]
+      },
+      "dry_nitrogen_basis_wetting_180min": {
+        "plug_age_average_remaining": [
+          4.828626531374817e-05,
+          0.11770271875389894
+        ],
+        "plug_age_average_remaining_shell": [
+          2.3380846327539642e-05,
+          0.04709904848875067
+        ]
+      },
+      "dry_nitrogen_basis_drying_30min": {
+        "plug_age_average_remaining": [
+          0.5829383766636504,
+          0.7221516694937247
+        ],
+        "plug_age_average_remaining_shell": [
+          0.4427110699566259,
+          0.5777441552421928
+        ]
+      },
+      "dry_nitrogen_basis_drying_180min": {
+        "plug_age_average_remaining": [
+          0.11025933682189036,
+          0.2561779900677353
+        ],
+        "plug_age_average_remaining_shell": [
+          0.05995821373057986,
+          0.14834734798335994
+        ]
+      }
+    },
+    "scope": "Analogue local-equilibrium storage plus liquid diffusion. All sorbed water counted as extra storage; possible overlap with liquid-filled pore water prolongs the estimate. Water storage is not an enzyme-rate history. Uniform boundary step, then an illustrative plug-displacement age distribution at constant slow-flow film."
+  },
+  "independent_activity_scales": {
+    "central_film": 1.0,
+    "acetate_reuse_time_proxy": 0.914201591755992,
+    "benzyl_alcohol_contact_proxy": 0.8461538461538461,
+    "acid_1_5_reuse_proxy": 0.33882783882783885,
+    "neat_acid_vs_alcohol_proxy": 0.03679653679653679
+  },
+  "magnitude_illustrations": {
+    "basis_30min_illustration": 0.64,
+    "continued_decay_180min_illustration": 0.06871947673600001,
+    "recovered_wetting_180min_illustration": 0.997823217664
+  },
+  "illustrative_damaged_fraction_for_nominal_basis_scale": 0.37375280898876406,
+  "quasisteady_30_to_180min_conversion_drift_range_pp": {
+    "continued_decay_180min_illustration": [
+      -58.823887875165724,
+      -30.727205824388477
+    ],
+    "recovered_wetting_180min_illustration": [
+      2.8602818467004965,
+      13.195164599756037
+    ]
+  },
+  "reaction_numerics": {
+    "max_axial_grid_change": 1.164193742275721e-05,
+    "max_normalized_acid_balance": 4.998824826296655e-10,
+    "max_film_balance_mol_L_min": 6.06736882957648e-13,
+    "max_prior_film_replay_difference": 5.551115123125783e-16
+  },
+  "comparison": {
+    "central_film": {
+      "count": 20,
+      "rmse_percentage_points": 9.584766943379117,
+      "mae_percentage_points": 9.451171578140013,
+      "bias_percentage_points": 9.451171578140013,
+      "max_absolute_error_percentage_points": 12.598828029016767
+    },
+    "acetate_reuse_time_proxy": {
+      "count": 20,
+      "rmse_percentage_points": 7.831561276620007,
+      "mae_percentage_points": 7.605553421953763,
+      "bias_percentage_points": 7.605553421953763,
+      "max_absolute_error_percentage_points": 10.413704808913005
+    },
+    "benzyl_alcohol_contact_proxy": {
+      "count": 20,
+      "rmse_percentage_points": 6.363887546867572,
+      "mae_percentage_points": 5.939431828983007,
+      "bias_percentage_points": 5.939431828983007,
+      "max_absolute_error_percentage_points": 10.039776729180716
+    },
+    "acid_1_5_reuse_proxy": {
+      "count": 20,
+      "rmse_percentage_points": 18.037249720661634,
+      "mae_percentage_points": 17.10305435276533,
+      "bias_percentage_points": -17.10305435276533,
+      "max_absolute_error_percentage_points": 24.82238243885801
+    },
+    "neat_acid_vs_alcohol_proxy": {
+      "count": 20,
+      "rmse_percentage_points": 58.20217309947289,
+      "mae_percentage_points": 57.3722253016946,
+      "bias_percentage_points": -57.3722253016946,
+      "max_absolute_error_percentage_points": 67.66331432211399
+    }
+  },
+  "sixty_C_three_ml_min": {
+    "temperature_C": 60,
+    "flow_ml_min": 3.0,
+    "catalyst_mass_kg": 0.006,
+    "central_film": 0.5899876537763031,
+    "acetate_reuse_time_proxy": 0.5633032940298068,
+    "benzyl_alcohol_contact_proxy": 0.5403220231653563,
+    "acid_1_5_reuse_proxy": 0.29610433534354297,
+    "neat_acid_vs_alcohol_proxy": 0.04146852424643469,
+    "basis_30min_illustration": 0.4589582599226602,
+    "continued_decay_180min_illustration": 0.07508623299815471,
+    "recovered_wetting_180min_illustration": 0.5893400767323612,
+    "observed_acid_conversion": 0.497
+  },
+  "julia": "1.11.6",
+  "source_sha256": {
+    "examples/biocatalysis/pentyl_propanoate_conditioning/inputs.json": "99d5989ead40c6554d44681ed3fb352ac8cea50c01ace2820f5b3ffee9f33b00",
+    "examples/biocatalysis/pentyl_propanoate_transport/particle/evidence.json": "8e84733da9bea0874354db04f0087b17f1b2439e99683983d7a8d12e6e662c2a",
+    "examples/biocatalysis/pentyl_propanoate_water_balance/inputs.json": "7d4e4dd084183320ecb8734dd1eb5e4d64091960a6bead236ae46ba497b1a98e",
+    "examples/biocatalysis/pentyl_propanoate_water_balance/run.py": "c1a5f09c61f4c7ee298185468b6972dd03d10b0c9a4d00fbfe61ea0283f6b259",
+    "examples/biocatalysis/pentyl_propanoate_water_balance/activity.py": "19eabadfe55c2223d0a4dfe5151d6985dedfc137218dd145db8522a99a864b59",
+    "examples/biocatalysis/pentyl_propanoate_transport/phase/properties.json": "d2b3c1016531b01781aa41641e15162f73abe36e8df579f64f66eb853f954876",
+    "examples/biocatalysis/pentyl_propanoate_transport/phase/run.py": "4de61efe9e44141274cbdfe04e3e2e875bc718d683d12c7fbc47fb739160759e",
+    "examples/biocatalysis/pentyl_propanoate_film_water/water_activity/batch_initial_rates.csv": "a617e4586ab588122cdb6019b3ac70e422713c6a75f8a35b57ac353e32fa45b4",
+    "examples/biocatalysis/pentyl_propanoate_film_water/water_activity/run.py": "877d702fffd79337e80c8a3ffcddf8c40e22b331cfe9f42c9ae6aaa09406e330",
+    "examples/biocatalysis/pentyl_propanoate_film_water/film/properties.json": "5bf073298e4916a185639decff259db90de51726b91b02ea652ca07ebd85d08a",
+    "examples/biocatalysis/pentyl_propanoate_film_water/film/model.jl": "5c4c51ed23cbb569cb2d44d2193e58f6a8ab40880f82c4dcc548c69b8020330b",
+    "examples/biocatalysis/pentyl_propanoate_film_water/film/reference/bed_comparison.csv": "18bde1476449a1aadeba307a1c9dff22dd26da20773826575f4e3c206d6ace0d",
+    "literature/sources/lorenzo2025/author_model.json": "d128ace125cdff8069ae5ba27fea14ab08a35d9ef661016a23d9f394cfe13c16",
+    "examples/biocatalysis/pentyl_propanoate_transfer/published/model.jl": "c2fb5b15d3d70361f086947eb5e73f66bd92bfade987f22815c29032275a33ad",
+    "literature/sources/lorenzo2025/conversion_2to1.csv": "8736cc8a57ba341089ae66df91df4a0067dc71f0ce8cfb52a6904317f466a79d",
+    "literature/sources/lorenzo2025/water_tracer.csv": "3ad54d379e0d4da081bcaf50a48fe398181e9ede6835ae746dc39b1fa624a334",
+    "literature/sources/lorenzo2025/extraction.json": "47f54b31d538cb5b34bc09e586289e86fbdd64ca9459ada9ffd9330acb218d2b",
+    "examples/biocatalysis/pentyl_propanoate_conditioning/run.py": "c075edfcb71d906f2aeb4367f7591d4bd647a21bf08ea37ce6e91fc240e25245",
+    "examples/biocatalysis/pentyl_propanoate_conditioning/moisture.jl": "4758d9a918bf33dbf7087c5068df94007b4bb80e86e51837d583207a02ab61e4"
+  },
+  "output_sha256": {
+    "batch_activity.csv": "54fd720a71065ee2a3f0a44f4cc0af1f6e2ea54126b7bce8706518445e5fc20c",
+    "batch_storage.csv": "a3d1e0dce1516226d2e7a2502e5a801be4b9a161f861d258bfbab9329d1ff45f",
+    "bed_comparison.csv": "9ebdb712219ac96dd6734ad7137b889f1f840bdc960ece8427dff265d9f552eb",
+    "hydration_curves.csv": "adf86c22bbb243e3e657d2be97d6dace157f478b3ae808f851e3c251b91e3374",
+    "hydration_summary.csv": "cb22d0eeeb692ed188a0dd5413e46f9e5c3e23e5621ca2a71d1d7d8ed570ad49",
+    "predictions_before_comparison.csv": "9ca45c6e63df41b8054b674ffc5d6a2e9c6afa0e06260b92c858bd1ed269ef23"
+  }
+}
