@@ -475,3 +475,9 @@ attempts, full comparison scores for each baseline scenario, and the
 hashes of the original A freeze and C prediction. Large velocity and
 face fields and full marker ledgers remain in the identified ignored
 local run folder, rather than being added to Git.
+
+**Subsequent evidence:** the user supplied Panjan's doctoral thesis,
+and a [separate measurement-loop audit](../panjan_tracer_audit/REPORT.md)
+now assesses its likely shared blank/R1 observations, the middle-length
+R2 discrepancy and the detector response test. No A/C parameters or
+original carrier results were changed by that follow-up.

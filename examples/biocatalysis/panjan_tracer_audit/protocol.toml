@@ -1,0 +1,31 @@
+schema_version = 1
+reaction_enabled = false
+source = "Panjan 2018 thesis, Fig. 25, Sections 4.3.1/4.4.1 and Fig. 4/Table 1"
+prior = "biocatalysis/strnisa_tracer, frozen A and held-out C"
+scope = "Read and audit additional dimensional tracer evidence before any new porous calculation. R1 and the no-reactor control must be checked for duplicate publication. The R2 transport predictions are reduced scenarios derived from the previously numerically screened A stock TRT/Julia marker response, not a new native R2 solution. No parameter is selected by R2."
+
+[readings]
+quadrature_dt_s = 0.05
+background_pixels = [0, 2, 5]
+tail_cutoffs_s = [240, 300]
+narrow_tail_closure_s = 5
+duplicate_core_min_mM = 0.05
+threshold_mM = [0.05, 0.10, 0.20, 0.50, 1.0, 2.0]
+filter_min_later_mM = 0.20
+filter_min_interval_s = 15.0
+filter_reading_pixels = 5
+note = "Retain raw zero-axis readings and common baseline-removal sensitivities. Clip negative readings at zero. Interpolate missing plotted markers linearly. For narrow pulses add t=0 baseline and close near-baseline end to zero over one 5 s display interval; also report unclosed-window and common truncation sensitivities. Wide R3/R4 end nonzero and are reported only as partial area; do not compute full RTD moments."
+
+[transfer]
+short_age_dt_s = 0.05
+R2_independent_sections = 2
+R1_base = "Scale A's archived impulse ages by ratio of R1 nominal V/Q to the simulated A mean. No new geometry fit."
+R2_base = "Convolve two independent A-derived impulse sections, each scaled to half R2 V/Q. Compare with one scaled A impulse representing retained normalized age memory. Neither replaces a full R2 calculation."
+extra_delays = "Reuse A-frozen extra mixed volume and rare pause parameters, unchanged. For bead-volume case scale the A pause count by the independently reported geometry minus reported liquid volume relative to the A bead envelope."
+
+[gates]
+incremental_mean_relative = 0.05
+incremental_variance_relative = 0.10
+whole_mean_relative = 0.05
+whole_variance_relative = 0.10
+whole_CDF_max = 0.05

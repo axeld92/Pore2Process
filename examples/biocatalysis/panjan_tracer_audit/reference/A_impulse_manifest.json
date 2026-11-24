@@ -1,0 +1,15 @@
+{
+  "prior_reference_sha256": "19a0986da4e4054fe2b03996d8f07112c559d3649816fe39a3986aae541c8afe",
+  "marker_sha256": "c1facf26b0b51a1f877ac31039cbc1ccb2241fadc48ded585611021646e4baca",
+  "handoff_sha256": "4f2db9fc64b6cc323c65efe88498f30bdeaa81a088dcb423fb4f8378d1fc3541",
+  "source_run": "results/biocatalysis/strnisa_tracer/runs/20261124T111652Z-8d90b8bf/A_H16/dt0.00125_D1_n16384_seed223795.f64",
+  "dt_s": 0.05,
+  "kernel_sha256": "2cb03f9adaf2ed8866f87965b2329634b510b17cb0f359d3094589081a545950",
+  "moments": {
+    "recovery": 1.0,
+    "mean_s": 10.128349788011526,
+    "variance_s2": 8.960703724119831
+  },
+  "particle_count": 16384,
+  "note": "Binned actual recovered A_H16 stock TRT/Julia marker ages; no synthetic replacement."
+}

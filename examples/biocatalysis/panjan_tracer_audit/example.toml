@@ -1,0 +1,21 @@
+schema_version = 1
+id = "biocatalysis/panjan_tracer_audit"
+title = "Audit Panjan's detector and middle-length packed-microreactor tracer evidence"
+area = "biocatalysis"
+status = "complete"
+readme = "README.md"
+report = "REPORT.md"
+prerequisites = ["biocatalysis/strnisa_tracer"]
+run_module = "examples.biocatalysis.panjan_tracer_audit.audit"
+check_module = "examples.biocatalysis.panjan_tracer_audit.check"
+reference_files = ["reference/summary.json", "reference/A_impulse.csv", "reference/A_impulse_manifest.json", "reference/predicted_narrow_samples.csv", "figures/measurement_audit.png", "figures/detector_audit.png"]
+protocol_files = ["protocol.toml"]
+
+[validation]
+source_trace_audit = "passed"
+prior_impulse_conservation = "passed"
+reduced_R2_transfer = "failed"
+reported_detector_single_exponential = "failed"
+wide_complete_RTD = "not_assessed"
+reaction = "not_assessed"
+scope = "Dimensional measurement audit and frozen-A reduced-model scenarios only. Reported R2 liquid volume and first-moment increment disagree robustly; no new full R2 TRT geometry or reacting validation. Related instrument dynamics not independently transferable."

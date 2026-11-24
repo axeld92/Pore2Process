@@ -32,6 +32,7 @@ their examples.
 | [meneghini2021](sources/meneghini2021/README.md) | Related publication; not independent validation of the dissertation parameters. |
 | [mo2022](sources/mo2022/README.md) | Fixed-top-layer support plateau and explicit intermediate-layer resistance. Author-model values retained separately from experiment; no production parameter replacement. |
 | [strnisa2018](sources/strnisa2018/README.md) | Six packed microreactor configurations with independent batch initial rate, water tracer and pressure measurements, and withheld geometry conversion series; synthetic packing supplement reviewed. |
+| [panjan2018](sources/panjan2018/README.md) | Doctoral thesis Fig. 25 dimensional glucose pulses and separate detector characterization; likely shared blank/R1 observations, additional distinct middle-length pulse, incomplete wide-bed curves. |
 | [zhu2021](sources/zhu2021/README.md) | Matched support/transfer-coated whole-membrane M1 effective-impedance reference for bounded scale translation; no claim of exact specimen reconstruction. |
 | [wakao_funazkri1978](sources/wakao_funazkri1978/README.md) | Existing packed-bed film-correlation reference |
 

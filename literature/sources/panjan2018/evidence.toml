@@ -1,0 +1,52 @@
+schema_version = 1
+pdf_sha256 = "f61a52a7dcb4832aced3f340a8964952da13ab545a4a5ca113fb2f4be658edff"
+
+[tracer]
+locator = "Sections 4.1.1, 4.3.1 and 4.4.1, printed pp. 71–72 and 75–79, PDF pp. 73–74 and 77–81; Figures 23 and 25"
+flow_ul_min = 100.0
+injection_ul = 10.0
+injection_glucose_mM = 50.0
+carrier = "0.1 M PBS"
+detector_chamber_ul = 4.0
+n = 3
+packing = "Novozym 435 particles between two PMMA plates; 0.4 mm manually cut PTFE spacer"
+blank = "Inlet and outlet tubing connected directly, bypassing the bed."
+time_definition = "Difference of initial rise from baseline between reactor and blank, rather than integral mean. No concentration threshold specified."
+unreported = ["PBS pH and temperature for Figure 25", "individual replicate pulses and pointwise uncertainty", "lengths and internal diameters of tubing and fittings", "individual electrode transfer function and calibration applied to Figure 25", "actual wet bead size and three-dimensional porosity", "meaning of reported volumes for wide beds beyond the quoted V/Q calculation"]
+columns = ["reactor", "length_mm", "width_mm", "depth_mm", "reported_volume_ul", "reported_onset_min", "reported_V_over_Q_min"]
+rows = [
+  ["R1", 25.0, 3.0, 0.4, 17.0, 0.21, 0.17],
+  ["R2", 52.0, 3.0, 0.4, 35.0, 0.35, 0.35],
+  ["R3", 52.0, 16.0, 0.4, 266.0, 2.61, 2.66],
+  ["R4", 52.0, 29.0, 0.4, 583.0, 4.15, 5.83],
+]
+
+[detector]
+locator = "Printed pp. 42–44 (PDF pp. 44–46), Figure 4 and Table 1"
+detection_limit_mM = 0.006
+resolution_mM = 0.004
+linear_max_mM_text = 2.5
+linear_max_mM_table = 3.0
+linear_r2_table = 0.9985
+nonlinear_max_mM_text = 4.0
+t90_step_s = 58.0
+intrasensor_reproducibility_percent = 4.0
+intersensor_reproducibility_percent = 5.7
+hysteresis_upper_percent = 10.8
+note = "Separate glucose-detector characterization. Table 1 T90 is for a step; no full step trace is printed. Section 4.1.1 says the pulse was chosen to keep the detector output in range and temperature was kept low for stability, with no numeric temperature. Figure 25 uses mM and its blank/R1/R2 peaks exceed the concentration range of Figure 4. The electrode calibration for those pulses is not furnished; do not assume this exact transfer function or invert these currents to reconstruct the pulse."
+
+[detector.figure4]
+locator = "Printed p. 43, PDF p. 45. Native image strips Im5 and Im6, 1443 x 423 px each."
+n = 3
+reading_px = 3
+upper_axis_y_0p8_uA_px = 42
+upper_axis_y_0p4_uA_px = 361
+lower_axis_y_0_uA_px = 253
+lower_axis_y_0p3_uA_px = 17
+columns = ["glucose_mM", "strip", "marker_y_px"]
+markers = [
+  [0.0, "lower", 249], [0.1, "lower", 235], [0.25, "lower", 205],
+  [0.5, "lower", 152], [1.0, "lower", 40],
+  [1.5, "upper", 341], [2.0, "upper", 224], [2.5, "upper", 126],
+  [3.0, "upper", 78], [4.0, "upper", 78],
+]

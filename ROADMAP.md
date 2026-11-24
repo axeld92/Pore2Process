@@ -521,11 +521,17 @@ reactors. However, the inferred incremental variances are 164 and
 laws and related-support internal-liquid scenarios cannot simultaneously
 explain mean and spreading on C without refitting. The normalized
 experimental plot in the original paper retains the full loop.
-Next use the [related Panjan thesis evidence](literature/sources/strnisa2018/related_detector_evidence.md)
-to audit the measurement apparatus/leading-edge definition and additional
-length curves, then assess finite fittings and bead-size/clearance
-sensitivity if justified. No reaction until the independent tracer
-transfer is qualified.
+The subsequent [Panjan thesis tracer audit](examples/biocatalysis/panjan_tracer_audit/REPORT.md)
+quantifies likely shared blank/R1 curves and a distinct 52 mm pulse with
+an integrated mean increment of 31.5 s despite a reported liquid V/Q
+of 21 s. The frozen A bead-volume-scaled pause scenario matches R2's
+variance but not mean or shape; the separate reported 58 s detector step
+time cannot be applied as one universal exponential filter to the blank.
+Next audit independently documented fittings/prechamber liquid volumes
+and apparatus changes before committing to another native flow field;
+if the available literature does not separate these effects, select a
+better-characterized inert tracer reference. No reaction until the
+independent tracer transfer is qualified.
 
 ## Acceptance criterion for every end-to-end showcase
 

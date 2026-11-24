@@ -1,0 +1,3414 @@
+{
+  "reaction_enabled": false,
+  "new_native_run": false,
+  "run_directory": "results/biocatalysis/panjan_tracer_audit/runs/20261124T131721Z-da46660b",
+  "versions": {
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "python": "3.12.9",
+    "numpy": "2.5.4"
+  },
+  "source_sha256": {
+    "literature/sources/panjan2018/evidence.toml": "2b7a29bbd008a9fcf6742d41b2bb14a6296bed5e390f88c80cafed0c39ce41d2",
+    "literature/sources/panjan2018/rtd_fig25.toml": "85b0a87f2b2da8d41708c51d9621479fbe4d3c8121625d8e3e52e3665110566f",
+    "literature/sources/strnisa2018/evidence.toml": "a1b615bb7e810153f54450d807d07c38e5de1bd921936ab1974ef0e838125187",
+    "literature/sources/strnisa2018/rtd_fig3b.toml": "e36ef356f9448d148ea0736fe5560844874caddcdbf7856e7ea4d4e8238bf3ea",
+    "examples/biocatalysis/strnisa_tracer/reference/summary.json": "19a0986da4e4054fe2b03996d8f07112c559d3649816fe39a3986aae541c8afe",
+    "examples/biocatalysis/panjan_tracer_audit/protocol.toml": "bd35f5b4add374a911488b375d0e51e1a567dcac929d51c1f9ee8ee356f322e3"
+  },
+  "code_sha256": {
+    "examples/biocatalysis/panjan_tracer_audit/audit.py": "86f320bcafc538e4e4859e2c9b4d150c78d31aecb17edd0b13ef1d51a06a92a4",
+    "examples/biocatalysis/panjan_tracer_audit/check.py": "5fd0b68b9234c4f1913a4f639138eda8ca24ca0ea7b03a02c44f3bfec5a700f0",
+    "examples/biocatalysis/panjan_tracer_audit/__init__.py": "54b2719fb18b7da776c8bc2bc8616ae256f1502c0b31a0999a9c6feb487785f1",
+    "examples/biocatalysis/panjan_tracer_audit/test_audit.py": "c59c59425ef5e5ea78df809f3b579892e6ca1d23d5e6d4bd11651cde46387239",
+    "examples/biocatalysis/strnisa_tracer/loop.py": "4db477ebd72eaaf5876283d060660dced0a8f2ce3d10c9ba78c0c2830e849463"
+  },
+  "output_sha256": {
+    "reference/predicted_narrow_samples.csv": "bd0a6e7b2d9cdfa77f2e7bd26a3e799a37e283221f8aa6116b5fba4cd73e5071",
+    "reference/A_impulse.csv": "2cb03f9adaf2ed8866f87965b2329634b510b17cb0f359d3094589081a545950",
+    "reference/A_impulse_manifest.json": "b1d29f9ffac082627bfca34b0344a278258f86d65b1b93769e35418f76918717",
+    "figures/measurement_audit.png": "4fe967bf0304760653eb549d2b478b870f935b166d30e13965d0c9bb17f10676",
+    "figures/detector_audit.png": "988a5aa38c847138220b038b3cc9fc20b2b9fc6a09d2b0449e95f1e866cc54fd"
+  },
+  "saved_prediction_manifest_sha256": "f8cea52bad3c5f76f10b7d735984897330238f16617d5b014dc33d3846d87be7",
+  "saved_prediction_sha256": "e5d201fc9de127f32658c030e26d3a64ba70388f4bd3e6eddf7fe53141dfe3a2",
+  "archived_A_impulse": {
+    "prior_reference_sha256": "19a0986da4e4054fe2b03996d8f07112c559d3649816fe39a3986aae541c8afe",
+    "marker_sha256": "c1facf26b0b51a1f877ac31039cbc1ccb2241fadc48ded585611021646e4baca",
+    "handoff_sha256": "4f2db9fc64b6cc323c65efe88498f30bdeaa81a088dcb423fb4f8378d1fc3541",
+    "source_run": "results/biocatalysis/strnisa_tracer/runs/20261124T111652Z-8d90b8bf/A_H16/dt0.00125_D1_n16384_seed223795.f64",
+    "dt_s": 0.05,
+    "kernel_sha256": "2cb03f9adaf2ed8866f87965b2329634b510b17cb0f359d3094589081a545950",
+    "moments": {
+      "recovery": 1.0,
+      "mean_s": 10.128349788011526,
+      "variance_s2": 8.960703724119831
+    },
+    "particle_count": 16384,
+    "note": "Binned actual recovered A_H16 stock TRT/Julia marker ages; no synthetic replacement."
+  },
+  "duplicate_audit": {
+    "blank": {
+      "article_series": "blank",
+      "count_core": 14,
+      "match_indices": [
+        15,
+        16,
+        17,
+        22,
+        25,
+        26,
+        27,
+        28,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "difference_mM_core": [
+        0.001160174732403263,
+        -0.011611835799965498,
+        -0.00898883205714096,
+        -0.0020580490905235393,
+        -0.012499621682152462,
+        0.007445295239248306,
+        -0.008050603795284328,
+        0.004963530159499019,
+        -0.005417511576526146,
+        -0.005699988902676478,
+        -0.006123704891902004,
+        -0.006325474410580789,
+        -0.006486890025523828,
+        0.0005044237966970178
+      ],
+      "rmse_mM": 0.007091353383015779,
+      "max_error_mM": 0.012499621682152462,
+      "correlation": 0.9999928496903824,
+      "all_matched_count": 49,
+      "all_matched_rmse_mM": 0.011762527249285105,
+      "all_matched_max_error_mM": 0.05847280651311948,
+      "combined_distinct_pixel_allowance_mM": 0.028409148229976897,
+      "all_core_within_reading_allowance": true,
+      "interpretation": "No time shift, amplitude scaling or normalization. Agreement suggests reuse, not proof of independent trials."
+    },
+    "R1": {
+      "article_series": "A",
+      "count_core": 20,
+      "match_indices": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "difference_mM_core": [
+        0.01110741200326859,
+        0.013125107190056884,
+        0.008353258073302783,
+        0.010249891548884005,
+        0.0044893717906040465,
+        -0.0017150409087696161,
+        0.01804828344581999,
+        0.009785821655922344,
+        0.015566518366070703,
+        0.014255016494658435,
+        0.027188442641969957,
+        0.011894313126116218,
+        0.010118741361742511,
+        0.016585454435398495,
+        0.008988832057141183,
+        0.015717845505079597,
+        0.01543536817892921,
+        0.01523359866025037,
+        0.007959807511879191,
+        0.007778214945068251
+      ],
+      "rmse_mM": 0.013305591431588463,
+      "max_error_mM": 0.027188442641969957,
+      "correlation": 0.9999919664475879,
+      "all_matched_count": 49,
+      "all_matched_rmse_mM": 0.014024497403803201,
+      "all_matched_max_error_mM": 0.03558205461900871,
+      "combined_distinct_pixel_allowance_mM": 0.028409148229976897,
+      "all_core_within_reading_allowance": true,
+      "interpretation": "No time shift, amplitude scaling or normalization. Agreement suggests reuse, not proof of independent trials."
+    },
+    "R2": {
+      "article_series": "C",
+      "count_core": 19,
+      "match_indices": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        22,
+        26,
+        27,
+        28,
+        29,
+        30,
+        32,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "difference_mM_core": [
+        -0.1553423524308183,
+        -0.2038981871008746,
+        -0.24501881500761669,
+        -0.2575083482138354,
+        -0.14195494486647897,
+        0.15259828697678657,
+        0.32480857116915374,
+        0.2532005689900432,
+        0.174238067855089,
+        0.09509397415332499,
+        0.03716594534063766,
+        -0.050240610151024434,
+        -0.10188351845686672,
+        -0.10974244120940635,
+        -0.11750047920260687,
+        -0.11093288136961132,
+        -0.10426439877727667,
+        -0.07623861263278953,
+        -0.06942889137737962
+      ],
+      "rmse_mM": 0.16518667970177017,
+      "max_error_mM": 0.32480857116915374,
+      "correlation": 0.9978198016869094,
+      "all_matched_count": 67,
+      "all_matched_rmse_mM": 0.11493657950531737,
+      "all_matched_max_error_mM": 0.36053186445123675,
+      "combined_distinct_pixel_allowance_mM": 0.028409148229976897,
+      "all_core_within_reading_allowance": false,
+      "interpretation": "No time shift, amplitude scaling or normalization. Agreement suggests reuse, not proof of independent trials."
+    }
+  },
+  "measurements": {
+    "0": {
+      "moments": {
+        "blank": {
+          "area_mM_min": 5.0557136083451875,
+          "observed_glucose_umol": 0.5055713608345188,
+          "mean_s": 106.88393903868698,
+          "variance_s2": 749.5970940384877,
+          "mean_min": 1.7813989839781164,
+          "variance_min2": 0.20822141501069105,
+          "skewness": 0.651273599852007,
+          "peak_mM": 4.644381223328592,
+          "peak_s": 95.0
+        },
+        "R1": {
+          "area_mM_min": 5.109056424845898,
+          "observed_glucose_umol": 0.5109056424845898,
+          "mean_s": 119.72099767981443,
+          "variance_s2": 1024.4567371716885,
+          "mean_min": 1.9953499613302406,
+          "variance_min2": 0.2845713158810246,
+          "skewness": 1.4585421274109447,
+          "peak_mM": 4.530583214793741,
+          "peak_s": 105.0
+        },
+        "R2": {
+          "area_mM_min": 5.208036984352774,
+          "observed_glucose_umol": 0.5208036984352774,
+          "mean_s": 138.3993399339934,
+          "variance_s2": 1107.7012125778556,
+          "mean_min": 2.3066556655665567,
+          "variance_min2": 0.3076947812716265,
+          "skewness": 1.2642770050352514,
+          "peak_mM": 4.587482219061166,
+          "peak_s": 125.0
+        }
+      },
+      "increment": {
+        "R1": {
+          "mean_s": 12.837058641127456,
+          "variance_s2": 274.85964313320073
+        },
+        "R2": {
+          "mean_s": 31.515400895306414,
+          "variance_s2": 358.10411853936785
+        }
+      },
+      "unclosed_increment": {
+        "R1": {
+          "mean_s": 12.811809437181282,
+          "variance_s2": 269.78301682480844
+        },
+        "R2": {
+          "mean_s": 31.53237622195209,
+          "variance_s2": 360.47441278529277
+        }
+      },
+      "truncated_windows": {
+        "240": {
+          "moments": {
+            "blank": {
+              "area_mM_min": 5.053046467520151,
+              "observed_glucose_umol": 0.505304646752015,
+              "mean_s": 106.81006002580497,
+              "variance_s2": 739.6398620326412,
+              "mean_min": 1.7801676670967495,
+              "variance_min2": 0.20545551723128921,
+              "skewness": 0.6008759394136495,
+              "peak_mM": 4.644381223328592,
+              "peak_s": 95.0
+            },
+            "R1": {
+              "area_mM_min": 5.0649004267425335,
+              "observed_glucose_umol": 0.5064900426742533,
+              "mean_s": 118.44547823415833,
+              "variance_s2": 842.3120220672371,
+              "mean_min": 1.9740913039026389,
+              "variance_min2": 0.23397556168534364,
+              "skewness": 0.9369526876661894,
+              "peak_mM": 4.530583214793741,
+              "peak_s": 105.0
+            },
+            "R2": {
+              "area_mM_min": 5.133357041251778,
+              "observed_glucose_umol": 0.5133357041251778,
+              "mean_s": 136.55736462302275,
+              "variance_s2": 881.0533408956843,
+              "mean_min": 2.2759560770503793,
+              "variance_min2": 0.24473703913769007,
+              "skewness": 0.7710465674810328,
+              "peak_mM": 4.587482219061166,
+              "peak_s": 125.0
+            }
+          },
+          "increment": {
+            "R1": {
+              "mean_s": 11.635418208353357,
+              "variance_s2": 102.67216003459589
+            },
+            "R2": {
+              "mean_s": 29.747304597217777,
+              "variance_s2": 141.4134788630431
+            }
+          },
+          "area_fraction": {
+            "blank": 0.9994724501758495,
+            "R1": 0.9913573085846872,
+            "R2": 0.9856606350290201
+          }
+        },
+        "300": {
+          "moments": {
+            "blank": {
+              "area_mM_min": 5.0557136083451875,
+              "observed_glucose_umol": 0.5055713608345188,
+              "mean_s": 106.88393903868698,
+              "variance_s2": 749.5970940384877,
+              "mean_min": 1.7813989839781164,
+              "variance_min2": 0.20822141501069105,
+              "skewness": 0.651273599852007,
+              "peak_mM": 4.644381223328592,
+              "peak_s": 95.0
+            },
+            "R1": {
+              "area_mM_min": 5.107871028923662,
+              "observed_glucose_umol": 0.5107871028923662,
+              "mean_s": 119.67877314922255,
+              "variance_s2": 1017.0098166173713,
+              "mean_min": 1.994646219153709,
+              "variance_min2": 0.2825027268381587,
+              "skewness": 1.4358020426002476,
+              "peak_mM": 4.530583214793741,
+              "peak_s": 105.0
+            },
+            "R2": {
+              "area_mM_min": 5.203295400663821,
+              "observed_glucose_umol": 0.5203295400663821,
+              "mean_s": 138.23973880852034,
+              "variance_s2": 1080.5680654278494,
+              "mean_min": 2.3039956468086724,
+              "variance_min2": 0.3001577959521804,
+              "skewness": 1.1876097625556858,
+              "peak_mM": 4.587482219061166,
+              "peak_s": 125.0
+            }
+          },
+          "increment": {
+            "R1": {
+              "mean_s": 12.794834110535575,
+              "variance_s2": 267.4127225788835
+            },
+            "R2": {
+              "mean_s": 31.355799769833368,
+              "variance_s2": 330.9709713893617
+            }
+          },
+          "area_fraction": {
+            "blank": 1.0,
+            "R1": 0.9997679814385154,
+            "R2": 0.9990895641288265
+          }
+        }
+      },
+      "wide_partial": {
+        "R3": {
+          "window_s": [
+            5.0,
+            420.0
+          ],
+          "first_mM": 0.7254623044096729,
+          "last_mM": 0.41251778093883357,
+          "peak_mM": 2.2190611664295874,
+          "partial_glucose_umol": 0.5253674727358938,
+          "full_moments_available": false
+        },
+        "R4": {
+          "window_s": [
+            5.0,
+            420.0
+          ],
+          "first_mM": 0.0,
+          "last_mM": 0.9246088193456614,
+          "peak_mM": 2.3044096728307255,
+          "partial_glucose_umol": 0.5797771455666192,
+          "full_moments_available": false
+        }
+      }
+    },
+    "2": {
+      "moments": {
+        "blank": {
+          "area_mM_min": 5.004148885727832,
+          "observed_glucose_umol": 0.5004148885727833,
+          "mean_s": 106.62264597891748,
+          "variance_s2": 702.51633291944,
+          "mean_min": 1.7770440996486245,
+          "variance_min2": 0.19514342581095553,
+          "skewness": 0.5677341186932696,
+          "peak_mM": 4.630156472261736,
+          "peak_s": 95.0
+        },
+        "R1": {
+          "area_mM_min": 5.052157420578473,
+          "observed_glucose_umol": 0.5052157420578473,
+          "mean_s": 119.01396058188647,
+          "variance_s2": 937.0249241777049,
+          "mean_min": 1.9835660096981078,
+          "variance_min2": 0.2602847011604736,
+          "skewness": 1.3031931173373226,
+          "peak_mM": 4.516358463726885,
+          "peak_s": 105.0
+        },
+        "R2": {
+          "area_mM_min": 5.149952584163111,
+          "observed_glucose_umol": 0.5149952584163111,
+          "mean_s": 137.7557831741282,
+          "variance_s2": 1025.283498463057,
+          "mean_min": 2.2959297195688033,
+          "variance_min2": 0.2848009717952936,
+          "skewness": 1.1254526138905279,
+          "peak_mM": 4.57325746799431,
+          "peak_s": 125.0
+        }
+      },
+      "increment": {
+        "R1": {
+          "mean_s": 12.39131460296899,
+          "variance_s2": 234.50859125826491
+        },
+        "R2": {
+          "mean_s": 31.133137195210722,
+          "variance_s2": 322.767165543617
+        }
+      },
+      "unclosed_increment": {
+        "R1": {
+          "mean_s": 12.369884057454712,
+          "variance_s2": 230.70356619631275
+        },
+        "R2": {
+          "mean_s": 31.13313719521075,
+          "variance_s2": 322.7671655436169
+        }
+      },
+      "truncated_windows": {
+        "240": {
+          "moments": {
+            "blank": {
+              "area_mM_min": 5.004148885727833,
+              "observed_glucose_umol": 0.5004148885727833,
+              "mean_s": 106.62264597891745,
+              "variance_s2": 702.5163329194398,
+              "mean_min": 1.777044099648624,
+              "variance_min2": 0.1951434258109555,
+              "skewness": 0.567734118693273,
+              "peak_mM": 4.630156472261736,
+              "peak_s": 95.0
+            },
+            "R1": {
+              "area_mM_min": 5.022818871503082,
+              "observed_glucose_umol": 0.5022818871503082,
+              "mean_s": 118.17068862469762,
+              "variance_s2": 818.2751982301443,
+              "mean_min": 1.9695114770782935,
+              "variance_min2": 0.22729866617504008,
+              "skewness": 0.9104568561745602,
+              "peak_mM": 4.516358463726885,
+              "peak_s": 105.0
+            },
+            "R2": {
+              "area_mM_min": 5.093646277856804,
+              "observed_glucose_umol": 0.5093646277856804,
+              "mean_s": 136.4038866069351,
+              "variance_s2": 866.641514251978,
+              "mean_min": 2.273398110115585,
+              "variance_min2": 0.2407337539588828,
+              "skewness": 0.7676436438677054,
+              "peak_mM": 4.57325746799431,
+              "peak_s": 125.0
+            }
+          },
+          "increment": {
+            "R1": {
+              "mean_s": 11.548042645780171,
+              "variance_s2": 115.75886531070444
+            },
+            "R2": {
+              "mean_s": 29.781240628017642,
+              "variance_s2": 164.1251813325382
+            }
+          },
+          "area_fraction": {
+            "blank": 1.0,
+            "R1": 0.9941928671984985,
+            "R2": 0.9890666359765218
+          }
+        },
+        "300": {
+          "moments": {
+            "blank": {
+              "area_mM_min": 5.004148885727832,
+              "observed_glucose_umol": 0.5004148885727833,
+              "mean_s": 106.62264597891748,
+              "variance_s2": 702.51633291944,
+              "mean_min": 1.7770440996486245,
+              "variance_min2": 0.19514342581095553,
+              "skewness": 0.5677341186932696,
+              "peak_mM": 4.630156472261736,
+              "peak_s": 95.0
+            },
+            "R1": {
+              "area_mM_min": 5.051564722617355,
+              "observed_glucose_umol": 0.5051564722617355,
+              "mean_s": 118.99253003637216,
+              "variance_s2": 933.2198991157526,
+              "mean_min": 1.983208833939536,
+              "variance_min2": 0.25922774975437574,
+              "skewness": 1.2883478741698715,
+              "peak_mM": 4.516358463726885,
+              "peak_s": 105.0
+            },
+            "R2": {
+              "area_mM_min": 5.149359886201991,
+              "observed_glucose_umol": 0.5149359886201992,
+              "mean_s": 137.7369168393186,
+              "variance_s2": 1022.3085996354648,
+              "mean_min": 2.2956152806553103,
+              "variance_min2": 0.28397461100985133,
+              "skewness": 1.1167595841040607,
+              "peak_mM": 4.57325746799431,
+              "peak_s": 125.0
+            }
+          },
+          "increment": {
+            "R1": {
+              "mean_s": 12.369884057454684,
+              "variance_s2": 230.70356619631264
+            },
+            "R2": {
+              "mean_s": 31.114270860401135,
+              "variance_s2": 319.79226671602487
+            }
+          },
+          "area_fraction": {
+            "blank": 1.0,
+            "R1": 0.9998826841858286,
+            "R2": 0.9998849119576475
+          }
+        }
+      },
+      "wide_partial": {
+        "R3": {
+          "window_s": [
+            5.0,
+            420.0
+          ],
+          "first_mM": 0.7112375533428166,
+          "last_mM": 0.39829302987197723,
+          "peak_mM": 2.204836415362731,
+          "partial_glucose_umol": 0.5163584637268849,
+          "full_moments_available": false
+        },
+        "R4": {
+          "window_s": [
+            5.0,
+            420.0
+          ],
+          "first_mM": 0.0,
+          "last_mM": 0.9103840682788051,
+          "peak_mM": 2.2901849217638692,
+          "partial_glucose_umol": 0.5738501659554291,
+          "full_moments_available": false
+        }
+      }
+    },
+    "5": {
+      "moments": {
+        "blank": {
+          "area_mM_min": 4.937174016121385,
+          "observed_glucose_umol": 0.49371740161213845,
+          "mean_s": 106.36134453781513,
+          "variance_s2": 657.8652119377164,
+          "mean_min": 1.7726890756302522,
+          "variance_min2": 0.18274033664936565,
+          "skewness": 0.5314872673194572,
+          "peak_mM": 4.608819345661451,
+          "peak_s": 95.0
+        },
+        "R1": {
+          "area_mM_min": 4.96917970602181,
+          "observed_glucose_umol": 0.496917970602181,
+          "mean_s": 118.00691793893132,
+          "variance_s2": 814.530705958915,
+          "mean_min": 1.9667819656488554,
+          "variance_min2": 0.22625852943303193,
+          "skewness": 0.9856396794754978,
+          "peak_mM": 4.4950213371266,
+          "peak_s": 105.0
+        },
+        "R2": {
+          "area_mM_min": 5.071123755334281,
+          "observed_glucose_umol": 0.5071123755334281,
+          "mean_s": 136.96820944366527,
+          "variance_s2": 936.72297662093,
+          "mean_min": 2.2828034907277543,
+          "variance_min2": 0.26020082683914725,
+          "skewness": 0.9752680964630213,
+          "peak_mM": 4.551920341394025,
+          "peak_s": 125.0
+        }
+      },
+      "increment": {
+        "R1": {
+          "mean_s": 11.645573401116195,
+          "variance_s2": 156.66549402119858
+        },
+        "R2": {
+          "mean_s": 30.606864905850145,
+          "variance_s2": 278.85776468321365
+        }
+      },
+      "unclosed_increment": {
+        "R1": {
+          "mean_s": 11.645573401116181,
+          "variance_s2": 156.66549402119847
+        },
+        "R2": {
+          "mean_s": 30.60686490585013,
+          "variance_s2": 278.85776468321353
+        }
+      },
+      "truncated_windows": {
+        "240": {
+          "moments": {
+            "blank": {
+              "area_mM_min": 4.937174016121385,
+              "observed_glucose_umol": 0.49371740161213845,
+              "mean_s": 106.36134453781513,
+              "variance_s2": 657.8652119377164,
+              "mean_min": 1.7726890756302522,
+              "variance_min2": 0.18274033664936565,
+              "skewness": 0.531487267319457,
+              "peak_mM": 4.608819345661451,
+              "peak_s": 95.0
+            },
+            "R1": {
+              "area_mM_min": 4.959696538643907,
+              "observed_glucose_umol": 0.49596965386439074,
+              "mean_s": 117.7497610540153,
+              "variance_s2": 781.1623209574842,
+              "mean_min": 1.9624960175669215,
+              "variance_min2": 0.21698953359930118,
+              "skewness": 0.8607611727858095,
+              "peak_mM": 4.4950213371266,
+              "peak_s": 105.0
+            },
+            "R2": {
+              "area_mM_min": 5.0358582266477,
+              "observed_glucose_umol": 0.50358582266477,
+              "mean_s": 136.14753148355206,
+              "variance_s2": 845.5302621345205,
+              "mean_min": 2.2691255247258675,
+              "variance_min2": 0.23486951725958904,
+              "skewness": 0.7581327567331813,
+              "peak_mM": 4.551920341394025,
+              "peak_s": 125.0
+            }
+          },
+          "increment": {
+            "R1": {
+              "mean_s": 11.388416516200166,
+              "variance_s2": 123.29710901976784
+            },
+            "R2": {
+              "mean_s": 29.78618694573693,
+              "variance_s2": 187.66505019680415
+            }
+          },
+          "area_fraction": {
+            "blank": 1.0,
+            "R1": 0.9980916030534354,
+            "R2": 0.9930458158017765
+          }
+        },
+        "300": {
+          "moments": {
+            "blank": {
+              "area_mM_min": 4.937174016121385,
+              "observed_glucose_umol": 0.49371740161213845,
+              "mean_s": 106.36134453781513,
+              "variance_s2": 657.8652119377164,
+              "mean_min": 1.7726890756302522,
+              "variance_min2": 0.18274033664936565,
+              "skewness": 0.5314872673194572,
+              "peak_mM": 4.608819345661451,
+              "peak_s": 95.0
+            },
+            "R1": {
+              "area_mM_min": 4.969179706021811,
+              "observed_glucose_umol": 0.4969179706021811,
+              "mean_s": 118.0069179389313,
+              "variance_s2": 814.5307059589148,
+              "mean_min": 1.966781965648855,
+              "variance_min2": 0.2262585294330319,
+              "skewness": 0.9856396794755015,
+              "peak_mM": 4.4950213371266,
+              "peak_s": 105.0
+            },
+            "R2": {
+              "area_mM_min": 5.071123755334281,
+              "observed_glucose_umol": 0.5071123755334281,
+              "mean_s": 136.96820944366527,
+              "variance_s2": 936.72297662093,
+              "mean_min": 2.2828034907277543,
+              "variance_min2": 0.26020082683914725,
+              "skewness": 0.9752680964630215,
+              "peak_mM": 4.551920341394025,
+              "peak_s": 125.0
+            }
+          },
+          "increment": {
+            "R1": {
+              "mean_s": 11.645573401116167,
+              "variance_s2": 156.66549402119847
+            },
+            "R2": {
+              "mean_s": 30.606864905850145,
+              "variance_s2": 278.85776468321365
+            }
+          },
+          "area_fraction": {
+            "blank": 1.0,
+            "R1": 1.0000000000000002,
+            "R2": 1.0
+          }
+        }
+      },
+      "wide_partial": {
+        "R3": {
+          "window_s": [
+            5.0,
+            420.0
+          ],
+          "first_mM": 0.689900426742532,
+          "last_mM": 0.37695590327169276,
+          "peak_mM": 2.1834992887624467,
+          "partial_glucose_umol": 0.5034672830725463,
+          "full_moments_available": false
+        },
+        "R4": {
+          "window_s": [
+            5.0,
+            420.0
+          ],
+          "first_mM": 0.0,
+          "last_mM": 0.8890469416785206,
+          "peak_mM": 2.268847795163585,
+          "partial_glucose_umol": 0.5654042200094831,
+          "full_moments_available": false
+        }
+      }
+    }
+  },
+  "onset_audit": {
+    "0": [
+      {
+        "level_mM": 0.05,
+        "crossing_s": {
+          "blank": 52.92916666666667,
+          "R1": 61.03382352941176,
+          "R2": 75.7859375
+        },
+        "delay_s": {
+          "R1": 8.104656862745095,
+          "R2": 22.856770833333336
+        }
+      },
+      {
+        "level_mM": 0.1,
+        "crossing_s": {
+          "blank": 55.12409638554217,
+          "R1": 62.06764705882353,
+          "R2": 76.884375
+        },
+        "delay_s": {
+          "R1": 6.943550673281365,
+          "R2": 21.76027861445784
+        }
+      },
+      {
+        "level_mM": 0.2,
+        "crossing_s": {
+          "blank": 55.971084337349396,
+          "R1": 64.13529411764706,
+          "R2": 79.08125
+        },
+        "delay_s": {
+          "R1": 8.164209780297668,
+          "R2": 23.1101656626506
+        }
+      },
+      {
+        "level_mM": 0.5,
+        "crossing_s": {
+          "blank": 58.51204819277108,
+          "R1": 67.75,
+          "R2": 83.36111111111111
+        },
+        "delay_s": {
+          "R1": 9.237951807228917,
+          "R2": 24.84906291834003
+        }
+      },
+      {
+        "level_mM": 1.0,
+        "crossing_s": {
+          "blank": 62.11111111111111,
+          "R1": 72.05050505050505,
+          "R2": 88.70422535211267
+        },
+        "delay_s": {
+          "R1": 9.939393939393945,
+          "R2": 26.593114241001565
+        }
+      },
+      {
+        "level_mM": 2.0,
+        "crossing_s": {
+          "blank": 69.20430107526882,
+          "R1": 79.11,
+          "R2": 96.85436893203884
+        },
+        "delay_s": {
+          "R1": 9.905698924731183,
+          "R2": 27.650067856770022
+        }
+      }
+    ],
+    "2": [
+      {
+        "level_mM": 0.05,
+        "crossing_s": {
+          "blank": 53.515,
+          "R1": 61.0984375,
+          "R2": 76.0984375
+        },
+        "delay_s": {
+          "R1": 7.583437500000002,
+          "R2": 22.583437500000002
+        }
+      },
+      {
+        "level_mM": 0.1,
+        "crossing_s": {
+          "blank": 55.244578313253015,
+          "R1": 62.196875,
+          "R2": 77.196875
+        },
+        "delay_s": {
+          "R1": 6.952296686746983,
+          "R2": 21.95229668674699
+        }
+      },
+      {
+        "level_mM": 0.2,
+        "crossing_s": {
+          "blank": 56.091566265060244,
+          "R1": 64.39375,
+          "R2": 79.39375
+        },
+        "delay_s": {
+          "R1": 8.302183734939753,
+          "R2": 23.302183734939753
+        }
+      },
+      {
+        "level_mM": 0.5,
+        "crossing_s": {
+          "blank": 58.632530120481924,
+          "R1": 67.90151515151516,
+          "R2": 83.54629629629629
+        },
+        "delay_s": {
+          "R1": 9.268985031033232,
+          "R2": 24.913766175814366
+        }
+      },
+      {
+        "level_mM": 1.0,
+        "crossing_s": {
+          "blank": 62.2037037037037,
+          "R1": 72.15151515151516,
+          "R2": 88.84507042253522
+        },
+        "delay_s": {
+          "R1": 9.947811447811453,
+          "R2": 26.641366718831513
+        }
+      },
+      {
+        "level_mM": 2.0,
+        "crossing_s": {
+          "blank": 69.31182795698925,
+          "R1": 79.21,
+          "R2": 96.95145631067962
+        },
+        "delay_s": {
+          "R1": 9.898172043010746,
+          "R2": 27.63962835369037
+        }
+      }
+    ],
+    "5": [
+      {
+        "level_mM": 0.05,
+        "crossing_s": {
+          "blank": 55.00180722891566,
+          "R1": 61.21206896551724,
+          "R2": 76.21206896551725
+        },
+        "delay_s": {
+          "R1": 6.210261736601581,
+          "R2": 21.210261736601588
+        }
+      },
+      {
+        "level_mM": 0.1,
+        "crossing_s": {
+          "blank": 55.42530120481928,
+          "R1": 62.42413793103448,
+          "R2": 77.42413793103448
+        },
+        "delay_s": {
+          "R1": 6.9988367262152025,
+          "R2": 21.998836726215202
+        }
+      },
+      {
+        "level_mM": 0.2,
+        "crossing_s": {
+          "blank": 56.272289156626506,
+          "R1": 64.84827586206896,
+          "R2": 79.84827586206896
+        },
+        "delay_s": {
+          "R1": 8.575986705442453,
+          "R2": 23.575986705442453
+        }
+      },
+      {
+        "level_mM": 0.5,
+        "crossing_s": {
+          "blank": 58.81325301204819,
+          "R1": 68.12878787878788,
+          "R2": 83.82407407407408
+        },
+        "delay_s": {
+          "R1": 9.315534866739682,
+          "R2": 25.010821062025883
+        }
+      },
+      {
+        "level_mM": 1.0,
+        "crossing_s": {
+          "blank": 62.342592592592595,
+          "R1": 72.3030303030303,
+          "R2": 89.05633802816901
+        },
+        "delay_s": {
+          "R1": 9.960437710437702,
+          "R2": 26.713745435576413
+        }
+      },
+      {
+        "level_mM": 2.0,
+        "crossing_s": {
+          "blank": 69.47311827956989,
+          "R1": 79.36,
+          "R2": 97.09708737864078
+        },
+        "delay_s": {
+          "R1": 9.886881720430111,
+          "R2": 27.62396909907089
+        }
+      }
+    ]
+  },
+  "detector_audit": {
+    "figure4_readings_mM_uA": [
+      [
+        0.0,
+        0.005084745762711864
+      ],
+      [
+        0.1,
+        0.022881355932203386
+      ],
+      [
+        0.25,
+        0.06101694915254237
+      ],
+      [
+        0.5,
+        0.12838983050847455
+      ],
+      [
+        1.0,
+        0.27076271186440676
+      ],
+      [
+        1.5,
+        0.42507836990595615
+      ],
+      [
+        2.0,
+        0.5717868338557994
+      ],
+      [
+        2.5,
+        0.6946708463949843
+      ],
+      [
+        3.0,
+        0.7548589341692791
+      ],
+      [
+        4.0,
+        0.7548589341692791
+      ]
+    ],
+    "illustrative_linear_fit_slope_uA_per_mM": 0.2829499935240541,
+    "intercept_uA": -0.005185725723343328,
+    "fit_max_mM": 2.5,
+    "at_4_mM_measured_uA": 0.7548589341692791,
+    "at_4_mM_linear_extrapolated_uA": 1.126614248372873,
+    "pulse_peaks_mM": {
+      "blank": 4.644381223328592,
+      "R1": 4.530583214793741,
+      "R2": 4.587482219061166
+    },
+    "reported_separate_T90_s": 58.0,
+    "illustrative_first_order_tau_s": 25.189079950388603,
+    "first_order_decay_necessary_bound": {
+      "blank": {
+        "tau_upper_s": 19.8084520058029,
+        "T90_upper_s": 45.61064630384976,
+        "earlier_time_s": 140.0,
+        "later_time_s": 170.0,
+        "earlier_reading_mM": 1.7496443812233287,
+        "later_reading_mM": 0.3413940256045519,
+        "earlier_lower_mM": 1.7140825035561877,
+        "later_upper_mM": 0.3769559032716927,
+        "minimum_later_if_reported_first_order_mM": 0.5209431629711809,
+        "compatible_with_reported_T90_as_single_exponential": false
+      },
+      "R1": {
+        "tau_upper_s": 23.366707908703283,
+        "T90_upper_s": 53.80383330292626,
+        "earlier_time_s": 150.0,
+        "later_time_s": 170.0,
+        "earlier_reading_mM": 1.6927453769559033,
+        "later_reading_mM": 0.6685633001422475,
+        "earlier_lower_mM": 1.6571834992887624,
+        "later_upper_mM": 0.7041251778093883,
+        "minimum_later_if_reported_first_order_mM": 0.7491055490269819,
+        "compatible_with_reported_T90_as_single_exponential": false
+      },
+      "R2": {
+        "tau_upper_s": 28.29000123386536,
+        "T90_upper_s": 65.14013512188154,
+        "earlier_time_s": 160.0,
+        "later_time_s": 185.0,
+        "earlier_reading_mM": 2.2901849217638692,
+        "later_reading_mM": 0.8961593172119489,
+        "earlier_lower_mM": 2.2546230440967285,
+        "later_upper_mM": 0.9317211948790897,
+        "minimum_later_if_reported_first_order_mM": 0.8356789422207136,
+        "compatible_with_reported_T90_as_single_exponential": true
+      }
+    },
+    "note": "No correction to the pulse concentration or secondary detector convolution. Different calibration, step transients or response shape may explain the incompatibility."
+  },
+  "geometry_volume_audit": {
+    "scenarios": {
+      "0": {
+        "narrow": {
+          "R1": {
+            "nominal_mean_s": 10.2,
+            "measured_increment": {
+              "mean_s": 12.837058641127456,
+              "variance_s2": 274.85964313320073
+            },
+            "apparent_liquid_volume_ul": 21.395097735212428,
+            "reported_liquid_volume_ul": 17.0,
+            "apparent_extra_hold_up_ul": 4.395097735212428,
+            "implied_additional_accessible_bead_fraction": 0.33808444117018677,
+            "nominal_mean_relative": -0.20542545725224237,
+            "additional_delay_interval_s": [
+              1.995205709071083,
+              3.27891157318383
+            ],
+            "independent_storage_cases": {
+              "dry_sorption": {
+                "added_time_s": 1.7159999999999997,
+                "mean_s": 11.915999999999999,
+                "variance_s2": 68.20810999008462,
+                "mean_relative": -0.07174997535467842
+              },
+              "aqueous_tracers": {
+                "added_time_s": 3.12,
+                "mean_s": 13.32,
+                "variance_s2": 116.57884804135223,
+                "mean_relative": 0.03762087347060117
+              }
+            }
+          },
+          "R2": {
+            "nominal_mean_s": 21.0,
+            "measured_increment": {
+              "mean_s": 31.515400895306414,
+              "variance_s2": 358.10411853936785
+            },
+            "apparent_liquid_volume_ul": 52.52566815884403,
+            "reported_liquid_volume_ul": 35.0,
+            "apparent_extra_hold_up_ul": 17.525668158844027,
+            "implied_additional_accessible_bead_fraction": 0.6396229255052563,
+            "nominal_mean_relative": -0.3336591189253274,
+            "additional_delay_interval_s": [
+              8.939630850541093,
+              12.091170940071734
+            ],
+            "independent_storage_cases": {
+              "dry_sorption": {
+                "added_time_s": 3.6168000000000005,
+                "mean_s": 24.6168,
+                "variance_s2": 143.86791692122318,
+                "mean_relative": -0.21889618089338092
+              },
+              "aqueous_tracers": {
+                "added_time_s": 6.576000000000001,
+                "mean_s": 27.576,
+                "variance_s2": 245.81854942927953,
+                "mean_relative": -0.12499923159451565
+              }
+            }
+          }
+        },
+        "common_positive_delay": {
+          "feasible": false,
+          "lower_equivalent_R1_s": 8.939630850541093,
+          "upper_equivalent_R1_s": 3.27891157318383
+        },
+        "bead_volume_scaled_positive_delay": {
+          "feasible": false,
+          "lower_equivalent_R1_s": 4.2414306955121965,
+          "upper_equivalent_R1_s": 3.27891157318383
+        },
+        "envelope_ratio_R2_R1": 2.107692307692308,
+        "prior_article_C": {
+          "measured_increment": {
+            "mean_s": 31.914499365587105,
+            "variance_s2": 435.7061931105342
+          },
+          "base_increment": {
+            "mean_s": 33.263985906082766,
+            "variance_s2": 39.34211532800771
+          },
+          "apparent_extra_hold_up_ul": -2.2491442341594357
+        }
+      },
+      "2": {
+        "narrow": {
+          "R1": {
+            "nominal_mean_s": 10.2,
+            "measured_increment": {
+              "mean_s": 12.39131460296899,
+              "variance_s2": 234.50859125826491
+            },
+            "apparent_liquid_volume_ul": 20.652191004948317,
+            "reported_liquid_volume_ul": 17.0,
+            "apparent_extra_hold_up_ul": 3.6521910049483175,
+            "implied_additional_accessible_bead_fraction": 0.28093776961140904,
+            "nominal_mean_relative": -0.17684278651467267,
+            "additional_delay_interval_s": [
+              1.5717488728205407,
+              2.8108803331174403
+            ],
+            "independent_storage_cases": {
+              "dry_sorption": {
+                "added_time_s": 1.7159999999999997,
+                "mean_s": 11.915999999999999,
+                "variance_s2": 68.20810999008462,
+                "mean_relative": -0.03835869059890584
+              },
+              "aqueous_tracers": {
+                "added_time_s": 3.12,
+                "mean_s": 13.32,
+                "variance_s2": 116.57884804135223,
+                "mean_relative": 0.07494647878672178
+              }
+            }
+          },
+          "R2": {
+            "nominal_mean_s": 21.0,
+            "measured_increment": {
+              "mean_s": 31.133137195210722,
+              "variance_s2": 322.767165543617
+            },
+            "apparent_liquid_volume_ul": 51.88856199201787,
+            "reported_liquid_volume_ul": 35.0,
+            "apparent_extra_hold_up_ul": 16.88856199201787,
+            "implied_additional_accessible_bead_fraction": 0.61637087562109,
+            "nominal_mean_relative": -0.3254775492644385,
+            "additional_delay_interval_s": [
+              8.576480335450185,
+              11.689794054971259
+            ],
+            "independent_storage_cases": {
+              "dry_sorption": {
+                "added_time_s": 3.6168000000000005,
+                "mean_s": 24.6168,
+                "variance_s2": 143.86791692122318,
+                "mean_relative": -0.20930551117775376
+              },
+              "aqueous_tracers": {
+                "added_time_s": 6.576000000000001,
+                "mean_s": 27.576,
+                "variance_s2": 245.81854942927953,
+                "mean_relative": -0.11425566183410274
+              }
+            }
+          }
+        },
+        "common_positive_delay": {
+          "feasible": false,
+          "lower_equivalent_R1_s": 8.576480335450185,
+          "upper_equivalent_R1_s": 2.8108803331174403
+        },
+        "bead_volume_scaled_positive_delay": {
+          "feasible": false,
+          "lower_equivalent_R1_s": 4.069133005870524,
+          "upper_equivalent_R1_s": 2.8108803331174403
+        },
+        "envelope_ratio_R2_R1": 2.107692307692308,
+        "prior_article_C": {
+          "measured_increment": {
+            "mean_s": 31.710463879390915,
+            "variance_s2": 428.84972610609475
+          },
+          "base_increment": {
+            "mean_s": 33.26398590608281,
+            "variance_s2": 39.342115328007935
+          },
+          "apparent_extra_hold_up_ul": -2.589203377819824
+        }
+      },
+      "5": {
+        "narrow": {
+          "R1": {
+            "nominal_mean_s": 10.2,
+            "measured_increment": {
+              "mean_s": 11.645573401116195,
+              "variance_s2": 156.66549402119858
+            },
+            "apparent_liquid_volume_ul": 19.409289001860326,
+            "reported_liquid_volume_ul": 17.0,
+            "apparent_extra_hold_up_ul": 2.4092890018603264,
+            "implied_additional_accessible_bead_fraction": 0.18532992322002512,
+            "nominal_mean_relative": -0.1241307191432619,
+            "additional_delay_interval_s": [
+              0.8632947310603853,
+              2.0278520711720063
+            ],
+            "independent_storage_cases": {
+              "dry_sorption": {
+                "added_time_s": 1.7159999999999997,
+                "mean_s": 11.915999999999999,
+                "variance_s2": 68.20810999008462,
+                "mean_relative": 0.023221406930283406
+              },
+              "aqueous_tracers": {
+                "added_time_s": 3.12,
+                "mean_s": 13.32,
+                "variance_s2": 116.57884804135223,
+                "mean_relative": 0.14378223735409335
+              }
+            }
+          },
+          "R2": {
+            "nominal_mean_s": 21.0,
+            "measured_increment": {
+              "mean_s": 30.606864905850145,
+              "variance_s2": 278.85776468321365
+            },
+            "apparent_liquid_volume_ul": 51.01144150975024,
+            "reported_liquid_volume_ul": 35.0,
+            "apparent_extra_hold_up_ul": 16.01144150975024,
+            "implied_additional_accessible_bead_fraction": 0.5843591791879649,
+            "nominal_mean_relative": -0.3138794167714285,
+            "additional_delay_interval_s": [
+              8.076521660557635,
+              11.137208151142652
+            ],
+            "independent_storage_cases": {
+              "dry_sorption": {
+                "added_time_s": 3.6168000000000005,
+                "mean_s": 24.6168,
+                "variance_s2": 143.86791692122318,
+                "mean_relative": -0.19570984889423326
+              },
+              "aqueous_tracers": {
+                "added_time_s": 6.576000000000001,
+                "mean_s": 27.576,
+                "variance_s2": 245.81854942927953,
+                "mean_relative": -0.09902565699471
+              }
+            }
+          }
+        },
+        "common_positive_delay": {
+          "feasible": false,
+          "lower_equivalent_R1_s": 8.076521660557635,
+          "upper_equivalent_R1_s": 2.0278520711720063
+        },
+        "bead_volume_scaled_positive_delay": {
+          "feasible": false,
+          "lower_equivalent_R1_s": 3.8319263353010666,
+          "upper_equivalent_R1_s": 2.0278520711720063
+        },
+        "envelope_ratio_R2_R1": 2.107692307692308,
+        "prior_article_C": {
+          "measured_increment": {
+            "mean_s": 31.242115778702185,
+            "variance_s2": 385.9912093765553
+          },
+          "base_increment": {
+            "mean_s": 33.263985906082866,
+            "variance_s2": 39.34211532800782
+          },
+          "apparent_extra_hold_up_ul": -3.369783545634467
+        }
+      }
+    },
+    "article_B_geometry": {
+      "reactor": "B",
+      "length_mm": 52.2,
+      "width_mm": 3.0,
+      "depth_mm": 0.4,
+      "layers": 1,
+      "empty_volume_ul": 61.6,
+      "void_volume_ul": 35.3,
+      "porosity": 0.57,
+      "activity_U_ul_void": 5.51,
+      "BPN_mmol_g_CALB": 12.72
+    },
+    "note": "Reported liquid inventory is used as that inventory, not fitted to the pulse. R1/A likely re-use measurements, so do not treat them as independent calibrations."
+  },
+  "prediction_models": {
+    "R1": {
+      "geometry": {
+        "reactor": "R1",
+        "length_mm": 25.0,
+        "width_mm": 3.0,
+        "depth_mm": 0.4,
+        "reported_volume_ul": 17.0,
+        "reported_onset_min": 0.21,
+        "reported_V_over_Q_min": 0.17,
+        "box_volume_ul": 30.0,
+        "nominal_time_s": 10.2,
+        "envelope_volume_ul": 13.0
+      },
+      "kernel_moments": {
+        "volume_plug": {
+          "recovery": 1.0,
+          "mean_s": 10.2,
+          "variance_s2": 7.105427357601014e-17
+        },
+        "prior_trt_independent": {
+          "recovery": 0.9999999999999999,
+          "mean_s": 10.200000000000001,
+          "variance_s2": 9.088319038535344
+        },
+        "extra_mixed_volume": {
+          "recovery": 1.0,
+          "mean_s": 12.060510426528602,
+          "variance_s2": 12.550443055222921
+        },
+        "common_rare_delay": {
+          "recovery": 1.0000000000000002,
+          "mean_s": 12.060566305186235,
+          "variance_s2": 164.17575998317912
+        },
+        "bead_volume_rare_delay": {
+          "recovery": 0.9999999999999994,
+          "mean_s": 12.099629358624126,
+          "variance_s2": 167.43185946553402
+        }
+      }
+    },
+    "R2": {
+      "geometry": {
+        "reactor": "R2",
+        "length_mm": 52.0,
+        "width_mm": 3.0,
+        "depth_mm": 0.4,
+        "reported_volume_ul": 35.0,
+        "reported_onset_min": 0.35,
+        "reported_V_over_Q_min": 0.35,
+        "box_volume_ul": 62.400000000000006,
+        "nominal_time_s": 21.0,
+        "envelope_volume_ul": 27.400000000000006
+      },
+      "kernel_moments": {
+        "volume_plug": {
+          "recovery": 1.0,
+          "mean_s": 21.0,
+          "variance_s2": 0.0
+        },
+        "prior_trt_independent": {
+          "recovery": 1.0000000000000002,
+          "mean_s": 20.99999999999999,
+          "variance_s2": 19.26158830026546
+        },
+        "prior_trt_full_memory": {
+          "recovery": 1.0,
+          "mean_s": 20.999999999999996,
+          "variance_s2": 38.52192982815444
+        },
+        "extra_mixed_volume": {
+          "recovery": 0.9999999999999999,
+          "mean_s": 22.8605104265286,
+          "variance_s2": 22.723712316953044
+        },
+        "common_rare_delay": {
+          "recovery": 1.0000000000000002,
+          "mean_s": 22.86056630518622,
+          "variance_s2": 174.34902924490922
+        },
+        "bead_volume_rare_delay": {
+          "recovery": 0.9999999999999996,
+          "mean_s": 25.003834197980265,
+          "variance_s2": 353.0010508395114
+        }
+      }
+    }
+  },
+  "prediction_scores": {
+    "R1__volume_plug__bg0": {
+      "observed": {
+        "area_mM_min": 5.109056424845898,
+        "observed_glucose_umol": 0.5109056424845898,
+        "mean_s": 119.72099767981443,
+        "variance_s2": 1024.4567371716885,
+        "mean_min": 1.9953499613302406,
+        "variance_min2": 0.2845713158810246,
+        "skewness": 1.4585421274109447,
+        "peak_mM": 4.530583214793741,
+        "peak_s": 105.0
+      },
+      "predicted": {
+        "area_mM_min": 5.0557136083451875,
+        "observed_glucose_umol": 0.5055713608345188,
+        "mean_s": 117.08393903868695,
+        "variance_s2": 749.5970940384877,
+        "mean_min": 1.9513989839781158,
+        "variance_min2": 0.20822141501069105,
+        "skewness": 0.6512735998520098,
+        "peak_mM": 4.644381223328592,
+        "peak_s": 105.2
+      },
+      "blank": {
+        "area_mM_min": 5.0557136083451875,
+        "observed_glucose_umol": 0.5055713608345188,
+        "mean_s": 106.88393903868698,
+        "variance_s2": 749.5970940384877,
+        "mean_min": 1.7813989839781164,
+        "variance_min2": 0.20822141501069105,
+        "skewness": 0.651273599852007,
+        "peak_mM": 4.644381223328592,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 12.837058641127456,
+        "variance_s2": 274.85964313320073
+      },
+      "incremental_predicted": {
+        "mean_s": 10.199999999999974,
+        "variance_s2": 0.0
+      },
+      "incremental_mean_relative": -0.20542545725224426,
+      "incremental_variance_relative": -1.0,
+      "whole_mean_relative": -0.02202670118219452,
+      "whole_variance_relative": -0.26829795066996276,
+      "whole_CDF_max": 0.025149565420815367,
+      "dose_ratio": 0.989559164733179,
+      "gates": {
+        "incremental_mean_relative": false,
+        "incremental_variance_relative": false,
+        "whole_mean_relative": true,
+        "whole_variance_relative": false,
+        "whole_CDF_max": true
+      },
+      "all_gates": false
+    },
+    "R1__prior_trt_independent__bg0": {
+      "observed": {
+        "area_mM_min": 5.109056424845898,
+        "observed_glucose_umol": 0.5109056424845898,
+        "mean_s": 119.72099767981443,
+        "variance_s2": 1024.4567371716885,
+        "mean_min": 1.9953499613302406,
+        "variance_min2": 0.2845713158810246,
+        "skewness": 1.4585421274109447,
+        "peak_mM": 4.530583214793741,
+        "peak_s": 105.0
+      },
+      "predicted": {
+        "area_mM_min": 5.0557136083451875,
+        "observed_glucose_umol": 0.5055713608345188,
+        "mean_s": 117.08393903868698,
+        "variance_s2": 758.6854130770231,
+        "mean_min": 1.9513989839781163,
+        "variance_min2": 0.21074594807695085,
+        "skewness": 0.640643574480499,
+        "peak_mM": 4.626469930689436,
+        "peak_s": 106.4
+      },
+      "blank": {
+        "area_mM_min": 5.0557136083451875,
+        "observed_glucose_umol": 0.5055713608345188,
+        "mean_s": 106.88393903868698,
+        "variance_s2": 749.5970940384877,
+        "mean_min": 1.7813989839781164,
+        "variance_min2": 0.20822141501069105,
+        "skewness": 0.651273599852007,
+        "peak_mM": 4.644381223328592,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 12.837058641127456,
+        "variance_s2": 274.85964313320073
+      },
+      "incremental_predicted": {
+        "mean_s": 10.200000000000003,
+        "variance_s2": 9.08831903853536
+      },
+      "incremental_mean_relative": -0.20542545725224204,
+      "incremental_variance_relative": -0.9669346909756008,
+      "whole_mean_relative": -0.022026701182194297,
+      "whole_variance_relative": -0.2594265960204475,
+      "whole_CDF_max": 0.024078110118483154,
+      "dose_ratio": 0.989559164733179,
+      "gates": {
+        "incremental_mean_relative": false,
+        "incremental_variance_relative": false,
+        "whole_mean_relative": true,
+        "whole_variance_relative": false,
+        "whole_CDF_max": true
+      },
+      "all_gates": false
+    },
+    "R1__extra_mixed_volume__bg0": {
+      "observed": {
+        "area_mM_min": 5.109056424845898,
+        "observed_glucose_umol": 0.5109056424845898,
+        "mean_s": 119.72099767981443,
+        "variance_s2": 1024.4567371716885,
+        "mean_min": 1.9953499613302406,
+        "variance_min2": 0.2845713158810246,
+        "skewness": 1.4585421274109447,
+        "peak_mM": 4.530583214793741,
+        "peak_s": 105.0
+      },
+      "predicted": {
+        "area_mM_min": 5.0557136083451875,
+        "observed_glucose_umol": 0.5055713608345188,
+        "mean_s": 118.94444946521557,
+        "variance_s2": 762.1475370937106,
+        "mean_min": 1.9824074910869263,
+        "variance_min2": 0.2117076491926974,
+        "skewness": 0.6368954829166084,
+        "peak_mM": 4.616465539904363,
+        "peak_s": 108.05000000000001
+      },
+      "blank": {
+        "area_mM_min": 5.0557136083451875,
+        "observed_glucose_umol": 0.5055713608345188,
+        "mean_s": 106.88393903868698,
+        "variance_s2": 749.5970940384877,
+        "mean_min": 1.7813989839781164,
+        "variance_min2": 0.20822141501069105,
+        "skewness": 0.651273599852007,
+        "peak_mM": 4.644381223328592,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 12.837058641127456,
+        "variance_s2": 274.85964313320073
+      },
+      "incremental_predicted": {
+        "mean_s": 12.060510426528595,
+        "variance_s2": 12.5504430552229
+      },
+      "incremental_mean_relative": -0.060492690444752695,
+      "incremental_variance_relative": -0.9543387202567938,
+      "whole_mean_relative": -0.006486315931610309,
+      "whole_variance_relative": -0.25604712288989273,
+      "whole_CDF_max": 0.02436419721670821,
+      "dose_ratio": 0.989559164733179,
+      "gates": {
+        "incremental_mean_relative": false,
+        "incremental_variance_relative": false,
+        "whole_mean_relative": true,
+        "whole_variance_relative": false,
+        "whole_CDF_max": true
+      },
+      "all_gates": false
+    },
+    "R1__common_rare_delay__bg0": {
+      "observed": {
+        "area_mM_min": 5.109056424845898,
+        "observed_glucose_umol": 0.5109056424845898,
+        "mean_s": 119.72099767981443,
+        "variance_s2": 1024.4567371716885,
+        "mean_min": 1.9953499613302406,
+        "variance_min2": 0.2845713158810246,
+        "skewness": 1.4585421274109447,
+        "peak_mM": 4.530583214793741,
+        "peak_s": 105.0
+      },
+      "predicted": {
+        "area_mM_min": 5.0557136083451875,
+        "observed_glucose_umol": 0.5055713608345188,
+        "mean_s": 118.94450534387325,
+        "variance_s2": 913.7728540216671,
+        "mean_min": 1.9824084223978875,
+        "variance_min2": 0.2538257927837964,
+        "skewness": 1.1866840028355667,
+        "peak_mM": 4.511155991030462,
+        "peak_s": 106.80000000000001
+      },
+      "blank": {
+        "area_mM_min": 5.0557136083451875,
+        "observed_glucose_umol": 0.5055713608345188,
+        "mean_s": 106.88393903868698,
+        "variance_s2": 749.5970940384877,
+        "mean_min": 1.7813989839781164,
+        "variance_min2": 0.20822141501069105,
+        "skewness": 0.651273599852007,
+        "peak_mM": 4.644381223328592,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 12.837058641127456,
+        "variance_s2": 274.85964313320073
+      },
+      "incremental_predicted": {
+        "mean_s": 12.06056630518627,
+        "variance_s2": 164.17575998317932
+      },
+      "incremental_mean_relative": -0.060488337527216274,
+      "incremental_variance_relative": -0.40269237741963626,
+      "whole_mean_relative": -0.006485849190948634,
+      "whole_variance_relative": -0.10804153961210361,
+      "whole_CDF_max": 0.010708552246498138,
+      "dose_ratio": 0.989559164733179,
+      "gates": {
+        "incremental_mean_relative": false,
+        "incremental_variance_relative": false,
+        "whole_mean_relative": true,
+        "whole_variance_relative": false,
+        "whole_CDF_max": true
+      },
+      "all_gates": false
+    },
+    "R1__bead_volume_rare_delay__bg0": {
+      "observed": {
+        "area_mM_min": 5.109056424845898,
+        "observed_glucose_umol": 0.5109056424845898,
+        "mean_s": 119.72099767981443,
+        "variance_s2": 1024.4567371716885,
+        "mean_min": 1.9953499613302406,
+        "variance_min2": 0.2845713158810246,
+        "skewness": 1.4585421274109447,
+        "peak_mM": 4.530583214793741,
+        "peak_s": 105.0
+      },
+      "predicted": {
+        "area_mM_min": 5.055713608345186,
+        "observed_glucose_umol": 0.5055713608345186,
+        "mean_s": 118.9835683973111,
+        "variance_s2": 917.028953504022,
+        "mean_min": 1.9830594732885183,
+        "variance_min2": 0.25473026486222833,
+        "skewness": 1.1950296675512904,
+        "peak_mM": 4.508772109614791,
+        "peak_s": 106.80000000000001
+      },
+      "blank": {
+        "area_mM_min": 5.0557136083451875,
+        "observed_glucose_umol": 0.5055713608345188,
+        "mean_s": 106.88393903868698,
+        "variance_s2": 749.5970940384877,
+        "mean_min": 1.7813989839781164,
+        "variance_min2": 0.20822141501069105,
+        "skewness": 0.651273599852007,
+        "peak_mM": 4.644381223328592,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 12.837058641127456,
+        "variance_s2": 274.85964313320073
+      },
+      "incremental_predicted": {
+        "mean_s": 12.099629358624128,
+        "variance_s2": 167.43185946553422
+      },
+      "incremental_mean_relative": -0.057445346564106714,
+      "incremental_variance_relative": -0.3908459693939337,
+      "whole_mean_relative": -0.006159565128880162,
+      "whole_variance_relative": -0.10486317261600742,
+      "whole_CDF_max": 0.010465355768411788,
+      "dose_ratio": 0.9895591647331785,
+      "gates": {
+        "incremental_mean_relative": false,
+        "incremental_variance_relative": false,
+        "whole_mean_relative": true,
+        "whole_variance_relative": false,
+        "whole_CDF_max": true
+      },
+      "all_gates": false
+    },
+    "R1__volume_plug__bg2": {
+      "observed": {
+        "area_mM_min": 5.052157420578473,
+        "observed_glucose_umol": 0.5052157420578473,
+        "mean_s": 119.01396058188647,
+        "variance_s2": 937.0249241777049,
+        "mean_min": 1.9835660096981078,
+        "variance_min2": 0.2602847011604736,
+        "skewness": 1.3031931173373226,
+        "peak_mM": 4.516358463726885,
+        "peak_s": 105.0
+      },
+      "predicted": {
+        "area_mM_min": 5.004148885727833,
+        "observed_glucose_umol": 0.5004148885727833,
+        "mean_s": 116.82264597891745,
+        "variance_s2": 702.5163329194398,
+        "mean_min": 1.9470440996486242,
+        "variance_min2": 0.1951434258109555,
+        "skewness": 0.5677341186932724,
+        "peak_mM": 4.630156472261736,
+        "peak_s": 105.2
+      },
+      "blank": {
+        "area_mM_min": 5.004148885727832,
+        "observed_glucose_umol": 0.5004148885727833,
+        "mean_s": 106.62264597891748,
+        "variance_s2": 702.51633291944,
+        "mean_min": 1.7770440996486245,
+        "variance_min2": 0.19514342581095553,
+        "skewness": 0.5677341186932696,
+        "peak_mM": 4.630156472261736,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 12.39131460296899,
+        "variance_s2": 234.50859125826491
+      },
+      "incremental_predicted": {
+        "mean_s": 10.199999999999974,
+        "variance_s2": -1.1368683772161603e-13
+      },
+      "incremental_mean_relative": -0.17684278651467467,
+      "incremental_variance_relative": -1.0000000000000004,
+      "whole_mean_relative": -0.018412248380401564,
+      "whole_variance_relative": -0.25026932070570085,
+      "whole_CDF_max": 0.02322517615156472,
+      "dose_ratio": 0.9904974190520883,
+      "gates": {
+        "incremental_mean_relative": false,
+        "incremental_variance_relative": false,
+        "whole_mean_relative": true,
+        "whole_variance_relative": false,
+        "whole_CDF_max": true
+      },
+      "all_gates": false
+    },
+    "R1__prior_trt_independent__bg2": {
+      "observed": {
+        "area_mM_min": 5.052157420578473,
+        "observed_glucose_umol": 0.5052157420578473,
+        "mean_s": 119.01396058188647,
+        "variance_s2": 937.0249241777049,
+        "mean_min": 1.9835660096981078,
+        "variance_min2": 0.2602847011604736,
+        "skewness": 1.3031931173373226,
+        "peak_mM": 4.516358463726885,
+        "peak_s": 105.0
+      },
+      "predicted": {
+        "area_mM_min": 5.004148885727833,
+        "observed_glucose_umol": 0.5004148885727833,
+        "mean_s": 116.82264597891745,
+        "variance_s2": 711.6046519579753,
+        "mean_min": 1.9470440996486242,
+        "variance_min2": 0.19766795887721536,
+        "skewness": 0.5580345538997664,
+        "peak_mM": 4.61224517962258,
+        "peak_s": 106.4
+      },
+      "blank": {
+        "area_mM_min": 5.004148885727832,
+        "observed_glucose_umol": 0.5004148885727833,
+        "mean_s": 106.62264597891748,
+        "variance_s2": 702.51633291944,
+        "mean_min": 1.7770440996486245,
+        "variance_min2": 0.19514342581095553,
+        "skewness": 0.5677341186932696,
+        "peak_mM": 4.630156472261736,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 12.39131460296899,
+        "variance_s2": 234.50859125826491
+      },
+      "incremental_predicted": {
+        "mean_s": 10.199999999999974,
+        "variance_s2": 9.08831903853536
+      },
+      "incremental_mean_relative": -0.17684278651467467,
+      "incremental_variance_relative": -0.961245261890954,
+      "whole_mean_relative": -0.018412248380401564,
+      "whole_variance_relative": -0.2405701987250225,
+      "whole_CDF_max": 0.02211450553616079,
+      "dose_ratio": 0.9904974190520883,
+      "gates": {
+        "incremental_mean_relative": false,
+        "incremental_variance_relative": false,
+        "whole_mean_relative": true,
+        "whole_variance_relative": false,
+        "whole_CDF_max": true
+      },
+      "all_gates": false
+    },
+    "R1__extra_mixed_volume__bg2": {
+      "observed": {
+        "area_mM_min": 5.052157420578473,
+        "observed_glucose_umol": 0.5052157420578473,
+        "mean_s": 119.01396058188647,
+        "variance_s2": 937.0249241777049,
+        "mean_min": 1.9835660096981078,
+        "variance_min2": 0.2602847011604736,
+        "skewness": 1.3031931173373226,
+        "peak_mM": 4.516358463726885,
+        "peak_s": 105.0
+      },
+      "predicted": {
+        "area_mM_min": 5.004148885727833,
+        "observed_glucose_umol": 0.5004148885727833,
+        "mean_s": 118.68315640544606,
+        "variance_s2": 715.0667759746627,
+        "mean_min": 1.9780526067574342,
+        "variance_min2": 0.19862965999296187,
+        "skewness": 0.5546603943909084,
+        "peak_mM": 4.602240788843582,
+        "peak_s": 108.05000000000001
+      },
+      "blank": {
+        "area_mM_min": 5.004148885727832,
+        "observed_glucose_umol": 0.5004148885727833,
+        "mean_s": 106.62264597891748,
+        "variance_s2": 702.51633291944,
+        "mean_min": 1.7770440996486245,
+        "variance_min2": 0.19514342581095553,
+        "skewness": 0.5677341186932696,
+        "peak_mM": 4.630156472261736,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 12.39131460296899,
+        "variance_s2": 234.50859125826491
+      },
+      "incremental_predicted": {
+        "mean_s": 12.06051042652858,
+        "variance_s2": 12.550443055222786
+      },
+      "incremental_mean_relative": -0.02669645530274467,
+      "incremental_variance_relative": -0.9464819476852302,
+      "whole_mean_relative": -0.002779540944802039,
+      "whole_variance_relative": -0.2368753941073911,
+      "whole_CDF_max": 0.026070343851194666,
+      "dose_ratio": 0.9904974190520883,
+      "gates": {
+        "incremental_mean_relative": true,
+        "incremental_variance_relative": false,
+        "whole_mean_relative": true,
+        "whole_variance_relative": false,
+        "whole_CDF_max": true
+      },
+      "all_gates": false
+    },
+    "R1__common_rare_delay__bg2": {
+      "observed": {
+        "area_mM_min": 5.052157420578473,
+        "observed_glucose_umol": 0.5052157420578473,
+        "mean_s": 119.01396058188647,
+        "variance_s2": 937.0249241777049,
+        "mean_min": 1.9835660096981078,
+        "variance_min2": 0.2602847011604736,
+        "skewness": 1.3031931173373226,
+        "peak_mM": 4.516358463726885,
+        "peak_s": 105.0
+      },
+      "predicted": {
+        "area_mM_min": 5.004148885727834,
+        "observed_glucose_umol": 0.5004148885727834,
+        "mean_s": 118.68321228410367,
+        "variance_s2": 866.6920929026192,
+        "mean_min": 1.9780535380683946,
+        "variance_min2": 0.24074780358406087,
+        "skewness": 1.1751460432696972,
+        "peak_mM": 4.497085173496139,
+        "peak_s": 106.80000000000001
+      },
+      "blank": {
+        "area_mM_min": 5.004148885727832,
+        "observed_glucose_umol": 0.5004148885727833,
+        "mean_s": 106.62264597891748,
+        "variance_s2": 702.51633291944,
+        "mean_min": 1.7770440996486245,
+        "variance_min2": 0.19514342581095553,
+        "skewness": 0.5677341186932696,
+        "peak_mM": 4.630156472261736,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 12.39131460296899,
+        "variance_s2": 234.50859125826491
+      },
+      "incremental_predicted": {
+        "mean_s": 12.0605663051862,
+        "variance_s2": 164.1757599831792
+      },
+      "incremental_mean_relative": -0.026691945800774164,
+      "incremental_variance_relative": -0.299915797957389,
+      "whole_mean_relative": -0.0027790714313319365,
+      "whole_variance_relative": -0.0750597230237039,
+      "whole_CDF_max": 0.008792858614739024,
+      "dose_ratio": 0.9904974190520885,
+      "gates": {
+        "incremental_mean_relative": true,
+        "incremental_variance_relative": false,
+        "whole_mean_relative": true,
+        "whole_variance_relative": true,
+        "whole_CDF_max": true
+      },
+      "all_gates": false
+    },
+    "R1__bead_volume_rare_delay__bg2": {
+      "observed": {
+        "area_mM_min": 5.052157420578473,
+        "observed_glucose_umol": 0.5052157420578473,
+        "mean_s": 119.01396058188647,
+        "variance_s2": 937.0249241777049,
+        "mean_min": 1.9835660096981078,
+        "variance_min2": 0.2602847011604736,
+        "skewness": 1.3031931173373226,
+        "peak_mM": 4.516358463726885,
+        "peak_s": 105.0
+      },
+      "predicted": {
+        "area_mM_min": 5.0041488857278305,
+        "observed_glucose_umol": 0.500414888572783,
+        "mean_s": 118.72227533754163,
+        "variance_s2": 869.9481923849742,
+        "mean_min": 1.9787045889590271,
+        "variance_min2": 0.2416522756624928,
+        "skewness": 1.184421067590894,
+        "peak_mM": 4.4947045353944555,
+        "peak_s": 106.80000000000001
+      },
+      "blank": {
+        "area_mM_min": 5.004148885727832,
+        "observed_glucose_umol": 0.5004148885727833,
+        "mean_s": 106.62264597891748,
+        "variance_s2": 702.51633291944,
+        "mean_min": 1.7770440996486245,
+        "variance_min2": 0.19514342581095553,
+        "skewness": 0.5677341186932696,
+        "peak_mM": 4.630156472261736,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 12.39131460296899,
+        "variance_s2": 234.50859125826491
+      },
+      "incremental_predicted": {
+        "mean_s": 12.099629358624156,
+        "variance_s2": 167.43185946553422
+      },
+      "incremental_mean_relative": -0.023539491465654927,
+      "incremental_variance_relative": -0.2860310210079209,
+      "whole_mean_relative": -0.0024508489837554714,
+      "whole_variance_relative": -0.07158478932841039,
+      "whole_CDF_max": 0.008947806962509242,
+      "dose_ratio": 0.9904974190520879,
+      "gates": {
+        "incremental_mean_relative": true,
+        "incremental_variance_relative": false,
+        "whole_mean_relative": true,
+        "whole_variance_relative": true,
+        "whole_CDF_max": true
+      },
+      "all_gates": false
+    },
+    "R1__volume_plug__bg5": {
+      "observed": {
+        "area_mM_min": 4.96917970602181,
+        "observed_glucose_umol": 0.496917970602181,
+        "mean_s": 118.00691793893132,
+        "variance_s2": 814.530705958915,
+        "mean_min": 1.9667819656488554,
+        "variance_min2": 0.22625852943303193,
+        "skewness": 0.9856396794754978,
+        "peak_mM": 4.4950213371266,
+        "peak_s": 105.0
+      },
+      "predicted": {
+        "area_mM_min": 4.937174016121386,
+        "observed_glucose_umol": 0.49371740161213856,
+        "mean_s": 116.5613445378151,
+        "variance_s2": 657.8652119377161,
+        "mean_min": 1.9426890756302517,
+        "variance_min2": 0.1827403366493656,
+        "skewness": 0.5314872673194599,
+        "peak_mM": 4.608819345661451,
+        "peak_s": 105.2
+      },
+      "blank": {
+        "area_mM_min": 4.937174016121385,
+        "observed_glucose_umol": 0.49371740161213845,
+        "mean_s": 106.36134453781513,
+        "variance_s2": 657.8652119377164,
+        "mean_min": 1.7726890756302522,
+        "variance_min2": 0.18274033664936565,
+        "skewness": 0.5314872673194572,
+        "peak_mM": 4.608819345661451,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 11.645573401116195,
+        "variance_s2": 156.66549402119858
+      },
+      "incremental_predicted": {
+        "mean_s": 10.199999999999974,
+        "variance_s2": -2.2737367544323206e-13
+      },
+      "incremental_mean_relative": -0.12413071914326401,
+      "incremental_variance_relative": -1.0000000000000016,
+      "whole_mean_relative": -0.012249903873129742,
+      "whole_variance_relative": -0.19233835247102526,
+      "whole_CDF_max": 0.019399735510622018,
+      "dose_ratio": 0.993559160305344,
+      "gates": {
+        "incremental_mean_relative": false,
+        "incremental_variance_relative": false,
+        "whole_mean_relative": true,
+        "whole_variance_relative": false,
+        "whole_CDF_max": true
+      },
+      "all_gates": false
+    },
+    "R1__prior_trt_independent__bg5": {
+      "observed": {
+        "area_mM_min": 4.96917970602181,
+        "observed_glucose_umol": 0.496917970602181,
+        "mean_s": 118.00691793893132,
+        "variance_s2": 814.530705958915,
+        "mean_min": 1.9667819656488554,
+        "variance_min2": 0.22625852943303193,
+        "skewness": 0.9856396794754978,
+        "peak_mM": 4.4950213371266,
+        "peak_s": 105.0
+      },
+      "predicted": {
+        "area_mM_min": 4.937174016121384,
+        "observed_glucose_umol": 0.4937174016121384,
+        "mean_s": 116.56134453781515,
+        "variance_s2": 666.9535309762517,
+        "mean_min": 1.9426890756302524,
+        "variance_min2": 0.18526486971562547,
+        "skewness": 0.5219193052850123,
+        "peak_mM": 4.590908053022295,
+        "peak_s": 106.4
+      },
+      "blank": {
+        "area_mM_min": 4.937174016121385,
+        "observed_glucose_umol": 0.49371740161213845,
+        "mean_s": 106.36134453781513,
+        "variance_s2": 657.8652119377164,
+        "mean_min": 1.7726890756302522,
+        "variance_min2": 0.18274033664936565,
+        "skewness": 0.5314872673194572,
+        "peak_mM": 4.608819345661451,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 11.645573401116195,
+        "variance_s2": 156.66549402119858
+      },
+      "incremental_predicted": {
+        "mean_s": 10.200000000000017,
+        "variance_s2": 9.08831903853536
+      },
+      "incremental_mean_relative": -0.12413071914326035,
+      "incremental_variance_relative": -0.9419890187350023,
+      "whole_mean_relative": -0.012249903873129409,
+      "whole_variance_relative": -0.1811806159092878,
+      "whole_CDF_max": 0.018228370134934058,
+      "dose_ratio": 0.9935591603053436,
+      "gates": {
+        "incremental_mean_relative": false,
+        "incremental_variance_relative": false,
+        "whole_mean_relative": true,
+        "whole_variance_relative": false,
+        "whole_CDF_max": true
+      },
+      "all_gates": false
+    },
+    "R1__extra_mixed_volume__bg5": {
+      "observed": {
+        "area_mM_min": 4.96917970602181,
+        "observed_glucose_umol": 0.496917970602181,
+        "mean_s": 118.00691793893132,
+        "variance_s2": 814.530705958915,
+        "mean_min": 1.9667819656488554,
+        "variance_min2": 0.22625852943303193,
+        "skewness": 0.9856396794754978,
+        "peak_mM": 4.4950213371266,
+        "peak_s": 105.0
+      },
+      "predicted": {
+        "area_mM_min": 4.937174016121384,
+        "observed_glucose_umol": 0.4937174016121384,
+        "mean_s": 118.42185496434375,
+        "variance_s2": 670.4156549929394,
+        "mean_min": 1.9736975827390626,
+        "variance_min2": 0.18622657083137206,
+        "skewness": 0.51862370600761,
+        "peak_mM": 4.58090366225241,
+        "peak_s": 108.05000000000001
+      },
+      "blank": {
+        "area_mM_min": 4.937174016121385,
+        "observed_glucose_umol": 0.49371740161213845,
+        "mean_s": 106.36134453781513,
+        "variance_s2": 657.8652119377164,
+        "mean_min": 1.7726890756302522,
+        "variance_min2": 0.18274033664936565,
+        "skewness": 0.5314872673194572,
+        "peak_mM": 4.608819345661451,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 11.645573401116195,
+        "variance_s2": 156.66549402119858
+      },
+      "incremental_predicted": {
+        "mean_s": 12.060510426528623,
+        "variance_s2": 12.550443055223013
+      },
+      "incremental_mean_relative": 0.0356304503969429,
+      "incremental_variance_relative": -0.9198901893895998,
+      "whole_mean_relative": 0.003516209326195341,
+      "whole_variance_relative": -0.17693016348145474,
+      "whole_CDF_max": 0.02839205970712455,
+      "dose_ratio": 0.9935591603053436,
+      "gates": {
+        "incremental_mean_relative": true,
+        "incremental_variance_relative": false,
+        "whole_mean_relative": true,
+        "whole_variance_relative": false,
+        "whole_CDF_max": true
+      },
+      "all_gates": false
+    },
+    "R1__common_rare_delay__bg5": {
+      "observed": {
+        "area_mM_min": 4.96917970602181,
+        "observed_glucose_umol": 0.496917970602181,
+        "mean_s": 118.00691793893132,
+        "variance_s2": 814.530705958915,
+        "mean_min": 1.9667819656488554,
+        "variance_min2": 0.22625852943303193,
+        "skewness": 0.9856396794754978,
+        "peak_mM": 4.4950213371266,
+        "peak_s": 105.0
+      },
+      "predicted": {
+        "area_mM_min": 4.937174016121386,
+        "observed_glucose_umol": 0.49371740161213856,
+        "mean_s": 118.42191084300137,
+        "variance_s2": 822.0409719208956,
+        "mean_min": 1.973698514050023,
+        "variance_min2": 0.22834471442247098,
+        "skewness": 1.2041560761512806,
+        "peak_mM": 4.476021686537007,
+        "peak_s": 106.80000000000001
+      },
+      "blank": {
+        "area_mM_min": 4.937174016121385,
+        "observed_glucose_umol": 0.49371740161213845,
+        "mean_s": 106.36134453781513,
+        "variance_s2": 657.8652119377164,
+        "mean_min": 1.7726890756302522,
+        "variance_min2": 0.18274033664936565,
+        "skewness": 0.5314872673194572,
+        "peak_mM": 4.608819345661451,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 11.645573401116195,
+        "variance_s2": 156.66549402119858
+      },
+      "incremental_predicted": {
+        "mean_s": 12.060566305186242,
+        "variance_s2": 164.1757599831792
+      },
+      "incremental_mean_relative": 0.03563524867141976,
+      "incremental_variance_relative": 0.047938226658669425,
+      "whole_mean_relative": 0.0035166828463804034,
+      "whole_variance_relative": 0.009220359535911049,
+      "whole_CDF_max": 0.010951583578852286,
+      "dose_ratio": 0.993559160305344,
+      "gates": {
+        "incremental_mean_relative": true,
+        "incremental_variance_relative": true,
+        "whole_mean_relative": true,
+        "whole_variance_relative": true,
+        "whole_CDF_max": true
+      },
+      "all_gates": true
+    },
+    "R1__bead_volume_rare_delay__bg5": {
+      "observed": {
+        "area_mM_min": 4.96917970602181,
+        "observed_glucose_umol": 0.496917970602181,
+        "mean_s": 118.00691793893132,
+        "variance_s2": 814.530705958915,
+        "mean_min": 1.9667819656488554,
+        "variance_min2": 0.22625852943303193,
+        "skewness": 0.9856396794754978,
+        "peak_mM": 4.4950213371266,
+        "peak_s": 105.0
+      },
+      "predicted": {
+        "area_mM_min": 4.937174016121381,
+        "observed_glucose_umol": 0.4937174016121381,
+        "mean_s": 118.46097389643931,
+        "variance_s2": 825.2970714032506,
+        "mean_min": 1.9743495649406553,
+        "variance_min2": 0.22924918650090295,
+        "skewness": 1.214208221913713,
+        "peak_mM": 4.473646801424194,
+        "peak_s": 106.80000000000001
+      },
+      "blank": {
+        "area_mM_min": 4.937174016121385,
+        "observed_glucose_umol": 0.49371740161213845,
+        "mean_s": 106.36134453781513,
+        "variance_s2": 657.8652119377164,
+        "mean_min": 1.7726890756302522,
+        "variance_min2": 0.18274033664936565,
+        "skewness": 0.5314872673194572,
+        "peak_mM": 4.608819345661451,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 11.645573401116195,
+        "variance_s2": 156.66549402119858
+      },
+      "incremental_predicted": {
+        "mean_s": 12.099629358624185,
+        "variance_s2": 167.43185946553422
+      },
+      "incremental_mean_relative": 0.038989574997180476,
+      "incremental_variance_relative": 0.06872199594174089,
+      "whole_mean_relative": 0.0038477062653476946,
+      "whole_variance_relative": 0.013217875477954832,
+      "whole_CDF_max": 0.011294173989200518,
+      "dose_ratio": 0.9935591603053431,
+      "gates": {
+        "incremental_mean_relative": true,
+        "incremental_variance_relative": true,
+        "whole_mean_relative": true,
+        "whole_variance_relative": true,
+        "whole_CDF_max": true
+      },
+      "all_gates": true
+    },
+    "R2__volume_plug__bg0": {
+      "observed": {
+        "area_mM_min": 5.208036984352774,
+        "observed_glucose_umol": 0.5208036984352774,
+        "mean_s": 138.3993399339934,
+        "variance_s2": 1107.7012125778556,
+        "mean_min": 2.3066556655665567,
+        "variance_min2": 0.3076947812716265,
+        "skewness": 1.2642770050352514,
+        "peak_mM": 4.587482219061166,
+        "peak_s": 125.0
+      },
+      "predicted": {
+        "area_mM_min": 5.0557136083451875,
+        "observed_glucose_umol": 0.5055713608345188,
+        "mean_s": 127.883939038687,
+        "variance_s2": 749.5970940384877,
+        "mean_min": 2.1313989839781167,
+        "variance_min2": 0.20822141501069105,
+        "skewness": 0.651273599852004,
+        "peak_mM": 4.644381223328592,
+        "peak_s": 116.0
+      },
+      "blank": {
+        "area_mM_min": 5.0557136083451875,
+        "observed_glucose_umol": 0.5055713608345188,
+        "mean_s": 106.88393903868698,
+        "variance_s2": 749.5970940384877,
+        "mean_min": 1.7813989839781164,
+        "variance_min2": 0.20822141501069105,
+        "skewness": 0.651273599852007,
+        "peak_mM": 4.644381223328592,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 31.515400895306414,
+        "variance_s2": 358.10411853936785
+      },
+      "incremental_predicted": {
+        "mean_s": 21.00000000000003,
+        "variance_s2": 0.0
+      },
+      "incremental_mean_relative": -0.3336591189253265,
+      "incremental_variance_relative": -1.0,
+      "whole_mean_relative": -0.07597869253076983,
+      "whole_variance_relative": -0.3232858414102334,
+      "whole_CDF_max": 0.112733104403542,
+      "dose_ratio": 0.970752247638557,
+      "gates": {
+        "incremental_mean_relative": false,
+        "incremental_variance_relative": false,
+        "whole_mean_relative": false,
+        "whole_variance_relative": false,
+        "whole_CDF_max": false
+      },
+      "all_gates": false
+    },
+    "R2__prior_trt_independent__bg0": {
+      "observed": {
+        "area_mM_min": 5.208036984352774,
+        "observed_glucose_umol": 0.5208036984352774,
+        "mean_s": 138.3993399339934,
+        "variance_s2": 1107.7012125778556,
+        "mean_min": 2.3066556655665567,
+        "variance_min2": 0.3076947812716265,
+        "skewness": 1.2642770050352514,
+        "peak_mM": 4.587482219061166,
+        "peak_s": 125.0
+      },
+      "predicted": {
+        "area_mM_min": 5.0557136083451875,
+        "observed_glucose_umol": 0.5055713608345188,
+        "mean_s": 127.88393903868698,
+        "variance_s2": 768.858682338753,
+        "mean_min": 2.1313989839781162,
+        "variance_min2": 0.2135718562052092,
+        "skewness": 0.6291720669554371,
+        "peak_mM": 4.595064187590299,
+        "peak_s": 116.9
+      },
+      "blank": {
+        "area_mM_min": 5.0557136083451875,
+        "observed_glucose_umol": 0.5055713608345188,
+        "mean_s": 106.88393903868698,
+        "variance_s2": 749.5970940384877,
+        "mean_min": 1.7813989839781164,
+        "variance_min2": 0.20822141501069105,
+        "skewness": 0.651273599852007,
+        "peak_mM": 4.644381223328592,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 31.515400895306414,
+        "variance_s2": 358.10411853936785
+      },
+      "incremental_predicted": {
+        "mean_s": 21.0,
+        "variance_s2": 19.261588300265316
+      },
+      "incremental_mean_relative": -0.3336591189253274,
+      "incremental_variance_relative": -0.9462123240055732,
+      "whole_mean_relative": -0.07597869253077005,
+      "whole_variance_relative": -0.3058970473188741,
+      "whole_CDF_max": 0.11162204833701106,
+      "dose_ratio": 0.970752247638557,
+      "gates": {
+        "incremental_mean_relative": false,
+        "incremental_variance_relative": false,
+        "whole_mean_relative": false,
+        "whole_variance_relative": false,
+        "whole_CDF_max": false
+      },
+      "all_gates": false
+    },
+    "R2__prior_trt_full_memory__bg0": {
+      "observed": {
+        "area_mM_min": 5.208036984352774,
+        "observed_glucose_umol": 0.5208036984352774,
+        "mean_s": 138.3993399339934,
+        "variance_s2": 1107.7012125778556,
+        "mean_min": 2.3066556655665567,
+        "variance_min2": 0.3076947812716265,
+        "skewness": 1.2642770050352514,
+        "peak_mM": 4.587482219061166,
+        "peak_s": 125.0
+      },
+      "predicted": {
+        "area_mM_min": 5.055713608345187,
+        "observed_glucose_umol": 0.5055713608345187,
+        "mean_s": 127.88393903868702,
+        "variance_s2": 788.1190238666424,
+        "mean_min": 2.131398983978117,
+        "variance_min2": 0.2189219510740673,
+        "skewness": 0.6126620324387272,
+        "peak_mM": 4.526478580483091,
+        "peak_s": 117.30000000000001
+      },
+      "blank": {
+        "area_mM_min": 5.0557136083451875,
+        "observed_glucose_umol": 0.5055713608345188,
+        "mean_s": 106.88393903868698,
+        "variance_s2": 749.5970940384877,
+        "mean_min": 1.7813989839781164,
+        "variance_min2": 0.20822141501069105,
+        "skewness": 0.651273599852007,
+        "peak_mM": 4.644381223328592,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 31.515400895306414,
+        "variance_s2": 358.10411853936785
+      },
+      "incremental_predicted": {
+        "mean_s": 21.000000000000043,
+        "variance_s2": 38.52192982815461
+      },
+      "incremental_mean_relative": -0.33365911892532607,
+      "incremental_variance_relative": -0.8924281296029838,
+      "whole_mean_relative": -0.07597869253076983,
+      "whole_variance_relative": -0.28850937877686145,
+      "whole_CDF_max": 0.11095708444517921,
+      "dose_ratio": 0.9707522476385568,
+      "gates": {
+        "incremental_mean_relative": false,
+        "incremental_variance_relative": false,
+        "whole_mean_relative": false,
+        "whole_variance_relative": false,
+        "whole_CDF_max": false
+      },
+      "all_gates": false
+    },
+    "R2__extra_mixed_volume__bg0": {
+      "observed": {
+        "area_mM_min": 5.208036984352774,
+        "observed_glucose_umol": 0.5208036984352774,
+        "mean_s": 138.3993399339934,
+        "variance_s2": 1107.7012125778556,
+        "mean_min": 2.3066556655665567,
+        "variance_min2": 0.3076947812716265,
+        "skewness": 1.2642770050352514,
+        "peak_mM": 4.587482219061166,
+        "peak_s": 125.0
+      },
+      "predicted": {
+        "area_mM_min": 5.0557136083451875,
+        "observed_glucose_umol": 0.5055713608345188,
+        "mean_s": 129.74444946521558,
+        "variance_s2": 772.3208063554406,
+        "mean_min": 2.162407491086926,
+        "variance_min2": 0.21453355732095572,
+        "skewness": 0.6255463391256035,
+        "peak_mM": 4.583252917737872,
+        "peak_s": 118.85000000000001
+      },
+      "blank": {
+        "area_mM_min": 5.0557136083451875,
+        "observed_glucose_umol": 0.5055713608345188,
+        "mean_s": 106.88393903868698,
+        "variance_s2": 749.5970940384877,
+        "mean_min": 1.7813989839781164,
+        "variance_min2": 0.20822141501069105,
+        "skewness": 0.651273599852007,
+        "peak_mM": 4.644381223328592,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 31.515400895306414,
+        "variance_s2": 358.10411853936785
+      },
+      "incremental_predicted": {
+        "mean_s": 22.860510426528606,
+        "variance_s2": 22.723712316952856
+      },
+      "incremental_mean_relative": -0.274624159074771,
+      "incremental_variance_relative": -0.9365443982894188,
+      "whole_mean_relative": -0.06253563400595386,
+      "whole_variance_relative": -0.3027715438190355,
+      "whole_CDF_max": 0.08427636949709677,
+      "dose_ratio": 0.970752247638557,
+      "gates": {
+        "incremental_mean_relative": false,
+        "incremental_variance_relative": false,
+        "whole_mean_relative": false,
+        "whole_variance_relative": false,
+        "whole_CDF_max": false
+      },
+      "all_gates": false
+    },
+    "R2__common_rare_delay__bg0": {
+      "observed": {
+        "area_mM_min": 5.208036984352774,
+        "observed_glucose_umol": 0.5208036984352774,
+        "mean_s": 138.3993399339934,
+        "variance_s2": 1107.7012125778556,
+        "mean_min": 2.3066556655665567,
+        "variance_min2": 0.3076947812716265,
+        "skewness": 1.2642770050352514,
+        "peak_mM": 4.587482219061166,
+        "peak_s": 125.0
+      },
+      "predicted": {
+        "area_mM_min": 5.055713608345187,
+        "observed_glucose_umol": 0.5055713608345187,
+        "mean_s": 129.74450534387327,
+        "variance_s2": 923.9461232833971,
+        "mean_min": 2.162408422397888,
+        "variance_min2": 0.25665170091205475,
+        "skewness": 1.1680508246784385,
+        "peak_mM": 4.480034782067657,
+        "peak_s": 117.35000000000001
+      },
+      "blank": {
+        "area_mM_min": 5.0557136083451875,
+        "observed_glucose_umol": 0.5055713608345188,
+        "mean_s": 106.88393903868698,
+        "variance_s2": 749.5970940384877,
+        "mean_min": 1.7813989839781164,
+        "variance_min2": 0.20822141501069105,
+        "skewness": 0.651273599852007,
+        "peak_mM": 4.644381223328592,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 31.515400895306414,
+        "variance_s2": 358.10411853936785
+      },
+      "incremental_predicted": {
+        "mean_s": 22.860566305186296,
+        "variance_s2": 174.3490292449094
+      },
+      "incremental_mean_relative": -0.2746223860160091,
+      "incremental_variance_relative": -0.5131331358152407,
+      "whole_mean_relative": -0.06253523025650165,
+      "whole_variance_relative": -0.16588867756750159,
+      "whole_CDF_max": 0.09733812813310805,
+      "dose_ratio": 0.9707522476385568,
+      "gates": {
+        "incremental_mean_relative": false,
+        "incremental_variance_relative": false,
+        "whole_mean_relative": false,
+        "whole_variance_relative": false,
+        "whole_CDF_max": false
+      },
+      "all_gates": false
+    },
+    "R2__bead_volume_rare_delay__bg0": {
+      "observed": {
+        "area_mM_min": 5.208036984352774,
+        "observed_glucose_umol": 0.5208036984352774,
+        "mean_s": 138.3993399339934,
+        "variance_s2": 1107.7012125778556,
+        "mean_min": 2.3066556655665567,
+        "variance_min2": 0.3076947812716265,
+        "skewness": 1.2642770050352514,
+        "peak_mM": 4.587482219061166,
+        "peak_s": 125.0
+      },
+      "predicted": {
+        "area_mM_min": 5.055713608345185,
+        "observed_glucose_umol": 0.5055713608345185,
+        "mean_s": 131.88777323666724,
+        "variance_s2": 1102.598144877999,
+        "mean_min": 2.198129553944454,
+        "variance_min2": 0.3062772624661108,
+        "skewness": 1.5061007027190956,
+        "peak_mM": 4.3519528899274205,
+        "peak_s": 117.85000000000001
+      },
+      "blank": {
+        "area_mM_min": 5.0557136083451875,
+        "observed_glucose_umol": 0.5055713608345188,
+        "mean_s": 106.88393903868698,
+        "variance_s2": 749.5970940384877,
+        "mean_min": 1.7813989839781164,
+        "variance_min2": 0.20822141501069105,
+        "skewness": 0.651273599852007,
+        "peak_mM": 4.644381223328592,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 31.515400895306414,
+        "variance_s2": 358.10411853936785
+      },
+      "incremental_predicted": {
+        "mean_s": 25.003834197980268,
+        "variance_s2": 353.0010508395112
+      },
+      "incremental_mean_relative": -0.2066153852510857,
+      "incremental_variance_relative": -0.014250234598448652,
+      "whole_mean_relative": -0.047049116711334715,
+      "whole_variance_relative": -0.004606899082452709,
+      "whole_CDF_max": 0.08243828896736444,
+      "dose_ratio": 0.9707522476385564,
+      "gates": {
+        "incremental_mean_relative": false,
+        "incremental_variance_relative": true,
+        "whole_mean_relative": true,
+        "whole_variance_relative": true,
+        "whole_CDF_max": false
+      },
+      "all_gates": false
+    },
+    "R2__volume_plug__bg2": {
+      "observed": {
+        "area_mM_min": 5.149952584163111,
+        "observed_glucose_umol": 0.5149952584163111,
+        "mean_s": 137.7557831741282,
+        "variance_s2": 1025.283498463057,
+        "mean_min": 2.2959297195688033,
+        "variance_min2": 0.2848009717952936,
+        "skewness": 1.1254526138905279,
+        "peak_mM": 4.57325746799431,
+        "peak_s": 125.0
+      },
+      "predicted": {
+        "area_mM_min": 5.004148885727833,
+        "observed_glucose_umol": 0.5004148885727833,
+        "mean_s": 127.62264597891746,
+        "variance_s2": 702.5163329194398,
+        "mean_min": 2.127044099648624,
+        "variance_min2": 0.1951434258109555,
+        "skewness": 0.5677341186932715,
+        "peak_mM": 4.630156472261736,
+        "peak_s": 116.0
+      },
+      "blank": {
+        "area_mM_min": 5.004148885727832,
+        "observed_glucose_umol": 0.5004148885727833,
+        "mean_s": 106.62264597891748,
+        "variance_s2": 702.51633291944,
+        "mean_min": 1.7770440996486245,
+        "variance_min2": 0.19514342581095553,
+        "skewness": 0.5677341186932696,
+        "peak_mM": 4.630156472261736,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 31.133137195210722,
+        "variance_s2": 322.767165543617
+      },
+      "incremental_predicted": {
+        "mean_s": 20.999999999999986,
+        "variance_s2": -1.1368683772161603e-13
+      },
+      "incremental_mean_relative": -0.32547754926443906,
+      "incremental_variance_relative": -1.0000000000000004,
+      "whole_mean_relative": -0.07355870629694061,
+      "whole_variance_relative": -0.31480772491458087,
+      "whole_CDF_max": 0.11219582196260475,
+      "dose_ratio": 0.9716883415813095,
+      "gates": {
+        "incremental_mean_relative": false,
+        "incremental_variance_relative": false,
+        "whole_mean_relative": false,
+        "whole_variance_relative": false,
+        "whole_CDF_max": false
+      },
+      "all_gates": false
+    },
+    "R2__prior_trt_independent__bg2": {
+      "observed": {
+        "area_mM_min": 5.149952584163111,
+        "observed_glucose_umol": 0.5149952584163111,
+        "mean_s": 137.7557831741282,
+        "variance_s2": 1025.283498463057,
+        "mean_min": 2.2959297195688033,
+        "variance_min2": 0.2848009717952936,
+        "skewness": 1.1254526138905279,
+        "peak_mM": 4.57325746799431,
+        "peak_s": 125.0
+      },
+      "predicted": {
+        "area_mM_min": 5.004148885727834,
+        "observed_glucose_umol": 0.5004148885727834,
+        "mean_s": 127.62264597891743,
+        "variance_s2": 721.7779212197051,
+        "mean_min": 2.1270440996486237,
+        "variance_min2": 0.20049386700547364,
+        "skewness": 0.5475991513822362,
+        "peak_mM": 4.580839436547834,
+        "peak_s": 116.9
+      },
+      "blank": {
+        "area_mM_min": 5.004148885727832,
+        "observed_glucose_umol": 0.5004148885727833,
+        "mean_s": 106.62264597891748,
+        "variance_s2": 702.51633291944,
+        "mean_min": 1.7770440996486245,
+        "variance_min2": 0.19514342581095553,
+        "skewness": 0.5677341186932696,
+        "peak_mM": 4.630156472261736,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 31.133137195210722,
+        "variance_s2": 322.767165543617
+      },
+      "incremental_predicted": {
+        "mean_s": 20.999999999999957,
+        "variance_s2": 19.261588300265203
+      },
+      "incremental_mean_relative": -0.32547754926443995,
+      "incremental_variance_relative": -0.9403235819609344,
+      "whole_mean_relative": -0.07355870629694083,
+      "whole_variance_relative": -0.296021127520651,
+      "whole_CDF_max": 0.11107376684715742,
+      "dose_ratio": 0.9716883415813097,
+      "gates": {
+        "incremental_mean_relative": false,
+        "incremental_variance_relative": false,
+        "whole_mean_relative": false,
+        "whole_variance_relative": false,
+        "whole_CDF_max": false
+      },
+      "all_gates": false
+    },
+    "R2__prior_trt_full_memory__bg2": {
+      "observed": {
+        "area_mM_min": 5.149952584163111,
+        "observed_glucose_umol": 0.5149952584163111,
+        "mean_s": 137.7557831741282,
+        "variance_s2": 1025.283498463057,
+        "mean_min": 2.2959297195688033,
+        "variance_min2": 0.2848009717952936,
+        "skewness": 1.1254526138905279,
+        "peak_mM": 4.57325746799431,
+        "peak_s": 125.0
+      },
+      "predicted": {
+        "area_mM_min": 5.004148885727833,
+        "observed_glucose_umol": 0.5004148885727833,
+        "mean_s": 127.62264597891746,
+        "variance_s2": 741.0382627475943,
+        "mean_min": 2.127044099648624,
+        "variance_min2": 0.20584396187433177,
+        "skewness": 0.5334225757499812,
+        "peak_mM": 4.512254159597014,
+        "peak_s": 117.30000000000001
+      },
+      "blank": {
+        "area_mM_min": 5.004148885727832,
+        "observed_glucose_umol": 0.5004148885727833,
+        "mean_s": 106.62264597891748,
+        "variance_s2": 702.51633291944,
+        "mean_min": 1.7770440996486245,
+        "variance_min2": 0.19514342581095553,
+        "skewness": 0.5677341186932696,
+        "peak_mM": 4.630156472261736,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 31.133137195210722,
+        "variance_s2": 322.767165543617
+      },
+      "incremental_predicted": {
+        "mean_s": 20.999999999999986,
+        "variance_s2": 38.521929828154384
+      },
+      "incremental_mean_relative": -0.32547754926443906,
+      "incremental_variance_relative": -0.8806510266827351,
+      "whole_mean_relative": -0.07355870629694061,
+      "whole_variance_relative": -0.2772357461536815,
+      "whole_CDF_max": 0.11041290315563895,
+      "dose_ratio": 0.9716883415813095,
+      "gates": {
+        "incremental_mean_relative": false,
+        "incremental_variance_relative": false,
+        "whole_mean_relative": false,
+        "whole_variance_relative": false,
+        "whole_CDF_max": false
+      },
+      "all_gates": false
+    },
+    "R2__extra_mixed_volume__bg2": {
+      "observed": {
+        "area_mM_min": 5.149952584163111,
+        "observed_glucose_umol": 0.5149952584163111,
+        "mean_s": 137.7557831741282,
+        "variance_s2": 1025.283498463057,
+        "mean_min": 2.2959297195688033,
+        "variance_min2": 0.2848009717952936,
+        "skewness": 1.1254526138905279,
+        "peak_mM": 4.57325746799431,
+        "peak_s": 125.0
+      },
+      "predicted": {
+        "area_mM_min": 5.004148885727832,
+        "observed_glucose_umol": 0.5004148885727833,
+        "mean_s": 129.4831564054461,
+        "variance_s2": 725.240045236393,
+        "mean_min": 2.158052606757435,
+        "variance_min2": 0.20145556812122029,
+        "skewness": 0.5443422146377033,
+        "peak_mM": 4.569028166789103,
+        "peak_s": 118.85000000000001
+      },
+      "blank": {
+        "area_mM_min": 5.004148885727832,
+        "observed_glucose_umol": 0.5004148885727833,
+        "mean_s": 106.62264597891748,
+        "variance_s2": 702.51633291944,
+        "mean_min": 1.7770440996486245,
+        "variance_min2": 0.19514342581095553,
+        "skewness": 0.5677341186932696,
+        "peak_mM": 4.630156472261736,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 31.133137195210722,
+        "variance_s2": 322.767165543617
+      },
+      "incremental_predicted": {
+        "mean_s": 22.86051042652862,
+        "variance_s2": 22.723712316953083
+      },
+      "incremental_mean_relative": -0.2657177372396219,
+      "incremental_variance_relative": -0.9295971996448866,
+      "whole_mean_relative": -0.06005284553625756,
+      "whole_variance_relative": -0.29264437950717204,
+      "whole_CDF_max": 0.08348533269706843,
+      "dose_ratio": 0.9716883415813095,
+      "gates": {
+        "incremental_mean_relative": false,
+        "incremental_variance_relative": false,
+        "whole_mean_relative": false,
+        "whole_variance_relative": false,
+        "whole_CDF_max": false
+      },
+      "all_gates": false
+    },
+    "R2__common_rare_delay__bg2": {
+      "observed": {
+        "area_mM_min": 5.149952584163111,
+        "observed_glucose_umol": 0.5149952584163111,
+        "mean_s": 137.7557831741282,
+        "variance_s2": 1025.283498463057,
+        "mean_min": 2.2959297195688033,
+        "variance_min2": 0.2848009717952936,
+        "skewness": 1.1254526138905279,
+        "peak_mM": 4.57325746799431,
+        "peak_s": 125.0
+      },
+      "predicted": {
+        "area_mM_min": 5.004148885727832,
+        "observed_glucose_umol": 0.5004148885727833,
+        "mean_s": 129.4832122841037,
+        "variance_s2": 876.8653621643497,
+        "mean_min": 2.158053538068395,
+        "variance_min2": 0.24357371171231934,
+        "skewness": 1.1557411457346862,
+        "peak_mM": 4.46596531325144,
+        "peak_s": 117.35000000000001
+      },
+      "blank": {
+        "area_mM_min": 5.004148885727832,
+        "observed_glucose_umol": 0.5004148885727833,
+        "mean_s": 106.62264597891748,
+        "variance_s2": 702.51633291944,
+        "mean_min": 1.7770440996486245,
+        "variance_min2": 0.19514342581095553,
+        "skewness": 0.5677341186932696,
+        "peak_mM": 4.630156472261736,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 31.133137195210722,
+        "variance_s2": 322.767165543617
+      },
+      "incremental_predicted": {
+        "mean_s": 22.860566305186225,
+        "variance_s2": 174.34902924490973
+      },
+      "incremental_mean_relative": -0.26571594241061847,
+      "incremental_variance_relative": -0.45983034255896404,
+      "whole_mean_relative": -0.06005243990060061,
+      "whole_variance_relative": -0.14475814398767983,
+      "whole_CDF_max": 0.09674659259270918,
+      "dose_ratio": 0.9716883415813095,
+      "gates": {
+        "incremental_mean_relative": false,
+        "incremental_variance_relative": false,
+        "whole_mean_relative": false,
+        "whole_variance_relative": false,
+        "whole_CDF_max": false
+      },
+      "all_gates": false
+    },
+    "R2__bead_volume_rare_delay__bg2": {
+      "observed": {
+        "area_mM_min": 5.149952584163111,
+        "observed_glucose_umol": 0.5149952584163111,
+        "mean_s": 137.7557831741282,
+        "variance_s2": 1025.283498463057,
+        "mean_min": 2.2959297195688033,
+        "variance_min2": 0.2848009717952936,
+        "skewness": 1.1254526138905279,
+        "peak_mM": 4.57325746799431,
+        "peak_s": 125.0
+      },
+      "predicted": {
+        "area_mM_min": 5.004148885727831,
+        "observed_glucose_umol": 0.5004148885727832,
+        "mean_s": 131.6264801768977,
+        "variance_s2": 1055.5173837589514,
+        "mean_min": 2.1937746696149616,
+        "variance_min2": 0.2931992732663754,
+        "skewness": 1.5264855897060556,
+        "peak_mM": 4.33805965574366,
+        "peak_s": 117.85000000000001
+      },
+      "blank": {
+        "area_mM_min": 5.004148885727832,
+        "observed_glucose_umol": 0.5004148885727833,
+        "mean_s": 106.62264597891748,
+        "variance_s2": 702.51633291944,
+        "mean_min": 1.7770440996486245,
+        "variance_min2": 0.19514342581095553,
+        "skewness": 0.5677341186932696,
+        "peak_mM": 4.630156472261736,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 31.133137195210722,
+        "variance_s2": 322.767165543617
+      },
+      "incremental_predicted": {
+        "mean_s": 25.003834197980225,
+        "variance_s2": 353.00105083951144
+      },
+      "incremental_mean_relative": -0.19687392757108269,
+      "incremental_variance_relative": 0.09367088267783785,
+      "whole_mean_relative": -0.044493979533932415,
+      "whole_variance_relative": 0.029488317466550784,
+      "whole_CDF_max": 0.08181463739579248,
+      "dose_ratio": 0.9716883415813093,
+      "gates": {
+        "incremental_mean_relative": false,
+        "incremental_variance_relative": true,
+        "whole_mean_relative": true,
+        "whole_variance_relative": true,
+        "whole_CDF_max": false
+      },
+      "all_gates": false
+    },
+    "R2__volume_plug__bg5": {
+      "observed": {
+        "area_mM_min": 5.071123755334281,
+        "observed_glucose_umol": 0.5071123755334281,
+        "mean_s": 136.96820944366527,
+        "variance_s2": 936.72297662093,
+        "mean_min": 2.2828034907277543,
+        "variance_min2": 0.26020082683914725,
+        "skewness": 0.9752680964630213,
+        "peak_mM": 4.551920341394025,
+        "peak_s": 125.0
+      },
+      "predicted": {
+        "area_mM_min": 4.937174016121385,
+        "observed_glucose_umol": 0.49371740161213845,
+        "mean_s": 127.36134453781511,
+        "variance_s2": 657.8652119377163,
+        "mean_min": 2.122689075630252,
+        "variance_min2": 0.18274033664936562,
+        "skewness": 0.5314872673194592,
+        "peak_mM": 4.608819345661451,
+        "peak_s": 116.0
+      },
+      "blank": {
+        "area_mM_min": 4.937174016121385,
+        "observed_glucose_umol": 0.49371740161213845,
+        "mean_s": 106.36134453781513,
+        "variance_s2": 657.8652119377164,
+        "mean_min": 1.7726890756302522,
+        "variance_min2": 0.18274033664936565,
+        "skewness": 0.5314872673194572,
+        "peak_mM": 4.608819345661451,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 30.606864905850145,
+        "variance_s2": 278.85776468321365
+      },
+      "incremental_predicted": {
+        "mean_s": 20.999999999999986,
+        "variance_s2": -1.1368683772161603e-13
+      },
+      "incremental_mean_relative": -0.31387941677142894,
+      "incremental_variance_relative": -1.0000000000000004,
+      "whole_mean_relative": -0.07013937719468721,
+      "whole_variance_relative": -0.29769501938464893,
+      "whole_CDF_max": 0.11126031857343188,
+      "dose_ratio": 0.9735857877512857,
+      "gates": {
+        "incremental_mean_relative": false,
+        "incremental_variance_relative": false,
+        "whole_mean_relative": false,
+        "whole_variance_relative": false,
+        "whole_CDF_max": false
+      },
+      "all_gates": false
+    },
+    "R2__prior_trt_independent__bg5": {
+      "observed": {
+        "area_mM_min": 5.071123755334281,
+        "observed_glucose_umol": 0.5071123755334281,
+        "mean_s": 136.96820944366527,
+        "variance_s2": 936.72297662093,
+        "mean_min": 2.2828034907277543,
+        "variance_min2": 0.26020082683914725,
+        "skewness": 0.9752680964630213,
+        "peak_mM": 4.551920341394025,
+        "peak_s": 125.0
+      },
+      "predicted": {
+        "area_mM_min": 4.937174016121385,
+        "observed_glucose_umol": 0.49371740161213845,
+        "mean_s": 127.36134453781513,
+        "variance_s2": 677.1268002379818,
+        "mean_min": 2.122689075630252,
+        "variance_min2": 0.18809077784388384,
+        "skewness": 0.511655229289867,
+        "peak_mM": 4.559502309984137,
+        "peak_s": 116.9
+      },
+      "blank": {
+        "area_mM_min": 4.937174016121385,
+        "observed_glucose_umol": 0.49371740161213845,
+        "mean_s": 106.36134453781513,
+        "variance_s2": 657.8652119377164,
+        "mean_min": 1.7726890756302522,
+        "variance_min2": 0.18274033664936565,
+        "skewness": 0.5314872673194572,
+        "peak_mM": 4.608819345661451,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 30.606864905850145,
+        "variance_s2": 278.85776468321365
+      },
+      "incremental_predicted": {
+        "mean_s": 21.0,
+        "variance_s2": 19.26158830026543
+      },
+      "incremental_mean_relative": -0.3138794167714285,
+      "incremental_variance_relative": -0.9309268353271537,
+      "whole_mean_relative": -0.0701393771946871,
+      "whole_variance_relative": -0.2771322822884068,
+      "whole_CDF_max": 0.11012528077618722,
+      "dose_ratio": 0.9735857877512857,
+      "gates": {
+        "incremental_mean_relative": false,
+        "incremental_variance_relative": false,
+        "whole_mean_relative": false,
+        "whole_variance_relative": false,
+        "whole_CDF_max": false
+      },
+      "all_gates": false
+    },
+    "R2__prior_trt_full_memory__bg5": {
+      "observed": {
+        "area_mM_min": 5.071123755334281,
+        "observed_glucose_umol": 0.5071123755334281,
+        "mean_s": 136.96820944366527,
+        "variance_s2": 936.72297662093,
+        "mean_min": 2.2828034907277543,
+        "variance_min2": 0.26020082683914725,
+        "skewness": 0.9752680964630213,
+        "peak_mM": 4.551920341394025,
+        "peak_s": 125.0
+      },
+      "predicted": {
+        "area_mM_min": 4.937174016121386,
+        "observed_glucose_umol": 0.49371740161213856,
+        "mean_s": 127.36134453781511,
+        "variance_s2": 696.3871417658706,
+        "mean_min": 2.122689075630252,
+        "variance_min2": 0.19344087271274185,
+        "skewness": 0.49829625255884835,
+        "peak_mM": 4.490917528267897,
+        "peak_s": 117.30000000000001
+      },
+      "blank": {
+        "area_mM_min": 4.937174016121385,
+        "observed_glucose_umol": 0.49371740161213845,
+        "mean_s": 106.36134453781513,
+        "variance_s2": 657.8652119377164,
+        "mean_min": 1.7726890756302522,
+        "variance_min2": 0.18274033664936565,
+        "skewness": 0.5314872673194572,
+        "peak_mM": 4.608819345661451,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 30.606864905850145,
+        "variance_s2": 278.85776468321365
+      },
+      "incremental_predicted": {
+        "mean_s": 20.999999999999986,
+        "variance_s2": 38.52192982815427
+      },
+      "incremental_mean_relative": -0.31387941677142894,
+      "incremental_variance_relative": -0.8618581416518356,
+      "whole_mean_relative": -0.07013937719468721,
+      "whole_variance_relative": -0.2565708761858605,
+      "whole_CDF_max": 0.1094779371440201,
+      "dose_ratio": 0.9735857877512859,
+      "gates": {
+        "incremental_mean_relative": false,
+        "incremental_variance_relative": false,
+        "whole_mean_relative": false,
+        "whole_variance_relative": false,
+        "whole_CDF_max": false
+      },
+      "all_gates": false
+    },
+    "R2__extra_mixed_volume__bg5": {
+      "observed": {
+        "area_mM_min": 5.071123755334281,
+        "observed_glucose_umol": 0.5071123755334281,
+        "mean_s": 136.96820944366527,
+        "variance_s2": 936.72297662093,
+        "mean_min": 2.2828034907277543,
+        "variance_min2": 0.26020082683914725,
+        "skewness": 0.9752680964630213,
+        "peak_mM": 4.551920341394025,
+        "peak_s": 125.0
+      },
+      "predicted": {
+        "area_mM_min": 4.937174016121386,
+        "observed_glucose_umol": 0.49371740161213856,
+        "mean_s": 129.2218549643437,
+        "variance_s2": 680.5889242546691,
+        "mean_min": 2.1536975827390616,
+        "variance_min2": 0.18905247895963032,
+        "skewness": 0.5084815505678014,
+        "peak_mM": 4.547691040365999,
+        "peak_s": 118.85000000000001
+      },
+      "blank": {
+        "area_mM_min": 4.937174016121385,
+        "observed_glucose_umol": 0.49371740161213845,
+        "mean_s": 106.36134453781513,
+        "variance_s2": 657.8652119377164,
+        "mean_min": 1.7726890756302522,
+        "variance_min2": 0.18274033664936565,
+        "skewness": 0.5314872673194572,
+        "peak_mM": 4.608819345661451,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 30.606864905850145,
+        "variance_s2": 278.85776468321365
+      },
+      "incremental_predicted": {
+        "mean_s": 22.860510426528563,
+        "variance_s2": 22.723712316952742
+      },
+      "incremental_mean_relative": -0.2530920596784467,
+      "incremental_variance_relative": -0.918511459263947,
+      "whole_mean_relative": -0.056555857091113104,
+      "whole_variance_relative": -0.2734362866706027,
+      "whole_CDF_max": 0.082208160055599,
+      "dose_ratio": 0.9735857877512859,
+      "gates": {
+        "incremental_mean_relative": false,
+        "incremental_variance_relative": false,
+        "whole_mean_relative": false,
+        "whole_variance_relative": false,
+        "whole_CDF_max": false
+      },
+      "all_gates": false
+    },
+    "R2__common_rare_delay__bg5": {
+      "observed": {
+        "area_mM_min": 5.071123755334281,
+        "observed_glucose_umol": 0.5071123755334281,
+        "mean_s": 136.96820944366527,
+        "variance_s2": 936.72297662093,
+        "mean_min": 2.2828034907277543,
+        "variance_min2": 0.26020082683914725,
+        "skewness": 0.9752680964630213,
+        "peak_mM": 4.551920341394025,
+        "peak_s": 125.0
+      },
+      "predicted": {
+        "area_mM_min": 4.937174016121386,
+        "observed_glucose_umol": 0.49371740161213856,
+        "mean_s": 129.22191084300135,
+        "variance_s2": 832.2142411826254,
+        "mean_min": 2.1536985140500224,
+        "variance_min2": 0.2311706225507293,
+        "skewness": 1.1832106127894513,
+        "peak_mM": 4.444904223782023,
+        "peak_s": 117.35000000000001
+      },
+      "blank": {
+        "area_mM_min": 4.937174016121385,
+        "observed_glucose_umol": 0.49371740161213845,
+        "mean_s": 106.36134453781513,
+        "variance_s2": 657.8652119377164,
+        "mean_min": 1.7726890756302522,
+        "variance_min2": 0.18274033664936565,
+        "skewness": 0.5314872673194572,
+        "peak_mM": 4.608819345661451,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 30.606864905850145,
+        "variance_s2": 278.85776468321365
+      },
+      "incremental_predicted": {
+        "mean_s": 22.860566305186225,
+        "variance_s2": 174.34902924490905
+      },
+      "incremental_mean_relative": -0.2530902339881046,
+      "incremental_variance_relative": -0.37477434260088827,
+      "whole_mean_relative": -0.05655544912303134,
+      "whole_variance_relative": -0.11156845518544045,
+      "whole_CDF_max": 0.0957736973409915,
+      "dose_ratio": 0.9735857877512859,
+      "gates": {
+        "incremental_mean_relative": false,
+        "incremental_variance_relative": false,
+        "whole_mean_relative": false,
+        "whole_variance_relative": false,
+        "whole_CDF_max": false
+      },
+      "all_gates": false
+    },
+    "R2__bead_volume_rare_delay__bg5": {
+      "observed": {
+        "area_mM_min": 5.071123755334281,
+        "observed_glucose_umol": 0.5071123755334281,
+        "mean_s": 136.96820944366527,
+        "variance_s2": 936.72297662093,
+        "mean_min": 2.2828034907277543,
+        "variance_min2": 0.26020082683914725,
+        "skewness": 0.9752680964630213,
+        "peak_mM": 4.551920341394025,
+        "peak_s": 125.0
+      },
+      "predicted": {
+        "area_mM_min": 4.937174016121384,
+        "observed_glucose_umol": 0.4937174016121384,
+        "mean_s": 131.36517873579538,
+        "variance_s2": 1010.8662627772276,
+        "mean_min": 2.1894196455965895,
+        "variance_min2": 0.28079618410478546,
+        "skewness": 1.578849569159957,
+        "peak_mM": 4.3173104120136365,
+        "peak_s": 117.85000000000001
+      },
+      "blank": {
+        "area_mM_min": 4.937174016121385,
+        "observed_glucose_umol": 0.49371740161213845,
+        "mean_s": 106.36134453781513,
+        "variance_s2": 657.8652119377164,
+        "mean_min": 1.7726890756302522,
+        "variance_min2": 0.18274033664936565,
+        "skewness": 0.5314872673194572,
+        "peak_mM": 4.608819345661451,
+        "peak_s": 95.0
+      },
+      "incremental_observed": {
+        "mean_s": 30.606864905850145,
+        "variance_s2": 278.85776468321365
+      },
+      "incremental_predicted": {
+        "mean_s": 25.003834197980254,
+        "variance_s2": 353.0010508395112
+      },
+      "incremental_mean_relative": -0.1830645093872041,
+      "incremental_variance_relative": 0.26588209311842315,
+      "whole_mean_relative": -0.04090752686793653,
+      "whole_variance_relative": 0.07915177486491998,
+      "whole_CDF_max": 0.08083627543047806,
+      "dose_ratio": 0.9735857877512856,
+      "gates": {
+        "incremental_mean_relative": false,
+        "incremental_variance_relative": false,
+        "whole_mean_relative": true,
+        "whole_variance_relative": true,
+        "whole_CDF_max": false
+      },
+      "all_gates": false
+    }
+  },
+  "frozen_delay_parameters": {
+    "unexplained_mean_A_s": 1.8605664119104404,
+    "unexplained_variance_A_s2": 155.08743145818937,
+    "implied_positive_hold_up_A_ul": 3.100944019850734,
+    "extra_mixed_volume_mean_s": 1.8605664119104404,
+    "rare": {
+      "available": true,
+      "rate_A": 0.04464201051730676,
+      "mean_event_s": 41.67747801567177,
+      "delayed_fraction_A": 0.04366021985698082,
+      "moment_constraint": "Two A incremental moments by construction; shape is not fitted."
+    },
+    "calibration_reactor": "A",
+    "note": "Extra delays on top of measured common loop. Physical origin unqualified."
+  },
+  "prior_article_C": {
+    "observed": {
+      "area_mM_min": 5.228132387706855,
+      "observed_glucose_umol": 0.5228132387706854,
+      "mean_s": 138.96619941216372,
+      "variance_s2": 1204.852536866859,
+      "mean_min": 2.316103323536062,
+      "variance_min2": 0.3346812602407942,
+      "skewness": 1.1082004182991128,
+      "peak_mM": 4.226950354609929,
+      "peak_s": 125.0
+    },
+    "predicted": {
+      "area_mM_min": 5.075650118203311,
+      "observed_glucose_umol": 0.5075650118203311,
+      "mean_s": 140.31568595265938,
+      "variance_s2": 808.4884590843326,
+      "mean_min": 2.3385947658776565,
+      "variance_min2": 0.2245801275234257,
+      "skewness": 0.6629543940798099,
+      "peak_mM": 4.537659161753498,
+      "peak_s": 130.3
+    },
+    "blank": {
+      "area_mM_min": 5.07565011820331,
+      "observed_glucose_umol": 0.507565011820331,
+      "mean_s": 107.05170004657661,
+      "variance_s2": 769.1463437563249,
+      "mean_min": 1.7841950007762768,
+      "variance_min2": 0.21365176215453469,
+      "skewness": 0.7085436577250094,
+      "peak_mM": 4.6453900709219855,
+      "peak_s": 95.0
+    },
+    "whole_mean_relative": 0.009710897658596673,
+    "whole_variance_relative": -0.3289731030597699,
+    "whole_CDF_max": 0.07691111558812547,
+    "observed_CDF_ahead_of_prediction_max": 0.07691111558812547,
+    "prediction_CDF_ahead_of_observation_max": 0.030807887034833614,
+    "predicted_mass_after_measured_window_fraction": 0.0,
+    "incremental_observed": {
+      "mean_s": 31.914499365587105,
+      "variance_s2": 435.7061931105342
+    },
+    "incremental_predicted": {
+      "mean_s": 33.263985906082766,
+      "variance_s2": 39.34211532800771
+    },
+    "incremental_mean_relative": 0.04228443395075754,
+    "incremental_variance_relative": -0.9097049434915261,
+    "predicted_to_observed_dose_ratio": 0.9708342753787028,
+    "gates": {
+      "whole_mean_relative": true,
+      "whole_variance_relative": false,
+      "whole_CDF_max": false,
+      "incremental_mean_relative": true,
+      "incremental_variance_relative": false
+    },
+    "all_gates": false
+  },
+  "any_R2_reduced_case_pass": false,
+  "note": "R1 and article A are likely repeated published traces based on raw matched markers. R2 is additional dimensional evidence, not a full independent native geometry qualification. All reaction remains disabled."
+}

@@ -24,6 +24,9 @@ assumptions and intermediate evidence available for inspection.
 > [Strniša microreactor inert-tracer study](examples/biocatalysis/strnisa_tracer/REPORT.md)
 > passes numerical conservation and short-resolution checks, but fails
 > experimental dispersion/length transfer with the measured blank loop.
+> The [Panjan thesis follow-up](examples/biocatalysis/panjan_tracer_audit/REPORT.md)
+> exposes a fixed-liquid-volume mean-time discrepancy at the additional
+> middle length and an incompatible single-exponential detector assumption.
 > Reaction has not started in this new case.
 
 ## The connected workflow

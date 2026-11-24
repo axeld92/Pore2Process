@@ -9,7 +9,7 @@ biosensors for biopharmaceutical process control*, Acta Universitatis
 Ouluensis D 1453 (2018), ISBN 978-952-62-1819-9 (PDF)](https://oulurepo.oulu.fi/bitstream/handle/10024/36333/isbn978-952-62-1819-9.pdf?isAllowed=y&sequence=1).
 Panjan is a coauthor of Strniša et al. (2018).
 
-## Detector characterization (pp. 42–43, Table 1)
+## Detector characterization (pp. 42–44, Fig. 4 and Table 1)
 
 The thesis reports a step-response $T_{90}$ of 58 s for a characterized
 electrochemical glucose detector, with a 0–3 mM linear range in the table,
@@ -17,7 +17,7 @@ electrochemical glucose detector, with a 0–3 mM linear range in the table,
 variations of 4.0% and 5.7%. The article's stated linear range extends to
 5 mM; do not assume the thesis detector's calibration/dynamic response is
 identical to every article pulse. The physical detector chamber in the
-thesis experiment has a reported volume of 4 µL (p. 78).
+thesis experiment has a reported volume of 4 µL (pp. 72 and 79).
 
 An illustrative first-order instrument with a 58 s $T_{90}$ would have a
 25.2 s time constant and thus a 635 s² variance. That is comparable to the
@@ -46,7 +46,10 @@ volume/geometry and any overlap in trials are not established; no
 additional independent replicate is assumed. The full Fig. 25 curve
 would permit a useful measurement-loop transferable-length comparison,
 and a separate width/distributor test if the specimens' volume definitions
-and geometry are established. The online primary text was checked;
-the remote page-image fetch failed and the Fig. 25 curves have not yet
-been digitized. The article's Fig. 3a/3b audit remains the actual measured
-comparison in the current example.
+and geometry are established. The remote figure fetch originally
+failed; the user subsequently supplied the thesis PDF. Its [separate
+source extraction](../panjan2018/README.md) and [dimensional tracer
+audit](../../../examples/biocatalysis/panjan_tracer_audit/REPORT.md)
+now quantify the likely shared blank and R1/A traces, the R2 mean-volume
+discrepancy and the detector consistency limits. This subsequent audit
+does not change the original frozen A-to-C predictions.

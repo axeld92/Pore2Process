@@ -1,0 +1,94 @@
+# Native Im30.jpg, 1442 x 846 px, PDF p. 80 / printed p. 78.
+# Independent approximate readings of plotted marker or line centres.
+schema_version = 1
+pdf_sha256 = "f61a52a7dcb4832aced3f340a8964952da13ab545a4a5ca113fb2f4be658edff"
+source = "Panjan (2018), Fig. 25 (N=3)"
+axis_time_0_px = 129
+axis_time_7_min_px = 1401.5
+axis_conc_0_mM_px = 730
+axis_conc_5_mM_px = 27
+time_step_s = 5.0
+distinct_reading_px = 2
+overlap_reading_px = 5
+window_note = "The figure has a 0–7 min axis but different visible series end times. Narrow-pulse ends are near baseline; R3/R4 remain appreciably positive at 7 min. No missing wide-reactor tail is assigned zero."
+marker_note = "Coordinate readings are approximate, obtained from the native image, checking centre positions using the grayscale marker geometry. Index k corresponds to k*5 seconds (circle and square x spacing about 15.13 px; axis 15.15 px/5 s). At obscured points use interpolation between recorded neighbours; approximate baseline-region points are listed separately as ambiguous. The pixel allowances are figure-reading sensitivities, NOT measured experimental uncertainties."
+columns = ["index_5s", "y_px"]
+
+[blank]
+symbol = "black circle"
+points = [
+  [1,718],[2,723],[3,726],[4,730],[5,725],[6,729],[7,728],[8,730],[9,730],[10,730],[11,718],
+  [12,635],[13,527],[14,434],[15,321],[16,251],[17,121],[18,84],[19,77],[20,79],
+  [21,113],[22,129],[23,176],[24,230],[25,295],[26,361],[27,426],[28,484],[29,542],[30,585],
+  [32,647],[33,661],[34,682],[35,692],[36,700],[37,705],[38,708],[39,717],[40,716],
+  [41,724],[42,723],[43,726],[44,730],[45,729],[46,725],[47,727],[48,729],[49,728],[50,728]
+]
+ambiguous_indices = [1,2,3,4,5,6,7,8,9,10,11,18,19,20,21,29,30,38,39,40,41,42,43,44,45,46,47,48,49,50]
+obscured_indices = [31]
+first_visible_index = 1
+last_visible_index = 50
+note = "Circles are partially masked by other series near baseline; the terminal visible trace is at baseline within the reading allowance. No reported measurement after this visible end."
+
+[R1]
+symbol = "gray square"
+points = [
+  [1,730],[12,730],[13,696],[14,630],[15,531],[16,431],[17,316],[18,222],[19,156],[20,112],
+  [21,93],[22,94],[23,108],[24,140],[25,187],[26,245],[27,310],[28,375],[29,437],[30,492],
+  [32,580],[33,611],[34,636],[35,654],[36,668],[37,678],[38,687],[39,696],[40,698],
+  [41,708],[42,708],[43,711],[44,714],[45,716],[46,715],[47,719],[48,719],[49,720],
+  [50,723],[51,723],[52,724],[53,724],[54,724],[55,725],[56,725],[57,724],[58,727],[59,726],[60,726]
+]
+ambiguous_indices = [1,12,21,22,23,24,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60]
+obscured_indices = [2,3,4,5,6,7,8,9,10,11,31]
+first_visible_index = 1
+last_visible_index = 60
+note = "Baseline anchors bracket unresolved early near-zero points. Overlapping R1 squares and R2 triangles near the tail are approximate; square series ends near 5 min."
+
+[R2]
+symbol = "gray triangle"
+points = [
+  [1,730],[14,730],[15,728],[16,696],[17,642],[18,571],[19,487],[20,384],[21,281],
+  [22,197],[23,134],[24,96],[25,85],[26,98],[27,132],[28,179],[29,235],[30,294],
+  [32,408],[33,462],[34,507],[35,545],[36,578],[37,604],[38,625],[39,642],[40,656],
+  [41,666],[42,674],[43,685],[44,691],[45,698],[46,703],[47,705],[48,710],[49,711],
+  [50,714],[51,717],[52,718],[53,721],[54,722],[55,723],[56,724],[57,723],[58,726],
+  [59,725],[60,726],[61,729],[62,728],[63,729],[64,729],[65,730],[66,730],[67,730],[68,730],
+  [69,729],[70,730],[71,730],[72,730],[73,730],[74,730],[75,730],[76,730],[77,730],[78,730],[79,730],[80,730]
+]
+ambiguous_indices = [1,14,15,23,24,25,33,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80]
+obscured_indices = [2,3,4,5,6,7,8,9,10,11,12,13,31]
+first_visible_index = 1
+last_visible_index = 80
+note = "Near-baseline triangles overlap squares through about 5 min; read their upper tips and approximate marker centres. Early unresolved points bracketed by baseline anchors."
+
+[R3]
+symbol = "black diamond"
+points = [
+  [1,628],[2,667],[3,689],[4,701],[5,708],[6,715],[7,719],[8,722],[9,723],[10,724],
+  [12,727],[16,730],[20,730],[22,728],[23,722],[24,712],[25,690],[26,669],[27,642],
+  [28,609],[29,575],[30,541],[31,510],[32,478],[33,455],[34,437],[35,423],[36,418],[37,418],
+  [38,420],[39,426],[40,436],[41,448],[42,464],[43,481],[44,496],[45,512],[46,527],
+  [47,541],[48,556],[49,568],[50,577],[51,588],[52,598],[53,605],[54,611],[55,616],
+  [56,621],[57,627],[58,630],[59,633],[60,636],[61,638],[62,639],[63,643],[64,644],
+  [65,644],[66,647],[67,648],[68,648],[69,650],[70,651],[71,652],[72,654],[73,655],
+  [74,657],[75,659],[76,659],[77,660],[78,663],[79,664],[84,672]
+]
+ambiguous_indices = [6,7,8,9,10,12,16,20,22,23,29,30,31,32,33,48,49,84]
+first_visible_index = 1
+last_visible_index = 84
+note = "Partial visible window only. Last point at 7 min on the visible plotted curve to the right of the last diamond, not a distinct marker. First visible concentration well above baseline before the main pulse. Do not normalize into a complete RTD or extrapolate missing tails."
+
+[R4]
+symbol = "black line"
+points = [
+  [1,730],[12,730],[24,730],[30,730],[33,730],[34,729],[35,728],[36,727],[37,726],
+  [38,722],[39,715],[40,707],[41,701],[42,687],[43,671],[44,651],[45,630],[46,605],
+  [47,581],[48,555],[49,531],[50,506],[51,487],[52,470],[53,456],[54,445],[55,432],
+  [56,423],[57,417],[58,410],[59,406],[60,406],[61,407],[62,406],[63,408],[64,415],
+  [65,420],[66,426],[67,435],[68,445],[69,455],[70,465],[71,476],[72,488],[73,498],
+  [74,511],[75,518],[76,528],[77,538],[78,547],[79,557],[80,566],[81,575],[82,583],[83,592],[84,600]
+]
+ambiguous_indices = [1,12,24,30,33,34,35,36,37,38,39,40,41,42,48,49]
+first_visible_index = 1
+last_visible_index = 84
+note = "Partial visible line readings at 5 s cadence; initial near-zero line obscured by R3 and narrow curves. End of plotted 7 min window still positive; no complete RTD moment inferred."
