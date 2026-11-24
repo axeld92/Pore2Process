@@ -4,7 +4,7 @@
   "title": "Characterization of an enzymatic packed-bed microreactor: Experiments and modeling",
   "doi": "10.1016/j.cej.2018.05.028",
   "role": "Measured tracer response, water pressure drop, same-reaction batch initial activity and six Novozym 435 microreactor geometries; possible separate reactive benchmark.",
-  "files": ["evidence.toml", "README.md"],
+  "files": ["evidence.toml", "rtd_fig3b.toml", "rtd_fig3a_audit.toml", "related_detector_evidence.md", "README.md"],
   "pdf_sha256": "df5b292b6a0726a02d3db3375078880712c47348d46b8d48b095bd06748ec749",
   "supplement_sha256": "75d1bbe4e0380b16398d965aca13ba21264982505d32aa0297a300a06a509c3a"
 }

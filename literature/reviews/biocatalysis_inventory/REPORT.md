@@ -293,3 +293,12 @@ This milestone offers independent validation of fluid transport and
 an experimentally supported scale-up/productivity metric for
 the subsequent Julia-to-DWSIM translation. No OpenLB, new reacting
 bed, or DWSIM calculation has been run as part of the present audit.
+
+**Subsequent implementation (24 November 2026).** The separate
+[Strniša inert tracer example](../../../examples/biocatalysis/strnisa_tracer/REPORT.md)
+has performed the dimensional blank-loop comparison and full-length
+TRT/Julia A-to-C prediction. Numerical conservation passes, but
+experimental spreading and fixed A-only delay transfer do not. The
+associated [Panjan detector and additional tracer evidence](../../sources/strnisa2018/related_detector_evidence.md)
+identifies a next literature-based measurement-loop audit. Reaction
+is deliberately not initiated in the new case.

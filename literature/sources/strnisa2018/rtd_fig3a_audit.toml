@@ -1,0 +1,36 @@
+# Selected experimental triangles in Fig. 3a, upper panel of the same
+# native 1019x1598 raster as Fig. 3b. Index correspondence is by rise,
+# peak and tail; x spacing and normalized y values are independently checked.
+schema_version = 1
+source = "Strnisa et al. 2018 Fig. 3a, upper panel Im0, p. 546"
+pdf_sha256 = "df5b292b6a0726a02d3db3375078880712c47348d46b8d48b095bd06748ec749"
+axis_time_0_px = 117
+axis_time_1_px = 463
+axis_conc_0_px = 671
+axis_conc_1_px = 15
+reading_px = 3
+note = "Selected centers of distinct experimental triangles; approximate pixel reading, not experimental uncertainty. Index refers to the corresponding intensity sequence in Fig. 3b, not a separate measurement. No fitted or scaled simulation points included."
+columns = ["index_5s", "x_px", "y_px"]
+markers = [
+  [14,321,568],
+  [15,335,467],
+  [16,350,364],
+  [17,365,246],
+  [18,379,149],
+  [19,394,81],
+  [20,408,34],
+  [21,423,15],
+  [22,437,17],
+  [23,452,33],
+  [24,466,65],
+  [25,481,115],
+  [26,496,174],
+  [27,510,240],
+  [28,525,306],
+  [29,539,372],
+  [30,553,427],
+  [33,597,549],
+  [35,626,594],
+  [40,698,641],
+  [45,771,657],
+]

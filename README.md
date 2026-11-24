@@ -20,7 +20,11 @@ assumptions and intermediate evidence available for inspection.
 > better documented breakthrough reference. The first reacting study tests
 > **immobilised lipase esterification** on Apple Silicon macOS; both feed
 > ratios now have a time-dependent held-out packed-bed catalyst-history
-> comparison, with kinetic transfer still unresolved.
+> comparison, with kinetic transfer still unresolved. The separate
+> [Strniša microreactor inert-tracer study](examples/biocatalysis/strnisa_tracer/REPORT.md)
+> passes numerical conservation and short-resolution checks, but fails
+> experimental dispersion/length transfer with the measured blank loop.
+> Reaction has not started in this new case.
 
 ## The connected workflow
 

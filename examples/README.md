@@ -65,6 +65,7 @@ specific earlier measurements or assumptions.
 | Biocatalysis | [Composition and catalyst activity](biocatalysis/pentyl_propanoate_composition/REPORT.md) | Complete 16-assay batch matrix; composition, acid damage, alcohol protection and residual activity tests fail predictive transfer to the fixed bed | [Commands](biocatalysis/pentyl_propanoate_composition/README.md) |
 | Biocatalysis | [Equimolar packed-bed holdout](biocatalysis/pentyl_propanoate_equimolar/REPORT.md) | All 40 reactor observations compared at fixed mass; a published deactivation-sign ambiguity and distinct moderate-temperature overprediction and hot-batch transfer failures | [Commands](biocatalysis/pentyl_propanoate_equimolar/README.md) |
 | Biocatalysis | [Spatial catalyst exposure over time](biocatalysis/pentyl_propanoate_history/REPORT.md) | 560 converged histories of the fixed 6 g bed, local reaction-zone migration and instability for hot acid-rich cases; protected alcohol-rich rates remain too high | [Commands](biocatalysis/pentyl_propanoate_history/README.md) |
+| Biocatalysis | [Strniša microreactor tracer benchmark](biocatalysis/strnisa_tracer/REPORT.md) | Stock TRT and conservative Julia pass the short numerical screens and long mass recovery. Measured-blank subtraction reveals substantial missing dispersion; the frozen A delay models fail C. Reaction remains on hold | [Commands](biocatalysis/strnisa_tracer/README.md) |
 
 Filtration hydraulics is closed for now. Phenol adsorption is paused pending a
 published dataset with enough detail to check breakthrough independently.

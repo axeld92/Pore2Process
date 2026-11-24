@@ -1,0 +1,62 @@
+schema_version = 1
+source_doi = "10.1016/j.cej.2018.05.028"
+source_location = "Sections 2.3, 3, 4.1; Fig. 3b, Tables 1–2"
+reference_reactor = "A"
+holdout_reactor = "C"
+reaction_enabled = false
+
+[fluid]
+temperature_C = 24.0
+flow_ul_min = 100.0
+viscosity_Pa_s = 0.000910
+density_kg_m3 = 997.3
+property_assumption = "Pure-water approximation to 100 mM PBS; no measured PBS viscosity for this experiment."
+water_source = "https://iapws.org/relguide/LiquidWater.pdf"
+glucose_diffusivity_m2_s = 7.1e-10
+diffusivity_source = "https://doi.org/10.1039/D5RA00669D"
+diffusivity_note = "Table 4 infinite dilution water at 25 C: (7.294 ± 0.032)e-10 m2/s; approximate 24 C adjustment using T/mu. No fitted diffusivity."
+diffusivity_sensitivity_factors = [0.8, 1.2]
+
+[geometry]
+diameter_um = 372.10
+reported_spread_um = 27.05
+model = "Monodisperse representative spheres tangent to lower plate, randomized in one layer. No-slip top and side walls."
+seed_A = 24112026
+seed_C = 24112027
+sweeps = 240
+minimum_bead_gap_fraction = 0.002
+seam_buffer_fraction_of_diameter = 0.25
+hydraulic_boundary = "Axial periodic whole-length pressure-gradient forcing; no transverse periodicity; axial seam in bead-free slot, open for tracer. Finite geometry but developed rather than prescribed plug-flow inlet."
+depth_grids = [12, 16, 20]
+
+[numerics]
+tau_even = 0.58
+threads = 10
+particles = 16384
+particle_seed = 223795
+particle_dt_s = 0.010
+particle_fine_dt_s = 0.005
+marker_stop_A_s = 90.0
+marker_stop_C_s = 160.0
+min_recovery = 0.999
+max_native_flow_relative_error = 0.0025
+max_Mach = 0.04
+max_density_departure = 0.005
+max_relative_face_projection = 0.05
+max_local_face_imbalance = 1e-10
+max_plane_relative_error = 1e-9
+mean_refinement_relative = 0.05
+variance_refinement_relative = 0.10
+
+[comparison]
+injection_glucose_umol = 0.5
+measurement_window_min = 6.67
+# Blank includes nominal injection, all common plumbing, detector and signal
+# processing. Convolve with an impulse response of the bed JUST ONCE.
+common_loop = "Empirical nonnegative baseline-corrected blank pulse; normalize its area for shape. Preserve absolute dose and recovery ledger separately."
+whole_loop_mean_relative = 0.05
+whole_loop_variance_relative = 0.10
+whole_loop_cdf_max = 0.05
+incremental_mean_relative = 0.05
+incremental_variance_relative = 0.10
+note = "Also report published Table 1 moments separately: the blank subtraction of mean and variance assumes a linear time-invariant common measurement chain. A blank-dominated whole-loop success alone does not establish pore dispersion. No long-reactor curve may calibrate geometry, diffusivity, baseline, loop, or any extra model parameters."

@@ -19,8 +19,8 @@ fluid or measured quantity:
   dispersion. The reported Table 1 moments come from the pulse experiments;
   the reported dispersion coefficients are *derived* from those moments,
   not separately measured molecular diffusivities. The full Fig. 3b
-  marker curves remain a digitization task before a quantitative full-curve
-  holdout. Fig. 3a's peak-normalized signal cannot establish mass recovery.
+  marker curves have now been digitized in [rtd_fig3b.toml](rtd_fig3b.toml);
+  Fig. 3a's peak-normalized signal cannot establish mass recovery.
 - **Hydraulics (p. 544, p. 547, Fig. 6):** water at 24 °C, not the
   reacting organic mixture. The sensor specification and reported maximum
   are transcribed. The near-overlaid pressure curves merit a measurement-
@@ -87,8 +87,55 @@ instead of treating those structures as exact reconstructions.
 A later implementation should use the existing stock OpenLB TRT flow
 and independently conservative Julia tracer transport, conserve absolute
 tracer mass, and qualify the same blank-loop treatment on both channel
-lengths before attempting reacting-liquid predictions. This audit has
-not run or qualified that simulation. The related same-reaction
+lengths before attempting reacting-liquid predictions. The
+[microreactor tracer case](../../../examples/biocatalysis/strnisa_tracer)
+implements that separate comparison. The related same-reaction
 [Pohar et al. (2012)](https://doi.org/10.1016/j.cej.2012.02.035)
 paper is a candidate for kinetics; its principal ionic-liquid conditions
 must be checked before importing parameters into the n-heptane case.
+
+## Complete loop-response extraction (Fig. 3b)
+
+Native Im0 (PDF p. 6/article p. 546, 1019 × 1598 px) contains the
+blank square, short-reactor triangle, and long-reactor diamond pulse
+curves. The axis centers are x=107 at 0 min and x=909 at 6 min;
+y=1503 at 0 mM and y=939 at 4 mM. Marker centers are approximately
+11.14 px apart (5 s). The saved readings use all distinct plotted
+markers from the pre-pulse region through the end of the plot
+(6.67 min), and preserve the overlapping tail readings separately
+from the source's uncertainty. Index 31 has no resolved markers
+in the raster. A colored marker-center overlay was checked against
+the source image. Interpolation between measured points is piecewise
+linear; the analysis uses an added zero anchor at injection time.
+
+The full-loop signal incorporates the 10 µL injection, tubing,
+detector and packed channel. Under an unchanged linear measurement
+chain, subtract blank mean/variance from the full measured moments
+to infer the incremental reactor contribution. This subtraction
+is a conditional measurement interpretation, not a direct
+pore-dispersion measurement. The raw plot has nonzero baseline
+and overlapping tail markers at the pixel scale; baseline offsets
+of 2 or 5 px are separate reading sensitivities, not measured
+noise statistics. Fig. 3b inset filled-marker error bars read
+approximately 0.17–0.25 min around A's 0.21 min and 0.45–0.61
+min around C's 0.53 min; the caption does not specify their exact
+numeric values or statistical definition. Preserve the printed
+Table 1 moments and these graphical ranges separately from the
+Fig. 3b digitized moment differences.
+
+### Cross-check of the dimensionless comparison (Fig. 3a)
+
+[Selected Fig. 3a marker centers](rtd_fig3a_audit.toml) correspond to
+the measured A intensity sequence in Fig. 3b. The 21 centers imply a
+time scale of 118.91 s and peak normalization within 0.0033 of the
+Fig. 3b values. The integrated mean of the **complete measured A loop**
+is 119.04 s, while Table 1 reports 12.6 s for A. This is a reading-based
+inference about the plotted curve, not access to the authors' data
+processing. A normalized overlay of the experimental and numerical
+curves cannot on its own establish the absolute reactor-only residence
+time or dispersion. Use the dimensional blank, A and C curves for this
+qualification.
+
+For a specific subsequent apparatus check, see the [related 2018 detector
+and additional tracer evidence](related_detector_evidence.md) from
+Panjan's doctoral thesis. It is not a new fit to the held-out C curve.

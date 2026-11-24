@@ -1,0 +1,21 @@
+schema_version = 1
+id = "biocatalysis/strnisa_tracer"
+title = "Strniša packed microreactor: stock TRT aqueous tracer and measurement-loop transfer"
+area = "biocatalysis"
+status = "complete"
+readme = "README.md"
+report = "REPORT.md"
+prerequisites = ["adsorption/disordered_refinement", "biocatalysis/pentyl_propanoate_transport"]
+run_module = "examples.biocatalysis.strnisa_tracer.native"
+check_module = "examples.biocatalysis.strnisa_tracer.check"
+reference_files = ["reference/summary.json", "reference/prediction_samples.csv", "figures/loop_comparison.png", "figures/dimensionless_audit.png"]
+protocol_files = ["protocol.toml"]
+
+[validation]
+short_numerical = "passed"
+short_independent_experiment = "failed"
+short_additional_delay_model = "conditional"
+long_numerical = "passed"
+long_tracer_holdout = "failed"
+reaction = "not_assessed"
+scope = "Glucose in aqueous PBS only. Both carriers conserve throughput and recover all tracer; A passes grid and time-step checks. Under the shared measured-blank assumption, both reactors' spreading is substantially underpredicted. A-only calibrated delay laws fail C; no common nonnegative added mean can meet both mean limits. No reaction until an independently transferable tracer model is qualified."

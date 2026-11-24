@@ -512,6 +512,21 @@ fully characterized continuous immobilised enzyme benchmark. Do not fit
 a per-bed factor or progress to a new reacting OpenLB/DWSIM validation
 claim on these unqualified rates.
 
+The separate [Strniša microreactor tracer benchmark](examples/biocatalysis/strnisa_tracer/REPORT.md)
+now uses complete dimensional blank/A/C glucose pulses, entire short and
+long monolayer packings with stock OpenLB TRT, and conservative Julia
+first passage. Short grid/time screens pass and all markers exit both
+reactors. However, the inferred incremental variances are 164 and
+436 s²; the interbead model predicts 9 and 39 s². A-only extra delay
+laws and related-support internal-liquid scenarios cannot simultaneously
+explain mean and spreading on C without refitting. The normalized
+experimental plot in the original paper retains the full loop.
+Next use the [related Panjan thesis evidence](literature/sources/strnisa2018/related_detector_evidence.md)
+to audit the measurement apparatus/leading-edge definition and additional
+length curves, then assess finite fittings and bead-size/clearance
+sensitivity if justified. No reaction until the independent tracer
+transfer is qualified.
+
 ## Acceptance criterion for every end-to-end showcase
 
 An output actually derived from OpenLB must influence an actual DWSIM process
