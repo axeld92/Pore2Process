@@ -1,0 +1,49 @@
+{
+  "question": "Can a time-dependent, spatially resolved catalyst activity state, with the same batch-only parameters and actual catalyst inventory, account for the opposite effects of temperature and feed ratio in the packed bed?",
+  "scientific_boundary": {
+    "frozen_parameters": "All seven preceding all-batch activity-law parameter records in pentyl_propanoate_composition/reference/summary.json; the equilibrium regressions remain feed-specific and unmeasured 1:1 70/80 C constants are active-equilibrium extrapolations. No fitting or use of reactor curves for parameter, condition or age selection.",
+    "geometry_and_transport": "Reuse pentyl_propanoate_equimolar.run.conditions: exactly 6 g, 16 mm bore, 140 mm bed, 593 micrometre beads, water-derived voidage 0.64, central Wilson–Geankoplis film and ratio-specific Table B1 internal factors; same low-Re Pe and Eq 4 inlet boundary. No new OpenLB or DWSIM run and no change to prior results.",
+    "sources": ["https://doi.org/10.1021/acs.iecr.5c02780", "https://doi.org/10.1021/acs.iecr.5c02780.s001", "https://doi.org/10.1021/acs.iecr.6c02375"],
+    "actual_mass_kg": 0.006,
+    "held_out_assays": {"1to1": [45,64], "2to1": [65,84]},
+    "observation_time": "The reactor article reports an approximately 3 h cycle, steady operation after about 30 min, first sample 10 min and subsequent samples every 30 min. Age/history at each plotted conversion is unspecified. Score all 40 points at the prespecified 30 and 180 min endpoints and the arithmetic mean of the six samples from 30 through 180 min, explicitly a summary scenario and not a known experimental averaging procedure. Do not choose an observed-match time or change catalyst mass."
+  },
+  "model": {
+    "liquid": "Dry feed, constant volumetric flow and one reversible reaction, X = formed ester mol / original acid mol in the liquid; nonnegative progress to the same thermodynamic root. z/L=y; tau=liquid volume/flow (min); J=X-(1/Pe)*dX/dy. dX/dt=-(1/tau)*dJ/dy+r_liquid/C_A0. Eq 4 X(0,t)=0 and dX/dy(1,t)=0; allow explicit upstream product backdiffusion. Track product inventory, production, effluent and backdiffusive flux independently. Acid/alcohol consumption and water production follow the common stoichiometric extent; no claim of a measured pore-liquid species composition or changing density.",
+    "catalyst": "At each fixed axial cell H'=acid_hazard(T,X_local) from the frozen CompositionKinetics law. No advection of H. Activity = recovery(t) [f+(1-f) exp(-H)] with frozen residual fraction f and recovery. Local rate in mol/(L_liquid min) = eta_I*0.06*Ccat_g_L*activity*net_mass_rate(T,X_surface); solve the existing BeadFilm film equation capacity*(X_surface-X_bulk)=r_liquid. Single eta_I factor. Primary hazard uses local bulk composition (same basis as fitted batch variable). Sensitivity uses bead-surface composition; pore-interior gradients are not resolved.",
+    "initial_state": "Primary starts the clock with an idealized liquid-filled bed at premixed dry feed composition, X=0, H=0 everywhere, batch-frozen recovery(t). The actual prefill and preceding catalyst history are unreported. The batch study describes preheating beads in pentanol; the flow paper starts pumping a premixed feed after reaching temperature. A fully recovered g=1 start is a conditioning-limit scenario for the two laws with a nonzero fitted recovery deficit, not a measured reactor initialization. A product-rich equilibrated liquid prefill with H=0 is a deliberately generous mathematical initial liquid inventory on the same conserved stoichiometric manifold, not a claim of actual prefill; no prior catalyst damage is specified. Keep its initial product inventory in the flux balance. Do not infer a fresh or spent fraction by matching observations."
+  },
+  "scenarios": {
+    "fresh_bulk": ["acid_decay","acid_activation","acid_both","protected_decay","protected_both","residual_decay","protected_residual_decay"],
+    "fresh_surface": ["acid_decay","protected_decay","protected_residual_decay"],
+    "recovered_bulk": ["acid_both","protected_both"],
+    "equilibrium_prefill_bulk": ["acid_both","protected_residual_decay"]
+  },
+  "scenario_reason": "All seven primary frozen hypotheses run on the complete matrix. Surface exposure probes ordinary film/composition coupling for unprotected loss, protected loss, and protected retained activity. The two nonzero-recovery laws test the fully recovered initial activity limit. Two contrasting damage laws test the initial liquid-inventory limit. All sensitivity curves retain the full 40 conditions and are not selected by bed scores.",
+  "times_min": [0,1,3,6,10,20,30,60,90,120,150,180],
+  "reported_steady_sample_times_min": [30,60,90,120,150,180],
+  "numerics": {
+    "method": "Cell-centred conservative exponentially fitted axial flux (as in the steady solver); two-stage stiffly accurate L-stable SDIRK2 (gamma=1-1/sqrt(2), weights 1-gamma,gamma). At each stage integrate H implicitly using local bulk/surface hazard, solve the film bracket using existing BeadFilm.surface_progress, and solve the coupled liquid stage with tridiagonal Newton and physical line search. Evaluate all source/face fluxes independently; integrate those using the same stage quadrature. No clipping of accepted updates to force an apparent balance. Reject and halve steps on numerical bounds/nonconvergence. Grow from a small startup step; cap it at max_step/4 through 10 min and max_step/2 through 30 min, then the prescribed maximum, landing on each scheduled sample and both cap transitions. Coarse and fine runs scale the entire schedule together.",
+    "initial_cells": [64,128],
+    "initial_max_steps_min": [2,1],
+    "max_cells": 2048,
+    "minimum_max_step_min": 0.0625,
+    "cap_revision": "Before scoring any observations, a numerical pilot at 80 C, 1:1, 0.7 mL/min (acid_both, equilibrium-prefill sensitivity) changed sampled outlet conversion by 0.002112 from 256 to 512 cells. Expanded the allowed mesh/step refinements and introduced the smaller startup caps above; all accuracy/conservation thresholds unchanged. This is a numerical-resolution decision, not a fit to experimental values.",
+    "max_sample_conversion_change_fraction": 0.001,
+    "max_startup_conversion_change_fraction": 0.003,
+    "max_mean_activity_change_fraction": 0.003,
+    "max_profile_activity_L1_change_fraction": 0.005,
+    "max_cumulative_equivalent_change_per_fed_mole": 0.002,
+    "max_stage_residual_fraction": 1e-10,
+    "stage_solver_budget": "Newton also limits the spatial mean stage-equation residual to max(5e-15, 2e-12*alpha) for implicit stage size alpha in minutes, in addition to 5e-12 maximum component residual. This prevents tiny signed residuals accumulating in long low-flow histories; the global conservation threshold is unchanged.",
+    "max_normalized_cumulative_balance_error": 1e-9,
+    "max_film_residual_mol_L_min": 1e-10,
+    "max_sampled_film_source_slope_over_capacity": 0.99,
+    "refinement_rule": "Compare a time halving at matched fine mesh and a mesh doubling at matched fine maximum step. If either check fails refine that discretization and recheck matched comparisons; use the finer accepted run. Compare the full stated time-on-stream series, mean/local activity and cumulative quantities, not only the final conversion. The tolerances are numerical engineering accuracy limits well below typical conversion-curve disagreement, not experimental uncertainty. If caps are reached report the numerical failure rather than use the unqualified case."
+  },
+  "validation": {
+    "independent_controls": ["Analytic constant-hazard history at every cell and fixed catalyst mass, including zero activity/zero rate", "Analytic reversible constant-hazard batch exposure with negligible transport and zero film (same mass-specific units)", "High-Pe plug-flow startup based on fluid age min(t,tau) without catalyst aging", "Clock-free finite-Pe long-time solution matches existing steady solver at same cells, including inlet backdiffusion", "Independent finite-difference check of the implicit film reaction derivative (bulk and surface exposure), and conservation under nonzero initial product inventory"],
+    "stability_trace": "Use the already digitized 2025 SI Figure S2 2:1 propionate series (temperature and flow unknown). For each 2:1 simulation report span and drift at the same six 30–180 min ages, compare its scale with the observed 1.215 pp span and a reading-only expanded allowance 2*0.243 pp. This is a qualitative consistency screen across the grid, not assignment of that trace to a particular case, a measurement confidence interval, or a model-selection criterion.",
+    "scientific_status": "The prior dynamic laws failed independent batch holdouts. This exercise may falsify a proposed spatial transfer; success on a bed point or unknown age is not validation. If corrected local history cannot explain both feeds, separately investigate published same-chemistry rate/exposure or contact/inventory evidence."
+  }
+}

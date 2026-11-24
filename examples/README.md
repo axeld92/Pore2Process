@@ -64,6 +64,7 @@ specific earlier measurements or assumptions.
 | Biocatalysis | [Independent high-loading evidence](biocatalysis/pentyl_propanoate_loading_evidence/REPORT.md) | Additional equimolar pentyl series to 80.53 g/L; other esters support diminishing returns but common loading laws fail pentyl and reactor transfer | [Commands](biocatalysis/pentyl_propanoate_loading_evidence/README.md) |
 | Biocatalysis | [Composition and catalyst activity](biocatalysis/pentyl_propanoate_composition/REPORT.md) | Complete 16-assay batch matrix; composition, acid damage, alcohol protection and residual activity tests fail predictive transfer to the fixed bed | [Commands](biocatalysis/pentyl_propanoate_composition/README.md) |
 | Biocatalysis | [Equimolar packed-bed holdout](biocatalysis/pentyl_propanoate_equimolar/REPORT.md) | All 40 reactor observations compared at fixed mass; a published deactivation-sign ambiguity and distinct moderate-temperature overprediction and hot-batch transfer failures | [Commands](biocatalysis/pentyl_propanoate_equimolar/README.md) |
+| Biocatalysis | [Spatial catalyst exposure over time](biocatalysis/pentyl_propanoate_history/REPORT.md) | 560 converged histories of the fixed 6 g bed, local reaction-zone migration and instability for hot acid-rich cases; protected alcohol-rich rates remain too high | [Commands](biocatalysis/pentyl_propanoate_history/README.md) |
 
 Filtration hydraulics is closed for now. Phenol adsorption is paused pending a
 published dataset with enough detail to check breakthrough independently.

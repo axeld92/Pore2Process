@@ -494,12 +494,23 @@ still 23.58 conversion points: too high at moderate temperature
 and too low at high temperature. The sign interpretation is
 conditional and is not an adopted correction. A single reduced
 catalyst inventory would worsen the hot equimolar prediction.
-Next test the spatial, time-dependent catalyst exposure with
-the frozen batch activity laws, actual fixed catalyst inventory
-and both reactor datasets held out. Seek independent catalyst
-inventory/contact or activity-time measurements in the literature
-if the low-temperature rate discrepancy remains. Do not progress
-to a new reacting OpenLB/DWSIM validation claim on these failed rates.
+The [stationary catalyst-history extension](examples/biocatalysis/pentyl_propanoate_history/REPORT.md)
+subsequently integrates the spatial liquid/acid exposure and catalyst
+state over 180 min. All 560 conditional histories pass independent
+conservation and refinement tests, with all 40 reactor points excluded
+from calibration. Unprotected hot equimolar laws predict a moving
+reaction zone followed by near-total loss of activity; alcohol-protected
+rates remain almost fully active in the 2:1 bed yet still overpredict
+conversion. Film-exposure and conditional initial-state sensitivities
+matter for the fragile hot 1:1 histories, but do not qualify a new common
+rate law. At 40 °C, all fresh histories overpredict both feeds at high
+flow. Next seek independent continuous catalyst-inventory/contact
+comparisons and exposure-duration-resolved retained-activity measurements
+for the relevant chemistry/preparation to constrain rate utilization
+separately from high-temperature damage. If unavailable, select a more
+fully characterized continuous immobilised enzyme benchmark. Do not fit
+a per-bed factor or progress to a new reacting OpenLB/DWSIM validation
+claim on these unqualified rates.
 
 ## Acceptance criterion for every end-to-end showcase
 

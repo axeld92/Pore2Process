@@ -1,0 +1,241 @@
+{
+  "repeated_histories": 36,
+  "all_refinement_decisions_identical": true,
+  "max_absolute_difference_by_array": {
+    "times_min": 0.0,
+    "cell_center_fraction": 0.0,
+    "bulk_progress": 0.0,
+    "surface_progress": 0.0,
+    "cumulative_hazard": 0.0,
+    "activity": 0.0,
+    "local_rate_mol_L_min": 0.0,
+    "local_hazard_min_inv": 0.0,
+    "outlet_conversion": 0.0,
+    "generated_mol": 0.0,
+    "effluent_product_mol": 0.0,
+    "backdiffused_product_mol": 0.0,
+    "liquid_product_mol": 0.0
+  },
+  "max_absolute_numerical_scalar_difference": 0.0,
+  "exact_array_replay": true,
+  "replayed_decisions": [
+    {
+      "task_id": "fresh_bulk__acid_decay__r1_T80_Q3",
+      "fine_cells": 256,
+      "max_step_min": 1,
+      "numerical_solve_count": 5
+    },
+    {
+      "task_id": "fresh_bulk__acid_decay__r2_T80_Q3",
+      "fine_cells": 256,
+      "max_step_min": 1,
+      "numerical_solve_count": 5
+    },
+    {
+      "task_id": "fresh_bulk__acid_activation__r1_T80_Q3",
+      "fine_cells": 128,
+      "max_step_min": 1,
+      "numerical_solve_count": 3
+    },
+    {
+      "task_id": "fresh_bulk__acid_activation__r2_T80_Q3",
+      "fine_cells": 128,
+      "max_step_min": 1,
+      "numerical_solve_count": 3
+    },
+    {
+      "task_id": "fresh_bulk__acid_both__r1_T60_Q3",
+      "fine_cells": 128,
+      "max_step_min": 1,
+      "numerical_solve_count": 3
+    },
+    {
+      "task_id": "fresh_bulk__acid_both__r1_T80_Q0p7",
+      "fine_cells": 512,
+      "max_step_min": 1,
+      "numerical_solve_count": 7
+    },
+    {
+      "task_id": "fresh_bulk__acid_both__r1_T80_Q3",
+      "fine_cells": 256,
+      "max_step_min": 1,
+      "numerical_solve_count": 5
+    },
+    {
+      "task_id": "fresh_bulk__acid_both__r2_T60_Q3",
+      "fine_cells": 128,
+      "max_step_min": 1,
+      "numerical_solve_count": 3
+    },
+    {
+      "task_id": "fresh_bulk__acid_both__r2_T80_Q0p7",
+      "fine_cells": 512,
+      "max_step_min": 0.5,
+      "numerical_solve_count": 8
+    },
+    {
+      "task_id": "fresh_bulk__acid_both__r2_T80_Q3",
+      "fine_cells": 512,
+      "max_step_min": 1,
+      "numerical_solve_count": 7
+    },
+    {
+      "task_id": "fresh_bulk__protected_decay__r1_T80_Q3",
+      "fine_cells": 128,
+      "max_step_min": 1,
+      "numerical_solve_count": 3
+    },
+    {
+      "task_id": "fresh_bulk__protected_decay__r2_T80_Q3",
+      "fine_cells": 128,
+      "max_step_min": 1,
+      "numerical_solve_count": 3
+    },
+    {
+      "task_id": "fresh_bulk__protected_both__r1_T80_Q3",
+      "fine_cells": 128,
+      "max_step_min": 1,
+      "numerical_solve_count": 3
+    },
+    {
+      "task_id": "fresh_bulk__protected_both__r2_T80_Q3",
+      "fine_cells": 128,
+      "max_step_min": 1,
+      "numerical_solve_count": 3
+    },
+    {
+      "task_id": "fresh_bulk__residual_decay__r1_T80_Q3",
+      "fine_cells": 256,
+      "max_step_min": 1,
+      "numerical_solve_count": 5
+    },
+    {
+      "task_id": "fresh_bulk__residual_decay__r2_T80_Q3",
+      "fine_cells": 256,
+      "max_step_min": 1,
+      "numerical_solve_count": 5
+    },
+    {
+      "task_id": "fresh_bulk__protected_residual_decay__r1_T60_Q3",
+      "fine_cells": 128,
+      "max_step_min": 1,
+      "numerical_solve_count": 3
+    },
+    {
+      "task_id": "fresh_bulk__protected_residual_decay__r1_T80_Q0p7",
+      "fine_cells": 256,
+      "max_step_min": 0.5,
+      "numerical_solve_count": 6
+    },
+    {
+      "task_id": "fresh_bulk__protected_residual_decay__r1_T80_Q3",
+      "fine_cells": 128,
+      "max_step_min": 1,
+      "numerical_solve_count": 3
+    },
+    {
+      "task_id": "fresh_bulk__protected_residual_decay__r2_T60_Q3",
+      "fine_cells": 128,
+      "max_step_min": 1,
+      "numerical_solve_count": 3
+    },
+    {
+      "task_id": "fresh_bulk__protected_residual_decay__r2_T80_Q0p7",
+      "fine_cells": 512,
+      "max_step_min": 1,
+      "numerical_solve_count": 7
+    },
+    {
+      "task_id": "fresh_bulk__protected_residual_decay__r2_T80_Q3",
+      "fine_cells": 128,
+      "max_step_min": 1,
+      "numerical_solve_count": 3
+    },
+    {
+      "task_id": "fresh_surface__acid_decay__r1_T80_Q3",
+      "fine_cells": 256,
+      "max_step_min": 1,
+      "numerical_solve_count": 5
+    },
+    {
+      "task_id": "fresh_surface__acid_decay__r2_T80_Q3",
+      "fine_cells": 512,
+      "max_step_min": 1,
+      "numerical_solve_count": 7
+    },
+    {
+      "task_id": "fresh_surface__protected_decay__r1_T80_Q3",
+      "fine_cells": 128,
+      "max_step_min": 1,
+      "numerical_solve_count": 3
+    },
+    {
+      "task_id": "fresh_surface__protected_decay__r2_T80_Q3",
+      "fine_cells": 128,
+      "max_step_min": 1,
+      "numerical_solve_count": 3
+    },
+    {
+      "task_id": "fresh_surface__protected_residual_decay__r1_T80_Q3",
+      "fine_cells": 128,
+      "max_step_min": 1,
+      "numerical_solve_count": 3
+    },
+    {
+      "task_id": "fresh_surface__protected_residual_decay__r2_T80_Q3",
+      "fine_cells": 128,
+      "max_step_min": 1,
+      "numerical_solve_count": 3
+    },
+    {
+      "task_id": "recovered_bulk__acid_both__r1_T80_Q3",
+      "fine_cells": 256,
+      "max_step_min": 1,
+      "numerical_solve_count": 5
+    },
+    {
+      "task_id": "recovered_bulk__acid_both__r2_T80_Q3",
+      "fine_cells": 512,
+      "max_step_min": 0.5,
+      "numerical_solve_count": 8
+    },
+    {
+      "task_id": "recovered_bulk__protected_both__r1_T80_Q3",
+      "fine_cells": 256,
+      "max_step_min": 1,
+      "numerical_solve_count": 5
+    },
+    {
+      "task_id": "recovered_bulk__protected_both__r2_T80_Q3",
+      "fine_cells": 256,
+      "max_step_min": 1,
+      "numerical_solve_count": 5
+    },
+    {
+      "task_id": "equilibrium_prefill_bulk__acid_both__r1_T80_Q3",
+      "fine_cells": 256,
+      "max_step_min": 0.5,
+      "numerical_solve_count": 6
+    },
+    {
+      "task_id": "equilibrium_prefill_bulk__acid_both__r2_T80_Q3",
+      "fine_cells": 512,
+      "max_step_min": 0.5,
+      "numerical_solve_count": 8
+    },
+    {
+      "task_id": "equilibrium_prefill_bulk__protected_residual_decay__r1_T80_Q3",
+      "fine_cells": 512,
+      "max_step_min": 0.5,
+      "numerical_solve_count": 8
+    },
+    {
+      "task_id": "equilibrium_prefill_bulk__protected_residual_decay__r2_T80_Q3",
+      "fine_cells": 256,
+      "max_step_min": 0.5,
+      "numerical_solve_count": 6
+    }
+  ],
+  "combined_summary_sha256": "12a464e4450d975897df9899daf9825d2ca0239a1e17adb4d96d18afd3750915",
+  "replay_source_sha256": "77f75f99cc314dd97c246f20bb1458f9b4820be90cb2ebad6a39efc8d5969054"
+}

@@ -1,0 +1,29 @@
+schema_version = 1
+id = "biocatalysis/pentyl_propanoate_history"
+title = "Transient stationary catalyst history in the dual-feed packed bed"
+area = "biocatalysis"
+status = "complete"
+readme = "README.md"
+report = "REPORT.md"
+prerequisites = ["biocatalysis/pentyl_propanoate_equimolar"]
+run_module = "examples.biocatalysis.pentyl_propanoate_history.run"
+check_module = "examples.biocatalysis.pentyl_propanoate_history.check"
+reference_files = [
+  "reference/summary.json",
+  "reference/history.csv",
+  "reference/bed_comparison.csv",
+  "reference/numerics.csv",
+  "reference/selected_axial_profiles.csv",
+  "reference/reaction_zone.csv",
+  "reference/uniform_envelope_check.csv",
+  "reference/replay.json",
+  "figures/local_history.png",
+  "figures/dual_feed_history.png",
+]
+protocol_files = ["protocol.json"]
+
+[validation]
+numerical = "passed"
+stationary_damage_transfer = "failed"
+initial_bead_liquid_history = "scenario_only"
+scope = "Conservative time-dependent liquid and stationary cumulative damage with the same frozen laws and fixed six-gram inventory. All 40 reactor observations remain held out. The protected law retains stability but the reaction-rate discrepancy persists; no new predictive reaction model is qualified."
