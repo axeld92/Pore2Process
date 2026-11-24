@@ -1,0 +1,70 @@
+[assay]
+temperature_C = 60
+time_min = 15
+lauric_acid_to_n_propanol_molar = 3.0
+enzyme_wt_percent_of_assay_substrates = 5.0
+minimum_replicates = 3
+enzyme_aliquot_g = 0.2
+recovery_dry_temperature_C = 40
+recovery_dry_h = 1
+desiccator_h = 24
+note = "After each cycle the catalyst is recovered, washed twice in n-hexane, dried, rested, and sampled. Per-cycle recovered masses and any substrate rescaling are not reported."
+
+[figure1]
+product = "2-ethylhexyl palmitate"
+solvent = "none"
+acid_to_alcohol = "1:5.5"
+reaction_temperature_C = 70
+stirring_rpm = 150
+enzyme_wt_percent = 10.5
+reaction_hours_per_cycle = 6
+cycle = [1,2,3,4,5,6,7,8,9,10]
+# Native Im1 (786 x 578), p. 185; y=519 at 70%, y=13 at 105%.
+y_low_px = 519
+y_high_px = 13
+low_percent = 70.0
+high_percent = 105.0
+conversion_y_px = [107,207,139,113,171,246,254,253,255,275]
+activity_y_px = [453,271,66,63,108,109,171,220,224,234]
+# Half-bar pixel heights read from the outermost caps where visible.
+conversion_sem_half_height_px = [9,7,17,7,17,13,8,11,13,12]
+activity_sem_half_height_px = [14,18,13,27,11,13,10,18,21,5]
+reading_pp = 1.0
+
+[figure2]
+product = "ascorbyl palmitate"
+solvent = "tert-butanol"
+acid_molar_ratio = "ascorbic acid:palmitic acid 1:9"
+reaction_temperature_C = 70
+stirring_rpm = 150
+enzyme_wt_percent = 5.0
+reaction_hours_per_cycle = 17
+# Plot stops at 8; methods say 10. No invented cycles 9–10.
+cycle = [1,2,3,4,5,6,7,8]
+# Native Im2 (782 x 580), p. 185.
+y_low_px = 524
+y_high_px = 17
+low_percent = 20.0
+high_percent = 110.0
+conversion_y_px = [396,354,392,351,352,334,386,482]
+activity_y_px = [139,82,116,84,424,326,455,386]
+reading_pp = 1.0
+
+[figure3]
+product = "1-glyceryl benzoate"
+solvent = "2-propanol"
+substrate_molar_ratio = "methyl benzoate:glycerol 1:1"
+reaction_temperature_C = 50
+stirring_rpm = 150
+enzyme_wt_percent = 10.0
+reaction_hours_per_cycle = 24
+cycle = [1,2,3,4,5,6,7,8,9,10]
+# Native Im3 (778 x 576), p. 186.
+y_low_px = 519
+y_high_px = 13
+low_percent = 0.0
+high_percent = 160.0
+conversion_y_px = [458,470,473,474,477,473,477,473,476,478]
+activity_y_px = [80,183,184,153,225,288,274,306,309,312]
+conversion_tukey_group = ["a","b","b","b","b","b","b","b","b","b"]
+reading_pp = 1.0

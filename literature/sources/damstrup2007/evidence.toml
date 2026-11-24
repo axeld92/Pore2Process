@@ -1,0 +1,104 @@
+# Source-specific experimental inputs and marker readings. See README.
+[column]
+diameter_mm = 15.0
+length_mm = 200.0
+volume_ml = 35.3
+dry_bulk_density_g_ml = 0.430
+particle_diameter_range_um = [300, 900]
+
+[figure2]
+temperature_C = 40
+glycerol_to_oil_molar = 4.0
+tb_tp_solvent_mass_percent = 52.7
+tb_to_tp_volume_percent = [80, 20]
+oil_mass_percent = 33.3
+glycerol_mass_percent = 14.0
+reported_flow_range_ml_min = [0.24, 1.9]
+reported_flow_direction = "downward"
+# Native PDF image Im2, 788 x 471 px, origin upper left.
+x0_px = 123
+x40_px = 711
+y0_px = 371
+y60_px = 9
+reading_time_min = 0.3
+reading_mag_wt_percentage_points = 1.0
+reported_replicates = 2
+reported_error_bars = "standard deviation; exact bar values not tabulated"
+
+[[figure2.series]]
+mass_g = 4.0
+printed_loading_kg_m3 = 114
+printed_dry_fill_percent = 26
+x_px = [196, 269, 351, 416, 578, 710]
+y_px = [210, 76, 61, 77, 128, 135]
+
+[[figure2.series]]
+mass_g = 8.0
+printed_loading_kg_m3 = 227
+printed_dry_fill_percent = 52
+x_px = [272, 322, 420, 520, 620, 718]
+y_px = [183, 136, 61, 44, 29, 29]
+
+[[figure2.series]]
+mass_g = 12.0
+printed_loading_kg_m3 = 340
+printed_dry_fill_percent = 77
+x_px = [195, 270, 351, 416, 555, 708]
+y_px = [288, 172, 243, 180, 45, 55]
+
+[table1]
+temperature_C = 40
+tb_tp_solvent_mass_percent = 52.8
+oil_mass_percent = 33.3
+glycerol_mass_percent = 13.9
+# Diameter, length, volume, dry catalyst kg/m3 column, printed time,
+# actual flow, MAG wt%, printed SD, number of determinations.
+columns = ["diameter_mm", "length_mm", "volume_ml", "loading_kg_m3", "tau_min", "flow_ml_min", "mag_wt_percent", "mag_sd_pp", "n_determinations"]
+rows = [
+  [34, 500, 454.0, 220, 20, 11.60, 55.6, 0.3, 3],
+  [21, 500, 173.2, 220, 20, 4.60, 52.9, 0.4, 3],
+  [21, 400, 138.5, 220, 20, 3.50, 52.5, 0.7, 3],
+  [21, 200, 69.3, 220, 20, 1.80, 53.9, 0.4, 3],
+  [15, 200, 35.3, 220, 20, 0.95, 50.2, 1.5, 3],
+  [15, 200, 35.3, 227, 20, 0.92, 51.2, 2.1, 2],
+  [15, 200, 35.3, 227, 27, 0.69, 54.0, 0.3, 2],
+  [15, 200, 35.3, 227, 34, 0.55, 56.6, 0.2, 2],
+  [15, 200, 35.3, 227, 41, 0.46, 56.6, 0.1, 2],
+  [21, 200, 69.3, 173, 10, 2.80, 44.8, 2.0, 2],
+  [21, 200, 69.3, 173, 20, 1.40, 50.8, 2.1, 4],
+  [21, 200, 69.3, 173, 31, 0.90, 52.0, 1.2, 2],
+  [15, 400, 70.7, 173, 10, 2.85, 44.7, 0.3, 2],
+  [15, 400, 70.7, 173, 20, 1.40, 49.3, 5.3, 4],
+  [15, 400, 70.7, 173, 30, 0.95, 54.2, 1.0, 4],
+]
+
+[table2]
+times_h = [0.5, 1.0, 24.0]
+dry_layer_ml = 10.3
+dry_layer_sd_ml = 1.0
+wet_layer_ml = 19.8
+wet_layer_sd_ml = 2.0
+expansion_percent_of_dry = 191.9
+expansion_sd_pp = 2.8
+n = 3
+note = "Identical printed summary at all three times; expansion of the loose bead layer, not an individual particle diameter or bed porosity."
+
+[table3]
+mass_g = 8.0
+temperature_C = 40
+glycerol_to_oil_molar = 5.0
+system = ["TB:TP 80:20 v/v", "TP only"]
+flow_ml_min = [0.95, 0.60]
+tau_min = [20, 30]
+operation_h = [1152, 1008]
+mixture_processed_L = [65.7, 36.3]
+total_MAG_L_kg_N435 = [1225, 1100]
+final_relative_MAG_percent = [55, 90]
+note = "Table 3 defines the reported residual activity from relative measured MAG content, not a separate enzyme assay."
+
+[table4]
+mass_g = 4.0
+particle_diameter_um = [388, 548]
+tau_min = [5, 10, 16, 20, 31, 39]
+rate_small_mmol_MAG_min = [13.70, 13.05, 9.30, 7.03, 4.32, 3.75]
+rate_large_mmol_MAG_min = [9.59, 10.23, 8.52, 6.54, 4.74, 3.89]

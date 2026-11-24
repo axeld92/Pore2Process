@@ -3,6 +3,7 @@
 - [Filtration source roles](filtration/evidence_review.md)
 - [Crossflow paper comparison](crossflow/papers_review.md)
 - [Crossflow search/evidence record](crossflow/evidence_review.md)
+- [Biocatalysis catalyst inventory and activity](biocatalysis_inventory/REPORT.md)
 
 These records combine multiple papers and remain intact. Per-paper
 [source folders](../README.md) link the relevant shared extraction rather than

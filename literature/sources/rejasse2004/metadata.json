@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "id": "rejasse2004",
+  "title": "Stability improvement of immobilized Candida antarctica lipase B in an organic medium under microwave radiation",
+  "doi": "10.1039/B4011459",
+  "role": "Direct residual initial-rate assay after substrate preincubation; conventional heating only in the quantitative holdout.",
+  "files": ["evidence.toml", "README.md"],
+  "pdf_sha256": "22db1bad7f20e6100c89e0f94568268d50f49938fce3263fc275b7dd21a83cc9"
+}

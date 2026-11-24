@@ -1,0 +1,52 @@
+[figure3]
+temperature_C = 100
+mass_mg_N435 = 25.0
+initial_water_activity_reported = 0.0
+assay_duration_min = 3.0
+fresh_activity_umol_min_mg = 6.3
+times_min = [0, 2, 3, 4, 10, 30]
+# Native image Im4 (1961 x 1046 px), Figure 3 on article p. 1087.
+y0_px = 831
+y6_px = 66
+reading_activity_umol_min_mg = 0.10
+reading_note = "Symbol-center readings, not assay uncertainty. Baseline is text value 6.3; no numerical SD reported."
+
+[[figure3.conventional]]
+substrate = "butanol"
+sym = "open circle"
+y_positive_time_px = [443, 575, 659, 709, 721]
+reported_30min_remaining_percent = 13.0
+
+[[figure3.conventional]]
+substrate = "ethyl butyrate"
+sym = "open triangle"
+y_positive_time_px = [202, 287, 330, 427, 522]
+reported_30min_remaining_percent = 39.0
+
+[table1]
+# Storage pre-incubation. Do not presume the reported k_d is a natural-log constant.
+columns = ["substrate", "water_activity_setting", "heating", "printed_kd_h_inverse", "printed_half_life_h"]
+rows = [
+  ["butanol", "0", "conventional", 10.04, 0.030],
+  ["butanol", "0", "microwave", 1.59, 0.189],
+  ["ethyl butyrate", "0", "conventional", 3.10, 0.097],
+  ["ethyl butyrate", "0", "microwave", 2.71, 0.111],
+  ["butanol", "not fixed", "conventional", 10.21, 0.029],
+  ["butanol", "not fixed", "microwave", 3.14, 0.096],
+  ["ethyl butyrate", "not fixed", "conventional", 2.36, 0.127],
+  ["ethyl butyrate", "not fixed", "microwave", 2.36, 0.128],
+]
+
+[figure5]
+temperature_C = 100
+mass_initial_mg_N435 = 25.0
+reaction_hours_per_run = 6
+substances = ["ethyl butyrate", "butanol"]
+each_substrate_mmol = 11.0
+run = [1, 2, 3, 4, 5, 6]
+# Native Fig. 5 Im6 (654 x 313 px) conventional grey bars.
+y0_px = 206
+y100_px = 19
+y_conventional_px = [2, 105, 139, 168, 173, 184]
+reading_rate_umol_min = 2.0
+note = "Initial production rate of recovered catalyst in each run, not activity per weighed recovered mass."

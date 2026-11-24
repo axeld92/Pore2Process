@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "id": "damstrup2007",
+  "title": "Process Development of Continuous Glycerolysis in an Immobilized Enzyme-Packed Reactor for Industrial Monoacylglycerol Production",
+  "doi": "10.1021/jf063366p",
+  "role": "Independent Novozym 435 packed-bed inventory, wet filling, and glycerolysis scale-up evidence; not pentyl propanoate kinetics.",
+  "files": ["evidence.toml", "README.md"],
+  "pdf_sha256": "0ffbc68d9fb88ed7f6147786df2b8f854614411cb823a30f8d2251c237b095f5"
+}

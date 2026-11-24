@@ -1,0 +1,142 @@
+[catalyst]
+name = "Novozym 435"
+mean_sieved_diameter_um = 372.10
+diameter_reported_spread_um = 27.05
+density_assumed_mg_ul = 0.555
+CALB_mass_fraction_assumed = 0.10
+mass_balance_weighing_uncertainty_mg = 0.05
+reported_inventory_range_mg = [7.1, 148.4]
+reported_A_inventory_mg = 7.1
+
+[batch_assay]
+temperature_C = 24
+stirring_rpm = 800
+volume_ml = 2.0
+N435_g_L = 5.0
+vinyl_butyrate_mM = 600.0
+butanol_mM = 600.0
+solvent = "n-heptane"
+activity_umol_min_mg_N435 = 13.31
+activity_reported_spread = 0.27
+replicates = 2
+
+[table1]
+temperature_C = 24
+flow_ul_min = 100.0
+pulse_ul = 10.0
+glucose_mM = 50.0
+carrier = "100 mM PBS, pH 7.4"
+replicates = 3
+measurement_frequency_Hz = 10
+measurements_per_average = 10
+sensor_volume_ul = 4.0
+# Authors' moments from measured pulse responses; D and D/vl are inferred.
+columns = ["reactor", "length_mm", "width_mm", "depth_mm", "porosity", "Re_particle", "mean_min", "variance_min2", "skewness", "D_times_1e5_m2_s", "dispersion_number"]
+rows = [
+ ["A", 23.9, 3.1, 0.40, 0.57, 0.95, 0.21, 0.08, 0.77, 1.42, 0.45],
+ ["C", 81.0, 2.9, 0.40, 0.59, 0.98, 0.53, 0.14, 0.42, 0.92, 0.08],
+]
+
+[source_LB]
+flow_scheme = "D3Q19 BGK"
+tracer_scheme = "modified-weight D3Q7 BGK"
+domain_nodes = [2048, 256, 32]
+sphere_diameter_nodes = 32
+reported_mean_min = 0.177
+reported_skewness = 0.57
+pulse_duration_s = 6.0
+measurement_planes_nodes_from_inlet_outlet = [50, 15]
+reported_mass_error_approx_percent = 1.0
+SI_S1_porosity = [0.570, 0.578, 0.573, 0.572]
+SI_S2_display_domain_nodes = [1024, 128, 16]
+SI_S2_display_sphere_diameter_nodes = 16
+
+[table2]
+temperature_C = 24
+feed_each_mM = 600.0
+solvent = "n-heptane"
+# Dry catalyst inventory is not a directly transcribed column. Compute from
+# (V - Vv)*assumed_density, keeping rounded source volumes.
+# Enzyme loading gamma is U per µL VOID volume, not per same µL total channel.
+columns = ["reactor", "length_mm", "width_mm", "depth_mm", "layers", "empty_volume_ul", "void_volume_ul", "porosity", "activity_U_ul_void", "BPN_mmol_g_CALB"]
+rows = [
+ ["A", 23.9, 3.1, 0.4, 1, 29.9, 17.1, 0.57, 5.53, 13.56],
+ ["B", 52.2, 3.0, 0.4, 1, 61.6, 35.3, 0.57, 5.51, 12.72],
+ ["C", 81.0, 2.9, 0.4, 1, 95.3, 56.5, 0.59, 5.06, 13.35],
+ ["D", 50.9, 15.8, 0.4, 1, 321.6, 184.0, 0.57, 5.52, 12.18],
+ ["E", 53.8, 29.2, 0.4, 1, 628.7, 363.6, 0.58, 5.38, 12.64],
+ ["F", 50.9, 15.8, 0.8, 2, 643.1, 375.6, 0.58, 5.26, 14.03],
+]
+
+[figure5]
+reading_pp = 1.5
+# Native Fig. 5 Im0 on PDF p. 8 (1008 x 2367 px).
+# A series is the only calibration; B,C from panel a, E from b,
+# D,F from c. Overlapping or repeated-series markers are not additional
+# independent measurements. At high conversion overlapping symbols
+# are approximate; the primary purpose is the early-residence comparison.
+
+[[figure5.series]]
+reactor = "A"
+panel = "a"
+symbol = "square"
+y0_px = 643
+y100_px = 10
+tau_min = [0.1,0.2,0.3,0.4,0.5,0.6,0.8,1.0,1.2,1.4]
+y_px = [363,204,146,90,72,56,40,38,37,35]
+
+[[figure5.series]]
+reactor = "B"
+panel = "a"
+symbol = "triangle"
+y0_px = 643
+y100_px = 10
+tau_min = [0.1,0.2,0.3,0.6,0.8,1.0,1.2,1.4]
+y_px = [325,181,116,69,66,59,55,56]
+
+[[figure5.series]]
+reactor = "C"
+panel = "a"
+symbol = "circle"
+y0_px = 643
+y100_px = 10
+tau_min = [0.1,0.2,0.3,0.4,0.5,0.6,0.8,1.0,1.2,1.4]
+y_px = [292,134,90,68,55,48,46,44,43,42]
+
+[[figure5.series]]
+reactor = "D"
+panel = "c"
+symbol = "square"
+y0_px = 2257
+y100_px = 1625
+tau_min = [0.1,0.2,0.3,0.4,0.5,0.6,0.8,1.0,1.2,1.4]
+y_px = [1944,1789,1722,1686,1673,1662,1651,1650,1649,1649]
+
+[[figure5.series]]
+reactor = "E"
+panel = "b"
+symbol = "circle"
+y0_px = 1443
+y100_px = 814
+tau_min = [0.1,0.2,0.3,0.4,0.5,0.6,0.8,1.0,1.2,1.4]
+y_px = [1146,989,899,865,853,841,838,836,835,835]
+
+[[figure5.series]]
+reactor = "F"
+panel = "c"
+symbol = "triangle"
+y0_px = 2257
+y100_px = 1625
+tau_min = [0.1,0.2,0.3,0.4,0.5,0.8,1.0,1.2,1.4]
+y_px = [1913,1719,1669,1659,1655,1659,1658,1658,1660]
+
+[figure6]
+fluid = "water"
+temperature_C = 24
+flow_range_ul_min = [30, 1800]
+sensor_range_kPa = [0, 100]
+sensor_reported_total_accuracy_percent = 1.5
+max_pressure_drop_approx_kPa = 88.0
+max_flow_ul_min = 1800.0
+max_pressure_reactor = "D"
+note = "Reported water-system measurement. Reaction-solvent pressure loss was estimated, not measured. No blank pressure trace is supplied."

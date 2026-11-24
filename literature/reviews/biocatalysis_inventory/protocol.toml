@@ -1,0 +1,36 @@
+schema_version = 1
+date = "2026-11-24"
+scope = "Separate literature checks; no target conversion used in calibration or selection."
+
+[damstrup]
+reference_charge_g = 8.0
+holdout_charges_g = [4.0, 12.0]
+scaleup_reference_diameter_mm = 15.0
+scaleup_reference_loading_kg_m3 = 220.0
+scaleup_nominal_time_min = 20.0
+
+[target_fill_scenario]
+# Snapshot of the 2025 pentyl-propanoate column; use only dimensions and mass.
+source = "Lorenzo et al. 2025, Section 2.3; also pentyl_propanoate_history/REPORT.md"
+diameter_mm = 16.0
+length_mm = 140.0
+mass_g = 6.0
+assumption = "Apply Damstrup's dry bulk density and free-layer expansion as a labelled analogue, not measured target values."
+
+[rejasse]
+early_log_training_end_min = 4.0
+activity_shape_training_end_min = 10.0
+late_holdout_min = 30.0
+log_rate_grid_points = 600
+log_rate_grid_min_per_min = 1e-6
+log_rate_grid_max_per_min = 10.0
+
+[lerin]
+comparison_reference_cycle = 4
+
+[strnisa]
+reference_reactor = "A"
+held_out_reactors = ["B", "C", "D", "E", "F"]
+early_time_max_min = 0.3
+late_time_min = 0.8
+nominal_comparison_times_min = [0.1, 1.4]
