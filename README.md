@@ -27,6 +27,10 @@ assumptions and intermediate evidence available for inspection.
 > The [Panjan thesis follow-up](examples/biocatalysis/panjan_tracer_audit/REPORT.md)
 > exposes a fixed-liquid-volume mean-time discrepancy at the additional
 > middle length and an incompatible single-exponential detector assumption.
+> The [Bajić plumbing audit](examples/biocatalysis/bajic_plumbing_audit/REPORT.md)
+> confirms the reported tubing diameter, but ordinary straight-tube length
+> changes cannot account for the measured extra spreading. A better
+> characterized independent inert-tracer reference is needed.
 > Reaction has not started in this new case.
 
 ## The connected workflow

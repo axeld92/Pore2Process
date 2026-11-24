@@ -139,3 +139,11 @@ qualification.
 For a specific subsequent apparatus check, see the [related 2018 detector
 and additional tracer evidence](related_detector_evidence.md) from
 Panjan's doctoral thesis. It is not a new fit to the held-out C curve.
+
+The article's assembly details are separately retained in
+[plumbing_geometry.toml](plumbing_geometry.toml). They independently
+confirm Bajić's 0.50 mm tube ID; neither paper reports wet port bore
+dimensions or relative bypass/bed tube lengths. The
+[plumbing audit](../../../examples/biocatalysis/bajic_plumbing_audit/REPORT.md)
+tests the straight-tube length hypothesis without changing the earlier
+TRT or tracer predictions.

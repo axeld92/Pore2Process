@@ -47,10 +47,15 @@ each Fig. 25 pulse are not printed. Do not correct the pulse by assigning
 the earlier calibration to it or by adding another sensor convolution
 to the already measured blank.
 
-The thesis references [Bajić et al. (2017)](https://doi.org/10.1016/j.procbio.2016.09.021)
+The thesis references [Bajić et al. (2017)](../bajic2017/README.md)
 as a reactor-design precedent; that paper uses a different immobilized
-preparation. It is a potential source of separately dimensioned fittings,
-not a justified substitute for the present bead geometry or volume.
+preparation. Its 0.50 mm tubing ID is a plausible related-source scenario,
+not a measured value for the thesis runs or a substitute for the bead
+geometry. The additional [plumbing extraction](plumbing_geometry.toml)
+retains the thesis's different plate thickness (20 mm) and bypass description.
+The [completed Bajić plumbing audit](../../../examples/biocatalysis/bajic_plumbing_audit/REPORT.md)
+shows that this tubing could explain a mean increment alone but cannot
+account for the required variance under developed straight-tube transport.
 See the [completed dimensional audit](../../../examples/biocatalysis/panjan_tracer_audit/REPORT.md)
 for all window/reading checks, the conserved-inventory test, and the
 separate reduced predictions derived from saved stock TRT/Julia ages.

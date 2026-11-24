@@ -1,0 +1,10 @@
+# Additional independent reading from the supplied thesis; does not alter the prior evidence record.
+schema_version = 1
+pdf_sha256 = "f61a52a7dcb4832aced3f340a8964952da13ab545a4a5ca113fb2f4be658edff"
+locator = "Section 4.3.1 printed p. 75 (PDF p. 77); Fig. 23 p. 76; Section 4.4.1 p. 78"
+upper_plate_thickness_mm = 20.0
+spacer_depth_mm = 0.40
+detector_chamber_ul = 4.0
+port_count = 2
+blank_configuration = "Inlet and outlet tubing are connected directly without the reactor."
+note = "Tube internal diameter/length and port bores not stated in this thesis section. Related Strnisa and Bajić articles report 0.50 mm-ID PFA; use only as an explicitly transferred tubing-diameter scenario for Panjan R1/R2. The thesis plate thickness differs from the article's 15 mm. Fig. 23 schematic shows a wider distributor reactor, not evidence that R2 had such a chamber."

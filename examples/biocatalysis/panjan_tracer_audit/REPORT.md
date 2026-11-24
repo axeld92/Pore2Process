@@ -307,6 +307,15 @@ published inert tracer benchmark with a specified input/blank response
 and independently established liquid volume. No new laboratory data
 or inaccessible replicate records are a condition of this project.
 
+**Subsequent apparatus audit:** Bajić's paper is now available locally.
+The [completed tubing and volume comparison](../bajic_plumbing_audit/REPORT.md)
+identifies the reported connection diameter but finds no independent wet
+fixture hold-up. Ordinary straight-tube length does not explain the
+required variance even if the mean-volume residual is assigned to it.
+The next qualification should use a better-characterized inert tracer
+reference; no new reaction or pore-field prediction was needed for this
+test.
+
 ## Reproducibility
 
 Actual local work on 24 November 2026 used the existing managed

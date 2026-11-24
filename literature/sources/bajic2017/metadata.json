@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "id": "bajic2017",
+  "title": "Development of a miniaturized packed bed reactor with ω-transaminase immobilized in LentiKats®",
+  "doi": "10.1016/j.procbio.2016.09.021",
+  "publication": "Process Biochemistry 52 (2017) 63–72",
+  "role": "Documented plate/tubing assembly and nominal channel-volume conventions; different immobilized particle preparation, not a measured Novozym glucose RTD.",
+  "pdf_sha256": "8907b520a48295799d343dc3e74159de3852784ff4c7fd8ca692e44baeb77536",
+  "files": ["evidence.toml", "README.md"]
+}

@@ -9,5 +9,5 @@
   "url": "https://oulurepo.oulu.fi/bitstream/handle/10024/36333/isbn978-952-62-1819-9.pdf?isAllowed=y&sequence=1",
   "role": "Related packed-microreactor pulse experiments, detector characterization, cross-publication duplicate audit; no new reaction calibration.",
   "pdf_sha256": "f61a52a7dcb4832aced3f340a8964952da13ab545a4a5ca113fb2f4be658edff",
-  "files": ["evidence.toml", "rtd_fig25.toml", "README.md"]
+  "files": ["evidence.toml", "rtd_fig25.toml", "plumbing_geometry.toml", "README.md"]
 }

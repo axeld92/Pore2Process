@@ -1,0 +1,48 @@
+schema_version = 1
+doi = "10.1016/j.procbio.2016.09.021"
+pdf_sha256 = "8907b520a48295799d343dc3e74159de3852784ff4c7fd8ca692e44baeb77536"
+
+[assembly]
+locator = "Section 2.2/ Fig. 1, printed pp. 64–65 (PDF pp. 2–3); Section 3.2/ Fig. 3, printed pp. 66–68"
+particle_preparation = "Lens-shaped LentiKats PVA; distinct from the Novozym 435 beads in Panjan and Strnisa."
+tube_material = "PFA"
+tube_id_mm = 0.50
+tube_od_mm = 1.59
+fitting_material = "PEEK (Vici AG)"
+upper_plate_thickness_mm = 15.0
+plate_rectangular_mm = [100.0, 50.0, 15.0]
+plate_hexagonal_mm = [198.0, 158.0, 15.0]
+port_count = 2
+port_location = "Inlet and outlet holes in the upper PMMA plate; both connected to PFA tubes via high-pressure fittings."
+gasket_nominal_thickness_mm = 0.5
+pillar_diameter_mm = 4.0
+pillar_location = "Triangular inlet/outlet regions in the hexagonal wide channels; not the narrow rectangular channel."
+unreported = ["tube lengths or change upon removing a reactor", "drilled inlet/outlet bore diameters and wet path lengths", "fitting insertion depths and internal cavities", "an independently measured fixture-only void volume", "quantitative concentration-time RTD for a narrow channel"]
+
+[inventory]
+locator = "Section 2.2 (p. 65); Section 2.5 (p. 65); Table 1 (p. 67); Section 3.2.2 (p. 68)"
+channel_volume_method = "Several estimated water fill volumes using the high-pressure pump; Table 1 reports nominal reactor volumes."
+void_volume_method = "Channel volume minus calculated particle volume, based on particle count and average shape dimensions for orderly packings; distinct mass/density convention for the random bed."
+width_note = "Table 1 footnote a: wide-channel width is that of the rectangular part of the hexagonal channel; Section 3.2.2 describes the dimensions of rectangular parts explicitly."
+columns = ["length_mm", "width_mm", "depth_mm", "layers", "reactor_volume_ul", "void_volume_ul", "bed_porosity", "shape"]
+rows = [
+  [20.00,4.00,0.23,"1",18.4,7.4,0.40,"rectangle"],
+  [40.00,4.00,0.23,"1",36.8,13.8,0.38,"rectangle"],
+  [60.00,4.00,0.23,"1",55.2,20.8,0.38,"rectangle"],
+  [20.00,8.00,0.23,"1",36.8,14.5,0.39,"rectangle"],
+  [20.00,12.00,0.23,"1",55.2,22.7,0.41,"rectangle"],
+  [81.50,4.00,0.32,"1",104.3,60.0,0.58,"rectangle"],
+  [82.80,40.10,0.32,"1",1062.5,629.4,0.59,"hexagon"],
+  [82.00,79.67,0.32,"1",2090.5,1260.8,0.60,"hexagon"],
+  [82.80,40.10,0.64,"2",2125.0,1290.6,0.61,"hexagon"],
+  [82.80,40.10,0.96,"3",3187.5,1979.0,0.62,"hexagon"],
+  [82.80,40.10,0.64,"2–3",2125.0,594.0,0.28,"hexagon"],
+  [81.61,4.10,0.32,"1",107.1,64.1,0.60,"rectangle"],
+]
+
+[flow_distribution]
+locator = "Section 2.2 p. 65, Section 3.2.1 pp. 66–67 and Fig. 3; Supplementary Fig. S1 mentioned"
+flow_ul_min = 1000.0
+specimen = "Widest empty channel including triangular distributor and pillars."
+quantity = "Visual colored-water flow distribution, not a measured concentration-time or integral glucose RTD."
+use = "Design precedent only; the flow rate and geometry differ from the narrow Panjan experiment."

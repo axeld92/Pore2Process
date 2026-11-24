@@ -527,11 +527,18 @@ an integrated mean increment of 31.5 s despite a reported liquid V/Q
 of 21 s. The frozen A bead-volume-scaled pause scenario matches R2's
 variance but not mean or shape; the separate reported 58 s detector step
 time cannot be applied as one universal exponential filter to the blank.
-Next audit independently documented fittings/prechamber liquid volumes
-and apparatus changes before committing to another native flow field;
-if the available literature does not separate these effects, select a
-better-characterized inert tracer reference. No reaction until the
-independent tracer transfer is qualified.
+The [Bajić plumbing audit](examples/biocatalysis/bajic_plumbing_audit/REPORT.md)
+confirms the 0.50 mm tubing ID in both articles. The middle-length mean
+residual equals 17.53 µL, or about 89 mm of that tubing, but a finite-tube
+Julia calculation and continuum bound show that such a line adds at most
+38.57 s² of variance, versus the needed 338.84 s². Neither the nominal
+channel volume nor the plate thickness establishes an independent wet
+fitting hold-up; the narrower cases have no reported triangular distributors.
+The failure holds over the tested baseline, tail-window, retained-memory
+and diffusivity scenarios. Select a better-characterized inert tracer
+reference with independent liquid inventory and specified inlet/blank
+response before another native flow field. No reaction until the independent
+tracer transfer is qualified.
 
 ## Acceptance criterion for every end-to-end showcase
 

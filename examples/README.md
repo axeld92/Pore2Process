@@ -67,6 +67,7 @@ specific earlier measurements or assumptions.
 | Biocatalysis | [Spatial catalyst exposure over time](biocatalysis/pentyl_propanoate_history/REPORT.md) | 560 converged histories of the fixed 6 g bed, local reaction-zone migration and instability for hot acid-rich cases; protected alcohol-rich rates remain too high | [Commands](biocatalysis/pentyl_propanoate_history/README.md) |
 | Biocatalysis | [Strniša microreactor tracer benchmark](biocatalysis/strnisa_tracer/REPORT.md) | Stock TRT and conservative Julia pass the short numerical screens and long mass recovery. Measured-blank subtraction reveals substantial missing dispersion; the frozen A delay models fail C. Reaction remains on hold | [Commands](biocatalysis/strnisa_tracer/README.md) |
 | Biocatalysis | [Panjan measurement-loop audit](biocatalysis/panjan_tracer_audit/REPORT.md) | Likely repeated blank/R1 traces, a distinct R2 pulse with inconsistent mean versus liquid inventory, failed frozen-A reduced transfer and detector decay/calibration limits | [Commands](biocatalysis/panjan_tracer_audit/README.md) |
+| Biocatalysis | [Bajić plumbing audit](biocatalysis/bajic_plumbing_audit/REPORT.md) | Reported tube diameter and nominal channel volumes; independent finite-tube dispersion calculation rejects ordinary line-length changes as a joint explanation of mean and tail | [Commands](biocatalysis/bajic_plumbing_audit/README.md) |
 
 Filtration hydraulics is closed for now. Phenol adsorption is paused pending a
 published dataset with enough detail to check breakthrough independently.

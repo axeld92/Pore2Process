@@ -1,0 +1,24 @@
+schema_version = 1
+reaction_enabled = false
+scope = "Test whether a change of length of the reported straight circular tubing could jointly explain the mean and variance residuals of the stored Strnisa/Panjan tracer cases. Equivalent added lengths are diagnostics derived from the mean, not measured lengths or calibrated reactor predictions. No new porous OpenLB case."
+source_bajic = "literature/sources/bajic2017/evidence.toml"
+source_strnisa = "literature/sources/strnisa2018/plumbing_geometry.toml"
+source_panjan = "literature/sources/panjan2018/plumbing_geometry.toml"
+
+[tube]
+diameter_source = "Reported 0.50 mm PFA ID directly in Strnisa and Bajic; related-diameter scenario, not a verified Panjan tubing dimension."
+fluid_source = "Reuse Strnisa tracer protocol's nominal water-like PBS properties and molecular glucose diffusivity; Panjan temperature unreported."
+flow_profile = "Steady developed circular Poiseuille flow, uniform-concentration (flux-weighted) pulse, reflecting wall, radial molecular diffusion, negligible axial molecular diffusion (high axial Pe)."
+relative_length_cases = "Added independent straight segment and direct extension/shortening of an existing same-ID pipe; no assumed actual tube lengths. For a contiguous extension the blank's whole mean sets only an upper time-equivalent baseline under positive common delays."
+diffusivity_factors = [0.8,1.0,1.2]
+radial_cells = [32,64,128,256,512]
+finest_variance_change_relative = 0.01
+asymptotic_slope_relative = 0.001
+mean_relative = 1e-12
+
+[comparison]
+background_pixels = [0,2,5]
+thesis_short_window_s = 240
+mean_gate_relative = 0.05
+prior_cases = "Original actual A and C carrier moments; thesis R1 and R2 reduced moments from verified A impulse (independent sections and R2 full-memory sensitivity). A/R1 are likely duplicate measurements, not independent repetitions."
+port_scenario = "Two full-depth cylindrical bores with the tube ID, illustrative only. The drilled bore and wetted length are not reported. Also report the bore diameter required to account for positive mean residual if both nominal plate thicknesses are fully wetted, and its continuum straight-tube variance upper bound (not a finite fitting simulation)."

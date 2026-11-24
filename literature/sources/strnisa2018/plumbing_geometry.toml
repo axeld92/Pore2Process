@@ -1,0 +1,18 @@
+# Supplementary extraction, retained separately from the originally frozen evidence.toml.
+schema_version = 1
+pdf_sha256 = "df5b292b6a0726a02d3db3375078880712c47348d46b8d48b095bd06748ec749"
+locator = "Sections 2.1–2.3 pp. 542–543 (PDF pp. 2–3), Section 2.5 p. 544, Fig. 4 p. 546 and Table 2 p. 547"
+tube_material = "PFA"
+tube_id_mm = 0.50
+tube_od_mm = 1.59
+fitting_material = "PEEK (Vici AG)"
+upper_plate_thickness_mm = 15.0
+rectangular_plate_dimensions_mm = [100.0,50.0,15.0]
+wide_plate_dimensions_mm = [157.0,66.0,15.0]
+port_count = 2
+port_location = "Upper plate inlet/outlet holes; the hole shape, bore and effective wetted length are not specified."
+basic_channel = "Approximately 3 mm wide rectangle (A/B/C). Fig. 4a shows C. No triangle is reported for these."
+wide_channel = "Separate wider designs D/E/F have triangular inlet/outlet distributors containing pillars; Fig. 4b shows D. Widths in Table 2 refer to the rectangular part."
+volume_method = "Section 2.5: empty channel volume calculated from its dimensions; particle volume from mass and adopted density. Reported void volume is estimated, not a measured dynamic tracer hold-up."
+unreported = ["tube length and relative blank/reactor connection lengths", "port bore diameter and wet length", "fitting cavity volume", "whether the tracer experiment's bypass and bed configurations use identical liquid paths"]
+note = "Confirms the 0.50 mm tubing ID directly in Strnisa, not only in the Bajić precedent. Do not assign the ID to drilled ports or to Panjan's unreported tubing without labeling it a scenario. This adds source detail without altering the previous frozen pulse or model records."

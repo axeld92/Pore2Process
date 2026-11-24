@@ -1,0 +1,1918 @@
+{
+  "reaction_enabled": false,
+  "new_porous_OpenLB_run": false,
+  "actual_new_Julia_tube_run": true,
+  "run_directory": "results/biocatalysis/bajic_plumbing_audit/runs/20261124T135323Z-03325962",
+  "versions": {
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "python": "3.12.9",
+    "numpy": "2.5.4",
+    "julia": "julia version 1.11.6"
+  },
+  "source_sha256": {
+    "literature/sources/bajic2017/evidence.toml": "fb26626f0f36d23fc183b0b9969d9f8b3fae149cfe765183e243f63cd31d35df",
+    "literature/sources/strnisa2018/plumbing_geometry.toml": "c1921a6a8d64243ef737c17cdfe4cd1433134fc5922e12c32bafea2c0d1563ba",
+    "literature/sources/panjan2018/plumbing_geometry.toml": "724920e955f34ea29f29bf0e9852ff0058f642450371053a9c0d3e093bac6a11",
+    "literature/sources/strnisa2018/evidence.toml": "a1b615bb7e810153f54450d807d07c38e5de1bd921936ab1974ef0e838125187",
+    "examples/biocatalysis/strnisa_tracer/protocol.toml": "258664c05cde3f206d05edfa2d3df315f0f17e94dfa8c25df138a454ab058590",
+    "examples/biocatalysis/strnisa_tracer/reference/summary.json": "19a0986da4e4054fe2b03996d8f07112c559d3649816fe39a3986aae541c8afe",
+    "examples/biocatalysis/panjan_tracer_audit/reference/summary.json": "4603db122a0d59bc772d3fc46c624ca69e35c5b30b35af7a01e3e036cb1b1612",
+    "examples/biocatalysis/bajic_plumbing_audit/protocol.toml": "c5a1fa363a81fe8aaa13e3ac7bee976ad10a47030a9ed1dc97d4255411a820af"
+  },
+  "code_sha256": {
+    "examples/biocatalysis/bajic_plumbing_audit/audit.py": "f0ee1055fe98677dbbdeaf70297dfc5cef49b2af24ebb801a574ac7cb48e300c",
+    "examples/biocatalysis/bajic_plumbing_audit/check.py": "00ad54e15057dd2ec6fde6b317a64870b6b366e78357943a757f16b3d2c2d339",
+    "examples/biocatalysis/bajic_plumbing_audit/test_tube_moments.jl": "581d31017d4e2a313eacbcfbb410d5779007b802f4fc185f1d5cd04fe8e85fe4",
+    "examples/biocatalysis/bajic_plumbing_audit/__init__.py": "17b705792f69a9a701f2757d6e43019994773fbcc0b4ecd03eb3c1523ce3a95f",
+    "examples/biocatalysis/bajic_plumbing_audit/tube_moments.jl": "cc3d3f5f889b475c60cb68472974b66957ca004fb99c46f5ff393bf12a64ddb3",
+    "examples/biocatalysis/bajic_plumbing_audit/test_audit.py": "d623658e85efed393b224e739a2d5b347715c4a19434f5b30d8422ae92c675e6"
+  },
+  "output_sha256": {
+    "reference/tube_moments.csv": "023b15e17fb9def323b15d14284e912c69a4c72971dd503d1f26aa7ce7348332",
+    "figures/plumbing_screen.png": "e0d20c8b586f49eb65a87c111be9f03d424c857ad6a76918a9066dc6e69715bd",
+    "figures/tube_moments.png": "3fd5c7bcab087c83a20657f9252d0c2d0d36308fcf7e4f5e221c19b5deda32df"
+  },
+  "input_manifest_sha256": "f4251f3e947628178b9e4d8860ac8c946ae539e4372378b7c7fc3987e8ec6a95",
+  "tube_run": {
+    "command": [
+      "/Users/dula/.julia/juliaup/julia-1.11.6+0.aarch64.apple.darwin14/bin/julia",
+      "--threads=1",
+      "--startup-file=no",
+      "--project=/Users/dula/Documents/ChatGPT/Pore2Process/julia",
+      "/Users/dula/Documents/ChatGPT/Pore2Process/examples/biocatalysis/bajic_plumbing_audit/tube_moments.jl",
+      "32,64,128,256,512",
+      "0.00025000000000000001",
+      "5.6800000000000011e-10,7.1000000000000003e-10,8.5199999999999995e-10",
+      "0,1.1337719143370464,1.3494865404956613,1.4354182083533562,1.445573401116194,1.5535220266918941,1.5933327257709209,1.8605664119104404,2,2.0218701273806801,2.1913146029689887,2.6370586411274548,4,6,8,8.7473045972177808,8.7473045972177879,9.6068649058501485,9.6068649058501556,10,10.133137195210725,10.133137195210733,10.515400895306417,10.515400895306424,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,64,66,68,70,72,74,76,78,80,82,84,86,88,90,92,94,96,98,100,102,104,104.42314418559639,105.19100609757265,105.70221350608095,106,106.36134453781513,106.44501431297707,106.62264597891748,106.74452812426455,106.81006002580497,106.88393903868698,107.05170004657661,107.57878622731411,107.80691793893132,108,108.24547823415833,108.33786085003547,108.81396058188646,108.91226645848705,109.52099767981443,110,112,114,115.55736462302275,115.55736462302276,115.96820944366527,115.96820944366529,116,116.7557831741282,116.75578317412821,117.39933993399339,117.3993399339934,118,120"
+    ],
+    "table_sha256": "023b15e17fb9def323b15d14284e912c69a4c72971dd503d1f26aa7ce7348332",
+    "cells": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "diffusivity_m2_s": [
+      5.680000000000001e-10,
+      7.1e-10,
+      8.52e-10
+    ],
+    "nominal_mean_times_s": [
+      0.0,
+      1.1337719143370464,
+      1.3494865404956613,
+      1.4354182083533562,
+      1.445573401116194,
+      1.553522026691894,
+      1.5933327257709209,
+      1.8605664119104404,
+      2.0,
+      2.02187012738068,
+      2.1913146029689887,
+      2.637058641127455,
+      4.0,
+      6.0,
+      8.0,
+      8.74730459721778,
+      8.747304597217788,
+      9.606864905850149,
+      9.606864905850156,
+      10.0,
+      10.133137195210725,
+      10.133137195210733,
+      10.515400895306417,
+      10.515400895306424,
+      12.0,
+      14.0,
+      16.0,
+      18.0,
+      20.0,
+      22.0,
+      24.0,
+      26.0,
+      28.0,
+      30.0,
+      32.0,
+      34.0,
+      36.0,
+      38.0,
+      40.0,
+      42.0,
+      44.0,
+      46.0,
+      48.0,
+      50.0,
+      52.0,
+      54.0,
+      56.0,
+      58.0,
+      60.0,
+      62.0,
+      64.0,
+      66.0,
+      68.0,
+      70.0,
+      72.0,
+      74.0,
+      76.0,
+      78.0,
+      80.0,
+      82.0,
+      84.0,
+      86.0,
+      88.0,
+      90.0,
+      92.0,
+      94.0,
+      96.0,
+      98.0,
+      100.0,
+      102.0,
+      104.0,
+      104.42314418559639,
+      105.19100609757265,
+      105.70221350608095,
+      106.0,
+      106.36134453781513,
+      106.44501431297707,
+      106.62264597891748,
+      106.74452812426455,
+      106.81006002580497,
+      106.88393903868698,
+      107.05170004657661,
+      107.57878622731411,
+      107.80691793893132,
+      108.0,
+      108.24547823415833,
+      108.33786085003547,
+      108.81396058188646,
+      108.91226645848705,
+      109.52099767981443,
+      110.0,
+      112.0,
+      114.0,
+      115.55736462302275,
+      115.55736462302276,
+      115.96820944366527,
+      115.96820944366529,
+      116.0,
+      116.7557831741282,
+      116.75578317412821,
+      117.39933993399339,
+      117.3993399339934,
+      118.0,
+      120.0
+    ],
+    "solver": "Julia radial spectral finite-volume analytical-flow reference"
+  },
+  "numerical": {
+    "max_relative_mean_error": 0.0,
+    "max_finest_variance_change_relative": 2.9125978423971688e-05,
+    "max_finest_slope_error_relative": 4.471556458440773e-11,
+    "finest_cells": 512,
+    "mean_pass": true,
+    "refinement_pass": true,
+    "closed_form_slope_pass": true
+  },
+  "fluid": {
+    "flow_ul_s": 1.6666666666666667,
+    "diameter_mm": 0.5,
+    "radius_m": 0.00025,
+    "area_mm2": 0.19634954084936207,
+    "velocity_m_s": 0.008488263631567754,
+    "reynolds": 4.651288637232154,
+    "diameter_peclet": 5977.650444766024,
+    "glucose_diffusivity_m2_s": 7.1e-10,
+    "radial_diffusion_scale_s": 88.0281690140845,
+    "continuum_variance_slope_s": 3.6678403755868545,
+    "axial_diffusion_Taylor_slope_term_s": 1.97083662884253e-05,
+    "tube_volume_per_cm_ul": 1.9634954084936207,
+    "detector_nominal_volume_ul": 4.0,
+    "detector_nominal_hydraulic_time_s": 2.4,
+    "ports": {
+      "Bajic": {
+        "nominal_plate_mm": 15.0,
+        "two_full_depth_length_mm": 30.0,
+        "equivalent_volume_ul": 5.890486225480862,
+        "mean_s": 3.534291735288517,
+        "assumed_equal_to_reported_tube_id_mm": 0.5,
+        "note": "Only an illustrative fully wetted bore of this ID. Actual bore and insertion length are unreported."
+      },
+      "Strnisa": {
+        "nominal_plate_mm": 15.0,
+        "two_full_depth_length_mm": 30.0,
+        "equivalent_volume_ul": 5.890486225480862,
+        "mean_s": 3.534291735288517,
+        "assumed_equal_to_reported_tube_id_mm": 0.5,
+        "note": "Only an illustrative fully wetted bore of this ID. Actual bore and insertion length are unreported."
+      },
+      "Panjan": {
+        "nominal_plate_mm": 20.0,
+        "two_full_depth_length_mm": 40.0,
+        "equivalent_volume_ul": 7.853981633974483,
+        "mean_s": 4.71238898038469,
+        "assumed_equal_to_reported_tube_id_mm": 0.5,
+        "note": "Only an illustrative fully wetted bore of this ID. Actual bore and insertion length are unreported."
+      }
+    },
+    "note": "Article/precedent tube ID is directly reported; for thesis R1/R2 it is a related-diameter scenario. Nominal water/PBS properties from prior protocol, no fitted D."
+  },
+  "source_volume_ledger": {
+    "bajic_rows": [
+      {
+        "length_mm": 20.0,
+        "width_mm": 4.0,
+        "depth_mm": 0.23,
+        "layers": "1",
+        "reactor_volume_ul": 18.4,
+        "void_volume_ul": 7.4,
+        "bed_porosity": 0.4,
+        "shape": "rectangle",
+        "rectangular_product_ul": 18.400000000000002,
+        "reported_minus_product_ul": -3.552713678800501e-15
+      },
+      {
+        "length_mm": 40.0,
+        "width_mm": 4.0,
+        "depth_mm": 0.23,
+        "layers": "1",
+        "reactor_volume_ul": 36.8,
+        "void_volume_ul": 13.8,
+        "bed_porosity": 0.38,
+        "shape": "rectangle",
+        "rectangular_product_ul": 36.800000000000004,
+        "reported_minus_product_ul": -7.105427357601002e-15
+      },
+      {
+        "length_mm": 60.0,
+        "width_mm": 4.0,
+        "depth_mm": 0.23,
+        "layers": "1",
+        "reactor_volume_ul": 55.2,
+        "void_volume_ul": 20.8,
+        "bed_porosity": 0.38,
+        "shape": "rectangle",
+        "rectangular_product_ul": 55.2,
+        "reported_minus_product_ul": 0.0
+      },
+      {
+        "length_mm": 20.0,
+        "width_mm": 8.0,
+        "depth_mm": 0.23,
+        "layers": "1",
+        "reactor_volume_ul": 36.8,
+        "void_volume_ul": 14.5,
+        "bed_porosity": 0.39,
+        "shape": "rectangle",
+        "rectangular_product_ul": 36.800000000000004,
+        "reported_minus_product_ul": -7.105427357601002e-15
+      },
+      {
+        "length_mm": 20.0,
+        "width_mm": 12.0,
+        "depth_mm": 0.23,
+        "layers": "1",
+        "reactor_volume_ul": 55.2,
+        "void_volume_ul": 22.7,
+        "bed_porosity": 0.41,
+        "shape": "rectangle",
+        "rectangular_product_ul": 55.2,
+        "reported_minus_product_ul": 0.0
+      },
+      {
+        "length_mm": 81.5,
+        "width_mm": 4.0,
+        "depth_mm": 0.32,
+        "layers": "1",
+        "reactor_volume_ul": 104.3,
+        "void_volume_ul": 60.0,
+        "bed_porosity": 0.58,
+        "shape": "rectangle",
+        "rectangular_product_ul": 104.32000000000001,
+        "reported_minus_product_ul": -0.020000000000010232
+      },
+      {
+        "length_mm": 82.8,
+        "width_mm": 40.1,
+        "depth_mm": 0.32,
+        "layers": "1",
+        "reactor_volume_ul": 1062.5,
+        "void_volume_ul": 629.4,
+        "bed_porosity": 0.59,
+        "shape": "hexagon",
+        "rectangular_product_ul": 1062.4896,
+        "reported_minus_product_ul": 0.010399999999890497
+      },
+      {
+        "length_mm": 82.0,
+        "width_mm": 79.67,
+        "depth_mm": 0.32,
+        "layers": "1",
+        "reactor_volume_ul": 2090.5,
+        "void_volume_ul": 1260.8,
+        "bed_porosity": 0.6,
+        "shape": "hexagon",
+        "rectangular_product_ul": 2090.5408,
+        "reported_minus_product_ul": -0.04080000000021755
+      },
+      {
+        "length_mm": 82.8,
+        "width_mm": 40.1,
+        "depth_mm": 0.64,
+        "layers": "2",
+        "reactor_volume_ul": 2125.0,
+        "void_volume_ul": 1290.6,
+        "bed_porosity": 0.61,
+        "shape": "hexagon",
+        "rectangular_product_ul": 2124.9792,
+        "reported_minus_product_ul": 0.020799999999780994
+      },
+      {
+        "length_mm": 82.8,
+        "width_mm": 40.1,
+        "depth_mm": 0.96,
+        "layers": "3",
+        "reactor_volume_ul": 3187.5,
+        "void_volume_ul": 1979.0,
+        "bed_porosity": 0.62,
+        "shape": "hexagon",
+        "rectangular_product_ul": 3187.4688,
+        "reported_minus_product_ul": 0.031199999999898864
+      },
+      {
+        "length_mm": 82.8,
+        "width_mm": 40.1,
+        "depth_mm": 0.64,
+        "layers": "2\u20133",
+        "reactor_volume_ul": 2125.0,
+        "void_volume_ul": 594.0,
+        "bed_porosity": 0.28,
+        "shape": "hexagon",
+        "rectangular_product_ul": 2124.9792,
+        "reported_minus_product_ul": 0.020799999999780994
+      },
+      {
+        "length_mm": 81.61,
+        "width_mm": 4.1,
+        "depth_mm": 0.32,
+        "layers": "1",
+        "reactor_volume_ul": 107.1,
+        "void_volume_ul": 64.1,
+        "bed_porosity": 0.6,
+        "shape": "rectangle",
+        "rectangular_product_ul": 107.07231999999999,
+        "reported_minus_product_ul": 0.0276800000000037
+      }
+    ],
+    "strnisa_rows": [
+      {
+        "reactor": "A",
+        "length_mm": 23.9,
+        "width_mm": 3.1,
+        "depth_mm": 0.4,
+        "empty_volume_ul": 29.9,
+        "void_volume_ul": 17.1,
+        "porosity": 0.57,
+        "rectangular_product_ul": 29.636000000000003,
+        "reported_minus_product_ul": 0.2639999999999958,
+        "shape": "rectangle"
+      },
+      {
+        "reactor": "B",
+        "length_mm": 52.2,
+        "width_mm": 3.0,
+        "depth_mm": 0.4,
+        "empty_volume_ul": 61.6,
+        "void_volume_ul": 35.3,
+        "porosity": 0.57,
+        "rectangular_product_ul": 62.640000000000015,
+        "reported_minus_product_ul": -1.0400000000000134,
+        "shape": "rectangle"
+      },
+      {
+        "reactor": "C",
+        "length_mm": 81.0,
+        "width_mm": 2.9,
+        "depth_mm": 0.4,
+        "empty_volume_ul": 95.3,
+        "void_volume_ul": 56.5,
+        "porosity": 0.59,
+        "rectangular_product_ul": 93.96000000000001,
+        "reported_minus_product_ul": 1.3399999999999892,
+        "shape": "rectangle"
+      },
+      {
+        "reactor": "D",
+        "length_mm": 50.9,
+        "width_mm": 15.8,
+        "depth_mm": 0.4,
+        "empty_volume_ul": 321.6,
+        "void_volume_ul": 184.0,
+        "porosity": 0.57,
+        "rectangular_product_ul": 321.68800000000005,
+        "reported_minus_product_ul": -0.08800000000002228,
+        "shape": "wide with triangular distributors"
+      },
+      {
+        "reactor": "E",
+        "length_mm": 53.8,
+        "width_mm": 29.2,
+        "depth_mm": 0.4,
+        "empty_volume_ul": 628.7,
+        "void_volume_ul": 363.6,
+        "porosity": 0.58,
+        "rectangular_product_ul": 628.384,
+        "reported_minus_product_ul": 0.3160000000000309,
+        "shape": "wide with triangular distributors"
+      },
+      {
+        "reactor": "F",
+        "length_mm": 50.9,
+        "width_mm": 15.8,
+        "depth_mm": 0.8,
+        "empty_volume_ul": 643.1,
+        "void_volume_ul": 375.6,
+        "porosity": 0.58,
+        "rectangular_product_ul": 643.3760000000001,
+        "reported_minus_product_ul": -0.2760000000000673,
+        "shape": "wide with triangular distributors"
+      }
+    ],
+    "bajic_all_within_table_rounding": true,
+    "bajic_max_absolute_difference_ul": 0.04080000000021755,
+    "note": "All Baji\u0107 Table 1 reported reactor volumes equal nominal rectangular L*W*d to rounding, even the distinct wide hexagonal cases. Article Strni\u0161a estimates empty volume from dimensions; pre-chambers and port/tube hold-up have no separately measured volume. Numerical agreement is a convention check, not a fixture-only volume measurement."
+  },
+  "residuals": [
+    {
+      "case": "A",
+      "reading": "bg0",
+      "geometry_source": "Strnisa",
+      "observed": {
+        "mean_s": 11.988916199921974,
+        "variance_s2": 164.04813518230935
+      },
+      "bed_baseline": {
+        "mean_s": 10.128349788011533,
+        "variance_s2": 8.96070372411998
+      },
+      "blank_complete_mean_s": 107.05170004657661,
+      "blank_complete_variance_s2": 769.1463437563249,
+      "mean_residual_s": 1.8605664119104404,
+      "variance_residual_s2": 155.08743145818937,
+      "equivalent_extra_liquid_ul": 3.100944019850734,
+      "equivalent_same_id_length_mm": 15.792978208335896,
+      "bore_id_if_two_full_depth_paths_mm": 0.3627783782643785,
+      "single_independent_mixed_volume_variance_s2": 3.4617073731292907,
+      "note": "Equivalent signed length from residual mean, not an observed line length or a model fit to the pulse.",
+      "diffusivity_cases": {
+        "0.8": {
+          "continuum_slope_s": 4.584800469483567,
+          "possible_increment_interval_s2": [
+            0.0,
+            8.530325758832342
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 2.131942551401679,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 1.5912939074681824,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 8.53030416954698,
+          "blank_all_assigned_tube_variance_s2": 459.2800097684207,
+          "finite_extension_upper_bound_s2": 8.530325758832342,
+          "full_depth_mean_equivalent_bore_upper_s2": 4.490641627308187,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 0.8686664519011333
+        },
+        "1.0": {
+          "continuum_slope_s": 3.6678403755868545,
+          "possible_increment_interval_s2": [
+            0.0,
+            6.824260607065876
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 2.383584234529247,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 1.4812265925476076,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 6.824259865864576,
+          "blank_all_assigned_tube_variance_s2": 372.4688481068946,
+          "finite_extension_upper_bound_s2": 6.824260607065876,
+          "full_depth_mean_equivalent_bore_upper_s2": 3.5925133018465503,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 0.6949331615209067
+        },
+        "1.2": {
+          "continuum_slope_s": 3.0565336463223787,
+          "possible_increment_interval_s2": [
+            0.0,
+            5.686883839221563
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 2.6110857059307055,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 1.392566422702677,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 5.686883812474832,
+          "blank_all_assigned_tube_variance_s2": 313.19344073928124,
+          "finite_extension_upper_bound_s2": 5.686883839221563,
+          "full_depth_mean_equivalent_bore_upper_s2": 2.993761084872125,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 0.5791109679340889
+        }
+      }
+    },
+    {
+      "case": "C",
+      "reading": "bg0",
+      "geometry_source": "Strnisa",
+      "observed": {
+        "mean_s": 31.914499365587105,
+        "variance_s2": 435.7061931105342
+      },
+      "bed_baseline": {
+        "mean_s": 33.263985906082766,
+        "variance_s2": 39.34211532800771
+      },
+      "blank_complete_mean_s": 107.05170004657661,
+      "blank_complete_variance_s2": 769.1463437563249,
+      "mean_residual_s": -1.3494865404956613,
+      "variance_residual_s2": 396.36407778252646,
+      "equivalent_extra_liquid_ul": -2.2491442341594357,
+      "equivalent_same_id_length_mm": -11.454797522979504,
+      "bore_id_if_two_full_depth_paths_mm": null,
+      "single_independent_mixed_volume_variance_s2": null,
+      "note": "Equivalent signed length from residual mean, not an observed line length or a model fit to the pulse.",
+      "diffusivity_cases": {
+        "0.8": {
+          "continuum_slope_s": 4.584800469483567,
+          "possible_increment_interval_s2": [
+            -6.1871265244262625,
+            0.0
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": null,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": null,
+          "contiguous_extension_from_entire_blank_equivalent_s2": -6.187107657818842,
+          "blank_all_assigned_tube_variance_s2": 459.2800097684207,
+          "finite_extension_upper_bound_s2": 0.0,
+          "full_depth_mean_equivalent_bore_upper_s2": null,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": null
+        },
+        "1.0": {
+          "continuum_slope_s": 3.6678403755868545,
+          "possible_increment_interval_s2": [
+            -4.949701219541011,
+            0.0
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": null,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": null,
+          "contiguous_extension_from_entire_blank_equivalent_s2": -4.949700541176696,
+          "blank_all_assigned_tube_variance_s2": 372.4688481068946,
+          "finite_extension_upper_bound_s2": 0.0,
+          "full_depth_mean_equivalent_bore_upper_s2": null,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": null
+        },
+        "1.2": {
+          "continuum_slope_s": 3.0565336463223787,
+          "possible_increment_interval_s2": [
+            -4.124751016284176,
+            0.0
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": null,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": null,
+          "contiguous_extension_from_entire_blank_equivalent_s2": -4.124750990705309,
+          "blank_all_assigned_tube_variance_s2": 313.19344073928124,
+          "finite_extension_upper_bound_s2": 0.0,
+          "full_depth_mean_equivalent_bore_upper_s2": null,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": null
+        }
+      }
+    },
+    {
+      "case": "R1",
+      "reading": "bg0",
+      "geometry_source": "Panjan",
+      "observed": {
+        "mean_s": 12.837058641127456,
+        "variance_s2": 274.85964313320073
+      },
+      "bed_baseline": {
+        "recovery": 0.9999999999999999,
+        "mean_s": 10.200000000000001,
+        "variance_s2": 9.088319038535344
+      },
+      "blank_complete_mean_s": 106.88393903868698,
+      "blank_complete_variance_s2": 749.5970940384877,
+      "mean_residual_s": 2.637058641127455,
+      "variance_residual_s2": 265.7713240946654,
+      "equivalent_extra_liquid_ul": 4.395097735212425,
+      "equivalent_same_id_length_mm": 22.384048957793652,
+      "bore_id_if_two_full_depth_paths_mm": 0.37403249322246096,
+      "single_independent_mixed_volume_variance_s2": 6.954078276744979,
+      "note": "Equivalent signed length from residual mean, not an observed line length or a model fit to the pulse.",
+      "diffusivity_cases": {
+        "0.8": {
+          "continuum_slope_s": 4.584800469483567,
+          "possible_increment_interval_s2": [
+            0.0,
+            12.090387695896853
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 2.344250140460514,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 2.8525801602351635,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 12.090357814625634,
+          "blank_all_assigned_tube_variance_s2": 458.5108612076033,
+          "finite_extension_upper_bound_s2": 12.090387695896853,
+          "full_depth_mean_equivalent_bore_upper_s2": 6.7657957525915275,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 1.0182883011384043
+        },
+        "1.0": {
+          "continuum_slope_s": 3.6678403755868545,
+          "possible_increment_interval_s2": [
+            0.0,
+            9.672310156717485
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 2.620951335166569,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 2.6370429214339732,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 9.67230913626878,
+          "blank_all_assigned_tube_variance_s2": 371.85352758595457,
+          "finite_extension_upper_bound_s2": 9.672310156717485,
+          "full_depth_mean_equivalent_bore_upper_s2": 5.412636602073223,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 0.8146306409107239
+        },
+        "1.2": {
+          "continuum_slope_s": 3.0565336463223787,
+          "possible_increment_interval_s2": [
+            0.0,
+            8.060258463931236
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 2.871108336788026,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 2.463934198642263,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 8.060258427282804,
+          "blank_all_assigned_tube_variance_s2": 312.6806735769886,
+          "finite_extension_upper_bound_s2": 8.060258463931236,
+          "full_depth_mean_equivalent_bore_upper_s2": 4.510530501727686,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 0.6788588674256031
+        }
+      }
+    },
+    {
+      "case": "R2",
+      "reading": "bg0",
+      "geometry_source": "Panjan",
+      "observed": {
+        "mean_s": 31.515400895306414,
+        "variance_s2": 358.10411853936785
+      },
+      "bed_baseline": {
+        "recovery": 1.0000000000000002,
+        "mean_s": 20.99999999999999,
+        "variance_s2": 19.26158830026546
+      },
+      "blank_complete_mean_s": 106.88393903868698,
+      "blank_complete_variance_s2": 749.5970940384877,
+      "mean_residual_s": 10.515400895306424,
+      "variance_residual_s2": 338.8425302391024,
+      "equivalent_extra_liquid_ul": 17.52566815884404,
+      "equivalent_same_id_length_mm": 89.2574949909845,
+      "bore_id_if_two_full_depth_paths_mm": 0.7468998217255465,
+      "single_independent_mixed_volume_variance_s2": 110.57365598901114,
+      "note": "Equivalent signed length from residual mean, not an observed line length or a model fit to the pulse.",
+      "diffusivity_cases": {
+        "0.8": {
+          "continuum_slope_s": 4.584800469483567,
+          "possible_increment_interval_s2": [
+            0.0,
+            48.21101496160882
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 1.3255491180782761,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 25.34057781834879,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 48.21093522036534,
+          "blank_all_assigned_tube_variance_s2": 458.5108612076033,
+          "finite_extension_upper_bound_s2": 48.21101496160882,
+          "full_depth_mean_equivalent_bore_upper_s2": 107.57986066115195,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 12.699688033286588
+        },
+        "1.0": {
+          "continuum_slope_s": 3.6678403755868545,
+          "possible_increment_interval_s2": [
+            0.0,
+            38.56881196928706
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 1.4820089677689603,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 22.460296412661776,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 38.56880946218428,
+          "blank_all_assigned_tube_variance_s2": 371.85352758595457,
+          "finite_extension_upper_bound_s2": 38.56881196928706,
+          "full_depth_mean_equivalent_bore_upper_s2": 86.06388852892158,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 10.159750426629273
+        },
+        "1.2": {
+          "continuum_slope_s": 3.0565336463223787,
+          "possible_increment_interval_s2": [
+            0.0,
+            32.14067664107255
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 1.6234594841440124,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 20.205502967690453,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 32.14067655706174,
+          "blank_all_assigned_tube_variance_s2": 312.6806735769886,
+          "finite_extension_upper_bound_s2": 32.14067664107255,
+          "full_depth_mean_equivalent_bore_upper_s2": 71.71990710743465,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 8.46645868885773
+        }
+      }
+    },
+    {
+      "case": "R2_memory",
+      "reading": "bg0",
+      "geometry_source": "Panjan",
+      "observed": {
+        "mean_s": 31.515400895306414,
+        "variance_s2": 358.10411853936785
+      },
+      "bed_baseline": {
+        "recovery": 1.0,
+        "mean_s": 20.999999999999996,
+        "variance_s2": 38.52192982815444
+      },
+      "blank_complete_mean_s": 106.88393903868698,
+      "blank_complete_variance_s2": 749.5970940384877,
+      "mean_residual_s": 10.515400895306417,
+      "variance_residual_s2": 319.5821887112134,
+      "equivalent_extra_liquid_ul": 17.52566815884403,
+      "equivalent_same_id_length_mm": 89.25749499098444,
+      "bore_id_if_two_full_depth_paths_mm": 0.7468998217255463,
+      "single_independent_mixed_volume_variance_s2": 110.573655989011,
+      "note": "Equivalent signed length from residual mean, not an observed line length or a model fit to the pulse.",
+      "diffusivity_cases": {
+        "0.8": {
+          "continuum_slope_s": 4.584800469483567,
+          "possible_increment_interval_s2": [
+            0.0,
+            48.21101496160878
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 1.2873248430633342,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 25.34057781834877,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 48.210935220365286,
+          "blank_all_assigned_tube_variance_s2": 458.5108612076033,
+          "finite_extension_upper_bound_s2": 48.21101496160878,
+          "full_depth_mean_equivalent_bore_upper_s2": 107.57986066115181,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 13.465063381034051
+        },
+        "1.0": {
+          "continuum_slope_s": 3.6678403755868545,
+          "possible_increment_interval_s2": [
+            0.0,
+            38.56881196928703
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 1.4392729291069322,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 22.46029641266176,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 38.56880946218422,
+          "blank_all_assigned_tube_variance_s2": 371.85352758595457,
+          "finite_extension_upper_bound_s2": 38.56881196928703,
+          "full_depth_mean_equivalent_bore_upper_s2": 86.06388852892147,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 10.772050704827237
+        },
+        "1.2": {
+          "continuum_slope_s": 3.0565336463223787,
+          "possible_increment_interval_s2": [
+            0.0,
+            32.14067664107253
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 1.5766444993568007,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 20.205502967690435,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 32.140676557061795,
+          "blank_all_assigned_tube_variance_s2": 312.6806735769886,
+          "finite_extension_upper_bound_s2": 32.14067664107253,
+          "full_depth_mean_equivalent_bore_upper_s2": 71.71990710743457,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 8.976708920689369
+        }
+      }
+    },
+    {
+      "case": "A",
+      "reading": "bg2",
+      "geometry_source": "Strnisa",
+      "observed": {
+        "mean_s": 11.721682513782397,
+        "variance_s2": 150.94446153523813
+      },
+      "bed_baseline": {
+        "mean_s": 10.128349788011477,
+        "variance_s2": 8.96070372411964
+      },
+      "blank_complete_mean_s": 106.74452812426455,
+      "blank_complete_variance_s2": 716.9236482769802,
+      "mean_residual_s": 1.5933327257709209,
+      "variance_residual_s2": 141.9837578111185,
+      "equivalent_extra_liquid_ul": 2.655554542951535,
+      "equivalent_same_id_length_mm": 13.524628229148021,
+      "bore_id_if_two_full_depth_paths_mm": 0.33571600385281036,
+      "single_independent_mixed_volume_variance_s2": 2.5387091750125927,
+      "note": "Equivalent signed length from residual mean, not an observed line length or a model fit to the pulse.",
+      "diffusivity_cases": {
+        "0.8": {
+          "continuum_slope_s": 4.584800469483567,
+          "possible_increment_interval_s2": [
+            0.0,
+            7.3051126291580495
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 2.204326285102694,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 1.2237749787670713,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 7.305093175125535,
+          "blank_all_assigned_tube_variance_s2": 457.8716918319086,
+          "finite_extension_upper_bound_s2": 7.3051126291580495,
+          "full_depth_mean_equivalent_bore_upper_s2": 3.293297749380557,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 0.6958467222205043
+        },
+        "1.0": {
+          "continuum_slope_s": 3.6678403755868545,
+          "possible_increment_interval_s2": [
+            0.0,
+            5.844090103326441
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 2.464511709039603,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 1.142248170892485,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 5.844089427004292,
+          "blank_all_assigned_tube_variance_s2": 371.34219067088435,
+          "finite_extension_upper_bound_s2": 5.844090103326441,
+          "full_depth_mean_equivalent_bore_upper_s2": 2.634638199504446,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 0.5566773777764032
+        },
+        "1.2": {
+          "continuum_slope_s": 3.0565336463223787,
+          "possible_increment_interval_s2": [
+            0.0,
+            4.870075086105367
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 2.699737312553198,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 1.0765058008698196,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 4.870075061409466,
+          "blank_all_assigned_tube_variance_s2": 312.25455942883553,
+          "finite_extension_upper_bound_s2": 4.870075086105367,
+          "full_depth_mean_equivalent_bore_upper_s2": 2.195531832920372,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 0.4638978148136696
+        }
+      }
+    },
+    {
+      "case": "C",
+      "reading": "bg2",
+      "geometry_source": "Strnisa",
+      "observed": {
+        "mean_s": 31.710463879390915,
+        "variance_s2": 428.84972610609475
+      },
+      "bed_baseline": {
+        "mean_s": 33.26398590608281,
+        "variance_s2": 39.342115328007935
+      },
+      "blank_complete_mean_s": 106.74452812426455,
+      "blank_complete_variance_s2": 716.9236482769802,
+      "mean_residual_s": -1.553522026691894,
+      "variance_residual_s2": 389.5076107780868,
+      "equivalent_extra_liquid_ul": -2.589203377819824,
+      "equivalent_same_id_length_mm": -13.186704520008233,
+      "bore_id_if_two_full_depth_paths_mm": null,
+      "single_independent_mixed_volume_variance_s2": null,
+      "note": "Equivalent signed length from residual mean, not an observed line length or a model fit to the pulse.",
+      "diffusivity_cases": {
+        "0.8": {
+          "continuum_slope_s": 4.584800469483567,
+          "possible_increment_interval_s2": [
+            -7.122588517330059,
+            0.0
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": null,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": null,
+          "contiguous_extension_from_entire_blank_equivalent_s2": -7.122565728364577,
+          "blank_all_assigned_tube_variance_s2": 457.8716918319086,
+          "finite_extension_upper_bound_s2": 0.0,
+          "full_depth_mean_equivalent_bore_upper_s2": null,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": null
+        },
+        "1.0": {
+          "continuum_slope_s": 3.6678403755868545,
+          "possible_increment_interval_s2": [
+            -5.698070813864049,
+            0.0
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": null,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": null,
+          "contiguous_extension_from_entire_blank_equivalent_s2": -5.698069984486949,
+          "blank_all_assigned_tube_variance_s2": 371.34219067088435,
+          "finite_extension_upper_bound_s2": 0.0,
+          "full_depth_mean_equivalent_bore_upper_s2": null,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": null
+        },
+        "1.2": {
+          "continuum_slope_s": 3.0565336463223787,
+          "possible_increment_interval_s2": [
+            -4.748392344886707,
+            0.0
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": null,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": null,
+          "contiguous_extension_from_entire_blank_equivalent_s2": -4.748392313246143,
+          "blank_all_assigned_tube_variance_s2": 312.25455942883553,
+          "finite_extension_upper_bound_s2": 0.0,
+          "full_depth_mean_equivalent_bore_upper_s2": null,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": null
+        }
+      }
+    },
+    {
+      "case": "R1",
+      "reading": "bg2",
+      "geometry_source": "Panjan",
+      "observed": {
+        "mean_s": 12.39131460296899,
+        "variance_s2": 234.50859125826491
+      },
+      "bed_baseline": {
+        "recovery": 0.9999999999999999,
+        "mean_s": 10.200000000000001,
+        "variance_s2": 9.088319038535344
+      },
+      "blank_complete_mean_s": 106.62264597891748,
+      "blank_complete_variance_s2": 702.51633291944,
+      "mean_residual_s": 2.1913146029689887,
+      "variance_residual_s2": 225.42027221972958,
+      "equivalent_extra_liquid_ul": 3.652191004948315,
+      "equivalent_same_id_length_mm": 18.600456049704995,
+      "bore_id_if_two_full_depth_paths_mm": 0.3409587222973717,
+      "single_independent_mixed_volume_variance_s2": 4.801859689185137,
+      "note": "Equivalent signed length from residual mean, not an observed line length or a model fit to the pulse.",
+      "diffusivity_cases": {
+        "0.8": {
+          "continuum_slope_s": 4.584800469483567,
+          "possible_increment_interval_s2": [
+            0.0,
+            10.046740220478416
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 2.36839373113138,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 2.095165606081429,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 10.046713978902858,
+          "blank_all_assigned_tube_variance_s2": 457.3128881571099,
+          "finite_extension_upper_bound_s2": 10.046740220478416,
+          "full_depth_mean_equivalent_bore_upper_s2": 4.671848747845307,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 0.8290024143509858
+        },
+        "1.0": {
+          "continuum_slope_s": 3.6678403755868545,
+          "possible_increment_interval_s2": [
+            0.0,
+            8.037392176382735
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 2.647944690147063,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 1.9442165319214666,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 8.037391268129568,
+          "blank_all_assigned_tube_variance_s2": 370.8951464756127,
+          "finite_extension_upper_bound_s2": 8.037392176382735,
+          "full_depth_mean_equivalent_bore_upper_s2": 3.7374789982762464,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 0.6632019314807887
+        },
+        "1.2": {
+          "continuum_slope_s": 3.0565336463223787,
+          "possible_increment_interval_s2": [
+            0.0,
+            6.697826813652279
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 2.9006780756391475,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 1.8227819814782327,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 6.697826780621426,
+          "blank_all_assigned_tube_variance_s2": 311.8820225528817,
+          "finite_extension_upper_bound_s2": 6.697826813652279,
+          "full_depth_mean_equivalent_bore_upper_s2": 3.114565831896872,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 0.5526682762339907
+        }
+      }
+    },
+    {
+      "case": "R2",
+      "reading": "bg2",
+      "geometry_source": "Panjan",
+      "observed": {
+        "mean_s": 31.133137195210722,
+        "variance_s2": 322.767165543617
+      },
+      "bed_baseline": {
+        "recovery": 1.0000000000000002,
+        "mean_s": 20.99999999999999,
+        "variance_s2": 19.26158830026546
+      },
+      "blank_complete_mean_s": 106.62264597891748,
+      "blank_complete_variance_s2": 702.51633291944,
+      "mean_residual_s": 10.133137195210733,
+      "variance_residual_s2": 303.5055772433516,
+      "equivalent_extra_liquid_ul": 16.888561992017888,
+      "equivalent_same_id_length_mm": 86.01273992779372,
+      "bore_id_if_two_full_depth_paths_mm": 0.7331982164112995,
+      "single_independent_mixed_volume_variance_s2": 102.68046941696323,
+      "note": "Equivalent signed length from residual mean, not an observed line length or a model fit to the pulse.",
+      "diffusivity_cases": {
+        "0.8": {
+          "continuum_slope_s": 4.584800469483567,
+          "possible_increment_interval_s2": [
+            0.0,
+            46.458412169943564
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 1.2779714774308144,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 23.986444337912232,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 46.45833151543792,
+          "blank_all_assigned_tube_variance_s2": 457.3128881571099,
+          "finite_extension_upper_bound_s2": 46.458412169943564,
+          "full_depth_mean_equivalent_bore_upper_s2": 99.90038308579007,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 13.166200633695725
+        },
+        "1.0": {
+          "continuum_slope_s": 3.6678403755868545,
+          "possible_increment_interval_s2": [
+            0.0,
+            37.16672973595486
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 1.4288155484205696,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 21.292684626116227,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 37.16672717263663,
+          "blank_all_assigned_tube_variance_s2": 370.8951464756127,
+          "finite_extension_upper_bound_s2": 37.16672973595486,
+          "full_depth_mean_equivalent_bore_upper_s2": 79.92030646863206,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 10.532960506956579
+        },
+        "1.2": {
+          "continuum_slope_s": 3.0565336463223787,
+          "possible_increment_interval_s2": [
+            0.0,
+            30.97227477996238
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 1.5651890127681216,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 19.181249474120346,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 30.97227469326822,
+          "blank_all_assigned_tube_variance_s2": 311.8820225528817,
+          "finite_extension_upper_bound_s2": 30.97227477996238,
+          "full_depth_mean_equivalent_bore_upper_s2": 66.60025539052673,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 8.777467089130486
+        }
+      }
+    },
+    {
+      "case": "R2_memory",
+      "reading": "bg2",
+      "geometry_source": "Panjan",
+      "observed": {
+        "mean_s": 31.133137195210722,
+        "variance_s2": 322.767165543617
+      },
+      "bed_baseline": {
+        "recovery": 1.0,
+        "mean_s": 20.999999999999996,
+        "variance_s2": 38.52192982815444
+      },
+      "blank_complete_mean_s": 106.62264597891748,
+      "blank_complete_variance_s2": 702.51633291944,
+      "mean_residual_s": 10.133137195210725,
+      "variance_residual_s2": 284.24523571546257,
+      "equivalent_extra_liquid_ul": 16.888561992017877,
+      "equivalent_same_id_length_mm": 86.01273992779366,
+      "bore_id_if_two_full_depth_paths_mm": 0.7331982164112992,
+      "single_independent_mixed_volume_variance_s2": 102.68046941696309,
+      "note": "Equivalent signed length from residual mean, not an observed line length or a model fit to the pulse.",
+      "diffusivity_cases": {
+        "0.8": {
+          "continuum_slope_s": 4.584800469483567,
+          "possible_increment_interval_s2": [
+            0.0,
+            46.45841216994353
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 1.2367571223073734,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 23.98644433791221,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 46.45833151543786,
+          "blank_all_assigned_tube_variance_s2": 457.3128881571099,
+          "finite_extension_upper_bound_s2": 46.45841216994353,
+          "full_depth_mean_equivalent_bore_upper_s2": 99.90038308578993,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 14.058337032011753
+        },
+        "1.0": {
+          "continuum_slope_s": 3.6678403755868545,
+          "possible_increment_interval_s2": [
+            0.0,
+            37.16672973595483
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 1.382736498568154,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 21.29268462611621,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 37.16672717263657,
+          "blank_all_assigned_tube_variance_s2": 370.8951464756127,
+          "finite_extension_upper_bound_s2": 37.16672973595483,
+          "full_depth_mean_equivalent_bore_upper_s2": 79.92030646863196,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 11.246669625609405
+        },
+        "1.2": {
+          "continuum_slope_s": 3.0565336463223787,
+          "possible_increment_interval_s2": [
+            0.0,
+            30.97227477996236
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 1.5147119427029756,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 19.18124947412033,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 30.97227469326816,
+          "blank_all_assigned_tube_variance_s2": 311.8820225528817,
+          "finite_extension_upper_bound_s2": 30.97227477996236,
+          "full_depth_mean_equivalent_bore_upper_s2": 66.60025539052663,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 9.372224688007837
+        }
+      }
+    },
+    {
+      "case": "A",
+      "reading": "bg5",
+      "geometry_source": "Strnisa",
+      "observed": {
+        "mean_s": 11.262121702348594,
+        "variance_s2": 114.7220510617476
+      },
+      "bed_baseline": {
+        "mean_s": 10.128349788011548,
+        "variance_s2": 8.96070372411998
+      },
+      "blank_complete_mean_s": 106.44501431297707,
+      "blank_complete_variance_s2": 670.9027303910165,
+      "mean_residual_s": 1.1337719143370464,
+      "variance_residual_s2": 105.76134733762763,
+      "equivalent_extra_liquid_ul": 1.8896198572284106,
+      "equivalent_same_id_length_mm": 9.6237549069601,
+      "bore_id_if_two_full_depth_paths_mm": 0.28319243909045455,
+      "single_independent_mixed_volume_variance_s2": 1.285438753739491,
+      "note": "Equivalent signed length from residual mean, not an observed line length or a model fit to the pulse.",
+      "diffusivity_cases": {
+        "0.8": {
+          "continuum_slope_s": 4.584800469483567,
+          "possible_increment_interval_s2": [
+            0.0,
+            5.198118005139773
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 2.255331701723075,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 0.6836145791343887,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 5.19810329073664,
+          "blank_all_assigned_tube_variance_s2": 456.4984848475868,
+          "finite_extension_upper_bound_s2": 5.198118005139773,
+          "full_depth_mean_equivalent_bore_upper_s2": 1.6675137886307176,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 0.4730028022357045
+        },
+        "1.0": {
+          "continuum_slope_s": 3.6678403755868545,
+          "possible_increment_interval_s2": [
+            0.0,
+            4.158494404111819
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 2.5215374984315377,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 0.641529666362188,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 4.158493884825646,
+          "blank_all_assigned_tube_variance_s2": 370.24362196642846,
+          "finite_extension_upper_bound_s2": 4.158494404111819,
+          "full_depth_mean_equivalent_bore_upper_s2": 1.3340110309045745,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 0.3784022417885636
+        },
+        "1.2": {
+          "continuum_slope_s": 3.0565336463223787,
+          "possible_increment_interval_s2": [
+            0.0,
+            3.465412003426516
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 2.762205934972201,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 0.6075233115110823,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 3.4654119841935653,
+          "blank_all_assigned_tube_variance_s2": 311.33908539255157,
+          "finite_extension_upper_bound_s2": 3.465412003426516,
+          "full_depth_mean_equivalent_bore_upper_s2": 1.1116758590871454,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 0.3153352014904698
+        }
+      }
+    },
+    {
+      "case": "C",
+      "reading": "bg5",
+      "geometry_source": "Strnisa",
+      "observed": {
+        "mean_s": 31.242115778702185,
+        "variance_s2": 385.9912093765553
+      },
+      "bed_baseline": {
+        "mean_s": 33.263985906082866,
+        "variance_s2": 39.34211532800782
+      },
+      "blank_complete_mean_s": 106.44501431297707,
+      "blank_complete_variance_s2": 670.9027303910165,
+      "mean_residual_s": -2.02187012738068,
+      "variance_residual_s2": 346.64909404854745,
+      "equivalent_extra_liquid_ul": -3.369783545634467,
+      "equivalent_same_id_length_mm": -17.162166669998683,
+      "bore_id_if_two_full_depth_paths_mm": null,
+      "single_independent_mixed_volume_variance_s2": null,
+      "note": "Equivalent signed length from residual mean, not an observed line length or a model fit to the pulse.",
+      "diffusivity_cases": {
+        "0.8": {
+          "continuum_slope_s": 4.584800469483567,
+          "possible_increment_interval_s2": [
+            -9.269871109249742,
+            0.0
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": null,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": null,
+          "contiguous_extension_from_entire_blank_equivalent_s2": -9.269839514282808,
+          "blank_all_assigned_tube_variance_s2": 456.4984848475868,
+          "finite_extension_upper_bound_s2": 0.0,
+          "full_depth_mean_equivalent_bore_upper_s2": null,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": null
+        },
+        "1.0": {
+          "continuum_slope_s": 3.6678403755868545,
+          "possible_increment_interval_s2": [
+            -7.415896887399795,
+            0.0
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": null,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": null,
+          "contiguous_extension_from_entire_blank_equivalent_s2": -7.415895718899776,
+          "blank_all_assigned_tube_variance_s2": 370.24362196642846,
+          "finite_extension_upper_bound_s2": 0.0,
+          "full_depth_mean_equivalent_bore_upper_s2": null,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": null
+        },
+        "1.2": {
+          "continuum_slope_s": 3.0565336463223787,
+          "possible_increment_interval_s2": [
+            -6.179914072833162,
+            0.0
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": null,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": null,
+          "contiguous_extension_from_entire_blank_equivalent_s2": -6.179914027552684,
+          "blank_all_assigned_tube_variance_s2": 311.33908539255157,
+          "finite_extension_upper_bound_s2": 0.0,
+          "full_depth_mean_equivalent_bore_upper_s2": null,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": null
+        }
+      }
+    },
+    {
+      "case": "R1",
+      "reading": "bg5",
+      "geometry_source": "Panjan",
+      "observed": {
+        "mean_s": 11.645573401116195,
+        "variance_s2": 156.66549402119858
+      },
+      "bed_baseline": {
+        "recovery": 0.9999999999999999,
+        "mean_s": 10.200000000000001,
+        "variance_s2": 9.088319038535344
+      },
+      "blank_complete_mean_s": 106.36134453781513,
+      "blank_complete_variance_s2": 657.8652119377164,
+      "mean_residual_s": 1.445573401116194,
+      "variance_residual_s2": 147.57717498266325,
+      "equivalent_extra_liquid_ul": 2.4092890018603237,
+      "equivalent_same_id_length_mm": 12.270408127456292,
+      "bore_id_if_two_full_depth_paths_mm": 0.2769296856543224,
+      "single_independent_mixed_volume_variance_s2": 2.0896824580146407,
+      "note": "Equivalent signed length from residual mean, not an observed line length or a model fit to the pulse.",
+      "diffusivity_cases": {
+        "0.8": {
+          "continuum_slope_s": 4.584800469483567,
+          "possible_increment_interval_s2": [
+            0.0,
+            6.627665608110483
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 2.359387674890177,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 1.0368719158480257,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 6.627646996034173,
+          "blank_all_assigned_tube_variance_s2": 456.11487678812205,
+          "finite_extension_upper_bound_s2": 6.627665608110483,
+          "full_depth_mean_equivalent_bore_upper_s2": 2.0331040485955354,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 0.5510619237248243
+        },
+        "1.0": {
+          "continuum_slope_s": 3.6678403755868545,
+          "possible_increment_interval_s2": [
+            0.0,
+            5.302132486488388
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 2.6378756131648045,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 0.9693706753611818,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 5.302131830861413,
+          "blank_all_assigned_tube_variance_s2": 369.936734628705,
+          "finite_extension_upper_bound_s2": 5.302132486488388,
+          "full_depth_mean_equivalent_bore_upper_s2": 1.626483238876429,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 0.44084953897985957
+        },
+        "1.2": {
+          "continuum_slope_s": 3.0565336463223787,
+          "possible_increment_interval_s2": [
+            0.0,
+            4.418443738740323
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 2.8896479544462697,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 0.9149040093637548,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 4.418443714498721,
+          "blank_all_assigned_tube_variance_s2": 311.083345911164,
+          "finite_extension_upper_bound_s2": 4.418443738740323,
+          "full_depth_mean_equivalent_bore_upper_s2": 1.3554026990636907,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 0.3673746158165497
+        }
+      }
+    },
+    {
+      "case": "R2",
+      "reading": "bg5",
+      "geometry_source": "Panjan",
+      "observed": {
+        "mean_s": 30.606864905850145,
+        "variance_s2": 278.85776468321365
+      },
+      "bed_baseline": {
+        "recovery": 1.0000000000000002,
+        "mean_s": 20.99999999999999,
+        "variance_s2": 19.26158830026546
+      },
+      "blank_complete_mean_s": 106.36134453781513,
+      "blank_complete_variance_s2": 657.8652119377164,
+      "mean_residual_s": 9.606864905850156,
+      "variance_residual_s2": 259.5961763829482,
+      "equivalent_extra_liquid_ul": 16.01144150975026,
+      "equivalent_same_id_length_mm": 81.54560199371242,
+      "bore_id_if_two_full_depth_paths_mm": 0.7139047642793138,
+      "single_independent_mixed_volume_variance_s2": 92.29185331925532,
+      "note": "Equivalent signed length from residual mean, not an observed line length or a model fit to the pulse.",
+      "diffusivity_cases": {
+        "0.8": {
+          "continuum_slope_s": 4.584800469483567,
+          "possible_increment_interval_s2": [
+            0.0,
+            44.045558730607
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 1.213858568448052,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 22.15298830991078,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 44.04547790707767,
+          "blank_all_assigned_tube_variance_s2": 456.11487678812205,
+          "finite_extension_upper_bound_s2": 44.045558730607,
+          "full_depth_mean_equivalent_bore_upper_s2": 89.79304004591907,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 13.835803176616777
+        },
+        "1.0": {
+          "continuum_slope_s": 3.6678403755868545,
+          "possible_increment_interval_s2": [
+            0.0,
+            35.2364469844856
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 1.3571351370602127,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 19.707703512297144,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 35.23644438447491,
+          "blank_all_assigned_tube_variance_s2": 369.936734628705,
+          "finite_extension_upper_bound_s2": 35.2364469844856,
+          "full_depth_mean_equivalent_bore_upper_s2": 71.83443203673528,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 11.068642541293425
+        },
+        "1.2": {
+          "continuum_slope_s": 3.0565336463223787,
+          "possible_increment_interval_s2": [
+            0.0,
+            29.36370582040467
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 1.4866670563014877,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 17.787726081072798,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 29.363705731551363,
+          "blank_all_assigned_tube_variance_s2": 311.083345911164,
+          "finite_extension_upper_bound_s2": 29.36370582040467,
+          "full_depth_mean_equivalent_bore_upper_s2": 59.8620266972794,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 9.223868784411188
+        }
+      }
+    },
+    {
+      "case": "R2_memory",
+      "reading": "bg5",
+      "geometry_source": "Panjan",
+      "observed": {
+        "mean_s": 30.606864905850145,
+        "variance_s2": 278.85776468321365
+      },
+      "bed_baseline": {
+        "recovery": 1.0,
+        "mean_s": 20.999999999999996,
+        "variance_s2": 38.52192982815444
+      },
+      "blank_complete_mean_s": 106.36134453781513,
+      "blank_complete_variance_s2": 657.8652119377164,
+      "mean_residual_s": 9.606864905850149,
+      "variance_residual_s2": 240.3358348550592,
+      "equivalent_extra_liquid_ul": 16.01144150975025,
+      "equivalent_same_id_length_mm": 81.54560199371237,
+      "bore_id_if_two_full_depth_paths_mm": 0.7139047642793136,
+      "single_independent_mixed_volume_variance_s2": 92.29185331925518,
+      "note": "Equivalent signed length from residual mean, not an observed line length or a model fit to the pulse.",
+      "diffusivity_cases": {
+        "0.8": {
+          "continuum_slope_s": 4.584800469483567,
+          "possible_increment_interval_s2": [
+            0.0,
+            44.04555873060696
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 1.167960640961843,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 22.152988309910754,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 44.04547790707761,
+          "blank_all_assigned_tube_variance_s2": 456.11487678812205,
+          "finite_extension_upper_bound_s2": 44.04555873060696,
+          "full_depth_mean_equivalent_bore_upper_s2": 89.79304004591896,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 14.944594525418317
+        },
+        "1.0": {
+          "continuum_slope_s": 3.6678403755868545,
+          "possible_increment_interval_s2": [
+            0.0,
+            35.23644698448558
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 1.3058196941174531,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 19.707703512297122,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 35.236444384474964,
+          "blank_all_assigned_tube_variance_s2": 369.936734628705,
+          "finite_extension_upper_bound_s2": 35.23644698448558,
+          "full_depth_mean_equivalent_bore_upper_s2": 71.83443203673518,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 11.955675620334656
+        },
+        "1.2": {
+          "continuum_slope_s": 3.0565336463223787,
+          "possible_increment_interval_s2": [
+            0.0,
+            29.36370582040465
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 1.4304538050052502,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 17.787726081072773,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 29.363705731551306,
+          "blank_all_assigned_tube_variance_s2": 311.083345911164,
+          "finite_extension_upper_bound_s2": 29.36370582040465,
+          "full_depth_mean_equivalent_bore_upper_s2": 59.86202669727932,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 9.963063016945549
+        }
+      }
+    },
+    {
+      "case": "R1",
+      "reading": "window240",
+      "geometry_source": "Panjan",
+      "observed": {
+        "mean_s": 11.635418208353357,
+        "variance_s2": 102.67216003459589
+      },
+      "bed_baseline": {
+        "recovery": 0.9999999999999999,
+        "mean_s": 10.200000000000001,
+        "variance_s2": 9.088319038535344
+      },
+      "blank_complete_mean_s": 106.81006002580497,
+      "blank_complete_variance_s2": 739.6398620326412,
+      "mean_residual_s": 1.4354182083533562,
+      "variance_residual_s2": 93.58384099606054,
+      "equivalent_extra_liquid_ul": 2.392363680588927,
+      "equivalent_same_id_length_mm": 12.184208174055934,
+      "bore_id_if_two_full_depth_paths_mm": 0.2759552519664186,
+      "single_independent_mixed_volume_variance_s2": 2.0604254328723592,
+      "note": "Equivalent signed length from residual mean, not an observed line length or a model fit to the pulse.",
+      "diffusivity_cases": {
+        "0.8": {
+          "continuum_slope_s": 4.584800469483567,
+          "possible_increment_interval_s2": [
+            0.0,
+            6.581106075563729
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 1.885475927311009,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 1.0244716741154793,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 6.581088526894689,
+          "blank_all_assigned_tube_variance_s2": 458.17214165139774,
+          "finite_extension_upper_bound_s2": 6.581106075563729,
+          "full_depth_mean_equivalent_bore_upper_s2": 2.004639161005319,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 0.8568313245829289
+        },
+        "1.0": {
+          "continuum_slope_s": 3.6678403755868545,
+          "possible_increment_interval_s2": [
+            0.0,
+            5.264884860450984
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 2.1080261717034343,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 0.9578879775807126,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 5.264884250223474,
+          "blank_all_assigned_tube_variance_s2": 371.58255119421926,
+          "finite_extension_upper_bound_s2": 5.264884860450984,
+          "full_depth_mean_equivalent_bore_upper_s2": 1.6037113288042555,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 0.6854650596663431
+        },
+        "1.2": {
+          "continuum_slope_s": 3.0565336463223787,
+          "possible_increment_interval_s2": [
+            0.0,
+            4.38740405037582
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 2.3092269721064587,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 0.9041593020223117,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 4.387404028089179,
+          "blank_all_assigned_tube_variance_s2": 312.4548598896453,
+          "finite_extension_upper_bound_s2": 4.38740405037582,
+          "full_depth_mean_equivalent_bore_upper_s2": 1.3364261073368797,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 0.5712208830552861
+        }
+      }
+    },
+    {
+      "case": "R2",
+      "reading": "window240",
+      "geometry_source": "Panjan",
+      "observed": {
+        "mean_s": 29.747304597217777,
+        "variance_s2": 141.4134788630431
+      },
+      "bed_baseline": {
+        "recovery": 1.0000000000000002,
+        "mean_s": 20.99999999999999,
+        "variance_s2": 19.26158830026546
+      },
+      "blank_complete_mean_s": 106.81006002580497,
+      "blank_complete_variance_s2": 739.6398620326412,
+      "mean_residual_s": 8.747304597217788,
+      "variance_residual_s2": 122.15189056277765,
+      "equivalent_extra_liquid_ul": 14.578840995362981,
+      "equivalent_same_id_length_mm": 74.24942748680915,
+      "bore_id_if_two_full_depth_paths_mm": 0.6812187033490472,
+      "single_independent_mixed_volume_variance_s2": 76.51533771650745,
+      "note": "Equivalent signed length from residual mean, not an observed line length or a model fit to the pulse.",
+      "diffusivity_cases": {
+        "0.8": {
+          "continuum_slope_s": 4.584800469483567,
+          "possible_increment_interval_s2": [
+            0.0,
+            40.104646224039875
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 0.8726151645669049,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 19.241263989395325,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 40.104573436637,
+          "blank_all_assigned_tube_variance_s2": 458.17214165139774,
+          "finite_extension_upper_bound_s2": 40.104646224039875,
+          "full_depth_mean_equivalent_bore_upper_s2": 74.44367554239959,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 24.377412481926562
+        },
+        "1.0": {
+          "continuum_slope_s": 3.6678403755868545,
+          "possible_increment_interval_s2": [
+            0.0,
+            32.08371697923191
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 0.9756134130843824,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 17.180365269844195,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 32.08371465021207,
+          "blank_all_assigned_tube_variance_s2": 371.58255119421926,
+          "finite_extension_upper_bound_s2": 32.08371697923191,
+          "full_depth_mean_equivalent_bore_upper_s2": 59.55494043391968,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 19.501929985541256
+        },
+        "1.2": {
+          "continuum_slope_s": 3.0565336463223787,
+          "possible_increment_interval_s2": [
+            0.0,
+            26.73643081602659
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 1.068730947501844,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 15.5576879227765,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 26.73643073690721,
+          "blank_all_assigned_tube_variance_s2": 312.4548598896453,
+          "finite_extension_upper_bound_s2": 26.73643081602659,
+          "full_depth_mean_equivalent_bore_upper_s2": 49.629117028266414,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 16.251608321284383
+        }
+      }
+    },
+    {
+      "case": "R2_memory",
+      "reading": "window240",
+      "geometry_source": "Panjan",
+      "observed": {
+        "mean_s": 29.747304597217777,
+        "variance_s2": 141.4134788630431
+      },
+      "bed_baseline": {
+        "recovery": 1.0,
+        "mean_s": 20.999999999999996,
+        "variance_s2": 38.52192982815444
+      },
+      "blank_complete_mean_s": 106.81006002580497,
+      "blank_complete_variance_s2": 739.6398620326412,
+      "mean_residual_s": 8.74730459721778,
+      "variance_residual_s2": 102.89154903488867,
+      "equivalent_extra_liquid_ul": 14.578840995362969,
+      "equivalent_same_id_length_mm": 74.2494274868091,
+      "bore_id_if_two_full_depth_paths_mm": 0.6812187033490469,
+      "single_independent_mixed_volume_variance_s2": 76.51533771650732,
+      "note": "Equivalent signed length from residual mean, not an observed line length or a model fit to the pulse.",
+      "diffusivity_cases": {
+        "0.8": {
+          "continuum_slope_s": 4.584800469483567,
+          "possible_increment_interval_s2": [
+            0.0,
+            40.10464622403985
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 0.8008708974945884,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 19.241263989395303,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 40.10457343663694,
+          "blank_all_assigned_tube_variance_s2": 458.17214165139774,
+          "finite_extension_upper_bound_s2": 40.10464622403985,
+          "full_depth_mean_equivalent_bore_upper_s2": 74.44367554239946,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 28.9406374928448
+        },
+        "1.0": {
+          "continuum_slope_s": 3.6678403755868545,
+          "possible_increment_interval_s2": [
+            0.0,
+            32.08371697923189
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 0.8954008839995827,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 17.180365269844177,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 32.08371465021207,
+          "blank_all_assigned_tube_variance_s2": 371.58255119421926,
+          "finite_extension_upper_bound_s2": 32.08371697923189,
+          "full_depth_mean_equivalent_bore_upper_s2": 59.55494043391958,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 23.152509994275846
+        },
+        "1.2": {
+          "continuum_slope_s": 3.0565336463223787,
+          "possible_increment_interval_s2": [
+            0.0,
+            26.73643081602657
+          ],
+          "necessary_variance_screen_pass": false,
+          "diameter_lower_bound_mm": 0.9808625243532759,
+          "note": "Bound only for an independent added or contiguous same-ID developed straight tube in the stated high-Pe model. A necessary ID bound is not a sufficient fitting diameter.",
+          "independent_added_segment_variance_s2": 15.557687922776482,
+          "contiguous_extension_from_entire_blank_equivalent_s2": 26.736430736907153,
+          "blank_all_assigned_tube_variance_s2": 312.4548598896453,
+          "finite_extension_upper_bound_s2": 26.73643081602657,
+          "full_depth_mean_equivalent_bore_upper_s2": 49.629117028266315,
+          "full_depth_mean_equivalent_bore_necessary_pass": false,
+          "cylindrical_length_at_necessary_diameter_mm": 19.29375832856321
+        }
+      }
+    }
+  ],
+  "prior_common_mean_feasibility_A_C": {
+    "0": {
+      "added_mean_intervals_s": {
+        "A": [
+          1.2611206019143406,
+          2.46001222190654
+        ],
+        "C": [
+          0.0,
+          0.24623842778369465
+        ]
+      },
+      "common": {
+        "feasible": false,
+        "required_A_lower_s": 1.2611206019143406,
+        "allowed_A_upper_s": 0.24623842778369465
+      },
+      "bead_volume_scaled": {
+        "feasible": false,
+        "required_A_lower_s": 1.2611206019143406,
+        "allowed_A_upper_s": 0.08138973243270578
+      }
+    },
+    "2": {
+      "added_mean_intervals_s": {
+        "A": [
+          1.0072486000818,
+          2.179416851460042
+        ],
+        "C": [
+          0.0,
+          0.032001167277655895
+        ]
+      },
+      "common": {
+        "feasible": false,
+        "required_A_lower_s": 1.0072486000818,
+        "allowed_A_upper_s": 0.032001167277655895
+      },
+      "bead_volume_scaled": {
+        "feasible": false,
+        "required_A_lower_s": 1.0072486000818,
+        "allowed_A_upper_s": 0.010577416635191583
+      }
+    },
+    "5": {
+      "added_mean_intervals_s": {
+        "A": [
+          0.5706658292196156,
+          1.6968779994544771
+        ],
+        "C": [
+          0.0,
+          -0.4597643384455665
+        ]
+      },
+      "common": {
+        "feasible": false,
+        "required_A_lower_s": 0.5706658292196156,
+        "allowed_A_upper_s": -0.4597643384455665
+      },
+      "bead_volume_scaled": {
+        "feasible": false,
+        "required_A_lower_s": 0.5706658292196156,
+        "allowed_A_upper_s": -0.15196692419209198
+      }
+    }
+  },
+  "prior_common_mean_feasibility_R1_R2": {
+    "0": {
+      "common_positive_delay": {
+        "feasible": false,
+        "lower_equivalent_R1_s": 8.939630850541093,
+        "upper_equivalent_R1_s": 3.27891157318383
+      },
+      "bead_volume_scaled_positive_delay": {
+        "feasible": false,
+        "lower_equivalent_R1_s": 4.2414306955121965,
+        "upper_equivalent_R1_s": 3.27891157318383
+      }
+    },
+    "2": {
+      "common_positive_delay": {
+        "feasible": false,
+        "lower_equivalent_R1_s": 8.576480335450185,
+        "upper_equivalent_R1_s": 2.8108803331174403
+      },
+      "bead_volume_scaled_positive_delay": {
+        "feasible": false,
+        "lower_equivalent_R1_s": 4.069133005870524,
+        "upper_equivalent_R1_s": 2.8108803331174403
+      }
+    },
+    "5": {
+      "common_positive_delay": {
+        "feasible": false,
+        "lower_equivalent_R1_s": 8.076521660557635,
+        "upper_equivalent_R1_s": 2.0278520711720063
+      },
+      "bead_volume_scaled_positive_delay": {
+        "feasible": false,
+        "lower_equivalent_R1_s": 3.8319263353010666,
+        "upper_equivalent_R1_s": 2.0278520711720063
+      }
+    }
+  },
+  "any_same_id_tube_necessary_variance_pass": false,
+  "note": "Source-derived diameter; no measured relative tube length or port bore. Conservative equivalent-length, high-Pe straight-tube moment diagnostics only. Actual fixture geometry and detector transfer remain unqualified; no reaction."
+}
