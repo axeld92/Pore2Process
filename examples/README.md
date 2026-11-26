@@ -15,6 +15,7 @@ specific earlier measurements or assumptions.
 | Hydraulics | [3D capillary](hydraulics/capillary_benchmark/REPORT.md) | Native measured-permeability verification; current TRT evidence | [Commands](hydraulics/capillary_benchmark/README.md) |
 | Hydraulics | [Darcy and pump](hydraulics/darcy_pump/REPORT.md) | Pore-derived properties drive actual DWSIM work | [Commands](hydraulics/darcy_pump/README.md) |
 | Hydraulics | [Tool checks](hydraulics/tool_checks/REPORT.md) | Independent native channel and pump compatibility | [Commands](hydraulics/tool_checks/README.md) |
+| Hydraulics | [Salt dispersion in glass beads](hydraulics/berkowitz_homogeneous/REPORT.md) | Independent outlet-spreading predictions for two bead sizes at 0.3 mL/min | [Commands](hydraulics/berkowitz_homogeneous/README.md) |
 | Filtration | [Layers in series](filtration/layered_support/REPORT.md) | Support benefit and fixed-layer dominance | [Commands](filtration/layered_support/README.md) |
 | Filtration | [Literature calibration](filtration/calibration/REPORT.md) | Failed support closure; bounded matched-layer reference | [Commands](filtration/calibration/README.md) |
 | Filtration | [Fixed-opening support](filtration/graded_support/REPORT.md) | Controlled interior geometry and common scale translation | [Commands](filtration/graded_support/README.md) |

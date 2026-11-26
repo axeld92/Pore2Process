@@ -30,8 +30,8 @@ def shell_weights(n, dx, cut_dp, order=12):
     return weight / order**2
 
 
-def connected_pores(ijk, material, velocity):
-    """Retain the connected face graph for Julia's six-face control volumes.
+def connected_pore_component(ijk, material, velocity):
+    """Return the connected face graph containing the fastest axial pore.
 
     OpenLB also streams along diagonals. Tiny corner-only pockets consequently
     count in the native porosity but are outside the six-face tracer graph.
@@ -47,7 +47,12 @@ def connected_pores(ijk, material, velocity):
         if np.array_equal(next_component, component):
             break
         component = next_component
-    active = component[tuple(ijk.T)]
+    return component[tuple(ijk.T)]
+
+
+def connected_pores(ijk, material, velocity):
+    """Apply the adsorption example's exclusion limit to its tracer mesh."""
+    active = connected_pore_component(ijk, material, velocity)
     if np.count_nonzero(~active) > .001 * len(ijk):
         raise ValueError("More than 0.1% of native void lacks face connectivity to the tracer mesh")
     return active

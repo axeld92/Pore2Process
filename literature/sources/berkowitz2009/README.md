@@ -64,7 +64,9 @@ The figure's peak and width differences test the outlet response. The authors pr
 
 Order symmetry in the calculation above follows from convolving independent transit times. In a separate infinite-domain model, Appuhamillage and coauthors obtained different directional properties for resident and flux-averaged concentrations and discussed the influence of finite boundaries. For a comparison with collected effluent, the simulation should use an inlet flux pulse and measure tracer mass passing through the outlet per unit liquid flow. [Appuhamillage et al. (2010)](https://doi.org/10.1029/2009WR008258)
 
-## Next pore-scale comparison
+## Pore-scale comparison and flow-reversal sequence
+
+The [homogeneous-bed calculation](../../../examples/hydraulics/berkowitz_homogeneous/REPORT.md) implements the first two steps below. It records the effect of mesh spacing, synthetic packing and tracer travel distance on the comparison.
 
 1. Use stock OpenLB TRT water flow and conservative Julia tracer transport for each single bead size at 0.3 mL/min. Match the 27 mm ID, approximately 0.39 porosity, 200 mm transport length and 1.344 mm/min interstitial speed. Preserve radial confinement when using shorter numerical domains for scale translation.
 2. Derive the equivalent longitudinal dispersivity from the computed homogeneous outlet transport. Check mesh, domain length, mass conservation and packing-realization sensitivity against the published 1.3 and 9.6 mm targets. The estimates are independent of the layered Figure 2 experiments.

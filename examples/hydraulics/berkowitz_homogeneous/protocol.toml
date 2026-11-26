@@ -1,0 +1,35 @@
+# Frozen operating and comparison choices for the homogeneous-bed calculation.
+# Experimental inputs and the two independent targets live in the source record.
+[water]
+density_kg_m3 = 997.54
+viscosity_Pa_s = 0.0009321
+NaCl_D25_m2_s = 1.545e-9
+water_viscosity_25_Pa_s = 0.0008900
+temperature_reference_C = 25.0
+
+# Interpretation only, applied after the passive-tracer runs.
+# Harned & Hildreth (1951), Table I, NaCl at 25 C.
+[density_screen]
+NaCl_limiting_apparent_molar_volume_m3_mol = 0.00001640
+NaCl_molar_mass_kg_mol = 0.05844
+
+[packing]
+baseline_seed = 31
+second_seed = 47
+fine_period_in_beads = 5.25
+coarse_period_in_beads = 7.0
+
+[transport]
+lengths_mm = [50, 100, 200]
+markers = 4096
+seed = 261126
+max_rms_diffusion_step_cells = 0.50
+max_mean_drift_step_cells = 0.35
+end_mean_transit_times = 4.0
+
+[checks]
+throughput_relative = 0.002
+face_rms_correction_relative = 0.05
+mean_time_relative = 0.05
+relative_change_in_alpha = 0.10
+literature_relative = 0.20

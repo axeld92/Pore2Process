@@ -543,10 +543,12 @@ experimental target. Reversing the packing to put its 4 mm beads first
 adds about 12–16 mL across the pulse width at 0.3 and 0.4 mL/min. The
 independent two-layer calculation predicts identical widths in both
 directions. The absolute time correction and conductivity calibration
-remain underdetermined. Next compute the dispersivity of each confined
-homogeneous packing at 0.3 mL/min with stock OpenLB TRT and the Julia tracer.
-Compare with the published 1.3 mm and 9.6 mm estimates before predicting
-the two directions. Reaction remains contingent on tracer qualification.
+remain underdetermined. The [homogeneous-bed test](examples/hydraulics/berkowitz_homogeneous/REPORT.md)
+used stock OpenLB TRT and conservative Julia tracer transport at 0.3 mL/min.
+The finest cases gave 1.63 mm for fine beads and 2.49 mm for coarse beads,
+compared with published estimates of 1.3 and 9.6 mm. The next test is the
+effect of the salt pulse's density on spreading in the horizontal coarse bed.
+The layered flow-reversal comparison and reaction remain open.
 
 ## Acceptance criterion for every end-to-end showcase
 

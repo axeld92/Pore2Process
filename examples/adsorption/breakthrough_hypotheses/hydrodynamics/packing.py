@@ -82,24 +82,24 @@ def grid(length, cells_per_dp):
     return (nx, nt, nt), h
 
 
-def voxel_material(points, shape, h):
+def voxel_material(points, shape, h, *, radius=RADIUS, diameter=DIAMETER):
     """Independent cell-centre raster for checking the stock material IDs."""
     ny = shape[1]
     transverse = (np.arange(ny) + .5 - ny / 2) * h
     radius2 = transverse[:, None]**2 + transverse[None, :]**2
-    material = np.where(radius2 <= RADIUS**2, 1, 3).astype(np.uint8)
+    material = np.where(radius2 <= radius**2, 1, 3).astype(np.uint8)
     material = np.broadcast_to(material, shape).copy()
     centre = ny * h / 2
     shifted = points + (0, centre, centre)
     for point in shifted:
-        low = np.floor((point - DIAMETER / 2) / h - .5).astype(int)
-        high = np.ceil((point + DIAMETER / 2) / h - .5).astype(int)
+        low = np.floor((point - diameter / 2) / h - .5).astype(int)
+        high = np.ceil((point + diameter / 2) / h - .5).astype(int)
         axes = [np.arange(a, b + 1) for a, b in zip(low, high, strict=True)]
         mesh = np.meshgrid(*axes, indexing="ij", sparse=True)
         distance2 = sum(((index + .5) * h - value)**2 for index, value in zip(mesh, point, strict=True))
         selection = np.ix_(axes[0] % shape[0], *axes[1:])
         local = material[selection]
-        solid = distance2 <= (DIAMETER / 2)**2
+        solid = distance2 <= (diameter / 2)**2
         if np.any(local[solid] != 1):
             raise ValueError("A grain raster overlaps another grain or the solid tube wall")
         local[solid] = 2

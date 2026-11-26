@@ -1,0 +1,18 @@
+schema_version = 1
+id = "hydraulics/berkowitz_homogeneous"
+title = "Salt dispersivity in confined homogeneous glass-bead packings"
+area = "hydraulics"
+status = "complete"
+readme = "README.md"
+report = "REPORT.md"
+prerequisites = ["hydraulics/capillary_benchmark"]
+run_module = "examples.hydraulics.berkowitz_homogeneous.run"
+check_module = "examples.hydraulics.berkowitz_homogeneous.report"
+reference_files = ["reference_summary.json", "outlet_pulses.png"]
+protocol_files = ["protocol.toml"]
+
+[validation]
+native_hydraulics = "passed"
+passive_transport = "conditional"
+literature = "failed"
+scope = "Independent predictions of homogeneous outlet dispersivity at 0.3 mL/min. Layered flow reversal and reaction remain open."
