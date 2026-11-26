@@ -1,0 +1,30 @@
+# Physical properties, packing and salt dose are inherited from the passive
+# example and the paper's extraction. The dispersivity is used only in report.py.
+[simulation]
+# Production defaults use the pressure-accuracy check and the finest tested grid.
+cells_per_bead = 12
+hydraulic_tau_even = 0.60
+repeats = 9
+markers = 12288
+seed = 261126
+gravity_m_s2 = 9.80665
+coupling_s = 60.0
+tracer_step_s = 4.0
+native_sweeps = 96
+warm_sweeps = 160
+density_kernel_m = 0.002
+end_s = 40000.0
+observation_m = 0.2
+
+[checks]
+mass_recovery = 1.0
+max_face_divergence_relative = 1e-9
+max_plane_flow_relative = 1e-9
+passive_agreement_relative = 0.10
+literature_relative = 0.20
+
+[diagnostics]
+# Prespecified interior comparison while most of the dose is still in the tube.
+height_time_min = 60
+# Separate pressure-relaxation check at frozen inlet-rich and dispersed plumes.
+freeze_cadence_targets_s = [600, 3600]

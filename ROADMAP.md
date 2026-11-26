@@ -546,8 +546,13 @@ directions. The absolute time correction and conductivity calibration
 remain underdetermined. The [homogeneous-bed test](examples/hydraulics/berkowitz_homogeneous/REPORT.md)
 used stock OpenLB TRT and conservative Julia tracer transport at 0.3 mL/min.
 The finest cases gave 1.63 mm for fine beads and 2.49 mm for coarse beads,
-compared with published estimates of 1.3 and 9.6 mm. The next test is the
-effect of the salt pulse's density on spreading in the horizontal coarse bed.
+compared with published estimates of 1.3 and 9.6 mm. In the [paired buoyancy
+test](examples/hydraulics/berkowitz_buoyancy/REPORT.md), 95% of the salt
+occupied the lower half of the horizontal coarse bed after one hour. Allowing
+the water to respond to the salt density increased dispersivity from 2.15 to
+4.09 mm on the same grid, closing 26% of the gap to 9.6 mm. Local backflow
+at the injection plane makes the confined inlet and nylon screen the next
+comparison on this packing.
 The layered flow-reversal comparison and reaction remain open.
 
 ## Acceptance criterion for every end-to-end showcase

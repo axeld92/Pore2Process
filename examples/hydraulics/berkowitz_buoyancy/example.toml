@@ -1,0 +1,19 @@
+schema_version = 1
+id = "hydraulics/berkowitz_buoyancy"
+title = "Density-driven spreading of salt in a horizontal coarse glass-bead bed"
+area = "hydraulics"
+status = "complete"
+readme = "README.md"
+report = "REPORT.md"
+prerequisites = ["hydraulics/berkowitz_homogeneous"]
+run_module = "examples.hydraulics.berkowitz_buoyancy.run"
+check_module = "examples.hydraulics.berkowitz_buoyancy.report"
+reference_files = ["reference_summary.json", "pulse.png"]
+protocol_files = ["protocol.toml"]
+
+[validation]
+mass_and_throughput = "passed"
+gravitational_direction_control = "passed"
+absolute_numerical_resolution = "conditional"
+published_dispersivity = "failed"
+scope = "Finite-dose sinking and outlet dispersion at 0.3 mL/min in the saved synthetic horizontal 4 mm packing."
