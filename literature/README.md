@@ -10,6 +10,7 @@ their examples.
 | --- | --- |
 | [alhamed2009](sources/alhamed2009/README.md) | Audited date-stone carbon source; batch qualification and separate failed column comparisons. |
 | [bajic2017](sources/bajic2017/README.md) | Reactor assembly and nominal channel-volume convention; reported tubing diameter, no separate wetted fixture volume or narrow-channel quantitative pulse RTD. |
+| [berkowitz2009](sources/berkowitz2009/README.md) | Glass-bead flow reversal, homogeneous dispersivity estimates and ten Figure 2 pulse series. Coarse beads first require about 12–16 mL more flushing liquid across the pulse width at the lower two flows. |
 | [biesheuvel1999](sources/biesheuvel1999/README.md) | Support water-permeability/porosity/processing and bend-strength reference; distinguishes experimental Table 2 from model Table 3 and maximum-flow design curves. |
 | [chiu2005](sources/chiu2005/README.md) | Experimental protocol and related ceramic/TiO2 series lead |
 | [chiu2006](sources/chiu2006/README.md) | Concrete biological-water-treatment alternative with ceramic channels |

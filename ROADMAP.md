@@ -535,10 +535,18 @@ Julia calculation and continuum bound show that such a line adds at most
 channel volume nor the plate thickness establishes an independent wet
 fitting hold-up; the narrower cases have no reported triangular distributors.
 The failure holds over the tested baseline, tail-window, retained-memory
-and diffusivity scenarios. Select a better-characterized inert tracer
-reference with independent liquid inventory and specified inlet/blank
-response before another native flow field. No reaction until the independent
-tracer transfer is qualified.
+and diffusivity scenarios.
+
+The [Berkowitz glass-bead tracer assessment](literature/sources/berkowitz2009/README.md)
+qualifies the difference in pulse width between flow directions as an
+experimental target. Reversing the packing to put its 4 mm beads first
+adds about 12–16 mL across the pulse width at 0.3 and 0.4 mL/min. The
+independent two-layer calculation predicts identical widths in both
+directions. The absolute time correction and conductivity calibration
+remain underdetermined. Next compute the dispersivity of each confined
+homogeneous packing at 0.3 mL/min with stock OpenLB TRT and the Julia tracer.
+Compare with the published 1.3 mm and 9.6 mm estimates before predicting
+the two directions. Reaction remains contingent on tracer qualification.
 
 ## Acceptance criterion for every end-to-end showcase
 

@@ -15,7 +15,7 @@ The aim is a reproducible chain of calculations in which a change in pore
 geometry produces an explainable change in a process result, with the
 assumptions and intermediate evidence available for inspection.
 
-> **Project status, 24 November 2026.** The filtration hydraulic example is
+> **Project status, 26 November 2026.** The filtration hydraulic example is
 > closed as a regression benchmark. Phenol adsorption is paused pending a
 > better documented breakthrough reference. The first reacting study tests
 > **immobilised lipase esterification** on Apple Silicon macOS; both feed
@@ -29,9 +29,11 @@ assumptions and intermediate evidence available for inspection.
 > middle length and an incompatible single-exponential detector assumption.
 > The [Bajić plumbing audit](examples/biocatalysis/bajic_plumbing_audit/REPORT.md)
 > confirms the reported tubing diameter, but ordinary straight-tube length
-> changes cannot account for the measured extra spreading. A better
-> characterized independent inert-tracer reference is needed.
-> Reaction has not started in this new case.
+> changes cannot account for the measured extra spreading. A separate
+> glass-bead benchmark now quantifies the effect of reversing the same
+> packing and supplies two homogeneous dispersivity targets for the
+> next pore-scale calculation. This stage addresses inert transport.
+> [Berkowitz flow-reversal assessment](literature/sources/berkowitz2009/README.md)
 
 ## The connected workflow
 

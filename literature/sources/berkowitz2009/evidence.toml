@@ -1,0 +1,48 @@
+doi = "10.1029/2008WR007342"
+
+[column]
+locator = "Section 2, paragraphs 9–10, printed p. 2 and Fig. 1"
+length_mm = 400.0
+inner_diameter_mm = 27.0
+fine_length_mm = 200.0
+coarse_length_mm = 200.0
+fine_bead_diameter_mm = 1.0
+coarse_bead_diameter_mm = 4.0
+porosity = 0.39
+porosity_basis = "Approximate common value controlled by bead mass in a known packing volume. Individual masses and porosity precision unavailable."
+packing = "Horizontal saturated Plexiglas column during transport. Uniform borosilicate spheres packed vertically under water. A nylon mesh lies at the interface and one at each end. Small open end spaces communicate with the flow."
+wall_geometry = "The same composite packing was flushed, restabilized and measured in reverse."
+
+[pulse]
+locator = "Section 2, paragraphs 11–13, pp. 2–3 and Fig. 2 caption"
+fluid = "Degassed deionized water, conservative NaCl pulse"
+temperature_C = 23.0
+feed_NaCl_mg_L = 500.0
+volume_ml = 1.5
+flow_ml_min = [0.3, 0.4, 1.0]
+pulse_min = [5.0, 3.75, 1.5]
+collection_interval_min = [5.0, 3.75, 1.5]
+runs_per_direction = [2, 2, 1]
+measurements_per_plotted_point = 3
+observable = "Effluent electrical conductivity (EC), ordinate labelled µS. Filled symbols denote coarse-to-fine, open symbols fine-to-coarse."
+conductivity_meter_max_error_percent = 1.0
+clock = "The authors accounted for tubing and column-inlet dead volume. Numerical values, correction formula, collection time stamp convention and injection trigger relative to the plotted clock are unavailable."
+calibration = "Authors report a background calibration and conversion from EC using calibration curves. Blank time trace, numerical EC-to-concentration coefficients, per-run background, replicate-level readings and error bars are unavailable."
+injection_basis = "Use the finite salt volume, subsequent fresh-water flush and Fig. 2 durations for the pulse. Paragraph 11 also describes steady conductivity matching the inflow."
+
+[single_packing]
+locator = "Section 2, paragraph 14, p. 3"
+flow_ml_min = 0.3
+length_mm = 200.0
+fine_dispersivity_mm = 1.3
+coarse_dispersivity_mm = 9.6
+basis = "Dispersivities estimated by the authors from separate homogeneous-column breakthrough experiments. The publication gives the estimates only. Its plotted experimental outlet curves are for the composite packing."
+
+[screen]
+background_scenarios_uS = [0.0, 5.0, 10.0]
+same_time_group_tolerance_pt = 0.01
+peak_tie_uS = 0.1
+nominal_background_uS = 5.0
+pulse_steps = [8, 16, 32]
+single_segment_horizon_pore_volumes = 4.0
+comparison = "Use the printed dimensions and dispersivities without estimating parameters or a clock shift from Fig. 2. The constant-dispersivity extension to 0.4 and 1.0 mL/min is an assumption. Paired direction and pulse width can be tested directly on the plotted clock."

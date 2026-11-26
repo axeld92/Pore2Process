@@ -221,6 +221,11 @@ the case; the larger composite-column geometry would require a separately
 verified scale translation. This is a screening lead, not a qualified
 replacement for the Strniša biocatalytic microreactor.
 
+The subsequent source assessment selected pulse width under flow reversal
+as the experimental target and extracted both homogeneous dispersivity
+estimates. The Figure 2 data also expose a discrepancy in absolute
+peak time. [Berkowitz tracer assessment](../../../literature/sources/berkowitz2009/README.md)
+
 Reproducibility details: [commands](README.md), [protocol](protocol.toml),
 [reference summary](reference/summary.json), [finite numerical moments](reference/tube_moments.csv).
 The actual run used Julia 1.11.6, CPython 3.12.9 and NumPy 2.5.4 on the

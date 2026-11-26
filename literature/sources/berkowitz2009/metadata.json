@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "id": "berkowitz2009",
+  "title": "Laboratory experiments on dispersive transport across interfaces: The role of flow direction",
+  "authors": ["Brian Berkowitz", "Andrea Cortis", "Ishai Dror", "Harvey Scher"],
+  "publication": "Water Resources Research 45, W02201 (2009)",
+  "doi": "10.1029/2008WR007342",
+  "pdf_sha256": "831f0b8477986f92fa5e90d6f9032a7f036894d1a35fb219fd59e9158d0915e6",
+  "role": "Independent inert-tracer comparison across a sharp change in glass-bead size, including paired flow reversal and single-packing dispersivity estimates.",
+  "files": ["README.md", "evidence.toml", "fig2_markers.toml", "extract_fig2.py", "audit.jl", "test_audit.jl", "reference.toml", "plot.py", "comparison.png"]
+}
